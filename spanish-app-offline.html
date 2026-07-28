@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Tu español</title>
+<style>
+  :root {
+    --bg: #132A46;
+    --bg-deep: #0D1F38;
+    --card: #FBF6EA;
+    --ink: #12233B;
+    --accent: #E2A63B;
+    --accent-deep: #C6842A;
+    --brick: #C1473C;
+    --green: #4F9A6A;
+    --muted: #7C8CA6;
+    --paper-line: #E7DEC7;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: radial-gradient(1200px 600px at 50% -10%, var(--bg-deep), var(--bg));
+    font-family: -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
+    color: var(--card);
+    overflow-x: hidden;
+  }
+  #app {
+    max-width: 420px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 28px 20px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hidden { display: none !important; }
+
+  /* Home */
+  .eyebrow { font-size: 11px; letter-spacing: 0.16em; color: var(--accent); font-weight: 700; margin-bottom: 6px; }
+  h1.title { font-family: Georgia, "Times New Roman", serif; font-size: 34px; font-weight: 700; margin: 0; }
+  .streak-row { display: flex; align-items: center; gap: 6px; margin-top: 8px; }
+  .streak-text { font-size: 14px; color: #D8DEE9; font-weight: 600; }
+
+  .passport {
+    background: var(--card); border-radius: 20px; padding: 20px; color: var(--ink);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25); margin: 18px 0 22px;
+    border: 1px solid var(--paper-line);
+  }
+  .passport-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .passport-label { font-size: 12px; color: var(--muted); font-weight: 700; letter-spacing: 0.04em; }
+  .passport-num { font-family: Georgia, serif; font-size: 30px; font-weight: 700; margin-top: 2px; }
+  .passport-of { font-size: 16px; color: var(--muted); font-weight: 600; }
+  .stamp-circle {
+    width: 52px; height: 52px; border-radius: 50%; border: 2.5px dashed var(--brick); color: var(--brick);
+    display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px;
+    transform: rotate(-8deg);
+  }
+  .bar-track { margin-top: 16px; height: 8px; border-radius: 8px; background: #EFE7D2; overflow: hidden; }
+  .bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent-deep), var(--accent)); border-radius: 8px; width: 0%; transition: width 0.4s; }
+  .legend-row { display: flex; gap: 16px; margin-top: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .legend-label { font-size: 12px; color: var(--muted); font-weight: 600; }
+
+  .section-label { font-size: 12px; font-weight: 700; color: #B9C2D6; letter-spacing: 0.06em; margin-bottom: 10px; }
+  .chip-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+  .chip {
+    padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.06); color: #D8DEE9; font-size: 13px; font-weight: 600; cursor: pointer;
+  }
+  .chip.active { background: var(--accent); color: var(--ink); border: 1px solid var(--accent); }
+
+  .mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .mode-card {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: 16px;
+    padding: 20px 14px; text-align: left; cursor: pointer; color: var(--card); font-family: inherit;
+  }
+  .mode-icon { font-size: 26px; margin-bottom: 8px; }
+  .mode-name { font-family: Georgia, serif; font-size: 18px; font-weight: 700; }
+  .mode-desc { font-size: 12px; color: #AEB8CC; margin-top: 4px; }
+  .footer-hint { text-align: center; font-size: 12px; color: #8B96AD; margin-top: 26px; }
+
+  /* Top bar */
+  .top-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px; }
+  .exit-btn { background: none; border: none; color: #B9C2D6; font-size: 14px; font-weight: 700; cursor: pointer; width: 60px; font-family: inherit; }
+  .top-bar-center { text-align: center; }
+  .top-bar-label { font-size: 11px; color: var(--accent); font-weight: 700; letter-spacing: 0.06em; }
+  .top-bar-progress { font-size: 13px; color: #D8DEE9; font-weight: 700; margin-top: 2px; }
+  .spacer60 { width: 60px; }
+
+  /* Flashcards */
+  .card-area { perspective: 1200px; display: flex; justify-content: center; margin-bottom: 26px; flex: 1; align-items: center; }
+  .flashcard { position: relative; width: 100%; max-width: 320px; height: 220px; transform-style: preserve-3d; transition: transform 0.5s; cursor: pointer; }
+  .flashcard.flipped { transform: rotateY(180deg); }
+  .flash-face {
+    position: absolute; inset: 0; border-radius: 20px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; backface-visibility: hidden; padding: 20px; text-align: center;
+  }
+  .flash-front { background: var(--card); color: var(--ink); border: 1px solid var(--paper-line); }
+  .flash-back { background: var(--accent); color: var(--ink); transform: rotateY(180deg); }
+  .flash-word { font-family: Georgia, serif; font-size: 28px; font-weight: 700; }
+  .tap-hint { font-size: 12px; margin-top: 10px; opacity: 0.65; font-weight: 600; }
+  .tap-prompt { text-align: center; font-size: 12px; color: #8B96AD; font-weight: 700; letter-spacing: 0.04em; }
+  .judge-row { display: flex; gap: 12px; }
+  .judge-btn { flex: 1; padding: 14px 0; border-radius: 14px; border: none; font-weight: 700; font-size: 14px; cursor: pointer; font-family: inherit; }
+  .judge-no { background: rgba(193,71,60,0.18); color: #F3B7AF; }
+  .judge-yes { background: var(--green); color: #0D1F38; }
+
+  /* Quiz */
+  .quiz-prompt { text-align: center; margin-bottom: 24px; }
+  .quiz-label { font-size: 13px; color: #AEB8CC; font-weight: 600; margin-bottom: 6px; }
+  .quiz-word { font-family: Georgia, serif; font-size: 30px; font-weight: 700; }
+  .options-grid { display: flex; flex-direction: column; gap: 10px; }
+  .option-btn {
+    padding: 16px 18px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.16);
+    background: rgba(255,255,255,0.06); color: var(--card); font-size: 15px; font-weight: 600;
+    text-align: left; cursor: pointer; font-family: inherit;
+  }
+  .option-btn.correct { background: var(--green); color: #0D1F38; border: 1px solid var(--green); }
+  .option-btn.wrong { background: var(--brick); color: #FBEAE7; border: 1px solid var(--brick); }
+
+  /* Done / empty */
+  .done-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 10px; }
+  .done-stamp {
+    width: 72px; height: 72px; border-radius: 50%; border: 3px dashed var(--accent); color: var(--accent);
+    display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 700; margin-bottom: 8px;
+  }
+  .done-title { font-family: Georgia, serif; font-size: 22px; font-weight: 700; }
+  .done-score { font-size: 15px; color: #D8DEE9; font-weight: 700; }
+  .done-sub { font-size: 13px; color: #AEB8CC; }
+  .primary-btn {
+    margin-top: 14px; padding: 12px 28px; border-radius: 999px; border: none; background: var(--accent);
+    color: var(--ink); font-weight: 700; font-size: 14px; cursor: pointer; font-family: inherit;
+  }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+// ---------- Vocabulary ----------
+const VOCAB = [
+  { es: "Hola", en: "Hello", cat: "Saludos" },
+  { es: "Buenos días", en: "Good morning", cat: "Saludos" },
+  { es: "Buenas tardes", en: "Good afternoon", cat: "Saludos" },
+  { es: "Buenas noches", en: "Good night", cat: "Saludos" },
+  { es: "¿Cómo estás?", en: "How are you?", cat: "Saludos" },
+  { es: "Mucho gusto", en: "Nice to meet you", cat: "Saludos" },
+  { es: "Hasta luego", en: "See you later", cat: "Saludos" },
+  { es: "Adiós", en: "Goodbye", cat: "Saludos" },
+  { es: "Por favor", en: "Please", cat: "Frases" },
+  { es: "Gracias", en: "Thank you", cat: "Frases" },
+  { es: "De nada", en: "You're welcome", cat: "Frases" },
+  { es: "Lo siento", en: "I'm sorry", cat: "Frases" },
+  { es: "¿Cuánto cuesta?", en: "How much does it cost?", cat: "Frases" },
+  { es: "No entiendo", en: "I don't understand", cat: "Frases" },
+  { es: "¿Dónde está...?", en: "Where is...?", cat: "Frases" },
+  { es: "¿Puedes ayudarme?", en: "Can you help me?", cat: "Frases" },
+  { es: "El aeropuerto", en: "The airport", cat: "Viajes" },
+  { es: "La estación", en: "The station", cat: "Viajes" },
+  { es: "El billete", en: "The ticket", cat: "Viajes" },
+  { es: "El equipaje", en: "The luggage", cat: "Viajes" },
+  { es: "La maleta", en: "The suitcase", cat: "Viajes" },
+  { es: "El hotel", en: "The hotel", cat: "Viajes" },
+  { es: "La reserva", en: "The reservation", cat: "Viajes" },
+  { es: "El pasaporte", en: "The passport", cat: "Viajes" },
+  { es: "El agua", en: "Water", cat: "Comida" },
+  { es: "El pan", en: "Bread", cat: "Comida" },
+  { es: "La fruta", en: "Fruit", cat: "Comida" },
+  { es: "El café", en: "Coffee", cat: "Comida" },
+  { es: "La cena", en: "Dinner", cat: "Comida" },
+  { es: "El desayuno", en: "Breakfast", cat: "Comida" },
+  { es: "La cuenta", en: "The bill", cat: "Comida" },
+  { es: "Delicioso", en: "Delicious", cat: "Comida" },
+  { es: "Uno", en: "One", cat: "Números" },
+  { es: "Dos", en: "Two", cat: "Números" },
+  { es: "Tres", en: "Three", cat: "Números" },
+  { es: "Diez", en: "Ten", cat: "Números" },
+  { es: "Veinte", en: "Twenty", cat: "Números" },
+  { es: "Cien", en: "One hundred", cat: "Números" },
+  { es: "Ser / Estar", en: "To be", cat: "Verbos" },
+  { es: "Tener", en: "To have", cat: "Verbos" },
+  { es: "Querer", en: "To want", cat: "Verbos" },
+  { es: "Poder", en: "To be able to / can", cat: "Verbos" },
+  { es: "Ir", en: "To go", cat: "Verbos" },
+  { es: "Comer", en: "To eat", cat: "Verbos" },
+  { es: "Hablar", en: "To speak", cat: "Verbos" },
+  { es: "Necesitar", en: "To need", cat: "Verbos" },
+].map((w, i) => ({ ...w, id: i }));
+
+const CATEGORIES = [...new Set(VOCAB.map(w => w.cat))];
+const KNOWN_THRESHOLD = 3;
+const STORAGE_KEY = "spanish-app-progress-v1";
+
+function todayStr() { return new Date().toISOString().slice(0, 10); }
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// ---------- Persistence (localStorage - this is a standalone offline file) ----------
+function loadProgress() {
+  let data;
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    data = raw ? JSON.parse(raw) : { counts: {}, streak: 0, lastDate: null };
+  } catch {
+    data = { counts: {}, streak: 0, lastDate: null };
+  }
+  const today = todayStr();
+  if (data.lastDate !== today) {
+    const y = new Date();
+    y.setDate(y.getDate() - 1);
+    const yesterday = y.toISOString().slice(0, 10);
+    data.streak = data.lastDate === yesterday ? data.streak + 1 : (data.lastDate ? 1 : 0);
+    data.lastDate = today;
+  }
+  saveProgress(data);
+  return data;
+}
+function saveProgress(data) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch {}
+}
+
+let progress = loadProgress();
+let state = { mode: "home", activeCat: "Todos" };
+
+function markResult(id, correct) {
+  const cur = progress.counts[id] || 0;
+  progress.counts[id] = correct ? Math.min(cur + 1, KNOWN_THRESHOLD) : Math.max(cur - 1, 0);
+  saveProgress(progress);
+}
+
+function computeStats() {
+  let known = 0, learning = 0;
+  VOCAB.forEach(w => {
+    const c = progress.counts[w.id] || 0;
+    if (c >= KNOWN_THRESHOLD) known++;
+    else if (c > 0) learning++;
+  });
+  return { known, learning, unseen: VOCAB.length - known - learning, total: VOCAB.length };
+}
+
+const app = document.getElementById("app");
+
+function render() {
+  app.innerHTML = "";
+  if (state.mode === "home") renderHome();
+  else if (state.mode === "flash") renderFlash();
+  else if (state.mode === "quiz") renderQuiz();
+}
+
+function el(tag, className, html) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (html !== undefined) e.innerHTML = html;
+  return e;
+}
+
+// ---------- Home ----------
+function renderHome() {
+  const stats = computeStats();
+  const pct = Math.round((stats.known / stats.total) * 100);
+
+  const header = el("div");
+  header.appendChild(el("div", "eyebrow", "CUADERNO DE VIAJE"));
+  header.appendChild(el("h1", "title", "Tu español"));
+  const streakRow = el("div", "streak-row");
+  streakRow.innerHTML = `<span>🔥</span><span class="streak-text">${progress.streak} ${progress.streak === 1 ? "día" : "días"} seguidos</span>`;
+  header.appendChild(streakRow);
+  app.appendChild(header);
+
+  const passport = el("div", "passport");
+  passport.innerHTML = `
+    <div class="passport-top">
+      <div>
+        <div class="passport-label">Sellos coleccionados</div>
+        <div class="passport-num">${stats.known}<span class="passport-of"> / ${stats.total}</span></div>
+      </div>
+      <div class="stamp-circle">${pct}%</div>
+    </div>
+    <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+    <div class="legend-row">
+      <div class="legend-item"><span class="legend-dot" style="background:var(--accent)"></span><span class="legend-label">Aprendiendo ${stats.learning}</span></div>
+      <div class="legend-item"><span class="legend-dot" style="background:var(--muted)"></span><span class="legend-label">Por ver ${stats.unseen}</span></div>
+    </div>`;
+  app.appendChild(passport);
+
+  app.appendChild(el("div", "section-label", "Categoría"));
+  const chipRow = el("div", "chip-row");
+  ["Todos", ...CATEGORIES].forEach(c => {
+    const chip = el("button", "chip" + (state.activeCat === c ? " active" : ""), c);
+    chip.onclick = () => { state.activeCat = c; render(); };
+    chipRow.appendChild(chip);
+  });
+  app.appendChild(chipRow);
+
+  const modeGrid = el("div", "mode-grid");
+  const flashCard = el("button", "mode-card");
+  flashCard.innerHTML = `<div class="mode-icon">🗂️</div><div class="mode-name">Tarjetas</div><div class="mode-desc">Repasa a tu ritmo</div>`;
+  flashCard.onclick = () => { state.mode = "flash"; render(); };
+  const quizCard = el("button", "mode-card");
+  quizCard.innerHTML = `<div class="mode-icon">✅</div><div class="mode-name">Quiz</div><div class="mode-desc">Elige la respuesta</div>`;
+  quizCard.onclick = () => { state.mode = "quiz"; render(); };
+  modeGrid.appendChild(flashCard);
+  modeGrid.appendChild(quizCard);
+  app.appendChild(modeGrid);
+
+  app.appendChild(el("div", "footer-hint", "Unos minutos libres · practica y sigue tu viaje"));
+}
+
+function topBar(label, progressText, onExit) {
+  const bar = el("div", "top-bar");
+  const exitBtn = el("button", "exit-btn", "← Salir");
+  exitBtn.onclick = onExit;
+  const center = el("div", "top-bar-center");
+  center.innerHTML = `<div class="top-bar-label">${label}</div><div class="top-bar-progress">${progressText}</div>`;
+  bar.appendChild(exitBtn);
+  bar.appendChild(center);
+  bar.appendChild(el("div", "spacer60"));
+  return bar;
+}
+
+function doneScreen(label, score, total) {
+  const wrap = el("div", "done-wrap");
+  wrap.innerHTML = `
+    <div class="done-stamp">✓</div>
+    <div class="done-title">¡Sesión completa!</div>
+    ${typeof score === "number" ? `<div class="done-score">${score} / ${total} correctas</div>` : ""}
+    <div class="done-sub">Terminaste tu ronda de ${label}.</div>`;
+  const btn = el("button", "primary-btn", "Volver al inicio");
+  btn.onclick = () => { state.mode = "home"; render(); };
+  wrap.appendChild(btn);
+  app.appendChild(wrap);
+}
+
+// ---------- Flashcards ----------
+let flashDeck = [], flashIdx = 0, flashFlipped = false;
+
+function renderFlash() {
+  const pool = state.activeCat === "Todos" ? VOCAB : VOCAB.filter(w => w.cat === state.activeCat);
+  if (flashDeck.length === 0 || flashIdx === -1) {
+    flashDeck = shuffle(pool);
+    flashIdx = 0;
+    flashFlipped = false;
+  }
+  if (pool.length === 0) {
+    const wrap = el("div", "done-wrap");
+    wrap.innerHTML = `<div class="done-title">No hay palabras aquí todavía.</div>`;
+    const btn = el("button", "primary-btn", "Volver");
+    btn.onclick = () => { state.mode = "home"; flashDeck = []; render(); };
+    wrap.appendChild(btn);
+    app.appendChild(wrap);
+    return;
+  }
+  if (flashIdx >= flashDeck.length) {
+    doneScreen("tarjetas");
+    flashDeck = [];
+    return;
+  }
+
+  app.appendChild(topBar(flashDeck[flashIdx].cat, `${flashIdx + 1} / ${flashDeck.length}`, () => {
+    state.mode = "home"; flashDeck = []; render();
+  }));
+
+  const card = flashDeck[flashIdx];
+  const cardArea = el("div", "card-area");
+  const flashcard = el("div", "flashcard" + (flashFlipped ? " flipped" : ""));
+  const front = el("div", "flash-face flash-front");
+  front.innerHTML = `<div class="flash-word">${card.es}</div><div class="tap-hint">toca para ver la traducción</div>`;
+  const back = el("div", "flash-face flash-back");
+  back.innerHTML = `<div class="flash-word">${card.en}</div><div class="tap-hint">${card.es}</div>`;
+  flashcard.appendChild(front);
+  flashcard.appendChild(back);
+  flashcard.onclick = () => { flashFlipped = !flashFlipped; render(); };
+  cardArea.appendChild(flashcard);
+  app.appendChild(cardArea);
+
+  if (flashFlipped) {
+    const row = el("div", "judge-row");
+    const no = el("button", "judge-btn judge-no", "Aún no ✕");
+    no.onclick = () => { markResult(card.id, false); flashFlipped = false; flashIdx++; render(); };
+    const yes = el("button", "judge-btn judge-yes", "Lo sé ✓");
+    yes.onclick = () => { markResult(card.id, true); flashFlipped = false; flashIdx++; render(); };
+    row.appendChild(no);
+    row.appendChild(yes);
+    app.appendChild(row);
+  } else {
+    app.appendChild(el("div", "tap-prompt", "— toca la tarjeta —"));
+  }
+}
+
+// ---------- Quiz ----------
+let quizPool = [], quizTotal = 0, quizIdx = 0, quizQuestion = null, quizPicked = null, quizScore = 0;
+
+function buildQuestion(pool) {
+  const word = pool[Math.floor(Math.random() * pool.length)];
+  const distractors = shuffle(VOCAB.filter(w => w.id !== word.id)).slice(0, 3);
+  return { word, options: shuffle([word, ...distractors]) };
+}
+
+function renderQuiz() {
+  const pool = state.activeCat === "Todos" ? VOCAB : VOCAB.filter(w => w.cat === state.activeCat);
+  if (pool.length < 4) {
+    const wrap = el("div", "done-wrap");
+    wrap.innerHTML = `<div class="done-title">Se necesitan más palabras en esta categoría.</div>`;
+    const btn = el("button", "primary-btn", "Volver");
+    btn.onclick = () => { state.mode = "home"; render(); };
+    wrap.appendChild(btn);
+    app.appendChild(wrap);
+    return;
+  }
+  if (!quizQuestion || quizPool !== pool) {
+    quizPool = pool;
+    quizTotal = Math.min(10, pool.length);
+    quizIdx = 0;
+    quizQuestion = buildQuestion(pool);
+    quizPicked = null;
+    quizScore = 0;
+  }
+  if (quizIdx >= quizTotal) {
+    doneScreen("quiz", quizScore, quizTotal);
+    quizQuestion = null;
+    return;
+  }
+
+  app.appendChild(topBar(quizQuestion.word.cat, `${quizIdx + 1} / ${quizTotal}`, () => {
+    state.mode = "home"; quizQuestion = null; render();
+  }));
+
+  const prompt = el("div", "quiz-prompt");
+  prompt.innerHTML = `<div class="quiz-label">¿Cómo se dice…?</div><div class="quiz-word">${quizQuestion.word.es}</div>`;
+  app.appendChild(prompt);
+
+  const grid = el("div", "options-grid");
+  quizQuestion.options.forEach(opt => {
+    const btn = el("button", "option-btn", opt.en);
+    if (quizPicked !== null) {
+      if (opt.id === quizQuestion.word.id) btn.classList.add("correct");
+      else if (opt.id === quizPicked) btn.classList.add("wrong");
+    }
+    btn.onclick = () => {
+      if (quizPicked !== null) return;
+      const correct = opt.id === quizQuestion.word.id;
+      quizPicked = opt.id;
+      markResult(quizQuestion.word.id, correct);
+      if (correct) quizScore++;
+      render();
+      setTimeout(() => {
+        quizIdx++;
+        if (quizIdx < quizTotal) {
+          quizQuestion = buildQuestion(pool);
+          quizPicked = null;
+        }
+        render();
+      }, 700);
+    };
+    grid.appendChild(btn);
+  });
+  app.appendChild(grid);
+}
+
+render();
+</script>
+</body>
+</html>
