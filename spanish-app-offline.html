@@ -6,281 +6,388 @@
 <title>Tu español</title>
 <style>
   :root {
-    --bg: #132A46;
-    --bg-deep: #0D1F38;
-    --card: #FBF6EA;
-    --ink: #12233B;
-    --accent: #E2A63B;
-    --accent-deep: #C6842A;
-    --brick: #C1473C;
-    --green: #4F9A6A;
-    --muted: #7C8CA6;
-    --paper-line: #E7DEC7;
+    --bg-a: #1B0E33; --bg-b: #4B1770;
+    --card: #FFF7E8; --ink: #1B0E33;
+    --accent: #FF3CAC;      /* hot pink */
+    --accent2: #05FFA1;     /* neon mint */
+    --accent3: #FFD23F;     /* neon yellow */
+    --violet: #7B2FF7;
+    --brick: #FF4D6D;
+    --muted: #B6A6DE;
+    --paper-line: #EFE2C6;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  html, body {
-    margin: 0; padding: 0; height: 100%;
-    background: radial-gradient(1200px 600px at 50% -10%, var(--bg-deep), var(--bg));
+  html, body { margin:0; padding:0; height:100%;
+    background: radial-gradient(1200px 700px at 50% -10%, var(--bg-b), var(--bg-a));
     font-family: -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
-    color: var(--card);
-    overflow-x: hidden;
-  }
-  #app {
-    max-width: 420px;
-    margin: 0 auto;
-    min-height: 100vh;
-    padding: 28px 20px 40px;
-    display: flex;
-    flex-direction: column;
-  }
-  .hidden { display: none !important; }
+    color: var(--card); }
+  #app { max-width: 440px; margin: 0 auto; min-height: 100vh; padding: 22px 18px 40px; display:flex; flex-direction:column; }
 
-  /* Home */
-  .eyebrow { font-size: 11px; letter-spacing: 0.16em; color: var(--accent); font-weight: 700; margin-bottom: 6px; }
-  h1.title { font-family: Georgia, "Times New Roman", serif; font-size: 34px; font-weight: 700; margin: 0; }
-  .streak-row { display: flex; align-items: center; gap: 6px; margin-top: 8px; }
-  .streak-text { font-size: 14px; color: #D8DEE9; font-weight: 600; }
+  /* Top nav */
+  .nav-row { display:flex; gap:6px; margin-bottom:20px; background: rgba(255,255,255,0.06); padding:5px; border-radius:16px; }
+  .nav-btn { flex:1; padding:10px 4px; border-radius:12px; border:none; background:transparent; color:#D9CCEF; font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .nav-btn.active { background: linear-gradient(135deg, var(--accent), var(--violet)); color:#fff; }
 
-  .passport {
-    background: var(--card); border-radius: 20px; padding: 20px; color: var(--ink);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25); margin: 18px 0 22px;
-    border: 1px solid var(--paper-line);
-  }
-  .passport-top { display: flex; justify-content: space-between; align-items: flex-start; }
-  .passport-label { font-size: 12px; color: var(--muted); font-weight: 700; letter-spacing: 0.04em; }
-  .passport-num { font-family: Georgia, serif; font-size: 30px; font-weight: 700; margin-top: 2px; }
-  .passport-of { font-size: 16px; color: var(--muted); font-weight: 600; }
-  .stamp-circle {
-    width: 52px; height: 52px; border-radius: 50%; border: 2.5px dashed var(--brick); color: var(--brick);
-    display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px;
-    transform: rotate(-8deg);
-  }
-  .bar-track { margin-top: 16px; height: 8px; border-radius: 8px; background: #EFE7D2; overflow: hidden; }
-  .bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent-deep), var(--accent)); border-radius: 8px; width: 0%; transition: width 0.4s; }
-  .legend-row { display: flex; gap: 16px; margin-top: 12px; }
-  .legend-item { display: flex; align-items: center; gap: 6px; }
-  .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
-  .legend-label { font-size: 12px; color: var(--muted); font-weight: 600; }
+  .eyebrow { font-size:11px; letter-spacing:0.16em; color: var(--accent3); font-weight:700; margin-bottom:6px; }
+  h1.title { font-family: Georgia, "Times New Roman", serif; font-size:32px; font-weight:700; margin:0; }
+  .streak-row { display:flex; align-items:center; gap:6px; margin-top:8px; }
+  .streak-text { font-size:14px; color:#E4D9F7; font-weight:600; }
 
-  .section-label { font-size: 12px; font-weight: 700; color: #B9C2D6; letter-spacing: 0.06em; margin-bottom: 10px; }
-  .chip-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
-  .chip {
-    padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18);
-    background: rgba(255,255,255,0.06); color: #D8DEE9; font-size: 13px; font-weight: 600; cursor: pointer;
-  }
-  .chip.active { background: var(--accent); color: var(--ink); border: 1px solid var(--accent); }
+  .passport { background: var(--card); border-radius:20px; padding:20px; color:var(--ink);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.35); margin:16px 0 20px; border:1px solid var(--paper-line); }
+  .passport-top { display:flex; justify-content:space-between; align-items:flex-start; }
+  .passport-label { font-size:12px; color:#8A7AAE; font-weight:700; letter-spacing:0.04em; }
+  .passport-num { font-family: Georgia, serif; font-size:28px; font-weight:700; margin-top:2px; }
+  .passport-of { font-size:15px; color:#8A7AAE; font-weight:600; }
+  .stamp-circle { width:50px; height:50px; border-radius:50%; border:2.5px dashed var(--accent); color: var(--accent);
+    display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12px; transform:rotate(-8deg); }
+  .bar-track { margin-top:14px; height:8px; border-radius:8px; background:#F0E6D2; overflow:hidden; }
+  .bar-fill { height:100%; background: linear-gradient(90deg, var(--violet), var(--accent)); border-radius:8px; width:0%; transition:width .4s; }
+  .legend-row { display:flex; gap:14px; margin-top:10px; flex-wrap:wrap; }
+  .legend-item { display:flex; align-items:center; gap:6px; }
+  .legend-dot { width:8px; height:8px; border-radius:50%; }
+  .legend-label { font-size:11px; color:#8A7AAE; font-weight:600; }
 
-  .mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .mode-card {
-    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: 16px;
-    padding: 20px 14px; text-align: left; cursor: pointer; color: var(--card); font-family: inherit;
-  }
-  .mode-icon { font-size: 26px; margin-bottom: 8px; }
-  .mode-name { font-family: Georgia, serif; font-size: 18px; font-weight: 700; }
-  .mode-desc { font-size: 12px; color: #AEB8CC; margin-top: 4px; }
-  .footer-hint { text-align: center; font-size: 12px; color: #8B96AD; margin-top: 26px; }
+  .section-label { font-size:12px; font-weight:700; color:#D9CCEF; letter-spacing:0.06em; margin-bottom:9px; }
+  .chip-row { display:flex; gap:7px; flex-wrap:wrap; margin-bottom:20px; }
+  .chip { padding:7px 13px; border-radius:999px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.07);
+    color:#E4D9F7; font-size:12.5px; font-weight:600; cursor:pointer; font-family:inherit; }
+  .chip.active { background: linear-gradient(135deg, var(--accent), var(--violet)); color:#fff; border:1px solid transparent; }
 
-  /* Top bar */
-  .top-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px; }
-  .exit-btn { background: none; border: none; color: #B9C2D6; font-size: 14px; font-weight: 700; cursor: pointer; width: 60px; font-family: inherit; }
-  .top-bar-center { text-align: center; }
-  .top-bar-label { font-size: 11px; color: var(--accent); font-weight: 700; letter-spacing: 0.06em; }
-  .top-bar-progress { font-size: 13px; color: #D8DEE9; font-weight: 700; margin-top: 2px; }
-  .spacer60 { width: 60px; }
+  .mode-grid { display:grid; grid-template-columns:1fr 1fr; gap:11px; }
+  .mode-card { background: rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.16); border-radius:16px;
+    padding:18px 13px; text-align:left; cursor:pointer; color:var(--card); font-family:inherit; }
+  .mode-icon { font-size:24px; margin-bottom:7px; }
+  .mode-name { font-family: Georgia, serif; font-size:17px; font-weight:700; }
+  .mode-desc { font-size:11.5px; color:#C9BBE8; margin-top:3px; }
+  .footer-hint { text-align:center; font-size:11.5px; color:#9C8FC2; margin-top:22px; }
 
-  /* Flashcards */
-  .card-area { perspective: 1200px; display: flex; justify-content: center; margin-bottom: 26px; flex: 1; align-items: center; }
-  .flashcard { position: relative; width: 100%; max-width: 320px; height: 220px; transform-style: preserve-3d; transition: transform 0.5s; cursor: pointer; }
-  .flashcard.flipped { transform: rotateY(180deg); }
-  .flash-face {
-    position: absolute; inset: 0; border-radius: 20px; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; backface-visibility: hidden; padding: 20px; text-align: center;
-  }
-  .flash-front { background: var(--card); color: var(--ink); border: 1px solid var(--paper-line); }
-  .flash-back { background: var(--accent); color: var(--ink); transform: rotateY(180deg); }
-  .flash-word { font-family: Georgia, serif; font-size: 28px; font-weight: 700; }
-  .tap-hint { font-size: 12px; margin-top: 10px; opacity: 0.65; font-weight: 600; }
-  .tap-prompt { text-align: center; font-size: 12px; color: #8B96AD; font-weight: 700; letter-spacing: 0.04em; }
-  .judge-row { display: flex; gap: 12px; }
-  .judge-btn { flex: 1; padding: 14px 0; border-radius: 14px; border: none; font-weight: 700; font-size: 14px; cursor: pointer; font-family: inherit; }
-  .judge-no { background: rgba(193,71,60,0.18); color: #F3B7AF; }
-  .judge-yes { background: var(--green); color: #0D1F38; }
+  .top-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
+  .exit-btn { background:none; border:none; color:#D9CCEF; font-size:14px; font-weight:700; cursor:pointer; width:60px; font-family:inherit; }
+  .top-bar-center { text-align:center; }
+  .top-bar-label { font-size:11px; color:var(--accent3); font-weight:700; letter-spacing:0.06em; }
+  .top-bar-progress { font-size:13px; color:#E4D9F7; font-weight:700; margin-top:2px; }
+  .spacer60 { width:60px; }
 
-  /* Quiz */
-  .quiz-prompt { text-align: center; margin-bottom: 24px; }
-  .quiz-label { font-size: 13px; color: #AEB8CC; font-weight: 600; margin-bottom: 6px; }
-  .quiz-word { font-family: Georgia, serif; font-size: 30px; font-weight: 700; }
-  .options-grid { display: flex; flex-direction: column; gap: 10px; }
-  .option-btn {
-    padding: 16px 18px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.16);
-    background: rgba(255,255,255,0.06); color: var(--card); font-size: 15px; font-weight: 600;
-    text-align: left; cursor: pointer; font-family: inherit;
-  }
-  .option-btn.correct { background: var(--green); color: #0D1F38; border: 1px solid var(--green); }
-  .option-btn.wrong { background: var(--brick); color: #FBEAE7; border: 1px solid var(--brick); }
+  .card-area { perspective:1200px; display:flex; justify-content:center; margin-bottom:22px; flex:1; align-items:center; }
+  .flashcard { position:relative; width:100%; max-width:320px; height:220px; transform-style:preserve-3d; transition:transform .5s; cursor:pointer; }
+  .flashcard.flipped { transform:rotateY(180deg); }
+  .flash-face { position:absolute; inset:0; border-radius:20px; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    backface-visibility:hidden; padding:20px; text-align:center; }
+  .flash-front { background:var(--card); color:var(--ink); border:1px solid var(--paper-line); }
+  .flash-back { background: linear-gradient(135deg, var(--accent3), var(--accent)); color:var(--ink); transform:rotateY(180deg); }
+  .flash-word { font-family: Georgia, serif; font-size:26px; font-weight:700; }
+  .flash-ja { font-size:14px; margin-top:6px; opacity:0.8; font-weight:600; }
+  .tap-hint { font-size:11.5px; margin-top:9px; opacity:.65; font-weight:600; }
+  .tap-prompt { text-align:center; font-size:11.5px; color:#9C8FC2; font-weight:700; letter-spacing:.04em; }
+  .judge-row { display:flex; gap:11px; }
+  .judge-btn { flex:1; padding:14px 0; border-radius:14px; border:none; font-weight:700; font-size:14px; cursor:pointer; font-family:inherit; }
+  .judge-no { background: rgba(255,77,109,0.2); color:#FFC1CE; }
+  .judge-yes { background: var(--accent2); color:#0B0518; }
 
-  /* Done / empty */
-  .done-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 10px; }
-  .done-stamp {
-    width: 72px; height: 72px; border-radius: 50%; border: 3px dashed var(--accent); color: var(--accent);
-    display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 700; margin-bottom: 8px;
-  }
-  .done-title { font-family: Georgia, serif; font-size: 22px; font-weight: 700; }
-  .done-score { font-size: 15px; color: #D8DEE9; font-weight: 700; }
-  .done-sub { font-size: 13px; color: #AEB8CC; }
-  .primary-btn {
-    margin-top: 14px; padding: 12px 28px; border-radius: 999px; border: none; background: var(--accent);
-    color: var(--ink); font-weight: 700; font-size: 14px; cursor: pointer; font-family: inherit;
-  }
+  .quiz-prompt { text-align:center; margin-bottom:20px; }
+  .quiz-label { font-size:13px; color:#C9BBE8; font-weight:600; margin-bottom:6px; }
+  .quiz-word { font-family: Georgia, serif; font-size:28px; font-weight:700; }
+  .options-grid { display:flex; flex-direction:column; gap:9px; }
+  .option-btn { padding:15px 17px; border-radius:14px; border:1px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.07);
+    color:var(--card); font-size:15px; font-weight:600; text-align:left; cursor:pointer; font-family:inherit; }
+  .option-btn.correct { background: var(--accent2); color:#0B0518; border:1px solid var(--accent2); }
+  .option-btn.wrong { background: var(--brick); color:#fff; border:1px solid var(--brick); }
+
+  .speak-btn { border:none; background: rgba(255,255,255,0.12); color:var(--card); width:36px; height:36px; border-radius:50%;
+    font-size:16px; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; }
+  .speak-row { display:flex; justify-content:center; margin-top:10px; }
+
+  .done-wrap { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:9px; }
+  .done-stamp { width:68px; height:68px; border-radius:50%; border:3px dashed var(--accent3); color:var(--accent3);
+    display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; margin-bottom:6px; }
+  .done-title { font-family: Georgia, serif; font-size:21px; font-weight:700; }
+  .done-score { font-size:15px; color:#E4D9F7; font-weight:700; }
+  .done-sub { font-size:12.5px; color:#C9BBE8; }
+  .primary-btn { margin-top:12px; padding:12px 26px; border-radius:999px; border:none; background: linear-gradient(135deg, var(--accent), var(--violet));
+    color:#fff; font-weight:700; font-size:14px; cursor:pointer; font-family:inherit; }
+  .ghost-btn { margin-top:8px; padding:10px 22px; border-radius:999px; border:1px solid rgba(255,255,255,0.3); background:transparent;
+    color:var(--card); font-weight:700; font-size:13px; cursor:pointer; font-family:inherit; }
+
+  .review-list { width:100%; max-width:360px; text-align:left; margin-top:14px; }
+  .review-item { background: rgba(255,255,255,0.07); border-radius:14px; padding:13px 15px; margin-bottom:9px; border:1px solid rgba(255,255,255,0.14); }
+  .review-q { font-weight:700; font-size:14px; color:var(--accent3); }
+  .review-a { font-size:14px; margin-top:3px; }
+  .review-note { font-size:12.5px; color:#C9BBE8; margin-top:5px; line-height:1.5; }
+
+  /* Conjugation trainer */
+  .conj-prompt { text-align:center; margin-bottom:14px; }
+  .conj-tense { font-size:12px; color:var(--accent3); font-weight:700; letter-spacing:.04em; }
+  .conj-verb { font-family: Georgia, serif; font-size:24px; font-weight:700; margin-top:4px; }
+  .conj-person { font-size:16px; color:#E4D9F7; margin-top:4px; }
+  .conj-input-row { display:flex; gap:8px; margin-top:18px; }
+  .conj-input { flex:1; padding:14px 16px; border-radius:14px; border:2px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.08);
+    color:var(--card); font-size:17px; font-family:inherit; }
+  .conj-input:focus { outline:none; border-color:var(--accent); }
+  .conj-submit { padding:0 20px; border-radius:14px; border:none; background: linear-gradient(135deg, var(--accent), var(--violet));
+    color:#fff; font-weight:700; font-size:14px; cursor:pointer; font-family:inherit; }
+  .conj-feedback { text-align:center; margin-top:16px; font-size:15px; font-weight:700; min-height:22px; }
+  .conj-feedback.ok { color: var(--accent2); }
+  .conj-feedback.no { color: var(--brick); }
+
+  /* Column / News */
+  .article { background: rgba(255,255,255,0.06); border-radius:18px; padding:18px; margin-bottom:14px; border:1px solid rgba(255,255,255,0.13); }
+  .article-title { font-family: Georgia, serif; font-size:17px; font-weight:700; color:var(--accent3); margin-bottom:8px; }
+  .article-body { font-size:14px; line-height:1.75; color:#EFE7FA; }
+  .news-badge { font-size:11px; background: rgba(255,60,172,0.18); color:var(--accent); padding:6px 10px; border-radius:10px; margin-bottom:16px; line-height:1.6; }
 </style>
 </head>
 <body>
 <div id="app"></div>
-
 <script>
-// ---------- Vocabulary ----------
+/* ---------- Vocabulary ---------- */
 const VOCAB = [
-  { es: "Hola", en: "Hello", cat: "Saludos" },
-  { es: "Buenos días", en: "Good morning", cat: "Saludos" },
-  { es: "Buenas tardes", en: "Good afternoon", cat: "Saludos" },
-  { es: "Buenas noches", en: "Good night", cat: "Saludos" },
-  { es: "¿Cómo estás?", en: "How are you?", cat: "Saludos" },
-  { es: "Mucho gusto", en: "Nice to meet you", cat: "Saludos" },
-  { es: "Hasta luego", en: "See you later", cat: "Saludos" },
-  { es: "Adiós", en: "Goodbye", cat: "Saludos" },
-  { es: "Por favor", en: "Please", cat: "Frases" },
-  { es: "Gracias", en: "Thank you", cat: "Frases" },
-  { es: "De nada", en: "You're welcome", cat: "Frases" },
-  { es: "Lo siento", en: "I'm sorry", cat: "Frases" },
-  { es: "¿Cuánto cuesta?", en: "How much does it cost?", cat: "Frases" },
-  { es: "No entiendo", en: "I don't understand", cat: "Frases" },
-  { es: "¿Dónde está...?", en: "Where is...?", cat: "Frases" },
-  { es: "¿Puedes ayudarme?", en: "Can you help me?", cat: "Frases" },
-  { es: "El aeropuerto", en: "The airport", cat: "Viajes" },
-  { es: "La estación", en: "The station", cat: "Viajes" },
-  { es: "El billete", en: "The ticket", cat: "Viajes" },
-  { es: "El equipaje", en: "The luggage", cat: "Viajes" },
-  { es: "La maleta", en: "The suitcase", cat: "Viajes" },
-  { es: "El hotel", en: "The hotel", cat: "Viajes" },
-  { es: "La reserva", en: "The reservation", cat: "Viajes" },
-  { es: "El pasaporte", en: "The passport", cat: "Viajes" },
-  { es: "El agua", en: "Water", cat: "Comida" },
-  { es: "El pan", en: "Bread", cat: "Comida" },
-  { es: "La fruta", en: "Fruit", cat: "Comida" },
-  { es: "El café", en: "Coffee", cat: "Comida" },
-  { es: "La cena", en: "Dinner", cat: "Comida" },
-  { es: "El desayuno", en: "Breakfast", cat: "Comida" },
-  { es: "La cuenta", en: "The bill", cat: "Comida" },
-  { es: "Delicioso", en: "Delicious", cat: "Comida" },
-  { es: "Uno", en: "One", cat: "Números" },
-  { es: "Dos", en: "Two", cat: "Números" },
-  { es: "Tres", en: "Three", cat: "Números" },
-  { es: "Diez", en: "Ten", cat: "Números" },
-  { es: "Veinte", en: "Twenty", cat: "Números" },
-  { es: "Cien", en: "One hundred", cat: "Números" },
-  { es: "Ser / Estar", en: "To be", cat: "Verbos" },
-  { es: "Tener", en: "To have", cat: "Verbos" },
-  { es: "Querer", en: "To want", cat: "Verbos" },
-  { es: "Poder", en: "To be able to / can", cat: "Verbos" },
-  { es: "Ir", en: "To go", cat: "Verbos" },
-  { es: "Comer", en: "To eat", cat: "Verbos" },
-  { es: "Hablar", en: "To speak", cat: "Verbos" },
-  { es: "Necesitar", en: "To need", cat: "Verbos" },
-].map((w, i) => ({ ...w, id: i }));
+  { es:"Hola", en:"Hello", ja:"やあ", cat:"Saludos" },
+  { es:"Buenos días", en:"Good morning", ja:"おはよう", cat:"Saludos" },
+  { es:"Buenas tardes", en:"Good afternoon", ja:"こんにちは", cat:"Saludos" },
+  { es:"Buenas noches", en:"Good night", ja:"こんばんは/おやすみ", cat:"Saludos" },
+  { es:"¿Cómo estás?", en:"How are you?", ja:"元気?", cat:"Saludos" },
+  { es:"Mucho gusto", en:"Nice to meet you", ja:"はじめまして", cat:"Saludos" },
+  { es:"Hasta luego", en:"See you later", ja:"またね", cat:"Saludos" },
+  { es:"Adiós", en:"Goodbye", ja:"さようなら", cat:"Saludos" },
+  { es:"¿Qué tal?", en:"What's up?", ja:"調子どう?", cat:"Saludos" },
+  { es:"Por favor", en:"Please", ja:"お願いします", cat:"Frases" },
+  { es:"Gracias", en:"Thank you", ja:"ありがとう", cat:"Frases" },
+  { es:"De nada", en:"You're welcome", ja:"どういたしまして", cat:"Frases" },
+  { es:"Lo siento", en:"I'm sorry", ja:"ごめんなさい", cat:"Frases" },
+  { es:"¿Cuánto cuesta?", en:"How much does it cost?", ja:"いくらですか", cat:"Frases" },
+  { es:"No entiendo", en:"I don't understand", ja:"わかりません", cat:"Frases" },
+  { es:"¿Dónde está...?", en:"Where is...?", ja:"〜はどこ?", cat:"Frases" },
+  { es:"¿Puedes ayudarme?", en:"Can you help me?", ja:"手伝ってもらえますか", cat:"Frases" },
+  { es:"Claro que sí", en:"Of course", ja:"もちろん", cat:"Frases" },
+  { es:"Tal vez", en:"Maybe", ja:"たぶん", cat:"Frases" },
+  { es:"El aeropuerto", en:"The airport", ja:"空港", cat:"Viajes" },
+  { es:"La estación", en:"The station", ja:"駅", cat:"Viajes" },
+  { es:"El billete", en:"The ticket", ja:"切符", cat:"Viajes" },
+  { es:"El equipaje", en:"The luggage", ja:"荷物", cat:"Viajes" },
+  { es:"La maleta", en:"The suitcase", ja:"スーツケース", cat:"Viajes" },
+  { es:"El hotel", en:"The hotel", ja:"ホテル", cat:"Viajes" },
+  { es:"La reserva", en:"The reservation", ja:"予約", cat:"Viajes" },
+  { es:"El pasaporte", en:"The passport", ja:"パスポート", cat:"Viajes" },
+  { es:"¿A qué hora sale?", en:"What time does it leave?", ja:"何時に出発しますか", cat:"Viajes" },
+  { es:"El agua", en:"Water", ja:"水", cat:"Comida" },
+  { es:"El pan", en:"Bread", ja:"パン", cat:"Comida" },
+  { es:"La fruta", en:"Fruit", ja:"果物", cat:"Comida" },
+  { es:"El café", en:"Coffee", ja:"コーヒー", cat:"Comida" },
+  { es:"La cena", en:"Dinner", ja:"夕食", cat:"Comida" },
+  { es:"El desayuno", en:"Breakfast", ja:"朝食", cat:"Comida" },
+  { es:"La cuenta", en:"The bill", ja:"お会計", cat:"Comida" },
+  { es:"Delicioso", en:"Delicious", ja:"美味しい", cat:"Comida" },
+  { es:"Picante", en:"Spicy", ja:"辛い", cat:"Comida" },
+  { es:"Uno", en:"One", ja:"1", cat:"Números" },
+  { es:"Dos", en:"Two", ja:"2", cat:"Números" },
+  { es:"Tres", en:"Three", ja:"3", cat:"Números" },
+  { es:"Cuatro", en:"Four", ja:"4", cat:"Números" },
+  { es:"Cinco", en:"Five", ja:"5", cat:"Números" },
+  { es:"Diez", en:"Ten", ja:"10", cat:"Números" },
+  { es:"Veinte", en:"Twenty", ja:"20", cat:"Números" },
+  { es:"Cien", en:"One hundred", ja:"100", cat:"Números" },
+  { es:"Mil", en:"One thousand", ja:"1000", cat:"Números" },
+  { es:"Lunes", en:"Monday", ja:"月曜日", cat:"Días" },
+  { es:"Martes", en:"Tuesday", ja:"火曜日", cat:"Días" },
+  { es:"Miércoles", en:"Wednesday", ja:"水曜日", cat:"Días" },
+  { es:"Jueves", en:"Thursday", ja:"木曜日", cat:"Días" },
+  { es:"Viernes", en:"Friday", ja:"金曜日", cat:"Días" },
+  { es:"Sábado", en:"Saturday", ja:"土曜日", cat:"Días" },
+  { es:"Domingo", en:"Sunday", ja:"日曜日", cat:"Días" },
+  { es:"La primavera", en:"Spring", ja:"春", cat:"Estaciones" },
+  { es:"El verano", en:"Summer", ja:"夏", cat:"Estaciones" },
+  { es:"El otoño", en:"Autumn", ja:"秋", cat:"Estaciones" },
+  { es:"El invierno", en:"Winter", ja:"冬", cat:"Estaciones" },
+  { es:"Ser / Estar", en:"To be", ja:"〜である/〜にいる", cat:"Verbos" },
+  { es:"Tener", en:"To have", ja:"持つ", cat:"Verbos" },
+  { es:"Querer", en:"To want", ja:"欲しい", cat:"Verbos" },
+  { es:"Poder", en:"To be able to", ja:"〜できる", cat:"Verbos" },
+  { es:"Ir", en:"To go", ja:"行く", cat:"Verbos" },
+  { es:"Comer", en:"To eat", ja:"食べる", cat:"Verbos" },
+  { es:"Hablar", en:"To speak", ja:"話す", cat:"Verbos" },
+  { es:"Necesitar", en:"To need", ja:"必要とする", cat:"Verbos" },
+  { es:"Sin embargo", en:"However", ja:"しかしながら", cat:"Frases" },
+  { es:"Además", en:"Besides / Also", ja:"さらに", cat:"Frases" },
+  { es:"Aunque", en:"Although", ja:"〜だけれども", cat:"Frases" },
+].map((w,i)=>({...w,id:i}));
 
-const CATEGORIES = [...new Set(VOCAB.map(w => w.cat))];
+const CATEGORIES = [...new Set(VOCAB.map(w=>w.cat))];
 const KNOWN_THRESHOLD = 3;
-const STORAGE_KEY = "spanish-app-progress-v1";
+const STORAGE_KEY = "spanish-app-progress-v2";
 
-function todayStr() { return new Date().toISOString().slice(0, 10); }
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
+function todayStr(){ return new Date().toISOString().slice(0,10); }
+function shuffle(arr){ const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
+function stripAccents(s){ return s.normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
+function norm(s){ return stripAccents((s||"").trim().toLowerCase()).replace(/[¿?¡!.,]/g,""); }
+
+/* ---------- Audio ---------- */
+let audioCtx = null;
+function tone(freq, dur, type){
+  try{
+    audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)();
+    const o = audioCtx.createOscillator(); const g = audioCtx.createGain();
+    o.type = type||"sine"; o.frequency.value = freq;
+    o.connect(g); g.connect(audioCtx.destination);
+    g.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
+    o.start(); o.stop(audioCtx.currentTime + dur);
+  }catch(e){}
+}
+function playCorrect(){ tone(880,0.12,"sine"); setTimeout(()=>tone(1180,0.15,"sine"),90); }
+function playWrong(){ tone(180,0.25,"sawtooth"); }
+function speak(text){
+  try{
+    if(!window.speechSynthesis) return;
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "es-MX"; u.rate = 0.92;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  }catch(e){}
 }
 
-// ---------- Persistence (localStorage - this is a standalone offline file) ----------
-function loadProgress() {
+/* ---------- Persistence ---------- */
+function loadProgress(){
   let data;
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    data = raw ? JSON.parse(raw) : { counts: {}, streak: 0, lastDate: null };
-  } catch {
-    data = { counts: {}, streak: 0, lastDate: null };
-  }
+  try{ const raw = localStorage.getItem(STORAGE_KEY); data = raw?JSON.parse(raw):{counts:{},streak:0,lastDate:null}; }
+  catch{ data = {counts:{},streak:0,lastDate:null}; }
   const today = todayStr();
-  if (data.lastDate !== today) {
-    const y = new Date();
-    y.setDate(y.getDate() - 1);
-    const yesterday = y.toISOString().slice(0, 10);
-    data.streak = data.lastDate === yesterday ? data.streak + 1 : (data.lastDate ? 1 : 0);
+  if(data.lastDate !== today){
+    const y = new Date(); y.setDate(y.getDate()-1);
+    const yesterday = y.toISOString().slice(0,10);
+    data.streak = data.lastDate === yesterday ? data.streak+1 : 1;
     data.lastDate = today;
   }
   saveProgress(data);
   return data;
 }
-function saveProgress(data) {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch {}
-}
-
+function saveProgress(data){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); }catch(e){} }
 let progress = loadProgress();
-let state = { mode: "home", activeCat: "Todos" };
 
-function markResult(id, correct) {
-  const cur = progress.counts[id] || 0;
-  progress.counts[id] = correct ? Math.min(cur + 1, KNOWN_THRESHOLD) : Math.max(cur - 1, 0);
+function markResult(id, correct){
+  const cur = progress.counts[id]||0;
+  progress.counts[id] = correct ? Math.min(cur+1,KNOWN_THRESHOLD) : Math.max(cur-1,0);
   saveProgress(progress);
 }
-
-function computeStats() {
-  let known = 0, learning = 0;
-  VOCAB.forEach(w => {
-    const c = progress.counts[w.id] || 0;
-    if (c >= KNOWN_THRESHOLD) known++;
-    else if (c > 0) learning++;
-  });
-  return { known, learning, unseen: VOCAB.length - known - learning, total: VOCAB.length };
+function computeStats(){
+  let known=0, learning=0;
+  VOCAB.forEach(w=>{ const c=progress.counts[w.id]||0; if(c>=KNOWN_THRESHOLD) known++; else if(c>0) learning++; });
+  return { known, learning, unseen: VOCAB.length-known-learning, total: VOCAB.length };
 }
 
+/* ---------- Conjugation data ---------- */
+const PERSONS5 = ["yo","tú","él/ella/usted","nosotros","ellos/ellas/ustedes"];
+const PERSONS_IMP = ["tú","usted","nosotros","ustedes"];
+const TENSE_LABELS = { presente:"現在形", indefinido:"点過去", imperfecto:"線過去", futuro:"未来形", imperativo:"命令形" };
+const TENSE_NOTES = {
+  presente:"現在の習慣や事実を表す形。",
+  indefinido:"過去に完了した1回きりの行為を表す（点過去）。",
+  imperfecto:"過去に繰り返していた習慣や、当時の状態を表す（線過去）。",
+  futuro:"これから起こることを表す未来形。",
+  imperativo:"命令・依頼を表す命令形。",
+};
+const VERBS = [
+  { v:"hablar", ja:"話す", presente:["hablo","hablas","habla","hablamos","hablan"],
+    indefinido:["hablé","hablaste","habló","hablamos","hablaron"],
+    imperfecto:["hablaba","hablabas","hablaba","hablábamos","hablaban"],
+    futuro:["hablaré","hablarás","hablará","hablaremos","hablarán"],
+    imperativo:["habla","hable","hablemos","hablen"] },
+  { v:"comer", ja:"食べる", presente:["como","comes","come","comemos","comen"],
+    indefinido:["comí","comiste","comió","comimos","comieron"],
+    imperfecto:["comía","comías","comía","comíamos","comían"],
+    futuro:["comeré","comerás","comerá","comeremos","comerán"],
+    imperativo:["come","coma","comamos","coman"] },
+  { v:"vivir", ja:"住む/生きる", presente:["vivo","vives","vive","vivimos","viven"],
+    indefinido:["viví","viviste","vivió","vivimos","vivieron"],
+    imperfecto:["vivía","vivías","vivía","vivíamos","vivían"],
+    futuro:["viviré","vivirás","vivirá","viviremos","vivirán"],
+    imperativo:["vive","viva","vivamos","vivan"] },
+  { v:"ser", ja:"〜である", presente:["soy","eres","es","somos","son"],
+    indefinido:["fui","fuiste","fue","fuimos","fueron"],
+    imperfecto:["era","eras","era","éramos","eran"],
+    futuro:["seré","serás","será","seremos","serán"],
+    imperativo:["sé","sea","seamos","sean"] },
+  { v:"estar", ja:"〜にいる", presente:["estoy","estás","está","estamos","están"],
+    indefinido:["estuve","estuviste","estuvo","estuvimos","estuvieron"],
+    imperfecto:["estaba","estabas","estaba","estábamos","estaban"],
+    futuro:["estaré","estarás","estará","estaremos","estarán"],
+    imperativo:["está","esté","estemos","estén"] },
+  { v:"tener", ja:"持つ", presente:["tengo","tienes","tiene","tenemos","tienen"],
+    indefinido:["tuve","tuviste","tuvo","tuvimos","tuvieron"],
+    imperfecto:["tenía","tenías","tenía","teníamos","tenían"],
+    futuro:["tendré","tendrás","tendrá","tendremos","tendrán"],
+    imperativo:["ten","tenga","tengamos","tengan"] },
+  { v:"ir", ja:"行く", presente:["voy","vas","va","vamos","van"],
+    indefinido:["fui","fuiste","fue","fuimos","fueron"],
+    imperfecto:["iba","ibas","iba","íbamos","iban"],
+    futuro:["iré","irás","irá","iremos","irán"],
+    imperativo:["ve","vaya","vamos","vayan"] },
+  { v:"hacer", ja:"する/作る", presente:["hago","haces","hace","hacemos","hacen"],
+    indefinido:["hice","hiciste","hizo","hicimos","hicieron"],
+    imperfecto:["hacía","hacías","hacía","hacíamos","hacían"],
+    futuro:["haré","harás","hará","haremos","harán"],
+    imperativo:["haz","haga","hagamos","hagan"] },
+  { v:"poder", ja:"〜できる", presente:["puedo","puedes","puede","podemos","pueden"],
+    indefinido:["pude","pudiste","pudo","pudimos","pudieron"],
+    imperfecto:["podía","podías","podía","podíamos","podían"],
+    futuro:["podré","podrás","podrá","podremos","podrán"],
+    imperativo:["puede","pueda","podamos","puedan"] },
+  { v:"querer", ja:"欲しい/したい", presente:["quiero","quieres","quiere","queremos","quieren"],
+    indefinido:["quise","quisiste","quiso","quisimos","quisieron"],
+    imperfecto:["quería","querías","quería","queríamos","querían"],
+    futuro:["querré","querrás","querrá","querremos","querrán"],
+    imperativo:["quiere","quiera","queramos","quieran"] },
+];
+const TENSE_KEYS = ["presente","indefinido","imperfecto","futuro","imperativo"];
+
+/* ---------- App state ---------- */
+let state = { tab:"vocab", mode:"home", activeCat:"Todos", conjTense:"Todos" };
 const app = document.getElementById("app");
+function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
-function render() {
+function render(){
   app.innerHTML = "";
-  if (state.mode === "home") renderHome();
-  else if (state.mode === "flash") renderFlash();
-  else if (state.mode === "quiz") renderQuiz();
+  app.appendChild(navBar());
+  if(state.tab==="vocab"){
+    if(state.mode==="home") renderVocabHome();
+    else if(state.mode==="flash") renderFlash();
+    else if(state.mode==="quiz") renderQuiz();
+  } else if(state.tab==="conj"){
+    renderConjugation();
+  } else if(state.tab==="column"){
+    renderColumn();
+  } else if(state.tab==="news"){
+    renderNews();
+  }
 }
 
-function el(tag, className, html) {
-  const e = document.createElement(tag);
-  if (className) e.className = className;
-  if (html !== undefined) e.innerHTML = html;
-  return e;
+function navBar(){
+  const row = el("div","nav-row");
+  [["vocab","単語"],["conj","活用"],["column","コラム"],["news","ニュース"]].forEach(([key,label])=>{
+    const b = el("button","nav-btn"+(state.tab===key?" active":""), label);
+    b.onclick = ()=>{ state.tab=key; state.mode="home"; flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; render(); };
+    row.appendChild(b);
+  });
+  return row;
 }
 
-// ---------- Home ----------
-function renderHome() {
+/* ---------- Vocab Home ---------- */
+function renderVocabHome(){
   const stats = computeStats();
-  const pct = Math.round((stats.known / stats.total) * 100);
-
+  const pct = Math.round((stats.known/stats.total)*100);
   const header = el("div");
-  header.appendChild(el("div", "eyebrow", "CUADERNO DE VIAJE"));
-  header.appendChild(el("h1", "title", "Tu español"));
-  const streakRow = el("div", "streak-row");
-  streakRow.innerHTML = `<span>🔥</span><span class="streak-text">${progress.streak} ${progress.streak === 1 ? "día" : "días"} seguidos</span>`;
-  header.appendChild(streakRow);
+  header.appendChild(el("div","eyebrow","CUADERNO DE VIAJE"));
+  header.appendChild(el("h1","title","Tu español"));
+  const sr = el("div","streak-row");
+  sr.innerHTML = `<span>🔥</span><span class="streak-text">${progress.streak} ${progress.streak===1?"día":"días"} seguidos</span>`;
+  header.appendChild(sr);
   app.appendChild(header);
 
-  const passport = el("div", "passport");
+  const passport = el("div","passport");
   passport.innerHTML = `
     <div class="passport-top">
-      <div>
-        <div class="passport-label">Sellos coleccionados</div>
-        <div class="passport-num">${stats.known}<span class="passport-of"> / ${stats.total}</span></div>
-      </div>
+      <div><div class="passport-label">Sellos coleccionados</div>
+      <div class="passport-num">${stats.known}<span class="passport-of"> / ${stats.total}</span></div></div>
       <div class="stamp-circle">${pct}%</div>
     </div>
     <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
@@ -290,178 +397,262 @@ function renderHome() {
     </div>`;
   app.appendChild(passport);
 
-  app.appendChild(el("div", "section-label", "Categoría"));
-  const chipRow = el("div", "chip-row");
-  ["Todos", ...CATEGORIES].forEach(c => {
-    const chip = el("button", "chip" + (state.activeCat === c ? " active" : ""), c);
-    chip.onclick = () => { state.activeCat = c; render(); };
+  app.appendChild(el("div","section-label","Categoría（集中練習もここから）"));
+  const chipRow = el("div","chip-row");
+  ["Todos", ...CATEGORIES].forEach(c=>{
+    const chip = el("button","chip"+(state.activeCat===c?" active":""), c);
+    chip.onclick = ()=>{ state.activeCat=c; render(); };
     chipRow.appendChild(chip);
   });
   app.appendChild(chipRow);
 
-  const modeGrid = el("div", "mode-grid");
-  const flashCard = el("button", "mode-card");
-  flashCard.innerHTML = `<div class="mode-icon">🗂️</div><div class="mode-name">Tarjetas</div><div class="mode-desc">Repasa a tu ritmo</div>`;
-  flashCard.onclick = () => { state.mode = "flash"; render(); };
-  const quizCard = el("button", "mode-card");
-  quizCard.innerHTML = `<div class="mode-icon">✅</div><div class="mode-name">Quiz</div><div class="mode-desc">Elige la respuesta</div>`;
-  quizCard.onclick = () => { state.mode = "quiz"; render(); };
-  modeGrid.appendChild(flashCard);
-  modeGrid.appendChild(quizCard);
+  const modeGrid = el("div","mode-grid");
+  const fc = el("button","mode-card"); fc.innerHTML = `<div class="mode-icon">🗂️</div><div class="mode-name">Tarjetas</div><div class="mode-desc">Repasa a tu ritmo</div>`;
+  fc.onclick = ()=>{ state.mode="flash"; render(); };
+  const qc = el("button","mode-card"); qc.innerHTML = `<div class="mode-icon">✅</div><div class="mode-name">Quiz</div><div class="mode-desc">Elige la respuesta</div>`;
+  qc.onclick = ()=>{ state.mode="quiz"; render(); };
+  modeGrid.appendChild(fc); modeGrid.appendChild(qc);
   app.appendChild(modeGrid);
-
-  app.appendChild(el("div", "footer-hint", "Unos minutos libres · practica y sigue tu viaje"));
+  app.appendChild(el("div","footer-hint","Unos minutos libres · practica y sigue tu viaje"));
 }
 
-function topBar(label, progressText, onExit) {
-  const bar = el("div", "top-bar");
-  const exitBtn = el("button", "exit-btn", "← Salir");
-  exitBtn.onclick = onExit;
-  const center = el("div", "top-bar-center");
-  center.innerHTML = `<div class="top-bar-label">${label}</div><div class="top-bar-progress">${progressText}</div>`;
-  bar.appendChild(exitBtn);
-  bar.appendChild(center);
-  bar.appendChild(el("div", "spacer60"));
+function topBar(label, progressText, onExit){
+  const bar = el("div","top-bar");
+  const eb = el("button","exit-btn","← Salir"); eb.onclick = onExit;
+  const c = el("div","top-bar-center"); c.innerHTML = `<div class="top-bar-label">${label}</div><div class="top-bar-progress">${progressText}</div>`;
+  bar.appendChild(eb); bar.appendChild(c); bar.appendChild(el("div","spacer60"));
   return bar;
 }
-
-function doneScreen(label, score, total) {
-  const wrap = el("div", "done-wrap");
-  wrap.innerHTML = `
-    <div class="done-stamp">✓</div>
-    <div class="done-title">¡Sesión completa!</div>
-    ${typeof score === "number" ? `<div class="done-score">${score} / ${total} correctas</div>` : ""}
+function speakRow(text){
+  const row = el("div","speak-row");
+  const btn = el("button","speak-btn","🔊");
+  btn.onclick = (e)=>{ e.stopPropagation(); speak(text); };
+  row.appendChild(btn);
+  return row;
+}
+function doneScreen(label, score, total){
+  const wrap = el("div","done-wrap");
+  wrap.innerHTML = `<div class="done-stamp">✓</div><div class="done-title">¡Sesión completa!</div>
+    ${typeof score==="number" ? `<div class="done-score">${score} / ${total} correctas</div>` : ""}
     <div class="done-sub">Terminaste tu ronda de ${label}.</div>`;
-  const btn = el("button", "primary-btn", "Volver al inicio");
-  btn.onclick = () => { state.mode = "home"; render(); };
+  const btn = el("button","primary-btn","Volver al inicio");
+  btn.onclick = ()=>{ state.mode="home"; render(); };
   wrap.appendChild(btn);
   app.appendChild(wrap);
 }
 
-// ---------- Flashcards ----------
-let flashDeck = [], flashIdx = 0, flashFlipped = false;
-
-function renderFlash() {
-  const pool = state.activeCat === "Todos" ? VOCAB : VOCAB.filter(w => w.cat === state.activeCat);
-  if (flashDeck.length === 0 || flashIdx === -1) {
-    flashDeck = shuffle(pool);
-    flashIdx = 0;
-    flashFlipped = false;
-  }
-  if (pool.length === 0) {
-    const wrap = el("div", "done-wrap");
-    wrap.innerHTML = `<div class="done-title">No hay palabras aquí todavía.</div>`;
-    const btn = el("button", "primary-btn", "Volver");
-    btn.onclick = () => { state.mode = "home"; flashDeck = []; render(); };
-    wrap.appendChild(btn);
-    app.appendChild(wrap);
-    return;
-  }
-  if (flashIdx >= flashDeck.length) {
-    doneScreen("tarjetas");
-    flashDeck = [];
-    return;
-  }
-
-  app.appendChild(topBar(flashDeck[flashIdx].cat, `${flashIdx + 1} / ${flashDeck.length}`, () => {
-    state.mode = "home"; flashDeck = []; render();
-  }));
-
+/* ---------- Flashcards ---------- */
+let flashDeck=[], flashIdx=0, flashFlipped=false;
+function renderFlash(){
+  const pool = state.activeCat==="Todos" ? VOCAB : VOCAB.filter(w=>w.cat===state.activeCat);
+  if(flashDeck.length===0){ flashDeck = shuffle(pool); flashIdx=0; flashFlipped=false; }
+  if(pool.length===0){ const w=el("div","done-wrap","<div class='done-title'>まだ単語がありません</div>"); const b=el("button","primary-btn","戻る"); b.onclick=()=>{state.mode="home";flashDeck=[];render();}; w.appendChild(b); app.appendChild(w); return; }
+  if(flashIdx>=flashDeck.length){ doneScreen("tarjetas"); flashDeck=[]; return; }
+  app.appendChild(topBar(flashDeck[flashIdx].cat, `${flashIdx+1} / ${flashDeck.length}`, ()=>{ state.mode="home"; flashDeck=[]; render(); }));
   const card = flashDeck[flashIdx];
-  const cardArea = el("div", "card-area");
-  const flashcard = el("div", "flashcard" + (flashFlipped ? " flipped" : ""));
-  const front = el("div", "flash-face flash-front");
+  const cardArea = el("div","card-area");
+  const fcEl = el("div","flashcard"+(flashFlipped?" flipped":""));
+  const front = el("div","flash-face flash-front");
   front.innerHTML = `<div class="flash-word">${card.es}</div><div class="tap-hint">toca para ver la traducción</div>`;
-  const back = el("div", "flash-face flash-back");
-  back.innerHTML = `<div class="flash-word">${card.en}</div><div class="tap-hint">${card.es}</div>`;
-  flashcard.appendChild(front);
-  flashcard.appendChild(back);
-  flashcard.onclick = () => { flashFlipped = !flashFlipped; render(); };
-  cardArea.appendChild(flashcard);
-  app.appendChild(cardArea);
-
-  if (flashFlipped) {
-    const row = el("div", "judge-row");
-    const no = el("button", "judge-btn judge-no", "Aún no ✕");
-    no.onclick = () => { markResult(card.id, false); flashFlipped = false; flashIdx++; render(); };
-    const yes = el("button", "judge-btn judge-yes", "Lo sé ✓");
-    yes.onclick = () => { markResult(card.id, true); flashFlipped = false; flashIdx++; render(); };
-    row.appendChild(no);
-    row.appendChild(yes);
-    app.appendChild(row);
+  const back = el("div","flash-face flash-back");
+  back.innerHTML = `<div class="flash-word">${card.en}</div><div class="flash-ja">${card.ja}</div><div class="tap-hint">${card.es}</div>`;
+  fcEl.appendChild(front); fcEl.appendChild(back);
+  fcEl.onclick = ()=>{ flashFlipped=!flashFlipped; render(); };
+  cardArea.appendChild(fcEl); app.appendChild(cardArea);
+  app.appendChild(speakRow(card.es));
+  if(flashFlipped){
+    const row = el("div","judge-row");
+    const no = el("button","judge-btn judge-no","Aún no ✕");
+    no.onclick = ()=>{ markResult(card.id,false); playWrong(); flashFlipped=false; flashIdx++; render(); };
+    const yes = el("button","judge-btn judge-yes","Lo sé ✓");
+    yes.onclick = ()=>{ markResult(card.id,true); playCorrect(); flashFlipped=false; flashIdx++; render(); };
+    row.appendChild(no); row.appendChild(yes); app.appendChild(row);
   } else {
-    app.appendChild(el("div", "tap-prompt", "— toca la tarjeta —"));
+    app.appendChild(el("div","tap-prompt","— toca la tarjeta —"));
   }
 }
 
-// ---------- Quiz ----------
-let quizPool = [], quizTotal = 0, quizIdx = 0, quizQuestion = null, quizPicked = null, quizScore = 0;
-
-function buildQuestion(pool) {
-  const word = pool[Math.floor(Math.random() * pool.length)];
-  const distractors = shuffle(VOCAB.filter(w => w.id !== word.id)).slice(0, 3);
-  return { word, options: shuffle([word, ...distractors]) };
+/* ---------- Vocab Quiz ---------- */
+let quizPool=[], quizTotal=0, quizIdx=0, quizQuestion=null, quizPicked=null, quizScore=0, quizMissed=[];
+function buildQuestion(pool){
+  const word = pool[Math.floor(Math.random()*pool.length)];
+  const distractors = shuffle(VOCAB.filter(w=>w.id!==word.id)).slice(0,3);
+  return { word, options: shuffle([word,...distractors]) };
 }
-
-function renderQuiz() {
-  const pool = state.activeCat === "Todos" ? VOCAB : VOCAB.filter(w => w.cat === state.activeCat);
-  if (pool.length < 4) {
-    const wrap = el("div", "done-wrap");
-    wrap.innerHTML = `<div class="done-title">Se necesitan más palabras en esta categoría.</div>`;
-    const btn = el("button", "primary-btn", "Volver");
-    btn.onclick = () => { state.mode = "home"; render(); };
-    wrap.appendChild(btn);
-    app.appendChild(wrap);
-    return;
-  }
-  if (!quizQuestion || quizPool !== pool) {
-    quizPool = pool;
-    quizTotal = Math.min(10, pool.length);
-    quizIdx = 0;
-    quizQuestion = buildQuestion(pool);
-    quizPicked = null;
-    quizScore = 0;
-  }
-  if (quizIdx >= quizTotal) {
+function renderQuiz(){
+  const pool = state.activeCat==="Todos" ? VOCAB : VOCAB.filter(w=>w.cat===state.activeCat);
+  if(pool.length<4){ const w=el("div","done-wrap","<div class='done-title'>このカテゴリは単語が足りません</div>"); const b=el("button","primary-btn","戻る"); b.onclick=()=>{state.mode="home";render();}; w.appendChild(b); app.appendChild(w); return; }
+  if(!quizQuestion || quizPool!==pool){ quizPool=pool; quizTotal=Math.min(10,pool.length); quizIdx=0; quizQuestion=buildQuestion(pool); quizPicked=null; quizScore=0; quizMissed=[]; }
+  if(quizIdx>=quizTotal){
     doneScreen("quiz", quizScore, quizTotal);
-    quizQuestion = null;
-    return;
+    if(quizMissed.length){
+      const rl = el("div","review-list");
+      rl.appendChild(el("div","section-label","日本語で復習"));
+      quizMissed.forEach(m=>{
+        const item = el("div","review-item");
+        item.innerHTML = `<div class="review-q">${m.es}</div><div class="review-a">${m.en} ／ ${m.ja}</div>`;
+        rl.appendChild(item);
+      });
+      app.appendChild(rl);
+    }
+    quizQuestion=null; return;
   }
-
-  app.appendChild(topBar(quizQuestion.word.cat, `${quizIdx + 1} / ${quizTotal}`, () => {
-    state.mode = "home"; quizQuestion = null; render();
-  }));
-
-  const prompt = el("div", "quiz-prompt");
+  app.appendChild(topBar(quizQuestion.word.cat, `${quizIdx+1} / ${quizTotal}`, ()=>{ state.mode="home"; quizQuestion=null; render(); }));
+  const prompt = el("div","quiz-prompt");
   prompt.innerHTML = `<div class="quiz-label">¿Cómo se dice…?</div><div class="quiz-word">${quizQuestion.word.es}</div>`;
   app.appendChild(prompt);
-
-  const grid = el("div", "options-grid");
-  quizQuestion.options.forEach(opt => {
-    const btn = el("button", "option-btn", opt.en);
-    if (quizPicked !== null) {
-      if (opt.id === quizQuestion.word.id) btn.classList.add("correct");
-      else if (opt.id === quizPicked) btn.classList.add("wrong");
-    }
-    btn.onclick = () => {
-      if (quizPicked !== null) return;
-      const correct = opt.id === quizQuestion.word.id;
+  app.appendChild(speakRow(quizQuestion.word.es));
+  const grid = el("div","options-grid");
+  quizQuestion.options.forEach(opt=>{
+    const btn = el("button","option-btn", opt.en);
+    if(quizPicked!==null){ if(opt.id===quizQuestion.word.id) btn.classList.add("correct"); else if(opt.id===quizPicked) btn.classList.add("wrong"); }
+    btn.onclick = ()=>{
+      if(quizPicked!==null) return;
+      const correct = opt.id===quizQuestion.word.id;
       quizPicked = opt.id;
       markResult(quizQuestion.word.id, correct);
-      if (correct) quizScore++;
+      if(correct){ quizScore++; playCorrect(); } else { playWrong(); quizMissed.push(quizQuestion.word); }
       render();
-      setTimeout(() => {
-        quizIdx++;
-        if (quizIdx < quizTotal) {
-          quizQuestion = buildQuestion(pool);
-          quizPicked = null;
-        }
-        render();
-      }, 700);
+      setTimeout(()=>{ quizIdx++; if(quizIdx<quizTotal){ quizQuestion=buildQuestion(pool); quizPicked=null; } render(); }, 700);
     };
     grid.appendChild(btn);
   });
   app.appendChild(grid);
+}
+
+/* ---------- Conjugation trainer ---------- */
+let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjFeedback="";
+function buildConjQuestion(tenseFilter){
+  const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
+  const verb = VERBS[Math.floor(Math.random()*VERBS.length)];
+  const persons = tense==="imperativo" ? PERSONS_IMP : PERSONS5;
+  const pIdx = Math.floor(Math.random()*persons.length);
+  return { verb, tense, personIdx:pIdx, personLabel:persons[pIdx], answer: verb[tense][pIdx] };
+}
+function renderConjugation(){
+  const header = el("div");
+  header.appendChild(el("div","eyebrow","GIMNASIO DE VERBOS"));
+  header.appendChild(el("h1","title","活用トレーニング"));
+  app.appendChild(header);
+
+  app.appendChild(el("div","section-label","時制を選ぶ"));
+  const chipRow = el("div","chip-row");
+  ["Todos", ...TENSE_KEYS].forEach(t=>{
+    const label = t==="Todos" ? "Todos" : TENSE_LABELS[t];
+    const chip = el("button","chip"+(state.conjTense===t?" active":""), label);
+    chip.onclick = ()=>{ state.conjTense=t; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; render(); };
+    chipRow.appendChild(chip);
+  });
+  app.appendChild(chipRow);
+
+  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjFeedback=""; }
+
+  if(conjIdx>=conjTotal){
+    doneScreen2conj();
+    return;
+  }
+
+  const progressLine = el("div","top-bar-progress");
+  const pr = el("div"); pr.style.textAlign="center"; pr.style.marginBottom="14px";
+  pr.innerHTML = `<div class="top-bar-label">${conjIdx+1} / ${conjTotal}　·　スコア ${conjScore}</div>`;
+  app.appendChild(pr);
+
+  const prompt = el("div","conj-prompt");
+  prompt.innerHTML = `<div class="conj-tense">${TENSE_LABELS[conjQuestion.tense]}</div>
+    <div class="conj-verb">${conjQuestion.verb.v}<span style="font-size:13px;color:#C9BBE8;"> （${conjQuestion.verb.ja}）</span></div>
+    <div class="conj-person">${conjQuestion.personLabel}</div>`;
+  app.appendChild(prompt);
+
+  const row = el("div","conj-input-row");
+  const input = el("input","conj-input");
+  input.setAttribute("type","text"); input.setAttribute("placeholder","スペイン語で入力…"); input.setAttribute("autocapitalize","none"); input.setAttribute("autocorrect","off");
+  const submit = el("button","conj-submit","確認");
+  row.appendChild(input); row.appendChild(submit);
+  app.appendChild(row);
+
+  const fb = el("div","conj-feedback"); fb.id="conjfb"; fb.textContent = conjFeedback;
+  app.appendChild(fb);
+
+  function submitAnswer(){
+    const val = input.value;
+    if(!val) return;
+    const ok = norm(val) === norm(conjQuestion.answer);
+    if(ok){ conjScore++; playCorrect(); fb.textContent = "¡Correcto! ✓"; fb.className="conj-feedback ok"; }
+    else{ playWrong(); fb.textContent = `正解: ${conjQuestion.answer}`; fb.className="conj-feedback no"; conjMissed.push({...conjQuestion}); }
+    input.disabled = true; submit.disabled = true;
+    setTimeout(()=>{ conjIdx++; if(conjIdx<conjTotal){ conjQuestion = buildConjQuestion(state.conjTense); conjFeedback=""; } render(); }, 900);
+  }
+  submit.onclick = submitAnswer;
+  input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
+
+  const exitBtn = el("button","ghost-btn","中断してホームへ");
+  exitBtn.style.display="block"; exitBtn.style.margin="18px auto 0";
+  exitBtn.onclick = ()=>{ state.tab="vocab"; state.mode="home"; conjQuestion=null; render(); };
+  app.appendChild(exitBtn);
+}
+function doneScreen2conj(){
+  const wrap = el("div","done-wrap");
+  wrap.innerHTML = `<div class="done-stamp">✓</div><div class="done-title">¡Sesión completa!</div>
+    <div class="done-score">${conjScore} / ${conjTotal} correctas</div>`;
+  const btn = el("button","primary-btn","もう一度");
+  btn.onclick = ()=>{ conjQuestion=null; render(); };
+  wrap.appendChild(btn);
+  app.appendChild(wrap);
+  if(conjMissed.length){
+    const rl = el("div","review-list");
+    rl.appendChild(el("div","section-label","日本語で復習"));
+    conjMissed.forEach(m=>{
+      const item = el("div","review-item");
+      item.innerHTML = `<div class="review-q">${m.verb.v}（${m.personLabel}・${TENSE_LABELS[m.tense]}）</div>
+        <div class="review-a">正解: ${m.answer}</div>
+        <div class="review-note">${TENSE_NOTES[m.tense]}</div>`;
+      rl.appendChild(item);
+    });
+    app.appendChild(rl);
+  }
+}
+
+/* ---------- Column (Japanese trivia) ---------- */
+const COLUMN_ARTICLES = [
+  { title:"「¿Cómo estás?」への返し方", body:"スペイン語圏では「Bien, ¿y tú?（元気だよ、君は?）」と聞き返すのがマナーのようなもの。相手の質問をそのまま返すだけで会話が自然に続くので、まずはこの型を覚えておくと安心です。" },
+  { title:"点過去と線過去、使い分けのコツ", body:"点過去は「その日1回だけ起きた完了した出来事」、線過去は「当時よく繰り返していた習慣」や「背景の状態」を表します。日本語で「〜した」と訳せて1回きりなら点過去、「〜していた」と訳せる継続的な状況なら線過去、と考えるとイメージしやすいです。" },
+  { title:"メキシコの朝ごはん文化", body:"メキシコの朝食は意外とボリュームがあり、チラキレス（揚げトルティーヤをサルサで煮た料理）や豆料理が定番。カフェ・デ・オヤという、シナモンと素焼き砂糖(ピロンシージョ)で煮出したコーヒーもよく飲まれます。" },
+  { title:"スペイン語の「巻き舌R」のコツ", body:"rr（二重のr）や語頭のrは、舌先を上の歯茎に軽く当てて息を弾かせるように発音します。日本語の「ら行」を素早く連続で言う練習（られられられ…）から始めると感覚をつかみやすいと言われています。" },
+  { title:"スペイン語は国によって結構違う", body:"メキシコでは「Órale」「¿Qué onda?」のようなくだけた表現がよく使われますが、スペインでは「Vale」「¿Qué tal?」が一般的。同じスペイン語でも国ごとに語彙やイントネーションがかなり異なります。" },
+  { title:"メキシコの「死者の日」", body:"11月初旬に祝われる死者の日（Día de los Muertos）は、亡くなった家族を偲ぶお祭り。骸骨をモチーフにしたカラフルな飾り付けや、故人の好物を供える祭壇（オフレンダ）が特徴的で、2008年にはユネスコの無形文化遺産にも登録されています。" },
+];
+function renderColumn(){
+  const header = el("div");
+  header.appendChild(el("div","eyebrow","COLUMNA"));
+  header.appendChild(el("h1","title","豆知識コラム"));
+  app.appendChild(header);
+  const spacer = el("div"); spacer.style.height="16px"; app.appendChild(spacer);
+  COLUMN_ARTICLES.forEach(a=>{
+    const art = el("div","article");
+    art.innerHTML = `<div class="article-title">${a.title}</div><div class="article-body">${a.body}</div>`;
+    app.appendChild(art);
+  });
+}
+
+/* ---------- News snapshot ---------- */
+const NEWS_ITEMS = [
+  { title:"チアパス州沖でM7.3〜7.4の地震（7月17日）", body:"メキシコ南部チアパス州の太平洋沖で強い地震が発生し、一時津波警報が出されました。グアテマラやエルサルバドルでも揺れが観測されましたが、これまでのところ大きな人的被害の報告はないとのことです。" },
+  { title:"FIFAワールドカップをメキシコが共催", body:"2026年のFIFAワールドカップは、アメリカ・メキシコ・カナダの北米3カ国による共催で、6月11日にメキシコシティで開幕しました。メキシコにとって単独開催国を含め3度目となるワールドカップ開催です。" },
+  { title:"メキシコ代表サッカーチームが好調", body:"メキシコ代表は直近の親善試合で好成績を収めており、失点の少ない堅実な守備が持ち味とされています。ワールドカップ home国として、地元サポーターの期待も高まっています。" },
+];
+function renderNews(){
+  const header = el("div");
+  header.appendChild(el("div","eyebrow","NOTICIAS"));
+  header.appendChild(el("h1","title","メキシコニュース"));
+  app.appendChild(header);
+  const badge = el("div","news-badge","このニュースは2026年7月28日時点のスナップショットです。オフラインで動くページのため自動更新はされません。最新情報は別途ニュースサイトでご確認ください。");
+  const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
+  app.appendChild(badge);
+  NEWS_ITEMS.forEach(n=>{
+    const art = el("div","article");
+    art.innerHTML = `<div class="article-title">${n.title}</div><div class="article-body">${n.body}</div>`;
+    app.appendChild(art);
+  });
 }
 
 render();
