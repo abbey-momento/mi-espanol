@@ -166,4 +166,79 @@ const GRAMMAR_ARTICLES = [
     body:"スペイン語の単語は、決まったルールで自然に強勢（アクセント）の位置が決まり、そのルールから外れる場合だけアクセント記号（tilde）をつけます。\n\n① 母音（a,e,i,o,u）またはn,sで終わる単語 → 後ろから2番目の音節に強勢：casa, hablan, libros\n② それ以外の子音で終わる単語 → 最後の音節に強勢：hablar, ciudad, reloj\n③ このルールに当てはまらない単語には、強勢のある母音にtildeをつける：café, canción, árbol\n\nまた、qué/cuál/cómoのような疑問詞は、疑問の意味のときだけtildeがつきます（que＝関係代名詞「〜する」、qué＝疑問詞「何」）。" },
   { title:"時間の経過を表す表現（desde / hace / llevar）",
     body:"「〜以来」「〜前に」「〜し続けている」という時間表現は英語と発想が違うので注意が必要です。\n\n① hace + 期間（〜前に、過去の一時点）：Llegué hace dos horas.（2時間前に着いた）\n② desde hace + 期間（〜前から続けて今も）：Vivo aquí desde hace tres años.（3年前からここに住んでいる）\n③ llevar + 期間 + 現在分詞（〜し続けている）：Llevo tres años viviendo aquí.（3年間ここに住んでいる＝②とほぼ同じ意味で口語的）\n\n②と③はほぼ同じ意味を表せる、よく使われる言い換えパターンです。" },
+  // ---------- 動詞の作り方（応用） ----------
+  { title:"命令形の作り方（規則・不規則）",
+    body:"命令形は「肯定命令」と「否定命令」で作り方が違います。tú（肯定）だけは接続法を使わず、直説法現在のél/ella形と同じという特別ルールがあります。それ以外（usted, nosotros, ustedes、そしてtúの否定形）はすべて接続法現在の形をそのまま使います。\n\n例: ¡Habla más despacio!（tú肯定・もっとゆっくり話して）／ ¡No hables tan rápido!（tú否定・そんなに早く話さないで）／ ¡Hable usted, por favor!（usted・お話しください）",
+    table:{ cols:["主語","肯定命令","否定命令"], rows:[
+      ["tú","habla（直説法él形と同じ）","no hables（接続法）"],
+      ["usted","hable（接続法）","no hable（接続法）"],
+      ["nosotros","hablemos（接続法）","no hablemos（接続法）"],
+      ["ustedes","hablen（接続法）","no hablen（接続法）"]
+    ] } },
+  { title:"tú肯定命令の不規則形一覧",
+    body:"tú（肯定）の命令形には、直説法él/ella形とは違う特別な不規則形を持つ動詞が8つあります。これはよく使う動詞ばかりなので、まとめて覚えてしまうのが効率的です。",
+    table:{ cols:["動詞","tú肯定命令","意味"], rows:[
+      ["tener","ten","持って"], ["venir","ven","来て"], ["ir","ve","行って"],
+      ["ser","sé","〜であって"], ["salir","sal","出て"], ["poner","pon","置いて"],
+      ["hacer","haz","して"], ["decir","di","言って"]
+    ] } },
+  { title:"語根母音変化動詞（e→ie, o→ue, e→i）",
+    body:"直説法現在で、アクセントが語根（動詞の中心部分）に来るとき、母音が変化する動詞のグループです。nosotros/vosotros以外の全人称で変化するのが特徴です。\n\n① e→ie型：querer（欲しい）→ quiero, quieres, quiere, queremos, quieren\n② o→ue型：poder（〜できる）→ puedo, puedes, puede, podemos, pueden\n③ e→i型（-ir動詞のみ）：pedir（頼む）→ pido, pides, pide, pedimos, piden\n\nnosotrosの形だけ変化しない（queremos, podemos, pedimos）という共通パターンを覚えておくと、初めて見る動詞でも予測しやすくなります。",
+    table:{ cols:["変化型","代表的な動詞","yoの形"], rows:[
+      ["e→ie","querer, pensar, empezar, sentir","quiero, pienso, empiezo, siento"],
+      ["o→ue","poder, dormir, volver, contar","puedo, duermo, vuelvo, cuento"],
+      ["e→i","pedir, servir, repetir, seguir","pido, sirvo, repito, sigo"]
+    ] } },
+  { title:"過去分詞の不規則形一覧",
+    body:"現在完了形（he hablado等）や受け身（ser+過去分詞）で使う過去分詞は、-ar動詞なら-ado、-er/-ir動詞なら-idoが規則形ですが、よく使う動詞に不規則な形がいくつもあります。まとめて覚えておくと安心です。",
+    table:{ cols:["動詞","不規則な過去分詞","意味"], rows:[
+      ["hacer","hecho","した"], ["decir","dicho","言った"], ["escribir","escrito","書いた"],
+      ["ver","visto","見た"], ["poner","puesto","置いた"], ["volver","vuelto","戻った"],
+      ["abrir","abierto","開けた"], ["romper","roto","壊れた"], ["morir","muerto","死んだ"],
+      ["cubrir","cubierto","覆った"]
+    ] } },
+  { title:"現在分詞の不規則形一覧",
+    body:"進行形（estar+現在分詞）で使う現在分詞（gerundio）にも、規則形（-ando/-iendo）から外れるものがあります。特に語根母音変化する-ir動詞や、母音が連続する動詞に注意が必要です。",
+    table:{ cols:["動詞","不規則な現在分詞","意味"], rows:[
+      ["dormir","durmiendo","眠っている"], ["pedir","pidiendo","頼んでいる"],
+      ["decir","diciendo","言っている"], ["leer","leyendo","読んでいる"],
+      ["oír","oyendo","聞いている"], ["ir","yendo","行っている"],
+      ["venir","viniendo","来ている"], ["poder","pudiendo","できている"]
+    ] } },
+  { title:"接続法過去形（imperfecto de subjuntivo）の作り方",
+    body:"過去の出来事について「〜だといいなと思った」「〜してほしかった」のように接続法を使いたいときの形です。作り方は、点過去のellos/ellas形（例：hablaron）から-ronを取り、決まった語尾をつけます。-ra系と-se系の2種類がありますが、-ra系の方がよく使われます。\n\n例: Quería que hablaras conmigo.（あなたに私と話してほしかった）",
+    table:{ cols:["人称","hablarの例（-ra系）"], rows:[
+      ["yo","hablara"], ["tú","hablaras"], ["él/ella/usted","hablara"],
+      ["nosotros","habláramos"], ["ellos/ellas/ustedes","hablaran"]
+    ] } },
+  // ---------- 前置詞・接続詞・その他品詞 ----------
+  { title:"基本の前置詞一覧と使い方",
+    body:"por/para以外にも押さえておきたい基本前置詞をまとめました。\n\na（〜へ、〜に）：Voy a México.（メキシコに行く）\nde（〜の、〜から）：el libro de María（マリアの本）\nen（〜の中に、〜で）：Estoy en casa.（家にいる）\ncon（〜と一緒に）：Voy con mis amigos.（友人たちと行く）\nsin（〜なしで）：café sin azúcar（砂糖なしのコーヒー）\ndesde（〜から）：desde las nueve（9時から）\nhasta（〜まで）：hasta mañana（明日まで）\nentre（〜の間に）：entre tú y yo（君と私の間で）\nsobre（〜の上に、〜について）：un libro sobre historia（歴史についての本）" },
+  { title:"前置詞＋代名詞の特別な形",
+    body:"前置詞の後ろに人称代名詞を置くとき、基本はmí, ti, él, ella, usted, nosotros, ellos/ellasですが、conと組み合わせるときだけ特別な形になります。\n\n例: Este regalo es para mí.（このプレゼントは私のためのものだ）／ ¿Quieres venir conmigo?（一緒に来る？＝con+mí→conmigo）／ Sí, voy contigo.（うん、君と一緒に行く＝con+ti→contigo）\n\nmíにはtildeが必要（miは所有形容詞「私の」と区別するため）ですが、tiにはtildeをつけない点にも注意してください。",
+    table:{ cols:["前置詞+代名詞","意味"], rows:[
+      ["conmigo","私と一緒に"], ["contigo","君と一緒に"], ["con él/ella/usted","彼/彼女/あなたと一緒に"],
+      ["con nosotros","私たちと一緒に"], ["con ellos/ellas/ustedes","彼らと一緒に"]
+    ] } },
+  { title:"接続詞 y/o の変化と pero vs sino",
+    body:"y（そして）は、次の単語がi音で始まる場合はeに変わります：padre e hijo（父と息子）。o（または）は、次の単語がo音で始まる場合はuに変わります：mujer u hombre（女性または男性）。\n\npero と sino はどちらも「しかし」ですが使い分けが必要です。sinoは「前の内容が否定文で、それを打ち消して別の内容に置き換える」ときだけ使います。\n\n例: No es fácil, pero es posible.（簡単ではないが、可能だ＝単純な逆接）\n例: No es fácil, sino imposible.（簡単なのではなく、不可能だ＝前を否定して置き換え）" },
+  { title:"序数詞（primero, segundo...）",
+    body:"「1番目の、2番目の」を表す序数詞です。10番目（décimo）より先は日常会話ではあまり使われず、基数詞（once, doce...）で代用されることが多いです。primeroとterceroは、男性単数名詞の直前で語尾が落ちる点に注意（el primer día＝最初の日、el tercer piso＝3階）。",
+    table:{ cols:["序数","意味"], rows:[
+      ["primero/primer","1番目の"], ["segundo","2番目の"], ["tercero/tercer","3番目の"],
+      ["cuarto","4番目の"], ["quinto","5番目の"], ["sexto","6番目の"],
+      ["séptimo","7番目の"], ["octavo","8番目の"], ["noveno","9番目の"], ["décimo","10番目の"]
+    ] } },
+  { title:"muy と mucho の使い分け",
+    body:"どちらも「とても」と訳せますが、品詞が違います。muyは形容詞・副詞を修飾し、muchoは動詞や名詞を修飾します。\n\n例: Está muy cansado.（とても疲れている＝muy+形容詞）\n例: Trabaja mucho.（たくさん働く＝mucho+動詞）\n例: Tiene mucho dinero.（お金をたくさん持っている＝mucho+名詞、名詞の性数に一致してmucho/mucha/muchos/muchasと変化）\n\n「muy mucho」とは言えない点に注意してください。" },
+  { title:"también と tampoco（〜も、〜も〜ない）",
+    body:"también（〜も）は肯定文に、tampoco（〜も〜ない）は否定文に対応して使います。\n\n例: Me gusta el café. — A mí también.（コーヒーが好き。—私も。）\n例: No me gusta el café. — A mí tampoco.（コーヒーが好きじゃない。—私も（好きじゃ）ない。）\n\n肯定にtambién、否定にtampocoという対応をセットで覚えておくと迷いません。" },
+  { title:"間接話法（estilo indirecto）の基本",
+    body:"「彼は〜と言った」のように人の発言を伝えるとき、現在形の発言を過去形の文の中で伝えると、時制が1段階過去にずれます。\n\n直接話法: Dijo: \"Estoy cansado.\"（「疲れている」と言った）\n間接話法: Dijo que estaba cansado.（疲れていると言った＝estoy→estabaに変化）\n\n主な対応は、presente→imperfecto、pretérito perfecto→pluscuamperfecto、futuro→condicionalです。同時に、esteはese、aquíはallíのように、時や場所を示す語も変化することがあります。" },
+  { title:"時を表す接続詞と法の選択（cuando等）",
+    body:"cuando（〜するとき）、en cuanto（〜するとすぐに）、mientras（〜する間）などは、未来のまだ起きていない出来事について話すときは接続法、過去や習慣的な事実を話すときは直説法を使う、という使い分けがあります。\n\n例: Cuando llegues, llámame.（着いたら電話して＝未来のまだ起きていないこと→接続法llegues）\n例: Cuando llego a casa, ceno.（家に着くといつも夕食を食べる＝習慣的事実→直説法llego）\n例: Cuando llegué a casa, cené.（家に着いたとき、夕食を食べた＝過去の事実→直説法点過去llegué）" },
+  { title:"指小辞・増大辞（-ito/-ita, -ón/-ona）",
+    body:"名詞や形容詞に-ito/-ita（指小辞）をつけると「小さい・かわいい・親しみ」のニュアンスが加わり、-ón/-ona や -ote（増大辞）をつけると「大きい・強調」のニュアンスになります。\n\n例: perro（犬）→ perrito（小犬・子犬、かわいらしさ）／ casa（家）→ casita（小さな家）\n例: grande（大きい）→ grandote（でかい、強調）\n\nメキシコを含むラテンアメリカでは指小辞が非常によく使われ、ahora（今）→ ahorita（今すぐ、または「もうちょっと後で」というニュアンスにもなる）のように、時間の表現にもよく使われます。" },
+  { title:"疑問文・感嘆文の作り方（¿?・¡!の使い方）",
+    body:"スペイン語は文の最初にも逆さの疑問符¿・感嘆符¡をつけるのが正式なルールです（文末には通常の?・!）。\n\n例: ¿Cómo te llamas?（お名前は？）／ ¡Qué bonito!（なんてきれいなの！）\n\nまた、疑問詞を使わないyes/no疑問文は、主語と動詞を入れ替える（倒置）こともよくあります：¿Habla usted inglés?（英語を話しますか？）。カジュアルな会話では語順を変えず、イントネーションだけで疑問文にすることも多いです：¿Tú hablas inglés?" },
 ];
