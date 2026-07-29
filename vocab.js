@@ -1,351 +1,6106 @@
 const VOCAB_DATA = [
-  { es:"Hola", en:"Hello", ja:"やあ", cat:"Saludos" },
-  { es:"Buenos días", en:"Good morning", ja:"おはよう", cat:"Saludos" },
-  { es:"Buenas tardes", en:"Good afternoon", ja:"こんにちは", cat:"Saludos" },
-  { es:"Buenas noches", en:"Good night", ja:"こんばんは/おやすみ", cat:"Saludos" },
-  { es:"¿Cómo estás?", en:"How are you?", ja:"元気?", cat:"Saludos" },
-  { es:"Mucho gusto", en:"Nice to meet you", ja:"はじめまして", cat:"Saludos" },
-  { es:"Hasta luego", en:"See you later", ja:"またね", cat:"Saludos" },
-  { es:"Adiós", en:"Goodbye", ja:"さようなら", cat:"Saludos" },
-  { es:"¿Qué tal?", en:"What's up?", ja:"調子どう?", cat:"Saludos" },
-  { es:"Por favor", en:"Please", ja:"お願いします", cat:"Frases" },
-  { es:"Gracias", en:"Thank you", ja:"ありがとう", cat:"Frases" },
-  { es:"De nada", en:"You're welcome", ja:"どういたしまして", cat:"Frases" },
-  { es:"Lo siento", en:"I'm sorry", ja:"ごめんなさい", cat:"Frases" },
-  { es:"¿Cuánto cuesta?", en:"How much does it cost?", ja:"いくらですか", cat:"Frases" },
-  { es:"No entiendo", en:"I don't understand", ja:"わかりません", cat:"Frases" },
-  { es:"¿Dónde está...?", en:"Where is...?", ja:"〜はどこ?", cat:"Frases" },
-  { es:"¿Puedes ayudarme?", en:"Can you help me?", ja:"手伝ってもらえますか", cat:"Frases" },
-  { es:"Claro que sí", en:"Of course", ja:"もちろん", cat:"Frases" },
-  { es:"Tal vez", en:"Maybe", ja:"たぶん", cat:"Frases" },
-  { es:"El aeropuerto", en:"The airport", ja:"空港", cat:"Viajes" },
-  { es:"La estación", en:"The station", ja:"駅", cat:"Viajes" },
-  { es:"El billete", en:"The ticket", ja:"切符", cat:"Viajes" },
-  { es:"El equipaje", en:"The luggage", ja:"荷物", cat:"Viajes" },
-  { es:"La maleta", en:"The suitcase", ja:"スーツケース", cat:"Viajes" },
-  { es:"El hotel", en:"The hotel", ja:"ホテル", cat:"Viajes" },
-  { es:"La reserva", en:"The reservation", ja:"予約", cat:"Viajes" },
-  { es:"El pasaporte", en:"The passport", ja:"パスポート", cat:"Viajes" },
-  { es:"¿A qué hora sale?", en:"What time does it leave?", ja:"何時に出発しますか", cat:"Viajes" },
-  { es:"El agua", en:"Water", ja:"水", cat:"Comida" },
-  { es:"El pan", en:"Bread", ja:"パン", cat:"Comida" },
-  { es:"La fruta", en:"Fruit", ja:"果物", cat:"Comida" },
-  { es:"El café", en:"Coffee", ja:"コーヒー", cat:"Comida" },
-  { es:"La cena", en:"Dinner", ja:"夕食", cat:"Comida" },
-  { es:"El desayuno", en:"Breakfast", ja:"朝食", cat:"Comida" },
-  { es:"La cuenta", en:"The bill", ja:"お会計", cat:"Comida" },
-  { es:"Delicioso", en:"Delicious", ja:"美味しい", cat:"Comida" },
-  { es:"Picante", en:"Spicy", ja:"辛い", cat:"Comida" },
-  { es:"Uno", en:"One", ja:"1", cat:"Números" },
-  { es:"Dos", en:"Two", ja:"2", cat:"Números" },
-  { es:"Tres", en:"Three", ja:"3", cat:"Números" },
-  { es:"Cuatro", en:"Four", ja:"4", cat:"Números" },
-  { es:"Cinco", en:"Five", ja:"5", cat:"Números" },
-  { es:"Diez", en:"Ten", ja:"10", cat:"Números" },
-  { es:"Veinte", en:"Twenty", ja:"20", cat:"Números" },
-  { es:"Cien", en:"One hundred", ja:"100", cat:"Números" },
-  { es:"Mil", en:"One thousand", ja:"1000", cat:"Números" },
-  { es:"Lunes", en:"Monday", ja:"月曜日", cat:"Días" },
-  { es:"Martes", en:"Tuesday", ja:"火曜日", cat:"Días" },
-  { es:"Miércoles", en:"Wednesday", ja:"水曜日", cat:"Días" },
-  { es:"Jueves", en:"Thursday", ja:"木曜日", cat:"Días" },
-  { es:"Viernes", en:"Friday", ja:"金曜日", cat:"Días" },
-  { es:"Sábado", en:"Saturday", ja:"土曜日", cat:"Días" },
-  { es:"Domingo", en:"Sunday", ja:"日曜日", cat:"Días" },
-  { es:"La primavera", en:"Spring", ja:"春", cat:"Estaciones" },
-  { es:"El verano", en:"Summer", ja:"夏", cat:"Estaciones" },
-  { es:"El otoño", en:"Autumn", ja:"秋", cat:"Estaciones" },
-  { es:"El invierno", en:"Winter", ja:"冬", cat:"Estaciones" },
-  { es:"Ser / Estar", en:"To be", ja:"〜である/〜にいる", cat:"Verbos" },
-  { es:"Tener", en:"To have", ja:"持つ", cat:"Verbos" },
-  { es:"Querer", en:"To want", ja:"欲しい", cat:"Verbos" },
-  { es:"Poder", en:"To be able to", ja:"〜できる", cat:"Verbos" },
-  { es:"Ir", en:"To go", ja:"行く", cat:"Verbos" },
-  { es:"Comer", en:"To eat", ja:"食べる", cat:"Verbos" },
-  { es:"Hablar", en:"To speak", ja:"話す", cat:"Verbos" },
-  { es:"Necesitar", en:"To need", ja:"必要とする", cat:"Verbos" },
-  { es:"Sin embargo", en:"However", ja:"しかしながら", cat:"Frases" },
-  { es:"Además", en:"Besides / Also", ja:"さらに", cat:"Frases" },
-  { es:"Aunque", en:"Although", ja:"〜だけれども", cat:"Frases" },
-  { es:"Me encantaría", en:"I would love to", ja:"ぜひそうしたい", cat:"Frases" },
-  { es:"Está bien", en:"That's fine / OK", ja:"大丈夫です", cat:"Frases" },
-  { es:"No importa", en:"It doesn't matter", ja:"気にしないで", cat:"Frases" },
-  { es:"Depende", en:"It depends", ja:"場合による", cat:"Frases" },
-  { es:"Estoy de acuerdo", en:"I agree", ja:"賛成です", cat:"Frases" },
-  { es:"No estoy seguro", en:"I'm not sure", ja:"確信がない", cat:"Frases" },
-  { es:"¿En serio?", en:"Really?", ja:"本当に?", cat:"Frases" },
-  { es:"Qué lástima", en:"What a shame", ja:"残念だね", cat:"Frases" },
-  { es:"Buena suerte", en:"Good luck", ja:"頑張って", cat:"Frases" },
-  { es:"Felicidades", en:"Congratulations", ja:"おめでとう", cat:"Frases" },
-  { es:"Te extraño", en:"I miss you", ja:"会いたいよ", cat:"Frases" },
-  { es:"Nos vemos pronto", en:"See you soon", ja:"またすぐに", cat:"Frases" },
-  { es:"Rojo", en:"Red", ja:"赤", cat:"Colores" },
-  { es:"Azul", en:"Blue", ja:"青", cat:"Colores" },
-  { es:"Verde", en:"Green", ja:"緑", cat:"Colores" },
-  { es:"Amarillo", en:"Yellow", ja:"黄色", cat:"Colores" },
-  { es:"Negro", en:"Black", ja:"黒", cat:"Colores" },
-  { es:"Blanco", en:"White", ja:"白", cat:"Colores" },
-  { es:"Gris", en:"Gray", ja:"灰色", cat:"Colores" },
-  { es:"Rosa", en:"Pink", ja:"ピンク", cat:"Colores" },
-  { es:"Morado", en:"Purple", ja:"紫", cat:"Colores" },
-  { es:"Naranja", en:"Orange", ja:"オレンジ", cat:"Colores" },
-  { es:"Marrón", en:"Brown", ja:"茶色", cat:"Colores" },
-  { es:"Dorado", en:"Golden", ja:"金色", cat:"Colores" },
-  { es:"Plateado", en:"Silver", ja:"銀色", cat:"Colores" },
-  { es:"Celeste", en:"Sky blue", ja:"水色", cat:"Colores" },
-  { es:"Turquesa", en:"Turquoise", ja:"ターコイズ色", cat:"Colores" },
-  { es:"La madre", en:"Mother", ja:"母", cat:"Familia" },
-  { es:"El padre", en:"Father", ja:"父", cat:"Familia" },
-  { es:"El hermano", en:"Brother", ja:"兄/弟", cat:"Familia" },
-  { es:"La hermana", en:"Sister", ja:"姉/妹", cat:"Familia" },
-  { es:"El abuelo", en:"Grandfather", ja:"祖父", cat:"Familia" },
-  { es:"La abuela", en:"Grandmother", ja:"祖母", cat:"Familia" },
-  { es:"El hijo", en:"Son", ja:"息子", cat:"Familia" },
-  { es:"La hija", en:"Daughter", ja:"娘", cat:"Familia" },
-  { es:"El tío", en:"Uncle", ja:"おじ", cat:"Familia" },
-  { es:"La tía", en:"Aunt", ja:"おば", cat:"Familia" },
-  { es:"El primo", en:"Cousin (male)", ja:"いとこ(男)", cat:"Familia" },
-  { es:"La prima", en:"Cousin (female)", ja:"いとこ(女)", cat:"Familia" },
-  { es:"El esposo", en:"Husband", ja:"夫", cat:"Familia" },
-  { es:"La esposa", en:"Wife", ja:"妻", cat:"Familia" },
-  { es:"El nieto", en:"Grandson", ja:"孫息子", cat:"Familia" },
-  { es:"La nieta", en:"Granddaughter", ja:"孫娘", cat:"Familia" },
-  { es:"El sobrino", en:"Nephew", ja:"甥", cat:"Familia" },
-  { es:"La sobrina", en:"Niece", ja:"姪", cat:"Familia" },
-  { es:"El suegro", en:"Father-in-law", ja:"義父", cat:"Familia" },
-  { es:"La suegra", en:"Mother-in-law", ja:"義母", cat:"Familia" },
-  { es:"El cuñado", en:"Brother-in-law", ja:"義兄弟", cat:"Familia" },
-  { es:"La cabeza", en:"Head", ja:"頭", cat:"Cuerpo" },
-  { es:"El ojo", en:"Eye", ja:"目", cat:"Cuerpo" },
-  { es:"La oreja", en:"Ear", ja:"耳", cat:"Cuerpo" },
-  { es:"La nariz", en:"Nose", ja:"鼻", cat:"Cuerpo" },
-  { es:"La boca", en:"Mouth", ja:"口", cat:"Cuerpo" },
-  { es:"La mano", en:"Hand", ja:"手", cat:"Cuerpo" },
-  { es:"El brazo", en:"Arm", ja:"腕", cat:"Cuerpo" },
-  { es:"La pierna", en:"Leg", ja:"脚", cat:"Cuerpo" },
-  { es:"El pie", en:"Foot", ja:"足", cat:"Cuerpo" },
-  { es:"El dedo", en:"Finger", ja:"指", cat:"Cuerpo" },
-  { es:"La espalda", en:"Back", ja:"背中", cat:"Cuerpo" },
-  { es:"El estómago", en:"Stomach", ja:"お腹", cat:"Cuerpo" },
-  { es:"El corazón", en:"Heart", ja:"心臓", cat:"Cuerpo" },
-  { es:"El cabello", en:"Hair", ja:"髪", cat:"Cuerpo" },
-  { es:"El cuello", en:"Neck", ja:"首", cat:"Cuerpo" },
-  { es:"El hombro", en:"Shoulder", ja:"肩", cat:"Cuerpo" },
-  { es:"La rodilla", en:"Knee", ja:"ひざ", cat:"Cuerpo" },
-  { es:"El diente", en:"Tooth", ja:"歯", cat:"Cuerpo" },
-  { es:"La camisa", en:"Shirt", ja:"シャツ", cat:"Ropa" },
-  { es:"El pantalón", en:"Pants", ja:"ズボン", cat:"Ropa" },
-  { es:"El vestido", en:"Dress", ja:"ワンピース", cat:"Ropa" },
-  { es:"La falda", en:"Skirt", ja:"スカート", cat:"Ropa" },
-  { es:"El zapato", en:"Shoe", ja:"靴", cat:"Ropa" },
-  { es:"El calcetín", en:"Sock", ja:"靴下", cat:"Ropa" },
-  { es:"La chaqueta", en:"Jacket", ja:"ジャケット", cat:"Ropa" },
-  { es:"El abrigo", en:"Coat", ja:"コート", cat:"Ropa" },
-  { es:"El sombrero", en:"Hat", ja:"帽子", cat:"Ropa" },
-  { es:"La bufanda", en:"Scarf", ja:"マフラー", cat:"Ropa" },
-  { es:"El guante", en:"Glove", ja:"手袋", cat:"Ropa" },
-  { es:"El cinturón", en:"Belt", ja:"ベルト", cat:"Ropa" },
-  { es:"La corbata", en:"Tie", ja:"ネクタイ", cat:"Ropa" },
-  { es:"El pijama", en:"Pajamas", ja:"パジャマ", cat:"Ropa" },
-  { es:"La casa", en:"House", ja:"家", cat:"Casa" },
-  { es:"La cocina", en:"Kitchen", ja:"台所", cat:"Casa" },
-  { es:"El dormitorio", en:"Bedroom", ja:"寝室", cat:"Casa" },
-  { es:"El baño", en:"Bathroom", ja:"お風呂/トイレ", cat:"Casa" },
-  { es:"La sala", en:"Living room", ja:"リビング", cat:"Casa" },
-  { es:"El jardín", en:"Garden", ja:"庭", cat:"Casa" },
-  { es:"La puerta", en:"Door", ja:"ドア", cat:"Casa" },
-  { es:"La ventana", en:"Window", ja:"窓", cat:"Casa" },
-  { es:"La mesa", en:"Table", ja:"テーブル", cat:"Casa" },
-  { es:"La silla", en:"Chair", ja:"椅子", cat:"Casa" },
-  { es:"La cama", en:"Bed", ja:"ベッド", cat:"Casa" },
-  { es:"El sofá", en:"Sofa", ja:"ソファ", cat:"Casa" },
-  { es:"El techo", en:"Roof / Ceiling", ja:"屋根/天井", cat:"Casa" },
-  { es:"La pared", en:"Wall", ja:"壁", cat:"Casa" },
-  { es:"La escalera", en:"Stairs", ja:"階段", cat:"Casa" },
-  { es:"El garaje", en:"Garage", ja:"ガレージ", cat:"Casa" },
-  { es:"El trabajo", en:"Work / Job", ja:"仕事", cat:"Trabajo" },
-  { es:"La oficina", en:"Office", ja:"オフィス", cat:"Trabajo" },
-  { es:"El jefe", en:"Boss", ja:"上司", cat:"Trabajo" },
-  { es:"El empleado", en:"Employee", ja:"従業員", cat:"Trabajo" },
-  { es:"La reunión", en:"Meeting", ja:"会議", cat:"Trabajo" },
-  { es:"La computadora", en:"Computer", ja:"パソコン", cat:"Trabajo" },
-  { es:"El correo electrónico", en:"Email", ja:"メール", cat:"Trabajo" },
-  { es:"El proyecto", en:"Project", ja:"プロジェクト", cat:"Trabajo" },
-  { es:"El sueldo", en:"Salary", ja:"給料", cat:"Trabajo" },
-  { es:"La entrevista", en:"Interview", ja:"面接", cat:"Trabajo" },
-  { es:"El currículum", en:"Resume", ja:"履歴書", cat:"Trabajo" },
-  { es:"La empresa", en:"Company", ja:"会社", cat:"Trabajo" },
-  { es:"El cliente", en:"Client", ja:"顧客", cat:"Trabajo" },
-  { es:"El horario", en:"Schedule", ja:"スケジュール", cat:"Trabajo" },
-  { es:"Feliz", en:"Happy", ja:"幸せ", cat:"Emociones" },
-  { es:"Triste", en:"Sad", ja:"悲しい", cat:"Emociones" },
-  { es:"Enojado", en:"Angry", ja:"怒っている", cat:"Emociones" },
-  { es:"Cansado", en:"Tired", ja:"疲れた", cat:"Emociones" },
-  { es:"Nervioso", en:"Nervous", ja:"緊張している", cat:"Emociones" },
-  { es:"Emocionado", en:"Excited", ja:"わくわくしている", cat:"Emociones" },
-  { es:"Aburrido", en:"Bored", ja:"退屈している", cat:"Emociones" },
-  { es:"Sorprendido", en:"Surprised", ja:"驚いている", cat:"Emociones" },
-  { es:"Asustado", en:"Scared", ja:"怖がっている", cat:"Emociones" },
-  { es:"Tranquilo", en:"Calm", ja:"落ち着いている", cat:"Emociones" },
-  { es:"Preocupado", en:"Worried", ja:"心配している", cat:"Emociones" },
-  { es:"Orgulloso", en:"Proud", ja:"誇りに思う", cat:"Emociones" },
-  { es:"Celoso", en:"Jealous", ja:"嫉妬している", cat:"Emociones" },
-  { es:"Avergonzado", en:"Embarrassed", ja:"恥ずかしい", cat:"Emociones" },
-  { es:"El sol", en:"Sun", ja:"太陽", cat:"Clima" },
-  { es:"La lluvia", en:"Rain", ja:"雨", cat:"Clima" },
-  { es:"La nube", en:"Cloud", ja:"雲", cat:"Clima" },
-  { es:"El viento", en:"Wind", ja:"風", cat:"Clima" },
-  { es:"La nieve", en:"Snow", ja:"雪", cat:"Clima" },
-  { es:"La tormenta", en:"Storm", ja:"嵐", cat:"Clima" },
-  { es:"El calor", en:"Heat", ja:"暑さ", cat:"Clima" },
-  { es:"El frío", en:"Cold", ja:"寒さ", cat:"Clima" },
-  { es:"Húmedo", en:"Humid", ja:"湿気がある", cat:"Clima" },
-  { es:"El arcoíris", en:"Rainbow", ja:"虹", cat:"Clima" },
-  { es:"La niebla", en:"Fog", ja:"霧", cat:"Clima" },
-  { es:"La helada", en:"Frost", ja:"霜", cat:"Clima" },
-  { es:"El perro", en:"Dog", ja:"犬", cat:"Animales" },
-  { es:"El gato", en:"Cat", ja:"猫", cat:"Animales" },
-  { es:"El pájaro", en:"Bird", ja:"鳥", cat:"Animales" },
-  { es:"El pez", en:"Fish", ja:"魚", cat:"Animales" },
-  { es:"El caballo", en:"Horse", ja:"馬", cat:"Animales" },
-  { es:"La vaca", en:"Cow", ja:"牛", cat:"Animales" },
-  { es:"El cerdo", en:"Pig", ja:"豚", cat:"Animales" },
-  { es:"La oveja", en:"Sheep", ja:"羊", cat:"Animales" },
-  { es:"El león", en:"Lion", ja:"ライオン", cat:"Animales" },
-  { es:"El elefante", en:"Elephant", ja:"象", cat:"Animales" },
-  { es:"El mono", en:"Monkey", ja:"猿", cat:"Animales" },
-  { es:"El conejo", en:"Rabbit", ja:"うさぎ", cat:"Animales" },
-  { es:"El ratón", en:"Mouse", ja:"ねずみ", cat:"Animales" },
-  { es:"El tigre", en:"Tiger", ja:"虎", cat:"Animales" },
-  { es:"El oso", en:"Bear", ja:"熊", cat:"Animales" },
-  { es:"La serpiente", en:"Snake", ja:"蛇", cat:"Animales" },
-  { es:"El coche", en:"Car", ja:"車", cat:"Transporte" },
-  { es:"El autobús", en:"Bus", ja:"バス", cat:"Transporte" },
-  { es:"El tren", en:"Train", ja:"電車", cat:"Transporte" },
-  { es:"El avión", en:"Airplane", ja:"飛行機", cat:"Transporte" },
-  { es:"La bicicleta", en:"Bicycle", ja:"自転車", cat:"Transporte" },
-  { es:"El barco", en:"Boat", ja:"船", cat:"Transporte" },
-  { es:"El taxi", en:"Taxi", ja:"タクシー", cat:"Transporte" },
-  { es:"El metro", en:"Subway", ja:"地下鉄", cat:"Transporte" },
-  { es:"La motocicleta", en:"Motorcycle", ja:"バイク", cat:"Transporte" },
-  { es:"El camión", en:"Truck", ja:"トラック", cat:"Transporte" },
-  { es:"Grande", en:"Big", ja:"大きい", cat:"Adjetivos" },
-  { es:"Pequeño", en:"Small", ja:"小さい", cat:"Adjetivos" },
-  { es:"Alto", en:"Tall", ja:"高い(背)", cat:"Adjetivos" },
-  { es:"Bajo", en:"Short", ja:"低い", cat:"Adjetivos" },
-  { es:"Rápido", en:"Fast", ja:"速い", cat:"Adjetivos" },
-  { es:"Lento", en:"Slow", ja:"遅い", cat:"Adjetivos" },
-  { es:"Caro", en:"Expensive", ja:"高い(値段)", cat:"Adjetivos" },
-  { es:"Barato", en:"Cheap", ja:"安い", cat:"Adjetivos" },
-  { es:"Fácil", en:"Easy", ja:"簡単", cat:"Adjetivos" },
-  { es:"Difícil", en:"Difficult", ja:"難しい", cat:"Adjetivos" },
-  { es:"Nuevo", en:"New", ja:"新しい", cat:"Adjetivos" },
-  { es:"Viejo", en:"Old", ja:"古い", cat:"Adjetivos" },
-  { es:"Limpio", en:"Clean", ja:"きれい", cat:"Adjetivos" },
-  { es:"Sucio", en:"Dirty", ja:"汚い", cat:"Adjetivos" },
-  { es:"Fuerte", en:"Strong", ja:"強い", cat:"Adjetivos" },
-  { es:"Débil", en:"Weak", ja:"弱い", cat:"Adjetivos" },
-  { es:"Bonito", en:"Pretty", ja:"きれい/かわいい", cat:"Adjetivos" },
-  { es:"Feo", en:"Ugly", ja:"醜い", cat:"Adjetivos" },
-  { es:"Inteligente", en:"Smart", ja:"賢い", cat:"Adjetivos" },
-  { es:"Divertido", en:"Fun", ja:"楽しい", cat:"Adjetivos" },
-  { es:"Enero", en:"January", ja:"1月", cat:"Meses" },
-  { es:"Febrero", en:"February", ja:"2月", cat:"Meses" },
-  { es:"Marzo", en:"March", ja:"3月", cat:"Meses" },
-  { es:"Abril", en:"April", ja:"4月", cat:"Meses" },
-  { es:"Mayo", en:"May", ja:"5月", cat:"Meses" },
-  { es:"Junio", en:"June", ja:"6月", cat:"Meses" },
-  { es:"Julio", en:"July", ja:"7月", cat:"Meses" },
-  { es:"Agosto", en:"August", ja:"8月", cat:"Meses" },
-  { es:"Septiembre", en:"September", ja:"9月", cat:"Meses" },
-  { es:"Octubre", en:"October", ja:"10月", cat:"Meses" },
-  { es:"Noviembre", en:"November", ja:"11月", cat:"Meses" },
-  { es:"Diciembre", en:"December", ja:"12月", cat:"Meses" },
-  { es:"El banco", en:"Bank", ja:"銀行", cat:"Lugares" },
-  { es:"El hospital", en:"Hospital", ja:"病院", cat:"Lugares" },
-  { es:"La escuela", en:"School", ja:"学校", cat:"Lugares" },
-  { es:"La iglesia", en:"Church", ja:"教会", cat:"Lugares" },
-  { es:"El mercado", en:"Market", ja:"市場", cat:"Lugares" },
-  { es:"El parque", en:"Park", ja:"公園", cat:"Lugares" },
-  { es:"La biblioteca", en:"Library", ja:"図書館", cat:"Lugares" },
-  { es:"La farmacia", en:"Pharmacy", ja:"薬局", cat:"Lugares" },
-  { es:"El supermercado", en:"Supermarket", ja:"スーパー", cat:"Lugares" },
-  { es:"La playa", en:"Beach", ja:"ビーチ", cat:"Lugares" },
-  { es:"La montaña", en:"Mountain", ja:"山", cat:"Lugares" },
-  { es:"La ciudad", en:"City", ja:"都市", cat:"Lugares" },
-  { es:"El pueblo", en:"Town", ja:"町", cat:"Lugares" },
-  { es:"El museo", en:"Museum", ja:"美術館/博物館", cat:"Lugares" },
-  { es:"El teléfono", en:"Phone", ja:"電話", cat:"Tecnología" },
-  { es:"El internet", en:"Internet", ja:"インターネット", cat:"Tecnología" },
-  { es:"La aplicación", en:"App", ja:"アプリ", cat:"Tecnología" },
-  { es:"La contraseña", en:"Password", ja:"パスワード", cat:"Tecnología" },
-  { es:"La batería", en:"Battery", ja:"バッテリー", cat:"Tecnología" },
-  { es:"La pantalla", en:"Screen", ja:"画面", cat:"Tecnología" },
-  { es:"El cargador", en:"Charger", ja:"充電器", cat:"Tecnología" },
-  { es:"El wifi", en:"Wifi", ja:"Wi-Fi", cat:"Tecnología" },
-  { es:"El mensaje", en:"Message", ja:"メッセージ", cat:"Tecnología" },
-  { es:"El fútbol", en:"Soccer", ja:"サッカー", cat:"Deportes" },
-  { es:"El baloncesto", en:"Basketball", ja:"バスケットボール", cat:"Deportes" },
-  { es:"El tenis", en:"Tennis", ja:"テニス", cat:"Deportes" },
-  { es:"La natación", en:"Swimming", ja:"水泳", cat:"Deportes" },
-  { es:"Correr", en:"To run", ja:"走る", cat:"Deportes" },
-  { es:"El ciclismo", en:"Cycling", ja:"サイクリング", cat:"Deportes" },
-  { es:"El béisbol", en:"Baseball", ja:"野球", cat:"Deportes" },
-  { es:"El boxeo", en:"Boxing", ja:"ボクシング", cat:"Deportes" },
-  { es:"El yoga", en:"Yoga", ja:"ヨガ", cat:"Deportes" },
-  { es:"El gimnasio", en:"Gym", ja:"ジム", cat:"Deportes" },
-  { es:"El árbol", en:"Tree", ja:"木", cat:"Naturaleza" },
-  { es:"La flor", en:"Flower", ja:"花", cat:"Naturaleza" },
-  { es:"El río", en:"River", ja:"川", cat:"Naturaleza" },
-  { es:"El mar", en:"Sea", ja:"海", cat:"Naturaleza" },
-  { es:"El cielo", en:"Sky", ja:"空", cat:"Naturaleza" },
-  { es:"La estrella", en:"Star", ja:"星", cat:"Naturaleza" },
-  { es:"La luna", en:"Moon", ja:"月", cat:"Naturaleza" },
-  { es:"El bosque", en:"Forest", ja:"森", cat:"Naturaleza" },
-  { es:"La piedra", en:"Stone", ja:"石", cat:"Naturaleza" },
-  { es:"Siempre", en:"Always", ja:"いつも", cat:"Frecuencia" },
-  { es:"Nunca", en:"Never", ja:"決して〜ない", cat:"Frecuencia" },
-  { es:"A veces", en:"Sometimes", ja:"時々", cat:"Frecuencia" },
-  { es:"A menudo", en:"Often", ja:"よく", cat:"Frecuencia" },
-  { es:"Ahora", en:"Now", ja:"今", cat:"Frecuencia" },
-  { es:"Después", en:"After / Later", ja:"あとで", cat:"Frecuencia" },
-  { es:"Antes", en:"Before", ja:"前に", cat:"Frecuencia" },
-  { es:"Todavía", en:"Still / Yet", ja:"まだ", cat:"Frecuencia" },
-  { es:"Ya", en:"Already", ja:"すでに", cat:"Frecuencia" },
-  { es:"Pronto", en:"Soon", ja:"すぐに", cat:"Frecuencia" },
-  { es:"Temprano", en:"Early", ja:"早く", cat:"Frecuencia" },
-  { es:"Tarde", en:"Late", ja:"遅く", cat:"Frecuencia" },
-  { es:"Estar en las nubes", en:"To be daydreaming", ja:"上の空である（直訳:雲の中にいる）", cat:"Modismos", nivel:"avanzado" },
-  { es:"Costar un ojo de la cara", en:"To cost an arm and a leg", ja:"非常に高い（直訳:顔の目玉の値段がする）", cat:"Modismos", nivel:"avanzado" },
-  { es:"Tomar el pelo", en:"To pull someone's leg", ja:"からかう（直訳:髪を引っ張る）", cat:"Modismos", nivel:"avanzado" },
-  { es:"Meter la pata", en:"To mess up", ja:"やらかす（直訳:足を突っ込む）", cat:"Modismos", nivel:"avanzado" },
-  { es:"No tener pelos en la lengua", en:"To speak one's mind bluntly", ja:"歯に衣着せぬ（直訳:舌に毛がない）", cat:"Modismos", nivel:"avanzado" },
-  { es:"Ser pan comido", en:"To be a piece of cake", ja:"朝飯前（直訳:食べたパン）", cat:"Modismos", nivel:"avanzado" },
-  { es:"Estar como agua para chocolate", en:"To be extremely angry", ja:"かんかんに怒っている（メキシコ独特の表現）", cat:"Modismos", nivel:"avanzado" },
-  { es:"Ponerse las pilas", en:"To get one's act together", ja:"気合を入れる（直訳:電池を入れる）", cat:"Modismos", nivel:"avanzado" },
-  { es:"Echar de menos", en:"To miss someone/something", ja:"恋しく思う", cat:"Modismos", nivel:"avanzado" },
-  { es:"Dar en el clavo", en:"To hit the nail on the head", ja:"図星をつく（直訳:釘に当てる）", cat:"Modismos", nivel:"avanzado" },
-  { es:"Hacer la vista gorda", en:"To turn a blind eye", ja:"見て見ぬふりをする", cat:"Modismos", nivel:"avanzado" },
-  { es:"Estar hasta las narices", en:"To be fed up", ja:"うんざりしている（直訳:鼻まで達している）", cat:"Modismos", nivel:"avanzado" },
-  { es:"Írsele la mano", en:"To overdo it", ja:"やり過ぎる（直訳:手が行ってしまう）", cat:"Modismos", nivel:"avanzado" },
-  { es:"Quedarse de piedra", en:"To be stunned", ja:"あぜんとする（直訳:石になる）", cat:"Modismos", nivel:"avanzado" },
-  { es:"Ni fu ni fa", en:"So-so / neither here nor there", ja:"どうでもいい、まあまあ", cat:"Modismos", nivel:"avanzado" },
-  { es:"Fijarse en", en:"To notice / pay attention to", ja:"〜に気づく、注目する", cat:"Verbos", nivel:"avanzado" },
-  { es:"Darse cuenta de", en:"To realize", ja:"〜に気がつく", cat:"Verbos", nivel:"avanzado" },
-  { es:"Enterarse de", en:"To find out about", ja:"〜を知る", cat:"Verbos", nivel:"avanzado" },
-  { es:"Arrepentirse de", en:"To regret", ja:"後悔する", cat:"Verbos", nivel:"avanzado" },
-  { es:"Acostumbrarse a", en:"To get used to", ja:"〜に慣れる", cat:"Verbos", nivel:"avanzado" },
-  { es:"Atreverse a", en:"To dare to", ja:"あえて〜する", cat:"Verbos", nivel:"avanzado" },
-  { es:"Quejarse de", en:"To complain about", ja:"〜に文句を言う", cat:"Verbos", nivel:"avanzado" },
-  { es:"Sorprenderse de", en:"To be surprised at", ja:"〜に驚く", cat:"Verbos", nivel:"avanzado" },
-  { es:"Negarse a", en:"To refuse to", ja:"〜することを拒否する", cat:"Verbos", nivel:"avanzado" },
-  { es:"Empeñarse en", en:"To insist on", ja:"〜に固執する", cat:"Verbos", nivel:"avanzado" },
-  { es:"Sin duda", en:"Without a doubt", ja:"間違いなく", cat:"Frases", nivel:"avanzado" },
-  { es:"Por lo tanto", en:"Therefore", ja:"したがって", cat:"Frases", nivel:"avanzado" },
-  { es:"En cuanto a", en:"As for / regarding", ja:"〜に関しては", cat:"Frases", nivel:"avanzado" },
-  { es:"A pesar de", en:"Despite", ja:"〜にもかかわらず", cat:"Frases", nivel:"avanzado" },
-  { es:"De hecho", en:"In fact", ja:"実は", cat:"Frases", nivel:"avanzado" },
-  { es:"Por si acaso", en:"Just in case", ja:"念のため", cat:"Frases", nivel:"avanzado" },
-  { es:"Cuanto antes", en:"As soon as possible", ja:"できるだけ早く", cat:"Frases", nivel:"avanzado" },
-  { es:"Hoy en día", en:"Nowadays", ja:"最近は", cat:"Frases", nivel:"avanzado" },
+ {
+  "es": "Hola",
+  "en": "Hello",
+  "ja": "やあ",
+  "cat": "Saludos"
+ },
+ {
+  "es": "Buenos días",
+  "en": "Good morning",
+  "ja": "おはよう",
+  "cat": "Saludos"
+ },
+ {
+  "es": "Buenas tardes",
+  "en": "Good afternoon",
+  "ja": "こんにちは",
+  "cat": "Saludos"
+ },
+ {
+  "es": "Buenas noches",
+  "en": "Good night",
+  "ja": "こんばんは/おやすみ",
+  "cat": "Saludos"
+ },
+ {
+  "es": "¿Cómo estás?",
+  "en": "How are you?",
+  "ja": "元気?",
+  "cat": "Saludos"
+ },
+ {
+  "es": "Mucho gusto",
+  "en": "Nice to meet you",
+  "ja": "はじめまして",
+  "cat": "Saludos"
+ },
+ {
+  "es": "Hasta luego",
+  "en": "See you later",
+  "ja": "またね",
+  "cat": "Saludos"
+ },
+ {
+  "es": "Adiós",
+  "en": "Goodbye",
+  "ja": "さようなら",
+  "cat": "Saludos"
+ },
+ {
+  "es": "¿Qué tal?",
+  "en": "What's up?",
+  "ja": "調子どう?",
+  "cat": "Saludos"
+ },
+ {
+  "es": "Por favor",
+  "en": "Please",
+  "ja": "お願いします",
+  "cat": "Frases"
+ },
+ {
+  "es": "Gracias",
+  "en": "Thank you",
+  "ja": "ありがとう",
+  "cat": "Frases"
+ },
+ {
+  "es": "De nada",
+  "en": "You're welcome",
+  "ja": "どういたしまして",
+  "cat": "Frases"
+ },
+ {
+  "es": "Lo siento",
+  "en": "I'm sorry",
+  "ja": "ごめんなさい",
+  "cat": "Frases"
+ },
+ {
+  "es": "¿Cuánto cuesta?",
+  "en": "How much does it cost?",
+  "ja": "いくらですか",
+  "cat": "Frases"
+ },
+ {
+  "es": "No entiendo",
+  "en": "I don't understand",
+  "ja": "わかりません",
+  "cat": "Frases"
+ },
+ {
+  "es": "¿Dónde está...?",
+  "en": "Where is...?",
+  "ja": "〜はどこ?",
+  "cat": "Frases"
+ },
+ {
+  "es": "¿Puedes ayudarme?",
+  "en": "Can you help me?",
+  "ja": "手伝ってもらえますか",
+  "cat": "Frases"
+ },
+ {
+  "es": "Claro que sí",
+  "en": "Of course",
+  "ja": "もちろん",
+  "cat": "Frases"
+ },
+ {
+  "es": "Tal vez",
+  "en": "Maybe",
+  "ja": "たぶん",
+  "cat": "Frases"
+ },
+ {
+  "es": "El aeropuerto",
+  "en": "The airport",
+  "ja": "空港",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La estación",
+  "en": "The station",
+  "ja": "駅",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El billete",
+  "en": "The ticket",
+  "ja": "切符",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El equipaje",
+  "en": "The luggage",
+  "ja": "荷物",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La maleta",
+  "en": "The suitcase",
+  "ja": "スーツケース",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El hotel",
+  "en": "The hotel",
+  "ja": "ホテル",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La reserva",
+  "en": "The reservation",
+  "ja": "予約",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El pasaporte",
+  "en": "The passport",
+  "ja": "パスポート",
+  "cat": "Viajes"
+ },
+ {
+  "es": "¿A qué hora sale?",
+  "en": "What time does it leave?",
+  "ja": "何時に出発しますか",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El agua",
+  "en": "Water",
+  "ja": "水",
+  "cat": "Comida"
+ },
+ {
+  "es": "El pan",
+  "en": "Bread",
+  "ja": "パン",
+  "cat": "Comida"
+ },
+ {
+  "es": "La fruta",
+  "en": "Fruit",
+  "ja": "果物",
+  "cat": "Comida"
+ },
+ {
+  "es": "El café",
+  "en": "Coffee",
+  "ja": "コーヒー",
+  "cat": "Comida"
+ },
+ {
+  "es": "La cena",
+  "en": "Dinner",
+  "ja": "夕食",
+  "cat": "Comida"
+ },
+ {
+  "es": "El desayuno",
+  "en": "Breakfast",
+  "ja": "朝食",
+  "cat": "Comida"
+ },
+ {
+  "es": "La cuenta",
+  "en": "The bill",
+  "ja": "お会計",
+  "cat": "Comida"
+ },
+ {
+  "es": "Delicioso",
+  "en": "Delicious",
+  "ja": "美味しい",
+  "cat": "Comida"
+ },
+ {
+  "es": "Picante",
+  "en": "Spicy",
+  "ja": "辛い",
+  "cat": "Comida"
+ },
+ {
+  "es": "Uno",
+  "en": "One",
+  "ja": "1",
+  "cat": "Números"
+ },
+ {
+  "es": "Dos",
+  "en": "Two",
+  "ja": "2",
+  "cat": "Números"
+ },
+ {
+  "es": "Tres",
+  "en": "Three",
+  "ja": "3",
+  "cat": "Números"
+ },
+ {
+  "es": "Cuatro",
+  "en": "Four",
+  "ja": "4",
+  "cat": "Números"
+ },
+ {
+  "es": "Cinco",
+  "en": "Five",
+  "ja": "5",
+  "cat": "Números"
+ },
+ {
+  "es": "Diez",
+  "en": "Ten",
+  "ja": "10",
+  "cat": "Números"
+ },
+ {
+  "es": "Veinte",
+  "en": "Twenty",
+  "ja": "20",
+  "cat": "Números"
+ },
+ {
+  "es": "Cien",
+  "en": "One hundred",
+  "ja": "100",
+  "cat": "Números"
+ },
+ {
+  "es": "Mil",
+  "en": "One thousand",
+  "ja": "1000",
+  "cat": "Números"
+ },
+ {
+  "es": "Lunes",
+  "en": "Monday",
+  "ja": "月曜日",
+  "cat": "Días"
+ },
+ {
+  "es": "Martes",
+  "en": "Tuesday",
+  "ja": "火曜日",
+  "cat": "Días"
+ },
+ {
+  "es": "Miércoles",
+  "en": "Wednesday",
+  "ja": "水曜日",
+  "cat": "Días"
+ },
+ {
+  "es": "Jueves",
+  "en": "Thursday",
+  "ja": "木曜日",
+  "cat": "Días"
+ },
+ {
+  "es": "Viernes",
+  "en": "Friday",
+  "ja": "金曜日",
+  "cat": "Días"
+ },
+ {
+  "es": "Sábado",
+  "en": "Saturday",
+  "ja": "土曜日",
+  "cat": "Días"
+ },
+ {
+  "es": "Domingo",
+  "en": "Sunday",
+  "ja": "日曜日",
+  "cat": "Días"
+ },
+ {
+  "es": "La primavera",
+  "en": "Spring",
+  "ja": "春",
+  "cat": "Estaciones"
+ },
+ {
+  "es": "El verano",
+  "en": "Summer",
+  "ja": "夏",
+  "cat": "Estaciones"
+ },
+ {
+  "es": "El otoño",
+  "en": "Autumn",
+  "ja": "秋",
+  "cat": "Estaciones"
+ },
+ {
+  "es": "El invierno",
+  "en": "Winter",
+  "ja": "冬",
+  "cat": "Estaciones"
+ },
+ {
+  "es": "Ser / Estar",
+  "en": "To be",
+  "ja": "〜である/〜にいる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tener",
+  "en": "To have",
+  "ja": "持つ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Querer",
+  "en": "To want",
+  "ja": "欲しい",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Poder",
+  "en": "To be able to",
+  "ja": "〜できる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Ir",
+  "en": "To go",
+  "ja": "行く",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Comer",
+  "en": "To eat",
+  "ja": "食べる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Hablar",
+  "en": "To speak",
+  "ja": "話す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Necesitar",
+  "en": "To need",
+  "ja": "必要とする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sin embargo",
+  "en": "However",
+  "ja": "しかしながら",
+  "cat": "Frases"
+ },
+ {
+  "es": "Además",
+  "en": "Besides / Also",
+  "ja": "さらに",
+  "cat": "Frases"
+ },
+ {
+  "es": "Aunque",
+  "en": "Although",
+  "ja": "〜だけれども",
+  "cat": "Frases"
+ },
+ {
+  "es": "Me encantaría",
+  "en": "I would love to",
+  "ja": "ぜひそうしたい",
+  "cat": "Frases"
+ },
+ {
+  "es": "Está bien",
+  "en": "That's fine / OK",
+  "ja": "大丈夫です",
+  "cat": "Frases"
+ },
+ {
+  "es": "No importa",
+  "en": "It doesn't matter",
+  "ja": "気にしないで",
+  "cat": "Frases"
+ },
+ {
+  "es": "Depende",
+  "en": "It depends",
+  "ja": "場合による",
+  "cat": "Frases"
+ },
+ {
+  "es": "Estoy de acuerdo",
+  "en": "I agree",
+  "ja": "賛成です",
+  "cat": "Frases"
+ },
+ {
+  "es": "No estoy seguro",
+  "en": "I'm not sure",
+  "ja": "確信がない",
+  "cat": "Frases"
+ },
+ {
+  "es": "¿En serio?",
+  "en": "Really?",
+  "ja": "本当に?",
+  "cat": "Frases"
+ },
+ {
+  "es": "Qué lástima",
+  "en": "What a shame",
+  "ja": "残念だね",
+  "cat": "Frases"
+ },
+ {
+  "es": "Buena suerte",
+  "en": "Good luck",
+  "ja": "頑張って",
+  "cat": "Frases"
+ },
+ {
+  "es": "Felicidades",
+  "en": "Congratulations",
+  "ja": "おめでとう",
+  "cat": "Frases"
+ },
+ {
+  "es": "Te extraño",
+  "en": "I miss you",
+  "ja": "会いたいよ",
+  "cat": "Frases"
+ },
+ {
+  "es": "Nos vemos pronto",
+  "en": "See you soon",
+  "ja": "またすぐに",
+  "cat": "Frases"
+ },
+ {
+  "es": "Rojo",
+  "en": "Red",
+  "ja": "赤",
+  "cat": "Colores"
+ },
+ {
+  "es": "Azul",
+  "en": "Blue",
+  "ja": "青",
+  "cat": "Colores"
+ },
+ {
+  "es": "Verde",
+  "en": "Green",
+  "ja": "緑",
+  "cat": "Colores"
+ },
+ {
+  "es": "Amarillo",
+  "en": "Yellow",
+  "ja": "黄色",
+  "cat": "Colores"
+ },
+ {
+  "es": "Negro",
+  "en": "Black",
+  "ja": "黒",
+  "cat": "Colores"
+ },
+ {
+  "es": "Blanco",
+  "en": "White",
+  "ja": "白",
+  "cat": "Colores"
+ },
+ {
+  "es": "Gris",
+  "en": "Gray",
+  "ja": "灰色",
+  "cat": "Colores"
+ },
+ {
+  "es": "Rosa",
+  "en": "Pink",
+  "ja": "ピンク",
+  "cat": "Colores"
+ },
+ {
+  "es": "Morado",
+  "en": "Purple",
+  "ja": "紫",
+  "cat": "Colores"
+ },
+ {
+  "es": "Naranja",
+  "en": "Orange",
+  "ja": "オレンジ",
+  "cat": "Colores"
+ },
+ {
+  "es": "Marrón",
+  "en": "Brown",
+  "ja": "茶色",
+  "cat": "Colores"
+ },
+ {
+  "es": "Dorado",
+  "en": "Golden",
+  "ja": "金色",
+  "cat": "Colores"
+ },
+ {
+  "es": "Plateado",
+  "en": "Silver",
+  "ja": "銀色",
+  "cat": "Colores"
+ },
+ {
+  "es": "Celeste",
+  "en": "Sky blue",
+  "ja": "水色",
+  "cat": "Colores"
+ },
+ {
+  "es": "Turquesa",
+  "en": "Turquoise",
+  "ja": "ターコイズ色",
+  "cat": "Colores"
+ },
+ {
+  "es": "La madre",
+  "en": "Mother",
+  "ja": "母",
+  "cat": "Familia"
+ },
+ {
+  "es": "El padre",
+  "en": "Father",
+  "ja": "父",
+  "cat": "Familia"
+ },
+ {
+  "es": "El hermano",
+  "en": "Brother",
+  "ja": "兄/弟",
+  "cat": "Familia"
+ },
+ {
+  "es": "La hermana",
+  "en": "Sister",
+  "ja": "姉/妹",
+  "cat": "Familia"
+ },
+ {
+  "es": "El abuelo",
+  "en": "Grandfather",
+  "ja": "祖父",
+  "cat": "Familia"
+ },
+ {
+  "es": "La abuela",
+  "en": "Grandmother",
+  "ja": "祖母",
+  "cat": "Familia"
+ },
+ {
+  "es": "El hijo",
+  "en": "Son",
+  "ja": "息子",
+  "cat": "Familia"
+ },
+ {
+  "es": "La hija",
+  "en": "Daughter",
+  "ja": "娘",
+  "cat": "Familia"
+ },
+ {
+  "es": "El tío",
+  "en": "Uncle",
+  "ja": "おじ",
+  "cat": "Familia"
+ },
+ {
+  "es": "La tía",
+  "en": "Aunt",
+  "ja": "おば",
+  "cat": "Familia"
+ },
+ {
+  "es": "El primo",
+  "en": "Cousin (male)",
+  "ja": "いとこ(男)",
+  "cat": "Familia"
+ },
+ {
+  "es": "La prima",
+  "en": "Cousin (female)",
+  "ja": "いとこ(女)",
+  "cat": "Familia"
+ },
+ {
+  "es": "El esposo",
+  "en": "Husband",
+  "ja": "夫",
+  "cat": "Familia"
+ },
+ {
+  "es": "La esposa",
+  "en": "Wife",
+  "ja": "妻",
+  "cat": "Familia"
+ },
+ {
+  "es": "El nieto",
+  "en": "Grandson",
+  "ja": "孫息子",
+  "cat": "Familia"
+ },
+ {
+  "es": "La nieta",
+  "en": "Granddaughter",
+  "ja": "孫娘",
+  "cat": "Familia"
+ },
+ {
+  "es": "El sobrino",
+  "en": "Nephew",
+  "ja": "甥",
+  "cat": "Familia"
+ },
+ {
+  "es": "La sobrina",
+  "en": "Niece",
+  "ja": "姪",
+  "cat": "Familia"
+ },
+ {
+  "es": "El suegro",
+  "en": "Father-in-law",
+  "ja": "義父",
+  "cat": "Familia"
+ },
+ {
+  "es": "La suegra",
+  "en": "Mother-in-law",
+  "ja": "義母",
+  "cat": "Familia"
+ },
+ {
+  "es": "El cuñado",
+  "en": "Brother-in-law",
+  "ja": "義兄弟",
+  "cat": "Familia"
+ },
+ {
+  "es": "La cabeza",
+  "en": "Head",
+  "ja": "頭",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El ojo",
+  "en": "Eye",
+  "ja": "目",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La oreja",
+  "en": "Ear",
+  "ja": "耳",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La nariz",
+  "en": "Nose",
+  "ja": "鼻",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La boca",
+  "en": "Mouth",
+  "ja": "口",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La mano",
+  "en": "Hand",
+  "ja": "手",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El brazo",
+  "en": "Arm",
+  "ja": "腕",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La pierna",
+  "en": "Leg",
+  "ja": "脚",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El pie",
+  "en": "Foot",
+  "ja": "足",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El dedo",
+  "en": "Finger",
+  "ja": "指",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La espalda",
+  "en": "Back",
+  "ja": "背中",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El estómago",
+  "en": "Stomach",
+  "ja": "お腹",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El corazón",
+  "en": "Heart",
+  "ja": "心臓",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El cabello",
+  "en": "Hair",
+  "ja": "髪",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El cuello",
+  "en": "Neck",
+  "ja": "首",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El hombro",
+  "en": "Shoulder",
+  "ja": "肩",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La rodilla",
+  "en": "Knee",
+  "ja": "ひざ",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El diente",
+  "en": "Tooth",
+  "ja": "歯",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La camisa",
+  "en": "Shirt",
+  "ja": "シャツ",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El pantalón",
+  "en": "Pants",
+  "ja": "ズボン",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El vestido",
+  "en": "Dress",
+  "ja": "ワンピース",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La falda",
+  "en": "Skirt",
+  "ja": "スカート",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El zapato",
+  "en": "Shoe",
+  "ja": "靴",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El calcetín",
+  "en": "Sock",
+  "ja": "靴下",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La chaqueta",
+  "en": "Jacket",
+  "ja": "ジャケット",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El abrigo",
+  "en": "Coat",
+  "ja": "コート",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El sombrero",
+  "en": "Hat",
+  "ja": "帽子",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La bufanda",
+  "en": "Scarf",
+  "ja": "マフラー",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El guante",
+  "en": "Glove",
+  "ja": "手袋",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El cinturón",
+  "en": "Belt",
+  "ja": "ベルト",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La corbata",
+  "en": "Tie",
+  "ja": "ネクタイ",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El pijama",
+  "en": "Pajamas",
+  "ja": "パジャマ",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La casa",
+  "en": "House",
+  "ja": "家",
+  "cat": "Casa"
+ },
+ {
+  "es": "La cocina",
+  "en": "Kitchen",
+  "ja": "台所",
+  "cat": "Casa"
+ },
+ {
+  "es": "El dormitorio",
+  "en": "Bedroom",
+  "ja": "寝室",
+  "cat": "Casa"
+ },
+ {
+  "es": "El baño",
+  "en": "Bathroom",
+  "ja": "お風呂/トイレ",
+  "cat": "Casa"
+ },
+ {
+  "es": "La sala",
+  "en": "Living room",
+  "ja": "リビング",
+  "cat": "Casa"
+ },
+ {
+  "es": "El jardín",
+  "en": "Garden",
+  "ja": "庭",
+  "cat": "Casa"
+ },
+ {
+  "es": "La puerta",
+  "en": "Door",
+  "ja": "ドア",
+  "cat": "Casa"
+ },
+ {
+  "es": "La ventana",
+  "en": "Window",
+  "ja": "窓",
+  "cat": "Casa"
+ },
+ {
+  "es": "La mesa",
+  "en": "Table",
+  "ja": "テーブル",
+  "cat": "Casa"
+ },
+ {
+  "es": "La silla",
+  "en": "Chair",
+  "ja": "椅子",
+  "cat": "Casa"
+ },
+ {
+  "es": "La cama",
+  "en": "Bed",
+  "ja": "ベッド",
+  "cat": "Casa"
+ },
+ {
+  "es": "El sofá",
+  "en": "Sofa",
+  "ja": "ソファ",
+  "cat": "Casa"
+ },
+ {
+  "es": "El techo",
+  "en": "Roof / Ceiling",
+  "ja": "屋根/天井",
+  "cat": "Casa"
+ },
+ {
+  "es": "La pared",
+  "en": "Wall",
+  "ja": "壁",
+  "cat": "Casa"
+ },
+ {
+  "es": "La escalera",
+  "en": "Stairs",
+  "ja": "階段",
+  "cat": "Casa"
+ },
+ {
+  "es": "El garaje",
+  "en": "Garage",
+  "ja": "ガレージ",
+  "cat": "Casa"
+ },
+ {
+  "es": "El trabajo",
+  "en": "Work / Job",
+  "ja": "仕事",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La oficina",
+  "en": "Office",
+  "ja": "オフィス",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El jefe",
+  "en": "Boss",
+  "ja": "上司",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El empleado",
+  "en": "Employee",
+  "ja": "従業員",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La reunión",
+  "en": "Meeting",
+  "ja": "会議",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La computadora",
+  "en": "Computer",
+  "ja": "パソコン",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El correo electrónico",
+  "en": "Email",
+  "ja": "メール",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El proyecto",
+  "en": "Project",
+  "ja": "プロジェクト",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El sueldo",
+  "en": "Salary",
+  "ja": "給料",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La entrevista",
+  "en": "Interview",
+  "ja": "面接",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El currículum",
+  "en": "Resume",
+  "ja": "履歴書",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La empresa",
+  "en": "Company",
+  "ja": "会社",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El cliente",
+  "en": "Client",
+  "ja": "顧客",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El horario",
+  "en": "Schedule",
+  "ja": "スケジュール",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Feliz",
+  "en": "Happy",
+  "ja": "幸せ",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Triste",
+  "en": "Sad",
+  "ja": "悲しい",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Enojado",
+  "en": "Angry",
+  "ja": "怒っている",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Cansado",
+  "en": "Tired",
+  "ja": "疲れた",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Nervioso",
+  "en": "Nervous",
+  "ja": "緊張している",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Emocionado",
+  "en": "Excited",
+  "ja": "わくわくしている",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Aburrido",
+  "en": "Bored",
+  "ja": "退屈している",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Sorprendido",
+  "en": "Surprised",
+  "ja": "驚いている",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Asustado",
+  "en": "Scared",
+  "ja": "怖がっている",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Tranquilo",
+  "en": "Calm",
+  "ja": "落ち着いている",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Preocupado",
+  "en": "Worried",
+  "ja": "心配している",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Orgulloso",
+  "en": "Proud",
+  "ja": "誇りに思う",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Celoso",
+  "en": "Jealous",
+  "ja": "嫉妬している",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Avergonzado",
+  "en": "Embarrassed",
+  "ja": "恥ずかしい",
+  "cat": "Emociones"
+ },
+ {
+  "es": "El sol",
+  "en": "Sun",
+  "ja": "太陽",
+  "cat": "Clima"
+ },
+ {
+  "es": "La lluvia",
+  "en": "Rain",
+  "ja": "雨",
+  "cat": "Clima"
+ },
+ {
+  "es": "La nube",
+  "en": "Cloud",
+  "ja": "雲",
+  "cat": "Clima"
+ },
+ {
+  "es": "El viento",
+  "en": "Wind",
+  "ja": "風",
+  "cat": "Clima"
+ },
+ {
+  "es": "La nieve",
+  "en": "Snow",
+  "ja": "雪",
+  "cat": "Clima"
+ },
+ {
+  "es": "La tormenta",
+  "en": "Storm",
+  "ja": "嵐",
+  "cat": "Clima"
+ },
+ {
+  "es": "El calor",
+  "en": "Heat",
+  "ja": "暑さ",
+  "cat": "Clima"
+ },
+ {
+  "es": "El frío",
+  "en": "Cold",
+  "ja": "寒さ",
+  "cat": "Clima"
+ },
+ {
+  "es": "Húmedo",
+  "en": "Humid",
+  "ja": "湿気がある",
+  "cat": "Clima"
+ },
+ {
+  "es": "El arcoíris",
+  "en": "Rainbow",
+  "ja": "虹",
+  "cat": "Clima"
+ },
+ {
+  "es": "La niebla",
+  "en": "Fog",
+  "ja": "霧",
+  "cat": "Clima"
+ },
+ {
+  "es": "La helada",
+  "en": "Frost",
+  "ja": "霜",
+  "cat": "Clima"
+ },
+ {
+  "es": "El perro",
+  "en": "Dog",
+  "ja": "犬",
+  "cat": "Animales"
+ },
+ {
+  "es": "El gato",
+  "en": "Cat",
+  "ja": "猫",
+  "cat": "Animales"
+ },
+ {
+  "es": "El pájaro",
+  "en": "Bird",
+  "ja": "鳥",
+  "cat": "Animales"
+ },
+ {
+  "es": "El pez",
+  "en": "Fish",
+  "ja": "魚",
+  "cat": "Animales"
+ },
+ {
+  "es": "El caballo",
+  "en": "Horse",
+  "ja": "馬",
+  "cat": "Animales"
+ },
+ {
+  "es": "La vaca",
+  "en": "Cow",
+  "ja": "牛",
+  "cat": "Animales"
+ },
+ {
+  "es": "El cerdo",
+  "en": "Pig",
+  "ja": "豚",
+  "cat": "Animales"
+ },
+ {
+  "es": "La oveja",
+  "en": "Sheep",
+  "ja": "羊",
+  "cat": "Animales"
+ },
+ {
+  "es": "El león",
+  "en": "Lion",
+  "ja": "ライオン",
+  "cat": "Animales"
+ },
+ {
+  "es": "El elefante",
+  "en": "Elephant",
+  "ja": "象",
+  "cat": "Animales"
+ },
+ {
+  "es": "El mono",
+  "en": "Monkey",
+  "ja": "猿",
+  "cat": "Animales"
+ },
+ {
+  "es": "El conejo",
+  "en": "Rabbit",
+  "ja": "うさぎ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El ratón",
+  "en": "Mouse",
+  "ja": "ねずみ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El tigre",
+  "en": "Tiger",
+  "ja": "虎",
+  "cat": "Animales"
+ },
+ {
+  "es": "El oso",
+  "en": "Bear",
+  "ja": "熊",
+  "cat": "Animales"
+ },
+ {
+  "es": "La serpiente",
+  "en": "Snake",
+  "ja": "蛇",
+  "cat": "Animales"
+ },
+ {
+  "es": "El coche",
+  "en": "Car",
+  "ja": "車",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El autobús",
+  "en": "Bus",
+  "ja": "バス",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El tren",
+  "en": "Train",
+  "ja": "電車",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El avión",
+  "en": "Airplane",
+  "ja": "飛行機",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La bicicleta",
+  "en": "Bicycle",
+  "ja": "自転車",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El barco",
+  "en": "Boat",
+  "ja": "船",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El taxi",
+  "en": "Taxi",
+  "ja": "タクシー",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El metro",
+  "en": "Subway",
+  "ja": "地下鉄",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La motocicleta",
+  "en": "Motorcycle",
+  "ja": "バイク",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El camión",
+  "en": "Truck",
+  "ja": "トラック",
+  "cat": "Transporte"
+ },
+ {
+  "es": "Grande",
+  "en": "Big",
+  "ja": "大きい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Pequeño",
+  "en": "Small",
+  "ja": "小さい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Alto",
+  "en": "Tall",
+  "ja": "高い(背)",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Bajo",
+  "en": "Short",
+  "ja": "低い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Rápido",
+  "en": "Fast",
+  "ja": "速い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Lento",
+  "en": "Slow",
+  "ja": "遅い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Caro",
+  "en": "Expensive",
+  "ja": "高い(値段)",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Barato",
+  "en": "Cheap",
+  "ja": "安い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Fácil",
+  "en": "Easy",
+  "ja": "簡単",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Difícil",
+  "en": "Difficult",
+  "ja": "難しい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Nuevo",
+  "en": "New",
+  "ja": "新しい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Viejo",
+  "en": "Old",
+  "ja": "古い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Limpio",
+  "en": "Clean",
+  "ja": "きれい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Sucio",
+  "en": "Dirty",
+  "ja": "汚い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Fuerte",
+  "en": "Strong",
+  "ja": "強い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Débil",
+  "en": "Weak",
+  "ja": "弱い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Bonito",
+  "en": "Pretty",
+  "ja": "きれい/かわいい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Feo",
+  "en": "Ugly",
+  "ja": "醜い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Inteligente",
+  "en": "Smart",
+  "ja": "賢い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Divertido",
+  "en": "Fun",
+  "ja": "楽しい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Enero",
+  "en": "January",
+  "ja": "1月",
+  "cat": "Meses"
+ },
+ {
+  "es": "Febrero",
+  "en": "February",
+  "ja": "2月",
+  "cat": "Meses"
+ },
+ {
+  "es": "Marzo",
+  "en": "March",
+  "ja": "3月",
+  "cat": "Meses"
+ },
+ {
+  "es": "Abril",
+  "en": "April",
+  "ja": "4月",
+  "cat": "Meses"
+ },
+ {
+  "es": "Mayo",
+  "en": "May",
+  "ja": "5月",
+  "cat": "Meses"
+ },
+ {
+  "es": "Junio",
+  "en": "June",
+  "ja": "6月",
+  "cat": "Meses"
+ },
+ {
+  "es": "Julio",
+  "en": "July",
+  "ja": "7月",
+  "cat": "Meses"
+ },
+ {
+  "es": "Agosto",
+  "en": "August",
+  "ja": "8月",
+  "cat": "Meses"
+ },
+ {
+  "es": "Septiembre",
+  "en": "September",
+  "ja": "9月",
+  "cat": "Meses"
+ },
+ {
+  "es": "Octubre",
+  "en": "October",
+  "ja": "10月",
+  "cat": "Meses"
+ },
+ {
+  "es": "Noviembre",
+  "en": "November",
+  "ja": "11月",
+  "cat": "Meses"
+ },
+ {
+  "es": "Diciembre",
+  "en": "December",
+  "ja": "12月",
+  "cat": "Meses"
+ },
+ {
+  "es": "El banco",
+  "en": "Bank",
+  "ja": "銀行",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El hospital",
+  "en": "Hospital",
+  "ja": "病院",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La escuela",
+  "en": "School",
+  "ja": "学校",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La iglesia",
+  "en": "Church",
+  "ja": "教会",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El mercado",
+  "en": "Market",
+  "ja": "市場",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El parque",
+  "en": "Park",
+  "ja": "公園",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La biblioteca",
+  "en": "Library",
+  "ja": "図書館",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La farmacia",
+  "en": "Pharmacy",
+  "ja": "薬局",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El supermercado",
+  "en": "Supermarket",
+  "ja": "スーパー",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La playa",
+  "en": "Beach",
+  "ja": "ビーチ",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La montaña",
+  "en": "Mountain",
+  "ja": "山",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La ciudad",
+  "en": "City",
+  "ja": "都市",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El pueblo",
+  "en": "Town",
+  "ja": "町",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El museo",
+  "en": "Museum",
+  "ja": "美術館/博物館",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El teléfono",
+  "en": "Phone",
+  "ja": "電話",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El internet",
+  "en": "Internet",
+  "ja": "インターネット",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La aplicación",
+  "en": "App",
+  "ja": "アプリ",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La contraseña",
+  "en": "Password",
+  "ja": "パスワード",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La batería",
+  "en": "Battery",
+  "ja": "バッテリー",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La pantalla",
+  "en": "Screen",
+  "ja": "画面",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El cargador",
+  "en": "Charger",
+  "ja": "充電器",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El wifi",
+  "en": "Wifi",
+  "ja": "Wi-Fi",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El mensaje",
+  "en": "Message",
+  "ja": "メッセージ",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El fútbol",
+  "en": "Soccer",
+  "ja": "サッカー",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El baloncesto",
+  "en": "Basketball",
+  "ja": "バスケットボール",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El tenis",
+  "en": "Tennis",
+  "ja": "テニス",
+  "cat": "Deportes"
+ },
+ {
+  "es": "La natación",
+  "en": "Swimming",
+  "ja": "水泳",
+  "cat": "Deportes"
+ },
+ {
+  "es": "Correr",
+  "en": "To run",
+  "ja": "走る",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El ciclismo",
+  "en": "Cycling",
+  "ja": "サイクリング",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El béisbol",
+  "en": "Baseball",
+  "ja": "野球",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El boxeo",
+  "en": "Boxing",
+  "ja": "ボクシング",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El yoga",
+  "en": "Yoga",
+  "ja": "ヨガ",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El gimnasio",
+  "en": "Gym",
+  "ja": "ジム",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El árbol",
+  "en": "Tree",
+  "ja": "木",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La flor",
+  "en": "Flower",
+  "ja": "花",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El río",
+  "en": "River",
+  "ja": "川",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El mar",
+  "en": "Sea",
+  "ja": "海",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El cielo",
+  "en": "Sky",
+  "ja": "空",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La estrella",
+  "en": "Star",
+  "ja": "星",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La luna",
+  "en": "Moon",
+  "ja": "月",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El bosque",
+  "en": "Forest",
+  "ja": "森",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La piedra",
+  "en": "Stone",
+  "ja": "石",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "Siempre",
+  "en": "Always",
+  "ja": "いつも",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Nunca",
+  "en": "Never",
+  "ja": "決して〜ない",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "A veces",
+  "en": "Sometimes",
+  "ja": "時々",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "A menudo",
+  "en": "Often",
+  "ja": "よく",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Ahora",
+  "en": "Now",
+  "ja": "今",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Después",
+  "en": "After / Later",
+  "ja": "あとで",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Antes",
+  "en": "Before",
+  "ja": "前に",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Todavía",
+  "en": "Still / Yet",
+  "ja": "まだ",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Ya",
+  "en": "Already",
+  "ja": "すでに",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Pronto",
+  "en": "Soon",
+  "ja": "すぐに",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Temprano",
+  "en": "Early",
+  "ja": "早く",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Tarde",
+  "en": "Late",
+  "ja": "遅く",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Estar en las nubes",
+  "en": "To be daydreaming",
+  "ja": "上の空である（直訳:雲の中にいる）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Costar un ojo de la cara",
+  "en": "To cost an arm and a leg",
+  "ja": "非常に高い（直訳:顔の目玉の値段がする）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Tomar el pelo",
+  "en": "To pull someone's leg",
+  "ja": "からかう（直訳:髪を引っ張る）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Meter la pata",
+  "en": "To mess up",
+  "ja": "やらかす（直訳:足を突っ込む）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "No tener pelos en la lengua",
+  "en": "To speak one's mind bluntly",
+  "ja": "歯に衣着せぬ（直訳:舌に毛がない）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ser pan comido",
+  "en": "To be a piece of cake",
+  "ja": "朝飯前（直訳:食べたパン）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Estar como agua para chocolate",
+  "en": "To be extremely angry",
+  "ja": "かんかんに怒っている（メキシコ独特の表現）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ponerse las pilas",
+  "en": "To get one's act together",
+  "ja": "気合を入れる（直訳:電池を入れる）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Echar de menos",
+  "en": "To miss someone/something",
+  "ja": "恋しく思う",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Dar en el clavo",
+  "en": "To hit the nail on the head",
+  "ja": "図星をつく（直訳:釘に当てる）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Hacer la vista gorda",
+  "en": "To turn a blind eye",
+  "ja": "見て見ぬふりをする",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Estar hasta las narices",
+  "en": "To be fed up",
+  "ja": "うんざりしている（直訳:鼻まで達している）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Írsele la mano",
+  "en": "To overdo it",
+  "ja": "やり過ぎる（直訳:手が行ってしまう）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Quedarse de piedra",
+  "en": "To be stunned",
+  "ja": "あぜんとする（直訳:石になる）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ni fu ni fa",
+  "en": "So-so / neither here nor there",
+  "ja": "どうでもいい、まあまあ",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Fijarse en",
+  "en": "To notice / pay attention to",
+  "ja": "〜に気づく、注目する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Darse cuenta de",
+  "en": "To realize",
+  "ja": "〜に気がつく",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Enterarse de",
+  "en": "To find out about",
+  "ja": "〜を知る",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Arrepentirse de",
+  "en": "To regret",
+  "ja": "後悔する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Acostumbrarse a",
+  "en": "To get used to",
+  "ja": "〜に慣れる",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Atreverse a",
+  "en": "To dare to",
+  "ja": "あえて〜する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Quejarse de",
+  "en": "To complain about",
+  "ja": "〜に文句を言う",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Sorprenderse de",
+  "en": "To be surprised at",
+  "ja": "〜に驚く",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Negarse a",
+  "en": "To refuse to",
+  "ja": "〜することを拒否する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Empeñarse en",
+  "en": "To insist on",
+  "ja": "〜に固執する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Sin duda",
+  "en": "Without a doubt",
+  "ja": "間違いなく",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Por lo tanto",
+  "en": "Therefore",
+  "ja": "したがって",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En cuanto a",
+  "en": "As for / regarding",
+  "ja": "〜に関しては",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "A pesar de",
+  "en": "Despite",
+  "ja": "〜にもかかわらず",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "De hecho",
+  "en": "In fact",
+  "ja": "実は",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Por si acaso",
+  "en": "Just in case",
+  "ja": "念のため",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Cuanto antes",
+  "en": "As soon as possible",
+  "ja": "できるだけ早く",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Hoy en día",
+  "en": "Nowadays",
+  "ja": "最近は",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "La guitarra",
+  "en": "Guitar",
+  "ja": "ギター",
+  "cat": "Música"
+ },
+ {
+  "es": "El piano",
+  "en": "Piano",
+  "ja": "ピアノ",
+  "cat": "Música"
+ },
+ {
+  "es": "El violín",
+  "en": "Violin",
+  "ja": "バイオリン",
+  "cat": "Música"
+ },
+ {
+  "es": "La flauta",
+  "en": "Flute",
+  "ja": "フルート",
+  "cat": "Música"
+ },
+ {
+  "es": "La trompeta",
+  "en": "Trumpet",
+  "ja": "トランペット",
+  "cat": "Música"
+ },
+ {
+  "es": "El saxofón",
+  "en": "Saxophone",
+  "ja": "サックス",
+  "cat": "Música"
+ },
+ {
+  "es": "El arpa",
+  "en": "Harp",
+  "ja": "ハープ",
+  "cat": "Música"
+ },
+ {
+  "es": "El tambor",
+  "en": "Drum",
+  "ja": "太鼓",
+  "cat": "Música"
+ },
+ {
+  "es": "El acordeón",
+  "en": "Accordion",
+  "ja": "アコーディオン",
+  "cat": "Música"
+ },
+ {
+  "es": "El clarinete",
+  "en": "Clarinet",
+  "ja": "クラリネット",
+  "cat": "Música"
+ },
+ {
+  "es": "El contrabajo",
+  "en": "Double bass",
+  "ja": "コントラバス",
+  "cat": "Música"
+ },
+ {
+  "es": "El ukelele",
+  "en": "Ukulele",
+  "ja": "ウクレレ",
+  "cat": "Música"
+ },
+ {
+  "es": "El órgano",
+  "en": "Organ",
+  "ja": "オルガン",
+  "cat": "Música"
+ },
+ {
+  "es": "La pandereta",
+  "en": "Tambourine",
+  "ja": "タンバリン",
+  "cat": "Música"
+ },
+ {
+  "es": "El médico",
+  "en": "Doctor",
+  "ja": "医者",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "La enfermera",
+  "en": "Nurse",
+  "ja": "看護師",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El maestro",
+  "en": "Teacher",
+  "ja": "教師",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El abogado",
+  "en": "Lawyer",
+  "ja": "弁護士",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El ingeniero",
+  "en": "Engineer",
+  "ja": "エンジニア",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El arquitecto",
+  "en": "Architect",
+  "ja": "建築家",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El contador",
+  "en": "Accountant",
+  "ja": "会計士",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El periodista",
+  "en": "Journalist",
+  "ja": "記者",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El cocinero",
+  "en": "Cook",
+  "ja": "料理人",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El camarero",
+  "en": "Waiter",
+  "ja": "ウェイター",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El piloto",
+  "en": "Pilot",
+  "ja": "パイロット",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El policía",
+  "en": "Police officer",
+  "ja": "警察官",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El bombero",
+  "en": "Firefighter",
+  "ja": "消防士",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El electricista",
+  "en": "Electrician",
+  "ja": "電気技師",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El plomero",
+  "en": "Plumber",
+  "ja": "配管工",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El carpintero",
+  "en": "Carpenter",
+  "ja": "大工",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El peluquero",
+  "en": "Hairdresser",
+  "ja": "美容師",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El dentista",
+  "en": "Dentist",
+  "ja": "歯科医",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El veterinario",
+  "en": "Veterinarian",
+  "ja": "獣医",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El científico",
+  "en": "Scientist",
+  "ja": "科学者",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El escritor",
+  "en": "Writer",
+  "ja": "作家",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El actor",
+  "en": "Actor",
+  "ja": "俳優",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "La actriz",
+  "en": "Actress",
+  "ja": "女優",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El cantante",
+  "en": "Singer",
+  "ja": "歌手",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El pintor",
+  "en": "Painter",
+  "ja": "画家",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "El granjero",
+  "en": "Farmer",
+  "ja": "農家",
+  "cat": "Profesiones"
+ },
+ {
+  "es": "La manzana",
+  "en": "Apple",
+  "ja": "りんご",
+  "cat": "Comida"
+ },
+ {
+  "es": "El plátano",
+  "en": "Banana",
+  "ja": "バナナ",
+  "cat": "Comida"
+ },
+ {
+  "es": "La naranja",
+  "en": "Orange (fruit)",
+  "ja": "オレンジ(果物)",
+  "cat": "Comida"
+ },
+ {
+  "es": "La uva",
+  "en": "Grape",
+  "ja": "ぶどう",
+  "cat": "Comida"
+ },
+ {
+  "es": "La fresa",
+  "en": "Strawberry",
+  "ja": "いちご",
+  "cat": "Comida"
+ },
+ {
+  "es": "La sandía",
+  "en": "Watermelon",
+  "ja": "スイカ",
+  "cat": "Comida"
+ },
+ {
+  "es": "La piña",
+  "en": "Pineapple",
+  "ja": "パイナップル",
+  "cat": "Comida"
+ },
+ {
+  "es": "El mango",
+  "en": "Mango",
+  "ja": "マンゴー",
+  "cat": "Comida"
+ },
+ {
+  "es": "El limón",
+  "en": "Lemon",
+  "ja": "レモン",
+  "cat": "Comida"
+ },
+ {
+  "es": "La pera",
+  "en": "Pear",
+  "ja": "梨/洋梨",
+  "cat": "Comida"
+ },
+ {
+  "es": "La cereza",
+  "en": "Cherry",
+  "ja": "さくらんぼ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El durazno",
+  "en": "Peach",
+  "ja": "桃",
+  "cat": "Comida"
+ },
+ {
+  "es": "La papaya",
+  "en": "Papaya",
+  "ja": "パパイヤ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El coco",
+  "en": "Coconut",
+  "ja": "ココナッツ",
+  "cat": "Comida"
+ },
+ {
+  "es": "La zanahoria",
+  "en": "Carrot",
+  "ja": "にんじん",
+  "cat": "Comida"
+ },
+ {
+  "es": "La papa",
+  "en": "Potato",
+  "ja": "じゃがいも",
+  "cat": "Comida"
+ },
+ {
+  "es": "La cebolla",
+  "en": "Onion",
+  "ja": "玉ねぎ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El ajo",
+  "en": "Garlic",
+  "ja": "にんにく",
+  "cat": "Comida"
+ },
+ {
+  "es": "El tomate",
+  "en": "Tomato",
+  "ja": "トマト",
+  "cat": "Comida"
+ },
+ {
+  "es": "La lechuga",
+  "en": "Lettuce",
+  "ja": "レタス",
+  "cat": "Comida"
+ },
+ {
+  "es": "El pepino",
+  "en": "Cucumber",
+  "ja": "きゅうり",
+  "cat": "Comida"
+ },
+ {
+  "es": "El brócoli",
+  "en": "Broccoli",
+  "ja": "ブロッコリー",
+  "cat": "Comida"
+ },
+ {
+  "es": "La espinaca",
+  "en": "Spinach",
+  "ja": "ほうれん草",
+  "cat": "Comida"
+ },
+ {
+  "es": "La calabaza",
+  "en": "Pumpkin",
+  "ja": "かぼちゃ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El pimiento",
+  "en": "Bell pepper",
+  "ja": "ピーマン",
+  "cat": "Comida"
+ },
+ {
+  "es": "España",
+  "en": "Spain",
+  "ja": "スペイン",
+  "cat": "Geografía"
+ },
+ {
+  "es": "México",
+  "en": "Mexico",
+  "ja": "メキシコ",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Argentina",
+  "en": "Argentina",
+  "ja": "アルゼンチン",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Colombia",
+  "en": "Colombia",
+  "ja": "コロンビア",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Perú",
+  "en": "Peru",
+  "ja": "ペルー",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Chile",
+  "en": "Chile",
+  "ja": "チリ",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Estados Unidos",
+  "en": "United States",
+  "ja": "アメリカ合衆国",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Canadá",
+  "en": "Canada",
+  "ja": "カナダ",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Francia",
+  "en": "France",
+  "ja": "フランス",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Alemania",
+  "en": "Germany",
+  "ja": "ドイツ",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Italia",
+  "en": "Italy",
+  "ja": "イタリア",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Japón",
+  "en": "Japan",
+  "ja": "日本",
+  "cat": "Geografía"
+ },
+ {
+  "es": "China",
+  "en": "China",
+  "ja": "中国",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Brasil",
+  "en": "Brazil",
+  "ja": "ブラジル",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Cuba",
+  "en": "Cuba",
+  "ja": "キューバ",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Guatemala",
+  "en": "Guatemala",
+  "ja": "グアテマラ",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Venezuela",
+  "en": "Venezuela",
+  "ja": "ベネズエラ",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Ecuador",
+  "en": "Ecuador",
+  "ja": "エクアドル",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Bolivia",
+  "en": "Bolivia",
+  "ja": "ボリビア",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Uruguay",
+  "en": "Uruguay",
+  "ja": "ウルグアイ",
+  "cat": "Geografía"
+ },
+ {
+  "es": "América",
+  "en": "America",
+  "ja": "アメリカ大陸",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Europa",
+  "en": "Europe",
+  "ja": "ヨーロッパ",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Asia",
+  "en": "Asia",
+  "ja": "アジア",
+  "cat": "Geografía"
+ },
+ {
+  "es": "África",
+  "en": "Africa",
+  "ja": "アフリカ",
+  "cat": "Geografía"
+ },
+ {
+  "es": "Oceanía",
+  "en": "Oceania",
+  "ja": "オセアニア",
+  "cat": "Geografía"
+ },
+ {
+  "es": "La Antártida",
+  "en": "Antarctica",
+  "ja": "南極大陸",
+  "cat": "Geografía"
+ },
+ {
+  "es": "La física",
+  "en": "Physics",
+  "ja": "物理学",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "La química",
+  "en": "Chemistry",
+  "ja": "化学",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "La biología",
+  "en": "Biology",
+  "ja": "生物学",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "Las matemáticas",
+  "en": "Mathematics",
+  "ja": "数学",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "El experimento",
+  "en": "Experiment",
+  "ja": "実験",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "El átomo",
+  "en": "Atom",
+  "ja": "原子",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "La célula",
+  "en": "Cell",
+  "ja": "細胞",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "El planeta",
+  "en": "Planet",
+  "ja": "惑星",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "La gravedad",
+  "en": "Gravity",
+  "ja": "重力",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "La energía",
+  "en": "Energy",
+  "ja": "エネルギー",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "El microscopio",
+  "en": "Microscope",
+  "ja": "顕微鏡",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "La fórmula",
+  "en": "Formula",
+  "ja": "公式",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "El laboratorio",
+  "en": "Laboratory",
+  "ja": "研究室",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "La teoría",
+  "en": "Theory",
+  "ja": "理論",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "El universo",
+  "en": "Universe",
+  "ja": "宇宙",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "La pintura",
+  "en": "Painting",
+  "ja": "絵画",
+  "cat": "Arte"
+ },
+ {
+  "es": "La escultura",
+  "en": "Sculpture",
+  "ja": "彫刻",
+  "cat": "Arte"
+ },
+ {
+  "es": "La poesía",
+  "en": "Poetry",
+  "ja": "詩",
+  "cat": "Arte"
+ },
+ {
+  "es": "La novela",
+  "en": "Novel",
+  "ja": "小説",
+  "cat": "Arte"
+ },
+ {
+  "es": "El cuento",
+  "en": "Short story",
+  "ja": "短編小説",
+  "cat": "Arte"
+ },
+ {
+  "es": "El autor",
+  "en": "Author",
+  "ja": "著者",
+  "cat": "Arte"
+ },
+ {
+  "es": "El personaje",
+  "en": "Character",
+  "ja": "登場人物",
+  "cat": "Arte"
+ },
+ {
+  "es": "La trama",
+  "en": "Plot",
+  "ja": "筋書き",
+  "cat": "Arte"
+ },
+ {
+  "es": "El poema",
+  "en": "Poem",
+  "ja": "詩(作品)",
+  "cat": "Arte"
+ },
+ {
+  "es": "La obra de teatro",
+  "en": "Play (theater)",
+  "ja": "演劇作品",
+  "cat": "Arte"
+ },
+ {
+  "es": "El escenario",
+  "en": "Stage",
+  "ja": "舞台",
+  "cat": "Arte"
+ },
+ {
+  "es": "La exposición",
+  "en": "Exhibition",
+  "ja": "展覧会",
+  "cat": "Arte"
+ },
+ {
+  "es": "El lienzo",
+  "en": "Canvas",
+  "ja": "キャンバス",
+  "cat": "Arte"
+ },
+ {
+  "es": "El pincel",
+  "en": "Paintbrush",
+  "ja": "絵筆",
+  "cat": "Arte"
+ },
+ {
+  "es": "La galería",
+  "en": "Gallery",
+  "ja": "ギャラリー",
+  "cat": "Arte"
+ },
+ {
+  "es": "Abrir",
+  "en": "To open",
+  "ja": "開ける",
+  "cat": "Verbos",
+  "nivel": "básico"
+ },
+ {
+  "es": "Cerrar",
+  "en": "To close",
+  "ja": "閉める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Empezar",
+  "en": "To start",
+  "ja": "始める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Terminar",
+  "en": "To finish",
+  "ja": "終える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Entender",
+  "en": "To understand",
+  "ja": "理解する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Aprender",
+  "en": "To learn",
+  "ja": "学ぶ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Enseñar",
+  "en": "To teach",
+  "ja": "教える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Escribir",
+  "en": "To write",
+  "ja": "書く",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Leer",
+  "en": "To read",
+  "ja": "読む",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Escuchar",
+  "en": "To listen",
+  "ja": "聞く",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Mirar",
+  "en": "To look at",
+  "ja": "見る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Ver",
+  "en": "To see",
+  "ja": "見える/見る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Oír",
+  "en": "To hear",
+  "ja": "聞こえる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sentir",
+  "en": "To feel",
+  "ja": "感じる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Pensar",
+  "en": "To think",
+  "ja": "考える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Creer",
+  "en": "To believe",
+  "ja": "信じる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Saber",
+  "en": "To know (a fact)",
+  "ja": "知っている",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Conocer",
+  "en": "To know (a person/place)",
+  "ja": "知り合いである",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dar",
+  "en": "To give",
+  "ja": "与える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tomar",
+  "en": "To take",
+  "ja": "取る/飲む",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Llevar",
+  "en": "To carry/wear",
+  "ja": "運ぶ/身につける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Traer",
+  "en": "To bring",
+  "ja": "持ってくる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Buscar",
+  "en": "To look for",
+  "ja": "探す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Encontrar",
+  "en": "To find",
+  "ja": "見つける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Perder",
+  "en": "To lose",
+  "ja": "失う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Ganar",
+  "en": "To win/earn",
+  "ja": "勝つ/稼ぐ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Jugar",
+  "en": "To play",
+  "ja": "遊ぶ/プレーする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Trabajar",
+  "en": "To work",
+  "ja": "働く",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Estudiar",
+  "en": "To study",
+  "ja": "勉強する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dormir",
+  "en": "To sleep",
+  "ja": "眠る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Soñar",
+  "en": "To dream",
+  "ja": "夢を見る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Recordar",
+  "en": "To remember",
+  "ja": "思い出す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Olvidar",
+  "en": "To forget",
+  "ja": "忘れる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Decidir",
+  "en": "To decide",
+  "ja": "決める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Cambiar",
+  "en": "To change",
+  "ja": "変える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Mejorar",
+  "en": "To improve",
+  "ja": "改善する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Ayudar",
+  "en": "To help",
+  "ja": "手伝う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Permitir",
+  "en": "To allow",
+  "ja": "許可する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Prohibir",
+  "en": "To forbid",
+  "ja": "禁止する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Preguntar",
+  "en": "To ask",
+  "ja": "質問する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Amable",
+  "en": "Kind",
+  "ja": "親切な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Generoso",
+  "en": "Generous",
+  "ja": "寛大な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Egoísta",
+  "en": "Selfish",
+  "ja": "利己的な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Honesto",
+  "en": "Honest",
+  "ja": "正直な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Sincero",
+  "en": "Sincere",
+  "ja": "誠実な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Tímido",
+  "en": "Shy",
+  "ja": "恥ずかしがりな",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Valiente",
+  "en": "Brave",
+  "ja": "勇敢な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Paciente",
+  "en": "Patient",
+  "ja": "忍耐強い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Impaciente",
+  "en": "Impatient",
+  "ja": "せっかちな",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Curioso",
+  "en": "Curious",
+  "ja": "好奇心旺盛な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Creativo",
+  "en": "Creative",
+  "ja": "創造的な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Responsable",
+  "en": "Responsible",
+  "ja": "責任感のある",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Perezoso",
+  "en": "Lazy",
+  "ja": "怠惰な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Trabajador",
+  "en": "Hard-working",
+  "ja": "勤勉な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Optimista",
+  "en": "Optimistic",
+  "ja": "楽観的な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Pesimista",
+  "en": "Pessimistic",
+  "ja": "悲観的な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Gracioso",
+  "en": "Funny",
+  "ja": "面白い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Serio",
+  "en": "Serious",
+  "ja": "真面目な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Educado",
+  "en": "Polite",
+  "ja": "礼儀正しい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Maleducado",
+  "en": "Rude",
+  "ja": "無礼な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "La red social",
+  "en": "Social network",
+  "ja": "SNS",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El usuario",
+  "en": "User",
+  "ja": "ユーザー",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La publicación",
+  "en": "Post",
+  "ja": "投稿",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El comentario",
+  "en": "Comment",
+  "ja": "コメント",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El seguidor",
+  "en": "Follower",
+  "ja": "フォロワー",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La notificación",
+  "en": "Notification",
+  "ja": "通知",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El enlace",
+  "en": "Link",
+  "ja": "リンク",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El archivo",
+  "en": "File",
+  "ja": "ファイル",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La carpeta",
+  "en": "Folder",
+  "ja": "フォルダ",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El navegador",
+  "en": "Browser",
+  "ja": "ブラウザ",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La descarga",
+  "en": "Download",
+  "ja": "ダウンロード",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La actualización",
+  "en": "Update",
+  "ja": "アップデート",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El video",
+  "en": "Video",
+  "ja": "動画",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La foto",
+  "en": "Photo",
+  "ja": "写真",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La pizza",
+  "en": "Pizza",
+  "ja": "ピザ",
+  "cat": "Comida"
+ },
+ {
+  "es": "La hamburguesa",
+  "en": "Hamburger",
+  "ja": "ハンバーガー",
+  "cat": "Comida"
+ },
+ {
+  "es": "La sopa",
+  "en": "Soup",
+  "ja": "スープ",
+  "cat": "Comida"
+ },
+ {
+  "es": "La ensalada",
+  "en": "Salad",
+  "ja": "サラダ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El postre",
+  "en": "Dessert",
+  "ja": "デザート",
+  "cat": "Comida"
+ },
+ {
+  "es": "El pastel",
+  "en": "Cake",
+  "ja": "ケーキ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El helado",
+  "en": "Ice cream",
+  "ja": "アイスクリーム",
+  "cat": "Comida"
+ },
+ {
+  "es": "El chocolate",
+  "en": "Chocolate",
+  "ja": "チョコレート",
+  "cat": "Comida"
+ },
+ {
+  "es": "La galleta",
+  "en": "Cookie",
+  "ja": "クッキー",
+  "cat": "Comida"
+ },
+ {
+  "es": "El jugo",
+  "en": "Juice",
+  "ja": "ジュース",
+  "cat": "Comida"
+ },
+ {
+  "es": "El refresco",
+  "en": "Soda",
+  "ja": "炭酸飲料",
+  "cat": "Comida"
+ },
+ {
+  "es": "La cerveza",
+  "en": "Beer",
+  "ja": "ビール",
+  "cat": "Comida"
+ },
+ {
+  "es": "El vino",
+  "en": "Wine",
+  "ja": "ワイン",
+  "cat": "Comida"
+ },
+ {
+  "es": "El té",
+  "en": "Tea",
+  "ja": "お茶",
+  "cat": "Comida"
+ },
+ {
+  "es": "La leche",
+  "en": "Milk",
+  "ja": "牛乳",
+  "cat": "Comida"
+ },
+ {
+  "es": "El azúcar",
+  "en": "Sugar",
+  "ja": "砂糖",
+  "cat": "Comida"
+ },
+ {
+  "es": "La sal",
+  "en": "Salt",
+  "ja": "塩",
+  "cat": "Comida"
+ },
+ {
+  "es": "La pimienta",
+  "en": "Pepper (spice)",
+  "ja": "こしょう",
+  "cat": "Comida"
+ },
+ {
+  "es": "El aceite",
+  "en": "Oil",
+  "ja": "油",
+  "cat": "Comida"
+ },
+ {
+  "es": "El vinagre",
+  "en": "Vinegar",
+  "ja": "酢",
+  "cat": "Comida"
+ },
+ {
+  "es": "La mantequilla",
+  "en": "Butter",
+  "ja": "バター",
+  "cat": "Comida"
+ },
+ {
+  "es": "El queso",
+  "en": "Cheese",
+  "ja": "チーズ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El huevo",
+  "en": "Egg",
+  "ja": "卵",
+  "cat": "Comida"
+ },
+ {
+  "es": "El arroz",
+  "en": "Rice",
+  "ja": "米",
+  "cat": "Comida"
+ },
+ {
+  "es": "Los frijoles",
+  "en": "Beans",
+  "ja": "豆",
+  "cat": "Comida"
+ },
+ {
+  "es": "El refrigerador",
+  "en": "Refrigerator",
+  "ja": "冷蔵庫",
+  "cat": "Casa"
+ },
+ {
+  "es": "La estufa",
+  "en": "Stove",
+  "ja": "コンロ",
+  "cat": "Casa"
+ },
+ {
+  "es": "El horno",
+  "en": "Oven",
+  "ja": "オーブン",
+  "cat": "Casa"
+ },
+ {
+  "es": "El microondas",
+  "en": "Microwave",
+  "ja": "電子レンジ",
+  "cat": "Casa"
+ },
+ {
+  "es": "La lavadora",
+  "en": "Washing machine",
+  "ja": "洗濯機",
+  "cat": "Casa"
+ },
+ {
+  "es": "La secadora",
+  "en": "Dryer",
+  "ja": "乾燥機",
+  "cat": "Casa"
+ },
+ {
+  "es": "El lavaplatos",
+  "en": "Dishwasher",
+  "ja": "食洗機",
+  "cat": "Casa"
+ },
+ {
+  "es": "El televisor",
+  "en": "TV set",
+  "ja": "テレビ",
+  "cat": "Casa"
+ },
+ {
+  "es": "El espejo",
+  "en": "Mirror",
+  "ja": "鏡",
+  "cat": "Casa"
+ },
+ {
+  "es": "La lámpara",
+  "en": "Lamp",
+  "ja": "ランプ",
+  "cat": "Casa"
+ },
+ {
+  "es": "La almohada",
+  "en": "Pillow",
+  "ja": "枕",
+  "cat": "Casa"
+ },
+ {
+  "es": "La manta",
+  "en": "Blanket",
+  "ja": "毛布",
+  "cat": "Casa"
+ },
+ {
+  "es": "El armario",
+  "en": "Closet",
+  "ja": "クローゼット",
+  "cat": "Casa"
+ },
+ {
+  "es": "El estante",
+  "en": "Shelf",
+  "ja": "棚",
+  "cat": "Casa"
+ },
+ {
+  "es": "La alfombra",
+  "en": "Rug",
+  "ja": "じゅうたん",
+  "cat": "Casa"
+ },
+ {
+  "es": "El ayuntamiento",
+  "en": "City hall",
+  "ja": "市役所",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La estación de policía",
+  "en": "Police station",
+  "ja": "警察署",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El estadio",
+  "en": "Stadium",
+  "ja": "スタジアム",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El teatro",
+  "en": "Theater",
+  "ja": "劇場",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El cine",
+  "en": "Cinema",
+  "ja": "映画館",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La catedral",
+  "en": "Cathedral",
+  "ja": "大聖堂",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El rascacielos",
+  "en": "Skyscraper",
+  "ja": "高層ビル",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La plaza",
+  "en": "Square (plaza)",
+  "ja": "広場",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La calle",
+  "en": "Street",
+  "ja": "通り",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La avenida",
+  "en": "Avenue",
+  "ja": "大通り",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El puente",
+  "en": "Bridge",
+  "ja": "橋",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La torre",
+  "en": "Tower",
+  "ja": "タワー",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El monumento",
+  "en": "Monument",
+  "ja": "記念碑",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El semáforo",
+  "en": "Traffic light",
+  "ja": "信号機",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La acera",
+  "en": "Sidewalk",
+  "ja": "歩道",
+  "cat": "Lugares"
+ },
+ {
+  "es": "Las gafas",
+  "en": "Glasses",
+  "ja": "眼鏡",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El paraguas",
+  "en": "Umbrella",
+  "ja": "傘",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El bolso",
+  "en": "Handbag",
+  "ja": "バッグ",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La mochila",
+  "en": "Backpack",
+  "ja": "リュック",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El reloj",
+  "en": "Watch/clock",
+  "ja": "時計",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El collar",
+  "en": "Necklace",
+  "ja": "ネックレス",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El anillo",
+  "en": "Ring",
+  "ja": "指輪",
+  "cat": "Ropa"
+ },
+ {
+  "es": "Los aretes",
+  "en": "Earrings",
+  "ja": "ピアス/イヤリング",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La pulsera",
+  "en": "Bracelet",
+  "ja": "ブレスレット",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El pañuelo",
+  "en": "Handkerchief",
+  "ja": "ハンカチ",
+  "cat": "Ropa"
+ },
+ {
+  "es": "Las sandalias",
+  "en": "Sandals",
+  "ja": "サンダル",
+  "cat": "Ropa"
+ },
+ {
+  "es": "Las botas",
+  "en": "Boots",
+  "ja": "ブーツ",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La salud",
+  "en": "Health",
+  "ja": "健康",
+  "cat": "Salud"
+ },
+ {
+  "es": "La enfermedad",
+  "en": "Illness",
+  "ja": "病気",
+  "cat": "Salud"
+ },
+ {
+  "es": "El resfriado",
+  "en": "Cold (illness)",
+  "ja": "風邪",
+  "cat": "Salud"
+ },
+ {
+  "es": "La fiebre",
+  "en": "Fever",
+  "ja": "発熱",
+  "cat": "Salud"
+ },
+ {
+  "es": "El dolor",
+  "en": "Pain",
+  "ja": "痛み",
+  "cat": "Salud"
+ },
+ {
+  "es": "La medicina",
+  "en": "Medicine",
+  "ja": "薬",
+  "cat": "Salud"
+ },
+ {
+  "es": "La pastilla",
+  "en": "Pill",
+  "ja": "錠剤",
+  "cat": "Salud"
+ },
+ {
+  "es": "La vacuna",
+  "en": "Vaccine",
+  "ja": "ワクチン",
+  "cat": "Salud"
+ },
+ {
+  "es": "La receta",
+  "en": "Prescription/recipe",
+  "ja": "処方箋/レシピ",
+  "cat": "Salud"
+ },
+ {
+  "es": "La clínica",
+  "en": "Clinic",
+  "ja": "クリニック",
+  "cat": "Salud"
+ },
+ {
+  "es": "El síntoma",
+  "en": "Symptom",
+  "ja": "症状",
+  "cat": "Salud"
+ },
+ {
+  "es": "La alergia",
+  "en": "Allergy",
+  "ja": "アレルギー",
+  "cat": "Salud"
+ },
+ {
+  "es": "La cirugía",
+  "en": "Surgery",
+  "ja": "手術",
+  "cat": "Salud"
+ },
+ {
+  "es": "El yeso",
+  "en": "Cast (medical)",
+  "ja": "ギプス",
+  "cat": "Salud"
+ },
+ {
+  "es": "La venda",
+  "en": "Bandage",
+  "ja": "包帯",
+  "cat": "Salud"
+ },
+ {
+  "es": "La aduana",
+  "en": "Customs",
+  "ja": "税関",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La visa",
+  "en": "Visa",
+  "ja": "ビザ",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El equipaje de mano",
+  "en": "Carry-on luggage",
+  "ja": "機内持ち込み荷物",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La puerta de embarque",
+  "en": "Boarding gate",
+  "ja": "搭乗ゲート",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La escala",
+  "en": "Layover",
+  "ja": "乗り継ぎ",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El mostrador",
+  "en": "Counter",
+  "ja": "カウンター",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La tarjeta de embarque",
+  "en": "Boarding pass",
+  "ja": "搭乗券",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El destino",
+  "en": "Destination",
+  "ja": "目的地",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El itinerario",
+  "en": "Itinerary",
+  "ja": "旅程",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La excursión",
+  "en": "Excursion",
+  "ja": "小旅行",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El guía turístico",
+  "en": "Tour guide",
+  "ja": "観光ガイド",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El mapa",
+  "en": "Map",
+  "ja": "地図",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La brújula",
+  "en": "Compass",
+  "ja": "コンパス",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El seguro de viaje",
+  "en": "Travel insurance",
+  "ja": "旅行保険",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La embajada",
+  "en": "Embassy",
+  "ja": "大使館",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El volcán",
+  "en": "Volcano",
+  "ja": "火山",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El desierto",
+  "en": "Desert",
+  "ja": "砂漠",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La isla",
+  "en": "Island",
+  "ja": "島",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La costa",
+  "en": "Coast",
+  "ja": "海岸",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El valle",
+  "en": "Valley",
+  "ja": "谷",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La colina",
+  "en": "Hill",
+  "ja": "丘",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La cascada",
+  "en": "Waterfall",
+  "ja": "滝",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El lago",
+  "en": "Lake",
+  "ja": "湖",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El glaciar",
+  "en": "Glacier",
+  "ja": "氷河",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El terremoto",
+  "en": "Earthquake",
+  "ja": "地震",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El huracán",
+  "en": "Hurricane",
+  "ja": "ハリケーン",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La sequía",
+  "en": "Drought",
+  "ja": "干ばつ",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La marea",
+  "en": "Tide",
+  "ja": "潮",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El amanecer",
+  "en": "Dawn",
+  "ja": "夜明け",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El atardecer",
+  "en": "Sunset",
+  "ja": "夕暮れ",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El dinero",
+  "en": "Money",
+  "ja": "お金",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La moneda",
+  "en": "Currency/coin",
+  "ja": "通貨/硬貨",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La tarjeta de crédito",
+  "en": "Credit card",
+  "ja": "クレジットカード",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La cuenta bancaria",
+  "en": "Bank account",
+  "ja": "銀行口座",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El cajero automático",
+  "en": "ATM",
+  "ja": "ATM",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El préstamo",
+  "en": "Loan",
+  "ja": "ローン",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El ahorro",
+  "en": "Savings",
+  "ja": "貯金",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La inversión",
+  "en": "Investment",
+  "ja": "投資",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El impuesto",
+  "en": "Tax",
+  "ja": "税金",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El presupuesto",
+  "en": "Budget",
+  "ja": "予算",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El efectivo",
+  "en": "Cash",
+  "ja": "現金",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El cambio",
+  "en": "Change (money)",
+  "ja": "おつり/両替",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La factura",
+  "en": "Invoice",
+  "ja": "請求書",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El recibo",
+  "en": "Receipt",
+  "ja": "領収書",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La universidad",
+  "en": "University",
+  "ja": "大学",
+  "cat": "Educación"
+ },
+ {
+  "es": "La carrera",
+  "en": "Degree program",
+  "ja": "専攻・学部課程",
+  "cat": "Educación"
+ },
+ {
+  "es": "La beca",
+  "en": "Scholarship",
+  "ja": "奨学金",
+  "cat": "Educación"
+ },
+ {
+  "es": "El examen",
+  "en": "Exam",
+  "ja": "試験",
+  "cat": "Educación"
+ },
+ {
+  "es": "La tarea",
+  "en": "Homework",
+  "ja": "宿題",
+  "cat": "Educación"
+ },
+ {
+  "es": "La nota",
+  "en": "Grade",
+  "ja": "成績",
+  "cat": "Educación"
+ },
+ {
+  "es": "El título",
+  "en": "Degree/title",
+  "ja": "学位",
+  "cat": "Educación"
+ },
+ {
+  "es": "La conferencia",
+  "en": "Lecture/conference",
+  "ja": "講義・会議",
+  "cat": "Educación"
+ },
+ {
+  "es": "El semestre",
+  "en": "Semester",
+  "ja": "学期",
+  "cat": "Educación"
+ },
+ {
+  "es": "La matrícula",
+  "en": "Tuition/enrollment",
+  "ja": "授業料・入学登録",
+  "cat": "Educación"
+ },
+ {
+  "es": "El aula",
+  "en": "Classroom",
+  "ja": "教室",
+  "cat": "Educación"
+ },
+ {
+  "es": "El pizarrón",
+  "en": "Blackboard",
+  "ja": "黒板",
+  "cat": "Educación"
+ },
+ {
+  "es": "El cuaderno",
+  "en": "Notebook",
+  "ja": "ノート",
+  "cat": "Educación"
+ },
+ {
+  "es": "El lápiz",
+  "en": "Pencil",
+  "ja": "鉛筆",
+  "cat": "Educación"
+ },
+ {
+  "es": "La regla",
+  "en": "Ruler",
+  "ja": "定規",
+  "cat": "Educación"
+ },
+ {
+  "es": "El golf",
+  "en": "Golf",
+  "ja": "ゴルフ",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El surf",
+  "en": "Surfing",
+  "ja": "サーフィン",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El esquí",
+  "en": "Skiing",
+  "ja": "スキー",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El snowboard",
+  "en": "Snowboarding",
+  "ja": "スノーボード",
+  "cat": "Deportes"
+ },
+ {
+  "es": "La escalada",
+  "en": "Climbing",
+  "ja": "クライミング",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El voleibol",
+  "en": "Volleyball",
+  "ja": "バレーボール",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El rugby",
+  "en": "Rugby",
+  "ja": "ラグビー",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El hockey",
+  "en": "Hockey",
+  "ja": "ホッケー",
+  "cat": "Deportes"
+ },
+ {
+  "es": "Las artes marciales",
+  "en": "Martial arts",
+  "ja": "格闘技",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El atletismo",
+  "en": "Athletics/track and field",
+  "ja": "陸上競技",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El círculo",
+  "en": "Circle",
+  "ja": "円",
+  "cat": "Formas"
+ },
+ {
+  "es": "El cuadrado",
+  "en": "Square (shape)",
+  "ja": "正方形",
+  "cat": "Formas"
+ },
+ {
+  "es": "El triángulo",
+  "en": "Triangle",
+  "ja": "三角形",
+  "cat": "Formas"
+ },
+ {
+  "es": "El rectángulo",
+  "en": "Rectangle",
+  "ja": "長方形",
+  "cat": "Formas"
+ },
+ {
+  "es": "La línea",
+  "en": "Line",
+  "ja": "線",
+  "cat": "Formas"
+ },
+ {
+  "es": "El punto",
+  "en": "Point/dot",
+  "ja": "点",
+  "cat": "Formas"
+ },
+ {
+  "es": "El centímetro",
+  "en": "Centimeter",
+  "ja": "センチメートル",
+  "cat": "Formas"
+ },
+ {
+  "es": "El kilómetro",
+  "en": "Kilometer",
+  "ja": "キロメートル",
+  "cat": "Formas"
+ },
+ {
+  "es": "El litro",
+  "en": "Liter",
+  "ja": "リットル",
+  "cat": "Formas"
+ },
+ {
+  "es": "El kilogramo",
+  "en": "Kilogram",
+  "ja": "キログラム",
+  "cat": "Formas"
+ },
+ {
+  "es": "La docena",
+  "en": "Dozen",
+  "ja": "1ダース",
+  "cat": "Formas"
+ },
+ {
+  "es": "El par",
+  "en": "Pair",
+  "ja": "一組",
+  "cat": "Formas"
+ },
+ {
+  "es": "La mitad",
+  "en": "Half",
+  "ja": "半分",
+  "cat": "Formas"
+ },
+ {
+  "es": "El doble",
+  "en": "Double",
+  "ja": "二倍",
+  "cat": "Formas"
+ },
+ {
+  "es": "¡Órale!",
+  "en": "Wow! / Come on! (Mexican)",
+  "ja": "おおっ！（メキシコの間投詞）",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "¡Qué padre!",
+  "en": "How cool! (Mexican)",
+  "ja": "かっこいい！（メキシコ表現）",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "¡Ay!",
+  "en": "Ouch! / Oh!",
+  "ja": "痛っ！/あら",
+  "cat": "Frases"
+ },
+ {
+  "es": "¡Uf!",
+  "en": "Ugh! / Phew!",
+  "ja": "うわ〜/ふう",
+  "cat": "Frases"
+ },
+ {
+  "es": "¡Vaya!",
+  "en": "Wow! / Well!",
+  "ja": "おやおや",
+  "cat": "Frases"
+ },
+ {
+  "es": "¡Ojalá!",
+  "en": "I hope so!",
+  "ja": "そうだといいな！",
+  "cat": "Frases"
+ },
+ {
+  "es": "¡Ánimo!",
+  "en": "Cheer up! / You can do it!",
+  "ja": "頑張れ！",
+  "cat": "Frases"
+ },
+ {
+  "es": "¡Cuidado!",
+  "en": "Careful!",
+  "ja": "気をつけて！",
+  "cat": "Frases"
+ },
+ {
+  "es": "¡Salud!",
+  "en": "Cheers! / Bless you!",
+  "ja": "乾杯！/お大事に",
+  "cat": "Frases"
+ },
+ {
+  "es": "¡Auxilio!",
+  "en": "Help!",
+  "ja": "助けて！",
+  "cat": "Frases"
+ },
+ {
+  "es": "Primero",
+  "en": "First",
+  "ja": "まず",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Luego",
+  "en": "Then",
+  "ja": "それから",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Finalmente",
+  "en": "Finally",
+  "ja": "最後に",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Por otro lado",
+  "en": "On the other hand",
+  "ja": "一方で",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En resumen",
+  "en": "In summary",
+  "ja": "要約すると",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Por ejemplo",
+  "en": "For example",
+  "ja": "例えば",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Es decir",
+  "en": "That is to say",
+  "ja": "つまり",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Al contrario",
+  "en": "On the contrary",
+  "ja": "逆に",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Mientras tanto",
+  "en": "Meanwhile",
+  "ja": "その間に",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En conclusión",
+  "en": "In conclusion",
+  "ja": "結論として",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Agradecido",
+  "en": "Grateful",
+  "ja": "感謝している",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Aliviado",
+  "en": "Relieved",
+  "ja": "ほっとしている",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Confundido",
+  "en": "Confused",
+  "ja": "混乱している",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Decepcionado",
+  "en": "Disappointed",
+  "ja": "がっかりしている",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Esperanzado",
+  "en": "Hopeful",
+  "ja": "希望を持っている",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Satisfecho",
+  "en": "Satisfied",
+  "ja": "満足している",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Inseguro",
+  "en": "Insecure/unsure",
+  "ja": "自信がない",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Seguro de sí mismo",
+  "en": "Self-confident",
+  "ja": "自信がある",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Entusiasmado",
+  "en": "Enthusiastic",
+  "ja": "意欲的な",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Indiferente",
+  "en": "Indifferent",
+  "ja": "無関心な",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Peinarse",
+  "en": "To comb one's hair",
+  "ja": "髪をとかす",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Maquillarse",
+  "en": "To put on makeup",
+  "ja": "化粧をする",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Afeitarse",
+  "en": "To shave",
+  "ja": "ひげを剃る",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Cepillarse los dientes",
+  "en": "To brush one's teeth",
+  "ja": "歯を磨く",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Vestirse",
+  "en": "To get dressed",
+  "ja": "服を着る",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Quitarse",
+  "en": "To take off (clothes)",
+  "ja": "脱ぐ",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ponerse",
+  "en": "To put on (clothes)",
+  "ja": "着る/身につける",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Sentarse",
+  "en": "To sit down",
+  "ja": "座る",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Pararse",
+  "en": "To stand up",
+  "ja": "立つ",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Quedarse",
+  "en": "To stay",
+  "ja": "とどまる",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Añadir",
+  "en": "To add",
+  "ja": "加える",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Quitar",
+  "en": "To remove",
+  "ja": "取り除く",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Mezclar",
+  "en": "To mix",
+  "ja": "混ぜる",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Cortar",
+  "en": "To cut",
+  "ja": "切る",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Cocinar",
+  "en": "To cook",
+  "ja": "料理する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Hervir",
+  "en": "To boil",
+  "ja": "煮る/沸かす",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Freír",
+  "en": "To fry",
+  "ja": "揚げる",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Hornear",
+  "en": "To bake",
+  "ja": "オーブンで焼く",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Calentar",
+  "en": "To heat",
+  "ja": "温める",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Enfriar",
+  "en": "To cool",
+  "ja": "冷やす",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Limpiar",
+  "en": "To clean",
+  "ja": "掃除する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ordenar",
+  "en": "To tidy up / order",
+  "ja": "片付ける/注文する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Reparar",
+  "en": "To repair",
+  "ja": "修理する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Construir",
+  "en": "To build",
+  "ja": "建てる",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Destruir",
+  "en": "To destroy",
+  "ja": "破壊する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Pintar",
+  "en": "To paint",
+  "ja": "塗る/絵を描く",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Dibujar",
+  "en": "To draw",
+  "ja": "絵を描く",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Cantar",
+  "en": "To sing",
+  "ja": "歌う",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Bailar",
+  "en": "To dance",
+  "ja": "踊る",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Saltar",
+  "en": "To jump",
+  "ja": "跳ぶ",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Caminar",
+  "en": "To walk",
+  "ja": "歩く",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Subir",
+  "en": "To go up",
+  "ja": "上がる",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Bajar",
+  "en": "To go down",
+  "ja": "下がる",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Entrar",
+  "en": "To enter",
+  "ja": "入る",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Salir",
+  "en": "To go out",
+  "ja": "出る",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Llegar",
+  "en": "To arrive",
+  "ja": "到着する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Regresar",
+  "en": "To return",
+  "ja": "戻る",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Volver",
+  "en": "To come back",
+  "ja": "帰ってくる",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Redondo",
+  "en": "Round",
+  "ja": "丸い",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ancho",
+  "en": "Wide",
+  "ja": "幅広い",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Estrecho",
+  "en": "Narrow",
+  "ja": "狭い",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Profundo",
+  "en": "Deep",
+  "ja": "深い",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Plano",
+  "en": "Flat",
+  "ja": "平らな",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Suave",
+  "en": "Soft/smooth",
+  "ja": "柔らかい",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Áspero",
+  "en": "Rough",
+  "ja": "ざらざらした",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Brillante",
+  "en": "Bright/shiny",
+  "ja": "輝いている",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Oscuro",
+  "en": "Dark",
+  "ja": "暗い",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Claro",
+  "en": "Clear/light",
+  "ja": "明るい/明確な",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Transparente",
+  "en": "Transparent",
+  "ja": "透明な",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ligero",
+  "en": "Light (weight)",
+  "ja": "軽い",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Pesado",
+  "en": "Heavy",
+  "ja": "重い",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Flexible",
+  "en": "Flexible",
+  "ja": "柔軟な",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Rígido",
+  "en": "Rigid",
+  "ja": "硬直した",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Seco",
+  "en": "Dry",
+  "ja": "乾いた",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Caliente",
+  "en": "Hot",
+  "ja": "熱い",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Tibio",
+  "en": "Lukewarm",
+  "ja": "ぬるい",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Maduro",
+  "en": "Ripe/mature",
+  "ja": "熟した",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Fresco",
+  "en": "Fresh",
+  "ja": "新鮮な",
+  "cat": "Adjetivos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "El delfín",
+  "en": "Dolphin",
+  "ja": "イルカ",
+  "cat": "Animales"
+ },
+ {
+  "es": "La ballena",
+  "en": "Whale",
+  "ja": "クジラ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El tiburón",
+  "en": "Shark",
+  "ja": "サメ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El pulpo",
+  "en": "Octopus",
+  "ja": "タコ",
+  "cat": "Animales"
+ },
+ {
+  "es": "La estrella de mar",
+  "en": "Starfish",
+  "ja": "ヒトデ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El cangrejo",
+  "en": "Crab",
+  "ja": "カニ",
+  "cat": "Animales"
+ },
+ {
+  "es": "La medusa",
+  "en": "Jellyfish",
+  "ja": "クラゲ",
+  "cat": "Animales"
+ },
+ {
+  "es": "La tortuga",
+  "en": "Turtle",
+  "ja": "カメ",
+  "cat": "Animales"
+ },
+ {
+  "es": "La mariposa",
+  "en": "Butterfly",
+  "ja": "蝶",
+  "cat": "Animales"
+ },
+ {
+  "es": "La abeja",
+  "en": "Bee",
+  "ja": "ハチ",
+  "cat": "Animales"
+ },
+ {
+  "es": "La hormiga",
+  "en": "Ant",
+  "ja": "アリ",
+  "cat": "Animales"
+ },
+ {
+  "es": "La araña",
+  "en": "Spider",
+  "ja": "クモ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El mosquito",
+  "en": "Mosquito",
+  "ja": "蚊",
+  "cat": "Animales"
+ },
+ {
+  "es": "La mosca",
+  "en": "Fly",
+  "ja": "ハエ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El caracol",
+  "en": "Snail",
+  "ja": "かたつむり",
+  "cat": "Animales"
+ },
+ {
+  "es": "El águila",
+  "en": "Eagle",
+  "ja": "ワシ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El búho",
+  "en": "Owl",
+  "ja": "フクロウ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El loro",
+  "en": "Parrot",
+  "ja": "オウム",
+  "cat": "Animales"
+ },
+ {
+  "es": "El pingüino",
+  "en": "Penguin",
+  "ja": "ペンギン",
+  "cat": "Animales"
+ },
+ {
+  "es": "El pavo",
+  "en": "Turkey",
+  "ja": "七面鳥",
+  "cat": "Animales"
+ },
+ {
+  "es": "El gallo",
+  "en": "Rooster",
+  "ja": "おんどり",
+  "cat": "Animales"
+ },
+ {
+  "es": "La gallina",
+  "en": "Hen",
+  "ja": "めんどり",
+  "cat": "Animales"
+ },
+ {
+  "es": "El pato",
+  "en": "Duck",
+  "ja": "アヒル",
+  "cat": "Animales"
+ },
+ {
+  "es": "El cisne",
+  "en": "Swan",
+  "ja": "白鳥",
+  "cat": "Animales"
+ },
+ {
+  "es": "La paloma",
+  "en": "Pigeon",
+  "ja": "ハト",
+  "cat": "Animales"
+ },
+ {
+  "es": "El zorro",
+  "en": "Fox",
+  "ja": "キツネ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El lobo",
+  "en": "Wolf",
+  "ja": "オオカミ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El ciervo",
+  "en": "Deer",
+  "ja": "シカ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El canguro",
+  "en": "Kangaroo",
+  "ja": "カンガルー",
+  "cat": "Animales"
+ },
+ {
+  "es": "La jirafa",
+  "en": "Giraffe",
+  "ja": "キリン",
+  "cat": "Animales"
+ },
+ {
+  "es": "El rinoceronte",
+  "en": "Rhinoceros",
+  "ja": "サイ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El hipopótamo",
+  "en": "Hippopotamus",
+  "ja": "カバ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El cocodrilo",
+  "en": "Crocodile",
+  "ja": "ワニ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El camello",
+  "en": "Camel",
+  "ja": "ラクダ",
+  "cat": "Animales"
+ },
+ {
+  "es": "La cebra",
+  "en": "Zebra",
+  "ja": "シマウマ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El panda",
+  "en": "Panda",
+  "ja": "パンダ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El koala",
+  "en": "Koala",
+  "ja": "コアラ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El murciélago",
+  "en": "Bat",
+  "ja": "コウモリ",
+  "cat": "Animales"
+ },
+ {
+  "es": "La ardilla",
+  "en": "Squirrel",
+  "ja": "リス",
+  "cat": "Animales"
+ },
+ {
+  "es": "El algodón",
+  "en": "Cotton",
+  "ja": "綿",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La lana",
+  "en": "Wool",
+  "ja": "ウール",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La seda",
+  "en": "Silk",
+  "ja": "絹",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El cuero",
+  "en": "Leather",
+  "ja": "革",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La tela",
+  "en": "Fabric",
+  "ja": "生地",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El traje formal",
+  "en": "Formal suit",
+  "ja": "フォーマルスーツ",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El uniforme",
+  "en": "Uniform",
+  "ja": "制服",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La bata",
+  "en": "Robe",
+  "ja": "ガウン",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El chaleco",
+  "en": "Vest",
+  "ja": "ベスト",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La inteligencia artificial",
+  "en": "Artificial intelligence",
+  "ja": "人工知能",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El robot",
+  "en": "Robot",
+  "ja": "ロボット",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El dron",
+  "en": "Drone",
+  "ja": "ドローン",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La realidad virtual",
+  "en": "Virtual reality",
+  "ja": "バーチャルリアリティ",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El satélite",
+  "en": "Satellite",
+  "ja": "人工衛星",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El servidor",
+  "en": "Server",
+  "ja": "サーバー",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La base de datos",
+  "en": "Database",
+  "ja": "データベース",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El código",
+  "en": "Code",
+  "ja": "コード",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El programador",
+  "en": "Programmer",
+  "ja": "プログラマー",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La impresora",
+  "en": "Printer",
+  "ja": "プリンター",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El teclado",
+  "en": "Keyboard",
+  "ja": "キーボード",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Los auriculares",
+  "en": "Headphones",
+  "ja": "ヘッドホン",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El gobierno",
+  "en": "Government",
+  "ja": "政府",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El presidente",
+  "en": "President",
+  "ja": "大統領",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El ciudadano",
+  "en": "Citizen",
+  "ja": "市民",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La ley",
+  "en": "Law",
+  "ja": "法律",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El derecho",
+  "en": "Right (legal)",
+  "ja": "権利",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La elección",
+  "en": "Election",
+  "ja": "選挙",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El voto",
+  "en": "Vote",
+  "ja": "投票",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El congreso",
+  "en": "Congress",
+  "ja": "議会",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La constitución",
+  "en": "Constitution",
+  "ja": "憲法",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La comunidad",
+  "en": "Community",
+  "ja": "地域社会",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La Navidad",
+  "en": "Christmas",
+  "ja": "クリスマス",
+  "cat": "Festividades"
+ },
+ {
+  "es": "La Semana Santa",
+  "en": "Holy Week",
+  "ja": "聖週間",
+  "cat": "Festividades"
+ },
+ {
+  "es": "El Año Nuevo",
+  "en": "New Year",
+  "ja": "新年",
+  "cat": "Festividades"
+ },
+ {
+  "es": "El cumpleaños",
+  "en": "Birthday",
+  "ja": "誕生日",
+  "cat": "Festividades"
+ },
+ {
+  "es": "La boda",
+  "en": "Wedding",
+  "ja": "結婚式",
+  "cat": "Festividades"
+ },
+ {
+  "es": "El carnaval",
+  "en": "Carnival",
+  "ja": "カーニバル",
+  "cat": "Festividades"
+ },
+ {
+  "es": "El circo",
+  "en": "Circus",
+  "ja": "サーカス",
+  "cat": "Festividades"
+ },
+ {
+  "es": "La piel",
+  "en": "Skin",
+  "ja": "肌",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La uña",
+  "en": "Nail (finger)",
+  "ja": "爪",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El músculo",
+  "en": "Muscle",
+  "ja": "筋肉",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El hueso",
+  "en": "Bone",
+  "ja": "骨",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La sangre",
+  "en": "Blood",
+  "ja": "血",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El pulmón",
+  "en": "Lung",
+  "ja": "肺",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El hígado",
+  "en": "Liver",
+  "ja": "肝臓",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El cerebro",
+  "en": "Brain",
+  "ja": "脳",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La cintura",
+  "en": "Waist",
+  "ja": "腰",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El tobillo",
+  "en": "Ankle",
+  "ja": "足首",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El consulado",
+  "en": "Consulate",
+  "ja": "領事館",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La oficina de correos",
+  "en": "Post office",
+  "ja": "郵便局",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La estación de bomberos",
+  "en": "Fire station",
+  "ja": "消防署",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El zoológico",
+  "en": "Zoo",
+  "ja": "動物園",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El acuario",
+  "en": "Aquarium",
+  "ja": "水族館",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El planetario",
+  "en": "Planetarium",
+  "ja": "プラネタリウム",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El observatorio",
+  "en": "Observatory",
+  "ja": "天文台",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La olla",
+  "en": "Pot",
+  "ja": "鍋",
+  "cat": "Cocina"
+ },
+ {
+  "es": "La sartén",
+  "en": "Frying pan",
+  "ja": "フライパン",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El cuchillo",
+  "en": "Knife",
+  "ja": "包丁",
+  "cat": "Cocina"
+ },
+ {
+  "es": "La cuchara",
+  "en": "Spoon",
+  "ja": "スプーン",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El tenedor",
+  "en": "Fork",
+  "ja": "フォーク",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El plato",
+  "en": "Plate",
+  "ja": "皿",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El vaso",
+  "en": "Glass (cup)",
+  "ja": "コップ",
+  "cat": "Cocina"
+ },
+ {
+  "es": "La taza",
+  "en": "Mug/cup",
+  "ja": "マグカップ",
+  "cat": "Cocina"
+ },
+ {
+  "es": "La tetera",
+  "en": "Teapot/kettle",
+  "ja": "ティーポット",
+  "cat": "Cocina"
+ },
+ {
+  "es": "La licuadora",
+  "en": "Blender",
+  "ja": "ミキサー",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El abrelatas",
+  "en": "Can opener",
+  "ja": "缶切り",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El colador",
+  "en": "Strainer",
+  "ja": "ざる",
+  "cat": "Cocina"
+ },
+ {
+  "es": "La tabla de cortar",
+  "en": "Cutting board",
+  "ja": "まな板",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El delantal",
+  "en": "Apron",
+  "ja": "エプロン",
+  "cat": "Cocina"
+ },
+ {
+  "es": "La parrilla",
+  "en": "Grill",
+  "ja": "グリル",
+  "cat": "Cocina"
+ },
+ {
+  "es": "La tienda",
+  "en": "Store",
+  "ja": "店",
+  "cat": "Compras"
+ },
+ {
+  "es": "El centro comercial",
+  "en": "Mall",
+  "ja": "ショッピングモール",
+  "cat": "Compras"
+ },
+ {
+  "es": "La caja",
+  "en": "Checkout/cashier",
+  "ja": "レジ",
+  "cat": "Compras"
+ },
+ {
+  "es": "El probador",
+  "en": "Fitting room",
+  "ja": "試着室",
+  "cat": "Compras"
+ },
+ {
+  "es": "La oferta",
+  "en": "Sale/offer",
+  "ja": "セール",
+  "cat": "Compras"
+ },
+ {
+  "es": "El descuento",
+  "en": "Discount",
+  "ja": "割引",
+  "cat": "Compras"
+ },
+ {
+  "es": "La talla",
+  "en": "Size (clothes)",
+  "ja": "サイズ",
+  "cat": "Compras"
+ },
+ {
+  "es": "La etiqueta",
+  "en": "Label/tag",
+  "ja": "タグ",
+  "cat": "Compras"
+ },
+ {
+  "es": "El carrito",
+  "en": "Shopping cart",
+  "ja": "カート",
+  "cat": "Compras"
+ },
+ {
+  "es": "La bolsa",
+  "en": "Bag",
+  "ja": "袋",
+  "cat": "Compras"
+ },
+ {
+  "es": "El siglo",
+  "en": "Century",
+  "ja": "世紀",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "La década",
+  "en": "Decade",
+  "ja": "10年間",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "La temporada",
+  "en": "Season (period)",
+  "ja": "シーズン",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "La medianoche",
+  "en": "Midnight",
+  "ja": "真夜中",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "El mediodía",
+  "en": "Noon",
+  "ja": "正午",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "La fecha",
+  "en": "Date",
+  "ja": "日付",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "El calendario",
+  "en": "Calendar",
+  "ja": "カレンダー",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "El cronómetro",
+  "en": "Stopwatch",
+  "ja": "ストップウォッチ",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "El plazo",
+  "en": "Deadline",
+  "ja": "期限",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "La sombra",
+  "en": "Shadow",
+  "ja": "影",
+  "cat": "General"
+ },
+ {
+  "es": "La luz",
+  "en": "Light",
+  "ja": "光",
+  "cat": "General"
+ },
+ {
+  "es": "El ruido",
+  "en": "Noise",
+  "ja": "騒音",
+  "cat": "General"
+ },
+ {
+  "es": "El silencio",
+  "en": "Silence",
+  "ja": "静けさ",
+  "cat": "General"
+ },
+ {
+  "es": "La voz",
+  "en": "Voice",
+  "ja": "声",
+  "cat": "General"
+ },
+ {
+  "es": "El sonido",
+  "en": "Sound",
+  "ja": "音",
+  "cat": "General"
+ },
+ {
+  "es": "La imagen",
+  "en": "Image",
+  "ja": "画像",
+  "cat": "General"
+ },
+ {
+  "es": "El sabor",
+  "en": "Flavor",
+  "ja": "味",
+  "cat": "General"
+ },
+ {
+  "es": "El olor",
+  "en": "Smell",
+  "ja": "匂い",
+  "cat": "General"
+ },
+ {
+  "es": "La textura",
+  "en": "Texture",
+  "ja": "質感",
+  "cat": "General"
+ },
+ {
+  "es": "La superficie",
+  "en": "Surface",
+  "ja": "表面",
+  "cat": "General"
+ },
+ {
+  "es": "El borde",
+  "en": "Edge",
+  "ja": "へり・端",
+  "cat": "General"
+ },
+ {
+  "es": "El centro",
+  "en": "Center",
+  "ja": "中心",
+  "cat": "General"
+ },
+ {
+  "es": "El principio",
+  "en": "Beginning",
+  "ja": "始まり",
+  "cat": "General"
+ },
+ {
+  "es": "El final",
+  "en": "End",
+  "ja": "終わり",
+  "cat": "General"
+ },
+ {
+  "es": "El resto",
+  "en": "The rest",
+  "ja": "残り",
+  "cat": "General"
+ },
+ {
+  "es": "El conjunto",
+  "en": "Set/group",
+  "ja": "集合",
+  "cat": "General"
+ },
+ {
+  "es": "El grupo",
+  "en": "Group",
+  "ja": "グループ",
+  "cat": "General"
+ },
+ {
+  "es": "La lista",
+  "en": "List",
+  "ja": "リスト",
+  "cat": "General"
+ },
+ {
+  "es": "El ejemplo",
+  "en": "Example",
+  "ja": "例",
+  "cat": "General"
+ },
+ {
+  "es": "La razón",
+  "en": "Reason",
+  "ja": "理由",
+  "cat": "General"
+ },
+ {
+  "es": "El motivo",
+  "en": "Motive",
+  "ja": "動機",
+  "cat": "General"
+ },
+ {
+  "es": "La solución",
+  "en": "Solution",
+  "ja": "解決策",
+  "cat": "General"
+ },
+ {
+  "es": "El problema",
+  "en": "Problem",
+  "ja": "問題",
+  "cat": "General"
+ },
+ {
+  "es": "La pregunta",
+  "en": "Question",
+  "ja": "質問",
+  "cat": "General"
+ },
+ {
+  "es": "La respuesta",
+  "en": "Answer",
+  "ja": "答え",
+  "cat": "General"
+ },
+ {
+  "es": "La duda",
+  "en": "Doubt",
+  "ja": "疑問",
+  "cat": "General"
+ },
+ {
+  "es": "La opinión",
+  "en": "Opinion",
+  "ja": "意見",
+  "cat": "General"
+ },
+ {
+  "es": "La ventaja",
+  "en": "Advantage",
+  "ja": "利点",
+  "cat": "General"
+ },
+ {
+  "es": "La desventaja",
+  "en": "Disadvantage",
+  "ja": "欠点",
+  "cat": "General"
+ },
+ {
+  "es": "El martillo",
+  "en": "Hammer",
+  "ja": "ハンマー",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "El destornillador",
+  "en": "Screwdriver",
+  "ja": "ドライバー",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "La llave inglesa",
+  "en": "Wrench",
+  "ja": "レンチ",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "El taladro",
+  "en": "Drill",
+  "ja": "ドリル",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "La sierra",
+  "en": "Saw",
+  "ja": "のこぎり",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "El clavo",
+  "en": "Nail (hardware)",
+  "ja": "釘",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "El tornillo",
+  "en": "Screw",
+  "ja": "ねじ",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "La cinta métrica",
+  "en": "Tape measure",
+  "ja": "巻き尺",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "El pegamento",
+  "en": "Glue",
+  "ja": "接着剤",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "La cuerda",
+  "en": "Rope",
+  "ja": "ロープ",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "El candado",
+  "en": "Padlock",
+  "ja": "南京錠",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "La llave",
+  "en": "Key",
+  "ja": "鍵",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "El gancho",
+  "en": "Hook",
+  "ja": "フック",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "La manguera",
+  "en": "Hose",
+  "ja": "ホース",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "El bolígrafo",
+  "en": "Pen",
+  "ja": "ボールペン",
+  "cat": "Educación"
+ },
+ {
+  "es": "El marcador",
+  "en": "Marker",
+  "ja": "マーカー",
+  "cat": "Educación"
+ },
+ {
+  "es": "La grapadora",
+  "en": "Stapler",
+  "ja": "ホッチキス",
+  "cat": "Educación"
+ },
+ {
+  "es": "El clip",
+  "en": "Paper clip",
+  "ja": "クリップ",
+  "cat": "Educación"
+ },
+ {
+  "es": "La calculadora",
+  "en": "Calculator",
+  "ja": "電卓",
+  "cat": "Educación"
+ },
+ {
+  "es": "El sobre",
+  "en": "Envelope",
+  "ja": "封筒",
+  "cat": "Educación"
+ },
+ {
+  "es": "El sello",
+  "en": "Stamp/seal",
+  "ja": "切手・印",
+  "cat": "Educación"
+ },
+ {
+  "es": "La agenda",
+  "en": "Planner/agenda",
+  "ja": "手帳",
+  "cat": "Educación"
+ },
+ {
+  "es": "El archivador",
+  "en": "Filing cabinet",
+  "ja": "書類棚",
+  "cat": "Educación"
+ },
+ {
+  "es": "El taco",
+  "en": "Taco",
+  "ja": "タコス",
+  "cat": "Comida"
+ },
+ {
+  "es": "La quesadilla",
+  "en": "Quesadilla",
+  "ja": "ケサディーヤ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El burrito",
+  "en": "Burrito",
+  "ja": "ブリトー",
+  "cat": "Comida"
+ },
+ {
+  "es": "El tamal",
+  "en": "Tamale",
+  "ja": "タマル",
+  "cat": "Comida"
+ },
+ {
+  "es": "El mole",
+  "en": "Mole (sauce)",
+  "ja": "モーレ（ソース）",
+  "cat": "Comida"
+ },
+ {
+  "es": "La tortilla",
+  "en": "Tortilla",
+  "ja": "トルティーヤ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El pozole",
+  "en": "Pozole",
+  "ja": "ポソレ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El guacamole",
+  "en": "Guacamole",
+  "ja": "ワカモレ",
+  "cat": "Comida"
+ },
+ {
+  "es": "La salsa",
+  "en": "Sauce/salsa",
+  "ja": "サルサ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El chile",
+  "en": "Chili pepper",
+  "ja": "唐辛子",
+  "cat": "Comida"
+ },
+ {
+  "es": "La selva",
+  "en": "Jungle",
+  "ja": "ジャングル",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El pantano",
+  "en": "Swamp",
+  "ja": "沼地",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El arrecife",
+  "en": "Reef",
+  "ja": "サンゴ礁",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La cueva",
+  "en": "Cave",
+  "ja": "洞窟",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El acantilado",
+  "en": "Cliff",
+  "ja": "崖",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La pradera",
+  "en": "Prairie",
+  "ja": "草原",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El manantial",
+  "en": "Spring (water source)",
+  "ja": "泉",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El oasis",
+  "en": "Oasis",
+  "ja": "オアシス",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La cordillera",
+  "en": "Mountain range",
+  "ja": "山脈",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La vela",
+  "en": "Candle",
+  "ja": "ろうそく",
+  "cat": "Casa"
+ },
+ {
+  "es": "La linterna",
+  "en": "Flashlight",
+  "ja": "懐中電灯",
+  "cat": "Casa"
+ },
+ {
+  "es": "El fósforo",
+  "en": "Match (fire)",
+  "ja": "マッチ",
+  "cat": "Casa"
+ }
 ];
