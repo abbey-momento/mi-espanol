@@ -31,8 +31,19 @@
   .subnav-btn.active { background: rgba(255,255,255,0.16); color:#fff; border-color: rgba(255,255,255,0.4); }
   .eyebrow { font-size:11px; letter-spacing:0.16em; color: var(--accent3); font-weight:700; margin-bottom:6px; }
   h1.title { font-family: Georgia, "Times New Roman", serif; font-size:30px; font-weight:700; margin:0; }
-  .streak-row { display:flex; align-items:center; gap:6px; margin-top:8px; }
+  .streak-row { display:flex; align-items:center; gap:6px; margin-top:8px; cursor:pointer; width:fit-content; }
   .streak-text { font-size:14px; color:#E4D9F7; font-weight:600; }
+  .streak-hint { font-size:11px; color:#9C8FC2; margin-left:2px; }
+  .cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:6px; margin-top:14px; }
+  .cal-dow { text-align:center; font-size:10.5px; color:#9C8FC2; font-weight:700; }
+  .cal-day { aspect-ratio:1; display:flex; align-items:center; justify-content:center; border-radius:10px; font-size:12.5px; color:#D9CCEF; background:rgba(255,255,255,0.05); }
+  .cal-day.empty { background:transparent; }
+  .cal-day.studied { background: linear-gradient(135deg, var(--accent), var(--violet)); color:#fff; font-weight:700; }
+  .cal-day.today { border:2px solid var(--accent3); }
+  .cal-stats-row { display:flex; gap:12px; margin-top:18px; }
+  .cal-stat { flex:1; background: var(--card); border-radius:16px; padding:14px; text-align:center; color:var(--ink); }
+  .cal-stat-num { font-family: Georgia, serif; font-size:24px; font-weight:700; }
+  .cal-stat-label { font-size:11px; color:#8A7AAE; font-weight:700; margin-top:2px; }
   .passport { background: var(--card); border-radius:20px; padding:20px; color:var(--ink);
     box-shadow: 0 12px 32px rgba(0,0,0,0.35); margin:16px 0 20px; border:1px solid var(--paper-line); }
   .passport-top { display:flex; justify-content:space-between; align-items:flex-start; }
@@ -226,8 +237,9 @@ function speak(text){
 /* ---------- Persistence ---------- */
 function loadProgress(){
   let data;
-  try{ const raw = localStorage.getItem(STORAGE_KEY); data = raw?JSON.parse(raw):{counts:{},streak:0,lastDate:null}; }
-  catch{ data = {counts:{},streak:0,lastDate:null}; }
+  try{ const raw = localStorage.getItem(STORAGE_KEY); data = raw?JSON.parse(raw):{counts:{},streak:0,lastDate:null,history:[]}; }
+  catch{ data = {counts:{},streak:0,lastDate:null,history:[]}; }
+  data.history = data.history || [];
   const today = todayStr();
   if(data.lastDate !== today){
     const y = new Date(); y.setDate(y.getDate()-1);
@@ -235,6 +247,7 @@ function loadProgress(){
     data.streak = data.lastDate === yesterday ? data.streak+1 : 1;
     data.lastDate = today;
   }
+  if(!data.history.includes(today)) data.history.push(today);
   saveProgress(data);
   return data;
 }
@@ -310,13 +323,13 @@ function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}�
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeCat:"Todos", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion" };
+let state = { tab:"vocab", mode:"home", activeCat:"Todos", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
 function render(){
   app.innerHTML = "";
-  const hideNav = (state.tab==="vocab" && (state.mode==="flash" || state.mode==="quiz" || state.mode==="review"))
+  const hideNav = (state.tab==="vocab" && (state.mode==="flash" || state.mode==="quiz" || state.mode==="review" || state.calendarOpen))
     || (state.tab==="conj" && !!state.conjSubTab)
     || (state.tab==="grammar" && grammarDetailIdx!==null);
   if(!hideNav) app.appendChild(navBar());
@@ -335,7 +348,7 @@ function render(){
     renderNews();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; exDeck=[]; exMissed=[]; numQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; exDeck=[]; exMissed=[]; numQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; }
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","ドリル"],["grammar","文法"],["column","コラム"],["news","ニュース"]].forEach(([key,label])=>{
@@ -348,13 +361,15 @@ function navBar(){
 
 /* ---------- Vocab Home ---------- */
 function renderVocabHome(){
+  if(state.calendarOpen){ renderCalendar(); return; }
   const stats = computeStats();
   const pct = stats.barPct;
   const header = el("div");
   header.appendChild(el("div","eyebrow","CUADERNO DE VIAJE"));
   header.appendChild(el("h1","title","Tu español"));
   const sr = el("div","streak-row");
-  sr.innerHTML = `<span>🔥</span><span class="streak-text">${progress.streak} ${progress.streak===1?"día":"días"} seguidos</span>`;
+  sr.innerHTML = `<span>🔥</span><span class="streak-text">${progress.streak} ${progress.streak===1?"día":"días"} seguidos</span><span class="streak-hint">›</span>`;
+  sr.onclick = ()=>{ playTap(); state.calendarOpen=true; render(); };
   header.appendChild(sr);
   app.appendChild(header);
   const passport = el("div","passport");
@@ -401,6 +416,41 @@ function renderVocabHome(){
   const reviewWrap = el("div"); reviewWrap.style.marginBottom="16px"; reviewWrap.appendChild(rc);
   app.appendChild(reviewWrap);
   app.appendChild(el("div","footer-hint","Unos minutos libres · practica y sigue tu viaje"));
+}
+function renderCalendar(){
+  const now = new Date();
+  const year = now.getFullYear(), month = now.getMonth();
+  const monthNames = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+  app.appendChild(topBar("学習カレンダー", "", ()=>{ state.calendarOpen=false; render(); }));
+  const header = el("div");
+  header.appendChild(el("h1","title", `${monthNames[month]} ${year}`));
+  app.appendChild(header);
+
+  const statsRow = el("div","cal-stats-row");
+  statsRow.innerHTML = `
+    <div class="cal-stat"><div class="cal-stat-num">${progress.streak}</div><div class="cal-stat-label">連続日数</div></div>
+    <div class="cal-stat"><div class="cal-stat-num">${(progress.history||[]).length}</div><div class="cal-stat-label">総学習日数</div></div>`;
+  app.appendChild(statsRow);
+
+  const grid = el("div","cal-grid");
+  ["日","月","火","水","木","金","土"].forEach(d=>{
+    grid.appendChild(el("div","cal-dow", d));
+  });
+  const firstDay = new Date(year, month, 1);
+  const startWeekday = firstDay.getDay();
+  const daysInMonth = new Date(year, month+1, 0).getDate();
+  const todayStr_ = todayStr();
+  const history = new Set(progress.history || []);
+  for(let i=0;i<startWeekday;i++){ grid.appendChild(el("div","cal-day empty")); }
+  for(let d=1; d<=daysInMonth; d++){
+    const dateStr = `${year}-${String(month+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`;
+    const studied = history.has(dateStr);
+    const isToday = dateStr === todayStr_;
+    const cell = el("div","cal-day"+(studied?" studied":"")+(isToday?" today":""), String(d));
+    grid.appendChild(cell);
+  }
+  app.appendChild(grid);
+  app.appendChild(el("div","footer-hint","塗りつぶされた日が学習した日です"));
 }
 function topBar(label, progressText, onExit){
   const bar = el("div","top-bar");
@@ -510,11 +560,21 @@ function renderQuiz(){
       quizLog.push({ word:quizQuestion.word, pickedEn:opt.en, correct });
       if(correct){ quizScore++; playCorrect(); } else { playWrong(); quizMissed.push(quizQuestion.word); }
       render();
-      setTimeout(()=>{ quizIdx++; if(quizIdx<quizTotal){ quizQuestion=buildQuestion(pool); quizPicked=null; } render(); }, 700);
     };
     grid.appendChild(btn);
   });
   app.appendChild(grid);
+  if(quizPicked!==null){
+    const nextBtn = el("button","primary-btn", quizIdx+1>=quizTotal ? "結果を見る" : "次の問題へ →");
+    nextBtn.style.display="block"; nextBtn.style.margin="18px auto 0";
+    nextBtn.onclick = ()=>{
+      playTap();
+      quizIdx++;
+      if(quizIdx<quizTotal){ quizQuestion=buildQuestion(pool); quizPicked=null; }
+      render();
+    };
+    app.appendChild(nextBtn);
+  }
 }
 
 /* ---------- Conjugation tab (drill / examples) ---------- */
@@ -603,7 +663,15 @@ function renderConjDrill(){
     if(ok){ conjScore++; playCorrect(); fb.textContent = "¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent = `正解: ${conjQuestion.answer}`; fb.className="conj-feedback no"; conjMissed.push({...conjQuestion}); }
     input.disabled = true; submit.disabled = true;
-    setTimeout(()=>{ conjIdx++; if(conjIdx<conjTotal){ conjQuestion = buildConjQuestion(state.conjTense); } render(); }, 900);
+    const nextBtn = el("button","primary-btn", conjIdx+1>=conjTotal ? "結果を見る" : "次の問題へ →");
+    nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
+    nextBtn.onclick = ()=>{
+      playTap();
+      conjIdx++;
+      if(conjIdx<conjTotal){ conjQuestion = buildConjQuestion(state.conjTense); }
+      render();
+    };
+    app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
@@ -703,7 +771,10 @@ function renderExamples(){
     else{ playWrong(); fb.textContent=`正解: ${answer}`; fb.className="conj-feedback no"; exMissed.push(ex); }
     jaLine.textContent = ex.ja;
     input.disabled=true; submit.disabled=true;
-    setTimeout(()=>{ exIdx++; render(); }, 1100);
+    const nextBtn = el("button","primary-btn", exIdx+1>=exDeck.length ? "結果を見る" : "次の問題へ →");
+    nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
+    nextBtn.onclick = ()=>{ playTap(); exIdx++; render(); };
+    app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
@@ -760,7 +831,15 @@ function renderNumbersDrill(){
     if(ok){ numScore++; playCorrect(); fb.textContent="¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent=`正解: ${numQuestion.answer}`; fb.className="conj-feedback no"; numMissed.push(numQuestion); }
     input.disabled=true; submit.disabled=true;
-    setTimeout(()=>{ numIdx++; if(numIdx<numTotal){ numQuestion = buildNumQuestion(); } render(); }, 1000);
+    const nextBtn = el("button","primary-btn", numIdx+1>=numTotal ? "結果を見る" : "次の問題へ →");
+    nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
+    nextBtn.onclick = ()=>{
+      playTap();
+      numIdx++;
+      if(numIdx<numTotal){ numQuestion = buildNumQuestion(); }
+      render();
+    };
+    app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
