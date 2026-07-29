@@ -200,6 +200,254 @@ const VOCAB = [
   { es:"Sin embargo", en:"However", ja:"しかしながら", cat:"Frases" },
   { es:"Además", en:"Besides / Also", ja:"さらに", cat:"Frases" },
   { es:"Aunque", en:"Although", ja:"〜だけれども", cat:"Frases" },
+  { es:"Me encantaría", en:"I would love to", ja:"ぜひそうしたい", cat:"Frases" },
+  { es:"Está bien", en:"That's fine / OK", ja:"大丈夫です", cat:"Frases" },
+  { es:"No importa", en:"It doesn't matter", ja:"気にしないで", cat:"Frases" },
+  { es:"Depende", en:"It depends", ja:"場合による", cat:"Frases" },
+  { es:"Estoy de acuerdo", en:"I agree", ja:"賛成です", cat:"Frases" },
+  { es:"No estoy seguro", en:"I'm not sure", ja:"確信がない", cat:"Frases" },
+  { es:"¿En serio?", en:"Really?", ja:"本当に?", cat:"Frases" },
+  { es:"Qué lástima", en:"What a shame", ja:"残念だね", cat:"Frases" },
+  { es:"Buena suerte", en:"Good luck", ja:"頑張って", cat:"Frases" },
+  { es:"Felicidades", en:"Congratulations", ja:"おめでとう", cat:"Frases" },
+  { es:"Te extraño", en:"I miss you", ja:"会いたいよ", cat:"Frases" },
+  { es:"Nos vemos pronto", en:"See you soon", ja:"またすぐに", cat:"Frases" },
+  { es:"Rojo", en:"Red", ja:"赤", cat:"Colores" },
+  { es:"Azul", en:"Blue", ja:"青", cat:"Colores" },
+  { es:"Verde", en:"Green", ja:"緑", cat:"Colores" },
+  { es:"Amarillo", en:"Yellow", ja:"黄色", cat:"Colores" },
+  { es:"Negro", en:"Black", ja:"黒", cat:"Colores" },
+  { es:"Blanco", en:"White", ja:"白", cat:"Colores" },
+  { es:"Gris", en:"Gray", ja:"灰色", cat:"Colores" },
+  { es:"Rosa", en:"Pink", ja:"ピンク", cat:"Colores" },
+  { es:"Morado", en:"Purple", ja:"紫", cat:"Colores" },
+  { es:"Naranja", en:"Orange", ja:"オレンジ", cat:"Colores" },
+  { es:"Marrón", en:"Brown", ja:"茶色", cat:"Colores" },
+  { es:"Dorado", en:"Golden", ja:"金色", cat:"Colores" },
+  { es:"Plateado", en:"Silver", ja:"銀色", cat:"Colores" },
+  { es:"Celeste", en:"Sky blue", ja:"水色", cat:"Colores" },
+  { es:"Turquesa", en:"Turquoise", ja:"ターコイズ色", cat:"Colores" },
+  { es:"La madre", en:"Mother", ja:"母", cat:"Familia" },
+  { es:"El padre", en:"Father", ja:"父", cat:"Familia" },
+  { es:"El hermano", en:"Brother", ja:"兄/弟", cat:"Familia" },
+  { es:"La hermana", en:"Sister", ja:"姉/妹", cat:"Familia" },
+  { es:"El abuelo", en:"Grandfather", ja:"祖父", cat:"Familia" },
+  { es:"La abuela", en:"Grandmother", ja:"祖母", cat:"Familia" },
+  { es:"El hijo", en:"Son", ja:"息子", cat:"Familia" },
+  { es:"La hija", en:"Daughter", ja:"娘", cat:"Familia" },
+  { es:"El tío", en:"Uncle", ja:"おじ", cat:"Familia" },
+  { es:"La tía", en:"Aunt", ja:"おば", cat:"Familia" },
+  { es:"El primo", en:"Cousin (male)", ja:"いとこ(男)", cat:"Familia" },
+  { es:"La prima", en:"Cousin (female)", ja:"いとこ(女)", cat:"Familia" },
+  { es:"El esposo", en:"Husband", ja:"夫", cat:"Familia" },
+  { es:"La esposa", en:"Wife", ja:"妻", cat:"Familia" },
+  { es:"El nieto", en:"Grandson", ja:"孫息子", cat:"Familia" },
+  { es:"La nieta", en:"Granddaughter", ja:"孫娘", cat:"Familia" },
+  { es:"El sobrino", en:"Nephew", ja:"甥", cat:"Familia" },
+  { es:"La sobrina", en:"Niece", ja:"姪", cat:"Familia" },
+  { es:"El suegro", en:"Father-in-law", ja:"義父", cat:"Familia" },
+  { es:"La suegra", en:"Mother-in-law", ja:"義母", cat:"Familia" },
+  { es:"El cuñado", en:"Brother-in-law", ja:"義兄弟", cat:"Familia" },
+  { es:"La cabeza", en:"Head", ja:"頭", cat:"Cuerpo" },
+  { es:"El ojo", en:"Eye", ja:"目", cat:"Cuerpo" },
+  { es:"La oreja", en:"Ear", ja:"耳", cat:"Cuerpo" },
+  { es:"La nariz", en:"Nose", ja:"鼻", cat:"Cuerpo" },
+  { es:"La boca", en:"Mouth", ja:"口", cat:"Cuerpo" },
+  { es:"La mano", en:"Hand", ja:"手", cat:"Cuerpo" },
+  { es:"El brazo", en:"Arm", ja:"腕", cat:"Cuerpo" },
+  { es:"La pierna", en:"Leg", ja:"脚", cat:"Cuerpo" },
+  { es:"El pie", en:"Foot", ja:"足", cat:"Cuerpo" },
+  { es:"El dedo", en:"Finger", ja:"指", cat:"Cuerpo" },
+  { es:"La espalda", en:"Back", ja:"背中", cat:"Cuerpo" },
+  { es:"El estómago", en:"Stomach", ja:"お腹", cat:"Cuerpo" },
+  { es:"El corazón", en:"Heart", ja:"心臓", cat:"Cuerpo" },
+  { es:"El cabello", en:"Hair", ja:"髪", cat:"Cuerpo" },
+  { es:"El cuello", en:"Neck", ja:"首", cat:"Cuerpo" },
+  { es:"El hombro", en:"Shoulder", ja:"肩", cat:"Cuerpo" },
+  { es:"La rodilla", en:"Knee", ja:"ひざ", cat:"Cuerpo" },
+  { es:"El diente", en:"Tooth", ja:"歯", cat:"Cuerpo" },
+  { es:"La camisa", en:"Shirt", ja:"シャツ", cat:"Ropa" },
+  { es:"El pantalón", en:"Pants", ja:"ズボン", cat:"Ropa" },
+  { es:"El vestido", en:"Dress", ja:"ワンピース", cat:"Ropa" },
+  { es:"La falda", en:"Skirt", ja:"スカート", cat:"Ropa" },
+  { es:"El zapato", en:"Shoe", ja:"靴", cat:"Ropa" },
+  { es:"El calcetín", en:"Sock", ja:"靴下", cat:"Ropa" },
+  { es:"La chaqueta", en:"Jacket", ja:"ジャケット", cat:"Ropa" },
+  { es:"El abrigo", en:"Coat", ja:"コート", cat:"Ropa" },
+  { es:"El sombrero", en:"Hat", ja:"帽子", cat:"Ropa" },
+  { es:"La bufanda", en:"Scarf", ja:"マフラー", cat:"Ropa" },
+  { es:"El guante", en:"Glove", ja:"手袋", cat:"Ropa" },
+  { es:"El cinturón", en:"Belt", ja:"ベルト", cat:"Ropa" },
+  { es:"La corbata", en:"Tie", ja:"ネクタイ", cat:"Ropa" },
+  { es:"El pijama", en:"Pajamas", ja:"パジャマ", cat:"Ropa" },
+  { es:"La casa", en:"House", ja:"家", cat:"Casa" },
+  { es:"La cocina", en:"Kitchen", ja:"台所", cat:"Casa" },
+  { es:"El dormitorio", en:"Bedroom", ja:"寝室", cat:"Casa" },
+  { es:"El baño", en:"Bathroom", ja:"お風呂/トイレ", cat:"Casa" },
+  { es:"La sala", en:"Living room", ja:"リビング", cat:"Casa" },
+  { es:"El jardín", en:"Garden", ja:"庭", cat:"Casa" },
+  { es:"La puerta", en:"Door", ja:"ドア", cat:"Casa" },
+  { es:"La ventana", en:"Window", ja:"窓", cat:"Casa" },
+  { es:"La mesa", en:"Table", ja:"テーブル", cat:"Casa" },
+  { es:"La silla", en:"Chair", ja:"椅子", cat:"Casa" },
+  { es:"La cama", en:"Bed", ja:"ベッド", cat:"Casa" },
+  { es:"El sofá", en:"Sofa", ja:"ソファ", cat:"Casa" },
+  { es:"El techo", en:"Roof / Ceiling", ja:"屋根/天井", cat:"Casa" },
+  { es:"La pared", en:"Wall", ja:"壁", cat:"Casa" },
+  { es:"La escalera", en:"Stairs", ja:"階段", cat:"Casa" },
+  { es:"El garaje", en:"Garage", ja:"ガレージ", cat:"Casa" },
+  { es:"El trabajo", en:"Work / Job", ja:"仕事", cat:"Trabajo" },
+  { es:"La oficina", en:"Office", ja:"オフィス", cat:"Trabajo" },
+  { es:"El jefe", en:"Boss", ja:"上司", cat:"Trabajo" },
+  { es:"El empleado", en:"Employee", ja:"従業員", cat:"Trabajo" },
+  { es:"La reunión", en:"Meeting", ja:"会議", cat:"Trabajo" },
+  { es:"La computadora", en:"Computer", ja:"パソコン", cat:"Trabajo" },
+  { es:"El correo electrónico", en:"Email", ja:"メール", cat:"Trabajo" },
+  { es:"El proyecto", en:"Project", ja:"プロジェクト", cat:"Trabajo" },
+  { es:"El sueldo", en:"Salary", ja:"給料", cat:"Trabajo" },
+  { es:"La entrevista", en:"Interview", ja:"面接", cat:"Trabajo" },
+  { es:"El currículum", en:"Resume", ja:"履歴書", cat:"Trabajo" },
+  { es:"La empresa", en:"Company", ja:"会社", cat:"Trabajo" },
+  { es:"El cliente", en:"Client", ja:"顧客", cat:"Trabajo" },
+  { es:"El horario", en:"Schedule", ja:"スケジュール", cat:"Trabajo" },
+  { es:"Feliz", en:"Happy", ja:"幸せ", cat:"Emociones" },
+  { es:"Triste", en:"Sad", ja:"悲しい", cat:"Emociones" },
+  { es:"Enojado", en:"Angry", ja:"怒っている", cat:"Emociones" },
+  { es:"Cansado", en:"Tired", ja:"疲れた", cat:"Emociones" },
+  { es:"Nervioso", en:"Nervous", ja:"緊張している", cat:"Emociones" },
+  { es:"Emocionado", en:"Excited", ja:"わくわくしている", cat:"Emociones" },
+  { es:"Aburrido", en:"Bored", ja:"退屈している", cat:"Emociones" },
+  { es:"Sorprendido", en:"Surprised", ja:"驚いている", cat:"Emociones" },
+  { es:"Asustado", en:"Scared", ja:"怖がっている", cat:"Emociones" },
+  { es:"Tranquilo", en:"Calm", ja:"落ち着いている", cat:"Emociones" },
+  { es:"Preocupado", en:"Worried", ja:"心配している", cat:"Emociones" },
+  { es:"Orgulloso", en:"Proud", ja:"誇りに思う", cat:"Emociones" },
+  { es:"Celoso", en:"Jealous", ja:"嫉妬している", cat:"Emociones" },
+  { es:"Avergonzado", en:"Embarrassed", ja:"恥ずかしい", cat:"Emociones" },
+  { es:"El sol", en:"Sun", ja:"太陽", cat:"Clima" },
+  { es:"La lluvia", en:"Rain", ja:"雨", cat:"Clima" },
+  { es:"La nube", en:"Cloud", ja:"雲", cat:"Clima" },
+  { es:"El viento", en:"Wind", ja:"風", cat:"Clima" },
+  { es:"La nieve", en:"Snow", ja:"雪", cat:"Clima" },
+  { es:"La tormenta", en:"Storm", ja:"嵐", cat:"Clima" },
+  { es:"El calor", en:"Heat", ja:"暑さ", cat:"Clima" },
+  { es:"El frío", en:"Cold", ja:"寒さ", cat:"Clima" },
+  { es:"Húmedo", en:"Humid", ja:"湿気がある", cat:"Clima" },
+  { es:"El arcoíris", en:"Rainbow", ja:"虹", cat:"Clima" },
+  { es:"La niebla", en:"Fog", ja:"霧", cat:"Clima" },
+  { es:"La helada", en:"Frost", ja:"霜", cat:"Clima" },
+  { es:"El perro", en:"Dog", ja:"犬", cat:"Animales" },
+  { es:"El gato", en:"Cat", ja:"猫", cat:"Animales" },
+  { es:"El pájaro", en:"Bird", ja:"鳥", cat:"Animales" },
+  { es:"El pez", en:"Fish", ja:"魚", cat:"Animales" },
+  { es:"El caballo", en:"Horse", ja:"馬", cat:"Animales" },
+  { es:"La vaca", en:"Cow", ja:"牛", cat:"Animales" },
+  { es:"El cerdo", en:"Pig", ja:"豚", cat:"Animales" },
+  { es:"La oveja", en:"Sheep", ja:"羊", cat:"Animales" },
+  { es:"El león", en:"Lion", ja:"ライオン", cat:"Animales" },
+  { es:"El elefante", en:"Elephant", ja:"象", cat:"Animales" },
+  { es:"El mono", en:"Monkey", ja:"猿", cat:"Animales" },
+  { es:"El conejo", en:"Rabbit", ja:"うさぎ", cat:"Animales" },
+  { es:"El ratón", en:"Mouse", ja:"ねずみ", cat:"Animales" },
+  { es:"El tigre", en:"Tiger", ja:"虎", cat:"Animales" },
+  { es:"El oso", en:"Bear", ja:"熊", cat:"Animales" },
+  { es:"La serpiente", en:"Snake", ja:"蛇", cat:"Animales" },
+  { es:"El coche", en:"Car", ja:"車", cat:"Transporte" },
+  { es:"El autobús", en:"Bus", ja:"バス", cat:"Transporte" },
+  { es:"El tren", en:"Train", ja:"電車", cat:"Transporte" },
+  { es:"El avión", en:"Airplane", ja:"飛行機", cat:"Transporte" },
+  { es:"La bicicleta", en:"Bicycle", ja:"自転車", cat:"Transporte" },
+  { es:"El barco", en:"Boat", ja:"船", cat:"Transporte" },
+  { es:"El taxi", en:"Taxi", ja:"タクシー", cat:"Transporte" },
+  { es:"El metro", en:"Subway", ja:"地下鉄", cat:"Transporte" },
+  { es:"La motocicleta", en:"Motorcycle", ja:"バイク", cat:"Transporte" },
+  { es:"El camión", en:"Truck", ja:"トラック", cat:"Transporte" },
+  { es:"Grande", en:"Big", ja:"大きい", cat:"Adjetivos" },
+  { es:"Pequeño", en:"Small", ja:"小さい", cat:"Adjetivos" },
+  { es:"Alto", en:"Tall", ja:"高い(背)", cat:"Adjetivos" },
+  { es:"Bajo", en:"Short", ja:"低い", cat:"Adjetivos" },
+  { es:"Rápido", en:"Fast", ja:"速い", cat:"Adjetivos" },
+  { es:"Lento", en:"Slow", ja:"遅い", cat:"Adjetivos" },
+  { es:"Caro", en:"Expensive", ja:"高い(値段)", cat:"Adjetivos" },
+  { es:"Barato", en:"Cheap", ja:"安い", cat:"Adjetivos" },
+  { es:"Fácil", en:"Easy", ja:"簡単", cat:"Adjetivos" },
+  { es:"Difícil", en:"Difficult", ja:"難しい", cat:"Adjetivos" },
+  { es:"Nuevo", en:"New", ja:"新しい", cat:"Adjetivos" },
+  { es:"Viejo", en:"Old", ja:"古い", cat:"Adjetivos" },
+  { es:"Limpio", en:"Clean", ja:"きれい", cat:"Adjetivos" },
+  { es:"Sucio", en:"Dirty", ja:"汚い", cat:"Adjetivos" },
+  { es:"Fuerte", en:"Strong", ja:"強い", cat:"Adjetivos" },
+  { es:"Débil", en:"Weak", ja:"弱い", cat:"Adjetivos" },
+  { es:"Bonito", en:"Pretty", ja:"きれい/かわいい", cat:"Adjetivos" },
+  { es:"Feo", en:"Ugly", ja:"醜い", cat:"Adjetivos" },
+  { es:"Inteligente", en:"Smart", ja:"賢い", cat:"Adjetivos" },
+  { es:"Divertido", en:"Fun", ja:"楽しい", cat:"Adjetivos" },
+  { es:"Enero", en:"January", ja:"1月", cat:"Meses" },
+  { es:"Febrero", en:"February", ja:"2月", cat:"Meses" },
+  { es:"Marzo", en:"March", ja:"3月", cat:"Meses" },
+  { es:"Abril", en:"April", ja:"4月", cat:"Meses" },
+  { es:"Mayo", en:"May", ja:"5月", cat:"Meses" },
+  { es:"Junio", en:"June", ja:"6月", cat:"Meses" },
+  { es:"Julio", en:"July", ja:"7月", cat:"Meses" },
+  { es:"Agosto", en:"August", ja:"8月", cat:"Meses" },
+  { es:"Septiembre", en:"September", ja:"9月", cat:"Meses" },
+  { es:"Octubre", en:"October", ja:"10月", cat:"Meses" },
+  { es:"Noviembre", en:"November", ja:"11月", cat:"Meses" },
+  { es:"Diciembre", en:"December", ja:"12月", cat:"Meses" },
+  { es:"El banco", en:"Bank", ja:"銀行", cat:"Lugares" },
+  { es:"El hospital", en:"Hospital", ja:"病院", cat:"Lugares" },
+  { es:"La escuela", en:"School", ja:"学校", cat:"Lugares" },
+  { es:"La iglesia", en:"Church", ja:"教会", cat:"Lugares" },
+  { es:"El mercado", en:"Market", ja:"市場", cat:"Lugares" },
+  { es:"El parque", en:"Park", ja:"公園", cat:"Lugares" },
+  { es:"La biblioteca", en:"Library", ja:"図書館", cat:"Lugares" },
+  { es:"La farmacia", en:"Pharmacy", ja:"薬局", cat:"Lugares" },
+  { es:"El supermercado", en:"Supermarket", ja:"スーパー", cat:"Lugares" },
+  { es:"La playa", en:"Beach", ja:"ビーチ", cat:"Lugares" },
+  { es:"La montaña", en:"Mountain", ja:"山", cat:"Lugares" },
+  { es:"La ciudad", en:"City", ja:"都市", cat:"Lugares" },
+  { es:"El pueblo", en:"Town", ja:"町", cat:"Lugares" },
+  { es:"El museo", en:"Museum", ja:"美術館/博物館", cat:"Lugares" },
+  { es:"El teléfono", en:"Phone", ja:"電話", cat:"Tecnología" },
+  { es:"El internet", en:"Internet", ja:"インターネット", cat:"Tecnología" },
+  { es:"La aplicación", en:"App", ja:"アプリ", cat:"Tecnología" },
+  { es:"La contraseña", en:"Password", ja:"パスワード", cat:"Tecnología" },
+  { es:"La batería", en:"Battery", ja:"バッテリー", cat:"Tecnología" },
+  { es:"La pantalla", en:"Screen", ja:"画面", cat:"Tecnología" },
+  { es:"El cargador", en:"Charger", ja:"充電器", cat:"Tecnología" },
+  { es:"El wifi", en:"Wifi", ja:"Wi-Fi", cat:"Tecnología" },
+  { es:"El mensaje", en:"Message", ja:"メッセージ", cat:"Tecnología" },
+  { es:"El fútbol", en:"Soccer", ja:"サッカー", cat:"Deportes" },
+  { es:"El baloncesto", en:"Basketball", ja:"バスケットボール", cat:"Deportes" },
+  { es:"El tenis", en:"Tennis", ja:"テニス", cat:"Deportes" },
+  { es:"La natación", en:"Swimming", ja:"水泳", cat:"Deportes" },
+  { es:"Correr", en:"To run", ja:"走る", cat:"Deportes" },
+  { es:"El ciclismo", en:"Cycling", ja:"サイクリング", cat:"Deportes" },
+  { es:"El béisbol", en:"Baseball", ja:"野球", cat:"Deportes" },
+  { es:"El boxeo", en:"Boxing", ja:"ボクシング", cat:"Deportes" },
+  { es:"El yoga", en:"Yoga", ja:"ヨガ", cat:"Deportes" },
+  { es:"El gimnasio", en:"Gym", ja:"ジム", cat:"Deportes" },
+  { es:"El árbol", en:"Tree", ja:"木", cat:"Naturaleza" },
+  { es:"La flor", en:"Flower", ja:"花", cat:"Naturaleza" },
+  { es:"El río", en:"River", ja:"川", cat:"Naturaleza" },
+  { es:"El mar", en:"Sea", ja:"海", cat:"Naturaleza" },
+  { es:"El cielo", en:"Sky", ja:"空", cat:"Naturaleza" },
+  { es:"La estrella", en:"Star", ja:"星", cat:"Naturaleza" },
+  { es:"La luna", en:"Moon", ja:"月", cat:"Naturaleza" },
+  { es:"El bosque", en:"Forest", ja:"森", cat:"Naturaleza" },
+  { es:"La piedra", en:"Stone", ja:"石", cat:"Naturaleza" },
+  { es:"Siempre", en:"Always", ja:"いつも", cat:"Frecuencia" },
+  { es:"Nunca", en:"Never", ja:"決して〜ない", cat:"Frecuencia" },
+  { es:"A veces", en:"Sometimes", ja:"時々", cat:"Frecuencia" },
+  { es:"A menudo", en:"Often", ja:"よく", cat:"Frecuencia" },
+  { es:"Ahora", en:"Now", ja:"今", cat:"Frecuencia" },
+  { es:"Después", en:"After / Later", ja:"あとで", cat:"Frecuencia" },
+  { es:"Antes", en:"Before", ja:"前に", cat:"Frecuencia" },
+  { es:"Todavía", en:"Still / Yet", ja:"まだ", cat:"Frecuencia" },
+  { es:"Ya", en:"Already", ja:"すでに", cat:"Frecuencia" },
+  { es:"Pronto", en:"Soon", ja:"すぐに", cat:"Frecuencia" },
+  { es:"Temprano", en:"Early", ja:"早く", cat:"Frecuencia" },
+  { es:"Tarde", en:"Late", ja:"遅く", cat:"Frecuencia" },
 ].map((w,i)=>({...w,id:i}));
 
 const CATEGORIES = [...new Set(VOCAB.map(w=>w.cat))];
@@ -226,11 +474,31 @@ function tone(freq, dur, type){
 }
 function playCorrect(){ tone(880,0.12,"sine"); setTimeout(()=>tone(1180,0.15,"sine"),90); }
 function playWrong(){ tone(180,0.25,"sawtooth"); }
+
+let selectedVoice = null;
+function pickVoice(){
+  try{
+    const voices = window.speechSynthesis.getVoices();
+    const es = voices.filter(v=>v.lang && v.lang.toLowerCase().startsWith("es"));
+    selectedVoice =
+      es.find(v=>/enhanced|premium|natural|neural/i.test(v.name)) ||
+      es.find(v=>/mx|mexic/i.test(v.lang+" "+v.name)) ||
+      es.find(v=>/es-ES|espa/i.test(v.lang+" "+v.name)) ||
+      es[0] || null;
+  }catch(e){}
+}
+if(window.speechSynthesis){
+  pickVoice();
+  window.speechSynthesis.onvoiceschanged = pickVoice;
+}
 function speak(text){
   try{
     if(!window.speechSynthesis) return;
+    if(!selectedVoice) pickVoice();
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = "es-MX"; u.rate = 0.92;
+    if(selectedVoice){ u.voice = selectedVoice; u.lang = selectedVoice.lang; }
+    else { u.lang = "es-MX"; }
+    u.rate = 0.94; u.pitch = 1.0;
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(u);
   }catch(e){}
@@ -492,14 +760,15 @@ function doneScreen(label, score, total){
 }
 
 /* ---------- Flashcards ---------- */
-let flashDeck=[], flashIdx=0, flashFlipped=false;
+let flashDeck=[], flashIdx=0, flashFlipped=false, lastSpokenFlashId=null;
 function renderFlash(){
   const pool = state.activeCat==="Todos" ? VOCAB : VOCAB.filter(w=>w.cat===state.activeCat);
-  if(flashDeck.length===0){ flashDeck = shuffle(pool); flashIdx=0; flashFlipped=false; }
+  if(flashDeck.length===0){ flashDeck = shuffle(pool); flashIdx=0; flashFlipped=false; lastSpokenFlashId=null; }
   if(pool.length===0){ const w=el("div","done-wrap","<div class='done-title'>まだ単語がありません</div>"); const b=el("button","primary-btn","戻る"); b.onclick=()=>{state.mode="home";flashDeck=[];render();}; w.appendChild(b); app.appendChild(w); return; }
   if(flashIdx>=flashDeck.length){ doneScreen("tarjetas"); flashDeck=[]; return; }
   app.appendChild(topBar(flashDeck[flashIdx].cat, `${flashIdx+1} / ${flashDeck.length}`, ()=>{ state.mode="home"; flashDeck=[]; render(); }));
   const card = flashDeck[flashIdx];
+  if(lastSpokenFlashId !== card.id){ lastSpokenFlashId = card.id; setTimeout(()=>speak(card.es), 150); }
   const cardArea = el("div","card-area");
   const fcEl = el("div","flashcard"+(flashFlipped?" flipped":""));
   const front = el("div","flash-face flash-front");
@@ -523,7 +792,7 @@ function renderFlash(){
 }
 
 /* ---------- Vocab Quiz ---------- */
-let quizPool=[], quizTotal=0, quizIdx=0, quizQuestion=null, quizPicked=null, quizScore=0, quizMissed=[];
+let quizPool=[], quizTotal=0, quizIdx=0, quizQuestion=null, quizPicked=null, quizScore=0, quizMissed=[], quizLog=[], lastSpokenQuizId=null;
 function buildQuestion(pool){
   const word = pool[Math.floor(Math.random()*pool.length)];
   const distractors = shuffle(VOCAB.filter(w=>w.id!==word.id)).slice(0,3);
@@ -532,21 +801,24 @@ function buildQuestion(pool){
 function renderQuiz(){
   const pool = state.activeCat==="Todos" ? VOCAB : VOCAB.filter(w=>w.cat===state.activeCat);
   if(pool.length<4){ const w=el("div","done-wrap","<div class='done-title'>このカテゴリは単語が足りません</div>"); const b=el("button","primary-btn","戻る"); b.onclick=()=>{state.mode="home";render();}; w.appendChild(b); app.appendChild(w); return; }
-  if(!quizQuestion || quizPool!==pool){ quizPool=pool; quizTotal=Math.min(10,pool.length); quizIdx=0; quizQuestion=buildQuestion(pool); quizPicked=null; quizScore=0; quizMissed=[]; }
+  if(!quizQuestion || quizPool!==pool){ quizPool=pool; quizTotal=Math.min(10,pool.length); quizIdx=0; quizQuestion=buildQuestion(pool); quizPicked=null; quizScore=0; quizMissed=[]; quizLog=[]; lastSpokenQuizId=null; }
   if(quizIdx>=quizTotal){
     doneScreen("quiz", quizScore, quizTotal);
-    if(quizMissed.length){
-      const rl = el("div","review-list");
-      rl.appendChild(el("div","section-label","日本語で復習"));
-      quizMissed.forEach(m=>{
-        const item = el("div","review-item");
-        item.innerHTML = `<div class="review-q">${m.es}</div><div class="review-a">${m.en} ／ ${m.ja}</div>`;
-        rl.appendChild(item);
-      });
-      app.appendChild(rl);
-    }
+    const rl = el("div","review-list");
+    rl.appendChild(el("div","section-label","まとめ（全問）"));
+    quizLog.forEach(log=>{
+      const item = el("div","review-item");
+      const mark = log.correct ? "○ 正解" : "✕ 不正解";
+      const markColor = log.correct ? "var(--accent2)" : "var(--brick)";
+      item.innerHTML = `<div class="review-q" style="color:${markColor};">${mark}　${log.word.es}</div>
+        <div class="review-a">正解: ${log.word.en} ／ ${log.word.ja}</div>
+        ${!log.correct ? `<div class="review-note">あなたの回答: ${log.pickedEn}</div>` : ""}`;
+      rl.appendChild(item);
+    });
+    app.appendChild(rl);
     quizQuestion=null; return;
   }
+  if(lastSpokenQuizId !== quizQuestion.word.id){ lastSpokenQuizId = quizQuestion.word.id; setTimeout(()=>speak(quizQuestion.word.es), 150); }
   app.appendChild(topBar(quizQuestion.word.cat, `${quizIdx+1} / ${quizTotal}`, ()=>{ state.mode="home"; quizQuestion=null; render(); }));
   const prompt = el("div","quiz-prompt");
   prompt.innerHTML = `<div class="quiz-label">¿Cómo se dice…?</div><div class="quiz-word">${quizQuestion.word.es}</div>`;
@@ -561,6 +833,7 @@ function renderQuiz(){
       const correct = opt.id===quizQuestion.word.id;
       quizPicked = opt.id;
       markResult(quizQuestion.word.id, correct);
+      quizLog.push({ word:quizQuestion.word, pickedEn:opt.en, correct });
       if(correct){ quizScore++; playCorrect(); } else { playWrong(); quizMissed.push(quizQuestion.word); }
       render();
       setTimeout(()=>{ quizIdx++; if(quizIdx<quizTotal){ quizQuestion=buildQuestion(pool); quizPicked=null; } render(); }, 700);
@@ -588,7 +861,7 @@ function renderConjTab(){
   if(state.conjSubTab==="drill") renderConjDrill(); else renderExamples();
 }
 
-let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[];
+let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], lastSpokenConjKey=null;
 function buildConjQuestion(tenseFilter){
   const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
   const verb = VERBS[Math.floor(Math.random()*VERBS.length)];
@@ -602,12 +875,14 @@ function renderConjDrill(){
   ["Todos", ...TENSE_KEYS].forEach(t=>{
     const label = t==="Todos" ? "Todos" : TENSE_LABELS[t];
     const chip = el("button","chip"+(state.conjTense===t?" active":""), label);
-    chip.onclick = ()=>{ state.conjTense=t; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; render(); };
+    chip.onclick = ()=>{ state.conjTense=t; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; lastSpokenConjKey=null; render(); };
     chipRow.appendChild(chip);
   });
   app.appendChild(chipRow);
-  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; }
+  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; lastSpokenConjKey=null; }
   if(conjIdx>=conjTotal){ doneScreenConj(); return; }
+  const conjKey = conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
+  if(lastSpokenConjKey !== conjKey){ lastSpokenConjKey = conjKey; setTimeout(()=>speak(conjQuestion.verb.v), 150); }
   const pr = el("div"); pr.style.textAlign="center"; pr.style.marginBottom="14px";
   pr.innerHTML = `<div class="top-bar-label">${conjIdx+1} / ${conjTotal}　·　スコア ${conjScore}</div>`;
   app.appendChild(pr);
