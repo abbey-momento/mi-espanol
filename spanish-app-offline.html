@@ -8,31 +8,24 @@
   :root {
     --bg-a: #1B0E33; --bg-b: #4B1770;
     --card: #FFF7E8; --ink: #1B0E33;
-    --accent: #FF3CAC;      /* hot pink */
-    --accent2: #05FFA1;     /* neon mint */
-    --accent3: #FFD23F;     /* neon yellow */
-    --violet: #7B2FF7;
-    --brick: #FF4D6D;
-    --muted: #B6A6DE;
-    --paper-line: #EFE2C6;
+    --accent: #FF3CAC; --accent2: #05FFA1; --accent3: #FFD23F;
+    --violet: #7B2FF7; --brick: #FF4D6D; --muted: #B6A6DE; --paper-line: #EFE2C6;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   html, body { margin:0; padding:0; height:100%;
     background: radial-gradient(1200px 700px at 50% -10%, var(--bg-b), var(--bg-a));
-    font-family: -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
-    color: var(--card); }
+    font-family: -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif; color: var(--card); }
   #app { max-width: 440px; margin: 0 auto; min-height: 100vh; padding: 22px 18px 40px; display:flex; flex-direction:column; }
-
-  /* Top nav */
   .nav-row { display:flex; gap:6px; margin-bottom:20px; background: rgba(255,255,255,0.06); padding:5px; border-radius:16px; }
-  .nav-btn { flex:1; padding:10px 4px; border-radius:12px; border:none; background:transparent; color:#D9CCEF; font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .nav-btn { flex:1; padding:10px 4px; border-radius:12px; border:none; background:transparent; color:#D9CCEF; font-size:11.5px; font-weight:700; cursor:pointer; font-family:inherit; }
   .nav-btn.active { background: linear-gradient(135deg, var(--accent), var(--violet)); color:#fff; }
-
+  .subnav-row { display:flex; gap:7px; margin-bottom:16px; }
+  .subnav-btn { flex:1; padding:9px 4px; border-radius:11px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:#D9CCEF; font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .subnav-btn.active { background: rgba(255,255,255,0.16); color:#fff; border-color: rgba(255,255,255,0.4); }
   .eyebrow { font-size:11px; letter-spacing:0.16em; color: var(--accent3); font-weight:700; margin-bottom:6px; }
-  h1.title { font-family: Georgia, "Times New Roman", serif; font-size:32px; font-weight:700; margin:0; }
+  h1.title { font-family: Georgia, "Times New Roman", serif; font-size:30px; font-weight:700; margin:0; }
   .streak-row { display:flex; align-items:center; gap:6px; margin-top:8px; }
   .streak-text { font-size:14px; color:#E4D9F7; font-weight:600; }
-
   .passport { background: var(--card); border-radius:20px; padding:20px; color:var(--ink);
     box-shadow: 0 12px 32px rgba(0,0,0,0.35); margin:16px 0 20px; border:1px solid var(--paper-line); }
   .passport-top { display:flex; justify-content:space-between; align-items:flex-start; }
@@ -47,13 +40,11 @@
   .legend-item { display:flex; align-items:center; gap:6px; }
   .legend-dot { width:8px; height:8px; border-radius:50%; }
   .legend-label { font-size:11px; color:#8A7AAE; font-weight:600; }
-
   .section-label { font-size:12px; font-weight:700; color:#D9CCEF; letter-spacing:0.06em; margin-bottom:9px; }
   .chip-row { display:flex; gap:7px; flex-wrap:wrap; margin-bottom:20px; }
   .chip { padding:7px 13px; border-radius:999px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.07);
-    color:#E4D9F7; font-size:12.5px; font-weight:600; cursor:pointer; font-family:inherit; }
+    color:#E4D9F7; font-size:12px; font-weight:600; cursor:pointer; font-family:inherit; }
   .chip.active { background: linear-gradient(135deg, var(--accent), var(--violet)); color:#fff; border:1px solid transparent; }
-
   .mode-grid { display:grid; grid-template-columns:1fr 1fr; gap:11px; }
   .mode-card { background: rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.16); border-radius:16px;
     padding:18px 13px; text-align:left; cursor:pointer; color:var(--card); font-family:inherit; }
@@ -61,14 +52,12 @@
   .mode-name { font-family: Georgia, serif; font-size:17px; font-weight:700; }
   .mode-desc { font-size:11.5px; color:#C9BBE8; margin-top:3px; }
   .footer-hint { text-align:center; font-size:11.5px; color:#9C8FC2; margin-top:22px; }
-
   .top-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
   .exit-btn { background:none; border:none; color:#D9CCEF; font-size:14px; font-weight:700; cursor:pointer; width:60px; font-family:inherit; }
   .top-bar-center { text-align:center; }
   .top-bar-label { font-size:11px; color:var(--accent3); font-weight:700; letter-spacing:0.06em; }
   .top-bar-progress { font-size:13px; color:#E4D9F7; font-weight:700; margin-top:2px; }
   .spacer60 { width:60px; }
-
   .card-area { perspective:1200px; display:flex; justify-content:center; margin-bottom:22px; flex:1; align-items:center; }
   .flashcard { position:relative; width:100%; max-width:320px; height:220px; transform-style:preserve-3d; transition:transform .5s; cursor:pointer; }
   .flashcard.flipped { transform:rotateY(180deg); }
@@ -84,7 +73,6 @@
   .judge-btn { flex:1; padding:14px 0; border-radius:14px; border:none; font-weight:700; font-size:14px; cursor:pointer; font-family:inherit; }
   .judge-no { background: rgba(255,77,109,0.2); color:#FFC1CE; }
   .judge-yes { background: var(--accent2); color:#0B0518; }
-
   .quiz-prompt { text-align:center; margin-bottom:20px; }
   .quiz-label { font-size:13px; color:#C9BBE8; font-weight:600; margin-bottom:6px; }
   .quiz-word { font-family: Georgia, serif; font-size:28px; font-weight:700; }
@@ -93,11 +81,9 @@
     color:var(--card); font-size:15px; font-weight:600; text-align:left; cursor:pointer; font-family:inherit; }
   .option-btn.correct { background: var(--accent2); color:#0B0518; border:1px solid var(--accent2); }
   .option-btn.wrong { background: var(--brick); color:#fff; border:1px solid var(--brick); }
-
   .speak-btn { border:none; background: rgba(255,255,255,0.12); color:var(--card); width:36px; height:36px; border-radius:50%;
     font-size:16px; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; }
   .speak-row { display:flex; justify-content:center; margin-top:10px; }
-
   .done-wrap { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:9px; }
   .done-stamp { width:68px; height:68px; border-radius:50%; border:3px dashed var(--accent3); color:var(--accent3);
     display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; margin-bottom:6px; }
@@ -108,14 +94,11 @@
     color:#fff; font-weight:700; font-size:14px; cursor:pointer; font-family:inherit; }
   .ghost-btn { margin-top:8px; padding:10px 22px; border-radius:999px; border:1px solid rgba(255,255,255,0.3); background:transparent;
     color:var(--card); font-weight:700; font-size:13px; cursor:pointer; font-family:inherit; }
-
   .review-list { width:100%; max-width:360px; text-align:left; margin-top:14px; }
   .review-item { background: rgba(255,255,255,0.07); border-radius:14px; padding:13px 15px; margin-bottom:9px; border:1px solid rgba(255,255,255,0.14); }
   .review-q { font-weight:700; font-size:14px; color:var(--accent3); }
   .review-a { font-size:14px; margin-top:3px; }
   .review-note { font-size:12.5px; color:#C9BBE8; margin-top:5px; line-height:1.5; }
-
-  /* Conjugation trainer */
   .conj-prompt { text-align:center; margin-bottom:14px; }
   .conj-tense { font-size:12px; color:var(--accent3); font-weight:700; letter-spacing:.04em; }
   .conj-verb { font-family: Georgia, serif; font-size:24px; font-weight:700; margin-top:4px; }
@@ -129,12 +112,19 @@
   .conj-feedback { text-align:center; margin-top:16px; font-size:15px; font-weight:700; min-height:22px; }
   .conj-feedback.ok { color: var(--accent2); }
   .conj-feedback.no { color: var(--brick); }
-
-  /* Column / News */
+  .sentence-box { background: rgba(255,255,255,0.07); border-radius:16px; padding:18px; text-align:center; font-size:17px; line-height:1.7; border:1px solid rgba(255,255,255,0.14); }
+  .sentence-blank { display:inline-block; min-width:70px; border-bottom:2px solid var(--accent3); color:var(--accent3); font-weight:700; }
+  .sentence-ja { text-align:center; font-size:13px; color:#C9BBE8; margin-top:10px; }
   .article { background: rgba(255,255,255,0.06); border-radius:18px; padding:18px; margin-bottom:14px; border:1px solid rgba(255,255,255,0.13); }
-  .article-title { font-family: Georgia, serif; font-size:17px; font-weight:700; color:var(--accent3); margin-bottom:8px; }
+  .article-title { font-family: Georgia, serif; font-size:16.5px; font-weight:700; color:var(--accent3); margin-bottom:8px; }
   .article-body { font-size:14px; line-height:1.75; color:#EFE7FA; }
   .news-badge { font-size:11px; background: rgba(255,60,172,0.18); color:var(--accent); padding:6px 10px; border-radius:10px; margin-bottom:16px; line-height:1.6; }
+  .explain-btn { margin-top:10px; padding:8px 14px; border-radius:999px; border:1px solid rgba(255,255,255,0.3); background:rgba(255,255,255,0.08);
+    color:var(--card); font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .explain-box { margin-top:12px; padding-top:12px; border-top:1px dashed rgba(255,255,255,0.2); }
+  .explain-ja { font-size:13.5px; color:#EFE7FA; line-height:1.7; margin-bottom:8px; }
+  .glossary-item { font-size:12.5px; color:#C9BBE8; margin-top:3px; }
+  .glossary-item b { color: var(--accent3); }
 </style>
 </head>
 <body>
@@ -263,7 +253,6 @@ function loadProgress(){
 }
 function saveProgress(data){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); }catch(e){} }
 let progress = loadProgress();
-
 function markResult(id, correct){
   const cur = progress.counts[id]||0;
   progress.counts[id] = correct ? Math.min(cur+1,KNOWN_THRESHOLD) : Math.max(cur-1,0);
@@ -278,70 +267,135 @@ function computeStats(){
 /* ---------- Conjugation data ---------- */
 const PERSONS5 = ["yo","tú","él/ella/usted","nosotros","ellos/ellas/ustedes"];
 const PERSONS_IMP = ["tú","usted","nosotros","ustedes"];
-const TENSE_LABELS = { presente:"現在形", indefinido:"点過去", imperfecto:"線過去", futuro:"未来形", imperativo:"命令形" };
+const TENSE_KEYS = ["presente","indefinido","imperfecto","futuro","condicional","subjuntivo","perfecto","imperativo"];
+const TENSE_LABELS = { presente:"現在形", indefinido:"点過去", imperfecto:"線過去", futuro:"未来形",
+  condicional:"過去未来形(条件法)", subjuntivo:"接続法現在", perfecto:"現在完了形", imperativo:"命令形" };
 const TENSE_NOTES = {
   presente:"現在の習慣や事実を表す形。",
   indefinido:"過去に完了した1回きりの行為を表す（点過去）。",
   imperfecto:"過去に繰り返していた習慣や、当時の状態を表す（線過去）。",
   futuro:"これから起こることを表す未来形。",
+  condicional:"「もし〜なら…だろう」という仮定や、丁寧な依頼を表す（過去未来形/条件法）。",
+  subjuntivo:"願望・感情・疑い・不確実さなど、事実そのものではなく心の中の内容を表す（接続法）。",
+  perfecto:"「〜したことがある」「（今までに）〜した」という経験や完了を表す複合時制。haber+過去分詞で作る。",
   imperativo:"命令・依頼を表す命令形。",
 };
 const VERBS = [
-  { v:"hablar", ja:"話す", presente:["hablo","hablas","habla","hablamos","hablan"],
+  { v:"hablar", ja:"話す",
+    presente:["hablo","hablas","habla","hablamos","hablan"],
     indefinido:["hablé","hablaste","habló","hablamos","hablaron"],
     imperfecto:["hablaba","hablabas","hablaba","hablábamos","hablaban"],
     futuro:["hablaré","hablarás","hablará","hablaremos","hablarán"],
+    condicional:["hablaría","hablarías","hablaría","hablaríamos","hablarían"],
+    subjuntivo:["hable","hables","hable","hablemos","hablen"],
+    perfecto:["he hablado","has hablado","ha hablado","hemos hablado","han hablado"],
     imperativo:["habla","hable","hablemos","hablen"] },
-  { v:"comer", ja:"食べる", presente:["como","comes","come","comemos","comen"],
+  { v:"comer", ja:"食べる",
+    presente:["como","comes","come","comemos","comen"],
     indefinido:["comí","comiste","comió","comimos","comieron"],
     imperfecto:["comía","comías","comía","comíamos","comían"],
     futuro:["comeré","comerás","comerá","comeremos","comerán"],
+    condicional:["comería","comerías","comería","comeríamos","comerían"],
+    subjuntivo:["coma","comas","coma","comamos","coman"],
+    perfecto:["he comido","has comido","ha comido","hemos comido","han comido"],
     imperativo:["come","coma","comamos","coman"] },
-  { v:"vivir", ja:"住む/生きる", presente:["vivo","vives","vive","vivimos","viven"],
+  { v:"vivir", ja:"住む/生きる",
+    presente:["vivo","vives","vive","vivimos","viven"],
     indefinido:["viví","viviste","vivió","vivimos","vivieron"],
     imperfecto:["vivía","vivías","vivía","vivíamos","vivían"],
     futuro:["viviré","vivirás","vivirá","viviremos","vivirán"],
+    condicional:["viviría","vivirías","viviría","viviríamos","vivirían"],
+    subjuntivo:["viva","vivas","viva","vivamos","vivan"],
+    perfecto:["he vivido","has vivido","ha vivido","hemos vivido","han vivido"],
     imperativo:["vive","viva","vivamos","vivan"] },
-  { v:"ser", ja:"〜である", presente:["soy","eres","es","somos","son"],
+  { v:"ser", ja:"〜である",
+    presente:["soy","eres","es","somos","son"],
     indefinido:["fui","fuiste","fue","fuimos","fueron"],
     imperfecto:["era","eras","era","éramos","eran"],
     futuro:["seré","serás","será","seremos","serán"],
+    condicional:["sería","serías","sería","seríamos","serían"],
+    subjuntivo:["sea","seas","sea","seamos","sean"],
+    perfecto:["he sido","has sido","ha sido","hemos sido","han sido"],
     imperativo:["sé","sea","seamos","sean"] },
-  { v:"estar", ja:"〜にいる", presente:["estoy","estás","está","estamos","están"],
+  { v:"estar", ja:"〜にいる",
+    presente:["estoy","estás","está","estamos","están"],
     indefinido:["estuve","estuviste","estuvo","estuvimos","estuvieron"],
     imperfecto:["estaba","estabas","estaba","estábamos","estaban"],
     futuro:["estaré","estarás","estará","estaremos","estarán"],
+    condicional:["estaría","estarías","estaría","estaríamos","estarían"],
+    subjuntivo:["esté","estés","esté","estemos","estén"],
+    perfecto:["he estado","has estado","ha estado","hemos estado","han estado"],
     imperativo:["está","esté","estemos","estén"] },
-  { v:"tener", ja:"持つ", presente:["tengo","tienes","tiene","tenemos","tienen"],
+  { v:"tener", ja:"持つ",
+    presente:["tengo","tienes","tiene","tenemos","tienen"],
     indefinido:["tuve","tuviste","tuvo","tuvimos","tuvieron"],
     imperfecto:["tenía","tenías","tenía","teníamos","tenían"],
     futuro:["tendré","tendrás","tendrá","tendremos","tendrán"],
+    condicional:["tendría","tendrías","tendría","tendríamos","tendrían"],
+    subjuntivo:["tenga","tengas","tenga","tengamos","tengan"],
+    perfecto:["he tenido","has tenido","ha tenido","hemos tenido","han tenido"],
     imperativo:["ten","tenga","tengamos","tengan"] },
-  { v:"ir", ja:"行く", presente:["voy","vas","va","vamos","van"],
+  { v:"ir", ja:"行く",
+    presente:["voy","vas","va","vamos","van"],
     indefinido:["fui","fuiste","fue","fuimos","fueron"],
     imperfecto:["iba","ibas","iba","íbamos","iban"],
     futuro:["iré","irás","irá","iremos","irán"],
+    condicional:["iría","irías","iría","iríamos","irían"],
+    subjuntivo:["vaya","vayas","vaya","vayamos","vayan"],
+    perfecto:["he ido","has ido","ha ido","hemos ido","han ido"],
     imperativo:["ve","vaya","vamos","vayan"] },
-  { v:"hacer", ja:"する/作る", presente:["hago","haces","hace","hacemos","hacen"],
+  { v:"hacer", ja:"する/作る",
+    presente:["hago","haces","hace","hacemos","hacen"],
     indefinido:["hice","hiciste","hizo","hicimos","hicieron"],
     imperfecto:["hacía","hacías","hacía","hacíamos","hacían"],
     futuro:["haré","harás","hará","haremos","harán"],
+    condicional:["haría","harías","haría","haríamos","harían"],
+    subjuntivo:["haga","hagas","haga","hagamos","hagan"],
+    perfecto:["he hecho","has hecho","ha hecho","hemos hecho","han hecho"],
     imperativo:["haz","haga","hagamos","hagan"] },
-  { v:"poder", ja:"〜できる", presente:["puedo","puedes","puede","podemos","pueden"],
+  { v:"poder", ja:"〜できる",
+    presente:["puedo","puedes","puede","podemos","pueden"],
     indefinido:["pude","pudiste","pudo","pudimos","pudieron"],
     imperfecto:["podía","podías","podía","podíamos","podían"],
     futuro:["podré","podrás","podrá","podremos","podrán"],
+    condicional:["podría","podrías","podría","podríamos","podrían"],
+    subjuntivo:["pueda","puedas","pueda","podamos","puedan"],
+    perfecto:["he podido","has podido","ha podido","hemos podido","han podido"],
     imperativo:["puede","pueda","podamos","puedan"] },
-  { v:"querer", ja:"欲しい/したい", presente:["quiero","quieres","quiere","queremos","quieren"],
+  { v:"querer", ja:"欲しい/したい",
+    presente:["quiero","quieres","quiere","queremos","quieren"],
     indefinido:["quise","quisiste","quiso","quisimos","quisieron"],
     imperfecto:["quería","querías","quería","queríamos","querían"],
     futuro:["querré","querrás","querrá","querremos","querrán"],
+    condicional:["querría","querrías","querría","querríamos","querrían"],
+    subjuntivo:["quiera","quieras","quiera","queramos","quieran"],
+    perfecto:["he querido","has querido","ha querido","hemos querido","han querido"],
     imperativo:["quiere","quiera","queramos","quieran"] },
 ];
-const TENSE_KEYS = ["presente","indefinido","imperfecto","futuro","imperativo"];
+function findVerb(name){ return VERBS.find(v=>v.v===name); }
+
+/* ---------- Example sentences (fill in the blank) ---------- */
+const EXAMPLES = [
+  { before:"Ayer yo ", verb:"hablar", tense:"indefinido", p:0, after:" con mi madre.", ja:"昨日、私は母と話した。" },
+  { before:"Cuando era niño, yo ", verb:"ir", tense:"imperfecto", p:0, after:" a la escuela caminando.", ja:"子供の頃、私は歩いて学校に通っていた。" },
+  { before:"Mañana nosotros ", verb:"comer", tense:"futuro", p:3, after:" en un restaurante nuevo.", ja:"明日、私たちは新しいレストランで食べるだろう。" },
+  { before:"En tu lugar, yo ", verb:"hacer", tense:"condicional", p:0, after:" lo mismo.", ja:"あなたの立場なら、私も同じことをするだろう。" },
+  { before:"¿", verb:"poder", tense:"condicional", p:1, after:" usted ayudarme?", ja:"手伝っていただけますか？（丁寧な依頼）" },
+  { before:"Espero que tú ", verb:"tener", tense:"subjuntivo", p:1, after:" un buen viaje.", ja:"良い旅行になりますように。" },
+  { before:"Quiero que ellos ", verb:"ser", tense:"subjuntivo", p:4, after:" felices.", ja:"彼らが幸せであってほしい。" },
+  { before:"Yo nunca ", verb:"ir", tense:"perfecto", p:0, after:" a México.", ja:"私はメキシコに行ったことがない。" },
+  { before:"¿Alguna vez tú ", verb:"comer", tense:"perfecto", p:1, after:" tacos de verdad?", ja:"本場のタコスを食べたことはありますか？" },
+  { before:"¡", verb:"hablar", tense:"imperativo", p:0, after:" más despacio, por favor!", ja:"もっとゆっくり話してください！" },
+  { before:"El año pasado, nosotros ", verb:"vivir", tense:"indefinido", p:3, after:" en España.", ja:"去年、私たちはスペインに住んだ。" },
+  { before:"Normalmente, yo ", verb:"tener", tense:"presente", p:0, after:" mucho trabajo los lunes.", ja:"普段、月曜日は仕事がたくさんある。" },
+  { before:"El próximo año, ellos ", verb:"estar", tense:"futuro", p:4, after:" en Japón.", ja:"来年、彼らは日本にいるだろう。" },
+  { before:"Cuando éramos jóvenes, ", verb:"querer", tense:"imperfecto", p:3, after:" viajar mucho.", ja:"若い頃、私たちはたくさん旅行したいと思っていた。" },
+];
+function personLabelFor(tense, p){ return tense==="imperativo" ? PERSONS_IMP[p] : PERSONS5[p]; }
+function answerFor(ex){ return findVerb(ex.verb)[ex.tense][ex.p]; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeCat:"Todos", conjTense:"Todos" };
+let state = { tab:"vocab", mode:"home", activeCat:"Todos", conjTense:"Todos", conjSubTab:"drill" };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -353,19 +407,19 @@ function render(){
     else if(state.mode==="flash") renderFlash();
     else if(state.mode==="quiz") renderQuiz();
   } else if(state.tab==="conj"){
-    renderConjugation();
+    renderConjTab();
   } else if(state.tab==="column"){
     renderColumn();
   } else if(state.tab==="news"){
     renderNews();
   }
 }
-
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; exDeck=[]; exMissed=[]; }
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","活用"],["column","コラム"],["news","ニュース"]].forEach(([key,label])=>{
     const b = el("button","nav-btn"+(state.tab===key?" active":""), label);
-    b.onclick = ()=>{ state.tab=key; state.mode="home"; flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; render(); };
+    b.onclick = ()=>{ state.tab=key; state.mode="home"; resetSessions(); render(); };
     row.appendChild(b);
   });
   return row;
@@ -382,7 +436,6 @@ function renderVocabHome(){
   sr.innerHTML = `<span>🔥</span><span class="streak-text">${progress.streak} ${progress.streak===1?"día":"días"} seguidos</span>`;
   header.appendChild(sr);
   app.appendChild(header);
-
   const passport = el("div","passport");
   passport.innerHTML = `
     <div class="passport-top">
@@ -396,7 +449,6 @@ function renderVocabHome(){
       <div class="legend-item"><span class="legend-dot" style="background:var(--muted)"></span><span class="legend-label">Por ver ${stats.unseen}</span></div>
     </div>`;
   app.appendChild(passport);
-
   app.appendChild(el("div","section-label","Categoría（集中練習もここから）"));
   const chipRow = el("div","chip-row");
   ["Todos", ...CATEGORIES].forEach(c=>{
@@ -405,7 +457,6 @@ function renderVocabHome(){
     chipRow.appendChild(chip);
   });
   app.appendChild(chipRow);
-
   const modeGrid = el("div","mode-grid");
   const fc = el("button","mode-card"); fc.innerHTML = `<div class="mode-icon">🗂️</div><div class="mode-name">Tarjetas</div><div class="mode-desc">Repasa a tu ritmo</div>`;
   fc.onclick = ()=>{ state.mode="flash"; render(); };
@@ -415,7 +466,6 @@ function renderVocabHome(){
   app.appendChild(modeGrid);
   app.appendChild(el("div","footer-hint","Unos minutos libres · practica y sigue tu viaje"));
 }
-
 function topBar(label, progressText, onExit){
   const bar = el("div","top-bar");
   const eb = el("button","exit-btn","← Salir"); eb.onclick = onExit;
@@ -520,8 +570,25 @@ function renderQuiz(){
   app.appendChild(grid);
 }
 
-/* ---------- Conjugation trainer ---------- */
-let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjFeedback="";
+/* ---------- Conjugation tab (drill / examples) ---------- */
+function renderConjTab(){
+  const header = el("div");
+  header.appendChild(el("div","eyebrow","GIMNASIO DE VERBOS"));
+  header.appendChild(el("h1","title","活用トレーニング"));
+  app.appendChild(header);
+  const sub = el("div"); sub.style.marginTop="14px";
+  const subnav = el("div","subnav-row");
+  const b1 = el("button","subnav-btn"+(state.conjSubTab==="drill"?" active":""), "活用ドリル");
+  b1.onclick = ()=>{ state.conjSubTab="drill"; conjQuestion=null; render(); };
+  const b2 = el("button","subnav-btn"+(state.conjSubTab==="examples"?" active":""), "例文で穴埋め");
+  b2.onclick = ()=>{ state.conjSubTab="examples"; exDeck=[]; render(); };
+  subnav.appendChild(b1); subnav.appendChild(b2);
+  sub.appendChild(subnav);
+  app.appendChild(sub);
+  if(state.conjSubTab==="drill") renderConjDrill(); else renderExamples();
+}
+
+let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[];
 function buildConjQuestion(tenseFilter){
   const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
   const verb = VERBS[Math.floor(Math.random()*VERBS.length)];
@@ -529,12 +596,7 @@ function buildConjQuestion(tenseFilter){
   const pIdx = Math.floor(Math.random()*persons.length);
   return { verb, tense, personIdx:pIdx, personLabel:persons[pIdx], answer: verb[tense][pIdx] };
 }
-function renderConjugation(){
-  const header = el("div");
-  header.appendChild(el("div","eyebrow","GIMNASIO DE VERBOS"));
-  header.appendChild(el("h1","title","活用トレーニング"));
-  app.appendChild(header);
-
+function renderConjDrill(){
   app.appendChild(el("div","section-label","時制を選ぶ"));
   const chipRow = el("div","chip-row");
   ["Todos", ...TENSE_KEYS].forEach(t=>{
@@ -544,72 +606,107 @@ function renderConjugation(){
     chipRow.appendChild(chip);
   });
   app.appendChild(chipRow);
-
-  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjFeedback=""; }
-
-  if(conjIdx>=conjTotal){
-    doneScreen2conj();
-    return;
-  }
-
-  const progressLine = el("div","top-bar-progress");
+  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; }
+  if(conjIdx>=conjTotal){ doneScreenConj(); return; }
   const pr = el("div"); pr.style.textAlign="center"; pr.style.marginBottom="14px";
   pr.innerHTML = `<div class="top-bar-label">${conjIdx+1} / ${conjTotal}　·　スコア ${conjScore}</div>`;
   app.appendChild(pr);
-
   const prompt = el("div","conj-prompt");
   prompt.innerHTML = `<div class="conj-tense">${TENSE_LABELS[conjQuestion.tense]}</div>
     <div class="conj-verb">${conjQuestion.verb.v}<span style="font-size:13px;color:#C9BBE8;"> （${conjQuestion.verb.ja}）</span></div>
     <div class="conj-person">${conjQuestion.personLabel}</div>`;
   app.appendChild(prompt);
-
   const row = el("div","conj-input-row");
   const input = el("input","conj-input");
   input.setAttribute("type","text"); input.setAttribute("placeholder","スペイン語で入力…"); input.setAttribute("autocapitalize","none"); input.setAttribute("autocorrect","off");
   const submit = el("button","conj-submit","確認");
   row.appendChild(input); row.appendChild(submit);
   app.appendChild(row);
-
-  const fb = el("div","conj-feedback"); fb.id="conjfb"; fb.textContent = conjFeedback;
+  const fb = el("div","conj-feedback");
   app.appendChild(fb);
-
   function submitAnswer(){
-    const val = input.value;
-    if(!val) return;
+    const val = input.value; if(!val) return;
     const ok = norm(val) === norm(conjQuestion.answer);
     if(ok){ conjScore++; playCorrect(); fb.textContent = "¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent = `正解: ${conjQuestion.answer}`; fb.className="conj-feedback no"; conjMissed.push({...conjQuestion}); }
     input.disabled = true; submit.disabled = true;
-    setTimeout(()=>{ conjIdx++; if(conjIdx<conjTotal){ conjQuestion = buildConjQuestion(state.conjTense); conjFeedback=""; } render(); }, 900);
+    setTimeout(()=>{ conjIdx++; if(conjIdx<conjTotal){ conjQuestion = buildConjQuestion(state.conjTense); } render(); }, 900);
   }
   submit.onclick = submitAnswer;
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
-
-  const exitBtn = el("button","ghost-btn","中断してホームへ");
-  exitBtn.style.display="block"; exitBtn.style.margin="18px auto 0";
-  exitBtn.onclick = ()=>{ state.tab="vocab"; state.mode="home"; conjQuestion=null; render(); };
-  app.appendChild(exitBtn);
 }
-function doneScreen2conj(){
+function doneScreenConj(){
   const wrap = el("div","done-wrap");
-  wrap.innerHTML = `<div class="done-stamp">✓</div><div class="done-title">¡Sesión completa!</div>
-    <div class="done-score">${conjScore} / ${conjTotal} correctas</div>`;
+  wrap.innerHTML = `<div class="done-stamp">✓</div><div class="done-title">¡Sesión completa!</div><div class="done-score">${conjScore} / ${conjTotal} correctas</div>`;
   const btn = el("button","primary-btn","もう一度");
   btn.onclick = ()=>{ conjQuestion=null; render(); };
-  wrap.appendChild(btn);
-  app.appendChild(wrap);
+  wrap.appendChild(btn); app.appendChild(wrap);
   if(conjMissed.length){
     const rl = el("div","review-list");
     rl.appendChild(el("div","section-label","日本語で復習"));
     conjMissed.forEach(m=>{
       const item = el("div","review-item");
       item.innerHTML = `<div class="review-q">${m.verb.v}（${m.personLabel}・${TENSE_LABELS[m.tense]}）</div>
-        <div class="review-a">正解: ${m.answer}</div>
-        <div class="review-note">${TENSE_NOTES[m.tense]}</div>`;
+        <div class="review-a">正解: ${m.answer}</div><div class="review-note">${TENSE_NOTES[m.tense]}</div>`;
       rl.appendChild(item);
     });
     app.appendChild(rl);
   }
+}
+
+/* ---------- Example sentence fill-in-the-blank ---------- */
+let exDeck=[], exIdx=0, exScore=0, exMissed=[];
+function renderExamples(){
+  if(exDeck.length===0){ exDeck = shuffle(EXAMPLES); exIdx=0; exScore=0; exMissed=[]; }
+  if(exIdx>=exDeck.length){
+    const wrap = el("div","done-wrap");
+    wrap.innerHTML = `<div class="done-stamp">✓</div><div class="done-title">¡Sesión completa!</div><div class="done-score">${exScore} / ${exDeck.length} correctas</div>`;
+    const btn = el("button","primary-btn","もう一度");
+    btn.onclick = ()=>{ exDeck=[]; render(); };
+    wrap.appendChild(btn); app.appendChild(wrap);
+    if(exMissed.length){
+      const rl = el("div","review-list");
+      rl.appendChild(el("div","section-label","日本語で復習"));
+      exMissed.forEach(m=>{
+        const item = el("div","review-item");
+        item.innerHTML = `<div class="review-q">${m.before}${answerFor(m)}${m.after}</div><div class="review-a">${m.ja}</div><div class="review-note">${TENSE_NOTES[m.tense]}</div>`;
+        rl.appendChild(item);
+      });
+      app.appendChild(rl);
+    }
+    return;
+  }
+  const ex = exDeck[exIdx];
+  const pr = el("div"); pr.style.textAlign="center"; pr.style.marginBottom="14px";
+  pr.innerHTML = `<div class="top-bar-label">${exIdx+1} / ${exDeck.length}　·　スコア ${exScore}</div>`;
+  app.appendChild(pr);
+  const box = el("div","sentence-box");
+  box.innerHTML = `${ex.before}<span class="sentence-blank" id="exblank">＿＿＿</span>${ex.after}
+    <div style="font-size:12px;color:#C9BBE8;margin-top:10px;">${ex.verb}（${TENSE_LABELS[ex.tense]}・${personLabelFor(ex.tense,ex.p)}）</div>`;
+  app.appendChild(box);
+  const row = el("div","conj-input-row"); row.style.marginTop="16px";
+  const input = el("input","conj-input");
+  input.setAttribute("type","text"); input.setAttribute("placeholder","空欄を埋める…"); input.setAttribute("autocapitalize","none"); input.setAttribute("autocorrect","off");
+  const submit = el("button","conj-submit","確認");
+  row.appendChild(input); row.appendChild(submit);
+  app.appendChild(row);
+  const fb = el("div","conj-feedback");
+  app.appendChild(fb);
+  const jaLine = el("div","sentence-ja");
+  app.appendChild(jaLine);
+  function submitAnswer(){
+    const val = input.value; if(!val) return;
+    const answer = answerFor(ex);
+    const ok = norm(val) === norm(answer);
+    document.getElementById("exblank").textContent = answer;
+    if(ok){ exScore++; playCorrect(); fb.textContent="¡Correcto! ✓"; fb.className="conj-feedback ok"; }
+    else{ playWrong(); fb.textContent=`正解: ${answer}`; fb.className="conj-feedback no"; exMissed.push(ex); }
+    jaLine.textContent = ex.ja;
+    input.disabled=true; submit.disabled=true;
+    setTimeout(()=>{ exIdx++; render(); }, 1100);
+  }
+  submit.onclick = submitAnswer;
+  input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
 }
 
 /* ---------- Column (Japanese trivia) ---------- */
@@ -620,6 +717,12 @@ const COLUMN_ARTICLES = [
   { title:"スペイン語の「巻き舌R」のコツ", body:"rr（二重のr）や語頭のrは、舌先を上の歯茎に軽く当てて息を弾かせるように発音します。日本語の「ら行」を素早く連続で言う練習（られられられ…）から始めると感覚をつかみやすいと言われています。" },
   { title:"スペイン語は国によって結構違う", body:"メキシコでは「Órale」「¿Qué onda?」のようなくだけた表現がよく使われますが、スペインでは「Vale」「¿Qué tal?」が一般的。同じスペイン語でも国ごとに語彙やイントネーションがかなり異なります。" },
   { title:"メキシコの「死者の日」", body:"11月初旬に祝われる死者の日（Día de los Muertos）は、亡くなった家族を偲ぶお祭り。骸骨をモチーフにしたカラフルな飾り付けや、故人の好物を供える祭壇（オフレンダ）が特徴的で、2008年にはユネスコの無形文化遺産にも登録されています。" },
+  { title:"ustedとvosotros、実は使い分けが国で違う", body:"スペインでは親しい相手にvosotros（君たち）、丁寧な相手にustedesを使い分けますが、ラテンアメリカの多くの国ではvosotrosをほぼ使わず、親しい相手にもustedesでまとめてしまうのが一般的です。" },
+  { title:"señor / señora / señoritaの距離感", body:"señor（男性）・señora（既婚女性やある程度年齢が上の女性）・señorita（未婚の若い女性、という含意）は便利な敬称ですが、señoritaは相手の年齢や結婚を勝手に決めつける響きもあるため、最近はseñoraで統一する人も増えています。" },
+  { title:"名詞の性、語尾で見分けるコツ", body:"スペイン語の名詞にはel（男性）とla（女性）の区別があります。完璧ではありませんが、-oで終わる語は男性、-aで終わる語は女性になることが多い、という大まかな傾向を覚えておくと最初の手がかりになります。" },
+  { title:"ナワトル語から来たスペイン語の単語", body:"chocolate（チョコレート）、tomate（トマト）、aguacate（アボカド）は、いずれもメキシコの先住民言語ナワトル語に由来する単語。スペイン語を通じて世界中の言語に広まりました。" },
+  { title:"「ñ」はどこから来た？", body:"「ñ」は中世、nnと2つ続けて書いていたものを省略するために、上に小さいnを重ねて書いたのが由来とされています。それが今のティルデ（波線）の形になりました。" },
+  { title:"接続法(subjuntivo)が難しく感じる理由", body:"接続法は「事実」ではなく「願望・感情・不確実さ」といった、話し手の心の中を表すための形。日本語には対応する文法がはっきりないため戸惑いやすいですが、「Espero que〜（〜だといいな）」のような決まり文句から慣れていくのがおすすめです。" },
 ];
 function renderColumn(){
   const header = el("div");
@@ -634,12 +737,28 @@ function renderColumn(){
   });
 }
 
-/* ---------- News snapshot ---------- */
+/* ---------- News snapshot (Spanish + toggle explanation) ---------- */
 const NEWS_ITEMS = [
-  { title:"チアパス州沖でM7.3〜7.4の地震（7月17日）", body:"メキシコ南部チアパス州の太平洋沖で強い地震が発生し、一時津波警報が出されました。グアテマラやエルサルバドルでも揺れが観測されましたが、これまでのところ大きな人的被害の報告はないとのことです。" },
-  { title:"FIFAワールドカップをメキシコが共催", body:"2026年のFIFAワールドカップは、アメリカ・メキシコ・カナダの北米3カ国による共催で、6月11日にメキシコシティで開幕しました。メキシコにとって単独開催国を含め3度目となるワールドカップ開催です。" },
-  { title:"メキシコ代表サッカーチームが好調", body:"メキシコ代表は直近の親善試合で好成績を収めており、失点の少ない堅実な守備が持ち味とされています。ワールドカップ home国として、地元サポーターの期待も高まっています。" },
+  { es:"El 17 de julio de 2026, un fuerte terremoto de magnitud 7.3 sacudió la costa del Pacífico frente a Chiapas, en el sur de México. Se emitió una alerta de tsunami de manera temporal, pero hasta ahora no se han reportado daños graves ni víctimas.",
+    ja:"2026年7月17日、メキシコ南部チアパス州沖の太平洋岸でマグニチュード7.3の強い地震が発生しました。一時津波警報が出されましたが、今のところ大きな被害や犠牲者の報告はありません。",
+    notes:[["terremoto","地震"],["alerta de tsunami","津波警報"],["daños","被害"],["víctimas","犠牲者"]] },
+  { es:"México es una de las tres sedes de la Copa Mundial de la FIFA 2026, junto con Estados Unidos y Canadá. El torneo comenzó el 11 de junio en la Ciudad de México.",
+    ja:"メキシコはアメリカ・カナダとともに2026年FIFAワールドカップの開催国の一つです。大会は6月11日にメキシコシティで開幕しました。",
+    notes:[["sede","開催地"],["torneo","大会"],["comenzó","始まった（comenzarの点過去）"]] },
+  { es:"La selección mexicana de fútbol ha tenido un buen momento reciente, con una defensa sólida que ha permitido pocos goles en sus últimos partidos.",
+    ja:"メキシコ代表サッカーチームは最近好調で、直近の試合では失点の少ない堅実な守備が光っています。",
+    notes:[["selección","代表チーム"],["defensa","守備"],["partidos","試合"]] },
+  { es:"México es el país con más hablantes nativos de español en el mundo, por encima incluso de España.",
+    ja:"メキシコは世界で最もネイティブのスペイン語話者数が多い国で、スペインをも上回っているとされています。",
+    notes:[["hablantes nativos","ネイティブ話者"],["por encima de","〜を上回って"]] },
+  { es:"El metro de la Ciudad de México es uno de los sistemas de transporte subterráneo más grandes de América Latina, con millones de pasajeros cada día.",
+    ja:"メキシコシティの地下鉄はラテンアメリカでも最大級の地下交通網の一つで、毎日何百万人もの乗客が利用しています。",
+    notes:[["transporte subterráneo","地下交通"],["pasajeros","乗客"]] },
+  { es:"La Universidad Nacional Autónoma de México (UNAM) es una de las universidades más grandes de América Latina, y su campus principal está declarado Patrimonio de la Humanidad por la UNESCO.",
+    ja:"メキシコ国立自治大学(UNAM)はラテンアメリカ最大級の大学の一つで、そのメインキャンパスはユネスコ世界遺産にも登録されています。",
+    notes:[["universidad","大学"],["Patrimonio de la Humanidad","世界遺産"]] },
 ];
+let newsExpanded = {};
 function renderNews(){
   const header = el("div");
   header.appendChild(el("div","eyebrow","NOTICIAS"));
@@ -648,9 +767,23 @@ function renderNews(){
   const badge = el("div","news-badge","このニュースは2026年7月28日時点のスナップショットです。オフラインで動くページのため自動更新はされません。最新情報は別途ニュースサイトでご確認ください。");
   const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
   app.appendChild(badge);
-  NEWS_ITEMS.forEach(n=>{
+  NEWS_ITEMS.forEach((n,i)=>{
     const art = el("div","article");
-    art.innerHTML = `<div class="article-title">${n.title}</div><div class="article-body">${n.body}</div>`;
+    const expanded = !!newsExpanded[i];
+    let html = `<div class="article-body" style="font-style:italic;">${n.es}</div>`;
+    const btn = el("button","explain-btn", expanded ? "解説をとじる" : "解説を見る");
+    btn.onclick = ()=>{ newsExpanded[i] = !newsExpanded[i]; render(); };
+    art.innerHTML = html;
+    art.appendChild(btn);
+    if(expanded){
+      const box = el("div","explain-box");
+      box.innerHTML = `<div class="explain-ja">${n.ja}</div>`;
+      n.notes.forEach(([w,m])=>{
+        const g = el("div","glossary-item"); g.innerHTML = `<b>${w}</b> — ${m}`;
+        box.appendChild(g);
+      });
+      art.appendChild(box);
+    }
     app.appendChild(art);
   });
 }
