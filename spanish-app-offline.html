@@ -357,7 +357,7 @@ function render(){
     renderNews();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; exDeck=[]; exMissed=[]; numQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; }
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","ドリル"],["grammar","文法"],["column","コラム"],["news","ニュース"]].forEach(([key,label])=>{
@@ -619,7 +619,7 @@ function renderConjTab(){
   else if(state.conjSubTab==="numbers") renderNumbersDrill();
 }
 
-let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], lastSpokenConjKey=null, conjFanfarePlayed=false;
+let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjLog=[], lastSpokenConjKey=null, conjFanfarePlayed=false;
 function buildConjQuestion(tenseFilter){
   const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
   const verb = VERBS[Math.floor(Math.random()*VERBS.length)];
@@ -634,11 +634,11 @@ function renderConjDrill(){
   ["Todos", ...TENSE_KEYS].forEach(t=>{
     const label = t==="Todos" ? "Todos" : TENSE_LABELS[t];
     const chip = el("button","chip"+(state.conjTense===t?" active":""), label);
-    chip.onclick = ()=>{ playTap(); state.conjTense=t; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; render(); };
+    chip.onclick = ()=>{ playTap(); state.conjTense=t; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; render(); };
     chipRow.appendChild(chip);
   });
   app.appendChild(chipRow);
-  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; }
+  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; }
   if(conjIdx>=conjTotal){ if(!conjFanfarePlayed){ conjFanfarePlayed=true; playFanfare(); } doneScreenConj(); return; }
   const conjKey = conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
   if(lastSpokenConjKey !== conjKey){ lastSpokenConjKey = conjKey; setTimeout(()=>speak(conjQuestion.verb.v), 150); }
@@ -663,6 +663,7 @@ function renderConjDrill(){
     const ok = norm(val) === norm(conjQuestion.answer);
     if(ok){ conjScore++; playCorrect(); fb.textContent = "¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent = `正解: ${conjQuestion.answer}`; fb.className="conj-feedback no"; conjMissed.push({...conjQuestion}); }
+    conjLog.push({ q:{...conjQuestion}, correct:ok, userAnswer:val });
     input.disabled = true; submit.disabled = true;
     const nextBtn = el("button","primary-btn", conjIdx+1>=conjTotal ? "結果を見る" : "次の問題へ →");
     nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
@@ -683,17 +684,18 @@ function doneScreenConj(){
   const btn = el("button","primary-btn","もう一度");
   btn.onclick = ()=>{ conjQuestion=null; render(); };
   wrap.appendChild(btn); app.appendChild(wrap);
-  if(conjMissed.length){
-    const rl = el("div","review-list");
-    rl.appendChild(el("div","section-label","日本語で復習"));
-    conjMissed.forEach(m=>{
-      const item = el("div","review-item");
-      item.innerHTML = `<div class="review-q">${m.verb.v}（${m.personLabel}・${TENSE_LABELS[m.tense]}）</div>
-        <div class="review-a">正解: ${m.answer}</div><div class="review-note">${TENSE_NOTES[m.tense]}</div>`;
-      rl.appendChild(item);
-    });
-    app.appendChild(rl);
-  }
+  const rl = el("div","review-list");
+  rl.appendChild(el("div","section-label","まとめ（全問）"));
+  conjLog.forEach(log=>{
+    const item = el("div","review-item");
+    const mark = log.correct ? "○ 正解" : "✕ 不正解";
+    const markColor = log.correct ? "var(--accent2)" : "var(--brick)";
+    item.innerHTML = `<div class="review-q" style="color:${markColor};">${mark}　${log.q.verb.v}（${log.q.personLabel}・${TENSE_LABELS[log.q.tense]}）</div>
+      <div class="review-a">正解: ${log.q.answer}</div>
+      ${!log.correct ? `<div class="review-note">あなたの回答: ${log.userAnswer || "（未回答）"}</div><div class="review-note">${TENSE_NOTES[log.q.tense]}</div>` : ""}`;
+    rl.appendChild(item);
+  });
+  app.appendChild(rl);
 }
 
 /* ---------- Example sentence fill-in-the-blank ---------- */
@@ -716,6 +718,7 @@ function backToMenuBtn(){
   b.onclick = ()=>{ playTap(); state.conjSubTab=null; conjQuestion=null; exDeck=[]; numQuestion=null; render(); };
   return b;
 }
+let exLog=[];
 function renderExamples(){
   const topic = state.exTopic || "conjugacion";
   const pool = EXAMPLES.filter(ex=>topicOf(ex)===topic);
@@ -725,7 +728,7 @@ function renderExamples(){
     app.appendChild(w);
     return;
   }
-  if(exDeck.length===0 || exDeck.every(ex=>topicOf(ex)!==topic)){ exDeck = shuffle(pool); exIdx=0; exScore=0; exMissed=[]; exFanfarePlayed=false; }
+  if(exDeck.length===0 || exDeck.every(ex=>topicOf(ex)!==topic)){ exDeck = shuffle(pool).slice(0,10); exIdx=0; exScore=0; exMissed=[]; exLog=[]; exFanfarePlayed=false; }
   if(exIdx>=exDeck.length){
     if(!exFanfarePlayed){ exFanfarePlayed=true; playFanfare(); }
     const wrap = el("div","done-wrap");
@@ -733,16 +736,18 @@ function renderExamples(){
     const btn = el("button","primary-btn","もう一度");
     btn.onclick = ()=>{ exDeck=[]; render(); };
     wrap.appendChild(btn); app.appendChild(wrap);
-    if(exMissed.length){
-      const rl = el("div","review-list");
-      rl.appendChild(el("div","section-label","日本語で復習"));
-      exMissed.forEach(m=>{
-        const item = el("div","review-item");
-        item.innerHTML = `<div class="review-q">${m.before}${answerFor(m)}${m.after}</div><div class="review-a">${m.ja}</div><div class="review-note">${noteFor(m)}</div>`;
-        rl.appendChild(item);
-      });
-      app.appendChild(rl);
-    }
+    const rl = el("div","review-list");
+    rl.appendChild(el("div","section-label","まとめ（全問）"));
+    exLog.forEach(log=>{
+      const item = el("div","review-item");
+      const mark = log.correct ? "○ 正解" : "✕ 不正解";
+      const markColor = log.correct ? "var(--accent2)" : "var(--brick)";
+      item.innerHTML = `<div class="review-q" style="color:${markColor};">${mark}　${log.ex.before}${answerFor(log.ex)}${log.ex.after}</div>
+        <div class="review-a">${log.ex.ja}</div>
+        ${!log.correct ? `<div class="review-note">あなたの回答: ${log.userAnswer || "（未回答）"}</div><div class="review-note">${noteFor(log.ex)}</div>` : ""}`;
+      rl.appendChild(item);
+    });
+    app.appendChild(rl);
     return;
   }
   const ex = exDeck[exIdx];
@@ -770,6 +775,7 @@ function renderExamples(){
     document.getElementById("exblank").textContent = answer;
     if(ok){ exScore++; playCorrect(); fb.textContent="¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent=`正解: ${answer}`; fb.className="conj-feedback no"; exMissed.push(ex); }
+    exLog.push({ ex, correct:ok, userAnswer:val });
     jaLine.textContent = ex.ja;
     input.disabled=true; submit.disabled=true;
     const nextBtn = el("button","primary-btn", exIdx+1>=exDeck.length ? "結果を見る" : "次の問題へ →");
@@ -782,7 +788,7 @@ function renderExamples(){
 }
 
 /* ---------- Numbers drill ---------- */
-let numQuestion=null, numIdx=0, numTotal=10, numScore=0, numMissed=[], numFanfarePlayed=false;
+let numQuestion=null, numIdx=0, numTotal=10, numScore=0, numMissed=[], numLog=[], numFanfarePlayed=false;
 function buildNumQuestion(){
   const ranges = [[0,20],[21,99],[100,999]];
   const [lo,hi] = ranges[Math.floor(Math.random()*ranges.length)];
@@ -791,7 +797,7 @@ function buildNumQuestion(){
 }
 function renderNumbersDrill(){
   app.appendChild(backToMenuBtn());
-  if(!numQuestion){ numQuestion = buildNumQuestion(); numIdx=0; numScore=0; numMissed=[]; numFanfarePlayed=false; }
+  if(!numQuestion){ numQuestion = buildNumQuestion(); numIdx=0; numScore=0; numMissed=[]; numLog=[]; numFanfarePlayed=false; }
   if(numIdx>=numTotal){
     if(!numFanfarePlayed){ numFanfarePlayed=true; playFanfare(); }
     const wrap = el("div","done-wrap");
@@ -799,16 +805,18 @@ function renderNumbersDrill(){
     const btn = el("button","primary-btn","もう一度");
     btn.onclick = ()=>{ numQuestion=null; render(); };
     wrap.appendChild(btn); app.appendChild(wrap);
-    if(numMissed.length){
-      const rl = el("div","review-list");
-      rl.appendChild(el("div","section-label","日本語で復習"));
-      numMissed.forEach(m=>{
-        const item = el("div","review-item");
-        item.innerHTML = `<div class="review-q">${m.n}</div><div class="review-a">正解: ${m.answer}</div>`;
-        rl.appendChild(item);
-      });
-      app.appendChild(rl);
-    }
+    const rl = el("div","review-list");
+    rl.appendChild(el("div","section-label","まとめ（全問）"));
+    numLog.forEach(log=>{
+      const item = el("div","review-item");
+      const mark = log.correct ? "○ 正解" : "✕ 不正解";
+      const markColor = log.correct ? "var(--accent2)" : "var(--brick)";
+      item.innerHTML = `<div class="review-q" style="color:${markColor};">${mark}　${log.q.n}</div>
+        <div class="review-a">正解: ${log.q.answer}</div>
+        ${!log.correct ? `<div class="review-note">あなたの回答: ${log.userAnswer || "（未回答）"}</div>` : ""}`;
+      rl.appendChild(item);
+    });
+    app.appendChild(rl);
     return;
   }
   const pr = el("div"); pr.style.textAlign="center"; pr.style.marginBottom="14px";
@@ -831,6 +839,7 @@ function renderNumbersDrill(){
     const ok = norm(val) === norm(numQuestion.answer);
     if(ok){ numScore++; playCorrect(); fb.textContent="¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent=`正解: ${numQuestion.answer}`; fb.className="conj-feedback no"; numMissed.push(numQuestion); }
+    numLog.push({ q:numQuestion, correct:ok, userAnswer:val });
     input.disabled=true; submit.disabled=true;
     const nextBtn = el("button","primary-btn", numIdx+1>=numTotal ? "結果を見る" : "次の問題へ →");
     nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
