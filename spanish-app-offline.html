@@ -132,6 +132,13 @@
   .explain-ja { font-size:13.5px; color:#EFE7FA; line-height:1.7; margin-bottom:8px; }
   .glossary-item { font-size:12.5px; color:#C9BBE8; margin-top:3px; }
   .glossary-item b { color: var(--accent3); }
+  .grammar-table { width:100%; border-collapse:collapse; margin-top:14px; font-size:13px; }
+  .grammar-table th, .grammar-table td { padding:9px 8px; text-align:left; border-bottom:1px solid rgba(255,255,255,0.14); }
+  .grammar-table th { color: var(--accent3); font-weight:700; font-size:11.5px; letter-spacing:0.03em; }
+  .grammar-table td { color:#EFE7FA; }
+  .grammar-list-item { background: rgba(255,255,255,0.06); border-radius:16px; padding:16px 18px; margin-bottom:12px; border:1px solid rgba(255,255,255,0.13); cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
+  .grammar-list-title { font-family: Georgia, serif; font-size:15px; font-weight:700; color:var(--card); }
+  .grammar-chevron { color:#C9BBE8; font-size:16px; }
 </style>
 </head>
 <body>
@@ -180,7 +187,7 @@ function playFanfare(){
   const notes = [523,659,784,1047];
   notes.forEach((f,i)=> setTimeout(()=>tone(f,0.22,"triangle"), i*110));
 }
-function playTap(){ tone(700,0.05,"square"); }
+function playTap(){ tone(880,0.045,"sine"); }
 function playFlip(){ tone(500,0.06,"sine"); setTimeout(()=>tone(760,0.08,"sine"),50); }
 function playSelect(){ tone(600,0.07,"triangle"); }
 
@@ -307,7 +314,8 @@ function el(tag,className,html){ const e=document.createElement(tag); if(classNa
 function render(){
   app.innerHTML = "";
   const hideNav = (state.tab==="vocab" && (state.mode==="flash" || state.mode==="quiz" || state.mode==="review"))
-    || (state.tab==="conj" && !!state.conjSubTab);
+    || (state.tab==="conj" && !!state.conjSubTab)
+    || (state.tab==="grammar" && grammarDetailIdx!==null);
   if(!hideNav) app.appendChild(navBar());
   if(state.tab==="vocab"){
     if(state.mode==="home") renderVocabHome();
@@ -324,7 +332,7 @@ function render(){
     renderNews();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; exDeck=[]; exMissed=[]; numQuestion=null; state.conjSubTab=null; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; exDeck=[]; exMissed=[]; numQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; }
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","ドリル"],["grammar","文法"],["column","コラム"],["news","ニュース"]].forEach(([key,label])=>{
@@ -744,27 +752,43 @@ function renderNumbersDrill(){
 }
 
 /* ---------- Grammar reference feed ---------- */
-let grammarExpanded = {};
+let grammarDetailIdx = null;
 function renderGrammar(){
-  const header = el("div");
-  header.appendChild(el("div","eyebrow","GRAMÁTICA"));
-  header.appendChild(el("h1","title","文法リファレンス"));
-  app.appendChild(header);
-  const spacer = el("div"); spacer.style.height="16px"; app.appendChild(spacer);
-  GRAMMAR_ARTICLES.forEach((a,i)=>{
-    const art = el("div","article");
-    art.style.cursor="pointer";
-    const expanded = !!grammarExpanded[i];
-    const titleRow = el("div"); titleRow.style.display="flex"; titleRow.style.justifyContent="space-between"; titleRow.style.alignItems="center";
-    titleRow.innerHTML = `<div class="article-title" style="margin-bottom:0;">${a.title}</div><div style="color:#C9BBE8;font-size:14px;">${expanded ? "▲" : "▼"}</div>`;
-    art.appendChild(titleRow);
-    if(expanded){
-      const body = el("div","article-body"); body.style.marginTop="10px"; body.textContent = a.body;
-      art.appendChild(body);
-    }
-    art.onclick = ()=>{ playTap(); grammarExpanded[i] = !grammarExpanded[i]; render(); };
-    app.appendChild(art);
-  });
+  if(grammarDetailIdx===null){
+    const header = el("div");
+    header.appendChild(el("div","eyebrow","GRAMÁTICA"));
+    header.appendChild(el("h1","title","文法リファレンス"));
+    app.appendChild(header);
+    const spacer = el("div"); spacer.style.height="16px"; app.appendChild(spacer);
+    GRAMMAR_ARTICLES.forEach((a,i)=>{
+      const item = el("div","grammar-list-item");
+      item.innerHTML = `<div class="grammar-list-title">${a.title}</div><div class="grammar-chevron">›</div>`;
+      item.onclick = ()=>{ playTap(); grammarDetailIdx=i; render(); };
+      app.appendChild(item);
+    });
+    return;
+  }
+  const a = GRAMMAR_ARTICLES[grammarDetailIdx];
+  app.appendChild(topBar("文法", "", ()=>{ grammarDetailIdx=null; render(); }));
+  app.appendChild(el("h1","title",a.title));
+  const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
+  const bodyBox = el("div","article");
+  bodyBox.appendChild(el("div","article-body",a.body));
+  if(a.table){
+    const table = document.createElement("table"); table.className="grammar-table";
+    const thead = document.createElement("thead"); const trh = document.createElement("tr");
+    a.table.cols.forEach(c=>{ const th=document.createElement("th"); th.textContent=c; trh.appendChild(th); });
+    thead.appendChild(trh); table.appendChild(thead);
+    const tbody = document.createElement("tbody");
+    a.table.rows.forEach(r=>{
+      const tr = document.createElement("tr");
+      r.forEach(c=>{ const td=document.createElement("td"); td.textContent=c; tr.appendChild(td); });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+    bodyBox.appendChild(table);
+  }
+  app.appendChild(bodyBox);
 }
 
 /* ---------- Column (Japanese trivia) ---------- */
