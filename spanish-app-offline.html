@@ -521,7 +521,10 @@ const DRILL_MENU = [
   { key:"numbers", icon:"🔢", name:"数字ドリル", desc:"数字をスペイン語でつづる" },
   { key:"examples-conjugacion", icon:"✍️", name:"例文で穴埋め", desc:"文脈の中で活用を練習" },
   { key:"examples-preposicion", icon:"🧭", name:"前置詞ドリル", desc:"por / para、en / a の使い分け" },
+  { key:"examples-ser_estar", icon:"🔍", name:"ser/estarドリル", desc:"本質か一時的な状態かを見分ける" },
   { key:"examples-pronombre", icon:"🔗", name:"目的代名詞ドリル", desc:"lo/la/le/les の練習" },
+  { key:"examples-pronombre_doble", icon:"🔀", name:"二重目的語ドリル", desc:"se lo / se la の語順練習" },
+  { key:"examples-gustar", icon:"💛", name:"gustar型ドリル", desc:"me gusta型の語順を練習" },
   { key:"examples-reflexivo", icon:"🪞", name:"再帰動詞ドリル", desc:"me/te/se + 動詞の練習" },
   { key:"examples-comparativo", icon:"⚖️", name:"比較級ドリル", desc:"más/menos/tan...que の練習" },
 ];
@@ -628,8 +631,11 @@ function topicOf(ex){
   if(ex.verb) return "conjugacion";
   if(ex.label==="por / para" || ex.label==="en / a") return "preposicion";
   if(ex.label==="目的代名詞") return "pronombre";
+  if(ex.label==="目的代名詞（二重）") return "pronombre_doble";
   if(ex.label && ex.label.includes("再帰動詞")) return "reflexivo";
   if(ex.label==="比較級" || ex.label==="同等比較" || ex.label==="最上級") return "comparativo";
+  if(ex.label==="ser / estar") return "ser_estar";
+  if(ex.label==="gustar型動詞") return "gustar";
   return "otro";
 }
 function backToMenuBtn(){

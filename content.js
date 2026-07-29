@@ -128,6 +128,22 @@ const EXAMPLES = [
   { before:"Ella es ", answer:"tan", after:" alta como su hermana.", ja:"彼女は姉と同じくらい背が高い。", label:"同等比較", note:"同等比較は tan+形容詞+como で「〜と同じくらい」を表す。" },
   { before:"Tengo menos tiempo ", answer:"que", after:" tú.", ja:"私は君より時間が少ない。", label:"比較級", note:"menos+名詞+que で「〜より少ない」を表す。" },
   { before:"Mi hermano es el ", answer:"más", after:" alto de la familia.", ja:"私の兄は家族の中で一番背が高い。", label:"最上級", note:"最上級は el/la+más+形容詞で「一番〜」を表す。" },
+  { before:"María ", answer:"es", after:" muy inteligente.", ja:"マリアはとても賢い。", label:"ser / estar", note:"性格・本質的な性質を表すときは ser を使う。" },
+  { before:"Hoy yo ", answer:"estoy", after:" un poco cansado.", ja:"今日、私は少し疲れている。", label:"ser / estar", note:"一時的な状態を表すときは estar を使う。" },
+  { before:"Madrid ", answer:"está", after:" en España.", ja:"マドリードはスペインにある。", label:"ser / estar", note:"場所・所在を表すときは estar を使う。" },
+  { before:"¿Qué hora ", answer:"es", after:"?", ja:"何時ですか。", label:"ser / estar", note:"時刻を表すときは ser を使う。" },
+  { before:"La sopa ", answer:"está", after:" fría.", ja:"スープが冷めている。", label:"ser / estar", note:"一時的な状態（温度など）は estar を使う。" },
+  { before:"Él ", answer:"es", after:" médico.", ja:"彼は医者だ。", label:"ser / estar", note:"職業を表すときは ser を使う。" },
+  { before:"A mí ", answer:"me gusta", after:" el chocolate.", ja:"私はチョコレートが好きだ。", label:"gustar型動詞", note:"gustarは「主語＝好きな対象」。人は間接目的語代名詞（me/te/le/nos/les）で表す。" },
+  { before:"A ella ", answer:"le duele", after:" la cabeza.", ja:"彼女は頭が痛い。", label:"gustar型動詞", note:"doler（痛い）もgustarと同じ語順パターンを取る。" },
+  { before:"A nosotros ", answer:"nos interesa", after:" la historia.", ja:"私たちは歴史に興味がある。", label:"gustar型動詞", note:"interesar（興味がある）もgustar型。主語は「歴史」なので単数形。" },
+  { before:"A ellos ", answer:"les gustan", after:" los tacos.", ja:"彼らはタコスが好きだ。", label:"gustar型動詞", note:"主語（los tacos）が複数なので、動詞も複数形gustanになる。" },
+  { before:"A ti ", answer:"te molesta", after:" el ruido.", ja:"あなたは騒音が迷惑だ。", label:"gustar型動詞", note:"molestar（迷惑だ）もgustar型の語順を取る。" },
+  { before:"¿Le diste el regalo a Juan? Sí, ", answer:"se lo", after:" di.", ja:"フアンにプレゼントをあげた？うん、それを彼にあげたよ。", label:"目的代名詞（二重）", note:"間接目的語leと直接目的語loが並ぶとき、leはseに変わる。" },
+  { before:"¿Me prestas tu coche? Sí, ", answer:"te lo", after:" presto.", ja:"車を貸してくれる？うん、それを君に貸すよ。", label:"目的代名詞（二重）", note:"間接目的語（te）＋直接目的語（lo）は「te lo」の順で並べる。" },
+  { before:"¿Les enviaste la carta a ellos? Sí, ", answer:"se la", after:" envié.", ja:"彼らに手紙を送った？うん、それを彼らに送ったよ。", label:"目的代名詞（二重）", note:"間接目的語lesと直接目的語laが並ぶとき、lesはseに変わる。" },
+  { before:"¿Nos vas a dar la noticia? Sí, ", answer:"se la", after:" voy a dar.", ja:"私たちにその知らせを教えてくれる？うん、それを教えるよ。", label:"目的代名詞（二重）", note:"間接目的語lesが対象のとき、laと組み合わさるとseになる。" },
+  { before:"¿Me compras el libro? Sí, ", answer:"te lo", after:" compro.", ja:"その本を買ってくれる？うん、それを君に買うよ。", label:"目的代名詞（二重）", note:"間接目的語（te）＋直接目的語（lo）は必ずこの順番。" },
 ];
 
 
