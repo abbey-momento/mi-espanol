@@ -144,7 +144,9 @@
 <body>
 <div id="app"></div>
 <script src="vocab.js"></script>
-<script src="content.js"></script>
+<script src="drills.js"></script>
+<script src="column.js"></script>
+<script src="news.js"></script>
 <script src="grammar.js"></script>
 <script>
 /* ---------- Vocabulary ---------- */
@@ -647,8 +649,13 @@ function backToMenuBtn(){
 function renderExamples(){
   const topic = state.exTopic || "conjugacion";
   const pool = EXAMPLES.filter(ex=>topicOf(ex)===topic);
-  if(exDeck.length===0 || exDeck.every(ex=>topicOf(ex)!==topic)){ exDeck = shuffle(pool); exIdx=0; exScore=0; exMissed=[]; exFanfarePlayed=false; }
   app.appendChild(backToMenuBtn());
+  if(pool.length===0){
+    const w=el("div","done-wrap","<div class='done-title'>この項目のデータが読み込めていません</div><div class='done-sub'>drills.js が正しくアップロードされているか確認してください</div>");
+    app.appendChild(w);
+    return;
+  }
+  if(exDeck.length===0 || exDeck.every(ex=>topicOf(ex)!==topic)){ exDeck = shuffle(pool); exIdx=0; exScore=0; exMissed=[]; exFanfarePlayed=false; }
   if(exIdx>=exDeck.length){
     if(!exFanfarePlayed){ exFanfarePlayed=true; playFanfare(); }
     const wrap = el("div","done-wrap");
