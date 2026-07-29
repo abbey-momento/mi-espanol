@@ -161,9 +161,20 @@
 <script src="grammar.js"></script>
 <script>
 /* ---------- Vocabulary ---------- */
-const VOCAB = VOCAB_DATA.map((w,i)=>({...w, id:i, nivel: w.nivel || "básico"}));
+const CEFR_MAP = {
+  A1: ["Saludos","Números","Días","Colores","Estaciones","Meses","Familia"],
+  A2: ["Frases","Comida","Cuerpo","Ropa","Casa","Clima","Animales","Transporte","Lugares","Cocina","Compras"],
+  B1: ["Viajes","Verbos","Trabajo","Emociones","Educación","Deportes","Tecnología","Finanzas","Sociedad","Ciencia",
+       "Frecuencia","Adjetivos","Festividades","Geografía","Música","Profesiones","Naturaleza","Herramientas","Salud"],
+  B2: ["Modismos","Arte","Formas","General"],
+};
+function catToCefr(cat){
+  for(const level of ["A1","A2","B1","B2"]){ if(CEFR_MAP[level].includes(cat)) return level; }
+  return "B1";
+}
+function assignCefr(w){ return w.nivel==="avanzado" ? "B2" : catToCefr(w.cat); }
+const VOCAB = VOCAB_DATA.map((w,i)=>({...w, id:i, nivel: w.nivel || "básico", cefr: assignCefr(w)}));
 
-const CATEGORIES = [...new Set(VOCAB.map(w=>w.cat))];
 const KNOWN_THRESHOLD = 2;
 const STORAGE_KEY = "spanish-app-progress-v2";
 
@@ -260,9 +271,7 @@ function markResult(id, correct){
   saveProgress(progress);
 }
 function vocabPool(){
-  let pool = state.activeCat==="Todos" ? VOCAB : VOCAB.filter(w=>w.cat===state.activeCat);
-  if(state.activeLevel!=="Todos") pool = pool.filter(w=>w.nivel===state.activeLevel);
-  return pool;
+  return state.activeLevel==="Todos" ? VOCAB : VOCAB.filter(w=>w.cefr===state.activeLevel);
 }
 function computeStats(){
   let known=0, learning=0;
@@ -323,7 +332,7 @@ function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}�
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeCat:"Todos", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -385,17 +394,9 @@ function renderVocabHome(){
       <div class="legend-item"><span class="legend-dot" style="background:var(--muted)"></span><span class="legend-label">Por ver ${stats.unseen}</span></div>
     </div>`;
   app.appendChild(passport);
-  app.appendChild(el("div","section-label","Categoría（集中練習もここから）"));
-  const chipRow = el("div","chip-row");
-  ["Todos", ...CATEGORIES].forEach(c=>{
-    const chip = el("button","chip"+(state.activeCat===c?" active":""), c);
-    chip.onclick = ()=>{ playTap(); state.activeCat=c; render(); };
-    chipRow.appendChild(chip);
-  });
-  app.appendChild(chipRow);
-  app.appendChild(el("div","section-label","レベル"));
+  app.appendChild(el("div","section-label","レベル（CEFR基準の目安）"));
   const levelRow = el("div","chip-row");
-  [["Todos","全レベル"],["básico","初級"],["avanzado","上級・イディオム"]].forEach(([lv,label])=>{
+  [["Todos","全レベル"],["A1","A1"],["A2","A2"],["B1","B1"],["B2","B2"]].forEach(([lv,label])=>{
     const lchip = el("button","chip"+(state.activeLevel===lv?" active":""), label);
     lchip.onclick = ()=>{ playTap(); state.activeLevel=lv; render(); };
     levelRow.appendChild(lchip);
@@ -488,7 +489,7 @@ function renderFlash(){
     const b=el("button","primary-btn","戻る"); b.onclick=()=>{state.mode="home";flashDeck=[];render();}; w.appendChild(b); app.appendChild(w); return;
   }
   if(flashIdx>=flashDeck.length){ if(!flashFanfarePlayed){ flashFanfarePlayed=true; playFanfare(); } doneScreen(isReview ? "repaso" : "tarjetas"); flashDeck=[]; return; }
-  app.appendChild(topBar(isReview ? "苦手だけ復習" : flashDeck[flashIdx].cat, `${flashIdx+1} / ${flashDeck.length}`, ()=>{ state.mode="home"; flashDeck=[]; render(); }));
+  app.appendChild(topBar(isReview ? "苦手だけ復習" : flashDeck[flashIdx].cefr, `${flashIdx+1} / ${flashDeck.length}`, ()=>{ state.mode="home"; flashDeck=[]; render(); }));
   const card = flashDeck[flashIdx];
   if(lastSpokenFlashId !== card.id){ lastSpokenFlashId = card.id; setTimeout(()=>speak(card.es), 150); }
   const cardArea = el("div","card-area");
@@ -522,7 +523,7 @@ function buildQuestion(pool){
 }
 function renderQuiz(){
   const pool = vocabPool();
-  const filterKey = state.activeCat + "|" + state.activeLevel;
+  const filterKey = state.activeLevel;
   if(pool.length<4){ const w=el("div","done-wrap","<div class='done-title'>このカテゴリは単語が足りません</div>"); const b=el("button","primary-btn","戻る"); b.onclick=()=>{state.mode="home";render();}; w.appendChild(b); app.appendChild(w); return; }
   if(!quizQuestion || quizFilterKey!==filterKey){ quizFilterKey=filterKey; quizTotal=Math.min(10,pool.length); quizIdx=0; quizQuestion=buildQuestion(pool); quizPicked=null; quizScore=0; quizMissed=[]; quizLog=[]; lastSpokenQuizId=null; quizFanfarePlayed=false; }
   if(quizIdx>=quizTotal){
@@ -543,7 +544,7 @@ function renderQuiz(){
     quizQuestion=null; return;
   }
   if(lastSpokenQuizId !== quizQuestion.word.id){ lastSpokenQuizId = quizQuestion.word.id; setTimeout(()=>speak(quizQuestion.word.es), 150); }
-  app.appendChild(topBar(quizQuestion.word.cat, `${quizIdx+1} / ${quizTotal}`, ()=>{ state.mode="home"; quizQuestion=null; render(); }));
+  app.appendChild(topBar(quizQuestion.word.cefr, `${quizIdx+1} / ${quizTotal}`, ()=>{ state.mode="home"; quizQuestion=null; render(); }));
   const prompt = el("div","quiz-prompt");
   prompt.innerHTML = `<div class="quiz-label">¿Cómo se dice…?</div><div class="quiz-word">${quizQuestion.word.es}</div>`;
   app.appendChild(prompt);
