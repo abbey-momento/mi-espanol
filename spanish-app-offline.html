@@ -137,6 +137,7 @@
 <body>
 <div id="app"></div>
 <script src="vocab.js"></script>
+<script src="content.js"></script>
 <script>
 /* ---------- Vocabulary ---------- */
 const VOCAB = VOCAB_DATA.map((w,i)=>({...w, id:i, nivel: w.nivel || "básico"}));
@@ -152,15 +153,25 @@ function norm(s){ return stripAccents((s||"").trim().toLowerCase()).replace(/[¿
 
 /* ---------- Audio ---------- */
 let audioCtx = null;
+function ensureAudioCtx(){
+  if(!audioCtx){
+    try{ audioCtx = new (window.AudioContext||window.webkitAudioContext)(); }catch(e){ return null; }
+  }
+  if(audioCtx.state === "suspended"){
+    audioCtx.resume().catch(()=>{});
+  }
+  return audioCtx;
+}
 function tone(freq, dur, type){
   try{
-    audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)();
-    const o = audioCtx.createOscillator(); const g = audioCtx.createGain();
+    const ctx = ensureAudioCtx();
+    if(!ctx) return;
+    const o = ctx.createOscillator(); const g = ctx.createGain();
     o.type = type||"sine"; o.frequency.value = freq;
-    o.connect(g); g.connect(audioCtx.destination);
-    g.gain.setValueAtTime(0.15, audioCtx.currentTime);
-    g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
-    o.start(); o.stop(audioCtx.currentTime + dur);
+    o.connect(g); g.connect(ctx.destination);
+    g.gain.setValueAtTime(0.15, ctx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dur);
+    o.start(); o.stop(ctx.currentTime + dur);
   }catch(e){}
 }
 function playCorrect(){ tone(880,0.12,"sine"); setTimeout(()=>tone(1180,0.15,"sine"),90); }
@@ -257,98 +268,6 @@ const TENSE_NOTES = {
   perfecto:"「〜したことがある」「（今までに）〜した」という経験や完了を表す複合時制。haber+過去分詞で作る。",
   imperativo:"命令・依頼を表す命令形。",
 };
-const VERBS = [
-  { v:"hablar", ja:"話す",
-    presente:["hablo","hablas","habla","hablamos","hablan"],
-    indefinido:["hablé","hablaste","habló","hablamos","hablaron"],
-    imperfecto:["hablaba","hablabas","hablaba","hablábamos","hablaban"],
-    futuro:["hablaré","hablarás","hablará","hablaremos","hablarán"],
-    condicional:["hablaría","hablarías","hablaría","hablaríamos","hablarían"],
-    subjuntivo:["hable","hables","hable","hablemos","hablen"],
-    perfecto:["he hablado","has hablado","ha hablado","hemos hablado","han hablado"],
-    imperativo:["habla","hable","hablemos","hablen"] },
-  { v:"comer", ja:"食べる",
-    presente:["como","comes","come","comemos","comen"],
-    indefinido:["comí","comiste","comió","comimos","comieron"],
-    imperfecto:["comía","comías","comía","comíamos","comían"],
-    futuro:["comeré","comerás","comerá","comeremos","comerán"],
-    condicional:["comería","comerías","comería","comeríamos","comerían"],
-    subjuntivo:["coma","comas","coma","comamos","coman"],
-    perfecto:["he comido","has comido","ha comido","hemos comido","han comido"],
-    imperativo:["come","coma","comamos","coman"] },
-  { v:"vivir", ja:"住む/生きる",
-    presente:["vivo","vives","vive","vivimos","viven"],
-    indefinido:["viví","viviste","vivió","vivimos","vivieron"],
-    imperfecto:["vivía","vivías","vivía","vivíamos","vivían"],
-    futuro:["viviré","vivirás","vivirá","viviremos","vivirán"],
-    condicional:["viviría","vivirías","viviría","viviríamos","vivirían"],
-    subjuntivo:["viva","vivas","viva","vivamos","vivan"],
-    perfecto:["he vivido","has vivido","ha vivido","hemos vivido","han vivido"],
-    imperativo:["vive","viva","vivamos","vivan"] },
-  { v:"ser", ja:"〜である",
-    presente:["soy","eres","es","somos","son"],
-    indefinido:["fui","fuiste","fue","fuimos","fueron"],
-    imperfecto:["era","eras","era","éramos","eran"],
-    futuro:["seré","serás","será","seremos","serán"],
-    condicional:["sería","serías","sería","seríamos","serían"],
-    subjuntivo:["sea","seas","sea","seamos","sean"],
-    perfecto:["he sido","has sido","ha sido","hemos sido","han sido"],
-    imperativo:["sé","sea","seamos","sean"] },
-  { v:"estar", ja:"〜にいる",
-    presente:["estoy","estás","está","estamos","están"],
-    indefinido:["estuve","estuviste","estuvo","estuvimos","estuvieron"],
-    imperfecto:["estaba","estabas","estaba","estábamos","estaban"],
-    futuro:["estaré","estarás","estará","estaremos","estarán"],
-    condicional:["estaría","estarías","estaría","estaríamos","estarían"],
-    subjuntivo:["esté","estés","esté","estemos","estén"],
-    perfecto:["he estado","has estado","ha estado","hemos estado","han estado"],
-    imperativo:["está","esté","estemos","estén"] },
-  { v:"tener", ja:"持つ",
-    presente:["tengo","tienes","tiene","tenemos","tienen"],
-    indefinido:["tuve","tuviste","tuvo","tuvimos","tuvieron"],
-    imperfecto:["tenía","tenías","tenía","teníamos","tenían"],
-    futuro:["tendré","tendrás","tendrá","tendremos","tendrán"],
-    condicional:["tendría","tendrías","tendría","tendríamos","tendrían"],
-    subjuntivo:["tenga","tengas","tenga","tengamos","tengan"],
-    perfecto:["he tenido","has tenido","ha tenido","hemos tenido","han tenido"],
-    imperativo:["ten","tenga","tengamos","tengan"] },
-  { v:"ir", ja:"行く",
-    presente:["voy","vas","va","vamos","van"],
-    indefinido:["fui","fuiste","fue","fuimos","fueron"],
-    imperfecto:["iba","ibas","iba","íbamos","iban"],
-    futuro:["iré","irás","irá","iremos","irán"],
-    condicional:["iría","irías","iría","iríamos","irían"],
-    subjuntivo:["vaya","vayas","vaya","vayamos","vayan"],
-    perfecto:["he ido","has ido","ha ido","hemos ido","han ido"],
-    imperativo:["ve","vaya","vamos","vayan"] },
-  { v:"hacer", ja:"する/作る",
-    presente:["hago","haces","hace","hacemos","hacen"],
-    indefinido:["hice","hiciste","hizo","hicimos","hicieron"],
-    imperfecto:["hacía","hacías","hacía","hacíamos","hacían"],
-    futuro:["haré","harás","hará","haremos","harán"],
-    condicional:["haría","harías","haría","haríamos","harían"],
-    subjuntivo:["haga","hagas","haga","hagamos","hagan"],
-    perfecto:["he hecho","has hecho","ha hecho","hemos hecho","han hecho"],
-    imperativo:["haz","haga","hagamos","hagan"] },
-  { v:"poder", ja:"〜できる",
-    presente:["puedo","puedes","puede","podemos","pueden"],
-    indefinido:["pude","pudiste","pudo","pudimos","pudieron"],
-    imperfecto:["podía","podías","podía","podíamos","podían"],
-    futuro:["podré","podrás","podrá","podremos","podrán"],
-    condicional:["podría","podrías","podría","podríamos","podrían"],
-    subjuntivo:["pueda","puedas","pueda","podamos","puedan"],
-    perfecto:["he podido","has podido","ha podido","hemos podido","han podido"],
-    imperativo:["puede","pueda","podamos","puedan"] },
-  { v:"querer", ja:"欲しい/したい",
-    presente:["quiero","quieres","quiere","queremos","quieren"],
-    indefinido:["quise","quisiste","quiso","quisimos","quisieron"],
-    imperfecto:["quería","querías","quería","queríamos","querían"],
-    futuro:["querré","querrás","querrá","querremos","querrán"],
-    condicional:["querría","querrías","querría","querríamos","querrían"],
-    subjuntivo:["quiera","quieras","quiera","queramos","quieran"],
-    perfecto:["he querido","has querido","ha querido","hemos querido","han querido"],
-    imperativo:["quiere","quiera","queramos","quieran"] },
-];
 function findVerb(name){ return VERBS.find(v=>v.v===name); }
 
 /* ---------- Number words (0-999) ---------- */
@@ -375,44 +294,6 @@ function numberToSpanish(n){
 }
 
 /* ---------- Example sentences (fill in the blank) ---------- */
-const EXAMPLES = [
-  { before:"Ayer yo ", verb:"hablar", tense:"indefinido", p:0, after:" con mi madre.", ja:"昨日、私は母と話した。" },
-  { before:"Cuando era niño, yo ", verb:"ir", tense:"imperfecto", p:0, after:" a la escuela caminando.", ja:"子供の頃、私は歩いて学校に通っていた。" },
-  { before:"Mañana nosotros ", verb:"comer", tense:"futuro", p:3, after:" en un restaurante nuevo.", ja:"明日、私たちは新しいレストランで食べるだろう。" },
-  { before:"En tu lugar, yo ", verb:"hacer", tense:"condicional", p:0, after:" lo mismo.", ja:"あなたの立場なら、私も同じことをするだろう。" },
-  { before:"¿", verb:"poder", tense:"condicional", p:1, after:" usted ayudarme?", ja:"手伝っていただけますか？（丁寧な依頼）" },
-  { before:"Espero que tú ", verb:"tener", tense:"subjuntivo", p:1, after:" un buen viaje.", ja:"良い旅行になりますように。" },
-  { before:"Quiero que ellos ", verb:"ser", tense:"subjuntivo", p:4, after:" felices.", ja:"彼らが幸せであってほしい。" },
-  { before:"Yo nunca ", verb:"ir", tense:"perfecto", p:0, after:" a México.", ja:"私はメキシコに行ったことがない。" },
-  { before:"¿Alguna vez tú ", verb:"comer", tense:"perfecto", p:1, after:" tacos de verdad?", ja:"本場のタコスを食べたことはありますか？" },
-  { before:"¡", verb:"hablar", tense:"imperativo", p:0, after:" más despacio, por favor!", ja:"もっとゆっくり話してください！" },
-  { before:"El año pasado, nosotros ", verb:"vivir", tense:"indefinido", p:3, after:" en España.", ja:"去年、私たちはスペインに住んだ。" },
-  { before:"Normalmente, yo ", verb:"tener", tense:"presente", p:0, after:" mucho trabajo los lunes.", ja:"普段、月曜日は仕事がたくさんある。" },
-  { before:"El próximo año, ellos ", verb:"estar", tense:"futuro", p:4, after:" en Japón.", ja:"来年、彼らは日本にいるだろう。" },
-  { before:"Cuando éramos jóvenes, ", verb:"querer", tense:"imperfecto", p:3, after:" viajar mucho.", ja:"若い頃、私たちはたくさん旅行したいと思っていた。" },
-  { before:"Este regalo es ", answer:"para", after:" ti.", ja:"このプレゼントは君のためのものだ。", label:"por / para", note:"para+人は「〜のために」という受益者・目的を表す。" },
-  { before:"Caminamos ", answer:"por", after:" el parque.", ja:"私たちは公園を通って歩いた。", label:"por / para", note:"por は「〜を通って」という経路を表す。" },
-  { before:"Trabajo ", answer:"para", after:" ganar dinero.", ja:"お金を稼ぐために働く。", label:"por / para", note:"para+動詞の原形は「〜するために」という目的を表す。" },
-  { before:"Gracias ", answer:"por", after:" tu ayuda.", ja:"助けてくれてありがとう。", label:"por / para", note:"por は理由・原因（〜のおかげで、〜に対して）を表す。" },
-  { before:"Necesito el informe ", answer:"para", after:" el lunes.", ja:"月曜日までにその報告書が必要だ。", label:"por / para", note:"para+期限は「〜までに」という締め切りを表す。" },
-  { before:"Pasamos ", answer:"por", after:" tu casa ayer.", ja:"昨日君の家の前を通った。", label:"por / para", note:"por は「〜のそばを」という通過点を表す。" },
-  { before:"Voy ", answer:"a", after:" la escuela todos los días.", ja:"毎日学校に行く。", label:"en / a", note:"行き先を表すときは a を使う（ir a + 場所）。" },
-  { before:"Vivo ", answer:"en", after:" México.", ja:"メキシコに住んでいる。", label:"en / a", note:"「〜の中に」という所在を表すときは en を使う。" },
-  { before:"¿Tienes el libro? Sí, ", answer:"lo", after:" tengo.", ja:"本を持ってる？うん、持ってるよ。", label:"目的代名詞", note:"男性単数の直接目的語（el libro）は lo に置き換える。" },
-  { before:"¿Compraste las manzanas? Sí, ", answer:"las", after:" compré.", ja:"りんごを買った？うん、買ったよ。", label:"目的代名詞", note:"女性複数の直接目的語（las manzanas）は las に置き換える。" },
-  { before:"", answer:"Le", after:" voy a dar un regalo a mi madre.", ja:"母にプレゼントをあげるつもりだ。", label:"目的代名詞", note:"間接目的語（〜に）は単数なら le、複数なら les で表す。" },
-  { before:"", answer:"Les", after:" escribí una carta a mis amigos.", ja:"友人たちに手紙を書いた。", label:"目的代名詞", note:"間接目的語が複数のときは les を使う。" },
-  { before:"¿Ves a Juan? Sí, ", answer:"lo", after:" veo.", ja:"フアンが見える？うん、見えるよ。", label:"目的代名詞", note:"男性の人を指す直接目的語も lo に置き換えられる。" },
-  { before:"Yo ", answer:"me levanto", after:" a las siete de la mañana.", ja:"私は朝7時に起きる。", label:"levantarse（再帰動詞・現在形）", note:"再帰動詞は主語に合わせた再帰代名詞（me/te/se/nos/se）を動詞の前につける。" },
-  { before:"Ella ", answer:"se llama", after:" María.", ja:"彼女はマリアという名前だ。", label:"llamarse（再帰動詞・現在形）", note:"llamarse は「〜という名前である」。三人称単数は se llama。" },
-  { before:"Nosotros ", answer:"nos despertamos", after:" temprano los lunes.", ja:"私たちは月曜日早く目を覚ます。", label:"despertarse（再帰動詞・現在形）", note:"nosotros では再帰代名詞 nos を使う。" },
-  { before:"¿A qué hora ", answer:"te acuestas", after:" tú?", ja:"何時に寝るの？", label:"acostarse（再帰動詞・現在形）", note:"tú では再帰代名詞 te を使う。" },
-  { before:"Ellos ", answer:"se duchan", after:" por la mañana.", ja:"彼らは朝シャワーを浴びる。", label:"ducharse（再帰動詞・現在形）", note:"三人称複数では再帰代名詞 se を使う。" },
-  { before:"Este coche es más caro ", answer:"que", after:" aquel.", ja:"この車はあの車より高い。", label:"比較級", note:"比較級は más+形容詞+que で「〜より…」を表す。" },
-  { before:"Ella es ", answer:"tan", after:" alta como su hermana.", ja:"彼女は姉と同じくらい背が高い。", label:"同等比較", note:"同等比較は tan+形容詞+como で「〜と同じくらい」を表す。" },
-  { before:"Tengo menos tiempo ", answer:"que", after:" tú.", ja:"私は君より時間が少ない。", label:"比較級", note:"menos+名詞+que で「〜より少ない」を表す。" },
-  { before:"Mi hermano es el ", answer:"más", after:" alto de la familia.", ja:"私の兄は家族の中で一番背が高い。", label:"最上級", note:"最上級は el/la+más+形容詞で「一番〜」を表す。" },
-];
 function personLabelFor(tense, p){ return tense==="imperativo" ? PERSONS_IMP[p] : PERSONS5[p]; }
 function answerFor(ex){ return ex.answer !== undefined ? ex.answer : findVerb(ex.verb)[ex.tense][ex.p]; }
 function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}・${personLabelFor(ex.tense,ex.p)}）` : ex.label; }
@@ -572,7 +453,7 @@ function renderFlash(){
 }
 
 /* ---------- Vocab Quiz ---------- */
-let quizPool=[], quizTotal=0, quizIdx=0, quizQuestion=null, quizPicked=null, quizScore=0, quizMissed=[], quizLog=[], lastSpokenQuizId=null, quizFanfarePlayed=false;
+let quizFilterKey=null, quizTotal=0, quizIdx=0, quizQuestion=null, quizPicked=null, quizScore=0, quizMissed=[], quizLog=[], lastSpokenQuizId=null, quizFanfarePlayed=false;
 function buildQuestion(pool){
   const word = pool[Math.floor(Math.random()*pool.length)];
   const distractors = shuffle(VOCAB.filter(w=>w.id!==word.id)).slice(0,3);
@@ -580,8 +461,9 @@ function buildQuestion(pool){
 }
 function renderQuiz(){
   const pool = vocabPool();
+  const filterKey = state.activeCat + "|" + state.activeLevel;
   if(pool.length<4){ const w=el("div","done-wrap","<div class='done-title'>このカテゴリは単語が足りません</div>"); const b=el("button","primary-btn","戻る"); b.onclick=()=>{state.mode="home";render();}; w.appendChild(b); app.appendChild(w); return; }
-  if(!quizQuestion || quizPool!==pool){ quizPool=pool; quizTotal=Math.min(10,pool.length); quizIdx=0; quizQuestion=buildQuestion(pool); quizPicked=null; quizScore=0; quizMissed=[]; quizLog=[]; lastSpokenQuizId=null; quizFanfarePlayed=false; }
+  if(!quizQuestion || quizFilterKey!==filterKey){ quizFilterKey=filterKey; quizTotal=Math.min(10,pool.length); quizIdx=0; quizQuestion=buildQuestion(pool); quizPicked=null; quizScore=0; quizMissed=[]; quizLog=[]; lastSpokenQuizId=null; quizFanfarePlayed=false; }
   if(quizIdx>=quizTotal){
     if(!quizFanfarePlayed){ quizFanfarePlayed=true; playFanfare(); }
     doneScreen("quiz", quizScore, quizTotal);
@@ -862,20 +744,6 @@ function renderNumbersDrill(){
 }
 
 /* ---------- Grammar reference feed ---------- */
-const GRAMMAR_ARTICLES = [
-  { title:"点過去の作り方（-ar動詞）", body:"habl-ar → hablé, hablaste, habló, hablamos, hablaron。語尾を -é, -aste, -ó, -amos, -aron に変える。1回きりの完了した行為を表す。" },
-  { title:"点過去の作り方（-er/-ir動詞）", body:"com-er → comí, comiste, comió, comimos, comieron。-er/-ir動詞は -í, -iste, -ió, -imos, -ieron という同じ語尾になる。" },
-  { title:"線過去の作り方", body:"-ar動詞は -aba, -abas, -aba, -ábamos, -aban。-er/-ir動詞は -ía, -ías, -ía, -íamos, -ían。過去の習慣や継続していた状態を表す、比較的規則的な変化。" },
-  { title:"未来形の作り方", body:"多くの動詞は原形（hablar, comer, vivirなど）に -é, -ás, -á, -emos, -án をそのまま付けるだけ。tener→tendré、hacer→haré のように語幹が変わる不規則動詞もある。" },
-  { title:"条件法（過去未来形）の作り方", body:"未来形と同じ語幹に、-ía, -ías, -ía, -íamos, -ían を付ける。未来形が不規則な動詞（tener→tendr-など）は条件法でも同じ語幹を使う。「もし〜なら…だろう」「〜していただけますか」に使う。" },
-  { title:"接続法現在の作り方の基本", body:"-ar動詞は現在形のyoの形から -o を取って -e系の語尾（-e, -es, -e, -emos, -en）、-er/-ir動詞は -a系の語尾（-a, -as, -a, -amos, -an）にする。Espero que...（〜だといいな）、Quiero que...（〜してほしい）などの後によく使われる。" },
-  { title:"現在完了形（〜したことがある）の作り方", body:"haber（he, has, ha, hemos, han）+過去分詞、で作る。過去分詞は -ar動詞なら -ado（hablado）、-er/-ir動詞なら -ido（comido, vivido）。hecho（hacer）のような不規則な過去分詞もある。" },
-  { title:"比較級の作り方", body:"「〜より…」は más+形容詞+que（más caro que＝〜より高い）、「〜より少ない」は menos+形容詞+que。「〜と同じくらい」は tan+形容詞+como。最上級は el/la+más+形容詞（el más alto＝一番背が高い）。" },
-  { title:"por と para の使い分け", body:"para は「目的・受益者・締め切り」（〜のために、〜までに）。por は「理由・経路・交換」（〜のおかげで、〜を通って）。迷ったら「行き先・目的」ならpara、「経路・原因」ならpor、と考えると整理しやすい。" },
-  { title:"直接目的語の代名詞（lo/la/los/las）", body:"すでに話題に出たモノや人を「それ」「それらを」と言い換えるときに使う。男性単数→lo、女性単数→la、男性複数→los、女性複数→las。動詞の前に置くのが基本形。" },
-  { title:"間接目的語の代名詞（le/les）", body:"「〜に」を表す代名詞。単数（彼に/彼女に/あなたに）は le、複数（彼らに/あなたたちに）は les。dar（あげる）やescribir（書く）のような、相手が必要な動詞でよく使われる。" },
-  { title:"再帰動詞の基本", body:"「自分自身に対して行う動作」を表す動詞で、再帰代名詞（me/te/se/nos/se）を主語に合わせて動詞の前に置く。levantarse（起きる）、llamarse（〜という名前だ）、ducharse（シャワーを浴びる）などが代表例。" },
-];
 let grammarExpanded = {};
 function renderGrammar(){
   const header = el("div");
@@ -900,20 +768,6 @@ function renderGrammar(){
 }
 
 /* ---------- Column (Japanese trivia) ---------- */
-const COLUMN_ARTICLES = [
-  { title:"「¿Cómo estás?」への返し方", body:"スペイン語圏では「Bien, ¿y tú?（元気だよ、君は?）」と聞き返すのがマナーのようなもの。相手の質問をそのまま返すだけで会話が自然に続くので、まずはこの型を覚えておくと安心です。" },
-  { title:"点過去と線過去、使い分けのコツ", body:"点過去は「その日1回だけ起きた完了した出来事」、線過去は「当時よく繰り返していた習慣」や「背景の状態」を表します。日本語で「〜した」と訳せて1回きりなら点過去、「〜していた」と訳せる継続的な状況なら線過去、と考えるとイメージしやすいです。" },
-  { title:"メキシコの朝ごはん文化", body:"メキシコの朝食は意外とボリュームがあり、チラキレス（揚げトルティーヤをサルサで煮た料理）や豆料理が定番。カフェ・デ・オヤという、シナモンと素焼き砂糖(ピロンシージョ)で煮出したコーヒーもよく飲まれます。" },
-  { title:"スペイン語の「巻き舌R」のコツ", body:"rr（二重のr）や語頭のrは、舌先を上の歯茎に軽く当てて息を弾かせるように発音します。日本語の「ら行」を素早く連続で言う練習（られられられ…）から始めると感覚をつかみやすいと言われています。" },
-  { title:"スペイン語は国によって結構違う", body:"メキシコでは「Órale」「¿Qué onda?」のようなくだけた表現がよく使われますが、スペインでは「Vale」「¿Qué tal?」が一般的。同じスペイン語でも国ごとに語彙やイントネーションがかなり異なります。" },
-  { title:"メキシコの「死者の日」", body:"11月初旬に祝われる死者の日（Día de los Muertos）は、亡くなった家族を偲ぶお祭り。骸骨をモチーフにしたカラフルな飾り付けや、故人の好物を供える祭壇（オフレンダ）が特徴的で、2008年にはユネスコの無形文化遺産にも登録されています。" },
-  { title:"ustedとvosotros、実は使い分けが国で違う", body:"スペインでは親しい相手にvosotros（君たち）、丁寧な相手にustedesを使い分けますが、ラテンアメリカの多くの国ではvosotrosをほぼ使わず、親しい相手にもustedesでまとめてしまうのが一般的です。" },
-  { title:"señor / señora / señoritaの距離感", body:"señor（男性）・señora（既婚女性やある程度年齢が上の女性）・señorita（未婚の若い女性、という含意）は便利な敬称ですが、señoritaは相手の年齢や結婚を勝手に決めつける響きもあるため、最近はseñoraで統一する人も増えています。" },
-  { title:"名詞の性、語尾で見分けるコツ", body:"スペイン語の名詞にはel（男性）とla（女性）の区別があります。完璧ではありませんが、-oで終わる語は男性、-aで終わる語は女性になることが多い、という大まかな傾向を覚えておくと最初の手がかりになります。" },
-  { title:"ナワトル語から来たスペイン語の単語", body:"chocolate（チョコレート）、tomate（トマト）、aguacate（アボカド）は、いずれもメキシコの先住民言語ナワトル語に由来する単語。スペイン語を通じて世界中の言語に広まりました。" },
-  { title:"「ñ」はどこから来た？", body:"「ñ」は中世、nnと2つ続けて書いていたものを省略するために、上に小さいnを重ねて書いたのが由来とされています。それが今のティルデ（波線）の形になりました。" },
-  { title:"接続法(subjuntivo)が難しく感じる理由", body:"接続法は「事実」ではなく「願望・感情・不確実さ」といった、話し手の心の中を表すための形。日本語には対応する文法がはっきりないため戸惑いやすいですが、「Espero que〜（〜だといいな）」のような決まり文句から慣れていくのがおすすめです。" },
-];
 function renderColumn(){
   const header = el("div");
   header.appendChild(el("div","eyebrow","COLUMNA"));
@@ -928,44 +782,6 @@ function renderColumn(){
 }
 
 /* ---------- News snapshot (Spanish + toggle explanation) ---------- */
-const NEWS_ITEMS = [
-  { es:"El 17 de julio de 2026, un fuerte terremoto de magnitud 7.3 sacudió la costa del Pacífico frente a Chiapas, en el sur de México. Se emitió una alerta de tsunami de manera temporal, pero hasta ahora no se han reportado daños graves ni víctimas.",
-    ja:"2026年7月17日、メキシコ南部チアパス州沖の太平洋岸でマグニチュード7.3の強い地震が発生しました。一時津波警報が出されましたが、今のところ大きな被害や犠牲者の報告はありません。",
-    notes:[["terremoto","地震"],["alerta de tsunami","津波警報"],["daños","被害"],["víctimas","犠牲者"]] },
-  { es:"México es una de las tres sedes de la Copa Mundial de la FIFA 2026, junto con Estados Unidos y Canadá. El torneo comenzó el 11 de junio en la Ciudad de México.",
-    ja:"メキシコはアメリカ・カナダとともに2026年FIFAワールドカップの開催国の一つです。大会は6月11日にメキシコシティで開幕しました。",
-    notes:[["sede","開催地"],["torneo","大会"],["comenzó","始まった（comenzarの点過去）"]] },
-  { es:"La selección mexicana de fútbol ha tenido un buen momento reciente, con una defensa sólida que ha permitido pocos goles en sus últimos partidos.",
-    ja:"メキシコ代表サッカーチームは最近好調で、直近の試合では失点の少ない堅実な守備が光っています。",
-    notes:[["selección","代表チーム"],["defensa","守備"],["partidos","試合"]] },
-  { es:"México es el país con más hablantes nativos de español en el mundo, por encima incluso de España.",
-    ja:"メキシコは世界で最もネイティブのスペイン語話者数が多い国で、スペインをも上回っているとされています。",
-    notes:[["hablantes nativos","ネイティブ話者"],["por encima de","〜を上回って"]] },
-  { es:"El metro de la Ciudad de México es uno de los sistemas de transporte subterráneo más grandes de América Latina, con millones de pasajeros cada día.",
-    ja:"メキシコシティの地下鉄はラテンアメリカでも最大級の地下交通網の一つで、毎日何百万人もの乗客が利用しています。",
-    notes:[["transporte subterráneo","地下交通"],["pasajeros","乗客"]] },
-  { es:"La Universidad Nacional Autónoma de México (UNAM) es una de las universidades más grandes de América Latina, y su campus principal está declarado Patrimonio de la Humanidad por la UNESCO.",
-    ja:"メキシコ国立自治大学(UNAM)はラテンアメリカ最大級の大学の一つで、そのメインキャンパスはユネスコ世界遺産にも登録されています。",
-    notes:[["universidad","大学"],["Patrimonio de la Humanidad","世界遺産"]] },
-  { es:"México es reconocido por su gran biodiversidad y se encuentra entre los países con mayor número de especies de plantas y animales del mundo.",
-    ja:"メキシコは非常に生物多様性が豊かなことで知られ、世界でも植物・動物の種数が多い国の一つとされています。",
-    notes:[["biodiversidad","生物多様性"],["especies","種"]] },
-  { es:"La gastronomía mexicana fue declarada Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO en 2010, gracias a su riqueza de ingredientes y tradiciones regionales.",
-    ja:"メキシコ料理は2010年にユネスコの無形文化遺産に登録されました。豊かな食材と各地域の伝統が評価されています。",
-    notes:[["gastronomía","食文化・料理"],["ingredientes","食材"],["tradiciones","伝統"]] },
-  { es:"El peso mexicano es una de las monedas más antiguas de América, con una historia que se remonta a la época colonial.",
-    ja:"メキシコペソはアメリカ大陸で最も歴史の古い通貨の一つで、その起源は植民地時代にさかのぼります。",
-    notes:[["moneda","通貨"],["se remonta a","〜にさかのぼる"]] },
-  { es:"Cada año, millones de turistas visitan sitios arqueológicos como Chichén Itzá y Teotihuacán, testimonios de las civilizaciones maya y mesoamericana.",
-    ja:"毎年、何百万人もの観光客がチチェン・イッツァやテオティワカンといった遺跡を訪れます。これらはマヤ文明や中米文明の証です。",
-    notes:[["sitios arqueológicos","遺跡"],["testimonios","証・証言"],["civilizaciones","文明"]] },
-  { es:"El cine mexicano ha ganado varios premios Óscar en la última década, con directores como Alejandro González Iñárritu, Alfonso Cuarón y Guillermo del Toro entre los más reconocidos internacionalmente.",
-    ja:"メキシコ映画はこの10年余りで複数のアカデミー賞を獲得しており、アレハンドロ・ゴンサレス・イニャリトゥ、アルフォンソ・キュアロン、ギレルモ・デル・トロといった監督が国際的に高く評価されています。",
-    notes:[["cine","映画"],["premios","賞"],["reconocidos","評価されている"]] },
-  { es:"La música regional mexicana, incluyendo géneros como el corrido y la banda, ha ganado gran popularidad internacional en plataformas de streaming en los últimos años.",
-    ja:"コリードやバンダといったジャンルを含むメキシコのリージョナル音楽は、近年ストリーミングサービスを通じて世界的な人気を集めています。",
-    notes:[["música regional","地方音楽・リージョナル音楽"],["plataformas de streaming","ストリーミングサービス"]] },
-];
 let newsExpanded = {};
 function renderNews(){
   const header = el("div");
