@@ -630,6 +630,7 @@ function doneScreenConj(){
 /* ---------- Example sentence fill-in-the-blank ---------- */
 let exDeck=[], exIdx=0, exScore=0, exMissed=[], exFanfarePlayed=false;
 function topicOf(ex){
+  if(ex.topic) return ex.topic;
   if(ex.verb) return "conjugacion";
   if(ex.label==="por / para" || ex.label==="en / a") return "preposicion";
   if(ex.label==="目的代名詞") return "pronombre";
