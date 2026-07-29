@@ -1,16 +1,13 @@
 const GRAMMAR_ARTICLES = [
   // ---------- 時制 ----------
-  { title:"点過去の作り方（-ar動詞）",
-    body:"点過去（pretérito indefinido）は、過去のある時点で完了した1回きりの行為を表す時制です。「昨日〜した」「先週〜した」のように、始まりと終わりがはっきりしている出来事に使います。-ar動詞は原形の語幹（hablarならhabl-）に決まった語尾をつけます。\n\n例: Ayer hablé con mi jefe.（昨日、上司と話した）／ El sábado pasado, bailamos toda la noche.（先週の土曜日、一晩中踊った）",
-    table:{ cols:["人称","語尾","hablarの例"], rows:[
-      ["yo","-é","hablé"], ["tú","-aste","hablaste"], ["él/ella/usted","-ó","habló"],
-      ["nosotros","-amos","hablamos"], ["ellos/ellas/ustedes","-aron","hablaron"]
-    ] } },
-  { title:"点過去の作り方（-er/-ir動詞）",
-    body:"-er動詞と-ir動詞は、点過去では同じ語尾になります（-ar動詞とは違う語尾です）。comer（食べる）とvivir（住む）はどちらもこの型です。\n\n例: Comí tacos anoche.（昨夜タコスを食べた）／ Vivimos en Osaka por dos años.（2年間大阪に住んでいた）\n\n不規則動詞も多く、ir/serはfui, fuiste, fue, fuimos, fueron（同形）、hacerはhice, hiciste, hizo...のように語幹自体が変わります。",
-    table:{ cols:["人称","語尾","comerの例"], rows:[
-      ["yo","-í","comí"], ["tú","-iste","comiste"], ["él/ella/usted","-ió","comió"],
-      ["nosotros","-imos","comimos"], ["ellos/ellas/ustedes","-ieron","comieron"]
+  { title:"点過去の作り方",
+    body:"点過去（pretérito indefinido）は、過去のある時点で完了した1回きりの行為を表す時制です。「昨日〜した」「先週〜した」のように、始まりと終わりがはっきりしている出来事に使います。\n\n-ar動詞と-er/-ir動詞で語尾が異なります（-er動詞と-ir動詞は同じ語尾）。原形の語幹（hablarならhabl-、comerならcom-）に、下の表の語尾をつけます。\n\n例: Ayer hablé con mi jefe.（昨日、上司と話した）／ Comí tacos anoche.（昨夜タコスを食べた）\n\n不規則動詞も多く、ir/serはfui, fuiste, fue, fuimos, fueron（同形）、hacerはhice, hiciste, hizo...のように語幹自体が変わります。",
+    table:{ cols:["人称","-ar語尾（hablar）","-er/-ir語尾（comer）"], rows:[
+      ["yo","-é（hablé）","-í（comí）"],
+      ["tú","-aste（hablaste）","-iste（comiste）"],
+      ["él/ella/usted","-ó（habló）","-ió（comió）"],
+      ["nosotros","-amos（hablamos）","-imos（comimos）"],
+      ["ellos/ellas/ustedes","-aron（hablaron）","-ieron（comieron）"]
     ] } },
   { title:"線過去の作り方",
     body:"線過去（imperfecto）は、過去に繰り返していた習慣や、当時継続していた状態・背景を表します。「よく〜していた」「当時は〜だった」というニュアンスです。点過去よりも規則的で、不規則動詞がとても少ないのが特徴です（ser, ir, verの3つだけが不規則）。\n\n例: Cuando era niño, jugaba en el parque todos los días.（子供の頃、毎日公園で遊んでいた）／ Hacía mucho calor esa tarde.（その日の午後はとても暑かった）\n\n点過去との使い分けは「1回きりの出来事」か「繰り返し・背景描写」かで判断すると整理しやすいです。",
