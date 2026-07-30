@@ -171,11 +171,6 @@
 <body>
 <div id="app"></div>
 <script src="vocab.js"></script>
-<script src="drills.js"></script>
-<script src="column.js"></script>
-<script src="news.js"></script>
-<script src="grammar.js"></script>
-<script src="dictionary.js"></script>
 <script>
 /* ---------- Vocabulary ---------- */
 const CEFR_MAP = {
@@ -388,6 +383,36 @@ let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", 
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
+/* ---------- Lazy loading of per-tab data files ---------- */
+const LAZY_SCRIPTS = { conj:"drills.js", dict:"dictionary.js", grammar:"grammar.js", column:"column.js", news:"news.js" };
+const LAZY_STATE = {}; // src -> "loading" | "done" | "error"
+function ensureTabScript(tab){
+  const src = LAZY_SCRIPTS[tab];
+  if(!src) return "done";
+  if(!LAZY_STATE[src]){
+    LAZY_STATE[src] = "loading";
+    const s = document.createElement("script");
+    s.src = src;
+    s.onload = ()=>{ LAZY_STATE[src] = "done"; render(); };
+    s.onerror = ()=>{ LAZY_STATE[src] = "error"; render(); };
+    document.head.appendChild(s);
+  }
+  return LAZY_STATE[src];
+}
+function renderLazyLoading(){
+  const wrap = el("div","done-wrap");
+  wrap.innerHTML = `<div class="done-stamp">…</div><div class="done-title">読み込み中…</div><div class="done-sub">初回だけ少し時間がかかります</div>`;
+  app.appendChild(wrap);
+}
+function renderLazyError(src){
+  const wrap = el("div","done-wrap");
+  wrap.innerHTML = `<div class="done-title">読み込みに失敗しました</div><div class="done-sub">${src} が正しくアップロードされているか確認してください</div>`;
+  const btn = el("button","primary-btn","再試行");
+  btn.onclick = ()=>{ LAZY_STATE[src] = null; render(); };
+  wrap.appendChild(btn);
+  app.appendChild(wrap);
+}
+
 function render(){
   app.innerHTML = "";
   const hideNav = (state.tab==="vocab" && (state.mode==="flash" || state.mode==="quiz" || state.mode==="review" || state.calendarOpen))
@@ -400,7 +425,12 @@ function render(){
     else if(state.mode==="flash") renderFlash();
     else if(state.mode==="quiz") renderQuiz();
     else if(state.mode==="review") renderFlash();
-  } else if(state.tab==="conj"){
+    return;
+  }
+  const scriptStatus = ensureTabScript(state.tab);
+  if(scriptStatus==="loading"){ renderLazyLoading(); return; }
+  if(scriptStatus==="error"){ renderLazyError(LAZY_SCRIPTS[state.tab]); return; }
+  if(state.tab==="conj"){
     renderConjTab();
   } else if(state.tab==="dict"){
     renderDictionary();
