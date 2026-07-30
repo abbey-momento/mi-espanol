@@ -7704,5 +7704,77 @@ const VOCAB_DATA = [
   "en": "Truth",
   "ja": "真実",
   "cat": "General"
+ },
+ {
+  "es": "Hoy",
+  "en": "Today",
+  "ja": "今日",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Mañana",
+  "en": "Tomorrow / morning",
+  "ja": "明日・朝",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Ayer",
+  "en": "Yesterday",
+  "ja": "昨日",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Quizás",
+  "en": "Maybe / perhaps",
+  "ja": "たぶん",
+  "cat": "Frases"
+ },
+ {
+  "es": "Entonces",
+  "en": "Then / so",
+  "ja": "それなら・その時",
+  "cat": "Frases"
+ },
+ {
+  "es": "El libro",
+  "en": "Book",
+  "ja": "本",
+  "cat": "Educación"
+ },
+ {
+  "es": "Qué",
+  "en": "What",
+  "ja": "何",
+  "cat": "Frases"
+ },
+ {
+  "es": "Quién",
+  "en": "Who",
+  "ja": "誰",
+  "cat": "Frases"
+ },
+ {
+  "es": "Cómo",
+  "en": "How",
+  "ja": "どのように",
+  "cat": "Frases"
+ },
+ {
+  "es": "Cuándo",
+  "en": "When",
+  "ja": "いつ",
+  "cat": "Frases"
+ },
+ {
+  "es": "Dónde",
+  "en": "Where",
+  "ja": "どこ",
+  "cat": "Frases"
+ },
+ {
+  "es": "Por qué",
+  "en": "Why",
+  "ja": "なぜ",
+  "cat": "Frases"
  }
 ];
