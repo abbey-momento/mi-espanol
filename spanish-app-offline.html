@@ -264,10 +264,11 @@ function speak(text){
 /* ---------- Persistence ---------- */
 function loadProgress(){
   let data;
-  try{ const raw = localStorage.getItem(STORAGE_KEY); data = raw?JSON.parse(raw):{counts:{},streak:0,lastDate:null,history:[],flagged:{}}; }
-  catch{ data = {counts:{},streak:0,lastDate:null,history:[],flagged:{}}; }
+  try{ const raw = localStorage.getItem(STORAGE_KEY); data = raw?JSON.parse(raw):{counts:{},streak:0,lastDate:null,history:[],flagged:{},flaggedGrammar:{}}; }
+  catch{ data = {counts:{},streak:0,lastDate:null,history:[],flagged:{},flaggedGrammar:{}}; }
   data.history = data.history || [];
   data.flagged = data.flagged || {};
+  data.flaggedGrammar = data.flaggedGrammar || {};
   const today = todayStr();
   if(data.lastDate !== today){
     const y = new Date(); y.setDate(y.getDate()-1);
@@ -288,6 +289,16 @@ function toggleFlag(id){
 function getFlaggedPool(){
   progress.flagged = progress.flagged || {};
   return VOCAB.filter(w => progress.flagged[w.id]);
+}
+function getPracticedPool(){
+  progress.counts = progress.counts || {};
+  return VOCAB.filter(w => Object.prototype.hasOwnProperty.call(progress.counts, w.id));
+}
+function toggleGrammarFlag(title){
+  progress.flaggedGrammar = progress.flaggedGrammar || {};
+  if(progress.flaggedGrammar[title]) delete progress.flaggedGrammar[title];
+  else progress.flaggedGrammar[title] = true;
+  saveProgress(progress);
 }
 function saveProgress(data){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); }catch(e){} }
 let progress = loadProgress();
@@ -407,7 +418,7 @@ function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}�
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFlaggedOnly:false };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", grammarFlaggedOnly:false };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -1223,9 +1234,30 @@ function renderGrammar(){
     header.appendChild(el("h1","title","文法リファレンス"));
     app.appendChild(header);
     const spacer = el("div"); spacer.style.height="16px"; app.appendChild(spacer);
-    GRAMMAR_ARTICLES.forEach((a,i)=>{
+    const chipRow = el("div","chip-row");
+    const allChip = el("button","chip"+(!state.grammarFlaggedOnly?" active":""), "すべて");
+    allChip.onclick = ()=>{ playTap(); state.grammarFlaggedOnly=false; render(); };
+    const flagChip = el("button","chip"+(state.grammarFlaggedOnly?" active":""), "⭐ フラグのみ");
+    flagChip.onclick = ()=>{ playTap(); state.grammarFlaggedOnly=true; render(); };
+    chipRow.appendChild(allChip); chipRow.appendChild(flagChip);
+    app.appendChild(chipRow);
+    progress.flaggedGrammar = progress.flaggedGrammar || {};
+    const items = GRAMMAR_ARTICLES.map((a,i)=>({a,i})).filter(({a})=> !state.grammarFlaggedOnly || progress.flaggedGrammar[a.title]);
+    if(items.length===0){
+      app.appendChild(el("div","dict-pending","まだフラグを立てた文法トピックがありません"));
+      return;
+    }
+    items.forEach(({a,i})=>{
       const item = el("div","grammar-list-item");
-      item.innerHTML = `<div class="grammar-list-title">${a.title}</div><div class="grammar-chevron">›</div>`;
+      const isFlagged = !!progress.flaggedGrammar[a.title];
+      item.innerHTML = `<div class="grammar-list-title">${isFlagged?"⭐ ":""}${a.title}</div>`;
+      const starBtn = el("button","speak-btn", isFlagged ? "⭐" : "☆");
+      starBtn.style.flexShrink="0";
+      starBtn.onclick = (e)=>{ e.stopPropagation(); playTap(); toggleGrammarFlag(a.title); render(); };
+      const rightWrap = el("div"); rightWrap.style.display="flex"; rightWrap.style.alignItems="center"; rightWrap.style.gap="8px";
+      rightWrap.appendChild(starBtn);
+      rightWrap.appendChild(el("div","grammar-chevron","›"));
+      item.appendChild(rightWrap);
       item.onclick = ()=>{ playTap(); grammarDetailIdx=i; render(); };
       app.appendChild(item);
     });
@@ -1233,7 +1265,14 @@ function renderGrammar(){
   }
   const a = GRAMMAR_ARTICLES[grammarDetailIdx];
   app.appendChild(topBar("文法", "", ()=>{ grammarDetailIdx=null; render(); }));
-  app.appendChild(el("h1","title",a.title));
+  const titleRow = el("div"); titleRow.style.display="flex"; titleRow.style.justifyContent="space-between"; titleRow.style.alignItems="flex-start"; titleRow.style.gap="10px";
+  titleRow.appendChild(el("h1","title",a.title));
+  const isFlaggedDetail = !!(progress.flaggedGrammar && progress.flaggedGrammar[a.title]);
+  const starBtnDetail = el("button","speak-btn", isFlaggedDetail ? "⭐" : "☆");
+  starBtnDetail.style.flexShrink="0"; starBtnDetail.style.marginTop="6px";
+  starBtnDetail.onclick = ()=>{ playTap(); toggleGrammarFlag(a.title); render(); };
+  titleRow.appendChild(starBtnDetail);
+  app.appendChild(titleRow);
   const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
   const bodyBox = el("div","article");
   bodyBox.appendChild(el("div","article-body",a.body));
