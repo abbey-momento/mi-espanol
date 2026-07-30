@@ -6174,5 +6174,425 @@ const VOCAB_DATA = [
   "en": "Family",
   "ja": "家族",
   "cat": "Familia"
+ },
+ {
+  "es": "Estar en la luna",
+  "en": "To be daydreaming / spaced out",
+  "ja": "ぼーっとしている（直訳：月にいる）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Poner los puntos sobre las íes",
+  "en": "To make things crystal clear",
+  "ja": "細部まではっきりさせる（直訳：iの上に点を打つ）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Írsele el santo al cielo",
+  "en": "To completely forget something",
+  "ja": "すっかり忘れる（直訳：聖人が天に行ってしまう）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Tirar la toalla",
+  "en": "To throw in the towel",
+  "ja": "あきらめる",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Estar hecho polvo",
+  "en": "To be exhausted",
+  "ja": "くたくたに疲れている（直訳：ほこりになっている）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "No dar pie con bola",
+  "en": "To do everything wrong",
+  "ja": "何をやってもうまくいかない",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ser uña y carne",
+  "en": "To be inseparable (close friends)",
+  "ja": "切っても切れない仲（直訳：爪と肉）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Tomar el toro por los cuernos",
+  "en": "To take the bull by the horns",
+  "ja": "正面から立ち向かう",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Costar un huevo",
+  "en": "To cost a fortune",
+  "ja": "ものすごく高い（口語）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Estar pez en algo",
+  "en": "To be clueless about something",
+  "ja": "まったく知識がない（直訳：魚である）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Írsele la olla",
+  "en": "To lose one's mind / go crazy",
+  "ja": "頭がおかしくなる（口語）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Dar la lata",
+  "en": "To be annoying / bother someone",
+  "ja": "うるさく迷惑をかける",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ponerse las botas",
+  "en": "To make the most of something / feast",
+  "ja": "思う存分楽しむ・たらふく食べる",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Estar en pañales",
+  "en": "To be in its infancy",
+  "ja": "まだ始まったばかりである（直訳：おむつをしている）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Salirse con la suya",
+  "en": "To get one's own way",
+  "ja": "自分の思い通りにする",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ser el pan de cada día",
+  "en": "To be an everyday occurrence",
+  "ja": "日常茶飯事である",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Meter la cuchara",
+  "en": "To butt into a conversation",
+  "ja": "口を挟む（直訳：スプーンを入れる）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Dar en el blanco",
+  "en": "To hit the target exactly",
+  "ja": "的を射る",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "No tener ni pies ni cabeza",
+  "en": "To make no sense at all",
+  "ja": "まったく筋が通らない",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ser la gota que colma el vaso",
+  "en": "To be the last straw",
+  "ja": "我慢の限界を超えるきっかけ（直訳：コップを溢れさせる一滴）",
+  "cat": "Modismos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "No obstante",
+  "en": "Nevertheless",
+  "ja": "それにもかかわらず",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Por consiguiente",
+  "en": "Consequently",
+  "ja": "したがって",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Cabe destacar que",
+  "en": "It is worth noting that",
+  "ja": "特筆すべきは",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "A grandes rasgos",
+  "en": "Broadly speaking",
+  "ja": "大まかに言うと",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En términos generales",
+  "en": "Generally speaking",
+  "ja": "一般的に言えば",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Dicho de otro modo",
+  "en": "In other words",
+  "ja": "言い換えると",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "A fin de cuentas",
+  "en": "At the end of the day / all things considered",
+  "ja": "結局のところ",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Huelga decir que",
+  "en": "It goes without saying that",
+  "ja": "言うまでもなく",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ni que decir tiene",
+  "en": "Needless to say",
+  "ja": "言うまでもなく",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "A raíz de",
+  "en": "As a result of / stemming from",
+  "ja": "〜がきっかけで",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En vísperas de",
+  "en": "On the eve of",
+  "ja": "〜の直前に",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "De ahora en adelante",
+  "en": "From now on",
+  "ja": "これからは",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "A todas luces",
+  "en": "Clearly / evidently",
+  "ja": "明らかに",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Bajo ningún concepto",
+  "en": "Under no circumstances",
+  "ja": "いかなる場合も〜ない",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Con creces",
+  "en": "By far / more than enough",
+  "ja": "十分すぎるほど",
+  "cat": "Frases",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "La incertidumbre",
+  "en": "Uncertainty",
+  "ja": "不確実性",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "La contradicción",
+  "en": "Contradiction",
+  "ja": "矛盾",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "La ambigüedad",
+  "en": "Ambiguity",
+  "ja": "曖昧さ",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "La coherencia",
+  "en": "Coherence",
+  "ja": "一貫性",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "El matiz",
+  "en": "Nuance",
+  "ja": "ニュアンス",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "La trascendencia",
+  "en": "Significance / transcendence",
+  "ja": "重要性・超越性",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "El trasfondo",
+  "en": "Background / underlying context",
+  "ja": "背景",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "La perspectiva",
+  "en": "Perspective",
+  "ja": "視点",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "El prejuicio",
+  "en": "Prejudice",
+  "ja": "偏見",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "La percepción",
+  "en": "Perception",
+  "ja": "知覚",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "El dilema",
+  "en": "Dilemma",
+  "ja": "ジレンマ",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "La controversia",
+  "en": "Controversy",
+  "ja": "論争",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "El consenso",
+  "en": "Consensus",
+  "ja": "合意",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "La discrepancia",
+  "en": "Discrepancy",
+  "ja": "食い違い",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "El escepticismo",
+  "en": "Skepticism",
+  "ja": "懐疑主義",
+  "cat": "General",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Profundizar",
+  "en": "To delve deeper into",
+  "ja": "深く掘り下げる",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Plantear",
+  "en": "To raise (an issue) / propose",
+  "ja": "提起する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Abordar",
+  "en": "To address / tackle (a topic)",
+  "ja": "取り組む",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Constatar",
+  "en": "To confirm / verify",
+  "ja": "確認する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Reflexionar",
+  "en": "To reflect / ponder",
+  "ja": "熟考する",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Suscitar",
+  "en": "To provoke / give rise to",
+  "ja": "引き起こす",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Prevalecer",
+  "en": "To prevail",
+  "ja": "優勢である",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Discrepar",
+  "en": "To disagree",
+  "ja": "意見が食い違う",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Matizar",
+  "en": "To qualify / add nuance",
+  "ja": "ニュアンスを加える",
+  "cat": "Verbos",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Desencadenar",
+  "en": "To trigger / set off",
+  "ja": "引き起こす（連鎖的に）",
+  "cat": "Verbos",
+  "nivel": "avanzado"
  }
 ];
