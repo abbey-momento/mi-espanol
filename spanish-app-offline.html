@@ -299,6 +299,19 @@ function getReviewPool(){
   progress.wrong = progress.wrong || {};
   return VOCAB.filter(w => (progress.wrong[w.id]||0) > 0 && (progress.counts[w.id]||0) < KNOWN_THRESHOLD);
 }
+function weightForCount(c){
+  if(c<=0) return 6;      // 未学習・不正解続き → 出やすい
+  if(c<KNOWN_THRESHOLD) return 3; // 学習中 → 標準
+  return 1;               // 覚えた → 出にくい（0にはしない、忘れ防止のため稀に出す）
+}
+function weightedSample(pool, size){
+  const withKeys = pool.map(w=>{
+    const weight = weightForCount(progress.counts[w.id]||0);
+    return { w, key: Math.pow(Math.random(), 1/weight) };
+  });
+  withKeys.sort((a,b)=>b.key-a.key);
+  return withKeys.slice(0, size).map(x=>x.w);
+}
 
 /* ---------- Conjugation data ---------- */
 const PERSONS5 = ["yo","tú","él/ella/usted","nosotros","ellos/ellas/ustedes"];
@@ -682,7 +695,10 @@ let flashDeck=[], flashIdx=0, flashFlipped=false, lastSpokenFlashId=null, flashF
 function renderFlash(){
   const isReview = state.mode==="review";
   const pool = isReview ? getReviewPool() : vocabPool();
-  if(flashDeck.length===0){ flashDeck = shuffle(pool); flashIdx=0; flashFlipped=false; lastSpokenFlashId=null; flashFanfarePlayed=false; }
+  if(flashDeck.length===0){
+    flashDeck = isReview ? shuffle(pool) : weightedSample(pool, Math.min(20, pool.length));
+    flashIdx=0; flashFlipped=false; lastSpokenFlashId=null; flashFanfarePlayed=false;
+  }
   if(pool.length===0){
     const w=el("div","done-wrap", isReview ? "<div class='done-title'>苦手な単語はまだありません 🎉</div><div class='done-sub'>クイズやカードを続けていくとここに溜まっていきます</div>" : "<div class='done-title'>まだ単語がありません</div>");
     const b=el("button","primary-btn","戻る"); b.onclick=()=>{state.mode="home";flashDeck=[];render();}; w.appendChild(b); app.appendChild(w); return;
