@@ -412,7 +412,7 @@ function render(){
     renderNews();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; }
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","ドリル"],["dict","辞書"],["grammar","文法"],["column","コラム"],["news","ニュース"]].forEach(([key,label])=>{
@@ -729,7 +729,8 @@ function renderQuiz(){
 /* ---------- Conjugation tab (drill / examples) ---------- */
 const DRILL_MENU = [
   { key:"drill", icon:"📝", name:"活用ドリル", desc:"時制ごとに動詞を活用させる" },
-  { key:"numbers", icon:"🔢", name:"数字ドリル", desc:"数字をスペイン語でつづる" },
+  { key:"numbers", icon:"🔢", name:"数字ドリル", desc:"数字・年号・時刻を読む" },
+  { key:"listening", icon:"🎧", name:"リスニング", desc:"音声を聞いて空欄を埋める" },
   { key:"examples-conjugacion", icon:"✍️", name:"例文で穴埋め", desc:"文脈の中で活用を練習" },
   { key:"examples-preposicion", icon:"🧭", name:"前置詞ドリル", desc:"por / para、en / a の使い分け" },
   { key:"examples-ser_estar", icon:"🔍", name:"ser/estarドリル", desc:"本質か一時的な状態かを見分ける" },
@@ -754,7 +755,7 @@ function renderConjTab(){
       card.onclick = ()=>{
         playTap();
         if(d.key.startsWith("examples-")){ state.conjSubTab="examples"; state.exTopic=d.key.replace("examples-",""); exDeck=[]; }
-        else { state.conjSubTab=d.key; if(d.key==="drill") conjQuestion=null; if(d.key==="numbers") numQuestion=null; }
+        else { state.conjSubTab=d.key; if(d.key==="drill") conjQuestion=null; if(d.key==="numbers") numQuestion=null; if(d.key==="listening") listenQuestion=null; }
         render();
       };
       grid.appendChild(card);
@@ -765,6 +766,7 @@ function renderConjTab(){
   if(state.conjSubTab==="drill") renderConjDrill();
   else if(state.conjSubTab==="examples") renderExamples();
   else if(state.conjSubTab==="numbers") renderNumbersDrill();
+  else if(state.conjSubTab==="listening") renderListeningDrill();
 }
 
 let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjLog=[], lastSpokenConjKey=null, conjFanfarePlayed=false;
@@ -863,7 +865,7 @@ function topicOf(ex){
 function backToMenuBtn(){
   const b = el("button","ghost-btn","← メニューに戻る");
   b.style.marginBottom="14px";
-  b.onclick = ()=>{ playTap(); state.conjSubTab=null; conjQuestion=null; exDeck=[]; numQuestion=null; render(); };
+  b.onclick = ()=>{ playTap(); state.conjSubTab=null; conjQuestion=null; exDeck=[]; numQuestion=null; listenDeck=[]; render(); };
   return b;
 }
 let exLog=[];
@@ -1011,6 +1013,84 @@ function renderNumbersDrill(){
   }
   submit.onclick = submitAnswer;
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
+}
+
+/* ---------- Listening / dictation drill ---------- */
+let listenDeck=[], listenIdx=0, listenTotal=10, listenScore=0, listenLog=[], listenQuestion=null, listenFanfarePlayed=false, lastSpokenListenIdx=null;
+function fullSentenceOf(item){ return item.segs[0]+item.answers[0]+item.segs[1]+item.answers[1]+item.segs[2]; }
+function renderListeningDrill(){
+  app.appendChild(backToMenuBtn());
+  if(listenDeck.length===0){ listenDeck = shuffle(LISTENING_ITEMS).slice(0,10); listenIdx=0; listenScore=0; listenLog=[]; listenFanfarePlayed=false; lastSpokenListenIdx=null; }
+  if(listenIdx>=listenDeck.length){
+    if(!listenFanfarePlayed){ listenFanfarePlayed=true; playFanfare(); }
+    const wrap = el("div","done-wrap");
+    wrap.innerHTML = `<div class="done-stamp">✓</div><div class="done-title">¡Sesión completa!</div><div class="done-score">${listenScore} / ${listenDeck.length*2} correctas（空欄ごと）</div>`;
+    const btn = el("button","primary-btn","もう一度");
+    btn.onclick = ()=>{ listenDeck=[]; render(); };
+    wrap.appendChild(btn); app.appendChild(wrap);
+    const rl = el("div","review-list");
+    rl.appendChild(el("div","section-label","まとめ（全問）"));
+    listenLog.forEach(log=>{
+      const item = el("div","review-item");
+      const mark = log.correctCount===2 ? "○ 満点" : log.correctCount===1 ? "△ 一部正解" : "✕ 不正解";
+      const markColor = log.correctCount===2 ? "var(--accent2)" : log.correctCount===1 ? "var(--accent3)" : "var(--brick)";
+      item.innerHTML = `<div class="review-q" style="color:${markColor};">${mark}　${fullSentenceOf(log.item)}</div>
+        <div class="review-a">${log.item.ja}</div>
+        <div class="review-note">あなたの回答: ${log.userAnswers[0]||"（未回答）"} / ${log.userAnswers[1]||"（未回答）"}</div>`;
+      rl.appendChild(item);
+    });
+    app.appendChild(rl);
+    return;
+  }
+  if(!listenQuestion || lastSpokenListenIdx!==listenIdx){
+    listenQuestion = listenDeck[listenIdx];
+    lastSpokenListenIdx = listenIdx;
+    setTimeout(()=>speak(fullSentenceOf(listenQuestion)), 200);
+  }
+  const item = listenQuestion;
+  const pr = el("div"); pr.style.textAlign="center"; pr.style.marginBottom="14px";
+  pr.innerHTML = `<div class="top-bar-label">${listenIdx+1} / ${listenDeck.length}　·　スコア ${listenScore}</div>`;
+  app.appendChild(pr);
+  const box = el("div","sentence-box");
+  box.innerHTML = `${item.segs[0]}<span class="sentence-blank">＿＿＿①＿＿＿</span>${item.segs[1]}<span class="sentence-blank">＿＿＿②＿＿＿</span>${item.segs[2]}
+    <div style="font-size:12px;color:#C9BBE8;margin-top:10px;">音声を聞いて、空欄①②に入る単語を書いてください</div>`;
+  app.appendChild(box);
+  app.appendChild(speakRow(fullSentenceOf(item)));
+  const row1 = el("div","conj-input-row"); row1.style.marginTop="14px";
+  const input1 = el("input","conj-input");
+  input1.setAttribute("type","text"); input1.setAttribute("placeholder","空欄① …"); input1.setAttribute("autocapitalize","none"); input1.setAttribute("autocorrect","off");
+  row1.appendChild(input1);
+  app.appendChild(row1);
+  const row2 = el("div","conj-input-row"); row2.style.marginTop="10px";
+  const input2 = el("input","conj-input");
+  input2.setAttribute("type","text"); input2.setAttribute("placeholder","空欄② …"); input2.setAttribute("autocapitalize","none"); input2.setAttribute("autocorrect","off");
+  const submit = el("button","conj-submit","確認");
+  row2.appendChild(input2); row2.appendChild(submit);
+  app.appendChild(row2);
+  const fb = el("div","conj-feedback");
+  app.appendChild(fb);
+  const jaLine = el("div","sentence-ja");
+  app.appendChild(jaLine);
+  function submitAnswer(){
+    const v1 = input1.value, v2 = input2.value;
+    if(!v1 && !v2) return;
+    const ok1 = norm(v1) === norm(item.answers[0]);
+    const ok2 = norm(v2) === norm(item.answers[1]);
+    const correctCount = (ok1?1:0)+(ok2?1:0);
+    listenScore += correctCount;
+    if(correctCount===2){ playCorrect(); fb.textContent="¡Perfecto! ✓ ✓"; fb.className="conj-feedback ok"; }
+    else if(correctCount===1){ playCorrect(); fb.textContent=`一部正解。正解: ①${item.answers[0]} ②${item.answers[1]}`; fb.className="conj-feedback ok"; }
+    else { playWrong(); fb.textContent=`正解: ①${item.answers[0]} ②${item.answers[1]}`; fb.className="conj-feedback no"; }
+    jaLine.textContent = item.ja;
+    listenLog.push({ item, correctCount, userAnswers:[v1,v2] });
+    input1.disabled=true; input2.disabled=true; submit.disabled=true;
+    const nextBtn = el("button","primary-btn", listenIdx+1>=listenDeck.length ? "結果を見る" : "次の問題へ →");
+    nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
+    nextBtn.onclick = ()=>{ playTap(); listenIdx++; render(); };
+    app.appendChild(nextBtn);
+  }
+  submit.onclick = submitAnswer;
+  input2.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
 }
 
 /* ---------- Grammar reference feed ---------- */
