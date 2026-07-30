@@ -604,7 +604,7 @@ function renderDictionary(){
   search.oninput = (e)=>{ state.dictSearch = e.target.value; renderDictList(); };
   app.appendChild(search);
   const chipRow = el("div","chip-row");
-  [["all","すべて"],["flagged","⭐ フラグのみ"],["practiced","📚 練習した単語"]].forEach(([mode,label])=>{
+  [["all","すべて"],["flagged","⭐ フラグのみ"]].forEach(([mode,label])=>{
     const chip = el("button","chip"+(state.dictFilterMode===mode?" active":""), label);
     chip.onclick = ()=>{ playTap(); state.dictFilterMode=mode; render(); };
     chipRow.appendChild(chip);
@@ -618,7 +618,6 @@ function getDictList(){
   const q = normDictKey(state.dictSearch);
   let list = VOCAB;
   if(state.dictFilterMode==="flagged") list = getFlaggedPool();
-  else if(state.dictFilterMode==="practiced") list = getPracticedPool();
   if(q){
     list = list.filter(w => normDictKey(w.es).includes(q) || normDictKey(w.ja).includes(q) || normDictKey(w.en).includes(q));
   }
@@ -637,9 +636,7 @@ function renderDictList(){
     wrap.appendChild(startBtn);
   }
   if(list.length===0){
-    const emptyMsg = state.dictFilterMode==="flagged" ? "まだフラグを立てた単語がありません"
-      : state.dictFilterMode==="practiced" ? "まだクイズやカードで練習した単語がありません"
-      : "一致する単語が見つかりませんでした";
+    const emptyMsg = state.dictFilterMode==="flagged" ? "まだフラグを立てた単語がありません" : "一致する単語が見つかりませんでした";
     wrap.appendChild(el("div","dict-pending", emptyMsg));
     return;
   }
@@ -647,7 +644,15 @@ function renderDictList(){
     const item = el("div","dict-item");
     const hasDetail = !!DICTIONARY_DATA[normDictKey(w.es)];
     const isFlagged = !!(progress.flagged && progress.flagged[w.id]);
-    item.innerHTML = `<div><div class="dict-item-es">${isFlagged?"⭐ ":""}${w.es}${hasDetail?" 📖":""}</div><div class="dict-item-ja">${w.ja}</div></div><div class="grammar-chevron">›</div>`;
+    const textWrap = el("div");
+    textWrap.innerHTML = `<div class="dict-item-es">${w.es}${hasDetail?" 📖":""}</div><div class="dict-item-ja">${w.ja}</div>`;
+    const rightWrap = el("div"); rightWrap.style.display="flex"; rightWrap.style.alignItems="center"; rightWrap.style.gap="8px";
+    const starBtn = el("button","speak-btn", isFlagged ? "⭐" : "☆");
+    starBtn.style.flexShrink="0";
+    starBtn.onclick = (e)=>{ e.stopPropagation(); playTap(); toggleFlag(w.id); renderDictList(); };
+    rightWrap.appendChild(starBtn);
+    rightWrap.appendChild(el("div","grammar-chevron","›"));
+    item.appendChild(textWrap); item.appendChild(rightWrap);
     item.onclick = ()=>{ playTap(); goToDictionary(w.es); };
     wrap.appendChild(item);
   });
@@ -1292,6 +1297,22 @@ function renderGrammar(){
     bodyBox.appendChild(table);
   }
   app.appendChild(bodyBox);
+  const gList = getGrammarList();
+  const gIdx = gList.findIndex(x => x.title===a.title);
+  const navRow = el("div","dict-nav-row");
+  const prevBtn = el("button","dict-nav-btn", "← 前のトピック");
+  const nextBtn = el("button","dict-nav-btn", "次のトピック →");
+  if(gIdx<=0){ prevBtn.disabled=true; prevBtn.classList.add("dict-nav-disabled"); }
+  else prevBtn.onclick = ()=>{ playTap(); grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===gList[gIdx-1].title); render(); };
+  if(gIdx===-1 || gIdx>=gList.length-1){ nextBtn.disabled=true; nextBtn.classList.add("dict-nav-disabled"); }
+  else nextBtn.onclick = ()=>{ playTap(); grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===gList[gIdx+1].title); render(); };
+  navRow.appendChild(prevBtn); navRow.appendChild(nextBtn);
+  app.appendChild(navRow);
+  if(gIdx!==-1){ app.appendChild(el("div","footer-hint", `${gIdx+1} / ${gList.length}`)); }
+}
+function getGrammarList(){
+  progress.flaggedGrammar = progress.flaggedGrammar || {};
+  return state.grammarFlaggedOnly ? GRAMMAR_ARTICLES.filter(a=>progress.flaggedGrammar[a.title]) : GRAMMAR_ARTICLES;
 }
 
 /* ---------- Column (Japanese trivia) ---------- */
