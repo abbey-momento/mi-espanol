@@ -168,12 +168,6 @@ const VOCAB_DATA = [
   "cat": "Viajes"
  },
  {
-  "es": "El agua",
-  "en": "Water",
-  "ja": "水",
-  "cat": "Comida"
- },
- {
   "es": "El pan",
   "en": "Bread",
   "ja": "パン",
@@ -183,12 +177,6 @@ const VOCAB_DATA = [
   "es": "La fruta",
   "en": "Fruit",
   "ja": "果物",
-  "cat": "Comida"
- },
- {
-  "es": "El café",
-  "en": "Coffee",
-  "ja": "コーヒー",
   "cat": "Comida"
  },
  {
@@ -6102,5 +6090,89 @@ const VOCAB_DATA = [
   "en": "Match (fire)",
   "ja": "マッチ",
   "cat": "Casa"
+ },
+ {
+  "es": "Sí",
+  "en": "Yes",
+  "ja": "はい",
+  "cat": "Frases"
+ },
+ {
+  "es": "No",
+  "en": "No",
+  "ja": "いいえ",
+  "cat": "Frases"
+ },
+ {
+  "es": "Hacer",
+  "en": "To do / To make",
+  "ja": "する・作る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El día",
+  "en": "Day",
+  "ja": "日",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "La noche",
+  "en": "Night",
+  "ja": "夜",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "El café",
+  "en": "Coffee / Café",
+  "ja": "コーヒー・喫茶店",
+  "cat": "Comida"
+ },
+ {
+  "es": "El agua",
+  "en": "Water",
+  "ja": "水",
+  "cat": "Comida"
+ },
+ {
+  "es": "El amor",
+  "en": "Love",
+  "ja": "愛",
+  "cat": "Frases"
+ },
+ {
+  "es": "Bueno",
+  "en": "Good",
+  "ja": "良い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Malo",
+  "en": "Bad",
+  "ja": "悪い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Vivir",
+  "en": "To live",
+  "ja": "住む・生きる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El amigo",
+  "en": "Friend",
+  "ja": "友達",
+  "cat": "Frases"
+ },
+ {
+  "es": "El tiempo",
+  "en": "Time / Weather",
+  "ja": "時間・天気",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "La familia",
+  "en": "Family",
+  "ja": "家族",
+  "cat": "Familia"
  }
 ];
