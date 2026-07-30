@@ -166,6 +166,10 @@
   .dict-tag { background: rgba(255,255,255,0.08); border-radius:999px; padding:6px 12px; font-size:12px; color:#EFE7FA; }
   .dict-dialogue { background: rgba(255,255,255,0.05); border-radius:14px; padding:14px 16px; white-space:pre-wrap; font-size:13.5px; line-height:1.7; color:#EFE7FA; }
   .dict-dialogue-ja { font-size:12.5px; color:#9C8FC2; margin-top:8px; }
+  .dict-nav-row { display:flex; gap:10px; margin-top:22px; }
+  .dict-nav-btn { flex:1; padding:13px 10px; border-radius:14px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.07);
+    color:var(--card); font-size:13.5px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .dict-nav-btn.dict-nav-disabled { opacity:0.3; cursor:default; }
 </style>
 </head>
 <body>
@@ -560,16 +564,20 @@ function renderDictionary(){
   app.appendChild(listWrap);
   renderDictList();
 }
-function renderDictList(){
-  const wrap = document.getElementById("dict-list-wrap");
-  if(!wrap) return;
-  wrap.innerHTML = "";
+function getDictList(){
   const q = normDictKey(state.dictSearch);
   let list = VOCAB;
   if(q){
     list = VOCAB.filter(w => normDictKey(w.es).includes(q) || normDictKey(w.ja).includes(q) || normDictKey(w.en).includes(q));
   }
-  list = list.slice(0, 60);
+  return list;
+}
+function renderDictList(){
+  const wrap = document.getElementById("dict-list-wrap");
+  if(!wrap) return;
+  wrap.innerHTML = "";
+  const full = getDictList();
+  const list = full.slice(0, 60);
   if(list.length===0){
     wrap.appendChild(el("div","dict-pending","一致する単語が見つかりませんでした"));
     return;
@@ -581,7 +589,7 @@ function renderDictList(){
     item.onclick = ()=>{ playTap(); goToDictionary(w.es); };
     wrap.appendChild(item);
   });
-  if(!q){
+  if(!state.dictSearch){
     const hint = el("div","footer-hint", `全${VOCAB.length}語のうち最初の${list.length}語を表示中。検索して絞り込めます。`);
     wrap.appendChild(hint);
   }
@@ -600,33 +608,48 @@ function renderDictDetail(){
   }
   if(!detail){
     app.appendChild(el("div","dict-pending","詳しい解説（ニュアンス・語源・類語など）は準備中です 🚧\n基本の意味は上に表示されている通りです。"));
-    return;
+  } else {
+    if(detail.nuance){
+      app.appendChild(el("div","dict-section-title","ニュアンス"));
+      app.appendChild(el("div","article-body", detail.nuance));
+    }
+    if(detail.etymology){
+      app.appendChild(el("div","dict-section-title","語源"));
+      app.appendChild(el("div","article-body", detail.etymology));
+    }
+    if(detail.synonyms && detail.synonyms.length){
+      app.appendChild(el("div","dict-section-title","類語"));
+      const row = el("div","dict-chip-row");
+      detail.synonyms.forEach(s=> row.appendChild(el("div","dict-tag", s)));
+      app.appendChild(row);
+    }
+    if(detail.derived && detail.derived.length){
+      app.appendChild(el("div","dict-section-title","派生語"));
+      const row = el("div","dict-chip-row");
+      detail.derived.forEach(s=> row.appendChild(el("div","dict-tag", s)));
+      app.appendChild(row);
+    }
+    if(detail.dialogue){
+      app.appendChild(el("div","dict-section-title","会話例"));
+      const box = el("div","dict-dialogue");
+      box.innerHTML = `${detail.dialogue.es}<div class="dict-dialogue-ja">${detail.dialogue.ja}</div>`;
+      app.appendChild(box);
+    }
   }
-  if(detail.nuance){
-    app.appendChild(el("div","dict-section-title","ニュアンス"));
-    app.appendChild(el("div","article-body", detail.nuance));
-  }
-  if(detail.etymology){
-    app.appendChild(el("div","dict-section-title","語源"));
-    app.appendChild(el("div","article-body", detail.etymology));
-  }
-  if(detail.synonyms && detail.synonyms.length){
-    app.appendChild(el("div","dict-section-title","類語"));
-    const row = el("div","dict-chip-row");
-    detail.synonyms.forEach(s=> row.appendChild(el("div","dict-tag", s)));
-    app.appendChild(row);
-  }
-  if(detail.derived && detail.derived.length){
-    app.appendChild(el("div","dict-section-title","派生語"));
-    const row = el("div","dict-chip-row");
-    detail.derived.forEach(s=> row.appendChild(el("div","dict-tag", s)));
-    app.appendChild(row);
-  }
-  if(detail.dialogue){
-    app.appendChild(el("div","dict-section-title","会話例"));
-    const box = el("div","dict-dialogue");
-    box.innerHTML = `${detail.dialogue.es}<div class="dict-dialogue-ja">${detail.dialogue.ja}</div>`;
-    app.appendChild(box);
+  // prev/next navigation within the current filtered list
+  const list = getDictList();
+  const idx = list.findIndex(w => normDictKey(w.es)===key);
+  const navRow = el("div","dict-nav-row");
+  const prevBtn = el("button","dict-nav-btn", "← 前の単語");
+  const nextBtn = el("button","dict-nav-btn", "次の単語 →");
+  if(idx<=0) { prevBtn.disabled = true; prevBtn.classList.add("dict-nav-disabled"); }
+  else prevBtn.onclick = ()=>{ playTap(); goToDictionary(list[idx-1].es); };
+  if(idx===-1 || idx>=list.length-1) { nextBtn.disabled = true; nextBtn.classList.add("dict-nav-disabled"); }
+  else nextBtn.onclick = ()=>{ playTap(); goToDictionary(list[idx+1].es); };
+  navRow.appendChild(prevBtn); navRow.appendChild(nextBtn);
+  app.appendChild(navRow);
+  if(idx!==-1){
+    app.appendChild(el("div","footer-hint", `${idx+1} / ${list.length}`));
   }
 }
 function topBar(label, progressText, onExit){
