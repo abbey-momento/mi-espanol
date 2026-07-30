@@ -264,9 +264,10 @@ function speak(text){
 /* ---------- Persistence ---------- */
 function loadProgress(){
   let data;
-  try{ const raw = localStorage.getItem(STORAGE_KEY); data = raw?JSON.parse(raw):{counts:{},streak:0,lastDate:null,history:[]}; }
-  catch{ data = {counts:{},streak:0,lastDate:null,history:[]}; }
+  try{ const raw = localStorage.getItem(STORAGE_KEY); data = raw?JSON.parse(raw):{counts:{},streak:0,lastDate:null,history:[],flagged:{}}; }
+  catch{ data = {counts:{},streak:0,lastDate:null,history:[],flagged:{}}; }
   data.history = data.history || [];
+  data.flagged = data.flagged || {};
   const today = todayStr();
   if(data.lastDate !== today){
     const y = new Date(); y.setDate(y.getDate()-1);
@@ -277,6 +278,16 @@ function loadProgress(){
   if(!data.history.includes(today)) data.history.push(today);
   saveProgress(data);
   return data;
+}
+function toggleFlag(id){
+  progress.flagged = progress.flagged || {};
+  if(progress.flagged[id]) delete progress.flagged[id];
+  else progress.flagged[id] = true;
+  saveProgress(progress);
+}
+function getFlaggedPool(){
+  progress.flagged = progress.flagged || {};
+  return VOCAB.filter(w => progress.flagged[w.id]);
 }
 function saveProgress(data){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); }catch(e){} }
 let progress = loadProgress();
@@ -396,7 +407,7 @@ function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}�
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFlaggedOnly:false };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -432,7 +443,7 @@ function renderLazyError(src){
 
 function render(){
   app.innerHTML = "";
-  const hideNav = (state.tab==="vocab" && (state.mode==="flash" || state.mode==="quiz" || state.mode==="review" || state.calendarOpen))
+  const hideNav = (state.tab==="vocab" && (state.mode==="flash" || state.mode==="quiz" || state.mode==="review" || state.mode==="flagged" || state.calendarOpen))
     || (state.tab==="conj" && !!state.conjSubTab)
     || (state.tab==="dict" && !!state.dictDetailWord)
     || (state.tab==="grammar" && grammarDetailIdx!==null);
@@ -442,6 +453,7 @@ function render(){
     else if(state.mode==="flash") renderFlash();
     else if(state.mode==="quiz") renderQuiz();
     else if(state.mode==="review") renderFlash();
+    else if(state.mode==="flagged") renderFlash();
     return;
   }
   const scriptStatus = ensureTabScript(state.tab);
@@ -516,8 +528,15 @@ function renderVocabHome(){
   rc.innerHTML = `<div class="mode-icon">🔁</div><div class="mode-name">苦手だけ復習</div><div class="mode-desc">間違えたことがある単語（${reviewPool.length}個）</div>`;
   rc.onclick = ()=>{ if(reviewPool.length===0) return; playTap(); state.mode="review"; render(); };
   if(reviewPool.length===0) rc.style.opacity="0.45";
-  const reviewWrap = el("div"); reviewWrap.style.marginBottom="16px"; reviewWrap.appendChild(rc);
+  const reviewWrap = el("div"); reviewWrap.style.marginBottom="10px"; reviewWrap.appendChild(rc);
   app.appendChild(reviewWrap);
+  const flaggedPool = getFlaggedPool();
+  const flc = el("button","mode-card"); flc.style.width="100%"; flc.style.marginTop="0";
+  flc.innerHTML = `<div class="mode-icon">⭐</div><div class="mode-name">フラグした単語</div><div class="mode-desc">辞書でマークした単語（${flaggedPool.length}個）</div>`;
+  flc.onclick = ()=>{ if(flaggedPool.length===0) return; playTap(); state.mode="flagged"; render(); };
+  if(flaggedPool.length===0) flc.style.opacity="0.45";
+  const flaggedWrap = el("div"); flaggedWrap.style.marginBottom="16px"; flaggedWrap.appendChild(flc);
+  app.appendChild(flaggedWrap);
   app.appendChild(el("div","footer-hint","Unos minutos libres · practica y sigue tu viaje"));
 }
 function renderCalendar(){
@@ -573,6 +592,13 @@ function renderDictionary(){
   search.value = state.dictSearch;
   search.oninput = (e)=>{ state.dictSearch = e.target.value; renderDictList(); };
   app.appendChild(search);
+  const chipRow = el("div","chip-row");
+  const allChip = el("button","chip"+(!state.dictFlaggedOnly?" active":""), "すべて");
+  allChip.onclick = ()=>{ playTap(); state.dictFlaggedOnly=false; render(); };
+  const flagChip = el("button","chip"+(state.dictFlaggedOnly?" active":""), "⭐ フラグのみ");
+  flagChip.onclick = ()=>{ playTap(); state.dictFlaggedOnly=true; render(); };
+  chipRow.appendChild(allChip); chipRow.appendChild(flagChip);
+  app.appendChild(chipRow);
   const listWrap = el("div"); listWrap.id="dict-list-wrap";
   app.appendChild(listWrap);
   renderDictList();
@@ -580,8 +606,12 @@ function renderDictionary(){
 function getDictList(){
   const q = normDictKey(state.dictSearch);
   let list = VOCAB;
+  if(state.dictFlaggedOnly){
+    progress.flagged = progress.flagged || {};
+    list = list.filter(w => progress.flagged[w.id]);
+  }
   if(q){
-    list = VOCAB.filter(w => normDictKey(w.es).includes(q) || normDictKey(w.ja).includes(q) || normDictKey(w.en).includes(q));
+    list = list.filter(w => normDictKey(w.es).includes(q) || normDictKey(w.ja).includes(q) || normDictKey(w.en).includes(q));
   }
   return list;
 }
@@ -591,18 +621,25 @@ function renderDictList(){
   wrap.innerHTML = "";
   const full = getDictList();
   const list = full.slice(0, 60);
+  if(state.dictFlaggedOnly && full.length>0){
+    const startBtn = el("button","primary-btn", `🗂️ フラグした単語（${full.length}個）でカード練習`);
+    startBtn.style.display="block"; startBtn.style.width="100%"; startBtn.style.marginBottom="14px";
+    startBtn.onclick = ()=>{ playTap(); state.tab="vocab"; state.mode="flagged"; flashDeck=[]; render(); };
+    wrap.appendChild(startBtn);
+  }
   if(list.length===0){
-    wrap.appendChild(el("div","dict-pending","一致する単語が見つかりませんでした"));
+    wrap.appendChild(el("div","dict-pending", state.dictFlaggedOnly ? "まだフラグを立てた単語がありません" : "一致する単語が見つかりませんでした"));
     return;
   }
   list.forEach(w=>{
     const item = el("div","dict-item");
     const hasDetail = !!DICTIONARY_DATA[normDictKey(w.es)];
-    item.innerHTML = `<div><div class="dict-item-es">${w.es}${hasDetail?" 📖":""}</div><div class="dict-item-ja">${w.ja}</div></div><div class="grammar-chevron">›</div>`;
+    const isFlagged = !!(progress.flagged && progress.flagged[w.id]);
+    item.innerHTML = `<div><div class="dict-item-es">${isFlagged?"⭐ ":""}${w.es}${hasDetail?" 📖":""}</div><div class="dict-item-ja">${w.ja}</div></div><div class="grammar-chevron">›</div>`;
     item.onclick = ()=>{ playTap(); goToDictionary(w.es); };
     wrap.appendChild(item);
   });
-  if(!state.dictSearch){
+  if(!state.dictSearch && !state.dictFlaggedOnly){
     const hint = el("div","footer-hint", `全${VOCAB.length}語のうち最初の${list.length}語を表示中。検索して絞り込めます。`);
     wrap.appendChild(hint);
   }
@@ -617,7 +654,14 @@ function renderDictDetail(){
     <div class="dict-detail-en-ja">${vocabWord ? vocabWord.en+" ／ "+vocabWord.ja : ""}</div>`;
   app.appendChild(header);
   if(vocabWord){
-    app.appendChild(speakRow(vocabWord.es));
+    const actionRow = el("div"); actionRow.style.display="flex"; actionRow.style.justifyContent="center"; actionRow.style.gap="10px"; actionRow.style.marginTop="8px";
+    const speakBtn = el("button","speak-btn","🔊");
+    speakBtn.onclick = ()=> speak(vocabWord.es);
+    const isFlagged = !!(progress.flagged && progress.flagged[vocabWord.id]);
+    const flagBtn = el("button","speak-btn", isFlagged ? "⭐" : "☆");
+    flagBtn.onclick = ()=>{ playTap(); toggleFlag(vocabWord.id); render(); };
+    actionRow.appendChild(speakBtn); actionRow.appendChild(flagBtn);
+    app.appendChild(actionRow);
   }
   if(!detail){
     app.appendChild(el("div","dict-pending","詳しい解説（ニュアンス・語源・類語など）は準備中です 🚧\n基本の意味は上に表示されている通りです。"));
@@ -694,17 +738,20 @@ function doneScreen(label, score, total){
 let flashDeck=[], flashIdx=0, flashFlipped=false, lastSpokenFlashId=null, flashFanfarePlayed=false;
 function renderFlash(){
   const isReview = state.mode==="review";
-  const pool = isReview ? getReviewPool() : vocabPool();
+  const isFlagged = state.mode==="flagged";
+  const pool = isReview ? getReviewPool() : isFlagged ? getFlaggedPool() : vocabPool();
   if(flashDeck.length===0){
-    flashDeck = isReview ? shuffle(pool) : weightedSample(pool, Math.min(20, pool.length));
+    flashDeck = (isReview || isFlagged) ? shuffle(pool) : weightedSample(pool, Math.min(20, pool.length));
     flashIdx=0; flashFlipped=false; lastSpokenFlashId=null; flashFanfarePlayed=false;
   }
   if(pool.length===0){
-    const w=el("div","done-wrap", isReview ? "<div class='done-title'>苦手な単語はまだありません 🎉</div><div class='done-sub'>クイズやカードを続けていくとここに溜まっていきます</div>" : "<div class='done-title'>まだ単語がありません</div>");
+    const emptyMsg = isReview ? "苦手な単語はまだありません 🎉" : isFlagged ? "⭐がついた単語はまだありません" : "まだ単語がありません";
+    const emptySub = isReview ? "クイズやカードを続けていくとここに溜まっていきます" : isFlagged ? "辞書で気になる単語に⭐をつけてみてください" : "";
+    const w=el("div","done-wrap", `<div class='done-title'>${emptyMsg}</div>${emptySub?`<div class='done-sub'>${emptySub}</div>`:""}`);
     const b=el("button","primary-btn","戻る"); b.onclick=()=>{state.mode="home";flashDeck=[];render();}; w.appendChild(b); app.appendChild(w); return;
   }
-  if(flashIdx>=flashDeck.length){ if(!flashFanfarePlayed){ flashFanfarePlayed=true; playFanfare(); } doneScreen(isReview ? "repaso" : "tarjetas"); flashDeck=[]; return; }
-  app.appendChild(topBar(isReview ? "苦手だけ復習" : flashDeck[flashIdx].cefr, `${flashIdx+1} / ${flashDeck.length}`, ()=>{ state.mode="home"; flashDeck=[]; render(); }));
+  if(flashIdx>=flashDeck.length){ if(!flashFanfarePlayed){ flashFanfarePlayed=true; playFanfare(); } doneScreen(isReview ? "repaso" : isFlagged ? "favoritos" : "tarjetas"); flashDeck=[]; return; }
+  app.appendChild(topBar(isReview ? "苦手だけ復習" : isFlagged ? "⭐ フラグした単語" : flashDeck[flashIdx].cefr, `${flashIdx+1} / ${flashDeck.length}`, ()=>{ state.mode="home"; flashDeck=[]; render(); }));
   const card = flashDeck[flashIdx];
   if(lastSpokenFlashId !== card.id){ lastSpokenFlashId = card.id; setTimeout(()=>speak(card.es), 150); }
   const cardArea = el("div","card-area");
