@@ -1020,6 +1020,11 @@ let listenDeck=[], listenIdx=0, listenTotal=10, listenScore=0, listenLog=[], lis
 function fullSentenceOf(item){ return item.segs[0]+item.answers[0]+item.segs[1]+item.answers[1]+item.segs[2]; }
 function renderListeningDrill(){
   app.appendChild(backToMenuBtn());
+  if(typeof LISTENING_ITEMS === "undefined" || !LISTENING_ITEMS || LISTENING_ITEMS.length===0){
+    const w=el("div","done-wrap","<div class='done-title'>リスニングのデータが読み込めていません</div><div class='done-sub'>drills.js が最新版か確認してください</div>");
+    app.appendChild(w);
+    return;
+  }
   if(listenDeck.length===0){ listenDeck = shuffle(LISTENING_ITEMS).slice(0,10); listenIdx=0; listenScore=0; listenLog=[]; listenFanfarePlayed=false; lastSpokenListenIdx=null; }
   if(listenIdx>=listenDeck.length){
     if(!listenFanfarePlayed){ listenFanfarePlayed=true; playFanfare(); }
