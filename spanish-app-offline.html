@@ -338,9 +338,9 @@ function weightedSample(pool, size){
 /* ---------- Conjugation data ---------- */
 const PERSONS5 = ["yo","tú","él/ella/usted","nosotros","ellos/ellas/ustedes"];
 const PERSONS_IMP = ["tú","usted","nosotros","ustedes"];
-const TENSE_KEYS = ["presente","indefinido","imperfecto","futuro","condicional","subjuntivo","perfecto","imperativo"];
+const TENSE_KEYS = ["presente","indefinido","imperfecto","futuro","condicional","subjuntivo","perfecto","imperativo","imperativo_neg"];
 const TENSE_LABELS = { presente:"現在形", indefinido:"点過去", imperfecto:"線過去", futuro:"未来形",
-  condicional:"過去未来形(条件法)", subjuntivo:"接続法現在", perfecto:"現在完了形", imperativo:"命令形" };
+  condicional:"過去未来形(条件法)", subjuntivo:"接続法現在", perfecto:"現在完了形", imperativo:"命令形（肯定）", imperativo_neg:"命令形（否定）" };
 const TENSE_NOTES = {
   presente:"現在の習慣や事実を表す形。",
   indefinido:"過去に完了した1回きりの行為を表す（点過去）。",
@@ -349,8 +349,10 @@ const TENSE_NOTES = {
   condicional:"「もし〜なら…だろう」という仮定や、丁寧な依頼を表す（過去未来形/条件法）。",
   subjuntivo:"願望・感情・疑い・不確実さなど、事実そのものではなく心の中の内容を表す（接続法）。",
   perfecto:"「〜したことがある」「（今までに）〜した」という経験や完了を表す複合時制。haber+過去分詞で作る。",
-  imperativo:"命令・依頼を表す命令形。",
+  imperativo:"命令・依頼を表す命令形（肯定）。",
+  imperativo_neg:"「〜しないで」という否定の命令。tú以外も含め、全人称で接続法現在と同じ形にno を付けて作る。",
 };
+const SUBJ_IDX_FOR_IMP = [1,2,3,4]; // PERSONS_IMP(tú,usted,nosotros,ustedes) -> subjuntivo配列のインデックス
 function findVerb(name){ return VERBS.find(v=>v.v===name); }
 
 /* ---------- Number words (0-999) ---------- */
@@ -412,7 +414,7 @@ function buildTimeQuestion(){
 }
 
 /* ---------- Example sentences (fill in the blank) ---------- */
-function personLabelFor(tense, p){ return tense==="imperativo" ? PERSONS_IMP[p] : PERSONS5[p]; }
+function personLabelFor(tense, p){ return (tense==="imperativo"||tense==="imperativo_neg") ? PERSONS_IMP[p] : PERSONS5[p]; }
 function answerFor(ex){ return ex.answer !== undefined ? ex.answer : findVerb(ex.verb)[ex.tense][ex.p]; }
 function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}・${personLabelFor(ex.tense,ex.p)}）` : ex.label; }
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
@@ -906,9 +908,11 @@ let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conj
 function buildConjQuestion(tenseFilter){
   const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
   const verb = VERBS[Math.floor(Math.random()*VERBS.length)];
-  const persons = tense==="imperativo" ? PERSONS_IMP : PERSONS5;
+  const isImp = tense==="imperativo" || tense==="imperativo_neg";
+  const persons = isImp ? PERSONS_IMP : PERSONS5;
   const pIdx = Math.floor(Math.random()*persons.length);
-  return { verb, tense, personIdx:pIdx, personLabel:persons[pIdx], answer: verb[tense][pIdx] };
+  const answer = tense==="imperativo_neg" ? "no "+verb.subjuntivo[SUBJ_IDX_FOR_IMP[pIdx]] : verb[tense][pIdx];
+  return { verb, tense, personIdx:pIdx, personLabel:persons[pIdx], answer };
 }
 function renderConjDrill(){
   app.appendChild(backToMenuBtn());
