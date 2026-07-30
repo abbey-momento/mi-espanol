@@ -2809,7 +2809,7 @@ const DICTIONARY_DATA = {
    "ja": "「私に正直でいてほしいんだ」「もちろん、いつもそうしているよ」"
   }
  },
- "el pan": {
+ "pan": {
   "nuance": "「パン」の基本語。pan dulce（甘いパン）はメキシコの朝食・おやつの定番。",
   "etymology": "ラテン語panis（パン）に由来。",
   "synonyms": [],
@@ -2822,7 +2822,7 @@ const DICTIONARY_DATA = {
    "ja": "「焼きたてのパン買った？」「うん、まだ温かいよ」"
   }
  },
- "la fruta": {
+ "fruta": {
   "nuance": "「果物」の総称。個々の果物はmanzana、plátanoのように具体名で呼ぶ。",
   "etymology": "ラテン語fructus（果実、実り）に由来。",
   "synonyms": [],
@@ -2835,7 +2835,7 @@ const DICTIONARY_DATA = {
    "ja": "「もっと果物食べた方がいいよ」「その通りだね、明日から始めるよ」"
   }
  },
- "la manzana": {
+ "manzana": {
   "nuance": "「りんご」の基本語。メキシコを含む一部地域では「街区・ブロック」という意味でも使われる（一区画）。",
   "etymology": "ラテン語mala matiana（マティウス家のりんご種）に由来するとされる。",
   "synonyms": [],
@@ -2847,7 +2847,7 @@ const DICTIONARY_DATA = {
    "ja": "「りんご食べる？」「うん、ありがとう、お腹すいてるんだ」"
   }
  },
- "el plátano": {
+ "plátano": {
   "nuance": "「バナナ」。地域によってbananaという単語もよく使われる（特にカリブ海地域）。",
   "etymology": "ギリシャ語platanos（プラタナスの木、葉の形が似ていることから）に由来。",
   "synonyms": [
@@ -2859,7 +2859,7 @@ const DICTIONARY_DATA = {
    "ja": "「バナナちょうだい」「もちろん、どうぞ」"
   }
  },
- "el limón": {
+ "limón": {
   "nuance": "「レモン」。メキシコではライムを指すことも多く、実際のレモンとライムの呼び方が地域によって逆転することがある点に注意。",
   "etymology": "アラビア語laymūnがヨーロッパの言語に広まった語。",
   "synonyms": [],
@@ -2898,6 +2898,399 @@ const DICTIONARY_DATA = {
   "dialogue": {
    "es": "— Esta salsa está muy picante.\n— A mí me gusta bien picante.",
    "ja": "「このサルサとても辛いね」「私はかなり辛いのが好きなんだ」"
+  }
+ },
+ "ojo": {
+  "nuance": "「目」の基本語。tener ojo para（〜を見る目がある）のような慣用表現もある。",
+  "etymology": "ラテン語oculus（目）に由来。",
+  "synonyms": [],
+  "derived": [
+   "ojal（ボタンホール）"
+  ],
+  "dialogue": {
+   "es": "— Tienes los ojos muy bonitos.\n— Gracias, son de mi madre.",
+   "ja": "「とてもきれいな目をしているね」「ありがとう、母譲りなんだ」"
+  }
+ },
+ "oreja": {
+  "nuance": "「耳」の基本語。oído（聴覚・内耳）とは区別される（orejaは外から見える耳の部分）。",
+  "etymology": "ラテン語auricula（小さな耳）に由来。",
+  "synonyms": [],
+  "derived": [
+   "orejera（イヤーマフ）"
+  ],
+  "dialogue": {
+   "es": "— Me duele la oreja.\n— Deberías ver a un médico.",
+   "ja": "「耳が痛いんだ」「病院に行った方がいいよ」"
+  }
+ },
+ "nariz": {
+  "nuance": "「鼻」の基本語。meter las narices（首を突っ込む）のような慣用表現もある。",
+  "etymology": "ラテン語naris（鼻孔）に由来。",
+  "synonyms": [],
+  "derived": [
+   "nasal（鼻の）"
+  ],
+  "dialogue": {
+   "es": "— Tiene la nariz roja de frío.\n— Hace mucho frío afuera.",
+   "ja": "「寒さで鼻が赤いね」「外はとても寒いからね」"
+  }
+ },
+ "boca": {
+  "nuance": "「口」の基本語。boca abajo（うつ伏せ）のような表現にも使われる。",
+  "etymology": "ラテン語bucca（頬、口）に由来。",
+  "synonyms": [],
+  "derived": [
+   "bocado（一口）",
+   "bocina（クラクション）"
+  ],
+  "dialogue": {
+   "es": "— Abre la boca, por favor.\n— ¿Es necesario para el examen?",
+   "ja": "「口を開けてください」「検査に必要なんですか」"
+  }
+ },
+ "brazo": {
+  "nuance": "「腕」の基本語。brazo derecho（右腕、比喩的に「右腕、頼れる存在」の意味にもなる）。",
+  "etymology": "ラテン語brachium（腕）に由来。",
+  "synonyms": [],
+  "derived": [
+   "abrazar（抱きしめる）",
+   "abrazo（ハグ）"
+  ],
+  "dialogue": {
+   "es": "— Me lastimé el brazo jugando fútbol.\n— ¿Estás bien? ¿Duele mucho?",
+   "ja": "「サッカーをしていて腕を痛めたんだ」「大丈夫？すごく痛い？」"
+  }
+ },
+ "pierna": {
+  "nuance": "「脚」の基本語。動物の脚にも使うが、鶏肉などの「もも肉」の意味にもなる。",
+  "etymology": "俗ラテン語perna（もも肉、脚）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Me duelen las piernas después de correr.\n— Deberías estirar antes y después.",
+   "ja": "「走った後、脚が痛いんだ」「前後にストレッチした方がいいよ」"
+  }
+ },
+ "pie": {
+  "nuance": "「足」の基本語。a pie（歩いて）、de pie（立って）のような慣用表現が多い。",
+  "etymology": "ラテン語pes/pedis（足）に由来。",
+  "synonyms": [],
+  "derived": [
+   "apie（歩いて）",
+   "pedal（ペダル）"
+  ],
+  "dialogue": {
+   "es": "— Prefiero ir a pie.\n— Yo también, es buen ejercicio.",
+   "ja": "「歩いて行く方が好きなんだ」「私もだよ、いい運動になるし」"
+  }
+ },
+ "dedo": {
+  "nuance": "「指」の総称。手の指も足の指もdedoで、区別したいときはdedo de la mano/del pieと言う。",
+  "etymology": "ラテン語digitus（指）に由来。",
+  "synonyms": [],
+  "derived": [
+   "dedal（指ぬき）"
+  ],
+  "dialogue": {
+   "es": "— Me corté el dedo cocinando.\n— ¿Necesitas una venda?",
+   "ja": "「料理していて指を切っちゃった」「絆創膏いる？」"
+  }
+ },
+ "espalda": {
+  "nuance": "「背中」の基本語。dar la espalda（背を向ける、見捨てる）のような比喩表現もある。",
+  "etymology": "俗ラテン語spatula（肩甲骨）に由来。",
+  "synonyms": [],
+  "derived": [
+   "espaldar（背もたれ）"
+  ],
+  "dialogue": {
+   "es": "— Me duele mucho la espalda.\n— Deberías cambiar de colchón.",
+   "ja": "「背中がとても痛いんだ」「マットレスを変えた方がいいかもね」"
+  }
+ },
+ "estómago": {
+  "nuance": "「お腹・胃」の基本語。dolor de estómago（腹痛）はよく使う組み合わせ。",
+  "etymology": "ギリシャ語stomachos（胃）に由来。",
+  "synonyms": [
+   "barriga（お腹、口語）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Me duele el estómago.\n— ¿Comiste algo raro?",
+   "ja": "「お腹が痛いんだ」「何か変なもの食べた？」"
+  }
+ },
+ "cabello": {
+  "nuance": "「髪」の基本語。peloもほぼ同義でよく使われる（cabelloの方がややフォーマル）。",
+  "etymology": "ラテン語capillus（髪）に由来。",
+  "synonyms": [
+   "pelo（髪、より口語的）"
+  ],
+  "derived": [
+   "cabellera（豊かな髪）"
+  ],
+  "dialogue": {
+   "es": "— Me gusta tu corte de cabello.\n— Gracias, me lo corté ayer.",
+   "ja": "「髪型素敵だね」「ありがとう、昨日切ったんだ」"
+  }
+ },
+ "cuello": {
+  "nuance": "「首」の基本語。cuello de la botella（瓶の首→ボトルネック）のような比喩表現もある。",
+  "etymology": "ラテン語collum（首）に由来。",
+  "synonyms": [],
+  "derived": [
+   "collar（首飾り）"
+  ],
+  "dialogue": {
+   "es": "— Tengo el cuello muy tenso.\n— Deberías hacer estiramientos.",
+   "ja": "「首がとても凝っているんだ」「ストレッチした方がいいよ」"
+  }
+ },
+ "hombro": {
+  "nuance": "「肩」の基本語。encogerse de hombros（肩をすくめる）はよく使われる表現。",
+  "etymology": "ラテン語umerus（肩）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Me duele el hombro derecho.\n— ¿Dormiste en mala posición?",
+   "ja": "「右肩が痛いんだ」「変な体勢で寝ちゃったの？」"
+  }
+ },
+ "rodilla": {
+  "nuance": "「ひざ」の基本語。de rodillas（ひざまずいて）という表現もある。",
+  "etymology": "俗ラテン語rotella（小さな車輪→ひざの丸い形から）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Me lastimé la rodilla esquiando.\n— Qué mal, ¿puedes caminar?",
+   "ja": "「スキーでひざを痛めちゃった」「それは大変、歩ける？」"
+  }
+ },
+ "diente": {
+  "nuance": "「歯」の基本語。muela（奥歯）とは区別される。",
+  "etymology": "ラテン語dens/dentis（歯）に由来。",
+  "synonyms": [],
+  "derived": [
+   "dentista（歯医者）",
+   "dentadura（歯並び）"
+  ],
+  "dialogue": {
+   "es": "— Me duele un diente.\n— Deberías ir al dentista.",
+   "ja": "「歯が一本痛いんだ」「歯医者に行った方がいいよ」"
+  }
+ },
+ "piel": {
+  "nuance": "「肌・皮膚」の基本語。動物の「毛皮」という意味にもなる。",
+  "etymology": "ラテン語pellis（皮）に由来。",
+  "synonyms": [],
+  "derived": [
+   "pelar（皮をむく）"
+  ],
+  "dialogue": {
+   "es": "— Tienes la piel muy bronceada.\n— Sí, fui a la playa el fin de semana.",
+   "ja": "「肌がとても日焼けしているね」「うん、週末にビーチに行ったんだ」"
+  }
+ },
+ "uña": {
+  "nuance": "「爪」の基本語。comerse las uñas（爪を噛む）はよくある癖を表す表現。",
+  "etymology": "ラテン語ungula（爪、蹄）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Tienes las uñas muy bien pintadas.\n— Gracias, fui al salón ayer.",
+   "ja": "「爪きれいに塗ってあるね」「ありがとう、昨日サロンに行ったんだ」"
+  }
+ },
+ "hueso": {
+  "nuance": "「骨」の基本語。果物の「種」（果肉の中の硬い芯）という意味にもなる。",
+  "etymology": "ラテン語ossum（骨）に由来。",
+  "synonyms": [],
+  "derived": [
+   "huesudo（骨ばった）"
+  ],
+  "dialogue": {
+   "es": "— Se rompió un hueso jugando fútbol.\n— Qué mala suerte, ¿cuánto tiempo tardará en sanar?",
+   "ja": "「サッカーをしていて骨を折ったんだ」「なんて運が悪い、治るのにどれくらいかかるかな？」"
+  }
+ },
+ "sangre": {
+  "nuance": "「血」の基本語。sangre fría（冷血、冷静さ）のような比喩表現も多い。",
+  "etymology": "ラテン語sanguis（血）に由来。",
+  "synonyms": [],
+  "derived": [
+   "sangrar（出血する）",
+   "sanguíneo（血液の）"
+  ],
+  "dialogue": {
+   "es": "— Me hice una herida y sale sangre.\n— Espera, te traigo una venda.",
+   "ja": "「怪我して血が出てるんだ」「待って、絆創膏持ってくるね」"
+  }
+ },
+ "cocina": {
+  "nuance": "「台所」だけでなく「料理・料理法」という意味でも使われる（cocina mexicana＝メキシコ料理）。",
+  "etymology": "ラテン語coquina（調理場）に由来。",
+  "synonyms": [],
+  "derived": [
+   "cocinar（料理する）",
+   "cocinero（料理人）"
+  ],
+  "dialogue": {
+   "es": "— La cocina de tu casa es hermosa.\n— Gracias, la remodelamos hace poco.",
+   "ja": "「君の家のキッチン素敵だね」「ありがとう、最近リフォームしたんだ」"
+  }
+ },
+ "dormitorio": {
+  "nuance": "「寝室」の基本語。habitación（部屋、より一般的）やcuarto（部屋、口語）もほぼ同義で使われる。",
+  "etymology": "ラテン語dormitorium（寝る場所）に由来、dormir（眠る）と同語源。",
+  "synonyms": [
+   "habitación（部屋）",
+   "cuarto（部屋、口語）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Cuántos dormitorios tiene tu casa?\n— Tiene tres dormitorios.",
+   "ja": "「君の家は寝室いくつあるの？」「3部屋あるよ」"
+  }
+ },
+ "baño": {
+  "nuance": "「お風呂・トイレ」の両方の意味を持つ単語。公共の場では「トイレ」を指すことがほとんど。",
+  "etymology": "ラテン語balneum（浴場）に由来。",
+  "synonyms": [],
+  "derived": [
+   "bañar（入浴させる）",
+   "bañera（浴槽）"
+  ],
+  "dialogue": {
+   "es": "— ¿Dónde está el baño?\n— Al fondo del pasillo, a la derecha.",
+   "ja": "「お手洗いはどこですか」「廊下の奥、右側です」"
+  }
+ },
+ "sala": {
+  "nuance": "「リビング」の基本語。sala de espera（待合室）のような複合語にも使われる。",
+  "etymology": "ゲルマン語系の語sal（部屋、広間）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Vamos a ver la película en la sala.\n— Perfecto, voy a hacer palomitas.",
+   "ja": "「リビングで映画見よう」「いいね、ポップコーン作るよ」"
+  }
+ },
+ "jardín": {
+  "nuance": "「庭」の基本語。jardín de niños（幼稚園）という複合表現もある。",
+  "etymology": "ゲルマン語系の語gard（囲われた場所）に由来。",
+  "synonyms": [],
+  "derived": [
+   "jardinero（庭師）",
+   "jardinería（園芸）"
+  ],
+  "dialogue": {
+   "es": "— Tu jardín está lleno de flores.\n— Gracias, las cuido todos los días.",
+   "ja": "「君の庭は花でいっぱいだね」「ありがとう、毎日世話しているんだ」"
+  }
+ },
+ "cama": {
+  "nuance": "「ベッド」の基本語。hacer la cama（ベッドを整える）はよく使う表現。",
+  "etymology": "起源ははっきりしないが、俗ラテン語系の語とされる。",
+  "synonyms": [],
+  "derived": [
+   "camastro（粗末なベッド）"
+  ],
+  "dialogue": {
+   "es": "— Todavía no he hecho la cama.\n— No te preocupes, hazlo después.",
+   "ja": "「まだベッドを整えていないんだ」「気にしないで、後でやってね」"
+  }
+ },
+ "sofá": {
+  "nuance": "「ソファ」の基本語。フランス語経由でアラビア語からヨーロッパの言語に広まった単語。",
+  "etymology": "アラビア語suffa（クッション付きの座席）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Este sofá es muy cómodo.\n— Sí, me quedo dormido en él muy fácil.",
+   "ja": "「このソファとても座り心地いいね」「うん、すぐ眠っちゃうんだ」"
+  }
+ },
+ "techo": {
+  "nuance": "「屋根・天井」の両方の意味を持つ単語。techo de cristal（ガラスの天井、比喩的に「見えない昇進の壁」）のような表現もある。",
+  "etymology": "ラテン語tectum（覆い、屋根）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El techo tiene una gotera.\n— Hay que llamar a un técnico.",
+   "ja": "「天井から雨漏りしているんだ」「技術者を呼ばないとね」"
+  }
+ },
+ "pared": {
+  "nuance": "「壁」の基本語。建物の内壁・外壁どちらにも使う（muroは主に外の塀・壁）。",
+  "etymology": "ラテン語paries（壁）に由来。",
+  "synonyms": [
+   "muro（塀、外壁）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Voy a pintar la pared de azul.\n— Qué buena idea, va a quedar bonito.",
+   "ja": "「壁を青く塗るつもりなんだ」「いい考えだね、きれいになりそう」"
+  }
+ },
+ "escalera": {
+  "nuance": "「階段」の基本語。escalera mecánica（エスカレーター）、escalera eléctrica（同左）も派生表現。",
+  "etymology": "ラテン語scalaria（階段）に由来。",
+  "synonyms": [],
+  "derived": [
+   "escalar（登る）",
+   "escalón（一段）"
+  ],
+  "dialogue": {
+   "es": "— Prefiero usar las escaleras.\n— Yo también, es más saludable.",
+   "ja": "「階段を使う方が好きなんだ」「私もだよ、その方が健康的だしね」"
+  }
+ },
+ "garaje": {
+  "nuance": "「ガレージ」の基本語。フランス語からの借用語。",
+  "etymology": "フランス語garage（保管場所）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El coche está en el garaje.\n— Voy por él ahora.",
+   "ja": "「車はガレージにあるよ」「今取りに行くね」"
+  }
+ },
+ "refrigerador": {
+  "nuance": "「冷蔵庫」。地域によってneveraやfrigoríficoとも呼ばれる（スペインではfrigorífico、メキシコではrefrigeradorが一般的）。",
+  "etymology": "refrigerar（冷やす）から派生、ラテン語refrigerare（冷やす）に由来。",
+  "synonyms": [
+   "nevera（冷蔵庫、地域による）"
+  ],
+  "derived": [
+   "refrigerar（冷やす）"
+  ],
+  "dialogue": {
+   "es": "— El refrigerador está vacío.\n— Vamos a hacer las compras.",
+   "ja": "「冷蔵庫が空っぽだよ」「買い物に行こう」"
+  }
+ },
+ "estufa": {
+  "nuance": "「コンロ」。メキシコではガスコンロを指すことが多いが、スペインではcocina（台所と同じ単語）を使うことも。地域差が大きい単語。",
+  "etymology": "起源は諸説あるが、イタリア語stufa（暖房器具）と関連するとされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— La estufa no enciende.\n— Voy a revisar el gas.",
+   "ja": "「コンロがつかないんだ」「ガスを確認してみるね」"
+  }
+ },
+ "horno": {
+  "nuance": "「オーブン」の基本語。al horno（オーブンで焼いた）という表現は料理名によく使われる。",
+  "etymology": "ラテン語furnus（かまど）に由来。",
+  "synonyms": [],
+  "derived": [
+   "hornear（オーブンで焼く）",
+   "hornilla（コンロの口）"
+  ],
+  "dialogue": {
+   "es": "— El pollo al horno está listo.\n— Huele delicioso.",
+   "ja": "「オーブン焼きチキンができたよ」「美味しそうな匂いだね」"
   }
  }
 };

@@ -266,11 +266,13 @@ function speak(text){
 /* ---------- Persistence ---------- */
 function loadProgress(){
   let data;
-  try{ const raw = localStorage.getItem(STORAGE_KEY); data = raw?JSON.parse(raw):{counts:{},streak:0,lastDate:null,history:[],flagged:{},flaggedGrammar:{}}; }
-  catch{ data = {counts:{},streak:0,lastDate:null,history:[],flagged:{},flaggedGrammar:{}}; }
+  try{ const raw = localStorage.getItem(STORAGE_KEY); data = raw?JSON.parse(raw):{counts:{},streak:0,lastDate:null,history:[],flagged:{},flaggedGrammar:{},settings:{autoplay:true}}; }
+  catch{ data = {counts:{},streak:0,lastDate:null,history:[],flagged:{},flaggedGrammar:{},settings:{autoplay:true}}; }
   data.history = data.history || [];
   data.flagged = data.flagged || {};
   data.flaggedGrammar = data.flaggedGrammar || {};
+  data.settings = data.settings || {};
+  if(typeof data.settings.autoplay !== "boolean") data.settings.autoplay = true;
   const today = todayStr();
   if(data.lastDate !== today){
     const y = new Date(); y.setDate(y.getDate()-1);
@@ -281,6 +283,11 @@ function loadProgress(){
   if(!data.history.includes(today)) data.history.push(today);
   saveProgress(data);
   return data;
+}
+function toggleAutoplay(){
+  progress.settings = progress.settings || {};
+  progress.settings.autoplay = !progress.settings.autoplay;
+  saveProgress(progress);
 }
 function toggleFlag(id){
   progress.flagged = progress.flagged || {};
@@ -436,7 +443,7 @@ function ensureTabScript(tab){
     LAZY_STATE[src] = "loading";
     const s = document.createElement("script");
     s.src = src;
-    s.onload = ()=>{ LAZY_STATE[src] = "done"; render(); };
+    s.onload = ()=>{ LAZY_STATE[src] = "done"; if(src==="dictionary.js" && typeof normalizeDictionaryKeysOnce==="function") normalizeDictionaryKeysOnce(); render(); };
     s.onerror = ()=>{ LAZY_STATE[src] = "error"; render(); };
     document.head.appendChild(s);
   }
@@ -503,8 +510,20 @@ function renderVocabHome(){
   const stats = computeStats();
   const pct = stats.barPct;
   const header = el("div");
-  header.appendChild(el("div","eyebrow","CUADERNO DE VIAJE"));
-  header.appendChild(el("h1","title","Tu español"));
+  const topLine = el("div"); topLine.style.display="flex"; topLine.style.justifyContent="space-between"; topLine.style.alignItems="flex-start";
+  const eyebrowWrap = el("div");
+  eyebrowWrap.appendChild(el("div","eyebrow","CUADERNO DE VIAJE"));
+  eyebrowWrap.appendChild(el("h1","title","Tu español"));
+  topLine.appendChild(eyebrowWrap);
+  progress.settings = progress.settings || {};
+  const autoplayBtn = el("button","speak-btn", progress.settings.autoplay ? "🔊" : "🔇");
+  autoplayBtn.style.marginTop="2px";
+  autoplayBtn.onclick = ()=>{ playTap(); toggleAutoplay(); render(); };
+  topLine.appendChild(autoplayBtn);
+  header.appendChild(topLine);
+  const autoplayHint = el("div","streak-hint", progress.settings.autoplay ? "自動読み上げ: オン" : "自動読み上げ: オフ");
+  autoplayHint.style.marginTop="2px";
+  header.appendChild(autoplayHint);
   const sr = el("div","streak-row");
   sr.innerHTML = `<span>🔥</span><span class="streak-text">${progress.streak} ${progress.streak===1?"día":"días"} seguidos</span><span class="streak-hint">›</span>`;
   sr.onclick = ()=>{ playTap(); state.calendarOpen=true; render(); };
@@ -590,6 +609,13 @@ function renderCalendar(){
   app.appendChild(el("div","footer-hint","塗りつぶされた日が学習した日です"));
 }
 function normDictKey(s){ return (s||"").trim().toLowerCase().replace(/^(el|la|los|las)\s+/,""); }
+function normalizeDictionaryKeysOnce(){
+  if(typeof DICTIONARY_DATA === "undefined") return;
+  const fixed = {};
+  Object.keys(DICTIONARY_DATA).forEach(k=>{ fixed[normDictKey(k)] = DICTIONARY_DATA[k]; });
+  Object.keys(DICTIONARY_DATA).forEach(k=> delete DICTIONARY_DATA[k]);
+  Object.assign(DICTIONARY_DATA, fixed);
+}
 function goToDictionary(word){
   state.tab = "dict";
   state.dictDetailWord = normDictKey(word);
@@ -779,7 +805,7 @@ function renderFlash(){
   if(flashIdx>=flashDeck.length){ if(!flashFanfarePlayed){ flashFanfarePlayed=true; playFanfare(); } doneScreen(isReview ? "repaso" : isFlagged ? "favoritos" : "tarjetas"); flashDeck=[]; return; }
   app.appendChild(topBar(isReview ? "苦手だけ復習" : isFlagged ? "⭐ フラグした単語" : flashDeck[flashIdx].cefr, `${flashIdx+1} / ${flashDeck.length}`, ()=>{ state.mode="home"; flashDeck=[]; render(); }));
   const card = flashDeck[flashIdx];
-  if(lastSpokenFlashId !== card.id){ lastSpokenFlashId = card.id; setTimeout(()=>speak(card.es), 150); }
+  if(lastSpokenFlashId !== card.id){ lastSpokenFlashId = card.id; if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(card.es), 150); }
   const cardArea = el("div","card-area");
   const fcEl = el("div","flashcard"+(flashFlipped?" flipped":""));
   const front = el("div","flash-face flash-front");
@@ -833,7 +859,7 @@ function renderQuiz(){
     app.appendChild(rl);
     quizQuestion=null; return;
   }
-  if(lastSpokenQuizId !== quizQuestion.word.id){ lastSpokenQuizId = quizQuestion.word.id; setTimeout(()=>speak(quizQuestion.word.es), 150); }
+  if(lastSpokenQuizId !== quizQuestion.word.id){ lastSpokenQuizId = quizQuestion.word.id; if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(quizQuestion.word.es), 150); }
   app.appendChild(topBar(quizQuestion.word.cefr, `${quizIdx+1} / ${quizTotal}`, ()=>{ state.mode="home"; quizQuestion=null; render(); }));
   const prompt = el("div","quiz-prompt");
   prompt.innerHTML = `<div class="quiz-label">¿Cómo se dice…?</div><div class="quiz-word">${quizQuestion.word.es}</div>`;
@@ -935,7 +961,7 @@ function renderConjDrill(){
   if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; }
   if(conjIdx>=conjTotal){ if(!conjFanfarePlayed){ conjFanfarePlayed=true; playFanfare(); } doneScreenConj(); return; }
   const conjKey = conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
-  if(lastSpokenConjKey !== conjKey){ lastSpokenConjKey = conjKey; setTimeout(()=>speak(conjQuestion.verb.v), 150); }
+  if(lastSpokenConjKey !== conjKey){ lastSpokenConjKey = conjKey; if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(conjQuestion.verb.v), 150); }
   const pr = el("div"); pr.style.textAlign="center"; pr.style.marginBottom="14px";
   pr.innerHTML = `<div class="top-bar-label">${conjIdx+1} / ${conjTotal}　·　スコア ${conjScore}</div>`;
   app.appendChild(pr);
