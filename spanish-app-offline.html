@@ -143,10 +143,12 @@
   .explain-ja { font-size:13.5px; color:#EFE7FA; line-height:1.7; margin-bottom:8px; }
   .glossary-item { font-size:12.5px; color:#C9BBE8; margin-top:3px; }
   .glossary-item b { color: var(--accent3); }
-  .grammar-table { width:100%; border-collapse:collapse; margin-top:14px; font-size:13px; }
-  .grammar-table th, .grammar-table td { padding:9px 8px; text-align:left; border-bottom:1px solid rgba(255,255,255,0.14); }
+  .grammar-table-wrap { overflow-x:auto; margin-top:14px; -webkit-overflow-scrolling:touch; border-radius:12px; }
+  .grammar-table { border-collapse:collapse; font-size:13px; white-space:nowrap; }
+  .grammar-table th, .grammar-table td { padding:9px 14px; text-align:left; border-bottom:1px solid rgba(255,255,255,0.14); }
   .grammar-table th { color: var(--accent3); font-weight:700; font-size:11.5px; letter-spacing:0.03em; }
   .grammar-table td { color:#EFE7FA; }
+  .grammar-table-hint { font-size:11px; color:#9C8FC2; margin-top:6px; text-align:right; }
   .grammar-list-item { background: rgba(255,255,255,0.06); border-radius:16px; padding:16px 18px; margin-bottom:12px; border:1px solid rgba(255,255,255,0.13); cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
   .grammar-list-title { font-family: Georgia, serif; font-size:15px; font-weight:700; color:var(--card); }
   .grammar-chevron { color:#C9BBE8; font-size:16px; }
@@ -1303,7 +1305,12 @@ function renderGrammar(){
       tbody.appendChild(tr);
     });
     table.appendChild(tbody);
-    bodyBox.appendChild(table);
+    const tableWrap = el("div","grammar-table-wrap");
+    tableWrap.appendChild(table);
+    bodyBox.appendChild(tableWrap);
+    if(a.table.cols.length>3){
+      bodyBox.appendChild(el("div","grammar-table-hint","← 横にスクロールできます →"));
+    }
   }
   app.appendChild(bodyBox);
   const gList = getGrammarList();
