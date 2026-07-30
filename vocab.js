@@ -6594,5 +6594,1115 @@ const VOCAB_DATA = [
   "ja": "引き起こす（連鎖的に）",
   "cat": "Verbos",
   "nivel": "avanzado"
+ },
+ {
+  "es": "La rutina",
+  "en": "Routine",
+  "ja": "日課",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "El despertador",
+  "en": "Alarm clock",
+  "ja": "目覚まし時計",
+  "cat": "Casa"
+ },
+ {
+  "es": "La ducha",
+  "en": "Shower",
+  "ja": "シャワー",
+  "cat": "Casa"
+ },
+ {
+  "es": "El cepillo de dientes",
+  "en": "Toothbrush",
+  "ja": "歯ブラシ",
+  "cat": "Casa"
+ },
+ {
+  "es": "La siesta",
+  "en": "Nap",
+  "ja": "昼寝",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "El descanso",
+  "en": "Rest / break",
+  "ja": "休憩",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "La merienda",
+  "en": "Afternoon snack",
+  "ja": "おやつ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El horario de trabajo",
+  "en": "Work schedule",
+  "ja": "勤務時間",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La lista de tareas",
+  "en": "To-do list",
+  "ja": "タスクリスト",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El fin de semana",
+  "en": "Weekend",
+  "ja": "週末",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "El día libre",
+  "en": "Day off",
+  "ja": "休みの日",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "La costumbre",
+  "en": "Habit / custom",
+  "ja": "習慣",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "La noticia",
+  "en": "News (item)",
+  "ja": "ニュース",
+  "cat": "General"
+ },
+ {
+  "es": "El periódico",
+  "en": "Newspaper",
+  "ja": "新聞",
+  "cat": "General"
+ },
+ {
+  "es": "La revista",
+  "en": "Magazine",
+  "ja": "雑誌",
+  "cat": "General"
+ },
+ {
+  "es": "El canal",
+  "en": "Channel",
+  "ja": "チャンネル",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El anuncio",
+  "en": "Advertisement / announcement",
+  "ja": "広告・お知らせ",
+  "cat": "General"
+ },
+ {
+  "es": "La emisora",
+  "en": "Radio station",
+  "ja": "放送局",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El titular",
+  "en": "Headline",
+  "ja": "見出し",
+  "cat": "General"
+ },
+ {
+  "es": "La transmisión",
+  "en": "Broadcast",
+  "ja": "放送",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El podcast",
+  "en": "Podcast",
+  "ja": "ポッドキャスト",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El vecino",
+  "en": "Neighbor",
+  "ja": "隣人",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La vecindad",
+  "en": "Neighborhood",
+  "ja": "近隣",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La costumbre social",
+  "en": "Social custom",
+  "ja": "社会習慣",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El voluntariado",
+  "en": "Volunteering",
+  "ja": "ボランティア活動",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La generación",
+  "en": "Generation",
+  "ja": "世代",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La igualdad",
+  "en": "Equality",
+  "ja": "平等",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La diversidad",
+  "en": "Diversity",
+  "ja": "多様性",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La emergencia",
+  "en": "Emergency",
+  "ja": "緊急事態",
+  "cat": "Salud"
+ },
+ {
+  "es": "La ambulancia",
+  "en": "Ambulance",
+  "ja": "救急車",
+  "cat": "Salud"
+ },
+ {
+  "es": "El accidente",
+  "en": "Accident",
+  "ja": "事故",
+  "cat": "Salud"
+ },
+ {
+  "es": "El incendio",
+  "en": "Fire (blaze)",
+  "ja": "火事",
+  "cat": "Salud"
+ },
+ {
+  "es": "La evacuación",
+  "en": "Evacuation",
+  "ja": "避難",
+  "cat": "Salud"
+ },
+ {
+  "es": "El extintor",
+  "en": "Fire extinguisher",
+  "ja": "消火器",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "Los primeros auxilios",
+  "en": "First aid",
+  "ja": "応急処置",
+  "cat": "Salud"
+ },
+ {
+  "es": "La sala de emergencias",
+  "en": "Emergency room",
+  "ja": "救急外来",
+  "cat": "Salud"
+ },
+ {
+  "es": "El peligro",
+  "en": "Danger",
+  "ja": "危険",
+  "cat": "Salud"
+ },
+ {
+  "es": "La seguridad",
+  "en": "Safety / security",
+  "ja": "安全",
+  "cat": "Salud"
+ },
+ {
+  "es": "El gorro",
+  "en": "Beanie / winter hat",
+  "ja": "ニット帽",
+  "cat": "Ropa"
+ },
+ {
+  "es": "Las botas de nieve",
+  "en": "Snow boots",
+  "ja": "スノーブーツ",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El impermeable",
+  "en": "Raincoat",
+  "ja": "レインコート",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La sudadera",
+  "en": "Hoodie / sweatshirt",
+  "ja": "パーカー",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El suéter",
+  "en": "Sweater",
+  "ja": "セーター",
+  "cat": "Ropa"
+ },
+ {
+  "es": "Las medias",
+  "en": "Stockings / tights",
+  "ja": "タイツ",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La gorra",
+  "en": "Cap",
+  "ja": "キャップ",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El chándal",
+  "en": "Tracksuit",
+  "ja": "ジャージ",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La garganta",
+  "en": "Throat",
+  "ja": "喉",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El codo",
+  "en": "Elbow",
+  "ja": "肘",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La muñeca",
+  "en": "Wrist",
+  "ja": "手首",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La ceja",
+  "en": "Eyebrow",
+  "ja": "眉",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La pestaña",
+  "en": "Eyelash",
+  "ja": "まつげ",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El tratamiento",
+  "en": "Treatment",
+  "ja": "治療",
+  "cat": "Salud"
+ },
+ {
+  "es": "La inyección",
+  "en": "Injection",
+  "ja": "注射",
+  "cat": "Salud"
+ },
+ {
+  "es": "El termómetro",
+  "en": "Thermometer",
+  "ja": "体温計",
+  "cat": "Salud"
+ },
+ {
+  "es": "La presión arterial",
+  "en": "Blood pressure",
+  "ja": "血圧",
+  "cat": "Salud"
+ },
+ {
+  "es": "La cicatriz",
+  "en": "Scar",
+  "ja": "傷跡",
+  "cat": "Salud"
+ },
+ {
+  "es": "El helicóptero",
+  "en": "Helicopter",
+  "ja": "ヘリコプター",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El barco de vela",
+  "en": "Sailboat",
+  "ja": "ヨット",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El transbordador",
+  "en": "Ferry",
+  "ja": "フェリー",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La furgoneta",
+  "en": "Van",
+  "ja": "バン",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El tranvía",
+  "en": "Tram",
+  "ja": "路面電車",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El casco",
+  "en": "Helmet",
+  "ja": "ヘルメット",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El cinturón de seguridad",
+  "en": "Seatbelt",
+  "ja": "シートベルト",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La licencia de conducir",
+  "en": "Driver's license",
+  "ja": "運転免許証",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El sushi",
+  "en": "Sushi",
+  "ja": "寿司",
+  "cat": "Comida"
+ },
+ {
+  "es": "Los fideos",
+  "en": "Noodles",
+  "ja": "麺",
+  "cat": "Comida"
+ },
+ {
+  "es": "La pasta",
+  "en": "Pasta",
+  "ja": "パスタ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El curry",
+  "en": "Curry",
+  "ja": "カレー",
+  "cat": "Comida"
+ },
+ {
+  "es": "La miel",
+  "en": "Honey",
+  "ja": "蜂蜜",
+  "cat": "Comida"
+ },
+ {
+  "es": "La mermelada",
+  "en": "Jam",
+  "ja": "ジャム",
+  "cat": "Comida"
+ },
+ {
+  "es": "El yogur",
+  "en": "Yogurt",
+  "ja": "ヨーグルト",
+  "cat": "Comida"
+ },
+ {
+  "es": "La avena",
+  "en": "Oatmeal",
+  "ja": "オートミール",
+  "cat": "Comida"
+ },
+ {
+  "es": "El cereal",
+  "en": "Cereal",
+  "ja": "シリアル",
+  "cat": "Comida"
+ },
+ {
+  "es": "La miel de maple",
+  "en": "Maple syrup",
+  "ja": "メープルシロップ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El caldo",
+  "en": "Broth",
+  "ja": "だし・スープの素",
+  "cat": "Comida"
+ },
+ {
+  "es": "La ensalada de frutas",
+  "en": "Fruit salad",
+  "ja": "フルーツサラダ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El museo de arte",
+  "en": "Art museum",
+  "ja": "美術館",
+  "cat": "Arte"
+ },
+ {
+  "es": "La escultura moderna",
+  "en": "Modern sculpture",
+  "ja": "現代彫刻",
+  "cat": "Arte"
+ },
+ {
+  "es": "El festival",
+  "en": "Festival",
+  "ja": "フェスティバル",
+  "cat": "Festividades"
+ },
+ {
+  "es": "La danza",
+  "en": "Dance (art form)",
+  "ja": "舞踊",
+  "cat": "Arte"
+ },
+ {
+  "es": "El folclore",
+  "en": "Folklore",
+  "ja": "民間伝承",
+  "cat": "Arte"
+ },
+ {
+  "es": "La artesanía",
+  "en": "Craftsmanship / handicraft",
+  "ja": "手工芸",
+  "cat": "Arte"
+ },
+ {
+  "es": "El mural",
+  "en": "Mural",
+  "ja": "壁画",
+  "cat": "Arte"
+ },
+ {
+  "es": "La leyenda",
+  "en": "Legend",
+  "ja": "伝説",
+  "cat": "Arte"
+ },
+ {
+  "es": "El patrimonio",
+  "en": "Heritage",
+  "ja": "遺産",
+  "cat": "Arte"
+ },
+ {
+  "es": "La tradición",
+  "en": "Tradition",
+  "ja": "伝統",
+  "cat": "Arte"
+ },
+ {
+  "es": "La actualización de software",
+  "en": "Software update",
+  "ja": "ソフトウェア更新",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El virus informático",
+  "en": "Computer virus",
+  "ja": "コンピューターウイルス",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La copia de seguridad",
+  "en": "Backup",
+  "ja": "バックアップ",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El almacenamiento",
+  "en": "Storage",
+  "ja": "ストレージ",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La configuración",
+  "en": "Settings",
+  "ja": "設定",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El chip electrónico",
+  "en": "Electronic chip",
+  "ja": "電子チップ",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La conexión",
+  "en": "Connection",
+  "ja": "接続",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El código QR",
+  "en": "QR code",
+  "ja": "QRコード",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La autenticación",
+  "en": "Authentication",
+  "ja": "認証",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El asistente virtual",
+  "en": "Virtual assistant",
+  "ja": "バーチャルアシスタント",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El ecosistema",
+  "en": "Ecosystem",
+  "ja": "生態系",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La contaminación",
+  "en": "Pollution",
+  "ja": "汚染",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El reciclaje",
+  "en": "Recycling",
+  "ja": "リサイクル",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La energía solar",
+  "en": "Solar energy",
+  "ja": "太陽エネルギー",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El calentamiento global",
+  "en": "Global warming",
+  "ja": "地球温暖化",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La especie",
+  "en": "Species",
+  "ja": "種",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El hábitat",
+  "en": "Habitat",
+  "ja": "生息地",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La extinción",
+  "en": "Extinction",
+  "ja": "絶滅",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "La conservación",
+  "en": "Conservation",
+  "ja": "保全",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El paisaje",
+  "en": "Landscape",
+  "ja": "景色",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "Amable y paciente",
+  "en": "Kind and patient",
+  "ja": "優しくて忍耐強い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Cuidadoso",
+  "en": "Careful",
+  "ja": "注意深い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Descuidado",
+  "en": "Careless",
+  "ja": "不注意な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Puntual",
+  "en": "Punctual",
+  "ja": "時間に正確な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Impuntual",
+  "en": "Not punctual",
+  "ja": "時間にルーズな",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Flexible（personalidad）",
+  "en": "Flexible (personality)",
+  "ja": "柔軟な（性格）",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Estricto",
+  "en": "Strict",
+  "ja": "厳しい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Comprensivo",
+  "en": "Understanding",
+  "ja": "理解のある",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Justo",
+  "en": "Fair",
+  "ja": "公正な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Injusto",
+  "en": "Unfair",
+  "ja": "不公正な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Modesto",
+  "en": "Modest",
+  "ja": "謙虚な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Arrogante",
+  "en": "Arrogant",
+  "ja": "傲慢な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Leal",
+  "en": "Loyal",
+  "ja": "忠実な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Confiable",
+  "en": "Reliable",
+  "ja": "信頼できる",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Ingenuo",
+  "en": "Naive",
+  "ja": "世間知らずな",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Sugerir",
+  "en": "To suggest",
+  "ja": "提案する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Proponer",
+  "en": "To propose",
+  "ja": "提案する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Aceptar",
+  "en": "To accept",
+  "ja": "受け入れる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Rechazar",
+  "en": "To reject",
+  "ja": "拒否する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Confirmar",
+  "en": "To confirm",
+  "ja": "確認する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Cancelar",
+  "en": "To cancel",
+  "ja": "キャンセルする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Reservar",
+  "en": "To reserve / book",
+  "ja": "予約する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Organizar",
+  "en": "To organize",
+  "ja": "整理する・企画する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Planear",
+  "en": "To plan",
+  "ja": "計画する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Lograr",
+  "en": "To achieve",
+  "ja": "達成する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Fracasar",
+  "en": "To fail",
+  "ja": "失敗する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Intentar",
+  "en": "To try / attempt",
+  "ja": "試みる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Evitar",
+  "en": "To avoid",
+  "ja": "避ける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Impedir",
+  "en": "To prevent",
+  "ja": "妨げる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Permitir el acceso",
+  "en": "To allow access",
+  "ja": "アクセスを許可する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Comparar",
+  "en": "To compare",
+  "ja": "比較する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Combinar",
+  "en": "To combine",
+  "ja": "組み合わせる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Separar",
+  "en": "To separate",
+  "ja": "分ける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Reunir",
+  "en": "To gather / bring together",
+  "ja": "集める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Compartir",
+  "en": "To share",
+  "ja": "共有する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "¿Me puede repetir, por favor?",
+  "en": "Could you repeat that, please?",
+  "ja": "もう一度言ってもらえますか",
+  "cat": "Frases"
+ },
+ {
+  "es": "No pasa nada",
+  "en": "It's nothing / no problem",
+  "ja": "大丈夫、問題ないよ",
+  "cat": "Frases"
+ },
+ {
+  "es": "Vale la pena",
+  "en": "It's worth it",
+  "ja": "その価値がある",
+  "cat": "Frases"
+ },
+ {
+  "es": "Estoy de camino",
+  "en": "I'm on my way",
+  "ja": "今向かっています",
+  "cat": "Frases"
+ },
+ {
+  "es": "Tómalo con calma",
+  "en": "Take it easy",
+  "ja": "落ち着いて",
+  "cat": "Frases"
+ },
+ {
+  "es": "No hay problema",
+  "en": "No problem",
+  "ja": "問題ないです",
+  "cat": "Frases"
+ },
+ {
+  "es": "A ver qué pasa",
+  "en": "Let's see what happens",
+  "ja": "どうなるか見てみよう",
+  "cat": "Frases"
+ },
+ {
+  "es": "Contigo o sin ti",
+  "en": "With or without you",
+  "ja": "君がいてもいなくても",
+  "cat": "Frases"
+ },
+ {
+  "es": "Lo tengo bajo control",
+  "en": "I've got it under control",
+  "ja": "ちゃんとコントロールできている",
+  "cat": "Frases"
+ },
+ {
+  "es": "Estoy a punto de salir",
+  "en": "I'm about to leave",
+  "ja": "ちょうど出かけるところ",
+  "cat": "Frases"
+ },
+ {
+  "es": "Cuenta conmigo",
+  "en": "Count me in",
+  "ja": "頼ってね・私も参加するよ",
+  "cat": "Frases"
+ },
+ {
+  "es": "Ya era hora",
+  "en": "It was about time",
+  "ja": "やっとだね",
+  "cat": "Frases"
+ },
+ {
+  "es": "Me da igual",
+  "en": "I don't mind either way",
+  "ja": "どっちでもいい",
+  "cat": "Frases"
+ },
+ {
+  "es": "Vamos al grano",
+  "en": "Let's get to the point",
+  "ja": "本題に入ろう",
+  "cat": "Frases"
+ },
+ {
+  "es": "Eso tiene sentido",
+  "en": "That makes sense",
+  "ja": "それは筋が通っている",
+  "cat": "Frases"
+ },
+ {
+  "es": "La garantía",
+  "en": "Warranty",
+  "ja": "保証",
+  "cat": "Compras"
+ },
+ {
+  "es": "El reembolso",
+  "en": "Refund",
+  "ja": "返金",
+  "cat": "Compras"
+ },
+ {
+  "es": "El envío",
+  "en": "Shipping",
+  "ja": "配送",
+  "cat": "Compras"
+ },
+ {
+  "es": "La entrega",
+  "en": "Delivery",
+  "ja": "配達",
+  "cat": "Compras"
+ },
+ {
+  "es": "El pedido",
+  "en": "Order",
+  "ja": "注文",
+  "cat": "Compras"
+ },
+ {
+  "es": "La suscripción",
+  "en": "Subscription",
+  "ja": "サブスクリプション",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La deuda",
+  "en": "Debt",
+  "ja": "借金",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El interés（financiero）",
+  "en": "Interest (financial)",
+  "ja": "利子",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El Día de la Independencia",
+  "en": "Independence Day",
+  "ja": "独立記念日",
+  "cat": "Festividades"
+ },
+ {
+  "es": "El Día de las Madres",
+  "en": "Mother's Day",
+  "ja": "母の日",
+  "cat": "Festividades"
+ },
+ {
+  "es": "El Día de los Muertos",
+  "en": "Day of the Dead",
+  "ja": "死者の日",
+  "cat": "Festividades"
+ },
+ {
+  "es": "Las posadas",
+  "en": "Posadas (Mexican Christmas tradition)",
+  "ja": "ポサーダス（メキシコのクリスマス行事）",
+  "cat": "Festividades"
+ },
+ {
+  "es": "El Día de Reyes",
+  "en": "Three Kings' Day",
+  "ja": "公現祭（三賢者の日）",
+  "cat": "Festividades"
+ },
+ {
+  "es": "La quinceañera",
+  "en": "15th birthday celebration (girl's coming of age)",
+  "ja": "キンセアニェーラ（15歳の成人祝い）",
+  "cat": "Festividades"
+ },
+ {
+  "es": "Querer decir",
+  "en": "To mean",
+  "ja": "〜という意味だ",
+  "cat": "Frases"
+ },
+ {
+  "es": "Gustar",
+  "en": "To like / to be pleasing to",
+  "ja": "好きだ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Necesario",
+  "en": "Necessary",
+  "ja": "必要な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Importante",
+  "en": "Important",
+  "ja": "重要な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Dejar",
+  "en": "To leave (behind) / to let",
+  "ja": "置いていく・させる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Pasar",
+  "en": "To pass / to happen / to spend (time)",
+  "ja": "通る・起こる・過ごす",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Seguir",
+  "en": "To continue / to follow",
+  "ja": "続ける・従う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El mundo",
+  "en": "World",
+  "ja": "世界",
+  "cat": "Geografía"
+ },
+ {
+  "es": "El país",
+  "en": "Country",
+  "ja": "国",
+  "cat": "Geografía"
+ },
+ {
+  "es": "La manera",
+  "en": "Way / manner",
+  "ja": "方法・やり方",
+  "cat": "General"
+ },
+ {
+  "es": "El momento",
+  "en": "Moment",
+  "ja": "瞬間",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "La parte",
+  "en": "Part",
+  "ja": "部分",
+  "cat": "General"
+ },
+ {
+  "es": "El lugar",
+  "en": "Place",
+  "ja": "場所",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La vida",
+  "en": "Life",
+  "ja": "人生・命",
+  "cat": "General"
+ },
+ {
+  "es": "La verdad",
+  "en": "Truth",
+  "ja": "真実",
+  "cat": "General"
  }
 ];
