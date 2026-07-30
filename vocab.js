@@ -7776,5 +7776,246 @@ const VOCAB_DATA = [
   "en": "Why",
   "ja": "なぜ",
   "cat": "Frases"
+ },
+ {
+  "es": "Sentirse solo",
+  "en": "To feel lonely",
+  "ja": "孤独を感じる",
+  "cat": "Emociones",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "La alegría",
+  "en": "Joy",
+  "ja": "喜び",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La tristeza",
+  "en": "Sadness",
+  "ja": "悲しみ",
+  "cat": "Emociones"
+ },
+ {
+  "es": "El miedo",
+  "en": "Fear",
+  "ja": "恐怖",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La esperanza",
+  "en": "Hope",
+  "ja": "希望",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La paciencia",
+  "en": "Patience",
+  "ja": "忍耐",
+  "cat": "Emociones"
+ },
+ {
+  "es": "El pulso",
+  "en": "Pulse",
+  "ja": "脈拍",
+  "cat": "Salud"
+ },
+ {
+  "es": "La respiración",
+  "en": "Breathing",
+  "ja": "呼吸",
+  "cat": "Salud"
+ },
+ {
+  "es": "El estornudo",
+  "en": "Sneeze",
+  "ja": "くしゃみ",
+  "cat": "Salud"
+ },
+ {
+  "es": "La tos",
+  "en": "Cough",
+  "ja": "咳",
+  "cat": "Salud"
+ },
+ {
+  "es": "El mareo",
+  "en": "Dizziness",
+  "ja": "めまい",
+  "cat": "Salud"
+ },
+ {
+  "es": "La aspiradora",
+  "en": "Vacuum cleaner",
+  "ja": "掃除機",
+  "cat": "Casa"
+ },
+ {
+  "es": "La plancha",
+  "en": "Iron (for clothes)",
+  "ja": "アイロン",
+  "cat": "Casa"
+ },
+ {
+  "es": "El basurero",
+  "en": "Trash can",
+  "ja": "ゴミ箱",
+  "cat": "Casa"
+ },
+ {
+  "es": "La escoba",
+  "en": "Broom",
+  "ja": "ほうき",
+  "cat": "Casa"
+ },
+ {
+  "es": "El detergente",
+  "en": "Detergent",
+  "ja": "洗剤",
+  "cat": "Casa"
+ },
+ {
+  "es": "La videollamada",
+  "en": "Video call",
+  "ja": "ビデオ通話",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El teletrabajo",
+  "en": "Remote work",
+  "ja": "テレワーク",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El equipo de trabajo",
+  "en": "Work team",
+  "ja": "仕事のチーム",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La capacitación",
+  "en": "Training",
+  "ja": "研修",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El ascenso",
+  "en": "Promotion (job)",
+  "ja": "昇進",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El equipaje facturado",
+  "en": "Checked luggage",
+  "ja": "預け荷物",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El tour",
+  "en": "Tour",
+  "ja": "ツアー",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La propina",
+  "en": "Tip (gratuity)",
+  "ja": "チップ",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El check-in",
+  "en": "Check-in",
+  "ja": "チェックイン",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El taco al pastor",
+  "en": "Al pastor taco",
+  "ja": "タコス・アル・パストール",
+  "cat": "Comida"
+ },
+ {
+  "es": "La horchata",
+  "en": "Horchata (rice drink)",
+  "ja": "オルチャータ（米の飲み物）",
+  "cat": "Comida"
+ },
+ {
+  "es": "El elote",
+  "en": "Corn on the cob (Mexican street food)",
+  "ja": "メキシコ風とうもろこし",
+  "cat": "Comida"
+ },
+ {
+  "es": "La torta",
+  "en": "Mexican sandwich",
+  "ja": "トルタ（メキシコ風サンドイッチ）",
+  "cat": "Comida"
+ },
+ {
+  "es": "El pan dulce",
+  "en": "Sweet bread",
+  "ja": "甘いパン",
+  "cat": "Comida"
+ },
+ {
+  "es": "Sincero y directo",
+  "en": "Sincere and direct",
+  "ja": "誠実で率直な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Tranquilo y paciente",
+  "en": "Calm and patient",
+  "ja": "穏やかで忍耐強い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Curioso por naturaleza",
+  "en": "Naturally curious",
+  "ja": "生まれつき好奇心旺盛な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Práctico",
+  "en": "Practical",
+  "ja": "実用的な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Detallista",
+  "en": "Detail-oriented",
+  "ja": "細かいところに気がつく",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Voy para allá",
+  "en": "I'm coming / on my way there",
+  "ja": "今そっちに向かってるよ",
+  "cat": "Frases"
+ },
+ {
+  "es": "Nos mantenemos en contacto",
+  "en": "Let's stay in touch",
+  "ja": "連絡取り合おうね",
+  "cat": "Frases"
+ },
+ {
+  "es": "Eso ya lo sabía",
+  "en": "I already knew that",
+  "ja": "それはもう知ってたよ",
+  "cat": "Frases"
+ },
+ {
+  "es": "No me lo esperaba",
+  "en": "I wasn't expecting that",
+  "ja": "それは予想してなかった",
+  "cat": "Frases"
+ },
+ {
+  "es": "Se me hizo tarde",
+  "en": "I ran late",
+  "ja": "遅くなってしまった",
+  "cat": "Frases"
  }
 ];

@@ -614,4 +614,60 @@ const DICTIONARY_DATA = {
     synonyms: ["así que（だから）"],
     derived: [],
     dialogue: { es: "— No tengo dinero hoy.\n— Entonces vamos otro día.", ja: "「今日お金がないんだ」「それなら別の日に行こう」" } },
+  "alegría": {
+    nuance: "「喜び」の基本語。con alegría（喜んで）、salto de alegría（うれしくて飛び跳ねる）のような表現でも使われる。",
+    etymology: "ラテン語alacer（活発な、うれしい）に由来。",
+    synonyms: ["felicidad（幸福）", "gozo（喜び、ややフォーマル・文学的）"],
+    derived: ["alegre（陽気な）", "alegrarse（喜ぶ）"],
+    dialogue: { es: "— Qué alegría verte de nuevo.\n— Igual digo, ha pasado tiempo.", ja: "「また会えて嬉しいよ」「私もだよ、久しぶりだね」" } },
+  "tristeza": {
+    nuance: "「悲しみ」の基本語。con tristeza（悲しげに）という副詞的表現もよく使われる。",
+    etymology: "ラテン語tristitia（悲しみ）に由来。",
+    synonyms: ["pena（悲しみ、残念さ）"],
+    derived: ["triste（悲しい）", "entristecer（悲しませる）"],
+    dialogue: { es: "— Siento mucha tristeza por la noticia.\n— Yo también, es difícil de aceptar.", ja: "「その知らせにとても悲しい気持ちだよ」「私もだよ、受け止めるのが難しいね」" } },
+  "miedo": {
+    nuance: "「恐怖」。tener miedo（怖い）という決まった動詞との組み合わせで使うことが多い（estar miedoとは言わない）。",
+    etymology: "ラテン語metus（恐れ）に由来。",
+    synonyms: ["temor（恐れ、ややフォーマル）"],
+    derived: ["miedoso（怖がりな）", "temer（恐れる）"],
+    dialogue: { es: "— Le tengo miedo a las arañas.\n— A mí también, son horribles.", ja: "「クモが怖いんだ」「私もだよ、あれは苦手」" } },
+  "esperanza": {
+    nuance: "「希望」。tener esperanza de que+接続法（〜であることを望む）という構文でよく使われる。",
+    etymology: "esperar（待つ・望む）と同語源、ラテン語sperare（望む）に由来。",
+    synonyms: [], derived: ["esperar（待つ・望む）", "esperanzador（希望を与える）"],
+    dialogue: { es: "— Tengo esperanza de que todo salga bien.\n— Yo también confío en eso.", ja: "「すべてうまくいくことを願っているよ」「私もそう信じているよ」" } },
+  "paciencia": {
+    nuance: "「忍耐」。tener paciencia（我慢する）、perder la paciencia（我慢の限界がくる）などの表現でよく使われる。",
+    etymology: "ラテン語patientia（耐えること）に由来。",
+    synonyms: [], derived: ["paciente（忍耐強い、患者）", "impaciencia（せっかち）"],
+    dialogue: { es: "— Ten paciencia, ya casi llegamos.\n— Está bien, puedo esperar.", ja: "「我慢して、もうすぐ着くよ」「大丈夫、待てるよ」" } },
+  "elote": {
+    nuance: "メキシコで屋台の定番、蒸し・茹でとうもろこしにマヨネーズ・チーズ・チリパウダーをかけた軽食。棒にささずカップに入れたものはesquites（エスキテス）と呼ばれる。",
+    etymology: "ナワトル語elotl（とうもろこしの穂軸）に由来。",
+    synonyms: ["esquites（カップ入りのもの）"],
+    derived: [],
+    dialogue: { es: "— ¿Quieres un elote con todo?\n— Sí, con mucho chile por favor.", ja: "「全部乗せのエロテ食べる？」「うん、チリたっぷりでお願い」" } },
+  "torta": {
+    nuance: "メキシコでは「サンドイッチ」を指す（スペインでは「ケーキ」の意味になるので注意、地域差が大きい単語）。",
+    etymology: "ラテン語torta（丸いパン）に由来。",
+    synonyms: [], derived: ["tortero（トルタを作る人・売る人）"],
+    dialogue: { es: "— Quiero una torta de jamón.\n— Enseguida se la preparo.", ja: "「ハムのトルタください」「すぐにご用意しますね」" } },
+  "horchata": {
+    nuance: "米や桂皮(シナモン)などから作る甘い冷たい飲み物。メキシコの定番の水（agua fresca）の一種。",
+    etymology: "諸説あるが、ラテン語hordeata（大麦の飲み物）に由来するという説が有力。",
+    synonyms: [], derived: [],
+    dialogue: { es: "— ¿Me das un vaso de horchata?\n— Claro, está bien fría.", ja: "「オルチャータ一杯もらえる？」「もちろん、よく冷えているよ」" } },
+  "se me hizo tarde": {
+    nuance: "「遅くなってしまった」という、自分の意図とは関係なく起きたことのように表現する再帰的な言い回し。se me（〜私にとって）という構造が英語や日本語にはない発想。",
+    etymology: "hacerse tarde（遅くなる）+ 間接目的語代名詞me の組み合わせ。",
+    synonyms: ["llegué tarde（単純に「遅れた」と言う表現）"],
+    derived: [],
+    dialogue: { es: "— Perdón, se me hizo tarde.\n— No te preocupes, yo también acabo de llegar.", ja: "「ごめん、遅くなっちゃった」「気にしないで、私もちょうど着いたところ」" } },
+  "no me lo esperaba": {
+    nuance: "「それは予想していなかった」という驚きを表す決まり文句。esperar（待つ・予想する）+間接目的語me+lo（それを）の組み合わせ。",
+    etymology: "esperar（予想する）の否定形＋代名詞の組み合わせ。",
+    synonyms: ["qué sorpresa（なんて驚き）"],
+    derived: [],
+    dialogue: { es: "— ¡Gané el premio!\n— ¡Qué bien, no me lo esperaba!", ja: "「賞をもらったんだ！」「すごいね、それは予想してなかったよ！」" } },
 };

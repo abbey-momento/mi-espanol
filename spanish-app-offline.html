@@ -604,11 +604,11 @@ function renderDictionary(){
   search.oninput = (e)=>{ state.dictSearch = e.target.value; renderDictList(); };
   app.appendChild(search);
   const chipRow = el("div","chip-row");
-  const allChip = el("button","chip"+(!state.dictFlaggedOnly?" active":""), "すべて");
-  allChip.onclick = ()=>{ playTap(); state.dictFlaggedOnly=false; render(); };
-  const flagChip = el("button","chip"+(state.dictFlaggedOnly?" active":""), "⭐ フラグのみ");
-  flagChip.onclick = ()=>{ playTap(); state.dictFlaggedOnly=true; render(); };
-  chipRow.appendChild(allChip); chipRow.appendChild(flagChip);
+  [["all","すべて"],["flagged","⭐ フラグのみ"],["practiced","📚 練習した単語"]].forEach(([mode,label])=>{
+    const chip = el("button","chip"+(state.dictFilterMode===mode?" active":""), label);
+    chip.onclick = ()=>{ playTap(); state.dictFilterMode=mode; render(); };
+    chipRow.appendChild(chip);
+  });
   app.appendChild(chipRow);
   const listWrap = el("div"); listWrap.id="dict-list-wrap";
   app.appendChild(listWrap);
@@ -617,10 +617,8 @@ function renderDictionary(){
 function getDictList(){
   const q = normDictKey(state.dictSearch);
   let list = VOCAB;
-  if(state.dictFlaggedOnly){
-    progress.flagged = progress.flagged || {};
-    list = list.filter(w => progress.flagged[w.id]);
-  }
+  if(state.dictFilterMode==="flagged") list = getFlaggedPool();
+  else if(state.dictFilterMode==="practiced") list = getPracticedPool();
   if(q){
     list = list.filter(w => normDictKey(w.es).includes(q) || normDictKey(w.ja).includes(q) || normDictKey(w.en).includes(q));
   }
@@ -632,14 +630,17 @@ function renderDictList(){
   wrap.innerHTML = "";
   const full = getDictList();
   const list = full.slice(0, 60);
-  if(state.dictFlaggedOnly && full.length>0){
+  if(state.dictFilterMode==="flagged" && full.length>0){
     const startBtn = el("button","primary-btn", `🗂️ フラグした単語（${full.length}個）でカード練習`);
     startBtn.style.display="block"; startBtn.style.width="100%"; startBtn.style.marginBottom="14px";
     startBtn.onclick = ()=>{ playTap(); state.tab="vocab"; state.mode="flagged"; flashDeck=[]; render(); };
     wrap.appendChild(startBtn);
   }
   if(list.length===0){
-    wrap.appendChild(el("div","dict-pending", state.dictFlaggedOnly ? "まだフラグを立てた単語がありません" : "一致する単語が見つかりませんでした"));
+    const emptyMsg = state.dictFilterMode==="flagged" ? "まだフラグを立てた単語がありません"
+      : state.dictFilterMode==="practiced" ? "まだクイズやカードで練習した単語がありません"
+      : "一致する単語が見つかりませんでした";
+    wrap.appendChild(el("div","dict-pending", emptyMsg));
     return;
   }
   list.forEach(w=>{
@@ -650,7 +651,7 @@ function renderDictList(){
     item.onclick = ()=>{ playTap(); goToDictionary(w.es); };
     wrap.appendChild(item);
   });
-  if(!state.dictSearch && !state.dictFlaggedOnly){
+  if(!state.dictSearch && state.dictFilterMode==="all"){
     const hint = el("div","footer-hint", `全${VOCAB.length}語のうち最初の${list.length}語を表示中。検索して絞り込めます。`);
     wrap.appendChild(hint);
   }
