@@ -310,7 +310,10 @@ const NUM_HUNDREDS = {100:"cien",200:"doscientos",300:"trescientos",400:"cuatroc
   600:"seiscientos",700:"setecientos",800:"ochocientos",900:"novecientos"};
 function numberToSpanish(n){
   if(n<=20) return NUM_ONES[n];
-  if(n<30) return "veinti"+NUM_ONES[n-20];
+  if(n<30){
+    const special = {22:"veintidós",23:"veintitrés",26:"veintiséis"};
+    return special[n] || "veinti"+NUM_ONES[n-20];
+  }
   if(n<100){
     const tens = Math.floor(n/10)*10, rem = n%10;
     return rem===0 ? NUM_TENS[tens] : NUM_TENS[tens]+" y "+NUM_ONES[rem];
@@ -322,7 +325,39 @@ function numberToSpanish(n){
     const hWord = h===100 ? "ciento" : NUM_HUNDREDS[h];
     return hWord+" "+numberToSpanish(rem);
   }
+  if(n<1000000){
+    const thousands = Math.floor(n/1000), rem = n%1000;
+    const thousandsWord = thousands===1 ? "mil" : numberToSpanish(thousands)+" mil";
+    return rem===0 ? thousandsWord : thousandsWord+" "+numberToSpanish(rem);
+  }
+  if(n<10000000){
+    const millions = Math.floor(n/1000000), rem = n%1000000;
+    const millionsWord = millions===1 ? "un millón" : numberToSpanish(millions)+" millones";
+    return rem===0 ? millionsWord : millionsWord+" "+numberToSpanish(rem);
+  }
   return String(n);
+}
+
+/* ---------- Time-telling ---------- */
+const HOUR_WORDS = ["","la una","las dos","las tres","las cuatro","las cinco","las seis","las siete","las ocho","las nueve","las diez","las once","las doce"];
+function timeToSpanish(h, m){
+  function sayHour(hour){ return (hour===1 ? "es la una" : "son "+HOUR_WORDS[hour]); }
+  if(m===0) return [sayHour(h)];
+  if(m===15) return [sayHour(h)+" y cuarto", sayHour(h)+" y quince"];
+  if(m===30) return [sayHour(h)+" y media", sayHour(h)+" y treinta"];
+  if(m===45){
+    const next = h===12 ? 1 : h+1;
+    return [sayHour(next)+" menos cuarto", sayHour(next)+" menos quince", sayHour(h)+" y cuarenta y cinco"];
+  }
+  return [sayHour(h)+" y "+numberToSpanish(m)];
+}
+function buildTimeQuestion(){
+  const h = 1 + Math.floor(Math.random()*12);
+  const minuteOptions = [0,15,30,45];
+  const m = minuteOptions[Math.floor(Math.random()*minuteOptions.length)];
+  const variants = timeToSpanish(h,m);
+  const display = `${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`;
+  return { isTime:true, display, answer:variants[0], acceptable:variants };
 }
 
 /* ---------- Example sentences (fill in the blank) ---------- */
@@ -790,10 +825,13 @@ function renderExamples(){
 /* ---------- Numbers drill ---------- */
 let numQuestion=null, numIdx=0, numTotal=10, numScore=0, numMissed=[], numLog=[], numFanfarePlayed=false;
 function buildNumQuestion(){
-  const ranges = [[0,20],[21,99],[100,999]];
+  const roll = Math.random();
+  if(roll < 0.2) return buildTimeQuestion();
+  const ranges = [[0,20],[21,99],[100,999],[1000,9999],[10000,99999],[100000,999999],[1000000,9999999]];
   const [lo,hi] = ranges[Math.floor(Math.random()*ranges.length)];
   const n = lo + Math.floor(Math.random()*(hi-lo+1));
-  return { n, answer: numberToSpanish(n) };
+  const isYearLike = n>=1000 && n<=2100 && Math.random()<0.5;
+  return { n, answer: numberToSpanish(n), acceptable:[numberToSpanish(n)], isYear:isYearLike };
 }
 function renderNumbersDrill(){
   app.appendChild(backToMenuBtn());
@@ -811,7 +849,7 @@ function renderNumbersDrill(){
       const item = el("div","review-item");
       const mark = log.correct ? "○ 正解" : "✕ 不正解";
       const markColor = log.correct ? "var(--accent2)" : "var(--brick)";
-      item.innerHTML = `<div class="review-q" style="color:${markColor};">${mark}　${log.q.n}</div>
+      item.innerHTML = `<div class="review-q" style="color:${markColor};">${mark}　${log.q.isTime ? "🕐 "+log.q.display : (log.q.isYear?"Año: ":"")+log.q.n}</div>
         <div class="review-a">正解: ${log.q.answer}</div>
         ${!log.correct ? `<div class="review-note">あなたの回答: ${log.userAnswer || "（未回答）"}</div>` : ""}`;
       rl.appendChild(item);
@@ -823,12 +861,18 @@ function renderNumbersDrill(){
   pr.innerHTML = `<div class="top-bar-label">${numIdx+1} / ${numTotal}　·　スコア ${numScore}</div>`;
   app.appendChild(pr);
   const box = el("div","sentence-box");
-  box.innerHTML = `<div style="font-size:44px;font-weight:700;font-family:Georgia,serif;">${numQuestion.n}</div>
-    <div style="font-size:12px;color:#C9BBE8;margin-top:8px;">この数字をスペイン語のつづりで入力してください</div>`;
+  if(numQuestion.isTime){
+    box.innerHTML = `<div style="font-size:44px;font-weight:700;font-family:Georgia,serif;">🕐 ${numQuestion.display}</div>
+      <div style="font-size:12px;color:#C9BBE8;margin-top:8px;">この時刻をスペイン語で書いてください（例: son las tres y cuarto）</div>`;
+  } else {
+    const hint = numQuestion.isYear ? "この年号をスペイン語のつづりで入力してください（年もふつうの数として読みます）" : "この数字をスペイン語のつづりで入力してください";
+    box.innerHTML = `<div style="font-size:${numQuestion.n>=1000000?30:44}px;font-weight:700;font-family:Georgia,serif;">${numQuestion.isYear?"Año: ":""}${numQuestion.n.toLocaleString("en-US")}</div>
+      <div style="font-size:12px;color:#C9BBE8;margin-top:8px;">${hint}</div>`;
+  }
   app.appendChild(box);
   const row = el("div","conj-input-row"); row.style.marginTop="16px";
   const input = el("input","conj-input");
-  input.setAttribute("type","text"); input.setAttribute("placeholder","例: treinta y uno"); input.setAttribute("autocapitalize","none"); input.setAttribute("autocorrect","off");
+  input.setAttribute("type","text"); input.setAttribute("placeholder", numQuestion.isTime ? "例: son las tres y cuarto" : "例: treinta y uno"); input.setAttribute("autocapitalize","none"); input.setAttribute("autocorrect","off");
   const submit = el("button","conj-submit","確認");
   row.appendChild(input); row.appendChild(submit);
   app.appendChild(row);
@@ -836,7 +880,8 @@ function renderNumbersDrill(){
   app.appendChild(fb);
   function submitAnswer(){
     const val = input.value; if(!val) return;
-    const ok = norm(val) === norm(numQuestion.answer);
+    const acceptable = numQuestion.acceptable || [numQuestion.answer];
+    const ok = acceptable.some(a => norm(val) === norm(a));
     if(ok){ numScore++; playCorrect(); fb.textContent="¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent=`正解: ${numQuestion.answer}`; fb.className="conj-feedback no"; numMissed.push(numQuestion); }
     numLog.push({ q:numQuestion, correct:ok, userAnswer:val });
