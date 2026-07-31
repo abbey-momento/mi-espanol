@@ -498,7 +498,7 @@ function render(){
     renderNews();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; }
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","ドリル"],["dict","辞書"],["grammar","文法"],["column","コラム"],["news","ニュース"]].forEach(([key,label])=>{
@@ -621,10 +621,30 @@ function normalizeDictionaryKeysOnce(){
   Object.keys(DICTIONARY_DATA).forEach(k=> delete DICTIONARY_DATA[k]);
   Object.assign(DICTIONARY_DATA, fixed);
 }
-function goToDictionary(word){
+function goToDictionary(word, returnContext){
+  state.detailReturnTo = returnContext || null;
   state.tab = "dict";
   state.dictDetailWord = normDictKey(word);
   render();
+}
+function returnToSummary(){
+  const ctx = state.detailReturnTo;
+  if(!ctx) return;
+  playTap();
+  state.detailReturnTo = null;
+  state.tab = ctx.tab;
+  if(ctx.mode) state.mode = ctx.mode;
+  if(ctx.conjSubTab) state.conjSubTab = ctx.conjSubTab;
+  state.dictDetailWord = null;
+  grammarDetailIdx = null;
+  render();
+}
+function summaryReturnBtn(){
+  if(!state.detailReturnTo) return null;
+  const btn = el("button","primary-btn","📋 まとめページに戻る");
+  btn.style.display="block"; btn.style.width="100%"; btn.style.margin="4px 0 14px";
+  btn.onclick = returnToSummary;
+  return btn;
 }
 /* ---------- Drill → Grammar reference linking ---------- */
 const TOPIC_TO_GRAMMAR = {
@@ -646,19 +666,20 @@ const TENSE_TO_GRAMMAR = {
   imperativo: "命令形の作り方（規則・不規則）",
   imperativo_neg: "命令形の使い方（肯定・否定・代名詞の位置）",
 };
-function goToGrammarTopic(title){
+function goToGrammarTopic(title, returnContext){
   if(!title) return;
   playTap();
+  state.detailReturnTo = returnContext || null;
   state.tab = "grammar";
   state.pendingGrammarTitle = title;
   grammarDetailIdx = null;
   render();
 }
-function grammarLinkBtn(title){
+function grammarLinkBtn(title, returnContext){
   if(!title) return null;
   const btn = el("button","ghost-btn", "📖 「"+title+"」を文法リファレンスで見る");
   btn.style.display="block"; btn.style.width="100%"; btn.style.marginTop="10px"; btn.style.fontSize="12.5px";
-  btn.onclick = ()=> goToGrammarTopic(title);
+  btn.onclick = ()=> goToGrammarTopic(title, returnContext);
   return btn;
 }
 function renderDictionary(){
@@ -742,6 +763,8 @@ function renderDictDetail(){
   const vocabWord = VOCAB.find(w => normDictKey(w.es)===key);
   const detail = DICTIONARY_DATA[key];
   app.appendChild(topBar("辞書", "", ()=>{ state.dictDetailWord=null; lastSpokenDictKey=null; render(); }));
+  const backBtn = summaryReturnBtn();
+  if(backBtn) app.appendChild(backBtn);
   const header = el("div","dict-detail-header");
   header.innerHTML = `<div class="dict-detail-es">${vocabWord ? vocabWord.es : key}</div>
     <div class="dict-detail-en-ja">${vocabWord ? vocabWord.en+" ／ "+vocabWord.ja : ""}</div>`;
@@ -898,7 +921,7 @@ function renderQuiz(){
       item.innerHTML = `<div class="review-q" style="color:${markColor};">${mark}　${log.word.es} <span style="color:#9C8FC2;font-size:11px;">📖 辞書を見る ›</span></div>
         <div class="review-a">正解: ${log.word.en} ／ ${log.word.ja}</div>
         ${!log.correct ? `<div class="review-note">あなたの回答: ${log.pickedEn}</div>` : ""}`;
-      item.onclick = ()=>{ playTap(); goToDictionary(log.word.es); };
+      item.onclick = ()=>{ playTap(); goToDictionary(log.word.es, {tab:"vocab", mode:"quiz"}); };
       rl.appendChild(item);
     });
     app.appendChild(rl);
@@ -1059,7 +1082,7 @@ function doneScreenConj(){
       <div class="review-a">正解: ${log.q.answer}</div>
       ${!log.correct ? `<div class="review-note">あなたの回答: ${log.userAnswer || "（未回答）"}</div><div class="review-note">${TENSE_NOTES[log.q.tense]}</div>` : ""}`;
     if(!log.correct && TENSE_TO_GRAMMAR[log.q.tense]){
-      item.appendChild(grammarLinkBtn(TENSE_TO_GRAMMAR[log.q.tense]));
+      item.appendChild(grammarLinkBtn(TENSE_TO_GRAMMAR[log.q.tense], {tab:"conj", conjSubTab:"drill"}));
     }
     rl.appendChild(item);
   });
@@ -1105,7 +1128,7 @@ function renderExamples(){
     btn.onclick = ()=>{ exDeck=[]; render(); };
     wrap.appendChild(btn);
     const topicGrammarTitle = TOPIC_TO_GRAMMAR[topic];
-    if(topicGrammarTitle){ wrap.appendChild(grammarLinkBtn(topicGrammarTitle)); }
+    if(topicGrammarTitle){ wrap.appendChild(grammarLinkBtn(topicGrammarTitle, {tab:"conj", conjSubTab:"examples"})); }
     app.appendChild(wrap);
     const rl = el("div","review-list");
     rl.appendChild(el("div","section-label","まとめ（全問）"));
@@ -1117,7 +1140,7 @@ function renderExamples(){
         <div class="review-a">${log.ex.ja}</div>
         ${!log.correct ? `<div class="review-note">あなたの回答: ${log.userAnswer || "（未回答）"}</div><div class="review-note">${noteFor(log.ex)}</div>` : ""}`;
       if(!log.correct && topic==="conjugacion" && log.ex.tense && TENSE_TO_GRAMMAR[log.ex.tense]){
-        item.appendChild(grammarLinkBtn(TENSE_TO_GRAMMAR[log.ex.tense]));
+        item.appendChild(grammarLinkBtn(TENSE_TO_GRAMMAR[log.ex.tense], {tab:"conj", conjSubTab:"examples"}));
       }
       rl.appendChild(item);
     });
@@ -1367,6 +1390,8 @@ function renderGrammar(){
   }
   const a = GRAMMAR_ARTICLES[grammarDetailIdx];
   app.appendChild(topBar("文法", "", ()=>{ grammarDetailIdx=null; render(); }));
+  const gBackBtn = summaryReturnBtn();
+  if(gBackBtn) app.appendChild(gBackBtn);
   const titleRow = el("div"); titleRow.style.display="flex"; titleRow.style.justifyContent="space-between"; titleRow.style.alignItems="flex-start"; titleRow.style.gap="10px";
   titleRow.appendChild(el("h1","title",a.title));
   const isFlaggedDetail = !!(progress.flaggedGrammar && progress.flaggedGrammar[a.title]);
