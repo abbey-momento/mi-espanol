@@ -546,7 +546,7 @@ function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}�
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:"Todos", dictColloquialOnly:false, dictShuffled:false, dictListLimit:60, grammarFlaggedOnly:false, phraseSceneIdx:null, grammarRoadmapOpen:false };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:"Todos", dictColloquialOnly:false, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, grammarRoadmapOpen:false };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -624,7 +624,7 @@ function render(){
     renderPhrases();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; stopListenAuto(); listenAutoDeck=[]; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; stopListenAuto(); listenAutoDeck=[]; stopDictAutoPlay(); }
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","ドリル"],["phrases","フレーズ"],["dict","辞書"],["grammar","文法"],["more","その他"]].forEach(([key,label])=>{
@@ -835,6 +835,47 @@ function goToDictionary(word, returnContext){
   state.dictDetailWord = normDictKey(word);
   render();
 }
+/* ---------- 辞書の自動再生（詳細ページを見ながら聞き流す） ---------- */
+let dictAutoList = [], dictAutoIdx = 0, dictAutoGen = 0;
+function startDictAutoPlay(){
+  const list = getDictList();
+  if(list.length===0) return;
+  dictAutoList = list;
+  dictAutoIdx = 0;
+  state.dictAutoPlaying = true;
+  requestWakeLock();
+  goToDictAutoWord();
+}
+function goToDictAutoWord(){
+  if(dictAutoIdx >= dictAutoList.length) dictAutoIdx = 0;
+  const word = dictAutoList[dictAutoIdx];
+  state.dictDetailWord = normDictKey(word.es);
+  render();
+  playDictAutoSequence(word);
+}
+function playDictAutoSequence(word){
+  const myGen = ++dictAutoGen;
+  speakSeq(word.es, "es", ()=>{
+    if(myGen!==dictAutoGen || !state.dictAutoPlaying) return;
+    setTimeout(()=>{
+      if(myGen!==dictAutoGen || !state.dictAutoPlaying) return;
+      speakSeq(word.ja, "ja", ()=>{
+        if(myGen!==dictAutoGen || !state.dictAutoPlaying) return;
+        setTimeout(()=>{
+          if(myGen!==dictAutoGen || !state.dictAutoPlaying) return;
+          dictAutoIdx++;
+          goToDictAutoWord();
+        }, 900);
+      });
+    }, 350);
+  });
+}
+function stopDictAutoPlay(){
+  dictAutoGen++;
+  state.dictAutoPlaying = false;
+  try{ window.speechSynthesis && window.speechSynthesis.cancel(); }catch(e){}
+  releaseWakeLock();
+}
 function returnToSummary(){
   const ctx = state.detailReturnTo;
   if(!ctx) return;
@@ -967,6 +1008,10 @@ function renderDictionary(){
     levelRow.appendChild(chip);
   });
   app.appendChild(levelRow);
+  const autoPlayBtn = el("button","primary-btn","🎧 この絞り込みで自動再生（詳細を見ながら聞き流す）");
+  autoPlayBtn.style.display="block"; autoPlayBtn.style.width="100%"; autoPlayBtn.style.margin="4px 0 14px";
+  autoPlayBtn.onclick = ()=>{ playTap(); startDictAutoPlay(); };
+  app.appendChild(autoPlayBtn);
   const listWrap = el("div"); listWrap.id="dict-list-wrap";
   app.appendChild(listWrap);
   renderDictList();
@@ -1035,7 +1080,16 @@ function renderDictDetail(){
   const key = state.dictDetailWord;
   const vocabWord = VOCAB.find(w => normDictKey(w.es)===key);
   const detail = DICTIONARY_DATA[key];
-  app.appendChild(topBar("辞書", "", ()=>{ state.dictDetailWord=null; lastSpokenDictKey=null; render(); requestAnimationFrame(()=>{ window.scrollTo(0, state.dictListScrollY||0); }); }));
+  app.appendChild(topBar("辞書", "", ()=>{ stopDictAutoPlay(); state.dictDetailWord=null; lastSpokenDictKey=null; render(); requestAnimationFrame(()=>{ window.scrollTo(0, state.dictListScrollY||0); }); }));
+  if(state.dictAutoPlaying){
+    const autoBar = el("div","dict-pending", `🎧 自動再生中（${dictAutoIdx+1} / ${dictAutoList.length}）`);
+    autoBar.style.cursor = "pointer";
+    const pauseBtn = el("button","primary-btn","⏸ 一時停止");
+    pauseBtn.style.display="block"; pauseBtn.style.width="100%"; pauseBtn.style.marginTop="8px";
+    pauseBtn.onclick = ()=>{ playTap(); stopDictAutoPlay(); render(); };
+    app.appendChild(autoBar);
+    app.appendChild(pauseBtn);
+  }
   const backBtn = summaryReturnBtn();
   if(backBtn) app.appendChild(backBtn);
   const header = el("div","dict-detail-header");
@@ -1045,7 +1099,7 @@ function renderDictDetail(){
   if(vocabWord){
     if(lastSpokenDictKey !== key){
       lastSpokenDictKey = key;
-      if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(vocabWord.es), 150);
+      if(!state.dictAutoPlaying && progress.settings && progress.settings.autoplay) setTimeout(()=>speak(vocabWord.es), 150);
     }
     const actionRow = el("div"); actionRow.style.display="flex"; actionRow.style.justifyContent="center"; actionRow.style.gap="10px"; actionRow.style.marginTop="8px";
     const speakBtn = el("button","speak-btn","🔊");
@@ -1093,8 +1147,8 @@ function renderDictDetail(){
     app.appendChild(el("div","footer-hint", `${idx+1} / ${list.length}`));
   }
   app.appendChild(el("div","dict-nav-spacer"));
-  const onPrev = idx>0 ? ()=>{ playTap(); goToDictionary(list[idx-1].es); } : null;
-  const onNext = (idx!==-1 && idx<list.length-1) ? ()=>{ playTap(); goToDictionary(list[idx+1].es); } : null;
+  const onPrev = idx>0 ? ()=>{ playTap(); stopDictAutoPlay(); goToDictionary(list[idx-1].es); } : null;
+  const onNext = (idx!==-1 && idx<list.length-1) ? ()=>{ playTap(); stopDictAutoPlay(); goToDictionary(list[idx+1].es); } : null;
   app.appendChild(buildFloatingNav("← 前の単語", "次の単語 →", onPrev, onNext));
 }
 function topBar(label, progressText, onExit){
