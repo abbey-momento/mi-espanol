@@ -347,9 +347,11 @@ function weightedSample(pool, size){
 /* ---------- Conjugation data ---------- */
 const PERSONS5 = ["yo","tú","él/ella/usted","nosotros","ellos/ellas/ustedes"];
 const PERSONS_IMP = ["tú","usted","nosotros","ustedes"];
-const TENSE_KEYS = ["presente","indefinido","imperfecto","futuro","condicional","subjuntivo","perfecto","imperativo","imperativo_neg"];
+const TENSE_KEYS = ["presente","indefinido","imperfecto","futuro","condicional","subjuntivo","perfecto","imperativo","imperativo_neg","progresivo","pluscuamperfecto","futuro_perfecto","condicional_perfecto","subjuntivo_imperfecto","subjuntivo_perfecto"];
 const TENSE_LABELS = { presente:"現在形", indefinido:"点過去", imperfecto:"線過去", futuro:"未来形",
-  condicional:"過去未来形(条件法)", subjuntivo:"接続法現在", perfecto:"現在完了形", imperativo:"命令形（肯定）", imperativo_neg:"命令形（否定）" };
+  condicional:"過去未来形(条件法)", subjuntivo:"接続法現在", perfecto:"現在完了形", imperativo:"命令形（肯定）", imperativo_neg:"命令形（否定）",
+  progresivo:"現在進行形", pluscuamperfecto:"過去完了形", futuro_perfecto:"未来完了形", condicional_perfecto:"条件法完了形",
+  subjuntivo_imperfecto:"接続法過去形", subjuntivo_perfecto:"接続法現在完了形" };
 const TENSE_NOTES = {
   presente:"現在の習慣や事実を表す形。",
   indefinido:"過去に完了した1回きりの行為を表す（点過去）。",
@@ -360,8 +362,43 @@ const TENSE_NOTES = {
   perfecto:"「〜したことがある」「（今までに）〜した」という経験や完了を表す複合時制。haber+過去分詞で作る。",
   imperativo:"命令・依頼を表す命令形（肯定）。",
   imperativo_neg:"「〜しないで」という否定の命令。tú以外も含め、全人称で接続法現在と同じ形にno を付けて作る。",
+  progresivo:"「今まさに〜しているところだ」を表す現在進行形。estarの現在形＋現在分詞（gerundio）で作る。",
+  pluscuamperfecto:"「（過去のある時点より）さらに前に〜していた」を表す過去完了形。haberの線過去＋過去分詞で作る。",
+  futuro_perfecto:"「（未来のある時点までに）〜してしまっているだろう」を表す未来完了形。haberの未来形＋過去分詞で作る。",
+  condicional_perfecto:"「〜していただろうに」を表す条件法完了形。haberの条件法＋過去分詞で作る。過去の事実に反する仮定の結果によく使う。",
+  subjuntivo_imperfecto:"接続法の過去形。点過去のellos形から語幹を作り、-ra系の語尾をつける。",
+  subjuntivo_perfecto:"「（今までに）〜したかもしれない」など、完了した内容への疑い・感情を表す。haberの接続法現在＋過去分詞で作る。",
 };
 const SUBJ_IDX_FOR_IMP = [1,2,3,4]; // PERSONS_IMP(tú,usted,nosotros,ustedes) -> subjuntivo配列のインデックス
+const GERUNDIO = { hablar:"hablando", comer:"comiendo", vivir:"viviendo", ser:"siendo", estar:"estando", tener:"teniendo",
+  ir:"yendo", hacer:"haciendo", poder:"pudiendo", querer:"queriendo", decir:"diciendo", poner:"poniendo",
+  salir:"saliendo", venir:"viniendo", dar:"dando", ver:"viendo", saber:"sabiendo", traer:"trayendo" };
+const HABER = {
+  imperfecto:["había","habías","había","habíamos","habían"],
+  futuro:["habré","habrás","habrá","habremos","habrán"],
+  condicional:["habría","habrías","habría","habríamos","habrían"],
+  subjuntivo:["haya","hayas","haya","hayamos","hayan"],
+};
+function subjImperfectoStem(verb){ return verb.indefinido[4].slice(0,-3); } // ellos形からronを除いた語幹
+function subjImperfectoForms(verb){
+  const stem = subjImperfectoStem(verb);
+  const last = stem.slice(-1);
+  const accented = { a:"á", e:"é", i:"í" }[last] || last;
+  const nosotrosStem = stem.slice(0,-1) + accented;
+  return [stem+"ra", stem+"ras", stem+"ra", nosotrosStem+"ramos", stem+"ran"];
+}
+function participleOf(verb){ return verb.perfecto[0].split(" ")[1]; }
+function derivedForm(verb, tense, pIdx){
+  const participle = participleOf(verb);
+  if(tense==="progresivo") return findVerb("estar").presente[pIdx] + " " + GERUNDIO[verb.v];
+  if(tense==="pluscuamperfecto") return HABER.imperfecto[pIdx] + " " + participle;
+  if(tense==="futuro_perfecto") return HABER.futuro[pIdx] + " " + participle;
+  if(tense==="condicional_perfecto") return HABER.condicional[pIdx] + " " + participle;
+  if(tense==="subjuntivo_perfecto") return HABER.subjuntivo[pIdx] + " " + participle;
+  if(tense==="subjuntivo_imperfecto") return subjImperfectoForms(verb)[pIdx];
+  return null;
+}
+const DERIVED_TENSES = ["progresivo","pluscuamperfecto","futuro_perfecto","condicional_perfecto","subjuntivo_imperfecto","subjuntivo_perfecto"];
 function findVerb(name){ return VERBS.find(v=>v.v===name); }
 
 /* ---------- Number words (0-999) ---------- */
@@ -1049,7 +1086,10 @@ function buildConjQuestion(tenseFilter){
   const isImp = tense==="imperativo" || tense==="imperativo_neg";
   const persons = isImp ? PERSONS_IMP : PERSONS5;
   const pIdx = Math.floor(Math.random()*persons.length);
-  const answer = tense==="imperativo_neg" ? "no "+verb.subjuntivo[SUBJ_IDX_FOR_IMP[pIdx]] : verb[tense][pIdx];
+  let answer;
+  if(tense==="imperativo_neg") answer = "no "+verb.subjuntivo[SUBJ_IDX_FOR_IMP[pIdx]];
+  else if(DERIVED_TENSES.includes(tense)) answer = derivedForm(verb, tense, pIdx);
+  else answer = verb[tense][pIdx];
   return { verb, tense, personIdx:pIdx, personLabel:persons[pIdx], answer };
 }
 function renderConjDrill(){
