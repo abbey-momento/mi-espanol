@@ -1547,7 +1547,7 @@ const DICTIONARY_DATA = {
   }
  },
  "miedo": {
-  "nuance": "「恐怖」。tener miedo（怖い）という決まった動詞との組み合わせで使うことが多い（estar miedoとは言わない）。",
+  "nuance": "「恐怖」という名詞。tener miedo（怖い）という決まった動詞との組み合わせで使うことが多い（estar miedoとは言わない）。asustado（怖がっている、形容詞）との違い：miedoはより一般的・持続的な恐怖感（暗闇が怖い、高所が怖いなど）を表す名詞そのもの。一方asustadoは、何か具体的な出来事に驚かされて一時的に怖くなっている状態を表す形容詞（estar asustado＝驚いて怖がっている）。",
   "etymology": "ラテン語metus（恐れ）に由来。",
   "synonyms": [
    "temor（恐れ、ややフォーマル）"
@@ -3388,7 +3388,7 @@ const DICTIONARY_DATA = {
   }
  },
  "asustado": {
-  "nuance": "「怖がっている」。asustar（怖がらせる）の過去分詞から形容詞化した語。",
+  "nuance": "「怖がっている」。asustar（怖がらせる）の過去分詞から形容詞化した語。miedo（恐怖、名詞）との違い：asustadoは具体的な出来事（物音、驚かされたことなど）によって一時的に怖くなっている状態を表す形容詞（estar asustado）。一方miedoは、より一般的・持続的な恐怖感そのものを表す名詞（tener miedo）で、必ずしも直前の出来事に結びつかない。",
   "etymology": "俗ラテン語ex-subitare（突然の出来事による）に由来。",
   "synonyms": [],
   "derived": [
