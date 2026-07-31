@@ -876,7 +876,7 @@ function renderDictList(){
     rightWrap.appendChild(starBtn);
     rightWrap.appendChild(el("div","grammar-chevron","›"));
     item.appendChild(textWrap); item.appendChild(rightWrap);
-    item.onclick = ()=>{ playTap(); goToDictionary(w.es); };
+    item.onclick = ()=>{ playTap(); state.dictListScrollY = window.scrollY || document.documentElement.scrollTop || 0; goToDictionary(w.es); };
     wrap.appendChild(item);
   });
   if(full.length > list.length){
@@ -894,7 +894,7 @@ function renderDictDetail(){
   const key = state.dictDetailWord;
   const vocabWord = VOCAB.find(w => normDictKey(w.es)===key);
   const detail = DICTIONARY_DATA[key];
-  app.appendChild(topBar("辞書", "", ()=>{ state.dictDetailWord=null; lastSpokenDictKey=null; render(); }));
+  app.appendChild(topBar("辞書", "", ()=>{ state.dictDetailWord=null; lastSpokenDictKey=null; render(); requestAnimationFrame(()=>{ window.scrollTo(0, state.dictListScrollY||0); }); }));
   const backBtn = summaryReturnBtn();
   if(backBtn) app.appendChild(backBtn);
   const header = el("div","dict-detail-header");
@@ -1542,13 +1542,13 @@ function renderGrammar(){
       rightWrap.appendChild(starBtn);
       rightWrap.appendChild(el("div","grammar-chevron","›"));
       item.appendChild(rightWrap);
-      item.onclick = ()=>{ playTap(); grammarDetailIdx=i; render(); };
+      item.onclick = ()=>{ playTap(); state.grammarListScrollY = window.scrollY || document.documentElement.scrollTop || 0; grammarDetailIdx=i; render(); };
       app.appendChild(item);
     });
     return;
   }
   const a = GRAMMAR_ARTICLES[grammarDetailIdx];
-  app.appendChild(topBar("文法", "", ()=>{ grammarDetailIdx=null; render(); }));
+  app.appendChild(topBar("文法", "", ()=>{ grammarDetailIdx=null; render(); requestAnimationFrame(()=>{ window.scrollTo(0, state.grammarListScrollY||0); }); }));
   const gBackBtn = summaryReturnBtn();
   if(gBackBtn) app.appendChild(gBackBtn);
   if(a.cat){ app.appendChild(el("div","eyebrow", a.cat)); }
