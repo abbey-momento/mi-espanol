@@ -67,11 +67,25 @@ const GRAMMAR_ARTICLES = [
   { title:"形容詞の位置と性数一致",
     body:"形容詞は基本的に名詞の後ろに置き、名詞の性と数に一致させます。\n\n例: un coche rojo（赤い車）／ una casa roja（赤い家）／ unos coches rojos（赤い車たち）\n\nただし、bueno（良い）・malo（悪い）・grande（大きい）など一部の形容詞は名詞の前に置くと意味やニュアンスが変わったり、短縮形になったりします。例：un buen amigo（良い友人、buenoが短縮）、un gran hombre（偉大な人、grandeが短縮されgranに）／ un hombre grande（体の大きい人）。" },
   { title:"指示形容詞・指示代名詞（este/ese/aquel）",
-    body:"「この・その・あの」に対応する3段階の距離感があります。este（この＝話し手に近い）、ese（その＝聞き手に近い）、aquel（あの＝両者から遠い）。それぞれ性・数で変化します。\n\n例: Este libro es mío.（この本は私のだ）／ Esa silla es cómoda.（その椅子は快適だ）／ Aquella montaña es muy alta.（あの山はとても高い）",
+    body:"「この・その・あの」に対応する3段階の距離感があります。este（この＝話し手に近い）、ese（その＝聞き手に近い）、aquel（あの＝両者から遠い）。それぞれ性・数で変化します。\n\n例: Este libro es mío.（この本は私のだ）／ Esa silla es cómoda.（その椅子は快適だ）／ Aquella montaña es muy alta.（あの山はとても高い）\n\n注意: これらは必ず名詞（またはその代わり）を指します。「漠然とした物事」を指すときは、性のない中性形esto/eso/aquelloを使います。詳しくは次のトピック「中性のesto/eso/aquello」を見てください。",
     table:{ cols:["距離感","男性単数","女性単数","男性複数","女性複数"], rows:[
       ["この（近い）","este","esta","estos","estas"],
       ["その（中間）","ese","esa","esos","esas"],
       ["あの（遠い）","aquel","aquella","aquellos","aquellas"]
+    ] } },
+  { title:"中性のesto/eso/aquello（漠然とした物事を指す）",
+    body:"este/esta（この）は必ず名詞（性が決まっているもの）を指しますが、esto/eso/aquelloには性がなく、「これ・それ・あれ」という漠然とした物事、状況、まだ名前のわからないものを指すときに使います。\n\n例: Esto es muy interesante.（これは（今話している内容が）とても面白い＝具体的な名詞を指していない）\n例: ¿Qué es esto?（これは何？＝正体不明のものを指差している）\n例: Eso no me parece justo.（それ（今言われたこと）は公正だと思えない）\n\n一方、Esta silla es cómoda.（この椅子は快適だ）のestaは「silla（椅子、女性名詞）」という具体的な名詞を指しているので中性形は使えません。「名詞を指しているか、状況・発言全体を指しているか」で使い分けるのがコツです。",
+    table:{ cols:["形","使う場面","例"], rows:[
+      ["esto","近くの漠然とした物事","¿Qué es esto?（これは何？）"],
+      ["eso","中間の漠然とした物事、相手の発言","Eso es verdad.（それは本当だ）"],
+      ["aquello","遠い・過去の漠然とした物事","Aquello fue hace mucho tiempo.（あれはずっと前のことだった）"]
+    ] } },
+  { title:"algo/alguien/alguno と nada/nadie/ninguno の使い分け",
+    body:"「何か・誰か・いくつかの」という肯定的な不定語と、「何も〜ない・誰も〜ない・一つも〜ない」という否定的な不定語のペアです。それぞれ役割が違うので注意が必要です。\n\n① algo（何か）／nada（何も〜ない）：性・数変化しない代名詞。Tengo algo para ti.（君に何かあるんだ）／ No tengo nada.（何も持っていない）\n② alguien（誰か）／nadie（誰も〜ない）：人を指す、これも変化しない代名詞。¿Hay alguien ahí?（誰かいる？）\n③ alguno/alguna/algunos/algunas（いくつかの、ある〜）／ninguno/ninguna（一つも〜ない）：名詞の性・数に一致する形容詞・代名詞。こちらは「algo」と違い、具体的な名詞を修飾できます。\n\n例: ¿Tienes algún libro sobre esto?（これについての本を何か持ってる？＝alguno+男性単数名詞の前でalgúnに短縮）\n例: No tengo ninguna idea.（何のアイデアもない＝ningunaは女性名詞ideaに一致）\n\nalgoは「何か」という漠然とした存在そのもの、algunoは「（複数ある中の）いくつかの」という名詞を選び出すニュアンス、と考えると区別しやすいです。",
+    table:{ cols:["肯定","否定","対象","変化するか"], rows:[
+      ["algo","nada","漠然とした物事","しない（不変）"],
+      ["alguien","nadie","漠然とした人","しない（不変）"],
+      ["alguno/a/os/as","ninguno/a","具体的な名詞（性数あり）","する（名詞に一致）"]
     ] } },
   { title:"所有形容詞・所有代名詞",
     body:"「私の」「あなたの」などの所有を表す形です。名詞の前に置く短い形（mi, tu, su...）が日常でよく使われ、nuestro/vuestroだけは性・数で変化します。\n\n例: Mi casa es pequeña.（私の家は小さい）／ Nuestra familia es grande.（私たちの家族は大きい）\n\n「〜のもの」という所有代名詞（mío, tuyo, suyo...）は、El libro es mío.（その本は私のものだ）のように使います。",

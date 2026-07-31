@@ -8017,5 +8017,89 @@ const VOCAB_DATA = [
   "en": "I ran late",
   "ja": "遅くなってしまった",
   "cat": "Frases"
+ },
+ {
+  "es": "Chamba",
+  "en": "Job / work (colloquial)",
+  "ja": "仕事（口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Güey",
+  "en": "Dude / mate (very casual, Mexican)",
+  "ja": "お前・やつ（親しい間柄限定、メキシコの口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Neta",
+  "en": "Really / the truth (colloquial)",
+  "ja": "マジで・本当のこと（口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Chido",
+  "en": "Cool / awesome (Mexican)",
+  "ja": "かっこいい・いいね（メキシコの口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "No manches",
+  "en": "No way! (colloquial, Mexican)",
+  "ja": "うそでしょ・まさか（メキシコの口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "¿Qué onda?",
+  "en": "What's up? (Mexican)",
+  "ja": "調子どう？（メキシコの口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Lana",
+  "en": "Money (colloquial)",
+  "ja": "お金（口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Feria",
+  "en": "Money / change (Mexican colloquial)",
+  "ja": "お金・小銭（メキシコの口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Crudo",
+  "en": "Hungover (colloquial)",
+  "ja": "二日酔いの（口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Echar la hueva",
+  "en": "To laze around (Mexican colloquial)",
+  "ja": "だらだらする・サボる（メキシコの口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Fresa",
+  "en": "Snobbish / preppy (Mexican colloquial)",
+  "ja": "気取った・お坊ちゃん風の（メキシコの口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Órale",
+  "en": "Wow! / Come on! (Mexican)",
+  "ja": "おおっ！さあ！（メキシコの口語）",
+  "cat": "Coloquial",
+  "nivel": "avanzado"
  }
 ];
