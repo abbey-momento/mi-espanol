@@ -333,49 +333,57 @@ const VOCAB_DATA = [
   "es": "Ser / Estar",
   "en": "To be",
   "ja": "〜である/〜にいる",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Tener",
   "en": "To have",
   "ja": "持つ",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Querer",
   "en": "To want",
   "ja": "欲しい",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Poder",
   "en": "To be able to",
   "ja": "〜できる",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Ir",
   "en": "To go",
   "ja": "行く",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Comer",
   "en": "To eat",
   "ja": "食べる",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Hablar",
   "en": "To speak",
   "ja": "話す",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Necesitar",
   "en": "To need",
   "ja": "必要とする",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Sin embargo",
@@ -1371,121 +1379,141 @@ const VOCAB_DATA = [
   "es": "Grande",
   "en": "Big",
   "ja": "大きい",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Pequeño",
   "en": "Small",
   "ja": "小さい",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Alto",
   "en": "Tall",
   "ja": "高い(背)",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Bajo",
   "en": "Short",
   "ja": "低い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Rápido",
   "en": "Fast",
   "ja": "速い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Lento",
   "en": "Slow",
   "ja": "遅い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Caro",
   "en": "Expensive",
   "ja": "高い(値段)",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Barato",
   "en": "Cheap",
   "ja": "安い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Fácil",
   "en": "Easy",
   "ja": "簡単",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Difícil",
   "en": "Difficult",
   "ja": "難しい",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Nuevo",
   "en": "New",
   "ja": "新しい",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Viejo",
   "en": "Old",
   "ja": "古い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Limpio",
   "en": "Clean",
   "ja": "きれい",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Sucio",
   "en": "Dirty",
   "ja": "汚い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Fuerte",
   "en": "Strong",
   "ja": "強い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Débil",
   "en": "Weak",
   "ja": "弱い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Bonito",
   "en": "Pretty",
   "ja": "きれい/かわいい",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Feo",
   "en": "Ugly",
   "ja": "醜い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Inteligente",
   "en": "Smart",
   "ja": "賢い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Divertido",
   "en": "Fun",
   "ja": "楽しい",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Enero",
@@ -2845,211 +2873,245 @@ const VOCAB_DATA = [
   "en": "To open",
   "ja": "開ける",
   "cat": "Verbos",
-  "nivel": "básico"
+  "nivel": "fácil"
  },
  {
   "es": "Cerrar",
   "en": "To close",
   "ja": "閉める",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Empezar",
   "en": "To start",
   "ja": "始める",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Terminar",
   "en": "To finish",
   "ja": "終える",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Entender",
   "en": "To understand",
   "ja": "理解する",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Aprender",
   "en": "To learn",
   "ja": "学ぶ",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Enseñar",
   "en": "To teach",
   "ja": "教える",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Escribir",
   "en": "To write",
   "ja": "書く",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Leer",
   "en": "To read",
   "ja": "読む",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Escuchar",
   "en": "To listen",
   "ja": "聞く",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Mirar",
   "en": "To look at",
   "ja": "見る",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Ver",
   "en": "To see",
   "ja": "見える/見る",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Oír",
   "en": "To hear",
   "ja": "聞こえる",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Sentir",
   "en": "To feel",
   "ja": "感じる",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Pensar",
   "en": "To think",
   "ja": "考える",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Creer",
   "en": "To believe",
   "ja": "信じる",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Saber",
   "en": "To know (a fact)",
   "ja": "知っている",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Conocer",
   "en": "To know (a person/place)",
   "ja": "知り合いである",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Dar",
   "en": "To give",
   "ja": "与える",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Tomar",
   "en": "To take",
   "ja": "取る/飲む",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Llevar",
   "en": "To carry/wear",
   "ja": "運ぶ/身につける",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Traer",
   "en": "To bring",
   "ja": "持ってくる",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Buscar",
   "en": "To look for",
   "ja": "探す",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Encontrar",
   "en": "To find",
   "ja": "見つける",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Perder",
   "en": "To lose",
   "ja": "失う",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Ganar",
   "en": "To win/earn",
   "ja": "勝つ/稼ぐ",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Jugar",
   "en": "To play",
   "ja": "遊ぶ/プレーする",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Trabajar",
   "en": "To work",
   "ja": "働く",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Estudiar",
   "en": "To study",
   "ja": "勉強する",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Dormir",
   "en": "To sleep",
   "ja": "眠る",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Soñar",
   "en": "To dream",
   "ja": "夢を見る",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Recordar",
   "en": "To remember",
   "ja": "思い出す",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Olvidar",
   "en": "To forget",
   "ja": "忘れる",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Decidir",
   "en": "To decide",
   "ja": "決める",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Cambiar",
   "en": "To change",
   "ja": "変える",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Mejorar",
@@ -3061,7 +3123,8 @@ const VOCAB_DATA = [
   "es": "Ayudar",
   "en": "To help",
   "ja": "手伝う",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Permitir",
@@ -3079,13 +3142,15 @@ const VOCAB_DATA = [
   "es": "Preguntar",
   "en": "To ask",
   "ja": "質問する",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Amable",
   "en": "Kind",
   "ja": "親切な",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Generoso",
@@ -3181,13 +3246,15 @@ const VOCAB_DATA = [
   "es": "Gracioso",
   "en": "Funny",
   "ja": "面白い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Serio",
   "en": "Serious",
   "ja": "真面目な",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Educado",
@@ -4342,21 +4409,21 @@ const VOCAB_DATA = [
   "en": "First",
   "ja": "まず",
   "cat": "Frases",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Luego",
   "en": "Then",
   "ja": "それから",
   "cat": "Frases",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Finalmente",
   "en": "Finally",
   "ja": "最後に",
   "cat": "Frases",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Por otro lado",
@@ -4377,7 +4444,7 @@ const VOCAB_DATA = [
   "en": "For example",
   "ja": "例えば",
   "cat": "Frases",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Es decir",
@@ -4472,406 +4539,406 @@ const VOCAB_DATA = [
   "en": "To comb one's hair",
   "ja": "髪をとかす",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Maquillarse",
   "en": "To put on makeup",
   "ja": "化粧をする",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Afeitarse",
   "en": "To shave",
   "ja": "ひげを剃る",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Cepillarse los dientes",
   "en": "To brush one's teeth",
   "ja": "歯を磨く",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Vestirse",
   "en": "To get dressed",
   "ja": "服を着る",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Quitarse",
   "en": "To take off (clothes)",
   "ja": "脱ぐ",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Ponerse",
   "en": "To put on (clothes)",
   "ja": "着る/身につける",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Sentarse",
   "en": "To sit down",
   "ja": "座る",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Pararse",
   "en": "To stand up",
   "ja": "立つ",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Quedarse",
   "en": "To stay",
   "ja": "とどまる",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Añadir",
   "en": "To add",
   "ja": "加える",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Quitar",
   "en": "To remove",
   "ja": "取り除く",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Mezclar",
   "en": "To mix",
   "ja": "混ぜる",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Cortar",
   "en": "To cut",
   "ja": "切る",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Cocinar",
   "en": "To cook",
   "ja": "料理する",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Hervir",
   "en": "To boil",
   "ja": "煮る/沸かす",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Freír",
   "en": "To fry",
   "ja": "揚げる",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Hornear",
   "en": "To bake",
   "ja": "オーブンで焼く",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Calentar",
   "en": "To heat",
   "ja": "温める",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Enfriar",
   "en": "To cool",
   "ja": "冷やす",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Limpiar",
   "en": "To clean",
   "ja": "掃除する",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Ordenar",
   "en": "To tidy up / order",
   "ja": "片付ける/注文する",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Reparar",
   "en": "To repair",
   "ja": "修理する",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Construir",
   "en": "To build",
   "ja": "建てる",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Destruir",
   "en": "To destroy",
   "ja": "破壊する",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Pintar",
   "en": "To paint",
   "ja": "塗る/絵を描く",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Dibujar",
   "en": "To draw",
   "ja": "絵を描く",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Cantar",
   "en": "To sing",
   "ja": "歌う",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Bailar",
   "en": "To dance",
   "ja": "踊る",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Saltar",
   "en": "To jump",
   "ja": "跳ぶ",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Caminar",
   "en": "To walk",
   "ja": "歩く",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Subir",
   "en": "To go up",
   "ja": "上がる",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Bajar",
   "en": "To go down",
   "ja": "下がる",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Entrar",
   "en": "To enter",
   "ja": "入る",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Salir",
   "en": "To go out",
   "ja": "出る",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Llegar",
   "en": "To arrive",
   "ja": "到着する",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Regresar",
   "en": "To return",
   "ja": "戻る",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Volver",
   "en": "To come back",
   "ja": "帰ってくる",
   "cat": "Verbos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Redondo",
   "en": "Round",
   "ja": "丸い",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Ancho",
   "en": "Wide",
   "ja": "幅広い",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Estrecho",
   "en": "Narrow",
   "ja": "狭い",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Profundo",
   "en": "Deep",
   "ja": "深い",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Plano",
   "en": "Flat",
   "ja": "平らな",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Suave",
   "en": "Soft/smooth",
   "ja": "柔らかい",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Áspero",
   "en": "Rough",
   "ja": "ざらざらした",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Brillante",
   "en": "Bright/shiny",
   "ja": "輝いている",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Oscuro",
   "en": "Dark",
   "ja": "暗い",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Claro",
   "en": "Clear/light",
   "ja": "明るい/明確な",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Transparente",
   "en": "Transparent",
   "ja": "透明な",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Ligero",
   "en": "Light (weight)",
   "ja": "軽い",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Pesado",
   "en": "Heavy",
   "ja": "重い",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Flexible",
   "en": "Flexible",
   "ja": "柔軟な",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Rígido",
   "en": "Rigid",
   "ja": "硬直した",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Seco",
   "en": "Dry",
   "ja": "乾いた",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Caliente",
   "en": "Hot",
   "ja": "熱い",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Tibio",
   "en": "Lukewarm",
   "ja": "ぬるい",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Maduro",
   "en": "Ripe/mature",
   "ja": "熟した",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "Fresco",
   "en": "Fresh",
   "ja": "新鮮な",
   "cat": "Adjetivos",
-  "nivel": "avanzado"
+  "nivel": "fácil"
  },
  {
   "es": "El delfín",
@@ -5717,7 +5784,7 @@ const VOCAB_DATA = [
   "es": "El centro",
   "en": "Center",
   "ja": "中心",
-  "cat": "General"
+  "cat": "Lugares"
  },
  {
   "es": "El principio",
@@ -6107,7 +6174,8 @@ const VOCAB_DATA = [
   "es": "Hacer",
   "en": "To do / To make",
   "ja": "する・作る",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "El día",
@@ -6143,19 +6211,22 @@ const VOCAB_DATA = [
   "es": "Bueno",
   "en": "Good",
   "ja": "良い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Malo",
   "en": "Bad",
   "ja": "悪い",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Vivir",
   "en": "To live",
   "ja": "住む・生きる",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "El amigo",
@@ -7391,7 +7462,8 @@ const VOCAB_DATA = [
   "es": "Intentar",
   "en": "To try / attempt",
   "ja": "試みる",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Evitar",
@@ -7625,7 +7697,8 @@ const VOCAB_DATA = [
   "es": "Gustar",
   "en": "To like / to be pleasing to",
   "ja": "好きだ",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Necesario",
@@ -7643,19 +7716,22 @@ const VOCAB_DATA = [
   "es": "Dejar",
   "en": "To leave (behind) / to let",
   "ja": "置いていく・させる",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Pasar",
   "en": "To pass / to happen / to spend (time)",
   "ja": "通る・起こる・過ごす",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "Seguir",
   "en": "To continue / to follow",
   "ja": "続ける・従う",
-  "cat": "Verbos"
+  "cat": "Verbos",
+  "nivel": "fácil"
  },
  {
   "es": "El mundo",
@@ -8106,7 +8182,8 @@ const VOCAB_DATA = [
   "es": "Chistoso",
   "en": "Funny",
   "ja": "面白い、おかしい",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Chismoso",
@@ -8136,7 +8213,8 @@ const VOCAB_DATA = [
   "es": "Famoso",
   "en": "Famous",
   "ja": "有名な",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Ruidoso",
@@ -8148,7 +8226,8 @@ const VOCAB_DATA = [
   "es": "Peligroso",
   "en": "Dangerous",
   "ja": "危険な",
-  "cat": "Adjetivos"
+  "cat": "Adjetivos",
+  "nivel": "fácil"
  },
  {
   "es": "Estudioso",

@@ -195,11 +195,20 @@ const CEFR_MAP = {
 };
 const DICT_CATEGORY_ORDER = [...CEFR_MAP.A1, ...CEFR_MAP.A2, ...CEFR_MAP.B1, ...CEFR_MAP.B2];
 function dictCategoryRank(cat){ const idx = DICT_CATEGORY_ORDER.indexOf(cat); return idx===-1 ? 999 : idx; }
+const CEFR_LEVEL_ORDER = ["A1","A2","B1","B2"];
 function catToCefr(cat){
-  for(const level of ["A1","A2","B1","B2"]){ if(CEFR_MAP[level].includes(cat)) return level; }
+  for(const level of CEFR_LEVEL_ORDER){ if(CEFR_MAP[level].includes(cat)) return level; }
   return "B1";
 }
-function assignCefr(w){ return w.nivel==="avanzado" ? "B2" : catToCefr(w.cat); }
+function assignCefr(w){
+  const base = catToCefr(w.cat);
+  if(w.nivel==="avanzado") return "B2";
+  if(w.nivel==="fácil"){
+    const idx = CEFR_LEVEL_ORDER.indexOf(base);
+    return CEFR_LEVEL_ORDER[Math.max(0, idx-1)];
+  }
+  return base;
+}
 const VOCAB = VOCAB_DATA.map((w,i)=>({...w, id:i, nivel: w.nivel || "básico", cefr: assignCefr(w)}));
 
 const KNOWN_THRESHOLD = 2;
