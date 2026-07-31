@@ -175,8 +175,8 @@
     backdrop-filter: blur(6px); color:var(--card); font-size:13px; font-weight:700; cursor:pointer; font-family:inherit;
     box-shadow: 0 4px 14px rgba(0,0,0,0.35); white-space:nowrap; }
   .dict-nav-btn.dict-nav-disabled { opacity:0.3; cursor:default; }
-  .dict-nav-side-toggle { padding:8px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.08);
-    color:var(--card); font-size:12px; cursor:pointer; font-family:inherit; }
+  .dict-nav-side-toggle { width:30px; height:30px; padding:0; border-radius:50%; border:1px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.05);
+    color:#9C8FC2; font-size:13px; cursor:pointer; font-family:inherit; align-self:center; opacity:0.7; margin-bottom:4px; }
   .dict-nav-spacer { height:88px; }
 </style>
 </head>
@@ -758,7 +758,7 @@ function buildFloatingNav(prevLabel, nextLabel, onPrev, onNext){
   progress.settings = progress.settings || {};
   const side = progress.settings.navSide || "right";
   const wrap = el("div","dict-nav-float side-"+side);
-  const toggle = el("button","dict-nav-side-toggle", side==="right" ? "⇄ 左に移動" : "⇄ 右に移動");
+  const toggle = el("button","dict-nav-side-toggle", "⇄");
   toggle.onclick = ()=>{ playTap(); toggleNavSide(); render(); };
   const prevBtn = el("button","dict-nav-btn", prevLabel);
   const nextBtn = el("button","dict-nav-btn", nextLabel);
