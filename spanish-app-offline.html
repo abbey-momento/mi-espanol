@@ -193,6 +193,8 @@ const CEFR_MAP = {
        "Frecuencia","Adjetivos","Festividades","Geografía","Música","Profesiones","Naturaleza","Herramientas","Salud"],
   B2: ["Modismos","Arte","General","Coloquial"],
 };
+const DICT_CATEGORY_ORDER = [...CEFR_MAP.A1, ...CEFR_MAP.A2, ...CEFR_MAP.B1, ...CEFR_MAP.B2];
+function dictCategoryRank(cat){ const idx = DICT_CATEGORY_ORDER.indexOf(cat); return idx===-1 ? 999 : idx; }
 function catToCefr(cat){
   for(const level of ["A1","A2","B1","B2"]){ if(CEFR_MAP[level].includes(cat)) return level; }
   return "B1";
@@ -499,7 +501,7 @@ function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}�
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:"Todos", dictColloquialOnly:false, dictListLimit:60, grammarFlaggedOnly:false, phraseSceneIdx:null, grammarRoadmapOpen:false };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:"Todos", dictColloquialOnly:false, dictShuffled:false, dictListLimit:60, grammarFlaggedOnly:false, phraseSceneIdx:null, grammarRoadmapOpen:false };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -835,6 +837,15 @@ function renderDictionary(){
   const colloqChip = el("button","chip"+(state.dictColloquialOnly?" active":""), "🗣️ 口語・スラングのみ");
   colloqChip.onclick = ()=>{ playTap(); state.dictColloquialOnly = !state.dictColloquialOnly; state.dictListLimit=60; render(); };
   colloqRow.appendChild(colloqChip);
+  const shuffleChip = el("button","chip"+(state.dictShuffled?" active":""), "🔀 シャッフル");
+  shuffleChip.onclick = ()=>{
+    playTap();
+    state.dictShuffled = !state.dictShuffled;
+    dictShuffleOrder = state.dictShuffled ? shuffle(VOCAB).map(w=>w.es) : null;
+    state.dictListLimit=60;
+    render();
+  };
+  colloqRow.appendChild(shuffleChip);
   app.appendChild(colloqRow);
   const levelRow = el("div","chip-row");
   [["Todos","全レベル"],["A1","A1"],["A2","A2"],["B1","B1"],["B2","B2"]].forEach(lv=>{
@@ -849,12 +860,16 @@ function renderDictionary(){
 }
 function getDictList(){
   const q = normDictKey(state.dictSearch);
-  let list = VOCAB;
-  if(state.dictFilterMode==="flagged") list = getFlaggedPool();
+  let list = state.dictShuffled ? VOCAB : [...VOCAB].sort((a,b)=> dictCategoryRank(a.cat)-dictCategoryRank(b.cat));
+  if(state.dictFilterMode==="flagged") list = list.filter(w => (progress.flagged||{})[w.id]);
   if(state.dictColloquialOnly) list = list.filter(w=>w.cat==="Coloquial");
   if(state.dictLevelFilter && state.dictLevelFilter!=="Todos") list = list.filter(w=>w.cefr===state.dictLevelFilter);
   if(q){
     list = list.filter(w => normDictKey(w.es).includes(q) || normDictKey(w.ja).includes(q) || normDictKey(w.en).includes(q));
+  }
+  if(state.dictShuffled && dictShuffleOrder){
+    const orderIdx = {}; dictShuffleOrder.forEach((es,i)=>{ orderIdx[es]=i; });
+    list = [...list].sort((a,b)=> (orderIdx[a.es]??1e9) - (orderIdx[b.es]??1e9));
   }
   return list;
 }
@@ -902,6 +917,7 @@ function renderDictList(){
   }
 }
 let lastSpokenDictKey = null;
+let dictShuffleOrder = null;
 function renderDictDetail(){
   const key = state.dictDetailWord;
   const vocabWord = VOCAB.find(w => normDictKey(w.es)===key);
@@ -1627,7 +1643,7 @@ function renderGrammarRoadmap(){
   header.appendChild(el("h1","title","進捗ロードマップ"));
   app.appendChild(header);
   const spacer = el("div"); spacer.style.height="10px"; app.appendChild(spacer);
-  app.appendChild(el("div","dict-pending",`ドリルで実際に答えた項目だけを表示しています。直近${GRAMMAR_STAT_WINDOW}問の正答率なので、最近の実力がすぐ反映されます。ドリルがまだない文法トピックはここには出てきません。`));
+  app.appendChild(el("div","dict-pending",`「活用ドリル」と「例文で穴埋め」の各トピックが対象です（数字ドリル・リスニングは対象外）。直近${GRAMMAR_STAT_WINDOW}問の正答率なので、最近の実力がすぐ反映されます。ドリルがまだない文法トピックはここには出てきません。`));
   progress.grammarStats = progress.grammarStats || {};
   const measured = GRAMMAR_ARTICLES.filter(a => progress.grammarStats[a.title] && progress.grammarStats[a.title].recent && progress.grammarStats[a.title].recent.length>0);
   if(measured.length===0){
