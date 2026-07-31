@@ -274,9 +274,21 @@ function pickVoice(){
       es[0] || null;
   }catch(e){}
 }
+let selectedJaVoice = null;
+function pickJaVoice(){
+  try{
+    const voices = window.speechSynthesis.getVoices();
+    const ja = voices.filter(v=>v.lang && v.lang.toLowerCase().startsWith("ja"));
+    selectedJaVoice =
+      ja.find(v=>/enhanced|premium|natural|neural/i.test(v.name)) ||
+      ja.find(v=>/google/i.test(v.name)) ||
+      ja[0] || null;
+  }catch(e){}
+}
 if(window.speechSynthesis){
   pickVoice();
-  window.speechSynthesis.onvoiceschanged = pickVoice;
+  pickJaVoice();
+  window.speechSynthesis.onvoiceschanged = ()=>{ pickVoice(); pickJaVoice(); };
 }
 function speak(text){
   try{
@@ -298,11 +310,13 @@ function speakSeq(text, lang, onEnd){
       if(!selectedVoice) pickVoice();
       if(selectedVoice){ u.voice=selectedVoice; u.lang=selectedVoice.lang; } else { u.lang="es-MX"; }
       u.rate = 0.94;
+      u.pitch = 1.0;
     } else {
-      u.lang = "ja-JP";
-      u.rate = 1.0;
+      if(!selectedJaVoice) pickJaVoice();
+      if(selectedJaVoice){ u.voice=selectedJaVoice; u.lang=selectedJaVoice.lang; } else { u.lang="ja-JP"; }
+      u.rate = 0.98;
+      u.pitch = 1.0;
     }
-    u.pitch = 1.0;
     u.onend = ()=>{ if(onEnd) onEnd(); };
     u.onerror = ()=>{ if(onEnd) onEnd(); };
     window.speechSynthesis.speak(u);
@@ -323,7 +337,7 @@ function releaseWakeLock(){
 }
 if(typeof document !== "undefined"){
   document.addEventListener("visibilitychange", async ()=>{
-    if(document.visibilityState==="visible" && typeof state!=="undefined" && state.tab==="vocab" && state.mode==="listen"){
+    if(document.visibilityState==="visible" && typeof state!=="undefined" && state.tab==="dict" && state.dictAutoPlaying){
       await requestWakeLock();
     }
   });
@@ -601,7 +615,6 @@ function render(){
     || (state.tab==="conj" && !!state.conjSubTab)
     || (state.tab==="dict" && !!state.dictDetailWord)
     || (state.tab==="grammar" && grammarDetailIdx!==null)
-    || (state.tab==="vocab" && state.mode==="listen")
     || (state.tab==="phrases" && state.phraseSceneIdx!==null && state.phraseSceneIdx!==undefined);
   if(!hideNav) app.appendChild(navBar());
   if(state.tab==="vocab"){
@@ -610,7 +623,6 @@ function render(){
     else if(state.mode==="quiz") renderQuiz();
     else if(state.mode==="review") renderFlash();
     else if(state.mode==="flagged") renderFlash();
-    else if(state.mode==="listen") renderListenMode();
     return;
   }
   if(state.tab==="more"){
@@ -634,7 +646,7 @@ function render(){
     renderPhrases();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; stopListenAuto(); listenAutoDeck=[]; stopDictAutoPlay(); columnDeck=[]; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; stopDictAutoPlay(); columnDeck=[]; }
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","ドリル"],["phrases","フレーズ"],["dict","辞書"],["grammar","文法"],["more","その他"]].forEach(([key,label])=>{
@@ -726,75 +738,9 @@ function renderVocabHome(){
   flc.innerHTML = `<div class="mode-icon">⭐</div><div class="mode-name">フラグした単語</div><div class="mode-desc">辞書でマークした単語（${flaggedPool.length}個）</div>`;
   flc.onclick = ()=>{ if(flaggedPool.length===0) return; playTap(); state.mode="flagged"; render(); };
   if(flaggedPool.length===0) flc.style.opacity="0.45";
-  const flaggedWrap = el("div"); flaggedWrap.style.marginBottom="10px"; flaggedWrap.appendChild(flc);
+  const flaggedWrap = el("div"); flaggedWrap.style.marginBottom="16px"; flaggedWrap.appendChild(flc);
   app.appendChild(flaggedWrap);
-  const listenCard = el("button","mode-card"); listenCard.style.width="100%"; listenCard.style.marginTop="0";
-  listenCard.innerHTML = `<div class="mode-icon">🎧</div><div class="mode-name">聞き流しモード</div><div class="mode-desc">画面を見なくてもOK。単語→意味の順に自動で読み上げ続ける</div>`;
-  listenCard.onclick = ()=>{ playTap(); state.mode="listen"; render(); };
-  const listenWrap = el("div"); listenWrap.style.marginBottom="16px"; listenWrap.appendChild(listenCard);
-  app.appendChild(listenWrap);
   app.appendChild(el("div","footer-hint","Unos minutos libres · practica y sigue tu viaje"));
-}
-/* ---------- 聞き流しモード（自動読み上げ） ---------- */
-let listenAutoDeck = [], listenAutoIdx = 0, listenAutoPlaying = false, listenAutoGen = 0;
-function startListenAutoWord(){
-  const myGen = listenAutoGen;
-  if(listenAutoDeck.length===0){ listenAutoDeck = shuffle(vocabPool()); listenAutoIdx = 0; }
-  if(listenAutoIdx >= listenAutoDeck.length){ listenAutoDeck = shuffle(vocabPool()); listenAutoIdx = 0; }
-  const word = listenAutoDeck[listenAutoIdx];
-  renderListenMode(word);
-  speakSeq(word.es, "es", ()=>{
-    if(myGen!==listenAutoGen || !listenAutoPlaying) return;
-    setTimeout(()=>{
-      if(myGen!==listenAutoGen || !listenAutoPlaying) return;
-      speakSeq(word.ja, "ja", ()=>{
-        if(myGen!==listenAutoGen || !listenAutoPlaying) return;
-        setTimeout(()=>{
-          if(myGen!==listenAutoGen || !listenAutoPlaying) return;
-          listenAutoIdx++;
-          startListenAutoWord();
-        }, 500);
-      });
-    }, 350);
-  });
-}
-function stopListenAuto(){
-  listenAutoGen++;
-  listenAutoPlaying = false;
-  try{ window.speechSynthesis && window.speechSynthesis.cancel(); }catch(e){}
-  releaseWakeLock();
-}
-function renderListenMode(currentWord){
-  app.appendChild(topBar("聞き流し", "", ()=>{ stopListenAuto(); state.mode="home"; render(); }));
-  const wrap = el("div"); wrap.style.textAlign="center"; wrap.style.marginTop="30px";
-  const word = currentWord || listenAutoDeck[listenAutoIdx] || { es:"", ja:"" };
-  wrap.innerHTML = `<div style="font-size:13px;color:#C9BBE8;">${listenAutoPlaying ? "🎧 聞き流し中…" : "⏸ 一時停止中"}</div>
-    <div style="font-family:Georgia,serif;font-size:34px;font-weight:700;margin-top:18px;">${word.es}</div>
-    <div style="font-size:16px;color:#C9BBE8;margin-top:10px;">${word.ja}</div>`;
-  app.appendChild(wrap);
-  const spacer = el("div"); spacer.style.height="30px"; app.appendChild(spacer);
-  const btnRow = el("div"); btnRow.style.display="flex"; btnRow.style.justifyContent="center"; btnRow.style.gap="14px";
-  const toggleBtn = el("button","primary-btn", listenAutoPlaying ? "⏸ 一時停止" : "▶️ 再生");
-  toggleBtn.style.display="inline-block"; toggleBtn.style.width="auto"; toggleBtn.style.padding="14px 32px";
-  toggleBtn.onclick = async ()=>{
-    playTap();
-    if(listenAutoPlaying){
-      stopListenAuto();
-      render();
-    } else {
-      listenAutoPlaying = true;
-      await requestWakeLock();
-      startListenAutoWord();
-    }
-  };
-  btnRow.appendChild(toggleBtn);
-  app.appendChild(btnRow);
-  const hint = el("div","footer-hint","画面はつけたままにしてください（消灯すると音声が止まることがあります）。皿洗いなど手が離せないときの聞き流しにどうぞ。");
-  hint.style.marginTop="20px";
-  app.appendChild(hint);
-  if(!listenAutoPlaying && listenAutoDeck.length===0){
-    listenAutoDeck = shuffle(vocabPool()); listenAutoIdx = 0;
-  }
 }
 function renderCalendar(){
   const now = new Date();
@@ -1018,7 +964,7 @@ function renderDictionary(){
     levelRow.appendChild(chip);
   });
   app.appendChild(levelRow);
-  const autoPlayBtn = el("button","primary-btn","🎧 この絞り込みで自動再生（詳細を見ながら聞き流す）");
+  const autoPlayBtn = el("button","primary-btn","🎧 連続聞き流し");
   autoPlayBtn.style.display="block"; autoPlayBtn.style.width="100%"; autoPlayBtn.style.margin="4px 0 14px";
   autoPlayBtn.onclick = ()=>{ playTap(); startDictAutoPlay(); };
   app.appendChild(autoPlayBtn);
@@ -1092,13 +1038,15 @@ function renderDictDetail(){
   const detail = DICTIONARY_DATA[key];
   app.appendChild(topBar("辞書", "", ()=>{ stopDictAutoPlay(); state.dictDetailWord=null; lastSpokenDictKey=null; render(); requestAnimationFrame(()=>{ window.scrollTo(0, state.dictListScrollY||0); }); }));
   if(state.dictAutoPlaying){
-    const autoBar = el("div","dict-pending", `🎧 自動再生中（${dictAutoIdx+1} / ${dictAutoList.length}）`);
-    autoBar.style.cursor = "pointer";
-    const pauseBtn = el("button","primary-btn","⏸ 一時停止");
-    pauseBtn.style.display="block"; pauseBtn.style.width="100%"; pauseBtn.style.marginTop="8px";
+    const autoRow = el("div"); autoRow.style.display="flex"; autoRow.style.alignItems="center"; autoRow.style.justifyContent="center";
+    autoRow.style.gap="10px"; autoRow.style.marginBottom="18px";
+    const autoLabel = el("div"); autoLabel.style.fontSize="12px"; autoLabel.style.color="#C9BBE8";
+    autoLabel.textContent = `🎧 連続再生中（${dictAutoIdx+1} / ${dictAutoList.length}）`;
+    const pauseBtn = el("button","dict-nav-side-toggle","⏸");
+    pauseBtn.style.width="26px"; pauseBtn.style.height="26px"; pauseBtn.style.fontSize="11px";
     pauseBtn.onclick = ()=>{ playTap(); stopDictAutoPlay(); render(); };
-    app.appendChild(autoBar);
-    app.appendChild(pauseBtn);
+    autoRow.appendChild(autoLabel); autoRow.appendChild(pauseBtn);
+    app.appendChild(autoRow);
   }
   const backBtn = summaryReturnBtn();
   if(backBtn) app.appendChild(backBtn);
