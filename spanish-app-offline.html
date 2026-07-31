@@ -498,7 +498,7 @@ function render(){
     renderNews();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; }
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","ドリル"],["dict","辞書"],["grammar","文法"],["column","コラム"],["news","ニュース"]].forEach(([key,label])=>{
@@ -736,16 +736,21 @@ function renderDictList(){
     wrap.appendChild(hint);
   }
 }
+let lastSpokenDictKey = null;
 function renderDictDetail(){
   const key = state.dictDetailWord;
   const vocabWord = VOCAB.find(w => normDictKey(w.es)===key);
   const detail = DICTIONARY_DATA[key];
-  app.appendChild(topBar("辞書", "", ()=>{ state.dictDetailWord=null; render(); }));
+  app.appendChild(topBar("辞書", "", ()=>{ state.dictDetailWord=null; lastSpokenDictKey=null; render(); }));
   const header = el("div","dict-detail-header");
   header.innerHTML = `<div class="dict-detail-es">${vocabWord ? vocabWord.es : key}</div>
     <div class="dict-detail-en-ja">${vocabWord ? vocabWord.en+" ／ "+vocabWord.ja : ""}</div>`;
   app.appendChild(header);
   if(vocabWord){
+    if(lastSpokenDictKey !== key){
+      lastSpokenDictKey = key;
+      if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(vocabWord.es), 150);
+    }
     const actionRow = el("div"); actionRow.style.display="flex"; actionRow.style.justifyContent="center"; actionRow.style.gap="10px"; actionRow.style.marginTop="8px";
     const speakBtn = el("button","speak-btn","🔊");
     speakBtn.onclick = ()=> speak(vocabWord.es);
