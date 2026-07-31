@@ -1242,6 +1242,8 @@ function renderConjDrill(){
     app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
+  submit.addEventListener("mousedown", (e)=>e.preventDefault());
+  submit.addEventListener("touchstart", (e)=>{ e.preventDefault(); submitAnswer(); }, {passive:false});
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
   input.focus();
 }
@@ -1365,6 +1367,8 @@ function renderExamples(){
     app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
+  submit.addEventListener("mousedown", (e)=>e.preventDefault());
+  submit.addEventListener("touchstart", (e)=>{ e.preventDefault(); submitAnswer(); }, {passive:false});
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
   input.focus();
 }
@@ -1447,6 +1451,8 @@ function renderNumbersDrill(){
     app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
+  submit.addEventListener("mousedown", (e)=>e.preventDefault());
+  submit.addEventListener("touchstart", (e)=>{ e.preventDefault(); submitAnswer(); }, {passive:false});
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
   input.focus();
 }
@@ -1534,6 +1540,8 @@ function renderListeningDrill(){
     app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
+  submit.addEventListener("mousedown", (e)=>e.preventDefault());
+  submit.addEventListener("touchstart", (e)=>{ e.preventDefault(); submitAnswer(); }, {passive:false});
   input1.onkeydown = (e)=>{ if(e.key==="Enter") input2.focus(); };
   input2.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
   input1.focus();
