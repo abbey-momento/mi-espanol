@@ -317,6 +317,43 @@ const GRAMMAR_ARTICLES = [
   "cat": "動詞：接続法・条件文"
  },
  {
+  "title": "英語の「want someone to do」に対応する形がない",
+  "cat": "動詞：接続法・条件文",
+  "body": "英語には「動詞＋人＋to＋動詞の原形」という形（I want you to go. / I told her to wait. / I need him to help.）がありますが、スペイン語にはこれと同じ構造が存在しません。英語話者が接続法でいちばんつまずきやすいポイントです。\n\n英語の発想のまま直訳しようとしても対応する形がないので、必ず「主語1＋動詞＋que＋主語2＋接続法」という形に組み替える必要があります。\n\nコツは「主語が変わるかどうか」で判断することです。\n\n① 主語が同じ（自分が〜したい）→ 接続法は不要、動詞＋不定詞でOK：Quiero ir.（私が行きたい）\n② 主語が変わる（相手に〜してほしい）→ que＋接続法が必須：Quiero que vayas.（あなたに行ってほしい）\n\nquerer, necesitar, pedir, decir（命令の意味のとき）, esperar, sugerirなど、「誰かに何かを望む・伝える」タイプの動詞はすべてこのパターンに当てはまります。",
+  "table": {
+   "cols": [
+    "英語（存在しない構造）",
+    "スペイン語（que＋接続法）"
+   ],
+   "rows": [
+    [
+     "I want you to go.",
+     "Quiero que vayas."
+    ],
+    [
+     "She needs him to help.",
+     "Ella necesita que él ayude."
+    ],
+    [
+     "I told her to wait.",
+     "Le dije que esperara."
+    ],
+    [
+     "We hope you (all) can come.",
+     "Esperamos que puedan venir."
+    ],
+    [
+     "He asked me to call him.",
+     "Me pidió que lo llamara."
+    ],
+    [
+     "They want us to finish today.",
+     "Quieren que terminemos hoy."
+    ]
+   ]
+  }
+ },
+ {
   "title": "接続法過去形（imperfecto de subjuntivo）の作り方",
   "body": "過去の出来事について「〜だといいなと思った」「〜してほしかった」のように接続法を使いたいときの形です。作り方は、点過去のellos/ellas形（例：hablaron）から-ronを取り、決まった語尾をつけます。-ra系と-se系の2種類がありますが、-ra系の方がよく使われます。\n\n例: Quería que hablaras conmigo.（あなたに私と話してほしかった）",
   "table": {
