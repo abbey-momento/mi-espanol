@@ -429,7 +429,7 @@ function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}�
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictListLimit:60, grammarFlaggedOnly:false };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:"Todos", dictListLimit:60, grammarFlaggedOnly:false };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -701,6 +701,13 @@ function renderDictionary(){
     chipRow.appendChild(chip);
   });
   app.appendChild(chipRow);
+  const levelRow = el("div","chip-row");
+  [["Todos","全レベル"],["A1","A1"],["A2","A2"],["B1","B1"],["B2","B2"]].forEach(lv=>{
+    const chip = el("button","chip"+(state.dictLevelFilter===lv[0]?" active":""), lv[1]);
+    chip.onclick = ()=>{ playTap(); state.dictLevelFilter=lv[0]; state.dictListLimit=60; render(); };
+    levelRow.appendChild(chip);
+  });
+  app.appendChild(levelRow);
   const listWrap = el("div"); listWrap.id="dict-list-wrap";
   app.appendChild(listWrap);
   renderDictList();
@@ -709,6 +716,7 @@ function getDictList(){
   const q = normDictKey(state.dictSearch);
   let list = VOCAB;
   if(state.dictFilterMode==="flagged") list = getFlaggedPool();
+  if(state.dictLevelFilter && state.dictLevelFilter!=="Todos") list = list.filter(w=>w.cefr===state.dictLevelFilter);
   if(q){
     list = list.filter(w => normDictKey(w.es).includes(q) || normDictKey(w.ja).includes(q) || normDictKey(w.en).includes(q));
   }
