@@ -1193,14 +1193,17 @@ function renderConjDrill(){
   app.appendChild(row);
   const fb = el("div","conj-feedback");
   app.appendChild(fb);
+  let submitted = false;
   function submitAnswer(){
+    if(submitted) return;
     const val = input.value; if(!val) return;
+    submitted = true;
     const ok = norm(val) === norm(conjQuestion.answer);
     if(ok){ conjScore++; playCorrect(); fb.textContent = "¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent = `正解: ${conjQuestion.answer}`; fb.className="conj-feedback no"; conjMissed.push({...conjQuestion}); }
     conjLog.push({ q:{...conjQuestion}, correct:ok, userAnswer:val });
     recordGrammarStat(TENSE_TO_GRAMMAR[conjQuestion.tense], ok);
-    input.disabled = true; submit.disabled = true;
+    submit.disabled = true;
     const nextBtn = el("button","primary-btn", conjIdx+1>=conjTotal ? "結果を見る" : "次の問題へ →");
     nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
     nextBtn.onclick = ()=>{
@@ -1213,6 +1216,7 @@ function renderConjDrill(){
   }
   submit.onclick = submitAnswer;
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
+  setTimeout(()=> input.focus(), 50);
 }
 function doneScreenConj(){
   const wrap = el("div","done-wrap");
@@ -1313,8 +1317,11 @@ function renderExamples(){
   app.appendChild(fb);
   const jaLine = el("div","sentence-ja");
   app.appendChild(jaLine);
+  let submitted = false;
   function submitAnswer(){
+    if(submitted) return;
     const val = input.value; if(!val) return;
+    submitted = true;
     const answer = answerFor(ex);
     const ok = norm(val) === norm(answer);
     document.getElementById("exblank").textContent = answer;
@@ -1324,7 +1331,7 @@ function renderExamples(){
     const statTitle = topic==="conjugacion" ? TENSE_TO_GRAMMAR[ex.tense] : TOPIC_TO_GRAMMAR[topic];
     recordGrammarStat(statTitle, ok);
     jaLine.textContent = ex.ja;
-    input.disabled=true; submit.disabled=true;
+    submit.disabled=true;
     const nextBtn = el("button","primary-btn", exIdx+1>=exDeck.length ? "結果を見る" : "次の問題へ →");
     nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
     nextBtn.onclick = ()=>{ playTap(); exIdx++; render(); };
@@ -1332,6 +1339,7 @@ function renderExamples(){
   }
   submit.onclick = submitAnswer;
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
+  setTimeout(()=> input.focus(), 50);
 }
 
 /* ---------- Numbers drill ---------- */
@@ -1390,14 +1398,17 @@ function renderNumbersDrill(){
   app.appendChild(row);
   const fb = el("div","conj-feedback");
   app.appendChild(fb);
+  let submitted = false;
   function submitAnswer(){
+    if(submitted) return;
     const val = input.value; if(!val) return;
+    submitted = true;
     const acceptable = numQuestion.acceptable || [numQuestion.answer];
     const ok = acceptable.some(a => norm(val) === norm(a));
     if(ok){ numScore++; playCorrect(); fb.textContent="¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent=`正解: ${numQuestion.answer}`; fb.className="conj-feedback no"; numMissed.push(numQuestion); }
     numLog.push({ q:numQuestion, correct:ok, userAnswer:val });
-    input.disabled=true; submit.disabled=true;
+    submit.disabled=true;
     const nextBtn = el("button","primary-btn", numIdx+1>=numTotal ? "結果を見る" : "次の問題へ →");
     nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
     nextBtn.onclick = ()=>{
@@ -1410,6 +1421,7 @@ function renderNumbersDrill(){
   }
   submit.onclick = submitAnswer;
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
+  setTimeout(()=> input.focus(), 50);
 }
 
 /* ---------- Listening / dictation drill ---------- */
@@ -1473,9 +1485,12 @@ function renderListeningDrill(){
   app.appendChild(fb);
   const jaLine = el("div","sentence-ja");
   app.appendChild(jaLine);
+  let submitted = false;
   function submitAnswer(){
+    if(submitted) return;
     const v1 = input1.value, v2 = input2.value;
     if(!v1 && !v2) return;
+    submitted = true;
     const ok1 = norm(v1) === norm(item.answers[0]);
     const ok2 = norm(v2) === norm(item.answers[1]);
     const correctCount = (ok1?1:0)+(ok2?1:0);
@@ -1485,14 +1500,16 @@ function renderListeningDrill(){
     else { playWrong(); fb.textContent=`正解: ①${item.answers[0]} ②${item.answers[1]}`; fb.className="conj-feedback no"; }
     jaLine.textContent = item.ja;
     listenLog.push({ item, correctCount, userAnswers:[v1,v2] });
-    input1.disabled=true; input2.disabled=true; submit.disabled=true;
+    submit.disabled=true;
     const nextBtn = el("button","primary-btn", listenIdx+1>=listenDeck.length ? "結果を見る" : "次の問題へ →");
     nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
     nextBtn.onclick = ()=>{ playTap(); listenIdx++; render(); };
     app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
+  input1.onkeydown = (e)=>{ if(e.key==="Enter") input2.focus(); };
   input2.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
+  setTimeout(()=> input1.focus(), 50);
 }
 
 /* ---------- Grammar reference feed ---------- */
