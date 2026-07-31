@@ -1469,7 +1469,12 @@ function renderGrammar(){
       app.appendChild(el("div","dict-pending","まだフラグを立てた文法トピックがありません"));
       return;
     }
+    let lastCat = null;
     items.forEach(({a,i})=>{
+      if(a.cat && a.cat !== lastCat){
+        app.appendChild(el("div","section-label", a.cat));
+        lastCat = a.cat;
+      }
       const item = el("div","grammar-list-item");
       const isFlagged = !!progress.flaggedGrammar[a.title];
       item.innerHTML = `<div class="grammar-list-title">${isFlagged?"⭐ ":""}${a.title}</div>`;
@@ -1489,6 +1494,7 @@ function renderGrammar(){
   app.appendChild(topBar("文法", "", ()=>{ grammarDetailIdx=null; render(); }));
   const gBackBtn = summaryReturnBtn();
   if(gBackBtn) app.appendChild(gBackBtn);
+  if(a.cat){ app.appendChild(el("div","eyebrow", a.cat)); }
   const titleRow = el("div"); titleRow.style.display="flex"; titleRow.style.justifyContent="space-between"; titleRow.style.alignItems="flex-start"; titleRow.style.gap="10px";
   titleRow.appendChild(el("h1","title",a.title));
   const isFlaggedDetail = !!(progress.flaggedGrammar && progress.flaggedGrammar[a.title]);
