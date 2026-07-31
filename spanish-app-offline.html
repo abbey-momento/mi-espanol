@@ -737,6 +737,22 @@ const TOPIC_TO_GRAMMAR = {
   comparativo: "比較級の作り方",
   ser_estar: "ser と estar の使い分け",
   gustar: "gustar型動詞の語順",
+  articulos: "定冠詞・不定冠詞の使い方",
+  genero: "名詞の性と数のルール",
+  demostrativos: "指示形容詞・指示代名詞（este/ese/aquel）",
+  posesivos: "所有形容詞・所有代名詞",
+  hay_estar: "hay と estar の使い分け（存在 vs 所在）",
+  pasiva: "受け身の表現（ser+過去分詞 / se pasivo）",
+  negacion: "否定文の作り方（二重否定）",
+  muy_mucho: "muy と mucho の使い分け",
+  tambien_tampoco: "también と tampoco（〜も、〜も〜ない）",
+  relativos: "関係代名詞（que / quien / donde）",
+  algo_alguno: "algo/alguien/alguno と nada/nadie/ninguno の使い分け",
+  conjunciones: "接続詞 y/o の変化と pero vs sino",
+  tiempo_exp: "時間の経過を表す表現（desde / hace / llevar）",
+  todo_toda: "todo/toda/todos/todasの使い方",
+  interrogativos: "疑問詞の使い分け（qué / cuál / quién など）",
+  preterito_imperfecto: "点過去 vs 線過去：使い分けの実践",
 };
 const TENSE_TO_GRAMMAR = {
   indefinido: "点過去の作り方",
@@ -747,6 +763,12 @@ const TENSE_TO_GRAMMAR = {
   perfecto: "現在完了形（〜したことがある）の作り方",
   imperativo: "命令形の作り方（規則・不規則）",
   imperativo_neg: "命令形の使い方（肯定・否定・代名詞の位置）",
+  progresivo: "進行形（estar + 現在分詞）",
+  pluscuamperfecto: "過去完了形（había hablado）の作り方",
+  futuro_perfecto: "未来完了形・条件法完了形の作り方",
+  condicional_perfecto: "未来完了形・条件法完了形の作り方",
+  subjuntivo_imperfecto: "接続法過去形（imperfecto de subjuntivo）の作り方",
+  subjuntivo_perfecto: "接続法過去形（imperfecto de subjuntivo）の作り方",
 };
 function goToGrammarTopic(title, returnContext){
   if(!title) return;
@@ -1079,6 +1101,22 @@ const DRILL_MENU = [
   { key:"examples-gustar", icon:"💛", name:"gustar型ドリル", desc:"me gusta型の語順を練習" },
   { key:"examples-reflexivo", icon:"🪞", name:"再帰動詞ドリル", desc:"me/te/se + 動詞の練習" },
   { key:"examples-comparativo", icon:"⚖️", name:"比較級ドリル", desc:"más/menos/tan...que の練習" },
+  { key:"examples-preterito_imperfecto", icon:"🕰️", name:"点過去 vs 線過去", desc:"文脈からどちらの過去形か見分ける" },
+  { key:"examples-articulos", icon:"🔤", name:"冠詞ドリル", desc:"el/la/un/una の使い分け" },
+  { key:"examples-genero", icon:"⚥", name:"名詞の性ドリル", desc:"紛らわしい名詞の性を練習" },
+  { key:"examples-demostrativos", icon:"👉", name:"指示形容詞ドリル", desc:"este/ese/aquel の使い分け" },
+  { key:"examples-posesivos", icon:"🏷️", name:"所有形容詞ドリル", desc:"mi/tu/su などの練習" },
+  { key:"examples-hay_estar", icon:"📍", name:"hay/estarドリル", desc:"存在と所在の使い分け" },
+  { key:"examples-pasiva", icon:"🎭", name:"受け身ドリル", desc:"ser+過去分詞 / se pasivo の練習" },
+  { key:"examples-negacion", icon:"🚫", name:"否定語ドリル", desc:"nada/nadie/ninguno の練習" },
+  { key:"examples-muy_mucho", icon:"📏", name:"muy/muchoドリル", desc:"形容詞前と名詞前の使い分け" },
+  { key:"examples-tambien_tampoco", icon:"➕", name:"también/tampocoドリル", desc:"「〜も」の肯定・否定の練習" },
+  { key:"examples-relativos", icon:"🔁", name:"関係代名詞ドリル", desc:"que/quien/donde の使い分け" },
+  { key:"examples-algo_alguno", icon:"❓", name:"algo/algunoドリル", desc:"不定語の使い分けを練習" },
+  { key:"examples-conjunciones", icon:"🔗", name:"接続詞ドリル", desc:"y→e、o→u、pero/sino の練習" },
+  { key:"examples-tiempo_exp", icon:"⏳", name:"時間経過ドリル", desc:"desde/hace/llevar の練習" },
+  { key:"examples-todo_toda", icon:"🌐", name:"todo/todaドリル", desc:"性数一致を練習" },
+  { key:"examples-interrogativos", icon:"🙋", name:"疑問詞ドリル", desc:"qué/cuál/quién の使い分け" },
 ];
 function renderConjTab(){
   if(!state.conjSubTab){
