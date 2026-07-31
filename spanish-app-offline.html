@@ -717,6 +717,7 @@ function returnToSummary(){
   state.tab = ctx.tab;
   if(ctx.mode) state.mode = ctx.mode;
   if(ctx.conjSubTab) state.conjSubTab = ctx.conjSubTab;
+  if(ctx.phraseSceneIdx !== undefined) state.phraseSceneIdx = ctx.phraseSceneIdx;
   state.dictDetailWord = null;
   grammarDetailIdx = null;
   render();
@@ -1637,6 +1638,26 @@ function getGrammarList(){
 
 /* ---------- Column (Japanese trivia) ---------- */
 /* ---------- Situational phrases ---------- */
+function buildLinkedPhraseLine(text, sceneIdx){
+  const wrap = el("div");
+  wrap.style.fontFamily="Georgia,serif"; wrap.style.fontSize="15.5px"; wrap.style.fontWeight="700"; wrap.style.lineHeight="1.5";
+  const tokens = text.split(/(\s+|[.,;:!?¿¡()"/])/).filter(t=>t!=="");
+  tokens.forEach(tok=>{
+    const cleanWord = tok.toLowerCase().replace(/[^a-záéíóúñü]/gi,"");
+    if(cleanWord.length===0){ wrap.appendChild(document.createTextNode(tok)); return; }
+    const vocabMatch = VOCAB.find(w => normDictKey(w.es)===cleanWord && (w.cefr==="B1" || w.cefr==="B2"));
+    if(vocabMatch){
+      const span = document.createElement("span");
+      span.textContent = tok;
+      span.style.textDecoration="underline"; span.style.textDecorationStyle="dotted"; span.style.textDecorationColor="var(--accent3)"; span.style.cursor="pointer";
+      span.onclick = ()=>{ playTap(); goToDictionary(vocabMatch.es, {tab:"phrases", phraseSceneIdx: sceneIdx}); };
+      wrap.appendChild(span);
+    } else {
+      wrap.appendChild(document.createTextNode(tok));
+    }
+  });
+  return wrap;
+}
 function renderPhrases(){
   if(typeof SCENARIOS === "undefined" || !SCENARIOS || SCENARIOS.length===0){
     app.appendChild(el("div","done-wrap","<div class='done-title'>フレーズのデータが読み込めていません</div><div class='done-sub'>phrases.js が正しくアップロードされているか確認してください</div>"));
@@ -1661,12 +1682,15 @@ function renderPhrases(){
   const scene = SCENARIOS[state.phraseSceneIdx];
   app.appendChild(topBar(scene.title, "", ()=>{ state.phraseSceneIdx=null; render(); }));
   app.appendChild(el("h1","title", scene.icon+" "+scene.title));
+  app.appendChild(el("div","footer-hint","点線の単語をタップすると辞書の詳細が見られます（B1/B2レベルの単語）"));
   const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
   scene.items.forEach(item=>{
     const box = el("div","article"); box.style.marginBottom="10px";
     const row = el("div"); row.style.display="flex"; row.style.justifyContent="space-between"; row.style.alignItems="flex-start"; row.style.gap="10px";
     const textWrap = el("div");
-    textWrap.innerHTML = `<div style="font-family:Georgia,serif;font-size:15.5px;font-weight:700;">${item.es}</div><div style="font-size:13px;color:#C9BBE8;margin-top:4px;">${item.ja}</div>`;
+    textWrap.appendChild(buildLinkedPhraseLine(item.es, state.phraseSceneIdx));
+    const jaLine = el("div"); jaLine.style.fontSize="13px"; jaLine.style.color="#C9BBE8"; jaLine.style.marginTop="4px"; jaLine.textContent = item.ja;
+    textWrap.appendChild(jaLine);
     const speakBtn = el("button","speak-btn","🔊"); speakBtn.style.flexShrink="0";
     speakBtn.onclick = ()=> speak(item.es);
     row.appendChild(textWrap); row.appendChild(speakBtn);
