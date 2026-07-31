@@ -429,12 +429,12 @@ function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}�
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:"Todos", dictColloquialOnly:false, dictListLimit:60, grammarFlaggedOnly:false };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:"Todos", dictColloquialOnly:false, dictListLimit:60, grammarFlaggedOnly:false, phraseSceneIdx:null };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
 /* ---------- Lazy loading of per-tab data files ---------- */
-const LAZY_SCRIPTS = { conj:"drills.js", dict:"dictionary.js", grammar:"grammar.js", column:"column.js", news:"news.js" };
+const LAZY_SCRIPTS = { conj:"drills.js", dict:"dictionary.js", grammar:"grammar.js", column:"column.js", news:"news.js", phrases:"phrases.js" };
 const LAZY_STATE = {}; // src -> "loading" | "done" | "error"
 function ensureTabScript(tab){
   const src = LAZY_SCRIPTS[tab];
@@ -473,7 +473,8 @@ function render(){
   const hideNav = (state.tab==="vocab" && (state.mode==="flash" || state.mode==="quiz" || state.mode==="review" || state.mode==="flagged" || state.calendarOpen))
     || (state.tab==="conj" && !!state.conjSubTab)
     || (state.tab==="dict" && !!state.dictDetailWord)
-    || (state.tab==="grammar" && grammarDetailIdx!==null);
+    || (state.tab==="grammar" && grammarDetailIdx!==null)
+    || (state.tab==="phrases" && state.phraseSceneIdx!==null && state.phraseSceneIdx!==undefined);
   if(!hideNav) app.appendChild(navBar());
   if(state.tab==="vocab"){
     if(state.mode==="home") renderVocabHome();
@@ -481,6 +482,10 @@ function render(){
     else if(state.mode==="quiz") renderQuiz();
     else if(state.mode==="review") renderFlash();
     else if(state.mode==="flagged") renderFlash();
+    return;
+  }
+  if(state.tab==="more"){
+    renderMoreMenu();
     return;
   }
   const scriptStatus = ensureTabScript(state.tab);
@@ -496,17 +501,35 @@ function render(){
     renderColumn();
   } else if(state.tab==="news"){
     renderNews();
+  } else if(state.tab==="phrases"){
+    renderPhrases();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; }
 function navBar(){
   const row = el("div","nav-row");
-  [["vocab","単語"],["conj","ドリル"],["dict","辞書"],["grammar","文法"],["column","コラム"],["news","ニュース"]].forEach(([key,label])=>{
-    const b = el("button","nav-btn"+(state.tab===key?" active":""), label);
+  [["vocab","単語"],["conj","ドリル"],["phrases","フレーズ"],["dict","辞書"],["grammar","文法"],["more","その他"]].forEach(([key,label])=>{
+    const isActive = state.tab===key || (key==="more" && (state.tab==="column"||state.tab==="news"));
+    const b = el("button","nav-btn"+(isActive?" active":""), label);
     b.onclick = ()=>{ playTap(); state.tab=key; state.mode="home"; resetSessions(); render(); };
     row.appendChild(b);
   });
   return row;
+}
+function renderMoreMenu(){
+  const header = el("div");
+  header.appendChild(el("div","eyebrow","MÁS"));
+  header.appendChild(el("h1","title","その他"));
+  app.appendChild(header);
+  const spacer = el("div"); spacer.style.height="16px"; app.appendChild(spacer);
+  const grid = el("div","mode-grid");
+  [["column","📰","コラム","日本人・英語脳向けの豆知識、メキシコ文化"],["news","🗞️","ニュース","メキシコの時事・話題のスペイン語記事"]].forEach(([key,icon,name,desc])=>{
+    const card = el("button","mode-card");
+    card.innerHTML = `<div class="mode-icon">${icon}</div><div class="mode-name">${name}</div><div class="mode-desc">${desc}</div>`;
+    card.onclick = ()=>{ playTap(); state.tab=key; render(); };
+    grid.appendChild(card);
+  });
+  app.appendChild(grid);
 }
 
 /* ---------- Vocab Home ---------- */
@@ -1456,6 +1479,45 @@ function getGrammarList(){
 }
 
 /* ---------- Column (Japanese trivia) ---------- */
+/* ---------- Situational phrases ---------- */
+function renderPhrases(){
+  if(typeof SCENARIOS === "undefined" || !SCENARIOS || SCENARIOS.length===0){
+    app.appendChild(el("div","done-wrap","<div class='done-title'>フレーズのデータが読み込めていません</div><div class='done-sub'>phrases.js が正しくアップロードされているか確認してください</div>"));
+    return;
+  }
+  if(state.phraseSceneIdx===null || state.phraseSceneIdx===undefined){
+    const header = el("div");
+    header.appendChild(el("div","eyebrow","FRASES ÚTILES"));
+    header.appendChild(el("h1","title","場面別フレーズ"));
+    app.appendChild(header);
+    const spacer = el("div"); spacer.style.height="16px"; app.appendChild(spacer);
+    const grid = el("div","mode-grid");
+    SCENARIOS.forEach((sc,i)=>{
+      const card = el("button","mode-card");
+      card.innerHTML = `<div class="mode-icon">${sc.icon}</div><div class="mode-name">${sc.title}</div><div class="mode-desc">${sc.items.length}フレーズ</div>`;
+      card.onclick = ()=>{ playTap(); state.phraseSceneIdx=i; render(); };
+      grid.appendChild(card);
+    });
+    app.appendChild(grid);
+    return;
+  }
+  const scene = SCENARIOS[state.phraseSceneIdx];
+  app.appendChild(topBar(scene.title, "", ()=>{ state.phraseSceneIdx=null; render(); }));
+  app.appendChild(el("h1","title", scene.icon+" "+scene.title));
+  const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
+  scene.items.forEach(item=>{
+    const box = el("div","article"); box.style.marginBottom="10px";
+    const row = el("div"); row.style.display="flex"; row.style.justifyContent="space-between"; row.style.alignItems="flex-start"; row.style.gap="10px";
+    const textWrap = el("div");
+    textWrap.innerHTML = `<div style="font-family:Georgia,serif;font-size:15.5px;font-weight:700;">${item.es}</div><div style="font-size:13px;color:#C9BBE8;margin-top:4px;">${item.ja}</div>`;
+    const speakBtn = el("button","speak-btn","🔊"); speakBtn.style.flexShrink="0";
+    speakBtn.onclick = ()=> speak(item.es);
+    row.appendChild(textWrap); row.appendChild(speakBtn);
+    box.appendChild(row);
+    if(item.note){ box.appendChild(el("div","review-note", item.note)); }
+    app.appendChild(box);
+  });
+}
 function renderColumn(){
   const header = el("div");
   header.appendChild(el("div","eyebrow","COLUMNA"));
