@@ -188,10 +188,10 @@
 /* ---------- Vocabulary ---------- */
 const CEFR_MAP = {
   A1: ["Saludos","Números","Días","Colores","Estaciones","Meses","Familia"],
-  A2: ["Frases","Comida","Cuerpo","Ropa","Casa","Clima","Animales","Transporte","Lugares","Cocina","Compras"],
+  A2: ["Frases","Comida","Cuerpo","Ropa","Casa","Clima","Animales","Transporte","Lugares","Cocina","Compras","Formas"],
   B1: ["Viajes","Verbos","Trabajo","Emociones","Educación","Deportes","Tecnología","Finanzas","Sociedad","Ciencia",
        "Frecuencia","Adjetivos","Festividades","Geografía","Música","Profesiones","Naturaleza","Herramientas","Salud"],
-  B2: ["Modismos","Arte","Formas","General","Coloquial"],
+  B2: ["Modismos","Arte","General","Coloquial"],
 };
 function catToCefr(cat){
   for(const level of ["A1","A2","B1","B2"]){ if(CEFR_MAP[level].includes(cat)) return level; }
@@ -316,12 +316,23 @@ function getPracticedPool(){
   progress.counts = progress.counts || {};
   return VOCAB.filter(w => Object.prototype.hasOwnProperty.call(progress.counts, w.id));
 }
+const GRAMMAR_STAT_WINDOW = 15;
 function recordGrammarStat(title, correct){
   if(!title) return;
   progress.grammarStats = progress.grammarStats || {};
-  const s = progress.grammarStats[title] || {correct:0, total:0};
-  s.total++;
-  if(correct) s.correct++;
+  const s = progress.grammarStats[title] || {};
+  if(!s.recent){
+    // 旧データ（累計方式）からの移行：直近の傾向としておおよその割合で初期化する
+    s.recent = [];
+    if(s.total > 0){
+      const seedLen = Math.min(s.total, GRAMMAR_STAT_WINDOW);
+      const seedCorrect = Math.round((s.correct / s.total) * seedLen);
+      for(let i=0;i<seedLen;i++) s.recent.push(i < seedCorrect);
+    }
+  }
+  s.recent.push(correct);
+  if(s.recent.length > GRAMMAR_STAT_WINDOW) s.recent.shift();
+  delete s.correct; delete s.total;
   progress.grammarStats[title] = s;
   saveProgress(progress);
 }
@@ -1616,27 +1627,28 @@ function renderGrammarRoadmap(){
   header.appendChild(el("h1","title","進捗ロードマップ"));
   app.appendChild(header);
   const spacer = el("div"); spacer.style.height="10px"; app.appendChild(spacer);
-  app.appendChild(el("div","dict-pending","ドリルで実際に答えた項目だけを表示しています。ドリルがまだない文法トピックはここには出てきません。"));
+  app.appendChild(el("div","dict-pending",`ドリルで実際に答えた項目だけを表示しています。直近${GRAMMAR_STAT_WINDOW}問の正答率なので、最近の実力がすぐ反映されます。ドリルがまだない文法トピックはここには出てきません。`));
   progress.grammarStats = progress.grammarStats || {};
-  const measured = GRAMMAR_ARTICLES.filter(a => progress.grammarStats[a.title] && progress.grammarStats[a.title].total>0);
+  const measured = GRAMMAR_ARTICLES.filter(a => progress.grammarStats[a.title] && progress.grammarStats[a.title].recent && progress.grammarStats[a.title].recent.length>0);
   if(measured.length===0){
     app.appendChild(el("div","done-wrap","<div class='done-title'>まだデータがありません</div><div class='done-sub'>活用ドリルや例文ドリルを解くと、ここに正答率が表示されます</div>"));
     return;
   }
   let totalCorrect=0, totalAttempts=0;
-  measured.forEach(a=>{ const s=progress.grammarStats[a.title]; totalCorrect+=s.correct; totalAttempts+=s.total; });
+  measured.forEach(a=>{ const r=progress.grammarStats[a.title].recent; totalCorrect+=r.filter(x=>x).length; totalAttempts+=r.length; });
   const overallPct = Math.round(totalCorrect/totalAttempts*100);
   const overallBox = el("div","article"); overallBox.style.marginBottom="18px";
   overallBox.innerHTML = `<div class="dict-section-title">全体（測定できている${measured.length}項目）</div>
     <div style="font-size:28px;font-weight:700;font-family:Georgia,serif;">${overallPct}%</div>
     <div class="bar-track" style="margin-top:8px;"><div class="bar-fill" style="width:${overallPct}%;"></div></div>
-    <div style="font-size:12px;color:#C9BBE8;margin-top:6px;">${totalCorrect} / ${totalAttempts} 問正解</div>`;
+    <div style="font-size:12px;color:#C9BBE8;margin-top:6px;">直近${totalAttempts}問中${totalCorrect}問正解</div>`;
   app.appendChild(overallBox);
   let lastCat = null;
   measured.forEach(a=>{
     if(a.cat && a.cat!==lastCat){ app.appendChild(el("div","section-label", a.cat)); lastCat=a.cat; }
-    const s = progress.grammarStats[a.title];
-    const pct = Math.round(s.correct/s.total*100);
+    const recent = progress.grammarStats[a.title].recent;
+    const correctCount = recent.filter(x=>x).length;
+    const pct = Math.round(correctCount/recent.length*100);
     const barColor = pct>=80 ? "var(--accent2)" : pct>=50 ? "var(--accent3)" : "var(--brick)";
     const item = el("div","grammar-list-item"); item.style.flexDirection="column"; item.style.alignItems="stretch";
     item.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center;width:100%;">
@@ -1644,7 +1656,7 @@ function renderGrammarRoadmap(){
         <div style="font-size:13px;font-weight:700;color:${barColor};">${pct}%</div>
       </div>
       <div class="bar-track" style="margin-top:8px;"><div class="bar-fill" style="width:${pct}%;background:${barColor};"></div></div>
-      <div style="font-size:11px;color:#9C8FC2;margin-top:4px;">${s.correct} / ${s.total} 問正解</div>`;
+      <div style="font-size:11px;color:#9C8FC2;margin-top:4px;">直近${recent.length}問中${correctCount}問正解</div>`;
     item.onclick = ()=>{ playTap(); state.grammarRoadmapOpen=false; grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===a.title); render(); };
     app.appendChild(item);
   });
