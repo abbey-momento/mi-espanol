@@ -45,6 +45,143 @@ const GRAMMAR_ARTICLES = [
   }
  },
  {
+  "title": "不規則動詞一覧表（現在形）",
+  "body": "よく使う不規則動詞15個の現在形をまとめました。活用ドリルで出てくる動詞と同じセットです。太字の部分（語幹）がどう変化しているか、パターンを見比べながら覚えると効率的です。ir/hacer/tener/venir/decir/poner/salir/vengoのようにyoの形だけ大きく変化するグループ（tengo, salgo, pongo, digo, hago...）と、estar/ser/irのように全体的に不規則なグループがあることに注目してみてください。",
+  "table": {
+   "cols": [
+    "動詞",
+    "yo",
+    "tú",
+    "él/ella/usted",
+    "nosotros",
+    "ellos/ellas/ustedes"
+   ],
+   "rows": [
+    [
+     "ser",
+     "soy",
+     "eres",
+     "es",
+     "somos",
+     "son"
+    ],
+    [
+     "estar",
+     "estoy",
+     "estás",
+     "está",
+     "estamos",
+     "están"
+    ],
+    [
+     "tener",
+     "tengo",
+     "tienes",
+     "tiene",
+     "tenemos",
+     "tienen"
+    ],
+    [
+     "ir",
+     "voy",
+     "vas",
+     "va",
+     "vamos",
+     "van"
+    ],
+    [
+     "hacer",
+     "hago",
+     "haces",
+     "hace",
+     "hacemos",
+     "hacen"
+    ],
+    [
+     "poder",
+     "puedo",
+     "puedes",
+     "puede",
+     "podemos",
+     "pueden"
+    ],
+    [
+     "querer",
+     "quiero",
+     "quieres",
+     "quiere",
+     "queremos",
+     "quieren"
+    ],
+    [
+     "decir",
+     "digo",
+     "dices",
+     "dice",
+     "decimos",
+     "dicen"
+    ],
+    [
+     "poner",
+     "pongo",
+     "pones",
+     "pone",
+     "ponemos",
+     "ponen"
+    ],
+    [
+     "salir",
+     "salgo",
+     "sales",
+     "sale",
+     "salimos",
+     "salen"
+    ],
+    [
+     "venir",
+     "vengo",
+     "vienes",
+     "viene",
+     "venimos",
+     "vienen"
+    ],
+    [
+     "dar",
+     "doy",
+     "das",
+     "da",
+     "damos",
+     "dan"
+    ],
+    [
+     "ver",
+     "veo",
+     "ves",
+     "ve",
+     "vemos",
+     "ven"
+    ],
+    [
+     "saber",
+     "sé",
+     "sabes",
+     "sabe",
+     "sabemos",
+     "saben"
+    ],
+    [
+     "traer",
+     "traigo",
+     "traes",
+     "trae",
+     "traemos",
+     "traen"
+    ]
+   ]
+  },
+  "cat": "動詞の時制（直説法）"
+ },
+ {
   "title": "点過去の作り方",
   "body": "点過去（pretérito indefinido）は、過去のある時点で完了した1回きりの行為を表す時制です。「昨日〜した」「先週〜した」のように、始まりと終わりがはっきりしている出来事に使います。\n\n-ar動詞と-er/-ir動詞で語尾が異なります（-er動詞と-ir動詞は同じ語尾）。原形の語幹（hablarならhabl-、comerならcom-）に、下の表の語尾をつけます。\n\n例: Ayer hablé con mi jefe.（昨日、上司と話した）／ Comí tacos anoche.（昨夜タコスを食べた）\n\n不規則動詞も多く、ir/serはfui, fuiste, fue, fuimos, fueron（同形）、hacerはhice, hiciste, hizo...のように語幹自体が変わります。",
   "table": {
@@ -78,6 +215,143 @@ const GRAMMAR_ARTICLES = [
      "ellos/ellas/ustedes",
      "-aron（hablaron）",
      "-ieron（comieron）"
+    ]
+   ]
+  },
+  "cat": "動詞の時制（直説法）"
+ },
+ {
+  "title": "不規則動詞一覧表（点過去）",
+  "body": "同じ15個の動詞の点過去（pretérito indefinido）です。多くが独自の語幹を持つ「強変化」と呼ばれるグループ（tuve, pude, quise, dije, puse, vine, supe, traje...）で、アクセントの位置にも規則があります（例外的に、これらの語幹を持つ動詞はyo/él形にアクセント記号が付きません：tuve, tuvoであってtúveやtuvóではない）。ser とir は点過去でまったく同じ形（fui, fuiste, fue...）になる、というのも面白い特徴です。salirは実は点過去では規則的に活用します。",
+  "table": {
+   "cols": [
+    "動詞",
+    "yo",
+    "tú",
+    "él/ella/usted",
+    "nosotros",
+    "ellos/ellas/ustedes"
+   ],
+   "rows": [
+    [
+     "ser",
+     "fui",
+     "fuiste",
+     "fue",
+     "fuimos",
+     "fueron"
+    ],
+    [
+     "estar",
+     "estuve",
+     "estuviste",
+     "estuvo",
+     "estuvimos",
+     "estuvieron"
+    ],
+    [
+     "tener",
+     "tuve",
+     "tuviste",
+     "tuvo",
+     "tuvimos",
+     "tuvieron"
+    ],
+    [
+     "ir",
+     "fui",
+     "fuiste",
+     "fue",
+     "fuimos",
+     "fueron"
+    ],
+    [
+     "hacer",
+     "hice",
+     "hiciste",
+     "hizo",
+     "hicimos",
+     "hicieron"
+    ],
+    [
+     "poder",
+     "pude",
+     "pudiste",
+     "pudo",
+     "pudimos",
+     "pudieron"
+    ],
+    [
+     "querer",
+     "quise",
+     "quisiste",
+     "quiso",
+     "quisimos",
+     "quisieron"
+    ],
+    [
+     "decir",
+     "dije",
+     "dijiste",
+     "dijo",
+     "dijimos",
+     "dijeron"
+    ],
+    [
+     "poner",
+     "puse",
+     "pusiste",
+     "puso",
+     "pusimos",
+     "pusieron"
+    ],
+    [
+     "salir（規則的）",
+     "salí",
+     "saliste",
+     "salió",
+     "salimos",
+     "salieron"
+    ],
+    [
+     "venir",
+     "vine",
+     "viniste",
+     "vino",
+     "vinimos",
+     "vinieron"
+    ],
+    [
+     "dar",
+     "di",
+     "diste",
+     "dio",
+     "dimos",
+     "dieron"
+    ],
+    [
+     "ver",
+     "vi",
+     "viste",
+     "vio",
+     "vimos",
+     "vieron"
+    ],
+    [
+     "saber",
+     "supe",
+     "supiste",
+     "supo",
+     "supimos",
+     "supieron"
+    ],
+    [
+     "traer",
+     "traje",
+     "trajiste",
+     "trajo",
+     "trajimos",
+     "trajeron"
     ]
    ]
   },
@@ -283,6 +557,81 @@ const GRAMMAR_ARTICLES = [
      "ellos/ellas/ustedes",
      "-ían",
      "hablarían"
+    ]
+   ]
+  },
+  "cat": "動詞の時制（直説法）"
+ },
+ {
+  "title": "不規則動詞一覧表（未来形・条件法の語幹）",
+  "body": "未来形と条件法は、語尾は全動詞共通ですが、一部の動詞だけ語幹（原形の一部）が変化します。この語幹さえ覚えれば、未来形も条件法も同じ語幹を使うので一気に両方マスターできます。tener→tendr-、poner→pondr-、salir→saldr-、venir→vendr-のように「原形の最後の母音が落ちてdが入る」グループと、poder→podr-、saber→sabr-、querer→querr-のように「母音だけ落ちる」グループ、hacer→har-、decir→dir-のように「大きく短縮される」グループがあります。",
+  "table": {
+   "cols": [
+    "動詞",
+    "未来・条件法の語幹",
+    "未来形yoの例",
+    "条件法yoの例"
+   ],
+   "rows": [
+    [
+     "tener",
+     "tendr-",
+     "tendré",
+     "tendría"
+    ],
+    [
+     "poner",
+     "pondr-",
+     "pondré",
+     "pondría"
+    ],
+    [
+     "salir",
+     "saldr-",
+     "saldré",
+     "saldría"
+    ],
+    [
+     "venir",
+     "vendr-",
+     "vendré",
+     "vendría"
+    ],
+    [
+     "poder",
+     "podr-",
+     "podré",
+     "podría"
+    ],
+    [
+     "saber",
+     "sabr-",
+     "sabré",
+     "sabría"
+    ],
+    [
+     "querer",
+     "querr-",
+     "querré",
+     "querría"
+    ],
+    [
+     "hacer",
+     "har-",
+     "haré",
+     "haría"
+    ],
+    [
+     "decir",
+     "dir-",
+     "diré",
+     "diría"
+    ],
+    [
+     "ser / estar / ir / dar / ver / traer",
+     "（規則的：原形のまま）",
+     "seré / estaré / iré / daré / veré / traeré",
+     "sería / estaría / iría / daría / vería / traería"
     ]
    ]
   },
@@ -705,355 +1054,6 @@ const GRAMMAR_ARTICLES = [
   "cat": "動詞：命令形・分詞"
  },
  {
-  "title": "不規則動詞一覧表（現在形）",
-  "body": "よく使う不規則動詞15個の現在形をまとめました。活用ドリルで出てくる動詞と同じセットです。太字の部分（語幹）がどう変化しているか、パターンを見比べながら覚えると効率的です。ir/hacer/tener/venir/decir/poner/salir/vengoのようにyoの形だけ大きく変化するグループ（tengo, salgo, pongo, digo, hago...）と、estar/ser/irのように全体的に不規則なグループがあることに注目してみてください。",
-  "table": {
-   "cols": [
-    "動詞",
-    "yo",
-    "tú",
-    "él/ella/usted",
-    "nosotros",
-    "ellos/ellas/ustedes"
-   ],
-   "rows": [
-    [
-     "ser",
-     "soy",
-     "eres",
-     "es",
-     "somos",
-     "son"
-    ],
-    [
-     "estar",
-     "estoy",
-     "estás",
-     "está",
-     "estamos",
-     "están"
-    ],
-    [
-     "tener",
-     "tengo",
-     "tienes",
-     "tiene",
-     "tenemos",
-     "tienen"
-    ],
-    [
-     "ir",
-     "voy",
-     "vas",
-     "va",
-     "vamos",
-     "van"
-    ],
-    [
-     "hacer",
-     "hago",
-     "haces",
-     "hace",
-     "hacemos",
-     "hacen"
-    ],
-    [
-     "poder",
-     "puedo",
-     "puedes",
-     "puede",
-     "podemos",
-     "pueden"
-    ],
-    [
-     "querer",
-     "quiero",
-     "quieres",
-     "quiere",
-     "queremos",
-     "quieren"
-    ],
-    [
-     "decir",
-     "digo",
-     "dices",
-     "dice",
-     "decimos",
-     "dicen"
-    ],
-    [
-     "poner",
-     "pongo",
-     "pones",
-     "pone",
-     "ponemos",
-     "ponen"
-    ],
-    [
-     "salir",
-     "salgo",
-     "sales",
-     "sale",
-     "salimos",
-     "salen"
-    ],
-    [
-     "venir",
-     "vengo",
-     "vienes",
-     "viene",
-     "venimos",
-     "vienen"
-    ],
-    [
-     "dar",
-     "doy",
-     "das",
-     "da",
-     "damos",
-     "dan"
-    ],
-    [
-     "ver",
-     "veo",
-     "ves",
-     "ve",
-     "vemos",
-     "ven"
-    ],
-    [
-     "saber",
-     "sé",
-     "sabes",
-     "sabe",
-     "sabemos",
-     "saben"
-    ],
-    [
-     "traer",
-     "traigo",
-     "traes",
-     "trae",
-     "traemos",
-     "traen"
-    ]
-   ]
-  },
-  "cat": "動詞：不規則活用の一覧表"
- },
- {
-  "title": "不規則動詞一覧表（点過去）",
-  "body": "同じ15個の動詞の点過去（pretérito indefinido）です。多くが独自の語幹を持つ「強変化」と呼ばれるグループ（tuve, pude, quise, dije, puse, vine, supe, traje...）で、アクセントの位置にも規則があります（例外的に、これらの語幹を持つ動詞はyo/él形にアクセント記号が付きません：tuve, tuvoであってtúveやtuvóではない）。ser とir は点過去でまったく同じ形（fui, fuiste, fue...）になる、というのも面白い特徴です。salirは実は点過去では規則的に活用します。",
-  "table": {
-   "cols": [
-    "動詞",
-    "yo",
-    "tú",
-    "él/ella/usted",
-    "nosotros",
-    "ellos/ellas/ustedes"
-   ],
-   "rows": [
-    [
-     "ser",
-     "fui",
-     "fuiste",
-     "fue",
-     "fuimos",
-     "fueron"
-    ],
-    [
-     "estar",
-     "estuve",
-     "estuviste",
-     "estuvo",
-     "estuvimos",
-     "estuvieron"
-    ],
-    [
-     "tener",
-     "tuve",
-     "tuviste",
-     "tuvo",
-     "tuvimos",
-     "tuvieron"
-    ],
-    [
-     "ir",
-     "fui",
-     "fuiste",
-     "fue",
-     "fuimos",
-     "fueron"
-    ],
-    [
-     "hacer",
-     "hice",
-     "hiciste",
-     "hizo",
-     "hicimos",
-     "hicieron"
-    ],
-    [
-     "poder",
-     "pude",
-     "pudiste",
-     "pudo",
-     "pudimos",
-     "pudieron"
-    ],
-    [
-     "querer",
-     "quise",
-     "quisiste",
-     "quiso",
-     "quisimos",
-     "quisieron"
-    ],
-    [
-     "decir",
-     "dije",
-     "dijiste",
-     "dijo",
-     "dijimos",
-     "dijeron"
-    ],
-    [
-     "poner",
-     "puse",
-     "pusiste",
-     "puso",
-     "pusimos",
-     "pusieron"
-    ],
-    [
-     "salir（規則的）",
-     "salí",
-     "saliste",
-     "salió",
-     "salimos",
-     "salieron"
-    ],
-    [
-     "venir",
-     "vine",
-     "viniste",
-     "vino",
-     "vinimos",
-     "vinieron"
-    ],
-    [
-     "dar",
-     "di",
-     "diste",
-     "dio",
-     "dimos",
-     "dieron"
-    ],
-    [
-     "ver",
-     "vi",
-     "viste",
-     "vio",
-     "vimos",
-     "vieron"
-    ],
-    [
-     "saber",
-     "supe",
-     "supiste",
-     "supo",
-     "supimos",
-     "supieron"
-    ],
-    [
-     "traer",
-     "traje",
-     "trajiste",
-     "trajo",
-     "trajimos",
-     "trajeron"
-    ]
-   ]
-  },
-  "cat": "動詞：不規則活用の一覧表"
- },
- {
-  "title": "不規則動詞一覧表（未来形・条件法の語幹）",
-  "body": "未来形と条件法は、語尾は全動詞共通ですが、一部の動詞だけ語幹（原形の一部）が変化します。この語幹さえ覚えれば、未来形も条件法も同じ語幹を使うので一気に両方マスターできます。tener→tendr-、poner→pondr-、salir→saldr-、venir→vendr-のように「原形の最後の母音が落ちてdが入る」グループと、poder→podr-、saber→sabr-、querer→querr-のように「母音だけ落ちる」グループ、hacer→har-、decir→dir-のように「大きく短縮される」グループがあります。",
-  "table": {
-   "cols": [
-    "動詞",
-    "未来・条件法の語幹",
-    "未来形yoの例",
-    "条件法yoの例"
-   ],
-   "rows": [
-    [
-     "tener",
-     "tendr-",
-     "tendré",
-     "tendría"
-    ],
-    [
-     "poner",
-     "pondr-",
-     "pondré",
-     "pondría"
-    ],
-    [
-     "salir",
-     "saldr-",
-     "saldré",
-     "saldría"
-    ],
-    [
-     "venir",
-     "vendr-",
-     "vendré",
-     "vendría"
-    ],
-    [
-     "poder",
-     "podr-",
-     "podré",
-     "podría"
-    ],
-    [
-     "saber",
-     "sabr-",
-     "sabré",
-     "sabría"
-    ],
-    [
-     "querer",
-     "querr-",
-     "querré",
-     "querría"
-    ],
-    [
-     "hacer",
-     "har-",
-     "haré",
-     "haría"
-    ],
-    [
-     "decir",
-     "dir-",
-     "diré",
-     "diría"
-    ],
-    [
-     "ser / estar / ir / dar / ver / traer",
-     "（規則的：原形のまま）",
-     "seré / estaré / iré / daré / veré / traeré",
-     "sería / estaría / iría / daría / vería / traería"
-    ]
-   ]
-  },
-  "cat": "動詞：不規則活用の一覧表"
- },
- {
   "title": "名詞の性と数のルール",
   "body": "スペイン語の名詞にはel（男性）とla（女性）の区別があります。完璧な規則ではありませんが、大まかな傾向があります。\n\n複数形は基本的に母音で終わる語には-s、子音で終わる語には-esをつけます（casa→casas、ciudad→ciudades）。-z で終わる語は-cesに変わります（lápiz→lápices）。",
   "table": {
@@ -1193,6 +1193,43 @@ const GRAMMAR_ARTICLES = [
   "title": "数字が名詞に一致するとき（doscientos/doscientas）",
   "body": "100の位の数字（doscientos, trescientos...novecientos）は、後ろに来る名詞の性に一致して語尾が変わる、数字の中でも特殊なグループです。\n\n例: doscientos libros（男性名詞、200冊の本）／ doscientas casas（女性名詞、200軒の家）\n\nunoも同様に、女性名詞の前ではunaになります（veintiún libros但しveintiuna páginas）。100の位を含む大きな数字を読むときは、この性の一致を忘れずに。",
   "cat": "名詞・冠詞・形容詞・数"
+ },
+ {
+  "title": "主語人称代名詞と省略のルール",
+  "cat": "代名詞",
+  "body": "yo（私）、tú（君）、él/ella/usted（彼/彼女/あなた）、nosotros/nosotras（私たち）、vosotros/vosotras（君たち、主にスペイン）、ellos/ellas/ustedes（彼ら/彼女ら/あなたたち）が主語人称代名詞です。\n\n最大の特徴は、動詞の活用そのものが「誰が」の情報を含んでいるため、主語代名詞は省略されることが非常に多いという点です。Hablo español.（私はスペイン語を話す）だけで意味が通じ、Yo hablo español.とわざわざyoをつけるのは、対比や強調をしたいとき（Yo hablo español, pero él habla inglés.＝私はスペイン語を話すが、彼は英語を話す）が中心です。\n\nvosotros（君たち）は主にスペインで使われ、ラテンアメリカ（メキシコを含む）ではほとんどの場面でustedesが「君たち」「あなたたち」の両方を兼ねます。",
+  "table": {
+   "cols": [
+    "人称代名詞",
+    "意味"
+   ],
+   "rows": [
+    [
+     "yo",
+     "私"
+    ],
+    [
+     "tú",
+     "君（親しい間柄）"
+    ],
+    [
+     "él / ella / usted",
+     "彼 / 彼女 / あなた（丁寧）"
+    ],
+    [
+     "nosotros / nosotras",
+     "私たち"
+    ],
+    [
+     "vosotros / vosotras",
+     "君たち（主にスペイン）"
+    ],
+    [
+     "ellos / ellas / ustedes",
+     "彼ら / 彼女ら / あなたたち"
+    ]
+   ]
+  }
  },
  {
   "title": "指示形容詞・指示代名詞（este/ese/aquel）",
@@ -1726,6 +1763,11 @@ const GRAMMAR_ARTICLES = [
     ]
    ]
   }
+ },
+ {
+  "title": "否定文の基本（noの位置）",
+  "cat": "文の組み立て・その他",
+  "body": "スペイン語の基本の否定は、活用した動詞の直前にnoを置くだけです。英語のdo/doesのような助動詞は不要です。\n\n例: Hablo español.（話す）→ No hablo español.（話さない）\n例: Tengo tiempo.（時間がある）→ No tengo tiempo.（時間がない）\n\n目的代名詞（me/te/lo/la...）や再帰代名詞（me/te/se...）がある場合は、noはその代名詞よりも前に置きます。\n\n例: Lo conozco.（彼を知っている）→ No lo conozco.（彼を知らない）\n例: Me gusta.（好きだ）→ No me gusta.（好きではない）\n\nより複雑な否定語（nada, nadie, ningunoなど）を使う二重否定については、別のトピック「否定文の作り方（二重否定）」を参照してください。"
  },
  {
   "title": "否定文の作り方（二重否定）",
