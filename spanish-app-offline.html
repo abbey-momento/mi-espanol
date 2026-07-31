@@ -1243,7 +1243,7 @@ function renderConjDrill(){
   }
   submit.onclick = submitAnswer;
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
-  setTimeout(()=> input.focus(), 50);
+  input.focus();
 }
 function doneScreenConj(){
   const wrap = el("div","done-wrap");
@@ -1366,7 +1366,7 @@ function renderExamples(){
   }
   submit.onclick = submitAnswer;
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
-  setTimeout(()=> input.focus(), 50);
+  input.focus();
 }
 
 /* ---------- Numbers drill ---------- */
@@ -1448,7 +1448,7 @@ function renderNumbersDrill(){
   }
   submit.onclick = submitAnswer;
   input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
-  setTimeout(()=> input.focus(), 50);
+  input.focus();
 }
 
 /* ---------- Listening / dictation drill ---------- */
@@ -1536,7 +1536,7 @@ function renderListeningDrill(){
   submit.onclick = submitAnswer;
   input1.onkeydown = (e)=>{ if(e.key==="Enter") input2.focus(); };
   input2.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
-  setTimeout(()=> input1.focus(), 50);
+  input1.focus();
 }
 
 /* ---------- Grammar reference feed ---------- */
