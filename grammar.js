@@ -1,5 +1,50 @@
 const GRAMMAR_ARTICLES = [
  {
+  "title": "現在形の作り方（規則活用）",
+  "cat": "動詞の時制（直説法）",
+  "body": "現在の習慣・事実を表す最も基本の時制です。動詞の原形の語尾（-ar/-er/-ir）によって、活用のパターンが3つに分かれます。\n\n例: hablar（-ar動詞）→ hablo, hablas, habla...\n例: comer（-er動詞）→ como, comes, come...\n例: vivir（-ir動詞）→ vivo, vives, vive...\n\n-erと-ir動詞は、nosotros/vosotros以外の活用形がほぼ同じ（-o, -es/-es, -e, -emos/-imos, -en）という点に注目すると覚えやすいです。tener, hacer, ir, serなどの不規則動詞は別途「不規則動詞一覧表（現在形）」で確認できます。",
+  "table": {
+   "cols": [
+    "人称",
+    "-ar動詞（hablar）",
+    "-er動詞（comer）",
+    "-ir動詞（vivir）"
+   ],
+   "rows": [
+    [
+     "yo",
+     "hablo",
+     "como",
+     "vivo"
+    ],
+    [
+     "tú",
+     "hablas",
+     "comes",
+     "vives"
+    ],
+    [
+     "él/ella/usted",
+     "habla",
+     "come",
+     "vive"
+    ],
+    [
+     "nosotros",
+     "hablamos",
+     "comemos",
+     "vivimos"
+    ],
+    [
+     "ellos/ellas/ustedes",
+     "hablan",
+     "comen",
+     "viven"
+    ]
+   ]
+  }
+ },
+ {
   "title": "点過去の作り方",
   "body": "点過去（pretérito indefinido）は、過去のある時点で完了した1回きりの行為を表す時制です。「昨日〜した」「先週〜した」のように、始まりと終わりがはっきりしている出来事に使います。\n\n-ar動詞と-er/-ir動詞で語尾が異なります（-er動詞と-ir動詞は同じ語尾）。原形の語幹（hablarならhabl-、comerならcom-）に、下の表の語尾をつけます。\n\n例: Ayer hablé con mi jefe.（昨日、上司と話した）／ Comí tacos anoche.（昨夜タコスを食べた）\n\n不規則動詞も多く、ir/serはfui, fuiste, fue, fuimos, fueron（同形）、hacerはhice, hiciste, hizo...のように語幹自体が変わります。",
   "table": {
