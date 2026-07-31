@@ -316,6 +316,15 @@ function getPracticedPool(){
   progress.counts = progress.counts || {};
   return VOCAB.filter(w => Object.prototype.hasOwnProperty.call(progress.counts, w.id));
 }
+function recordGrammarStat(title, correct){
+  if(!title) return;
+  progress.grammarStats = progress.grammarStats || {};
+  const s = progress.grammarStats[title] || {correct:0, total:0};
+  s.total++;
+  if(correct) s.correct++;
+  progress.grammarStats[title] = s;
+  saveProgress(progress);
+}
 function toggleGrammarFlag(title){
   progress.flaggedGrammar = progress.flaggedGrammar || {};
   if(progress.flaggedGrammar[title]) delete progress.flaggedGrammar[title];
@@ -479,7 +488,7 @@ function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}�
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:"Todos", dictColloquialOnly:false, dictListLimit:60, grammarFlaggedOnly:false, phraseSceneIdx:null };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:"Todos", dictColloquialOnly:false, dictListLimit:60, grammarFlaggedOnly:false, phraseSceneIdx:null, grammarRoadmapOpen:false };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -1150,6 +1159,7 @@ function renderConjDrill(){
     if(ok){ conjScore++; playCorrect(); fb.textContent = "¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent = `正解: ${conjQuestion.answer}`; fb.className="conj-feedback no"; conjMissed.push({...conjQuestion}); }
     conjLog.push({ q:{...conjQuestion}, correct:ok, userAnswer:val });
+    recordGrammarStat(TENSE_TO_GRAMMAR[conjQuestion.tense], ok);
     input.disabled = true; submit.disabled = true;
     const nextBtn = el("button","primary-btn", conjIdx+1>=conjTotal ? "結果を見る" : "次の問題へ →");
     nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
@@ -1271,6 +1281,8 @@ function renderExamples(){
     if(ok){ exScore++; playCorrect(); fb.textContent="¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent=`正解: ${answer}`; fb.className="conj-feedback no"; exMissed.push(ex); }
     exLog.push({ ex, correct:ok, userAnswer:val });
+    const statTitle = topic==="conjugacion" ? TENSE_TO_GRAMMAR[ex.tense] : TOPIC_TO_GRAMMAR[topic];
+    recordGrammarStat(statTitle, ok);
     jaLine.textContent = ex.ja;
     input.disabled=true; submit.disabled=true;
     const nextBtn = el("button","primary-btn", exIdx+1>=exDeck.length ? "結果を見る" : "次の問題へ →");
@@ -1451,12 +1463,17 @@ function renderGrammar(){
     if(idx!==-1) grammarDetailIdx = idx;
     state.pendingGrammarTitle = null;
   }
+  if(state.grammarRoadmapOpen){ renderGrammarRoadmap(); return; }
   if(grammarDetailIdx===null){
     const header = el("div");
     header.appendChild(el("div","eyebrow","GRAMÁTICA"));
     header.appendChild(el("h1","title","文法リファレンス"));
     app.appendChild(header);
     const spacer = el("div"); spacer.style.height="16px"; app.appendChild(spacer);
+    const roadmapBtn = el("button","primary-btn","📊 ドリル正答率で進捗を見る");
+    roadmapBtn.style.display="block"; roadmapBtn.style.width="100%"; roadmapBtn.style.marginBottom="14px";
+    roadmapBtn.onclick = ()=>{ playTap(); state.grammarRoadmapOpen=true; render(); };
+    app.appendChild(roadmapBtn);
     const chipRow = el("div","chip-row");
     const allChip = el("button","chip"+(!state.grammarFlaggedOnly?" active":""), "すべて");
     allChip.onclick = ()=>{ playTap(); state.grammarFlaggedOnly=false; render(); };
@@ -1534,6 +1551,46 @@ function renderGrammar(){
   const onPrev = gIdx>0 ? ()=>{ playTap(); grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===gList[gIdx-1].title); render(); } : null;
   const onNext = (gIdx!==-1 && gIdx<gList.length-1) ? ()=>{ playTap(); grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===gList[gIdx+1].title); render(); } : null;
   app.appendChild(buildFloatingNav("← 前のトピック", "次のトピック →", onPrev, onNext));
+}
+function renderGrammarRoadmap(){
+  app.appendChild(topBar("文法", "", ()=>{ state.grammarRoadmapOpen=false; render(); }));
+  const header = el("div");
+  header.appendChild(el("div","eyebrow","TU PROGRESO"));
+  header.appendChild(el("h1","title","進捗ロードマップ"));
+  app.appendChild(header);
+  const spacer = el("div"); spacer.style.height="10px"; app.appendChild(spacer);
+  app.appendChild(el("div","dict-pending","ドリルで実際に答えた項目だけを表示しています。ドリルがまだない文法トピックはここには出てきません。"));
+  progress.grammarStats = progress.grammarStats || {};
+  const measured = GRAMMAR_ARTICLES.filter(a => progress.grammarStats[a.title] && progress.grammarStats[a.title].total>0);
+  if(measured.length===0){
+    app.appendChild(el("div","done-wrap","<div class='done-title'>まだデータがありません</div><div class='done-sub'>活用ドリルや例文ドリルを解くと、ここに正答率が表示されます</div>"));
+    return;
+  }
+  let totalCorrect=0, totalAttempts=0;
+  measured.forEach(a=>{ const s=progress.grammarStats[a.title]; totalCorrect+=s.correct; totalAttempts+=s.total; });
+  const overallPct = Math.round(totalCorrect/totalAttempts*100);
+  const overallBox = el("div","article"); overallBox.style.marginBottom="18px";
+  overallBox.innerHTML = `<div class="dict-section-title">全体（測定できている${measured.length}項目）</div>
+    <div style="font-size:28px;font-weight:700;font-family:Georgia,serif;">${overallPct}%</div>
+    <div class="bar-track" style="margin-top:8px;"><div class="bar-fill" style="width:${overallPct}%;"></div></div>
+    <div style="font-size:12px;color:#C9BBE8;margin-top:6px;">${totalCorrect} / ${totalAttempts} 問正解</div>`;
+  app.appendChild(overallBox);
+  let lastCat = null;
+  measured.forEach(a=>{
+    if(a.cat && a.cat!==lastCat){ app.appendChild(el("div","section-label", a.cat)); lastCat=a.cat; }
+    const s = progress.grammarStats[a.title];
+    const pct = Math.round(s.correct/s.total*100);
+    const barColor = pct>=80 ? "var(--accent2)" : pct>=50 ? "var(--accent3)" : "var(--brick)";
+    const item = el("div","grammar-list-item"); item.style.flexDirection="column"; item.style.alignItems="stretch";
+    item.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center;width:100%;">
+        <div class="grammar-list-title" style="font-size:14px;">${a.title}</div>
+        <div style="font-size:13px;font-weight:700;color:${barColor};">${pct}%</div>
+      </div>
+      <div class="bar-track" style="margin-top:8px;"><div class="bar-fill" style="width:${pct}%;background:${barColor};"></div></div>
+      <div style="font-size:11px;color:#9C8FC2;margin-top:4px;">${s.correct} / ${s.total} 問正解</div>`;
+    item.onclick = ()=>{ playTap(); state.grammarRoadmapOpen=false; grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===a.title); render(); };
+    app.appendChild(item);
+  });
 }
 function getGrammarList(){
   progress.flaggedGrammar = progress.flaggedGrammar || {};
