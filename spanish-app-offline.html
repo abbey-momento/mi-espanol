@@ -465,6 +465,11 @@ function renderLazyError(src){
 
 function render(){
   app.innerHTML = "";
+  if(state.pendingGrammarTitle && typeof GRAMMAR_ARTICLES!=="undefined"){
+    const idx = GRAMMAR_ARTICLES.findIndex(a=>a.title===state.pendingGrammarTitle);
+    if(idx!==-1) grammarDetailIdx = idx;
+    state.pendingGrammarTitle = null;
+  }
   const hideNav = (state.tab==="vocab" && (state.mode==="flash" || state.mode==="quiz" || state.mode==="review" || state.mode==="flagged" || state.calendarOpen))
     || (state.tab==="conj" && !!state.conjSubTab)
     || (state.tab==="dict" && !!state.dictDetailWord)
@@ -620,6 +625,41 @@ function goToDictionary(word){
   state.tab = "dict";
   state.dictDetailWord = normDictKey(word);
   render();
+}
+/* ---------- Drill → Grammar reference linking ---------- */
+const TOPIC_TO_GRAMMAR = {
+  preposicion: "por と para の使い分け",
+  pronombre: "直接目的語の代名詞（lo/la/los/las）",
+  pronombre_doble: "二重目的語代名詞のくわしい語順",
+  reflexivo: "再帰動詞の基本",
+  comparativo: "比較級の作り方",
+  ser_estar: "ser と estar の使い分け",
+  gustar: "gustar型動詞の語順",
+};
+const TENSE_TO_GRAMMAR = {
+  indefinido: "点過去の作り方",
+  imperfecto: "線過去の作り方",
+  futuro: "未来形の作り方",
+  condicional: "条件法（過去未来形）の作り方",
+  subjuntivo: "接続法現在の作り方の基本",
+  perfecto: "現在完了形（〜したことがある）の作り方",
+  imperativo: "命令形の作り方（規則・不規則）",
+  imperativo_neg: "命令形の使い方（肯定・否定・代名詞の位置）",
+};
+function goToGrammarTopic(title){
+  if(!title) return;
+  playTap();
+  state.tab = "grammar";
+  state.pendingGrammarTitle = title;
+  grammarDetailIdx = null;
+  render();
+}
+function grammarLinkBtn(title){
+  if(!title) return null;
+  const btn = el("button","ghost-btn", "📖 「"+title+"」を文法リファレンスで見る");
+  btn.style.display="block"; btn.style.width="100%"; btn.style.marginTop="10px"; btn.style.fontSize="12.5px";
+  btn.onclick = ()=> goToGrammarTopic(title);
+  return btn;
 }
 function renderDictionary(){
   if(state.dictDetailWord){ renderDictDetail(); return; }
@@ -1013,6 +1053,9 @@ function doneScreenConj(){
     item.innerHTML = `<div class="review-q" style="color:${markColor};">${mark}　${log.q.verb.v}（${log.q.personLabel}・${TENSE_LABELS[log.q.tense]}）</div>
       <div class="review-a">正解: ${log.q.answer}</div>
       ${!log.correct ? `<div class="review-note">あなたの回答: ${log.userAnswer || "（未回答）"}</div><div class="review-note">${TENSE_NOTES[log.q.tense]}</div>` : ""}`;
+    if(!log.correct && TENSE_TO_GRAMMAR[log.q.tense]){
+      item.appendChild(grammarLinkBtn(TENSE_TO_GRAMMAR[log.q.tense]));
+    }
     rl.appendChild(item);
   });
   app.appendChild(rl);
@@ -1055,7 +1098,10 @@ function renderExamples(){
     wrap.innerHTML = `<div class="done-stamp">✓</div><div class="done-title">¡Sesión completa!</div><div class="done-score">${exScore} / ${exDeck.length} correctas</div>`;
     const btn = el("button","primary-btn","もう一度");
     btn.onclick = ()=>{ exDeck=[]; render(); };
-    wrap.appendChild(btn); app.appendChild(wrap);
+    wrap.appendChild(btn);
+    const topicGrammarTitle = TOPIC_TO_GRAMMAR[topic];
+    if(topicGrammarTitle){ wrap.appendChild(grammarLinkBtn(topicGrammarTitle)); }
+    app.appendChild(wrap);
     const rl = el("div","review-list");
     rl.appendChild(el("div","section-label","まとめ（全問）"));
     exLog.forEach(log=>{
@@ -1065,6 +1111,9 @@ function renderExamples(){
       item.innerHTML = `<div class="review-q" style="color:${markColor};">${mark}　${log.ex.before}${answerFor(log.ex)}${log.ex.after}</div>
         <div class="review-a">${log.ex.ja}</div>
         ${!log.correct ? `<div class="review-note">あなたの回答: ${log.userAnswer || "（未回答）"}</div><div class="review-note">${noteFor(log.ex)}</div>` : ""}`;
+      if(!log.correct && topic==="conjugacion" && log.ex.tense && TENSE_TO_GRAMMAR[log.ex.tense]){
+        item.appendChild(grammarLinkBtn(TENSE_TO_GRAMMAR[log.ex.tense]));
+      }
       rl.appendChild(item);
     });
     app.appendChild(rl);
@@ -1271,6 +1320,11 @@ function renderListeningDrill(){
 /* ---------- Grammar reference feed ---------- */
 let grammarDetailIdx = null;
 function renderGrammar(){
+  if(state.pendingGrammarTitle){
+    const idx = GRAMMAR_ARTICLES.findIndex(a=>a.title===state.pendingGrammarTitle);
+    if(idx!==-1) grammarDetailIdx = idx;
+    state.pendingGrammarTitle = null;
+  }
   if(grammarDetailIdx===null){
     const header = el("div");
     header.appendChild(el("div","eyebrow","GRAMÁTICA"));
