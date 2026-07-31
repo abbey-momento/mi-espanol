@@ -5893,5 +5893,722 @@ const DICTIONARY_DATA = {
    "es": "— Ya casi llegamos.\n— ¡Órale! Vámonos entonces.",
    "ja": "「もうすぐ着くよ」「よし！じゃあ行こう」"
   }
+ },
+ "no tener pelos en la lengua": {
+  "nuance": "「歯に衣着せぬ、率直に言う」。直訳は「舌に毛がない」で、思ったことをストレートに言う人を表す口語表現。",
+  "etymology": "no tener（持たない）+ pelos en la lengua（舌の上の毛）の組み合わせ。",
+  "synonyms": [
+   "ser muy directo（とても率直だ）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Mi abuela no tiene pelos en la lengua.\n— Sí, siempre dice lo que piensa.",
+   "ja": "「私の祖母は歯に衣着せぬ人なんだ」「うん、いつも思ったことを言うよね」"
+  }
+ },
+ "estar como agua para chocolate": {
+  "nuance": "「かんかんに怒っている」。メキシコ発祥の表現で、同名の小説・映画のタイトルにもなった。直訳は「ホットチョコレート用のお湯のようだ」で、沸騰寸前の状態から怒りを連想させる。",
+  "etymology": "agua para chocolate（ホットチョコレートを作るための熱湯）に由来。",
+  "synonyms": [
+   "estar furioso（激怒している）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Está como agua para chocolate desde que perdió el trabajo.\n— Pobre, debe estar pasando por mucho estrés.",
+   "ja": "「彼は仕事を失ってからかんかんに怒っているんだ」「かわいそうに、きっとすごくストレスを抱えているんだろうね」"
+  }
+ },
+ "estar hasta las narices": {
+  "nuance": "「うんざりしている」。直訳は「鼻まで達している」で、我慢の限界を表す。",
+  "etymology": "estar（いる）+ hasta las narices（鼻まで）の組み合わせ。",
+  "synonyms": [
+   "estar harto（うんざりしている）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Estoy hasta las narices de este proyecto.\n— Ya casi terminamos, aguanta un poco más.",
+   "ja": "「このプロジェクトにはもううんざりだよ」「もうすぐ終わるから、もう少し頑張って」"
+  }
+ },
+ "írsele la mano": {
+  "nuance": "「（何かを）やり過ぎる」。直訳は「手が行ってしまう」で、力加減や量を間違えたときに使う。",
+  "etymology": "irse（行く）+ la mano（手）の再帰的な組み合わせ。",
+  "synonyms": [
+   "excederse（度を超す）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Se me fue la mano con la sal.\n— No importa, igual está rico.",
+   "ja": "「塩を入れすぎちゃった」「大丈夫、それでも美味しいよ」"
+  }
+ },
+ "ni fu ni fa": {
+  "nuance": "「どうでもいい、まあまあ」という無関心・平凡さを表す口語表現。",
+  "etymology": "擬音的な表現で、明確な語源はない。",
+  "synonyms": [
+   "así así（まあまあ）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Qué te pareció la película?\n— Ni fu ni fa, no fue nada especial.",
+   "ja": "「映画どうだった？」「まあまあかな、特に何もなかったよ」"
+  }
+ },
+ "poner los puntos sobre las íes": {
+  "nuance": "「細部まではっきりさせる」。直訳は「iの上に点を打つ」で、あいまいさを残さず明確にすることを表す。",
+  "etymology": "poner（置く）+ los puntos（点）+ sobre las íes（iの上に）の組み合わせ。",
+  "synonyms": [
+   "aclarar todo（すべてを明確にする）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Vamos a poner los puntos sobre las íes antes de firmar.\n— Buena idea, mejor evitar malentendidos.",
+   "ja": "「サインする前に、細かいところをはっきりさせよう」「いい考えだね、誤解は避けた方がいいから」"
+  }
+ },
+ "írsele el santo al cielo": {
+  "nuance": "「すっかり忘れる」。直訳は「聖人が天に行ってしまう」という独特な表現。",
+  "etymology": "irse（行く）+ el santo（聖人）+ al cielo（天に）の再帰的な組み合わせ。",
+  "synonyms": [
+   "olvidarse por completo（完全に忘れる）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Se me fue el santo al cielo, olvidé tu cumpleaños.\n— No te preocupes, no pasa nada.",
+   "ja": "「すっかり忘れてた、君の誕生日を忘れちゃった」「気にしないで、大丈夫だよ」"
+  }
+ },
+ "tirar la toalla": {
+  "nuance": "「あきらめる」。英語のthrow in the towelと同じボクシング由来の表現。",
+  "etymology": "ボクシングで、セコンドがタオルを投げ入れて試合を止めさせることに由来。",
+  "synonyms": [
+   "rendirse（降参する）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— No voy a tirar la toalla tan fácilmente.\n— Así se habla, sigue adelante.",
+   "ja": "「そう簡単にはあきらめないよ」「その意気だよ、続けよう」"
+  }
+ },
+ "estar hecho polvo": {
+  "nuance": "「くたくたに疲れている」。直訳は「ほこりになっている」で、体力・気力の限界を表す。",
+  "etymology": "estar（いる）+ hecho polvo（ほこりになった）の組み合わせ。",
+  "synonyms": [
+   "estar exhausto（疲れ果てている）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Estoy hecho polvo después del viaje.\n— Descansa bien esta noche.",
+   "ja": "「旅行の後でくたくたなんだ」「今夜はしっかり休んでね」"
+  }
+ },
+ "no dar pie con bola": {
+  "nuance": "「何をやってもうまくいかない」。直訳は「ボールに足を当てられない」というサッカー由来のような表現。",
+  "etymology": "dar pie con bola（ボールに足を当てる）の否定形。",
+  "synonyms": [
+   "no acertar（うまくいかない）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Hoy no doy pie con bola.\n— A todos nos pasa a veces, mañana será mejor.",
+   "ja": "「今日は何をやってもうまくいかないんだ」「誰にでもあることだよ、明日はきっと良くなるよ」"
+  }
+ },
+ "ser uña y carne": {
+  "nuance": "「切っても切れない仲」。直訳は「爪と肉」で、爪と皮膚のように離れられない親密な関係を表す。",
+  "etymology": "uña（爪）+ carne（肉）の組み合わせ。",
+  "synonyms": [
+   "ser inseparables（離れられない仲）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Mi mejor amiga y yo somos uña y carne.\n— Se nota, siempre están juntas.",
+   "ja": "「親友と私は切っても切れない仲なんだ」「わかるよ、いつも一緒にいるもんね」"
+  }
+ },
+ "tomar el toro por los cuernos": {
+  "nuance": "「正面から立ち向かう」。直訳は「牛の角をつかむ」という闘牛由来の表現。",
+  "etymology": "闘牛で牛の角を直接つかむ危険な行為に由来。",
+  "synonyms": [
+   "enfrentar el problema（問題に立ち向かう）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Hay que tomar el toro por los cuernos y resolver esto.\n— Tienes razón, no podemos seguir evitándolo.",
+   "ja": "「これは正面から立ち向かって解決しないと」「その通りだね、避け続けるわけにはいかないもんね」"
+  }
+ },
+ "costar un huevo": {
+  "nuance": "「ものすごく高い」という口語表現。costar un ojo de la caraとほぼ同義だが、こちらの方がよりカジュアル（一部地域ではやや下品とされることもある）。",
+  "etymology": "costar（値段がする）+ un huevo（卵一つ）の組み合わせ。",
+  "synonyms": [
+   "costar un ojo de la cara（目玉が飛び出るほど高い）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Este celular me costó un huevo.\n— Espero que valga la pena.",
+   "ja": "「この携帯すごく高かったんだ」「その価値があるといいね」"
+  }
+ },
+ "estar pez en algo": {
+  "nuance": "「まったく知識がない」。直訳は「魚である」で、その分野について全く分からない状態を表す。",
+  "etymology": "estar（いる）+ pez（魚）の組み合わせ、由来ははっきりしない。",
+  "synonyms": [
+   "no saber nada de（〜について何も知らない）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Estoy pez en informática.\n— No te preocupes, yo te puedo ayudar.",
+   "ja": "「私、IT関係は全然わからないんだ」「心配しないで、手伝ってあげるよ」"
+  }
+ },
+ "írsele la olla": {
+  "nuance": "「頭がおかしくなる、我を忘れる」という口語表現。直訳は「鍋が行ってしまう」。",
+  "etymology": "irse（行く）+ la olla（鍋、頭の比喩）の再帰的な組み合わせ。",
+  "synonyms": [
+   "perder la cabeza（頭がおかしくなる）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Se le fue la olla y gritó frente a todos.\n— Qué vergüenza, espero que se disculpe.",
+   "ja": "「彼は我を忘れてみんなの前で怒鳴ったんだ」「恥ずかしいね、謝るといいけど」"
+  }
+ },
+ "dar la lata": {
+  "nuance": "「うるさく迷惑をかける、しつこく困らせる」という口語表現。直訳は「缶を与える」。",
+  "etymology": "由来ははっきりしないが、古い機械の缶が立てる不快な音に関連するとされる。",
+  "synonyms": [
+   "molestar（迷惑をかける）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Mi hermano menor siempre me da la lata.\n— Los hermanos menores son así a veces.",
+   "ja": "「弟はいつも私にうるさくつきまとうんだ」「弟ってそういうものだよね、時々」"
+  }
+ },
+ "ponerse las botas": {
+  "nuance": "「思う存分楽しむ、たらふく食べる」という口語表現。直訳は「ブーツを履く」。",
+  "etymology": "かつて裕福な人だけがブーツを履けたことに由来するとされる。",
+  "synonyms": [
+   "disfrutar al máximo（最大限楽しむ）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Nos pusimos las botas en la boda.\n— La comida se veía deliciosa.",
+   "ja": "「結婚式でたらふく食べたよ」「料理美味しそうだったもんね」"
+  }
+ },
+ "estar en pañales": {
+  "nuance": "「まだ始まったばかりである」。直訳は「おむつをしている」で、赤ちゃんの状態から未熟さ・初期段階を連想させる。",
+  "etymology": "pañal（おむつ）から派生した表現。",
+  "synonyms": [
+   "estar empezando（始まったばかりだ）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— El proyecto todavía está en pañales.\n— Entiendo, hay mucho por hacer todavía.",
+   "ja": "「プロジェクトはまだ始まったばかりなんだ」「わかるよ、まだやることがたくさんあるんだね」"
+  }
+ },
+ "salirse con la suya": {
+  "nuance": "「自分の思い通りにする」という口語表現。多くの場合、他人の反対を押し切って、という少しネガティブなニュアンスを含む。",
+  "etymology": "salirse（出る）+ con la suya（自分のものと共に）の組み合わせ。",
+  "synonyms": [
+   "imponer su voluntad（自分の意志を押し通す）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Siempre se sale con la suya.\n— Es porque es muy insistente.",
+   "ja": "「彼はいつも自分の思い通りにするんだ」「すごくしつこいからね」"
+  }
+ },
+ "estar en la luna": {
+  "nuance": "「ぼーっとしている、上の空である」。直訳は「月にいる」で、周りのことに気づいていない状態を表す。",
+  "etymology": "estar（いる）+ en la luna（月に）の組み合わせ。",
+  "synonyms": [
+   "estar distraído（気が散っている）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Me estás escuchando?\n— Perdón, estaba en la luna.",
+   "ja": "「私の話聞いてる？」「ごめん、ぼーっとしてた」"
+  }
+ },
+ "ser el pan de cada día": {
+  "nuance": "「日常茶飯事である」。直訳は「毎日のパンである」で、ありふれた出来事を表す。",
+  "etymology": "pan de cada día（毎日のパン）は主の祈りにも登場する聖書由来の表現。",
+  "synonyms": [
+   "ser algo común（よくあることだ）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Los embotellamientos son el pan de cada día aquí.\n— Sí, hay que salir con tiempo.",
+   "ja": "「ここでは交通渋滞は日常茶飯事なんだ」「うん、時間に余裕を持って出ないとね」"
+  }
+ },
+ "meter la cuchara": {
+  "nuance": "「（頼まれてもいないのに）口を挟む」。直訳は「スプーンを入れる」。",
+  "etymology": "meter（入れる）+ la cuchara（スプーン）の組み合わせ。",
+  "synonyms": [
+   "entrometerse（干渉する）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Siempre mete la cuchara en las conversaciones ajenas.\n— Sí, puede ser un poco molesto.",
+   "ja": "「彼はいつも他人の会話に口を挟むんだ」「うん、ちょっと迷惑なこともあるよね」"
+  }
+ },
+ "dar en el blanco": {
+  "nuance": "「的を射る、まさにその通りだ」。直訳は「的（白い的）に当てる」。",
+  "etymology": "dar（当てる）+ en el blanco（的に）の組み合わせ、射撃・アーチェリー由来。",
+  "synonyms": [
+   "acertar（言い当てる）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Diste en el blanco con esa idea.\n— Gracias, lo pensé mucho.",
+   "ja": "「そのアイデアはまさに的を射ていたね」「ありがとう、よく考えたんだ」"
+  }
+ },
+ "no tener ni pies ni cabeza": {
+  "nuance": "「まったく筋が通らない」。直訳は「足も頭もない」で、論理が破綻している状態を表す。",
+  "etymology": "no tener（持たない）+ ni pies ni cabeza（足も頭も）の組み合わせ。",
+  "synonyms": [
+   "no tener sentido（意味をなさない）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Esta explicación no tiene ni pies ni cabeza.\n— Tienes razón, pidamos que la repita.",
+   "ja": "「この説明、まったく筋が通ってないよ」「その通りだね、もう一度説明してもらおう」"
+  }
+ },
+ "ser la gota que colma el vaso": {
+  "nuance": "「我慢の限界を超えるきっかけとなる出来事」。直訳は「コップを溢れさせる一滴」。",
+  "etymology": "la gota（一滴）+ que colma el vaso（コップを満たす）の組み合わせ。",
+  "synonyms": [
+   "ser el colmo（限界だ）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Ese comentario fue la gota que colmó el vaso.\n— Entiendo que ya no pudieras aguantar más.",
+   "ja": "「あの発言が我慢の限界を超えるきっかけだったんだ」「もう耐えられなかったのも理解できるよ」"
+  }
+ },
+ "física": {
+  "nuance": "「物理学」の基本語。female article laがつく（-aで終わる学問名は一般的に女性名詞）。",
+  "etymology": "ギリシャ語physiké（自然に関する学問）に由来。",
+  "synonyms": [],
+  "derived": [
+   "físico（物理学者、物理的な）"
+  ],
+  "dialogue": {
+   "es": "— La física cuántica es fascinante.\n— Sí, aunque es difícil de entender.",
+   "ja": "「量子物理学は魅力的だよね」「うん、理解するのは難しいけどね」"
+  }
+ },
+ "química": {
+  "nuance": "「化学」の基本語。",
+  "etymology": "アラビア語al-kīmiyā（錬金術）に由来。",
+  "synonyms": [],
+  "derived": [
+   "químico（化学者、化学の）"
+  ],
+  "dialogue": {
+   "es": "— La química fue mi materia favorita en la escuela.\n— La mía era biología.",
+   "ja": "「化学は学校で一番好きな科目だったんだ」「私は生物学だったよ」"
+  }
+ },
+ "biología": {
+  "nuance": "「生物学」の基本語。",
+  "etymology": "ギリシャ語bios（生命）+ logia（学問）に由来。",
+  "synonyms": [],
+  "derived": [
+   "biólogo（生物学者）",
+   "biológico（生物学的な）"
+  ],
+  "dialogue": {
+   "es": "— Estudio biología marina.\n— Qué interesante, ¿trabajas con delfines?",
+   "ja": "「海洋生物学を学んでいるんだ」「面白いね、イルカと関わったりするの？」"
+  }
+ },
+ "matemáticas": {
+  "nuance": "「数学」の基本語。常に複数形で使われる（英語のmathematicsと同じパターン）。",
+  "etymology": "ギリシャ語mathema（学ぶべきもの）に由来。",
+  "synonyms": [],
+  "derived": [
+   "matemático（数学者、数学の）"
+  ],
+  "dialogue": {
+   "es": "— Nunca se me dieron bien las matemáticas.\n— A mí me encantaban.",
+   "ja": "「数学は昔から得意じゃなかったんだ」「私は大好きだったよ」"
+  }
+ },
+ "experimento": {
+  "nuance": "「実験」の基本語。hacer un experimento（実験をする）はよく使う組み合わせ。",
+  "etymology": "ラテン語experimentum（試み）に由来。",
+  "synonyms": [],
+  "derived": [
+   "experimentar（実験する、経験する）"
+  ],
+  "dialogue": {
+   "es": "— Vamos a hacer un experimento en clase de ciencias.\n— ¡Qué emocionante!",
+   "ja": "「理科の授業で実験をするんだ」「わくわくするね！」"
+  }
+ },
+ "átomo": {
+  "nuance": "「原子」の基本語。",
+  "etymology": "ギリシャ語atomos（分割できないもの）に由来。",
+  "synonyms": [],
+  "derived": [
+   "atómico（原子の）"
+  ],
+  "dialogue": {
+   "es": "— El átomo es la unidad básica de la materia.\n— Sí, lo aprendí en la escuela.",
+   "ja": "「原子は物質の基本単位だよね」「うん、学校で習ったよ」"
+  }
+ },
+ "célula": {
+  "nuance": "「細胞」の基本語。",
+  "etymology": "ラテン語cellula（小さな部屋）に由来。",
+  "synonyms": [],
+  "derived": [
+   "celular（細胞の、携帯電話）"
+  ],
+  "dialogue": {
+   "es": "— Todos los seres vivos están hechos de células.\n— Es fascinante cómo funciona la biología.",
+   "ja": "「すべての生物は細胞でできているんだよね」「生物学の仕組みって魅力的だよね」"
+  }
+ },
+ "planeta": {
+  "nuance": "「惑星」の基本語。-aで終わるが男性名詞（ギリシャ語源）。",
+  "etymology": "ギリシャ語planetes（さまよう星）に由来。",
+  "synonyms": [],
+  "derived": [
+   "planetario（プラネタリウム）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cuál es tu planeta favorito?\n— Me encanta Saturno por sus anillos.",
+   "ja": "「好きな惑星は？」「土星が輪っかがあって大好きなんだ」"
+  }
+ },
+ "gravedad": {
+  "nuance": "「重力」の基本語。比喩的に「重大さ」という意味にもなる。",
+  "etymology": "ラテン語gravitas（重さ）に由来。",
+  "synonyms": [],
+  "derived": [
+   "grave（深刻な、重い）"
+  ],
+  "dialogue": {
+   "es": "— La gravedad es lo que nos mantiene en el suelo.\n— Sin ella, todos flotaríamos.",
+   "ja": "「重力が私たちを地面に留めているんだよね」「それがなかったら、みんな浮いちゃうよね」"
+  }
+ },
+ "energía": {
+  "nuance": "「エネルギー」の基本語。「元気、活力」という日常的な意味でもよく使われる。",
+  "etymology": "ギリシャ語energeia（活動）に由来。",
+  "synonyms": [],
+  "derived": [
+   "enérgico（活力のある）"
+  ],
+  "dialogue": {
+   "es": "— Tienes mucha energía hoy.\n— Sí, dormí muy bien anoche.",
+   "ja": "「今日はとても元気だね」「うん、昨夜よく眠れたんだ」"
+  }
+ },
+ "laboratorio": {
+  "nuance": "「研究室、実験室」の基本語。",
+  "etymology": "ラテン語laborare（働く）に由来。",
+  "synonyms": [],
+  "derived": [
+   "laborar（働く）"
+  ],
+  "dialogue": {
+   "es": "— Trabajo en un laboratorio de investigación.\n— ¿Qué tipo de investigación haces?",
+   "ja": "「研究室で働いているんだ」「どんな研究をしているの？」"
+  }
+ },
+ "teoría": {
+  "nuance": "「理論」の基本語。en teoría（理論上は）という表現もよく使う。",
+  "etymology": "ギリシャ語theoria（観察、考察）に由来。",
+  "synonyms": [],
+  "derived": [
+   "teórico（理論的な）"
+  ],
+  "dialogue": {
+   "es": "— En teoría, esto debería funcionar.\n— Vamos a probarlo y ver qué pasa.",
+   "ja": "「理論上は、これはうまくいくはずなんだ」「試してみて何が起こるか見てみよう」"
+  }
+ },
+ "universo": {
+  "nuance": "「宇宙」の基本語。",
+  "etymology": "ラテン語universum（一つにまとまったもの）に由来。",
+  "synonyms": [],
+  "derived": [
+   "universal（普遍的な）"
+  ],
+  "dialogue": {
+   "es": "— El universo es infinito, según los científicos.\n— Es difícil de imaginar.",
+   "ja": "「科学者によると宇宙は無限なんだって」「想像するのが難しいね」"
+  }
+ },
+ "pintura": {
+  "nuance": "「絵画」の基本語。「ペンキ」という意味にもなる。",
+  "etymology": "pintar（描く）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "pintar（描く）",
+   "pintor（画家）"
+  ],
+  "dialogue": {
+   "es": "— Esta pintura es de un artista local.\n— Es realmente hermosa.",
+   "ja": "「この絵画は地元のアーティストのものなんだ」「本当に美しいね」"
+  }
+ },
+ "escultura": {
+  "nuance": "「彫刻」の基本語。",
+  "etymology": "ラテン語sculpere（彫る）に由来。",
+  "synonyms": [],
+  "derived": [
+   "esculpir（彫刻する）",
+   "escultor（彫刻家）"
+  ],
+  "dialogue": {
+   "es": "— Esa escultura es impresionante.\n— Sí, tardaron años en hacerla.",
+   "ja": "「あの彫刻すごいね」「うん、作るのに何年もかかったんだって」"
+  }
+ },
+ "novela": {
+  "nuance": "「小説」の基本語。novela de misterio（ミステリー小説）のように種類を表す複合語も多い。",
+  "etymology": "イタリア語novella（新しい物語）に由来。",
+  "synonyms": [],
+  "derived": [
+   "novelista（小説家）"
+  ],
+  "dialogue": {
+   "es": "— Estoy leyendo una novela muy buena.\n— ¿De qué trata?",
+   "ja": "「とても良い小説を読んでいるんだ」「どんな話なの？」"
+  }
+ },
+ "autor": {
+  "nuance": "「著者」の基本語。女性形はautora。",
+  "etymology": "ラテン語auctor（創始者、著者）に由来。",
+  "synonyms": [],
+  "derived": [
+   "autoría（著作）"
+  ],
+  "dialogue": {
+   "es": "— ¿Quién es el autor de este libro?\n— Es un escritor mexicano muy famoso.",
+   "ja": "「この本の著者は誰？」「とても有名なメキシコの作家だよ」"
+  }
+ },
+ "personaje": {
+  "nuance": "「登場人物」の基本語。",
+  "etymology": "persona（人）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "personalidad（性格）"
+  ],
+  "dialogue": {
+   "es": "— Mi personaje favorito es el protagonista.\n— El mío es el villano.",
+   "ja": "「好きな登場人物は主人公なんだ」「私は悪役かな」"
+  }
+ },
+ "trama": {
+  "nuance": "「筋書き、プロット」の基本語。",
+  "etymology": "ラテン語trama（織物の横糸）に由来、物語の「織り成す」イメージから。",
+  "synonyms": [
+   "argumento（あらすじ）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— La trama de esta serie es muy compleja.\n— Sí, hay que prestar mucha atención.",
+   "ja": "「このドラマの筋書きはとても複雑だね」「うん、注意深く見ないとね」"
+  }
+ },
+ "exposición": {
+  "nuance": "「展覧会」の基本語。「説明、発表」という意味にもなる。",
+  "etymology": "ラテン語expositio（提示）に由来。",
+  "synonyms": [],
+  "derived": [
+   "exponer（展示する、説明する）"
+  ],
+  "dialogue": {
+   "es": "— Hay una exposición de arte moderno en el museo.\n— ¿Quieres ir el fin de semana?",
+   "ja": "「美術館で現代アートの展覧会があるんだ」「週末に行きたい？」"
+  }
+ },
+ "galería": {
+  "nuance": "「ギャラリー」の基本語。",
+  "etymology": "イタリア語galleria（回廊）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Esta galería tiene obras de artistas locales.\n— Vamos a echar un vistazo.",
+   "ja": "「このギャラリーには地元アーティストの作品があるんだ」「見に行こうよ」"
+  }
+ },
+ "chistoso": {
+  "nuance": "「面白い、おかしい」。chismosoと綴りが似ているが全くの別物なので注意（chiste＝ジョークから派生）。graciosoともほぼ同義。",
+  "etymology": "chiste（冗談、ジョーク）から派生した語。",
+  "synonyms": [
+   "gracioso（面白い、ほぼ同義）"
+  ],
+  "derived": [
+   "chiste（ジョーク）"
+  ],
+  "dialogue": {
+   "es": "— Eres muy chistoso.\n— Gracias, me gusta hacer reír a la gente.",
+   "ja": "「君はとても面白いね」「ありがとう、人を笑わせるのが好きなんだ」"
+  }
+ },
+ "chismoso": {
+  "nuance": "「噂好きな、ゴシップ好きな」。chistoso（面白い）と綴りが似ているが意味は全く違うので要注意（chisme＝噂話から派生）。",
+  "etymology": "chisme（噂話、ゴシップ）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "chisme（噂話）"
+  ],
+  "dialogue": {
+   "es": "— No seas chismoso, no cuentes lo que te dije.\n— Tranquilo, no le voy a decir a nadie.",
+   "ja": "「噂好きにならないで、言ったこと言いふらさないでね」「大丈夫、誰にも言わないよ」"
+  }
+ },
+ "mentiroso": {
+  "nuance": "「嘘つきな」。mentira（嘘）から派生した形容詞。",
+  "etymology": "mentira（嘘）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "mentira（嘘）",
+   "mentir（嘘をつく）"
+  ],
+  "dialogue": {
+   "es": "— No confío en él, es muy mentiroso.\n— Sí, siempre exagera todo.",
+   "ja": "「彼は信用できないよ、すごく嘘つきなんだ」「うん、いつも何でも大げさに言うよね」"
+  }
+ },
+ "miedoso": {
+  "nuance": "「怖がりな」。miedo（恐怖）から派生した形容詞、口語でよく使われる。",
+  "etymology": "miedo（恐怖）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "miedo（恐怖）"
+  ],
+  "dialogue": {
+   "es": "— Soy muy miedoso con las películas de terror.\n— Yo también, prefiero las comedias.",
+   "ja": "「ホラー映画はすごく苦手なんだ」「私もだよ、コメディの方がいいな」"
+  }
+ },
+ "envidioso": {
+  "nuance": "「嫉妬深い」。envidia（嫉妬）から派生した形容詞。",
+  "etymology": "envidia（嫉妬）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "envidia（嫉妬）",
+   "envidiar（嫉妬する）"
+  ],
+  "dialogue": {
+   "es": "— No seas envidioso, alégrate por su éxito.\n— Tienes razón, debería estar feliz por él.",
+   "ja": "「嫉妬しないで、彼の成功を喜んであげなよ」「その通りだね、彼のために喜ぶべきだね」"
+  }
+ },
+ "famoso": {
+  "nuance": "「有名な」の基本語。los famosos（有名人たち）という名詞的な使い方もよくされる。",
+  "etymology": "ラテン語famosus（評判の高い）に由来。",
+  "synonyms": [],
+  "derived": [
+   "fama（名声）"
+  ],
+  "dialogue": {
+   "es": "— Ese actor es muy famoso en México.\n— Sí, ha estado en muchas películas.",
+   "ja": "「あの俳優はメキシコでとても有名なんだ」「うん、たくさんの映画に出ているよね」"
+  }
+ },
+ "ruidoso": {
+  "nuance": "「うるさい、騒がしい」。ruido（音、騒音）から派生した形容詞。",
+  "etymology": "ruido（騒音）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "ruido（騒音）"
+  ],
+  "dialogue": {
+   "es": "— Este vecindario es muy ruidoso por las noches.\n— Sí, hay muchos bares cerca.",
+   "ja": "「この近所は夜とてもうるさいんだ」「うん、近くにバーがたくさんあるからね」"
+  }
+ },
+ "peligroso": {
+  "nuance": "「危険な」の基本語。peligro（危険）から派生した形容詞。",
+  "etymology": "peligro（危険）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "peligro（危険）"
+  ],
+  "dialogue": {
+   "es": "— Esa zona es peligrosa de noche.\n— Mejor evitarla entonces.",
+   "ja": "「あの地域は夜危険なんだ」「それなら避けた方がいいね」"
+  }
+ },
+ "estudioso": {
+  "nuance": "「勉強熱心な」。estudiar（勉強する）から派生した形容詞。",
+  "etymology": "estudiar（勉強する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "estudiar（勉強する）",
+   "estudio（勉強）"
+  ],
+  "dialogue": {
+   "es": "— Mi hija es muy estudiosa.\n— Qué bueno, eso le ayudará mucho.",
+   "ja": "「私の娘はとても勉強熱心なんだ」「それはいいね、きっと役に立つよ」"
+  }
+ },
+ "ambicioso": {
+  "nuance": "「野心的な」の基本語。ポジティブにもネガティブにも使われる。",
+  "etymology": "ラテン語ambitiosus（野心のある）に由来。",
+  "synonyms": [],
+  "derived": [
+   "ambición（野心）"
+  ],
+  "dialogue": {
+   "es": "— Es muy ambicioso con su carrera.\n— Eso lo va a llevar lejos.",
+   "ja": "「彼はキャリアにとても野心的なんだ」「それが彼を遠くまで導くだろうね」"
+  }
+ },
+ "religioso": {
+  "nuance": "「信心深い」の基本語。宗教施設を指す名詞的用法もある。",
+  "etymology": "ラテン語religiosus（敬虔な）に由来。",
+  "synonyms": [],
+  "derived": [
+   "religión（宗教）"
+  ],
+  "dialogue": {
+   "es": "— Su familia es muy religiosa.\n— La mía también, vamos a misa cada domingo.",
+   "ja": "「彼の家族はとても信心深いんだ」「私の家族もだよ、毎週日曜日にミサに行くんだ」"
+  }
+ },
+ "sospechoso": {
+  "nuance": "「怪しい、疑わしい」。名詞として「容疑者」という意味にもなる。",
+  "etymology": "sospechar（疑う）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "sospechar（疑う）",
+   "sospecha（疑い）"
+  ],
+  "dialogue": {
+   "es": "— Ese hombre se ve sospechoso.\n— Sí, mejor mantente alejado.",
+   "ja": "「あの男は怪しく見えるね」「うん、離れておいた方がいいよ」"
+  }
+ },
+ "vergonzoso": {
+  "nuance": "「恥ずかしがりな（性格）」と「恥ずべき、みっともない（出来事）」の両方の意味を持つ。文脈で判断する。",
+  "etymology": "vergüenza（恥）から派生した語。",
+  "synonyms": [
+   "tímido（内気な、性格の意味で）"
+  ],
+  "derived": [
+   "vergüenza（恥）"
+  ],
+  "dialogue": {
+   "es": "— De niño era muy vergonzoso.\n— Yo también, me costaba hablar en público.",
+   "ja": "「子供の頃はとても恥ずかしがりだったんだ」「私もだよ、人前で話すのが苦手だった」"
+  }
  }
 };

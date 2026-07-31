@@ -8101,5 +8101,83 @@ const VOCAB_DATA = [
   "ja": "おおっ！さあ！（メキシコの口語）",
   "cat": "Coloquial",
   "nivel": "avanzado"
+ },
+ {
+  "es": "Chistoso",
+  "en": "Funny",
+  "ja": "面白い、おかしい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Chismoso",
+  "en": "Gossipy",
+  "ja": "噂好きな、ゴシップ好きな",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Mentiroso",
+  "en": "Liar / untruthful",
+  "ja": "嘘つきな",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Miedoso",
+  "en": "Fearful / easily scared",
+  "ja": "怖がりな",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Envidioso",
+  "en": "Envious",
+  "ja": "嫉妬深い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Famoso",
+  "en": "Famous",
+  "ja": "有名な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Ruidoso",
+  "en": "Noisy",
+  "ja": "うるさい、騒がしい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Peligroso",
+  "en": "Dangerous",
+  "ja": "危険な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Estudioso",
+  "en": "Studious",
+  "ja": "勉強熱心な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Ambicioso",
+  "en": "Ambitious",
+  "ja": "野心的な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Religioso",
+  "en": "Religious",
+  "ja": "信心深い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Sospechoso",
+  "en": "Suspicious",
+  "ja": "怪しい、疑わしい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Vergonzoso",
+  "en": "Shy / embarrassing",
+  "ja": "恥ずかしがりな、恥ずべき",
+  "cat": "Adjetivos"
  }
 ];
