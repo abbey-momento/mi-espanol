@@ -213,10 +213,9 @@ function catToCefr(cat){
 function assignCefr(w){
   const base = catToCefr(w.cat);
   if(w.nivel==="avanzado") return "B2";
-  if(w.nivel==="fácil"){
-    const idx = CEFR_LEVEL_ORDER.indexOf(base);
-    return CEFR_LEVEL_ORDER[Math.max(0, idx-1)];
-  }
+  const idx = CEFR_LEVEL_ORDER.indexOf(base);
+  if(w.nivel==="fácil") return CEFR_LEVEL_ORDER[Math.max(0, idx-1)];
+  if(w.nivel==="muy_facil") return CEFR_LEVEL_ORDER[Math.max(0, idx-2)];
   return base;
 }
 const VOCAB = VOCAB_DATA.map((w,i)=>({...w, id:i, nivel: w.nivel || "básico", cefr: assignCefr(w)}));
@@ -1222,7 +1221,7 @@ function renderQuiz(){
       rl.appendChild(item);
     });
     app.appendChild(rl);
-    quizQuestion=null; return;
+    return;
   }
   if(lastSpokenQuizId !== quizQuestion.word.id){ lastSpokenQuizId = quizQuestion.word.id; if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(quizQuestion.word.es), 150); }
   app.appendChild(topBar(quizQuestion.word.cefr, `${quizIdx+1} / ${quizTotal}`, ()=>{ state.mode="home"; quizQuestion=null; render(); }));

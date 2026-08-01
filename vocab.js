@@ -4343,13 +4343,6 @@ const VOCAB_DATA = [
   "cat": "Formas"
  },
  {
-  "es": "¡Órale!",
-  "en": "Wow! / Come on! (Mexican)",
-  "ja": "おおっ！（メキシコの間投詞）",
-  "cat": "Frases",
-  "nivel": "avanzado"
- },
- {
   "es": "¡Qué padre!",
   "en": "How cool! (Mexican)",
   "ja": "かっこいい！（メキシコ表現）",
@@ -5718,13 +5711,15 @@ const VOCAB_DATA = [
   "es": "La luz",
   "en": "Light",
   "ja": "光",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "El ruido",
   "en": "Noise",
   "ja": "騒音",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "El silencio",
@@ -5736,13 +5731,15 @@ const VOCAB_DATA = [
   "es": "La voz",
   "en": "Voice",
   "ja": "声",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "El sonido",
   "en": "Sound",
   "ja": "音",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "La imagen",
@@ -5754,13 +5751,15 @@ const VOCAB_DATA = [
   "es": "El sabor",
   "en": "Flavor",
   "ja": "味",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "El olor",
   "en": "Smell",
   "ja": "匂い",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "La textura",
@@ -5790,13 +5789,15 @@ const VOCAB_DATA = [
   "es": "El principio",
   "en": "Beginning",
   "ja": "始まり",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "El final",
   "en": "End",
   "ja": "終わり",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "El resto",
@@ -5814,25 +5815,29 @@ const VOCAB_DATA = [
   "es": "El grupo",
   "en": "Group",
   "ja": "グループ",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "La lista",
   "en": "List",
   "ja": "リスト",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "El ejemplo",
   "en": "Example",
   "ja": "例",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "La razón",
   "en": "Reason",
   "ja": "理由",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "El motivo",
@@ -5850,19 +5855,22 @@ const VOCAB_DATA = [
   "es": "El problema",
   "en": "Problem",
   "ja": "問題",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "La pregunta",
   "en": "Question",
   "ja": "質問",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "La respuesta",
   "en": "Answer",
   "ja": "答え",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "La duda",
@@ -6742,13 +6750,15 @@ const VOCAB_DATA = [
   "es": "La noticia",
   "en": "News (item)",
   "ja": "ニュース",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "El periódico",
   "en": "Newspaper",
   "ja": "新聞",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "La revista",
@@ -7749,7 +7759,8 @@ const VOCAB_DATA = [
   "es": "La manera",
   "en": "Way / manner",
   "ja": "方法・やり方",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "El momento",
@@ -7761,7 +7772,8 @@ const VOCAB_DATA = [
   "es": "La parte",
   "en": "Part",
   "ja": "部分",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "El lugar",
@@ -7773,13 +7785,15 @@ const VOCAB_DATA = [
   "es": "La vida",
   "en": "Life",
   "ja": "人生・命",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "La verdad",
   "en": "Truth",
   "ja": "真実",
-  "cat": "General"
+  "cat": "General",
+  "nivel": "muy_facil"
  },
  {
   "es": "Hoy",
