@@ -6610,5 +6610,308 @@ const DICTIONARY_DATA = {
    "es": "— De niño era muy vergonzoso.\n— Yo también, me costaba hablar en público.",
    "ja": "「子供の頃はとても恥ずかしがりだったんだ」「私もだよ、人前で話すのが苦手だった」"
   }
+ },
+ "cargador": {
+  "nuance": "「充電器」の基本語。cargar（充電する、積む）から派生した語。",
+  "etymology": "cargar（積む、充電する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "cargar（充電する）",
+   "carga（積み荷、充電）"
+  ],
+  "dialogue": {
+   "es": "— ¿Tienes un cargador que me prestes?\n— Sí, aquí tienes.",
+   "ja": "「貸せる充電器持ってる？」「うん、はいどうぞ」"
+  }
+ },
+ "seguidor": {
+  "nuance": "「フォロワー」の基本語。seguir（従う、フォローする）から派生した語。",
+  "etymology": "seguir（従う）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "seguir（フォローする）"
+  ],
+  "dialogue": {
+   "es": "— Tiene muchos seguidores en redes sociales.\n— Sí, es bastante popular.",
+   "ja": "「彼女はSNSでフォロワーがたくさんいるんだ」「うん、かなり人気があるよね」"
+  }
+ },
+ "notificación": {
+  "nuance": "「通知」の基本語。desactivar las notificaciones（通知をオフにする）のような表現でよく使われる。",
+  "etymology": "notificar（通知する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "notificar（通知する）"
+  ],
+  "dialogue": {
+   "es": "— Tengo demasiadas notificaciones en el celular.\n— Deberías desactivar algunas.",
+   "ja": "「携帯に通知が多すぎるんだ」「いくつかオフにした方がいいよ」"
+  }
+ },
+ "descarga": {
+  "nuance": "「ダウンロード」の基本語。descargar（ダウンロードする）の名詞形。",
+  "etymology": "descargar（下ろす、ダウンロードする）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "descargar（ダウンロードする）"
+  ],
+  "dialogue": {
+   "es": "— La descarga está tardando mucho.\n— Debe ser el internet lento.",
+   "ja": "「ダウンロードにとても時間がかかっているんだ」「ネットが遅いんだろうね」"
+  }
+ },
+ "actualización": {
+  "nuance": "「アップデート」の基本語。actualizar（更新する）の名詞形。",
+  "etymology": "actualizar（更新する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "actualizar（更新する）",
+   "actual（現在の）"
+  ],
+  "dialogue": {
+   "es": "— Hay una actualización disponible para tu teléfono.\n— La instalaré más tarde.",
+   "ja": "「あなたの携帯にアップデートがあるよ」「後でインストールするね」"
+  }
+ },
+ "video": {
+  "nuance": "「動画」の基本語。スペインではvídeo（アクセントつき）と綴ることも多い。",
+  "etymology": "ラテン語video（私は見る）に由来。",
+  "synonyms": [],
+  "derived": [
+   "videollamada（ビデオ通話）"
+  ],
+  "dialogue": {
+   "es": "— Vi un video muy gracioso hoy.\n— Mándamelo, quiero verlo.",
+   "ja": "「今日とても面白い動画見たんだ」「送って、見たいな」"
+  }
+ },
+ "foto": {
+  "nuance": "「写真」。fotografía（正式名称）の省略形で、-oで終わるのに女性名詞という例外。",
+  "etymology": "fotografía（写真）の省略形。",
+  "synonyms": [
+   "fotografía（写真、正式名）"
+  ],
+  "derived": [
+   "fotografiar（撮影する）",
+   "fotógrafo（写真家）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me tomas una foto?\n— Claro, sonríe.",
+   "ja": "「写真撮ってくれる？」「もちろん、笑って」"
+  }
+ },
+ "inteligencia artificial": {
+  "nuance": "「人工知能」の基本語。略してIAとも呼ばれる。",
+  "etymology": "inteligencia（知能）+ artificial（人工の）の組み合わせ。",
+  "synonyms": [
+   "IA（略称）"
+  ],
+  "derived": [
+   "inteligente（賢い）"
+  ],
+  "dialogue": {
+   "es": "— La inteligencia artificial está cambiando todo.\n— Sí, es impresionante lo rápido que avanza.",
+   "ja": "「人工知能がすべてを変えつつあるね」「うん、進歩の速さがすごいよね」"
+  }
+ },
+ "robot": {
+  "nuance": "「ロボット」の基本語。チェコ語由来の国際的な単語。",
+  "etymology": "チェコ語robota（強制労働）に由来。",
+  "synonyms": [],
+  "derived": [
+   "robótica（ロボット工学）"
+  ],
+  "dialogue": {
+   "es": "— Este robot puede limpiar la casa solo.\n— Qué práctico, quiero uno.",
+   "ja": "「このロボットは一人で家を掃除できるんだ」「便利だね、私も欲しいな」"
+  }
+ },
+ "dron": {
+  "nuance": "「ドローン」の基本語。英語droneのスペイン語表記。",
+  "etymology": "英語drone（雄バチ、無人機）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Grabé el video con un dron.\n— Se ve increíble desde arriba.",
+   "ja": "「ドローンでこの動画を撮ったんだ」「上から見るとすごいね」"
+  }
+ },
+ "realidad virtual": {
+  "nuance": "「バーチャルリアリティ」の基本語。略してVR（英語のまま）とも呼ばれる。",
+  "etymology": "realidad（現実）+ virtual（仮想の）の組み合わせ。",
+  "synonyms": [
+   "VR（略称）"
+  ],
+  "derived": [
+   "virtual（仮想の）"
+  ],
+  "dialogue": {
+   "es": "— Probé unos lentes de realidad virtual.\n— ¿Cómo se sintió?",
+   "ja": "「VRゴーグルを試したんだ」「どんな感じだった？」"
+  }
+ },
+ "satélite": {
+  "nuance": "「人工衛星」の基本語。GPS等の技術説明でよく使われる。",
+  "etymology": "ラテン語satelles（従者）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Este satélite orbita la Tierra cada 90 minutos.\n— Qué velocidad tan increíble.",
+   "ja": "「この衛星は90分ごとに地球を周回するんだ」「なんてすごい速さなんだ」"
+  }
+ },
+ "servidor": {
+  "nuance": "「サーバー」の基本語。servir（仕える、給仕する）から派生した語。",
+  "etymology": "servir（仕える）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "servir（仕える）"
+  ],
+  "dialogue": {
+   "es": "— El servidor está caído otra vez.\n— Qué mal, no puedo acceder a mi cuenta.",
+   "ja": "「サーバーがまた落ちているんだ」「困ったね、アカウントにアクセスできないよ」"
+  }
+ },
+ "base de datos": {
+  "nuance": "「データベース」の基本語。base（土台）+ de datos（データの）の組み合わせ。",
+  "etymology": "base（土台）+ de datos（データの）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "dato（データ）"
+  ],
+  "dialogue": {
+   "es": "— Necesito actualizar la base de datos.\n— ¿Cuánto tiempo va a tomar?",
+   "ja": "「データベースを更新する必要があるんだ」「どれくらい時間かかりそう？」"
+  }
+ },
+ "código": {
+  "nuance": "「コード」の基本語。プログラミングの「コード」と「暗証番号」の両方の意味を持つ。",
+  "etymology": "ラテン語codex（写本、法典）に由来。",
+  "synonyms": [],
+  "derived": [
+   "codificar（コード化する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cuál es el código de la wifi?\n— Está en la parte de atrás del router.",
+   "ja": "「Wi-Fiのコードは何？」「ルーターの裏に書いてあるよ」"
+  }
+ },
+ "universidad": {
+  "nuance": "「大学」の基本語。地域によってはuniと短縮されることも多い。",
+  "etymology": "ラテン語universitas（全体、共同体）に由来。",
+  "synonyms": [],
+  "derived": [
+   "universitario（大学の、大学生）"
+  ],
+  "dialogue": {
+   "es": "— ¿En qué universidad estudias?\n— En la UNAM.",
+   "ja": "「どこの大学で勉強してるの？」「UNAM(メキシコ国立自治大学)だよ」"
+  }
+ },
+ "carrera": {
+  "nuance": "「専攻・学部課程」と「競走」「キャリア」の両方の意味を持つ単語。文脈で判断する。",
+  "etymology": "俗ラテン語carraria（荷車道）に由来。",
+  "synonyms": [],
+  "derived": [
+   "carro（車）"
+  ],
+  "dialogue": {
+   "es": "— ¿Qué carrera estudias?\n— Estudio medicina.",
+   "ja": "「何を専攻しているの？」「医学を勉強しているよ」"
+  }
+ },
+ "beca": {
+  "nuance": "「奨学金」の基本語。tener una beca（奨学金をもらっている）はよく使う表現。",
+  "etymology": "起源ははっきりしないが、俗ラテン語系の語とされる。",
+  "synonyms": [],
+  "derived": [
+   "becario（奨学生）"
+  ],
+  "dialogue": {
+   "es": "— Conseguí una beca para estudiar en el extranjero.\n— ¡Felicidades! Qué gran oportunidad.",
+   "ja": "「海外留学の奨学金を獲得したんだ」「おめでとう！素晴らしい機会だね」"
+  }
+ },
+ "examen": {
+  "nuance": "「試験」の基本語。presentar un examen（試験を受ける）という組み合わせでよく使う。",
+  "etymology": "ラテン語examen（計量、検査）に由来。",
+  "synonyms": [],
+  "derived": [
+   "examinar（試験する、検査する）"
+  ],
+  "dialogue": {
+   "es": "— Tengo un examen mañana.\n— ¡Suerte! Estudia bien.",
+   "ja": "「明日試験があるんだ」「頑張って！しっかり勉強してね」"
+  }
+ },
+ "tarea": {
+  "nuance": "「宿題」の基本語。「任務、仕事」という一般的な意味でも使われる。",
+  "etymology": "アラビア語ṭāriḥa（課された仕事）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Ya hiciste la tarea?\n— Todavía no, la hago después de cenar.",
+   "ja": "「もう宿題やった？」「まだだよ、夕食後にやるつもり」"
+  }
+ },
+ "nota": {
+  "nuance": "「成績」の基本語。「メモ、注釈」という意味にもなる。",
+  "etymology": "ラテン語nota（印、記号）に由来。",
+  "synonyms": [
+   "calificación（成績、ややフォーマル）"
+  ],
+  "derived": [
+   "notable（注目に値する）"
+  ],
+  "dialogue": {
+   "es": "— Saqué una buena nota en el examen.\n— ¡Qué bien! Felicidades.",
+   "ja": "「試験でいい成績を取ったんだ」「よかったね！おめでとう」"
+  }
+ },
+ "título": {
+  "nuance": "「学位」と「タイトル、肩書き」の両方の意味を持つ単語。",
+  "etymology": "ラテン語titulus（表題、称号）に由来。",
+  "synonyms": [],
+  "derived": [
+   "titular（保有者、見出し）"
+  ],
+  "dialogue": {
+   "es": "— Recibí mi título el año pasado.\n— ¡Felicidades, qué logro!",
+   "ja": "「去年学位を取得したんだ」「おめでとう、すごい達成だね」"
+  }
+ },
+ "semestre": {
+  "nuance": "「学期」の基本語。多くのラテンアメリカの大学は1年を2学期制で運営している。",
+  "etymology": "ラテン語semestris（6ヶ月の）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Este semestre tengo muchas materias difíciles.\n— Ánimo, ya casi termina el año.",
+   "ja": "「今学期は難しい科目がたくさんあるんだ」「頑張って、もうすぐ今年も終わるから」"
+  }
+ },
+ "aula": {
+  "nuance": "「教室」の基本語。女性名詞だがel aulaとなる（aguaと同じ、アクセントのあるa音を避けるため）。",
+  "etymology": "ラテン語aula（広間）に由来。",
+  "synonyms": [
+   "salón de clases（教室、より一般的な言い方）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿En qué aula es la clase?\n— En el aula 305.",
+   "ja": "「授業はどの教室であるの？」「305教室だよ」"
+  }
+ },
+ "lápiz": {
+  "nuance": "「鉛筆」の基本語。複数形はlápices（z→c）という綴りの変化に注意。",
+  "etymology": "ラテン語lapis（石）に由来。",
+  "synonyms": [],
+  "derived": [
+   "lapicero（シャープペンシル、地域による）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me prestas un lápiz?\n— Claro, toma.",
+   "ja": "「鉛筆貸してくれる？」「もちろん、どうぞ」"
+  }
  }
 };

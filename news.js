@@ -47,4 +47,13 @@ const NEWS_ITEMS = [
   { es:"El cantante mexicano Peso Pluma colaboró con el rapero estadounidense Kanye West en la canción 'Last Breath', mezclando corridos tumbados con hip-hop en un tema que llamó la atención internacional.",
     ja:"メキシコの歌手ペソ・プルマは、アメリカのラッパー、カニエ・ウェストと楽曲「Last Breath」でコラボレーションし、コリードス・トゥンバードスとヒップホップを融合させて国際的な注目を集めました。",
     notes:[["colaborar","コラボする"],["mezclar","混ぜ合わせる"],["llamar la atención","注目を集める"]] },
+  { es:"El 17 de julio de 2026 ocurrió un fuerte sismo de magnitud 7.4 con epicentro cerca de Ciudad Hidalgo, en el estado de Chiapas. Desde entonces, el Servicio Sismológico Nacional ha registrado más de mil réplicas en la zona.",
+    ja:"2026年7月17日、チアパス州シウダー・イダルゴ付近を震源とするマグニチュード7.4の強い地震が発生しました。それ以来、国立地震観測局はこの地域で1000回を超える余震を観測しています。",
+    notes:[["sismo","地震"],["epicentro","震源地"],["réplica","余震"]] },
+  { es:"La Copa Mundial de la FIFA 2026, organizada conjuntamente por México, Estados Unidos y Canadá, concluyó el 19 de julio con la final disputada en un estadio de Nueva York, tras 39 días y 104 partidos.",
+    ja:"メキシコ・アメリカ・カナダの3カ国共催で行われたFIFAワールドカップ2026は、39日間・104試合を経て、7月19日にニューヨークのスタジアムで決勝が行われ幕を閉じました。",
+    notes:[["organizado conjuntamente","共同開催された"],["disputada","争われた（試合が）"],["concluir","終わる、幕を閉じる"]] },
+  { es:"El ciclo escolar 2025-2026 terminó el 15 de julio en México, marcando el inicio de las vacaciones de verano para millones de estudiantes en todo el país.",
+    ja:"メキシコでは2025〜2026年度が7月15日に終了し、全国の何百万人もの生徒たちにとって夏休みの始まりとなりました。",
+    notes:[["ciclo escolar","学年度"],["marcar el inicio de","〜の始まりとなる"]] },
 ];
