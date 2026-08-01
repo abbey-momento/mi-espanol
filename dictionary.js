@@ -193,7 +193,7 @@ const DICTIONARY_DATA = {
   }
  },
  "querer": {
-  "nuance": "「欲しい・したい」に加えて「愛している」という意味にもなる（Te quiero.）。文脈で意味が変わる。",
+  "nuance": "「欲しい・したい」に加えて「愛している」という意味にもなる（Te quiero.）。文脈で意味が変わる。amar（愛する）との違い：querer は家族・友人など日常的な「大好き」を伝えるときに自然。amarはより恋愛的・重い響きがあり、パートナーや配偶者、神への愛など、深く真剣な文脈でよく使われる。複数の相手には「Los quiero.（男性・混合）／Las quiero.（女性）」のようにustedes系の目的代名詞を使う（vosを使わない地域では常にustedes扱い）。",
   "etymology": "ラテン語quaerere（探し求める）に由来。",
   "synonyms": [
    "desear（望む、ややフォーマル）",
@@ -5835,7 +5835,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lana": {
-  "nuance": "「お金」を指すスラング。地域や世代によってplataやferiaなど他の言い方も好まれる。",
+  "nuance": "「ウール、毛糸」の基本語。口語では「お金」を指すスラングとしても非常によく使われる（地域や世代によってplataやferiaなど他の言い方も好まれる）。文脈で判断する。",
   "etymology": "lana（羊毛）が比喩的に「お金」の意味に転じたとされる。",
   "synonyms": [
    "dinero（お金、標準語）",
@@ -5873,7 +5873,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fresa": {
-  "nuance": "「気取っている、お坊ちゃん・お嬢様風の」という意味の口語形容詞。直訳は「いちご」。皮肉を込めて使われることが多い。",
+  "nuance": "「いちご」の基本語。口語では「気取っている、お坊ちゃん・お嬢様風の」という意味の形容詞としても使われる（皮肉を込めて使われることが多い）。文脈で判断する。",
   "etymology": "fresa（いちご）が「甘ったるい、気取った」というイメージから意味が転じたとされる。",
   "synonyms": [
    "presumido（うぬぼれた）"
@@ -15552,6 +15552,2335 @@ const DICTIONARY_DATA = {
   "dialogue": {
    "es": "— Vamos a comprar pan dulce para el desayuno.\n— Me encantan las conchas.",
    "ja": "「朝食用に甘いパンを買いに行こう」「コンチャが大好きなんだ」"
+  }
+ },
+ "helada": {
+  "nuance": "「霜」の基本語。helar（凍らせる）から派生した語。",
+  "etymology": "helar（凍らせる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "helar（凍らせる）",
+   "hielo（氷）"
+  ],
+  "dialogue": {
+   "es": "— Hubo helada esta mañana.\n— Por eso hacía tanto frío.",
+   "ja": "「今朝霜が降りたんだ」「だからあんなに寒かったんだね」"
+  }
+ },
+ "arpa": {
+  "nuance": "「ハープ」の基本語。arpaは女性名詞だが、アクセントのあるa音を避けるため単数形ではelを使う。ベラクルスの音楽（son jarocho）で有名な楽器。",
+  "etymology": "ゲルマン語系の語harpa（ハープ）に由来。",
+  "synonyms": [],
+  "derived": [
+   "arpista（ハープ奏者）"
+  ],
+  "dialogue": {
+   "es": "— El arpa jarocha suena hermoso.\n— Es un instrumento icónico de Veracruz.",
+   "ja": "「ハラチャ・ハープの音色は美しいね」「ベラクルスを象徴する楽器なんだ」"
+  }
+ },
+ "contrabajo": {
+  "nuance": "「コントラバス」の基本語。contra（〜に対する）+ bajo（低い）の組み合わせ。",
+  "etymology": "イタリア語contrabbasso（さらに低い音）に由来。",
+  "synonyms": [],
+  "derived": [
+   "bajo（低い、ベース）"
+  ],
+  "dialogue": {
+   "es": "— El contrabajo le da profundidad a la música.\n— Es la base de todo el sonido.",
+   "ja": "「コントラバスが音楽に深みを与えているね」「全体の音の土台なんだよね」"
+  }
+ },
+ "ukelele": {
+  "nuance": "「ウクレレ」の基本語。ハワイ語由来。",
+  "etymology": "ハワイ語ukulele（跳ねるノミ）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Estoy aprendiendo a tocar el ukelele.\n— Es más fácil que la guitarra, ¿verdad?",
+   "ja": "「ウクレレを習っているんだ」「ギターより簡単だよね？」"
+  }
+ },
+ "pandereta": {
+  "nuance": "「タンバリン」の基本語。",
+  "etymology": "pandero（大型の太鼓）の指小形に由来。",
+  "synonyms": [],
+  "derived": [
+   "pandero（太鼓）"
+  ],
+  "dialogue": {
+   "es": "— Toca la pandereta durante la canción.\n— Le da mucho ritmo.",
+   "ja": "「歌の間タンバリンを鳴らして」「とてもリズムが出るよね」"
+  }
+ },
+ "oceanía": {
+  "nuance": "「オセアニア」の基本語。オーストラリア・ニュージーランド・太平洋諸島を含む大陸。",
+  "etymology": "ラテン語oceanus（大洋）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "océano（大洋）"
+  ],
+  "dialogue": {
+   "es": "— Oceanía tiene islas hermosas.\n— Me encantaría visitar Australia.",
+   "ja": "「オセアニアには美しい島々があるよね」「オーストラリアに行ってみたいな」"
+  }
+ },
+ "antártida": {
+  "nuance": "「南極大陸」の基本語。ártico（北極の）の反対語anti-ártico（南極の）から派生。",
+  "etymology": "anti（反対の）+ ártico（北極の）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "ártico（北極の）"
+  ],
+  "dialogue": {
+   "es": "— La Antártida es el continente más frío.\n— Casi nadie vive ahí permanentemente.",
+   "ja": "「南極大陸は一番寒い大陸だよね」「ほとんど誰も定住していないよね」"
+  }
+ },
+ "equipaje de mano": {
+  "nuance": "「機内持ち込み荷物」の基本語。equipaje（荷物）+ de mano（手の）の組み合わせ。",
+  "etymology": "equipaje（荷物）+ mano（手）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "equipaje（荷物）"
+  ],
+  "dialogue": {
+   "es": "— Solo llevo equipaje de mano.\n— Así evitas esperar en la banda de maletas.",
+   "ja": "「機内持ち込み荷物だけ持っていくよ」「そうすれば荷物の受け取りで待たなくて済むね」"
+  }
+ },
+ "snowboard": {
+  "nuance": "「スノーボード」の基本語。英語からの借用語。",
+  "etymology": "英語snowboard（雪の板）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Prefieres esquiar o hacer snowboard?\n— Snowboard, definitivamente.",
+   "ja": "「スキーとスノーボード、どっちが好き？」「断然スノーボードだね」"
+  }
+ },
+ "hockey": {
+  "nuance": "「ホッケー」の基本語。英語からの借用語。",
+  "etymology": "英語hockey（起源は諸説あり）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— No sabía que jugabas hockey.\n— Sí, desde que era niño.",
+   "ja": "「ホッケーやってるなんて知らなかったよ」「うん、子供の頃からね」"
+  }
+ },
+ "seguro de sí mismo": {
+  "nuance": "「自信がある」の基本表現。seguro（確かな）+ de sí mismo（自分自身の）の組み合わせ。",
+  "etymology": "seguro（確かな）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "seguro（確かな、安全な）"
+  ],
+  "dialogue": {
+   "es": "— Se ve muy seguro de sí mismo en las entrevistas.\n— Eso lo hace destacar.",
+   "ja": "「面接でとても自信がありそうに見えるよね」「それが彼を際立たせているんだよね」"
+  }
+ },
+ "cinta métrica": {
+  "nuance": "「巻き尺」の基本語。cinta（テープ）+ métrica（測定の）の組み合わせ。",
+  "etymology": "cinta（テープ）+ metro（メートル）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "metro（メートル）"
+  ],
+  "dialogue": {
+   "es": "— ¿Tienes una cinta métrica?\n— Sí, en la caja de herramientas.",
+   "ja": "「巻き尺持ってる？」「うん、工具箱にあるよ」"
+  }
+ },
+ "gancho": {
+  "nuance": "「フック」の基本語。「（ボクシングの）フックパンチ」という意味にもなる。",
+  "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
+  "synonyms": [],
+  "derived": [
+   "enganchar（引っ掛ける）"
+  ],
+  "dialogue": {
+   "es": "— Cuelga tu abrigo en ese gancho.\n— Gracias.",
+   "ja": "「そのフックにコート掛けて」「ありがとう」"
+  }
+ },
+ "clip": {
+  "nuance": "「クリップ」の基本語。英語からの借用語。「動画クリップ」という意味にもなる。",
+  "etymology": "英語clip（挟むもの）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Necesito un clip para estos papeles.\n— Hay en el cajón.",
+   "ja": "「この書類にクリップが必要なんだ」「引き出しにあるよ」"
+  }
+ },
+ "archivador": {
+  "nuance": "「書類棚」の基本語。archivo（ファイル、書類）から派生した語。",
+  "etymology": "archivo（ファイル）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "archivo（ファイル）"
+  ],
+  "dialogue": {
+   "es": "— Guarda esos documentos en el archivador.\n— Ya lo hice.",
+   "ja": "「その書類を書類棚にしまって」「もうやったよ」"
+  }
+ },
+ "incertidumbre": {
+  "nuance": "「不確実性」の基本語。cierto（確かな）+ incierto（不確かな）から派生。",
+  "etymology": "incierto（不確かな）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "cierto（確かな）",
+   "incierto（不確かな）"
+  ],
+  "dialogue": {
+   "es": "— Hay mucha incertidumbre sobre el futuro.\n— Es normal sentirse así a veces.",
+   "ja": "「未来について不確実性が多いよね」「時々そう感じるのは普通のことだよ」"
+  }
+ },
+ "contradicción": {
+  "nuance": "「矛盾」の基本語。contra（反対に）+ decir（言う）の組み合わせ。",
+  "etymology": "contra（反対に）+ decir（言う）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "contradecir（矛盾する）"
+  ],
+  "dialogue": {
+   "es": "— Hay una contradicción en su argumento.\n— Sí, no tiene mucho sentido.",
+   "ja": "「彼の主張には矛盾があるよね」「うん、あまり筋が通ってないよね」"
+  }
+ },
+ "ambigüedad": {
+  "nuance": "「曖昧さ」の基本語。ambiguo（曖昧な）から派生した語。",
+  "etymology": "ambiguo（曖昧な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "ambiguo（曖昧な）"
+  ],
+  "dialogue": {
+   "es": "— Hay demasiada ambigüedad en el contrato.\n— Deberíamos pedir más claridad.",
+   "ja": "「契約書に曖昧さが多すぎるね」「もっと明確さを求めた方がいいね」"
+  }
+ },
+ "coherencia": {
+  "nuance": "「一貫性」の基本語。cohesión（結束）と同語源。",
+  "etymology": "ラテン語cohaerere（くっついている）に由来。",
+  "synonyms": [],
+  "derived": [
+   "coherente（一貫した）"
+  ],
+  "dialogue": {
+   "es": "— Su discurso tuvo mucha coherencia.\n— Sí, cada punto se conectaba bien.",
+   "ja": "「彼のスピーチはとても一貫性があったね」「うん、それぞれの点がうまくつながっていたね」"
+  }
+ },
+ "trascendencia": {
+  "nuance": "「重要性、超越性」の基本語。trascender（超える）から派生した語。",
+  "etymology": "trascender（超える）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "trascender（超える）"
+  ],
+  "dialogue": {
+   "es": "— Este descubrimiento tiene gran trascendencia.\n— Va a cambiar mucho el campo.",
+   "ja": "「この発見はとても重要性があるね」「その分野を大きく変えるだろうね」"
+  }
+ },
+ "discrepancia": {
+  "nuance": "「食い違い」の基本語。discrepar（意見が食い違う）から派生した語。",
+  "etymology": "discrepar（食い違う）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "discrepar（食い違う）"
+  ],
+  "dialogue": {
+   "es": "— Hay una discrepancia entre los dos informes.\n— Deberíamos revisarlos juntos.",
+   "ja": "「2つの報告書に食い違いがあるね」「一緒に確認した方がいいね」"
+  }
+ },
+ "escepticismo": {
+  "nuance": "「懐疑主義」の基本語。escéptico（懐疑的な）から派生した語。",
+  "etymology": "ギリシャ語skeptikos（探求する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "escéptico（懐疑的な）"
+  ],
+  "dialogue": {
+   "es": "— Recibió la noticia con escepticismo.\n— Es comprensible, suena demasiado bueno.",
+   "ja": "「彼はそのニュースを懐疑的に受け止めたんだ」「わかるよ、都合が良すぎるもんね」"
+  }
+ },
+ "suscitar": {
+  "nuance": "「引き起こす」の基本語。sub（下から）+ citar（呼び起こす）の組み合わせ。",
+  "etymology": "ラテン語suscitare（下から起こす）に由来。",
+  "synonyms": [],
+  "derived": [
+   "citar（引用する、呼び出す）"
+  ],
+  "dialogue": {
+   "es": "— Esta política suscitó mucho debate.\n— No me sorprende, es un tema controversial.",
+   "ja": "「この政策は多くの論争を引き起こしたね」「驚かないよ、物議を醸すテーマだから」"
+  }
+ },
+ "matizar": {
+  "nuance": "「ニュアンスを加える」の基本語。matiz（ニュアンス）から派生した語。",
+  "etymology": "matiz（ニュアンス）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "matiz（ニュアンス）"
+  ],
+  "dialogue": {
+   "es": "— Quiero matizar lo que dije antes.\n— Adelante, te escucho.",
+   "ja": "「さっき言ったことにニュアンスを加えたいんだ」「どうぞ、聞くよ」"
+  }
+ },
+ "desencadenar": {
+  "nuance": "「引き起こす（連鎖的に）」の基本語。des（外す）+ encadenar（鎖でつなぐ）の組み合わせ、「鎖を解き放つ」が原義。",
+  "etymology": "des（外す）+ encadenar（鎖でつなぐ）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "cadena（鎖）"
+  ],
+  "dialogue": {
+   "es": "— Ese comentario desencadenó una gran discusión.\n— Nadie esperaba esa reacción.",
+   "ja": "「あの発言が大きな議論を引き起こしたんだ」「誰もそんな反応は予想していなかったよ」"
+  }
+ },
+ "botas de nieve": {
+  "nuance": "「スノーブーツ」の基本語。botas（ブーツ）+ de nieve（雪の）の組み合わせ。",
+  "etymology": "botas（ブーツ）+ nieve（雪）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "botas（ブーツ）",
+   "nieve（雪）"
+  ],
+  "dialogue": {
+   "es": "— Necesito botas de nieve para el viaje.\n— Yo tengo un par extra.",
+   "ja": "「旅行用にスノーブーツが必要なんだ」「私は予備が一足あるよ」"
+  }
+ },
+ "ensalada de frutas": {
+  "nuance": "「フルーツサラダ」の基本語。ensalada（サラダ）+ de frutas（フルーツの）の組み合わせ。",
+  "etymology": "ensalada（サラダ）+ fruta（果物）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "ensalada（サラダ）",
+   "fruta（果物）"
+  ],
+  "dialogue": {
+   "es": "— Hice ensalada de frutas para el desayuno.\n— Se ve deliciosa.",
+   "ja": "「朝食用にフルーツサラダを作ったんだ」「美味しそうだね」"
+  }
+ },
+ "escultura moderna": {
+  "nuance": "「現代彫刻」の基本語。escultura（彫刻）+ moderna（現代の）の組み合わせ。",
+  "etymology": "esculpir（彫刻する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "escultura（彫刻）",
+   "moderno（現代の）"
+  ],
+  "dialogue": {
+   "es": "— Esa escultura moderna es muy interesante.\n— No entiendo bien qué representa.",
+   "ja": "「あの現代彫刻はとても興味深いね」「何を表しているのかよくわからないな」"
+  }
+ },
+ "festival": {
+  "nuance": "「フェスティバル」の基本語。festividad（祝祭）と関連語。",
+  "etymology": "ラテン語festivus（祭りの）に由来。",
+  "synonyms": [],
+  "derived": [
+   "fiesta（パーティー、祭り）"
+  ],
+  "dialogue": {
+   "es": "— Vamos al festival de música este verano.\n— ¿Quiénes van a tocar?",
+   "ja": "「今年の夏、音楽フェスティバルに行こう」「誰が演奏するの？」"
+  }
+ },
+ "actualización de software": {
+  "nuance": "「ソフトウェア更新」の基本語。actualización（更新）+ de software（ソフトウェアの）の組み合わせ。",
+  "etymology": "actualizar（更新する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "actualizar（更新する）"
+  ],
+  "dialogue": {
+   "es": "— Hay una actualización de software pendiente.\n— La voy a instalar ahora.",
+   "ja": "「保留中のソフトウェア更新があるよ」「今インストールするね」"
+  }
+ },
+ "copia de seguridad": {
+  "nuance": "「バックアップ」の基本語。copia（コピー）+ de seguridad（安全の）の組み合わせ。",
+  "etymology": "copia（コピー）+ seguridad（安全）の組み合わせ。",
+  "synonyms": [
+   "backup（バックアップ、英語借用）"
+  ],
+  "derived": [
+   "copiar（コピーする）",
+   "seguro（安全な）"
+  ],
+  "dialogue": {
+   "es": "— ¿Hiciste una copia de seguridad?\n— Sí, ayer mismo.",
+   "ja": "「バックアップ取った？」「うん、昨日ね」"
+  }
+ },
+ "chip electrónico": {
+  "nuance": "「電子チップ」の基本語。chip（チップ）+ electrónico（電子の）の組み合わせ。",
+  "etymology": "英語chip（欠片）+ electrónico（電子の）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "electrónico（電子の）"
+  ],
+  "dialogue": {
+   "es": "— Este chip electrónico es muy avanzado.\n— La tecnología avanza rápido.",
+   "ja": "「この電子チップはとても先進的だね」「技術の進歩は早いよね」"
+  }
+ },
+ "eso tiene sentido": {
+  "nuance": "「それは筋が通っている」の基本フレーズ。tener sentido（意味をなす）から派生。",
+  "etymology": "tener（持つ）+ sentido（意味）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "sentido（意味、感覚）"
+  ],
+  "dialogue": {
+   "es": "— Por eso llegó tarde, tenía una emergencia.\n— Ah, eso tiene sentido.",
+   "ja": "「だから遅刻したんだ、緊急事態があって」「ああ、それは筋が通っているね」"
+  }
+ },
+ "nos mantenemos en contacto": {
+  "nuance": "「連絡取り合おうね」の基本フレーズ。mantenerse en contacto（連絡を保つ）から派生。",
+  "etymology": "mantener（保つ）+ contacto（接触）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "contacto（接触）"
+  ],
+  "dialogue": {
+   "es": "— Fue un gusto conocerte.\n— Igualmente, nos mantenemos en contacto.",
+   "ja": "「会えて良かったよ」「こちらこそ、連絡取り合おうね」"
+  }
+ },
+ "eso ya lo sabía": {
+  "nuance": "「それはもう知ってたよ」の基本フレーズ。",
+  "etymology": "eso（それ）+ ya（もう）+ saber（知る）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "saber（知る）"
+  ],
+  "dialogue": {
+   "es": "— El precio subió otra vez.\n— Eso ya lo sabía, es una tendencia constante.",
+   "ja": "「また値段が上がったんだ」「それはもう知ってたよ、ずっと続いている傾向だから」"
+  }
+ },
+ "día de reyes": {
+  "nuance": "「公現祭」の基本語。1月6日、メキシコでは子供たちがプレゼントをもらう伝統的な祝日でロスカ・デ・レジェス（王様のパン）を食べる。",
+  "etymology": "día（日）+ de reyes（王たちの）の組み合わせ、東方の三賢者に由来。",
+  "synonyms": [],
+  "derived": [
+   "rey（王）"
+  ],
+  "dialogue": {
+   "es": "— El Día de Reyes comemos rosca.\n— Y buscamos el muñequito adentro.",
+   "ja": "「公現祭にはロスカを食べるんだ」「そして中の人形を探すんだよね」"
+  }
+ },
+ "equipaje facturado": {
+  "nuance": "「預け荷物」の基本語。equipaje（荷物）+ facturado（チェックインされた）の組み合わせ。",
+  "etymology": "facturar（荷物を預ける、請求する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "equipaje（荷物）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cuánto equipaje facturado puedo llevar?\n— Depende de tu boleto.",
+   "ja": "「預け荷物はどれくらい持っていけますか？」「チケットによりますね」"
+  }
+ },
+ "cabe destacar que": {
+  "nuance": "「特筆すべきは」の基本フレーズ。caber（収まる、当てはまる）+ destacar（際立たせる）の組み合わせ、フォーマルな文章でよく使う。",
+  "etymology": "caber（当てはまる）+ destacar（際立たせる）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "destacar（際立たせる）"
+  ],
+  "dialogue": {
+   "es": "— Cabe destacar que el proyecto terminó antes de tiempo.\n— Sí, fue un gran logro del equipo.",
+   "ja": "「特筆すべきは、プロジェクトが予定より早く終わったことだね」「うん、チームの大きな功績だったね」"
+  }
+ },
+ "a grandes rasgos": {
+  "nuance": "「大まかに言うと」の基本フレーズ。rasgo（特徴、線）から派生した表現。",
+  "etymology": "grande（大きい）+ rasgo（線、特徴）の組み合わせ。",
+  "synonyms": [
+   "en términos generales（一般的に言えば）"
+  ],
+  "derived": [
+   "rasgo（特徴）"
+  ],
+  "dialogue": {
+   "es": "— A grandes rasgos, el plan es viable.\n— Me alegra escuchar eso.",
+   "ja": "「大まかに言うと、その計画は実現可能だね」「それを聞いて嬉しいよ」"
+  }
+ },
+ "en términos generales": {
+  "nuance": "「一般的に言えば」の基本フレーズ。en（〜において）+ términos generales（一般的な言葉）の組み合わせ。",
+  "etymology": "término（言葉、用語）から派生した語。",
+  "synonyms": [
+   "a grandes rasgos（大まかに言うと）"
+  ],
+  "derived": [
+   "término（用語）"
+  ],
+  "dialogue": {
+   "es": "— En términos generales, el año fue exitoso.\n— Hubo algunos desafíos, pero sí.",
+   "ja": "「一般的に言えば、良い一年だったね」「いくつか課題はあったけど、そうだね」"
+  }
+ },
+ "a raíz de": {
+  "nuance": "「〜がきっかけで」の基本フレーズ。raíz（根）から派生した表現、「そこから根を張って」というイメージ。",
+  "etymology": "raíz（根）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "raíz（根）"
+  ],
+  "dialogue": {
+   "es": "— A raíz de ese evento, cambiamos nuestra estrategia.\n— Fue una decisión inteligente.",
+   "ja": "「その出来事がきっかけで、戦略を変えたんだ」「賢い決断だったね」"
+  }
+ },
+ "a todas luces": {
+  "nuance": "「明らかに」の基本フレーズ。直訳は「あらゆる光の下で」で、疑いようがないことを表す。",
+  "etymology": "luz（光）から派生した表現。",
+  "synonyms": [
+   "claramente（明らかに）"
+  ],
+  "derived": [
+   "luz（光）"
+  ],
+  "dialogue": {
+   "es": "— A todas luces, esto fue un error.\n— Sí, no hay otra explicación.",
+   "ja": "「明らかに、これは間違いだったね」「うん、他に説明のしようがないよね」"
+  }
+ },
+ "bajo ningún concepto": {
+  "nuance": "「いかなる場合も〜ない」の基本フレーズ。bajo（〜の下で）+ ningún concepto（いかなる概念も）の組み合わせ、強い禁止・拒否を表す。",
+  "etymology": "bajo（〜の下で）+ concepto（概念）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "concepto（概念）"
+  ],
+  "dialogue": {
+   "es": "— Bajo ningún concepto vamos a aceptar esa oferta.\n— Estoy de acuerdo, no es justa.",
+   "ja": "「いかなる場合もその申し出は受け入れないよ」「同感だよ、公正じゃないから」"
+  }
+ },
+ "con creces": {
+  "nuance": "「十分すぎるほど」の基本フレーズ。creces（増加）から派生、期待を大きく上回ることを表す。",
+  "etymology": "crecer（成長する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "crecer（成長する）"
+  ],
+  "dialogue": {
+   "es": "— Superó las expectativas con creces.\n— Sí, fue impresionante.",
+   "ja": "「彼は期待を十分すぎるほど上回ったよ」「うん、印象的だったね」"
+  }
+ },
+ "miel de maple": {
+  "nuance": "「メープルシロップ」の基本語。miel（蜂蜜）+ de maple（カエデの）の組み合わせ。",
+  "etymology": "miel（蜂蜜）+ 英語maple（カエデ）の組み合わせ。",
+  "synonyms": [
+   "jarabe de maple（メープルシロップ）"
+  ],
+  "derived": [
+   "miel（蜂蜜）"
+  ],
+  "dialogue": {
+   "es": "— Le pongo miel de maple a los hotcakes.\n— A mí también, es lo mejor.",
+   "ja": "「ホットケーキにメープルシロップをかけるんだ」「私もだよ、最高だよね」"
+  }
+ },
+ "permitir el acceso": {
+  "nuance": "「アクセスを許可する」の基本表現。permitir（許可する）+ el acceso（アクセス）の組み合わせ。",
+  "etymology": "permitir（許可する）+ acceso（アクセス）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "permitir（許可する）",
+   "acceso（アクセス）"
+  ],
+  "dialogue": {
+   "es": "— Necesito que me permitas el acceso al sistema.\n— Te lo doy en un momento.",
+   "ja": "「システムへのアクセスを許可してもらう必要があるんだ」「すぐに許可するよ」"
+  }
+ },
+ "contigo o sin ti": {
+  "nuance": "「君がいてもいなくても」の基本フレーズ。con（〜と）+ tigo（君）と、sin（〜なしで）+ ti（君）の対比。",
+  "etymology": "con（〜と）+ ti（君）、sin（〜なしで）+ ti（君）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "contigo（君と）"
+  ],
+  "dialogue": {
+   "es": "— Voy a hacerlo, contigo o sin ti.\n— Está bien, cuenta conmigo entonces.",
+   "ja": "「君がいてもいなくてもやるつもりだよ」「わかった、それなら私も参加するよ」"
+  }
+ },
+ "interés": {
+  "nuance": "「利子」「興味」の両方の意味を持つ基本語。金融文脈ではtasa de interés（利率）のように使う。",
+  "etymology": "ラテン語interesse（間にある→重要である）に由来。",
+  "synonyms": [],
+  "derived": [
+   "interesar（興味を持たせる）",
+   "interesante（興味深い）"
+  ],
+  "dialogue": {
+   "es": "— El interés de este préstamo es muy alto.\n— Deberías comparar con otros bancos.",
+   "ja": "「このローンの利子はとても高いね」「他の銀行と比較した方がいいよ」"
+  }
+ },
+ "echar la hueva": {
+  "nuance": "メキシコの口語表現で「サボる、だらだらする」という意味。huevaは「怠け心」を表す俗語。",
+  "etymology": "echar（投げる）+ hueva（卵、俗語で怠け心）の組み合わせ。",
+  "synonyms": [
+   "flojear（怠ける、口語）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Hoy no quiero hacer nada, voy a echar la hueva.\n— Todos necesitamos un día así de vez en cuando.",
+   "ja": "「今日は何もしたくない、だらだらするよ」「みんな時々そういう日が必要だよね」"
+  }
+ },
+ "huelga decir que": {
+  "nuance": "「言うまでもなく」の基本フレーズ。huelga（ストライキ、ここでは「余計だ」の意味）+ decir（言う）の組み合わせ、フォーマルな表現。",
+  "etymology": "huelga（不要である）+ decir（言う）の組み合わせ。",
+  "synonyms": [
+   "ni que decir tiene（言うまでもなく）"
+  ],
+  "derived": [
+   "decir（言う）"
+  ],
+  "dialogue": {
+   "es": "— Huelga decir que este proyecto es importante para todos.\n— Estamos totalmente comprometidos.",
+   "ja": "「言うまでもなく、このプロジェクトはみんなにとって重要だね」「私たちは全力で取り組んでいるよ」"
+  }
+ },
+ "en vísperas de": {
+  "nuance": "「〜の直前に」の基本フレーズ。víspera（前夜、前日）から派生した表現。",
+  "etymology": "ラテン語vespera（夕方）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "víspera（前夜）"
+  ],
+  "dialogue": {
+   "es": "— En vísperas de las elecciones, hay mucha tensión.\n— Es normal en estos momentos.",
+   "ja": "「選挙の直前は、緊張感が高まるよね」「こういう時期は普通のことだよね」"
+  }
+ },
+ "amable y paciente": {
+  "nuance": "「優しくて忍耐強い」という性格を表す複合表現。amable（優しい）+ paciente（忍耐強い）の組み合わせ。",
+  "etymology": "amable（愛される価値のある）+ paciente（耐える）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "amable（優しい）",
+   "paciente（忍耐強い）"
+  ],
+  "dialogue": {
+   "es": "— Mi maestra es muy amable y paciente.\n— Es una combinación perfecta para enseñar.",
+   "ja": "「私の先生はとても優しくて忍耐強いんだ」「教えるのに完璧な組み合わせだね」"
+  }
+ },
+ "sincero y directo": {
+  "nuance": "「誠実で率直な」という性格を表す複合表現。sincero（誠実な）+ directo（直接的な）の組み合わせ。",
+  "etymology": "sincero（純粋な）+ directo（まっすぐな）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "sincero（誠実な）",
+   "directo（直接の）"
+  ],
+  "dialogue": {
+   "es": "— Aprecio que seas tan sincero y directo conmigo.\n— Siempre te voy a decir la verdad.",
+   "ja": "「私にとても誠実で率直でいてくれてありがたいよ」「いつも本当のことを言うつもりだよ」"
+  }
+ },
+ "tranquilo y paciente": {
+  "nuance": "「穏やかで忍耐強い」という性格を表す複合表現。tranquilo（落ち着いた）+ paciente（忍耐強い）の組み合わせ。",
+  "etymology": "tranquilo（静かな）+ paciente（耐える）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "tranquilo（落ち着いた）",
+   "paciente（忍耐強い）"
+  ],
+  "dialogue": {
+   "es": "— Es una persona muy tranquila y paciente.\n— Por eso es tan bueno con los niños.",
+   "ja": "「彼はとても穏やかで忍耐強い人なんだ」「だから子供たちにとても優しいんだね」"
+  }
+ },
+ "curioso por naturaleza": {
+  "nuance": "「生まれつき好奇心旺盛な」という性格を表す複合表現。curioso（好奇心旺盛な）+ por naturaleza（生まれつき）の組み合わせ。",
+  "etymology": "curioso（気にかける）+ naturaleza（性質）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "curioso（好奇心旺盛な）",
+   "naturaleza（自然、性質）"
+  ],
+  "dialogue": {
+   "es": "— Es curioso por naturaleza, siempre pregunta cómo funcionan las cosas.\n— Va a ser un gran científico.",
+   "ja": "「彼は生まれつき好奇心旺盛で、いつも物事の仕組みを尋ねるんだ」「きっと素晴らしい科学者になるね」"
+  }
+ },
+ "interés（financiero）": {
+  "nuance": "「利子」の基本語。金融文脈での「利子」を明確にするための表記。単なるinterés（興味・利子）と区別している。",
+  "etymology": "ラテン語interesse（間にある→重要である）に由来。",
+  "synonyms": [],
+  "derived": [
+   "interesar（興味を持たせる）"
+  ],
+  "dialogue": {
+   "es": "— El interés de esta cuenta es muy bajo.\n— Deberías buscar otro banco.",
+   "ja": "「この口座の利子はとても低いね」「別の銀行を探した方がいいよ」"
+  }
+ },
+ "ni que decir tiene": {
+  "nuance": "「言うまでもなく」の基本フレーズ。huelga decir queとほぼ同義、フォーマルな表現。",
+  "etymology": "ni（〜さえない）+ que decir tiene（言うことがある）の組み合わせ。",
+  "synonyms": [
+   "huelga decir que（言うまでもなく）"
+  ],
+  "derived": [
+   "decir（言う）"
+  ],
+  "dialogue": {
+   "es": "— Ni que decir tiene que estamos orgullosos de ti.\n— Muchas gracias, significa mucho.",
+   "ja": "「言うまでもなく、あなたを誇りに思っているよ」「本当にありがとう、とても意味があるよ」"
+  }
+ },
+ "flexible（personalidad）": {
+  "nuance": "「柔軟な（性格）」の基本語。物理的な柔軟性と区別して、性格の柔軟性を明確にする表記。",
+  "etymology": "ラテン語flexibilis（曲げられる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "flexibilidad（柔軟性）"
+  ],
+  "dialogue": {
+   "es": "— Es muy flexible con los cambios de planes.\n— Esa actitud facilita mucho las cosas.",
+   "ja": "「彼は予定変更にとても柔軟なんだ」「その姿勢は物事をとても楽にするよね」"
+  }
+ },
+ "trámite": {
+  "nuance": "「手続き」の基本語。hacer un trámite（手続きをする）はよく使う組み合わせ、役所などでの事務手続き全般を指す。",
+  "etymology": "tramitar（手続きする）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "tramitar（手続きする）"
+  ],
+  "dialogue": {
+   "es": "— Tengo que hacer un trámite en el banco.\n— ¿Cuánto tiempo crees que tarde?",
+   "ja": "「銀行で手続きをしないといけないんだ」「どれくらい時間かかりそう？」"
+  }
+ },
+ "requisito": {
+  "nuance": "「要件」の基本語。cumplir con los requisitos（要件を満たす）はよく使う組み合わせ。",
+  "etymology": "ラテン語requisitus（求められた）に由来。",
+  "synonyms": [],
+  "derived": [
+   "requerir（要求する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cuáles son los requisitos para aplicar?\n— Necesitas tu identificación y comprobante de domicilio.",
+   "ja": "「応募の要件は何ですか？」「身分証明書と住所証明が必要です」"
+  }
+ },
+ "comprobante": {
+  "nuance": "「領収書、証明書」の基本語。comprobar（確認する）から派生した語。",
+  "etymology": "comprobar（確認する）から派生した語。",
+  "synonyms": [
+   "recibo（領収書、ほぼ同義）"
+  ],
+  "derived": [
+   "comprobar（確認する）"
+  ],
+  "dialogue": {
+   "es": "— Guarda el comprobante de pago.\n— Lo voy a necesitar para la garantía.",
+   "ja": "「支払いの領収書を保管しておいて」「保証のために必要になるから」"
+  }
+ },
+ "vigente": {
+  "nuance": "「有効な」の基本語。estar vigente（有効である）はよく使う組み合わせ、法律・書類の有効性を表す。",
+  "etymology": "ラテン語vigens（力強い、生きている）に由来。",
+  "synonyms": [],
+  "derived": [
+   "vigencia（有効期間）"
+  ],
+  "dialogue": {
+   "es": "— ¿Tu pasaporte está vigente?\n— Sí, vence hasta el próximo año.",
+   "ja": "「あなたのパスポートは有効ですか？」「はい、来年まで有効です」"
+  }
+ },
+ "encargarse de": {
+  "nuance": "「〜を担当する」の基本表現。encargar（頼む、任せる）から派生した再帰動詞。",
+  "etymology": "encargar（任せる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "encargar（任せる）"
+  ],
+  "dialogue": {
+   "es": "— ¿Quién se encarga de este proyecto?\n— Yo, desde el mes pasado.",
+   "ja": "「このプロジェクトは誰が担当していますか？」「私です、先月からね」"
+  }
+ },
+ "retroalimentación": {
+  "nuance": "「フィードバック」の基本語。フォーマルな職場文脈でよく使われる（口語ではfeedbackという英語借用もよく使われる）。",
+  "etymology": "retro（後ろへ）+ alimentación（栄養補給）の組み合わせ。",
+  "synonyms": [
+   "feedback（フィードバック、英語借用・口語）"
+  ],
+  "derived": [
+   "alimentar（栄養を与える）"
+  ],
+  "dialogue": {
+   "es": "— Gracias por tu retroalimentación.\n— Espero que te sea útil.",
+   "ja": "「フィードバックありがとう」「役に立つといいな」"
+  }
+ },
+ "cumplir con": {
+  "nuance": "「〜を果たす」の基本表現。cumplir con las expectativas（期待に応える）のような組み合わせでよく使う。",
+  "etymology": "ラテン語complere（満たす）に由来。",
+  "synonyms": [],
+  "derived": [
+   "cumplimiento（履行）"
+  ],
+  "dialogue": {
+   "es": "— Necesitamos cumplir con el plazo.\n— Estamos trabajando en ello.",
+   "ja": "「期限を守る必要があるね」「取り組んでいるところだよ」"
+  }
+ },
+ "desempeño": {
+  "nuance": "「(仕事の)成果」の基本語。desempeñar（果たす、演じる）から派生した語。",
+  "etymology": "desempeñar（役目を果たす）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "desempeñar（果たす）"
+  ],
+  "dialogue": {
+   "es": "— Tu desempeño este trimestre fue excelente.\n— Muchas gracias, trabajé muy duro.",
+   "ja": "「今四半期の君の成果は素晴らしかったよ」「ありがとうございます、とても頑張りました」"
+  }
+ },
+ "plazo de entrega": {
+  "nuance": "「納期」の基本語。plazo（期限）+ de entrega（納品の）の組み合わせ。",
+  "etymology": "plazo（期限）+ entregar（届ける）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "plazo（期限）",
+   "entregar（届ける）"
+  ],
+  "dialogue": {
+   "es": "— El plazo de entrega es la próxima semana.\n— Vamos a poder cumplirlo.",
+   "ja": "「納期は来週だよ」「間に合わせられそうだね」"
+  }
+ },
+ "malentendido": {
+  "nuance": "「誤解」の基本語。mal（悪く）+ entender（理解する）の組み合わせ。",
+  "etymology": "mal（悪く）+ entender（理解する）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "entender（理解する）"
+  ],
+  "dialogue": {
+   "es": "— Creo que hubo un malentendido.\n— Sí, vamos a aclararlo.",
+   "ja": "「誤解があったと思うんだ」「うん、はっきりさせよう」"
+  }
+ },
+ "aclarar": {
+  "nuance": "「明確にする」の基本語。claro（明るい、明確な）から派生した語。",
+  "etymology": "claro（明確な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "claro（明確な）"
+  ],
+  "dialogue": {
+   "es": "— ¿Puedes aclarar ese punto?\n— Claro, lo explico de nuevo.",
+   "ja": "「その点を明確にしてもらえる？」「もちろん、もう一度説明するね」"
+  }
+ },
+ "insistir": {
+  "nuance": "「主張する」の基本語。insistir en（〜を主張する）という組み合わせでよく使う。",
+  "etymology": "ラテン語insistere（上に立つ→固執する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "insistencia（固執）"
+  ],
+  "dialogue": {
+   "es": "— Insisto en que lo hagamos así.\n— Está bien, confío en tu criterio.",
+   "ja": "「こうやることを主張するよ」「わかった、君の判断を信じるよ」"
+  }
+ },
+ "ceder": {
+  "nuance": "「譲歩する」の基本語。「（席などを）譲る」という意味にもなる。",
+  "etymology": "ラテン語cedere（下がる、譲る）に由来。",
+  "synonyms": [],
+  "derived": [
+   "cesión（譲渡）"
+  ],
+  "dialogue": {
+   "es": "— Al final tuve que ceder.\n— A veces es necesario para llegar a un acuerdo.",
+   "ja": "「結局譲歩しないといけなかったんだ」「合意に達するには時々必要だよね」"
+  }
+ },
+ "reclamo": {
+  "nuance": "「クレーム」の基本語。hacer un reclamo（クレームを出す）はよく使う組み合わせ。",
+  "etymology": "reclamar（要求する、クレームをつける）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "reclamar（要求する）"
+  ],
+  "dialogue": {
+   "es": "— Voy a poner un reclamo por este producto.\n— Cuéntame qué pasó.",
+   "ja": "「この商品についてクレームを出すつもりだよ」「何があったか教えて」"
+  }
+ },
+ "queja": {
+  "nuance": "「苦情」の基本語。quejarse（不満を言う）から派生した語。",
+  "etymology": "quejarse（不満を言う）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "quejarse（不満を言う）"
+  ],
+  "dialogue": {
+   "es": "— Tengo una queja sobre el servicio.\n— Lo siento mucho, ¿qué pasó?",
+   "ja": "「サービスについて苦情があるんです」「大変申し訳ございません、何があったのですか？」"
+  }
+ },
+ "inconveniente": {
+  "nuance": "「不都合」の基本語。「不便な、都合が悪い」という形容詞の意味にもなる。",
+  "etymology": "in（否定）+ conveniente（都合の良い）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "conveniente（都合の良い）"
+  ],
+  "dialogue": {
+   "es": "— Perdón por el inconveniente.\n— No te preocupes, no pasa nada.",
+   "ja": "「ご不便をおかけしてすみません」「気にしないで、大丈夫だよ」"
+  }
+ },
+ "avería": {
+  "nuance": "「故障」の基本語。tener una avería（故障している）はよく使う組み合わせ。",
+  "etymology": "アラビア語awariyya（損傷した商品）に由来。",
+  "synonyms": [],
+  "derived": [
+   "averiado（故障した）",
+   "averiarse（故障する）"
+  ],
+  "dialogue": {
+   "es": "— El coche tiene una avería.\n— Hay que llevarlo al mecánico.",
+   "ja": "「車が故障しているんだ」「整備工場に持って行かないとね」"
+  }
+ },
+ "cita médica": {
+  "nuance": "「診察予約」の基本語。cita（予約）+ médica（医療の）の組み合わせ。",
+  "etymology": "citar（呼び出す）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "citar（呼び出す）"
+  ],
+  "dialogue": {
+   "es": "— Tengo una cita médica mañana.\n— ¿Para qué es?",
+   "ja": "「明日診察予約があるんだ」「何のため？」"
+  }
+ },
+ "receta médica": {
+  "nuance": "「処方箋」の基本語。receta（レシピ、処方箋）+ médica（医療の）の組み合わせ。",
+  "etymology": "ラテン語recepta（受け取られたもの）に由来。",
+  "synonyms": [],
+  "derived": [
+   "recetar（処方する）"
+  ],
+  "dialogue": {
+   "es": "— Necesito una receta médica para este medicamento.\n— El doctor te la puede dar.",
+   "ja": "「この薬には処方箋が必要なんだ」「先生が出してくれるよ」"
+  }
+ },
+ "diagnóstico": {
+  "nuance": "「診断」の基本語。diagnosticar（診断する）から派生した語。",
+  "etymology": "ギリシャ語diagnosis（見分けること）に由来。",
+  "synonyms": [],
+  "derived": [
+   "diagnosticar（診断する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cuál fue el diagnóstico?\n— Solo era una gripe común.",
+   "ja": "「診断結果は何だったの？」「ただの普通の風邪だったよ」"
+  }
+ },
+ "formulario": {
+  "nuance": "「書式」の基本語。llenar un formulario（フォームに記入する）はよく使う組み合わせ。",
+  "etymology": "fórmula（公式、書式）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "fórmula（公式）"
+  ],
+  "dialogue": {
+   "es": "— Tienes que llenar este formulario.\n— ¿Con bolígrafo o lápiz?",
+   "ja": "「この書式に記入してください」「ボールペンと鉛筆どちらで？」"
+  }
+ },
+ "firma": {
+  "nuance": "「署名」の基本語。firmar（署名する）から派生した名詞。「会社」という意味にもなる。",
+  "etymology": "firmar（署名する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "firmar（署名する）"
+  ],
+  "dialogue": {
+   "es": "— Necesito su firma aquí.\n— Claro, un momento.",
+   "ja": "「ここにあなたの署名が必要です」「もちろん、少々お待ちください」"
+  }
+ },
+ "identificación oficial": {
+  "nuance": "「公的身分証明書」の基本語。identificación（身分証明）+ oficial（公的な）の組み合わせ。",
+  "etymology": "identificar（身元を確認する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "identificar（身元を確認する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Trae alguna identificación oficial?\n— Sí, mi credencial de elector.",
+   "ja": "「何か公的身分証明書をお持ちですか？」「はい、選挙人証を持っています」"
+  }
+ },
+ "expedir": {
+  "nuance": "「発行する」の基本語。書類・証明書を正式に発行するときに使う。",
+  "etymology": "ラテン語expedire（足かせを解く→発送する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "expedición（発行）"
+  ],
+  "dialogue": {
+   "es": "— ¿Dónde expiden el pasaporte?\n— En la oficina de gobernación.",
+   "ja": "「パスポートはどこで発行されますか？」「内務省の事務所です」"
+  }
+ },
+ "vencer": {
+  "nuance": "「期限切れになる」の基本語。「（試合などで）勝つ」という意味にもなる。",
+  "etymology": "ラテン語vincere（勝つ）に由来。",
+  "synonyms": [],
+  "derived": [
+   "vencimiento（満了）"
+  ],
+  "dialogue": {
+   "es": "— Mi licencia vence el próximo mes.\n— Deberías renovarla pronto.",
+   "ja": "「私の免許は来月期限切れになるんだ」「早めに更新した方がいいよ」"
+  }
+ },
+ "renovar": {
+  "nuance": "「更新する」の基本語。renovar un documento（書類を更新する）はよく使う組み合わせ。",
+  "etymology": "re（再び）+ novar（新しくする）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "nuevo（新しい）",
+   "renovación（更新）"
+  ],
+  "dialogue": {
+   "es": "— Necesito renovar mi pasaporte.\n— ¿Cuándo vence?",
+   "ja": "「パスポートを更新する必要があるんだ」「いつ切れるの？」"
+  }
+ },
+ "cotización": {
+  "nuance": "「見積もり」の基本語。cotizar（見積もる）から派生した語。",
+  "etymology": "cotizar（見積もる、相場をつける）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "cotizar（見積もる）"
+  ],
+  "dialogue": {
+   "es": "— Nos enviaron la cotización esta mañana.\n— ¿Cuánto costará?",
+   "ja": "「今朝見積もりが送られてきたよ」「いくらになりそう？」"
+  }
+ },
+ "proveedor": {
+  "nuance": "「供給業者」の基本語。proveer（供給する）から派生した語。",
+  "etymology": "proveer（供給する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "proveer（供給する）"
+  ],
+  "dialogue": {
+   "es": "— Cambiamos de proveedor este año.\n— ¿Por qué motivo?",
+   "ja": "「今年供給業者を変更したんだ」「どんな理由で？」"
+  }
+ },
+ "sucursal": {
+  "nuance": "「支店」の基本語。会社・銀行の支店を指す。",
+  "etymology": "ラテン語sub（下に）から派生した語。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Hay una sucursal cerca de mi casa.\n— Qué conveniente.",
+   "ja": "「私の家の近くに支店があるんだ」「便利だね」"
+  }
+ },
+ "horario de atención": {
+  "nuance": "「営業時間」の基本語。horario（時間割）+ de atención（対応の）の組み合わせ。",
+  "etymology": "hora（時間）+ atender（対応する）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "atender（対応する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cuál es su horario de atención?\n— De nueve a seis, de lunes a sábado.",
+   "ja": "「営業時間は何時から何時までですか？」「月曜から土曜、9時から6時までです」"
+  }
+ },
+ "disponibilidad": {
+  "nuance": "「空き状況」の基本語。disponible（利用可能な）から派生した語。",
+  "etymology": "disponible（利用可能な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "disponible（利用可能な）"
+  ],
+  "dialogue": {
+   "es": "— ¿Tienen disponibilidad para mañana?\n— Sí, a las diez de la mañana.",
+   "ja": "「明日の空きはありますか？」「はい、午前10時に空いています」"
+  }
+ },
+ "malinterpretar": {
+  "nuance": "「誤解する」の基本語。mal（悪く）+ interpretar（解釈する）の組み合わせ。",
+  "etymology": "mal（悪く）+ interpretar（解釈する）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "interpretar（解釈する）"
+  ],
+  "dialogue": {
+   "es": "— Creo que malinterpretaste lo que dije.\n— Perdón, déjame explicarlo mejor.",
+   "ja": "「私が言ったこと、誤解されたと思うんだ」「ごめん、もっとよく説明させて」"
+  }
+ },
+ "ponerse de acuerdo": {
+  "nuance": "「合意する」の基本表現。ponerse（〜になる）+ de acuerdo（合意して）の組み合わせ。",
+  "etymology": "acuerdo（合意）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "acuerdo（合意）"
+  ],
+  "dialogue": {
+   "es": "— Necesitamos ponernos de acuerdo sobre la fecha.\n— ¿Qué tal el viernes?",
+   "ja": "「日程について合意する必要があるね」「金曜日はどう？」"
+  }
+ },
+ "disculparse": {
+  "nuance": "「謝る」の基本語。disculpa（謝罪、許し）から派生した再帰動詞。",
+  "etymology": "disculpa（許し）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "disculpa（謝罪）"
+  ],
+  "dialogue": {
+   "es": "— Quiero disculparme por lo que pasó.\n— No te preocupes, ya está olvidado.",
+   "ja": "「起きたことについて謝りたいんだ」「気にしないで、もう忘れたよ」"
+  }
+ },
+ "justificar": {
+  "nuance": "「正当化する」の基本語。justo（正しい）から派生した語。",
+  "etymology": "justo（正しい）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "justo（正しい）",
+   "justificación（正当化）"
+  ],
+  "dialogue": {
+   "es": "— No puedo justificar ese gasto.\n— Deberíamos revisarlo juntos.",
+   "ja": "「その出費は正当化できないな」「一緒に見直した方がいいね」"
+  }
+ },
+ "postergar": {
+  "nuance": "「延期する」の基本語。aplazar（延期する）とほぼ同義。",
+  "etymology": "ラテン語posterus（後の）に由来。",
+  "synonyms": [
+   "aplazar（延期する、ほぼ同義）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Tuvimos que postergar la reunión.\n— ¿Para cuándo la reprogramaron?",
+   "ja": "「会議を延期しないといけなかったんだ」「いつに変更したの？」"
+  }
+ },
+ "coordinar": {
+  "nuance": "「調整する」の基本語。coordinar con（〜と調整する）という組み合わせもよく使う。",
+  "etymology": "co（一緒に）+ ordinar（順序立てる）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "coordinación（調整）",
+   "coordinador（コーディネーター）"
+  ],
+  "dialogue": {
+   "es": "— Voy a coordinar con el equipo.\n— Perfecto, avísame los detalles.",
+   "ja": "「チームと調整するよ」「わかった、詳細を教えてね」"
+  }
+ },
+ "negociar": {
+  "nuance": "「交渉する」の基本語。negociar el precio（値段を交渉する）はよく使う組み合わせ。",
+  "etymology": "ラテン語negotiari（商売をする）に由来。",
+  "synonyms": [],
+  "derived": [
+   "negociación（交渉）"
+  ],
+  "dialogue": {
+   "es": "— ¿Se puede negociar el precio?\n— Sí, tenemos algo de margen.",
+   "ja": "「値段は交渉できますか？」「はい、多少余裕があります」"
+  }
+ },
+ "asumir": {
+  "nuance": "「引き受ける」の基本語。asumir la responsabilidad（責任を引き受ける）はよく使う組み合わせ。",
+  "etymology": "ラテン語assumere（取り上げる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "asunción（引き受け）"
+  ],
+  "dialogue": {
+   "es": "— Voy a asumir la responsabilidad de este error.\n— Es admirable que lo reconozcas.",
+   "ja": "「このミスの責任を引き受けるよ」「それを認めるなんて立派だね」"
+  }
+ },
+ "delegar": {
+  "nuance": "「委任する」の基本語。delegar tareas（仕事を委任する）はよく使う組み合わせ。",
+  "etymology": "ラテン語delegare（委ねる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "delegado（代表者）",
+   "delegación（委任）"
+  ],
+  "dialogue": {
+   "es": "— Necesito aprender a delegar más.\n— Confiar en tu equipo te ayudará.",
+   "ja": "「もっと委任することを学ぶ必要があるんだ」「チームを信頼することが助けになるよ」"
+  }
+ },
+ "priorizar": {
+  "nuance": "「優先させる」の基本語。prioridad（優先事項）から派生した語。",
+  "etymology": "prioridad（優先事項）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "prioridad（優先事項）"
+  ],
+  "dialogue": {
+   "es": "— Debemos priorizar las tareas urgentes.\n— Estoy de acuerdo, empecemos por esas.",
+   "ja": "「緊急のタスクを優先させないとね」「同感だよ、それらから始めよう」"
+  }
+ },
+ "implementar": {
+  "nuance": "「実施する」の基本語。フォーマルなビジネス文脈でよく使う。",
+  "etymology": "英語implement（実行する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "implementación（実施）"
+  ],
+  "dialogue": {
+   "es": "— Vamos a implementar el nuevo sistema el lunes.\n— Espero que sea una transición suave.",
+   "ja": "「月曜日に新しいシステムを実施するよ」「スムーズな移行だといいね」"
+  }
+ },
+ "solicitud": {
+  "nuance": "「申請」の基本語。solicitar（申請する）から派生した語。hacer una solicitud（申請をする）はよく使う組み合わせ。",
+  "etymology": "solicitar（申請する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "solicitar（申請する）"
+  ],
+  "dialogue": {
+   "es": "— Envié mi solicitud la semana pasada.\n— ¿Ya te respondieron?",
+   "ja": "「先週申請を送ったんだ」「もう返事あった？」"
+  }
+ },
+ "acuerdo": {
+  "nuance": "「合意」の基本語。llegar a un acuerdo（合意に達する）はよく使う組み合わせ。de acuerdo（了解、賛成）という表現もよく使う。",
+  "etymology": "ラテン語accordare（心を一致させる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "acordar（合意する）"
+  ],
+  "dialogue": {
+   "es": "— Llegamos a un acuerdo finalmente.\n— Qué bueno, fue una negociación larga.",
+   "ja": "「ついに合意に達したよ」「よかった、長い交渉だったね」"
+  }
+ },
+ "contrato": {
+  "nuance": "「契約」の基本語。firmar un contrato（契約書に署名する）はよく使う組み合わせ。",
+  "etymology": "ラテン語contractus（結ばれたもの）に由来。",
+  "synonyms": [],
+  "derived": [
+   "contratar（契約する、雇う）"
+  ],
+  "dialogue": {
+   "es": "— Necesito leer el contrato antes de firmarlo.\n— Buena idea, siempre hay que revisarlo bien.",
+   "ja": "「署名する前に契約書を読む必要があるんだ」「いい考えだね、いつもよく確認しないと」"
+  }
+ },
+ "cláusula": {
+  "nuance": "「条項」の基本語。契約書などの個別の項目を指す。",
+  "etymology": "ラテン語clausula（閉じられたもの）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Hay una cláusula que no entiendo bien.\n— Pregúntale al abogado.",
+   "ja": "「よく理解できない条項があるんだ」「弁護士に聞いてみて」"
+  }
+ },
+ "arrendamiento": {
+  "nuance": "「賃貸借」の基本語。arrendar（賃貸する）から派生した語。alquilerともほぼ同義でよく使われる。",
+  "etymology": "arrendar（賃貸する）から派生した語。",
+  "synonyms": [
+   "alquiler（賃貸、より一般的）"
+  ],
+  "derived": [
+   "arrendar（賃貸する）"
+  ],
+  "dialogue": {
+   "es": "— El contrato de arrendamiento es por un año.\n— ¿Se puede renovar después?",
+   "ja": "「賃貸契約は1年間なんだ」「その後更新できるの？」"
+  }
+ },
+ "inquilino": {
+  "nuance": "「賃借人」の基本語。propietario（所有者、大家）の対義語。",
+  "etymology": "ラテン語inquilinus（住み込みの人）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Somos buenos inquilinos, siempre pagamos a tiempo.\n— Eso es importante para el propietario.",
+   "ja": "「私たちはいい賃借人だよ、いつも時間通りに払っているし」「それは大家さんにとって大事なことだよね」"
+  }
+ },
+ "propietario": {
+  "nuance": "「所有者、大家」の基本語。女性形はpropietaria。dueño（オーナー、より口語的）とほぼ同義。",
+  "etymology": "propiedad（所有物）から派生した語。",
+  "synonyms": [
+   "dueño（オーナー、より口語的）"
+  ],
+  "derived": [
+   "propiedad（所有物）"
+  ],
+  "dialogue": {
+   "es": "— Tengo que hablar con el propietario sobre la reparación.\n— ¿Ya le avisaste?",
+   "ja": "「修理について大家さんと話さないといけないんだ」「もう知らせた？」"
+  }
+ },
+ "póliza": {
+  "nuance": "「保険証券」の基本語。póliza de seguro（保険証券）はよく使う組み合わせ。",
+  "etymology": "イタリア語polizza（証書）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Qué cubre tu póliza de seguro?\n— Cubre accidentes y robo.",
+   "ja": "「あなたの保険証券は何をカバーしているの？」「事故と盗難をカバーしているよ」"
+  }
+ },
+ "indemnización": {
+  "nuance": "「賠償金」の基本語。indemnizar（賠償する）から派生した語。",
+  "etymology": "indemnizar（賠償する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "indemnizar（賠償する）"
+  ],
+  "dialogue": {
+   "es": "— Recibió una indemnización por el accidente.\n— Espero que le haya ayudado con los gastos.",
+   "ja": "「事故の賠償金を受け取ったんだ」「費用の助けになるといいね」"
+  }
+ },
+ "nómina": {
+  "nuance": "「給与明細」の基本語。estar en nómina（正社員として雇われている）という表現もよく使う。",
+  "etymology": "ラテン語nomina（名前のリスト）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Revisé mi nómina y hay un error.\n— Deberías hablar con recursos humanos.",
+   "ja": "「給与明細を確認したらミスがあったんだ」「人事部に話した方がいいよ」"
+  }
+ },
+ "sueldo neto": {
+  "nuance": "「手取り給与」の基本語。sueldo bruto（総支給額）との対比でよく使われる。",
+  "etymology": "neto（純粋な、正味の）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "sueldo（給与）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cuál es tu sueldo neto?\n— Después de impuestos, es un poco menos de lo esperado.",
+   "ja": "「手取り給与はいくら？」「税金引かれた後は、思ったより少し少ないんだ」"
+  }
+ },
+ "prestaciones": {
+  "nuance": "「福利厚生」の基本語。健康保険・ボーナスなど給与以外の待遇を指す。",
+  "etymology": "prestar（貸す、提供する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "prestar（提供する）"
+  ],
+  "dialogue": {
+   "es": "— Este trabajo tiene buenas prestaciones.\n— Incluyendo seguro médico, supongo.",
+   "ja": "「この仕事は福利厚生がいいんだ」「医療保険も含めてだろうね」"
+  }
+ },
+ "jubilación": {
+  "nuance": "「退職、年金」の基本語。jubilarse（退職する）から派生した語。",
+  "etymology": "ラテン語jubilare（喜びを表す）に由来。",
+  "synonyms": [],
+  "derived": [
+   "jubilarse（退職する）"
+  ],
+  "dialogue": {
+   "es": "— Está ahorrando para su jubilación.\n— Es importante empezar temprano.",
+   "ja": "「彼は退職に向けて貯金しているんだ」「早く始めるのが大事だよね」"
+  }
+ },
+ "renuncia": {
+  "nuance": "「退職、辞職」の基本語。renunciar（辞める）から派生した語。",
+  "etymology": "renunciar（辞める）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "renunciar（辞める）"
+  ],
+  "dialogue": {
+   "es": "— Presenté mi renuncia ayer.\n— ¿Qué vas a hacer ahora?",
+   "ja": "「昨日退職届を出したんだ」「これから何するつもり？」"
+  }
+ },
+ "despido": {
+  "nuance": "「解雇」の基本語。despedir（解雇する）から派生した語。",
+  "etymology": "despedir（解雇する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "despedir（解雇する）"
+  ],
+  "dialogue": {
+   "es": "— Hubo varios despidos en la empresa.\n— Qué difícil momento para todos.",
+   "ja": "「会社でいくつか解雇があったんだ」「みんなにとって大変な時期だね」"
+  }
+ },
+ "desempleo": {
+  "nuance": "「失業」の基本語。desempleado（失業者）から派生した語。",
+  "etymology": "des（否定）+ empleo（雇用）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "empleo（雇用）",
+   "desempleado（失業者）"
+  ],
+  "dialogue": {
+   "es": "— El desempleo bajó este año.\n— Es una buena señal para la economía.",
+   "ja": "「今年失業率が下がったんだ」「経済にとっていい兆候だね」"
+  }
+ },
+ "postularse": {
+  "nuance": "「応募する」の基本語。postular（推薦する、応募する）の再帰形。aplicarとほぼ同義。",
+  "etymology": "ラテン語postulare（要求する）に由来。",
+  "synonyms": [
+   "aplicar（応募する、ほぼ同義）"
+  ],
+  "derived": [
+   "postulación（応募）"
+  ],
+  "dialogue": {
+   "es": "— Me postulé para ese puesto.\n— ¡Buena suerte! Espero que te lo den.",
+   "ja": "「その職に応募したんだ」「頑張って！採用されるといいね」"
+  }
+ },
+ "entrevista de trabajo": {
+  "nuance": "「就職面接」の基本語。entrevista（面接）+ de trabajo（仕事の）の組み合わせ。",
+  "etymology": "entrevistar（インタビューする）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "entrevista（面接）"
+  ],
+  "dialogue": {
+   "es": "— Tengo una entrevista de trabajo mañana.\n— ¡Mucho éxito!",
+   "ja": "「明日就職面接があるんだ」「頑張ってね！」"
+  }
+ },
+ "siniestro": {
+  "nuance": "「保険事故」の基本語。保険が適用される事故・災害を指す。「不吉な、邪悪な」という形容詞の意味にもなる。",
+  "etymology": "ラテン語sinister（左の、不吉な）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Tuvimos que reportar el siniestro a la aseguradora.\n— ¿Cuánto tiempo tarda el proceso?",
+   "ja": "「その保険事故を保険会社に報告しないといけなかったんだ」「手続きにどれくらい時間かかる？」"
+  }
+ },
+ "tripa": {
+  "nuance": "「トリッパ、臓物」の基本語。タコスの具材として使われ、コリコリとした食感が特徴。tripasと複数形で使われることも多い。",
+  "etymology": "ラテン語系の語tripa（内臓）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Has probado tacos de tripa?\n— Sí, tienen una textura muy interesante.",
+   "ja": "「トリッパのタコス食べたことある？」「うん、すごく面白い食感なんだよね」"
+  }
+ },
+ "suadero": {
+  "nuance": "「スアデロ」の基本語。牛の腹部・胸の肉を使った、メキシコシティのタコスで特に人気の部位。柔らかくジューシーなのが特徴。",
+  "etymology": "sudar（汗をかく）から派生した語、調理法に由来するとされる。",
+  "synonyms": [],
+  "derived": [
+   "sudar（汗をかく）"
+  ],
+  "dialogue": {
+   "es": "— Los tacos de suadero son los mejores de la ciudad.\n— Estoy de acuerdo, la carne es muy suave.",
+   "ja": "「スアデロのタコスは街で一番美味しいんだ」「同感だよ、お肉がとても柔らかいよね」"
+  }
+ },
+ "carnitas": {
+  "nuance": "「カルニータス」の基本語。豚肉をじっくり油で煮込んで作る、ミチョアカン州発祥の料理。タコスやトルタの具として大人気。",
+  "etymology": "carne（肉）の指小形に由来。",
+  "synonyms": [],
+  "derived": [
+   "carne（肉）"
+  ],
+  "dialogue": {
+   "es": "— Las carnitas de Michoacán son famosas.\n— Sí, tienen una técnica especial de cocción.",
+   "ja": "「ミチョアカンのカルニータスは有名なんだ」「うん、特別な調理法があるんだよね」"
+  }
+ },
+ "birria": {
+  "nuance": "「ビリア」の基本語。ハリスコ州発祥の、スパイスで煮込んだ肉料理（伝統的にはヤギ肉、現在は牛肉も一般的）。スープに浸して食べるtacos de birriaが特に有名。",
+  "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Los tacos de birria se comen con consomé.\n— Es mi platillo favorito los fines de semana.",
+   "ja": "「ビリアのタコスはコンソメと一緒に食べるんだ」「週末に一番好きな料理なんだよね」"
+  }
+ },
+ "barbacoa": {
+  "nuance": "「バルバコア」の基本語。肉を地下の穴やマゲイの葉で包んでじっくり蒸し焼きにする伝統的な調理法。特にイダルゴ州で有名で、日曜日の朝食としてよく食べられる。",
+  "etymology": "タイノ語barbacoa（木の台）に由来、英語barbecueも同語源。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Los domingos comemos barbacoa con mi familia.\n— Es una tradición muy rica.",
+   "ja": "「日曜日は家族でバルバコアを食べるんだ」「とても豊かな伝統だよね」"
+  }
+ },
+ "cochinita pibil": {
+  "nuance": "「コチニータ・ピビル」の基本語。ユカタン半島発祥の料理で、豚肉をアチオテ（アナトー）とサワーオレンジでマリネしてバナナの葉で包んで蒸し焼きにする。",
+  "etymology": "cochino（豚）+ マヤ語pibil（地中で焼いた）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "cochino（豚）"
+  ],
+  "dialogue": {
+   "es": "— La cochinita pibil es típica de Yucatán.\n— Se sirve con cebolla morada encurtida.",
+   "ja": "「コチニータ・ピビルはユカタンの名物なんだ」「紫玉ねぎのピクルスと一緒に出されるんだよね」"
+  }
+ },
+ "chicharrón": {
+  "nuance": "「チチャロン」の基本語。豚の皮を揚げたスナック・食材。サラダやタコスの具、そのままおやつとしても食べられる。",
+  "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El chicharrón está muy crujiente.\n— Me encanta con salsa verde.",
+   "ja": "「チチャロン、とてもパリパリだね」「緑のサルサと一緒に食べるのが大好きなんだ」"
+  }
+ },
+ "lengua": {
+  "nuance": "「タン」の基本語。牛の舌を柔らかく煮込んだタコスの具材として人気。「言語」という意味にもなる。",
+  "etymology": "ラテン語lingua（舌、言語）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Has probado tacos de lengua?\n— Sí, son más suaves de lo que esperaba.",
+   "ja": "「タンのタコス食べたことある？」「うん、思っていたより柔らかかったよ」"
+  }
+ },
+ "bistec": {
+  "nuance": "「ビステック」の基本語。英語beefsteakのスペイン語表記。メキシコでは薄切り肉全般を指すことが多い。",
+  "etymology": "英語beefsteak（牛肉のステーキ）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Quiero tacos de bistec con todo.\n— Yo también, con guacamole extra.",
+   "ja": "「ビステックのタコス、全部乗せで頼みたいな」「私もだよ、ワカモレ多めで」"
+  }
+ },
+ "campechano": {
+  "nuance": "「カンペチャーノ」の基本語。複数の種類の肉(bistec+chorizoなど)を混ぜたタコス。カンペチェ州とは直接関係なく、「混ぜ合わせた」という意味の口語から。",
+  "etymology": "Campeche（カンペチェ州）に由来するとされるが、混合を意味する口語表現として広まった。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Pido un taco campechano.\n— A mí también, me gusta la mezcla de sabores.",
+   "ja": "「カンペチャーノのタコスを頼むよ」「私もだよ、味の組み合わせが好きなんだ」"
+  }
+ },
+ "nopales": {
+  "nuance": "「ノパル」の基本語。食用サボテンの若い葉。焼いたりサラダにしたり、様々な調理法で食べられるメキシコ料理の定番食材。",
+  "etymology": "ナワトル語nohpalliに由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Los nopales asados están deliciosos.\n— Son muy buenos para la salud también.",
+   "ja": "「焼いたノパル、美味しいね」「健康にもとてもいいんだよね」"
+  }
+ },
+ "cilantro": {
+  "nuance": "「パクチー」の基本語。メキシコ料理に欠かせないハーブで、タコスの薬味として玉ねぎと一緒に使われることが多い。",
+  "etymology": "ラテン語coriandrum（コリアンダー）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Le pones cilantro a tus tacos?\n— Sí, siempre con cebolla también.",
+   "ja": "「タコスにパクチー入れる？」「うん、いつも玉ねぎも一緒にね」"
+  }
+ },
+ "antojitos": {
+  "nuance": "「アントヒート」の基本語。屋台や市場で売られるメキシコの軽食・スナック料理全般を指す総称（タコス、ケサディーヤ、ソペスなど）。",
+  "etymology": "antojo（食欲、欲求）の指小形に由来。",
+  "synonyms": [],
+  "derived": [
+   "antojo（食欲、欲求）"
+  ],
+  "dialogue": {
+   "es": "— Vamos a comer antojitos en el mercado.\n— Me encanta probar de todo un poco.",
+   "ja": "「市場でアントヒートを食べに行こう」「少しずつ色々試すの大好きなんだ」"
+  }
+ },
+ "comal": {
+  "nuance": "「コマル」の基本語。トルティーヤを焼くための平たい鉄板・陶板。メキシコの台所に欠かせない伝統的な調理器具。",
+  "etymology": "ナワトル語comalliに由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Mi abuela todavía usa un comal de barro.\n— Las tortillas saben diferente así.",
+   "ja": "「私の祖母はまだ土製のコマルを使っているんだ」「そうやって作ると味が違うんだよね」"
+  }
+ },
+ "molcajete": {
+  "nuance": "「モルカヘテ」の基本語。火山岩でできたすり鉢で、サルサをすりつぶすのに使う伝統的な道具。料理をそのまま盛り付ける器としても使われる。",
+  "etymology": "ナワトル語molcaxitl（すり鉢）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Esta salsa está hecha en molcajete.\n— Se nota, tiene una textura diferente.",
+   "ja": "「このサルサはモルカヘテで作ったんだ」「わかるよ、質感が違うもんね」"
+  }
+ },
+ "combi": {
+  "nuance": "「コンビ」の基本語。乗り合いのミニバン・小型バス。メキシコの地方都市でよく使われる庶民の交通手段。",
+  "etymology": "英語combination（組み合わせ）から派生したとされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Tomé una combi para llegar aquí.\n— ¿Es económica?",
+   "ja": "「ここに来るのにコンビに乗ったんだ」「安いの？」"
+  }
+ },
+ "pesero": {
+  "nuance": "「ペセロ」の基本語。メキシコシティの乗り合いミニバス。かつて運賃が1ペソだったことに由来する名称。",
+  "etymology": "peso（ペソ）から派生した語、かつての運賃に由来。",
+  "synonyms": [],
+  "derived": [
+   "peso（ペソ）"
+  ],
+  "dialogue": {
+   "es": "— El pesero pasa cada diez minutos.\n— Es más rápido que el metro a veces.",
+   "ja": "「ペセロは10分おきに来るんだ」「時々地下鉄より速いんだよね」"
+  }
+ },
+ "changarro": {
+  "nuance": "「チャンガロ」の基本語。個人経営の小さな店・商店を指すメキシコの口語。",
+  "etymology": "起源ははっきりしないが、俗語として広まった。",
+  "synonyms": [
+   "tiendita（小さな店）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Hay un changarro en la esquina que vende de todo.\n— Es muy conveniente tenerlo cerca.",
+   "ja": "「角に何でも売っている個人商店があるんだ」「近くにあるととても便利だよね」"
+  }
+ },
+ "tianguis": {
+  "nuance": "「ティアングイス」の基本語。決まった曜日に開かれる青空市・露天市場。アステカ時代からの伝統が今も続いている。",
+  "etymology": "ナワトル語tianquiztli（市場）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El tianguis de los martes está cerca de mi casa.\n— ¿Qué venden ahí?",
+   "ja": "「火曜日のティアングイスは私の家の近くなんだ」「そこでは何を売っているの？」"
+  }
+ },
+ "colonia": {
+  "nuance": "「コロニア」の基本語。メキシコで「地区、町内」を意味する語（他のスペイン語圏ではbarrioの方が一般的）。住所にもよく使われる（例:Colonia Roma）。「香水」という意味にもなる。",
+  "etymology": "ラテン語colonia（植民地）に由来。",
+  "synonyms": [
+   "barrio（地区、他地域で一般的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿En qué colonia vives?\n— En la Colonia Condesa.",
+   "ja": "「どのコロニアに住んでいるの？」「コンデサ地区だよ」"
+  }
+ },
+ "banqueta": {
+  "nuance": "「バンケタ」の基本語。メキシコで「歩道」を意味する語（他のスペイン語圏ではaceraの方が一般的）。",
+  "etymology": "フランス語banquette（小さなベンチ）に由来。",
+  "synonyms": [
+   "acera（歩道、他地域で一般的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— La banqueta está en mal estado aquí.\n— Hay que tener cuidado al caminar.",
+   "ja": "「ここの歩道は状態が悪いね」「歩くとき気をつけないと」"
+  }
+ },
+ "alberca": {
+  "nuance": "「アルベルカ」の基本語。メキシコで「プール」を意味する語（他のスペイン語圏ではpiscinaの方が一般的）。",
+  "etymology": "アラビア語al-birka（貯水池）に由来。",
+  "synonyms": [
+   "piscina（プール、他地域で一般的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— El hotel tiene alberca.\n— Perfecto, hace mucho calor.",
+   "ja": "「そのホテルにはプールがあるんだ」「よかった、とても暑いから」"
+  }
+ },
+ "popote": {
+  "nuance": "「ポポテ」の基本語。メキシコで「ストロー」を意味する語（他のスペイン語圏ではpajita/sorbete/bombillaなど地域差が大きい）。",
+  "etymology": "ナワトル語popotl（葦、茎）に由来。",
+  "synonyms": [
+   "pajita（ストロー、他地域で一般的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Me puede dar un popote?\n— Claro, aquí tiene.",
+   "ja": "「ストローもらえますか？」「はい、どうぞ」"
+  }
+ },
+ "fonda": {
+  "nuance": "「フォンダ」の基本語。家族経営の小さな食堂で、comida corrida（日替わり定食）を出す庶民的な店。",
+  "etymology": "アラビア語funduq（宿屋）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Vamos a comer en la fonda de la esquina.\n— Ahí hacen buena comida casera.",
+   "ja": "「角のフォンダで食べよう」「そこは美味しい家庭料理を出すんだよね」"
+  }
+ },
+ "credencial para votar": {
+  "nuance": "「選挙人証」の基本語。メキシコでは投票のためだけでなく、事実上の身分証明書として銀行口座開設など様々な場面で使われる。INE（国立選挙機構）が発行する。",
+  "etymology": "credencial（証明書）+ para votar（投票のための）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "credencial（証明書）"
+  ],
+  "dialogue": {
+   "es": "— Necesitas tu credencial para votar para este trámite.\n— La tengo aquí conmigo.",
+   "ja": "「この手続きには選挙人証が必要です」「今持っているよ」"
+  }
+ },
+ "curp": {
+  "nuance": "「CURP」の基本語。Clave Única de Registro de Poblaciónの略で、メキシコ国民・居住者に割り当てられる18桁の個人識別コード。ほぼすべての公的手続きで必要。",
+  "etymology": "Clave Única de Registro de Población（人口登録統一コード）の略。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Necesito mi CURP para este trámite.\n— Puedes obtenerlo en línea.",
+   "ja": "「この手続きにCURPが必要なんだ」「オンラインで取得できるよ」"
+  }
+ },
+ "rfc": {
+  "nuance": "「RFC」の基本語。Registro Federal de Contribuyentesの略で、税務者登録番号。領収書の発行などに必要。",
+  "etymology": "Registro Federal de Contribuyentes（連邦納税者登録）の略。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Me puede dar factura con mi RFC?\n— Claro, deme sus datos.",
+   "ja": "「私のRFCで領収書もらえますか？」「もちろん、情報を教えてください」"
+  }
+ },
+ "imss": {
+  "nuance": "「IMSS」の基本語。Instituto Mexicano del Seguro Socialの略で、メキシコの社会保障機構。公的医療・年金制度を運営する。",
+  "etymology": "Instituto Mexicano del Seguro Social（メキシコ社会保障機構）の略。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Tengo cita en el IMSS mañana.\n— ¿Es tu primera consulta ahí?",
+   "ja": "「明日IMSSで予約があるんだ」「そこでの初診なの？」"
+  }
+ },
+ "chela": {
+  "nuance": "「ビール」を意味する口語表現。cervezaより気軽な、友人同士でよく使う言い方。",
+  "etymology": "起源ははっきりしないが、俗語として広まった。",
+  "synonyms": [
+   "cerveza（ビール、標準的な言い方）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Vamos por unas chelas?\n— ¡Claro que sí!",
+   "ja": "「ビール飲みに行かない？」「もちろん行こう！」"
+  }
+ },
+ "chorizo": {
+  "nuance": "「チョリソ」の基本語。メキシコのチョリソはスペイン産と違い、生の状態で調理する軟らかいソーセージが一般的。タコスやサルサ用の具材としてもよく使われる。",
+  "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El chorizo con papas es delicioso.\n— Es un desayuno muy común aquí.",
+   "ja": "「チョリソとじゃがいもの組み合わせは美味しいね」「ここではよくある朝食なんだよ」"
+  }
+ },
+ "fraccionamiento": {
+  "nuance": "「住宅開発区、分譲地」の基本語。フェンスやゲートで区切られた計画的な住宅地区を指す、メキシコでよく使われる語。",
+  "etymology": "fraccionar（区分する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "fraccionar（区分する）"
+  ],
+  "dialogue": {
+   "es": "— Vivimos en un fraccionamiento con seguridad las 24 horas.\n— Debe ser muy tranquilo.",
+   "ja": "「私たちは24時間警備のある住宅地区に住んでいるんだ」「きっととても静かなんだろうね」"
+  }
+ },
+ "ine": {
+  "nuance": "「INE」の基本語。Instituto Nacional Electoralの略で、国立選挙機構。選挙人証（credencial para votar）を発行する機関で、この証明書自体を指して「INE」と呼ぶことも日常会話で非常に多い。",
+  "etymology": "Instituto Nacional Electoral（国立選挙機構）の略。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Trae su INE?\n— Sí, aquí está.",
+   "ja": "「選挙人証(INE)をお持ちですか？」「はい、こちらです」"
+  }
+ },
+ "autopista": {
+  "nuance": "「高速道路」の基本語。auto（自動車の）+ pista（道）の組み合わせ。メキシコの高速道路は有料（de cuota）と無料（libre）の2種類があることが多い。",
+  "etymology": "auto（自動車）+ pista（道）の組み合わせ。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Tomamos la autopista o la carretera libre?\n— La autopista, así llegamos más rápido.",
+   "ja": "「高速道路と無料道路、どっち使う？」「高速道路にしよう、そっちの方が早く着くから」"
+  }
+ },
+ "carretera": {
+  "nuance": "「幹線道路」の基本語。autopista（高速道路、より大規模）とは区別されるが、一般的な道路全般を指すこともある。",
+  "etymology": "carro（車）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "carro（車）"
+  ],
+  "dialogue": {
+   "es": "— La carretera a Cuernavaca tiene buena vista.\n— Sí, se ve el volcán desde ahí.",
+   "ja": "「クエルナバカへの道は景色がいいんだ」「うん、そこから火山が見えるよね」"
+  }
+ },
+ "caseta de cobro": {
+  "nuance": "「料金所」の基本語。caseta（小屋）+ de cobro（徴収の）の組み合わせ。メキシコの高速道路で通行料を支払う場所。",
+  "etymology": "caseta（小屋）+ cobrar（徴収する）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "cobrar（徴収する）"
+  ],
+  "dialogue": {
+   "es": "— Hay tráfico en la caseta de cobro.\n— Vamos a tardar un poco más.",
+   "ja": "「料金所で渋滞しているね」「もう少し時間がかかりそうだね」"
+  }
+ },
+ "cuota": {
+  "nuance": "「通行料金」の基本語。メキシコでは高速道路の通行料を指す一般的な語（peajeも通じるが、cuotaの方が日常でよく使われる）。carretera de cuota（有料道路）はよく使う組み合わせ。",
+  "etymology": "ラテン語quota（各自の分）に由来。",
+  "synonyms": [
+   "peaje（通行料、他地域でより一般的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Cuánto cuesta la cuota hasta allá?\n— Como doscientos pesos.",
+   "ja": "「そこまでの通行料はいくら？」「200ペソくらいだよ」"
+  }
+ },
+ "carretera libre": {
+  "nuance": "「無料道路」の基本語。carretera de cuota（有料道路）の対義語。時間はかかるが料金がかからない。",
+  "etymology": "carretera（道路）+ libre（自由な、無料の）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "libre（自由な）"
+  ],
+  "dialogue": {
+   "es": "— La carretera libre tarda más pero es gratis.\n— A veces vale la pena por el ahorro.",
+   "ja": "「無料道路の方が時間はかかるけど無料なんだ」「節約のために時々その価値があるよね」"
+  }
+ },
+ "gasolinera": {
+  "nuance": "「ガソリンスタンド」の基本語。gasolina（ガソリン）から派生した語。",
+  "etymology": "gasolina（ガソリン）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "gasolina（ガソリン）"
+  ],
+  "dialogue": {
+   "es": "— Necesitamos parar en una gasolinera.\n— Hay una a dos kilómetros.",
+   "ja": "「ガソリンスタンドに寄る必要があるね」「2キロ先にあるよ」"
+  }
+ },
+ "gasolina": {
+  "nuance": "「ガソリン」の基本語。gasolina magna（レギュラー）、gasolina premium（ハイオク）のように種類を区別する。",
+  "etymology": "英語gasoline（gas＋oil由来）に由来。",
+  "synonyms": [],
+  "derived": [
+   "gasolinera（ガソリンスタンド）"
+  ],
+  "dialogue": {
+   "es": "— Llénalo con gasolina magna, por favor.\n— Enseguida.",
+   "ja": "「レギュラーガソリンで満タンにしてください」「かしこまりました」"
+  }
+ },
+ "grúa": {
+  "nuance": "「レッカー車」の基本語。「クレーン」という建設機械の意味にもなる。",
+  "etymology": "grulla（鶴、首の長い形状から）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "grulla（鶴）"
+  ],
+  "dialogue": {
+   "es": "— El coche se descompuso, hay que llamar a la grúa.\n— Ya tengo el número a la mano.",
+   "ja": "「車が壊れちゃった、レッカー車を呼ばないと」「もう電話番号手元にあるよ」"
+  }
+ },
+ "verificación vehicular": {
+  "nuance": "「車検（排ガス検査）」の基本語。メキシコシティなど都市部で義務付けられている、ナンバープレートの末尾番号によって時期が決まる排出ガス検査制度。",
+  "etymology": "verificar（確認する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "verificar（確認する）"
+  ],
+  "dialogue": {
+   "es": "— Tengo que hacer la verificación vehicular este mes.\n— No lo dejes para el último día.",
+   "ja": "「今月車検を受けないといけないんだ」「最終日まで待たない方がいいよ」"
+  }
+ },
+ "tenencia": {
+  "nuance": "「自動車税」の基本語。メキシコで車両所有者が支払う年間税金（州によって呼び名や制度が異なる場合がある）。",
+  "etymology": "tener（持つ）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "tener（持つ）"
+  ],
+  "dialogue": {
+   "es": "— ¿Ya pagaste la tenencia de este año?\n— Sí, la pagué en enero.",
+   "ja": "「今年の自動車税もう払った？」「うん、1月に払ったよ」"
+  }
+ },
+ "placas": {
+  "nuance": "「ナンバープレート」の基本語。単数形placaもあるが、車には通常2枚あるため複数形でよく使われる。",
+  "etymology": "フランス語plaque（板）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Se me olvidaron mis placas en el otro coche.\n— Vas a tener que ir por ellas.",
+   "ja": "「別の車にナンバープレートを忘れちゃった」「取りに行かないといけないね」"
+  }
+ },
+ "estacionamiento": {
+  "nuance": "「駐車場」の基本語。estacionar（駐車する）から派生した語。",
+  "etymology": "estacionar（駐車する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "estacionar（駐車する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Hay estacionamiento gratis aquí?\n— Sí, en la parte de atrás.",
+   "ja": "「ここに無料駐車場ある？」「うん、裏側にあるよ」"
+  }
+ },
+ "tope": {
+  "nuance": "「減速バンプ」の基本語。メキシコの道路に非常に多く設置されている、車の速度を落とすための盛り上がり。他地域ではreductor de velocidad、topeなど様々な呼び方がある。",
+  "etymology": "topar（ぶつかる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "topar（ぶつかる）"
+  ],
+  "dialogue": {
+   "es": "— Cuidado, hay un tope adelante.\n— Gracias, casi no lo veo.",
+   "ja": "「気をつけて、前に減速バンプがあるよ」「ありがとう、ほとんど見えなかった」"
+  }
+ },
+ "carril": {
+  "nuance": "「車線」の基本語。cambiar de carril（車線変更する）はよく使う組み合わせ。",
+  "etymology": "carro（車）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "carro（車）"
+  ],
+  "dialogue": {
+   "es": "— Ponte en el carril derecho.\n— Ya voy a cambiar.",
+   "ja": "「右車線に入って」「もう変えるところだよ」"
+  }
+ },
+ "límite de velocidad": {
+  "nuance": "「制限速度」の基本語。límite（限界）+ de velocidad（速度の）の組み合わせ。",
+  "etymology": "límite（限界）+ velocidad（速度）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "límite（限界）",
+   "velocidad（速度）"
+  ],
+  "dialogue": {
+   "es": "— El límite de velocidad aquí es de sesenta.\n— Voy a bajar la velocidad.",
+   "ja": "「ここの制限速度は60キロだよ」「速度を落とすね」"
+  }
+ },
+ "multa de tránsito": {
+  "nuance": "「交通違反切符」の基本語。multa（罰金）+ de tránsito（交通の）の組み合わせ。",
+  "etymology": "multa（罰金）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "multa（罰金）"
+  ],
+  "dialogue": {
+   "es": "— Me pusieron una multa de tránsito.\n— ¿Por qué motivo?",
+   "ja": "「交通違反切符切られちゃった」「どんな理由で？」"
+  }
+ },
+ "seguro de auto": {
+  "nuance": "「自動車保険」の基本語。seguro（保険）+ de auto（車の）の組み合わせ。",
+  "etymology": "seguro（安全な、保険）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "seguro（保険）"
+  ],
+  "dialogue": {
+   "es": "— ¿Tienes seguro de auto?\n— Sí, es obligatorio en algunos estados.",
+   "ja": "「自動車保険入ってる？」「うん、一部の州では義務なんだ」"
+  }
+ },
+ "taller mecánico": {
+  "nuance": "「自動車修理工場」の基本語。taller（工房）+ mecánico（機械の、修理工の）の組み合わせ。",
+  "etymology": "taller（作業場）+ mecánico（機械工）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "mecánico（修理工）"
+  ],
+  "dialogue": {
+   "es": "— Llevé el carro al taller mecánico.\n— ¿Qué le pasaba?",
+   "ja": "「車を修理工場に持って行ったんだ」「何があったの？」"
+  }
+ },
+ "ponchadura": {
+  "nuance": "「パンク」の基本語。メキシコで一般的な言い方（他地域ではpinchazoも使われる）。ponchar（パンクさせる）から派生。",
+  "etymology": "ponchar（パンクさせる）から派生した語。",
+  "synonyms": [
+   "pinchazo（パンク、他地域）"
+  ],
+  "derived": [
+   "ponchar（パンクさせる）"
+  ],
+  "dialogue": {
+   "es": "— Tuve una ponchadura en la carretera.\n— Qué mala suerte, ¿tenías llanta de refacción?",
+   "ja": "「道路でパンクしちゃったんだ」「運が悪かったね、スペアタイヤ持ってた？」"
+  }
+ },
+ "libramiento": {
+  "nuance": "「バイパス道路」の基本語。都市の中心部を避けて通る迂回路。",
+  "etymology": "librar（免れる、解放する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "librar（免れる）"
+  ],
+  "dialogue": {
+   "es": "— Toma el libramiento para evitar el centro.\n— Buena idea, siempre hay tráfico ahí.",
+   "ja": "「中心街を避けるならバイパス道路を使って」「いい考えだね、そこはいつも渋滞しているから」"
+  }
+ },
+ "segundo piso": {
+  "nuance": "「高架高速道路」の基本語。直訳は「二階」で、メキシコシティにある既存の道路の上に建てられた高架式高速道路を指す通称。",
+  "etymology": "segundo（第二の）+ piso（階）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "piso（階）"
+  ],
+  "dialogue": {
+   "es": "— Tomamos el segundo piso para evitar el tráfico.\n— Es mucho más rápido así.",
+   "ja": "「渋滞を避けるために高架高速道路を使ったんだ」「その方がずっと速いよね」"
+  }
+ },
+ "chafa": {
+  "nuance": "「安っぽい、質の悪い」を意味するメキシコの口語形容詞。malo（悪い）よりも「見た目や質が安っぽい」というニュアンスが強い。",
+  "etymology": "起源ははっきりしないが、俗語として広まった。",
+  "synonyms": [
+   "barato（安い、より中立的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Esta mochila es un poco chafa.\n— Sí, se le rompió el cierre rápido.",
+   "ja": "「このリュック、ちょっと安っぽいね」「うん、ファスナーがすぐ壊れちゃった」"
+  }
+ },
+ "a huevo": {
+  "nuance": "「絶対に、当然」を意味するメキシコの口語表現。強い確信・強制を表す（やや荒っぽい表現なので使う相手を選ぶ）。",
+  "etymology": "huevo（卵、俗語では「気合、根性」）から派生した表現。",
+  "synonyms": [
+   "claro que sí（もちろん）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Vas a ir a la fiesta?\n— A huevo, no me la pierdo.",
+   "ja": "「パーティー行くの？」「もちろん行くよ、見逃さないよ」"
+  }
+ },
+ "simón": {
+  "nuance": "「うん」を意味するメキシコの口語表現。síの砕けた言い方。",
+  "etymology": "sí（はい）が音変化した俗語とされる。",
+  "synonyms": [
+   "sí（はい、標準的な言い方）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Quieres ir a comer?\n— Simón, tengo hambre.",
+   "ja": "「食べに行きたい？」「うん、お腹すいた」"
+  }
+ },
+ "nel": {
+  "nuance": "「いや」を意味するメキシコの口語表現。noの砕けた言い方。",
+  "etymology": "no（いいえ）が音変化した俗語とされる。",
+  "synonyms": [
+   "no（いいえ、標準的な言い方）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Quieres venir?\n— Nel, estoy muy cansado.",
+   "ja": "「来たい？」「いや、すごく疲れてるんだ」"
+  }
+ },
+ "sale": {
+  "nuance": "「オーケー、決まり」を意味するメキシコの口語表現。合意・了承を表す。",
+  "etymology": "salir（うまくいく）から派生した表現とされる。",
+  "synonyms": [
+   "está bien（大丈夫、標準的な言い方）"
+  ],
+  "derived": [
+   "salir（出る、うまくいく）"
+  ],
+  "dialogue": {
+   "es": "— Nos vemos a las cinco.\n— Sale, ahí estaré.",
+   "ja": "「5時に会おうね」「決まり、そこに行くよ」"
+  }
+ },
+ "híjole": {
+  "nuance": "「うわあ、げっ」を意味するメキシコの間投詞。驚き・困惑・失望など幅広い感情を表す。",
+  "etymology": "hijo（息子）が音変化した感嘆詞とされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Se me olvidó tu regalo en casa.\n— Híjole, qué mala onda.",
+   "ja": "「君のプレゼント家に忘れちゃった」「うわあ、それは残念だね」"
+  }
+ },
+ "chavo": {
+  "nuance": "「若者、少年」を意味するメキシコの口語。女性形はchava。muchachoよりカジュアルな言い方。",
+  "etymology": "起源は諸説あるが、俗語として広まった。",
+  "synonyms": [
+   "muchacho（若者、より標準的）"
+  ],
+  "derived": [
+   "chava（少女）"
+  ],
+  "dialogue": {
+   "es": "— Ese chavo es mi vecino.\n— Se ve muy simpático.",
+   "ja": "「あの若者は私の隣人なんだ」「とても感じよさそうだね」"
+  }
+ },
+ "compa": {
+  "nuance": "「相棒」を意味するメキシコの口語。compadre（名付け親同士の関係、転じて親しい友人）の短縮形。",
+  "etymology": "compadre（名付け親、親友）の短縮形。",
+  "synonyms": [
+   "amigo（友達、標準的な言い方）"
+  ],
+  "derived": [
+   "compadre（親友）"
+  ],
+  "dialogue": {
+   "es": "— ¿Qué onda, compa?\n— Todo bien, ¿y tú?",
+   "ja": "「調子どう、相棒？」「元気だよ、君は？」"
+  }
+ },
+ "carnal": {
+  "nuance": "「兄弟のように親しい友人」を意味するメキシコの口語。hermano（兄弟）と同じくらい近い間柄の友人を指す。",
+  "etymology": "ラテン語carnalis（血肉の、身内の）に由来。",
+  "synonyms": [
+   "hermano（兄弟、比喩的にも使う）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Él es mi carnal desde la primaria.\n— Qué bonita amistad.",
+   "ja": "「彼は小学校からの親友なんだ」「素敵な友情だね」"
+  }
+ },
+ "al chile": {
+  "nuance": "「マジで、正直言うと」を意味するメキシコの口語表現。率直さを強調するときに使う（やや砕けた表現）。",
+  "etymology": "chile（唐辛子）から派生した表現、「辛辣に率直に」のイメージ。",
+  "synonyms": [
+   "de verdad（本当に）"
+  ],
+  "derived": [
+   "chile（唐辛子）"
+  ],
+  "dialogue": {
+   "es": "— Al chile, no me gustó la película.\n— Yo tampoco, la verdad.",
+   "ja": "「正直言うと、あの映画好きじゃなかったな」「私もだよ、実は」"
+  }
+ },
+ "troca": {
+  "nuance": "「トラック、ピックアップトラック」を意味するメキシコ北部でよく使われる口語。英語truckからの借用語（camionetaが標準的な言い方）。",
+  "etymology": "英語truck（トラック）に由来。",
+  "synonyms": [
+   "camioneta（トラック、標準的な言い方）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Me gusta tu troca nueva.\n— Gracias, la compré el mes pasado.",
+   "ja": "「君の新しいトラック好きだな」「ありがとう、先月買ったんだ」"
+  }
+ },
+ "banda": {
+  "nuance": "「仲間たち」を意味するメキシコの口語。「バンド（音楽グループ）」という標準的な意味もある。",
+  "etymology": "イタリア語banda（集団）に由来。",
+  "synonyms": [
+   "amigos（友達、標準的な言い方）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Voy a salir con la banda esta noche.\n— ¡Que se diviertan!",
+   "ja": "「今夜仲間たちと出かけるよ」「楽しんできてね！」"
+  }
+ },
+ "rollo": {
+  "nuance": "「事情、話」を意味するメキシコの口語。「（フィルムの）ロール」という標準的な意味もある。¿cuál es tu rollo?（お前の話は何なんだ？）のように使う。",
+  "etymology": "ラテン語rotulus（巻いたもの）に由来。",
+  "synonyms": [
+   "asunto（事柄、標準的な言い方）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Cuál es tu rollo con él?\n— Es una larga historia.",
+   "ja": "「彼とはどういう事情なの？」「長い話なんだ」"
+  }
+ },
+ "desmadre": {
+  "nuance": "「めちゃくちゃな状況、大混乱」を意味するメキシコの口語（やや砕けた表現）。友人同士のくだけた会話でよく使われる。",
+  "etymology": "des（否定）+ madre（母）の組み合わせから派生した俗語。",
+  "synonyms": [
+   "caos（混乱、より中立的な言い方）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— La fiesta terminó en un desmadre.\n— Sí, se rompió todo.",
+   "ja": "「パーティーはめちゃくちゃな状態で終わったんだ」「うん、全部壊れちゃったよ」"
+  }
+ },
+ "apapachar": {
+  "nuance": "「愛情を込めて甘やかす、抱きしめる」を意味するメキシコ独自の美しい言葉。ナワトル語由来で、単なる「抱きしめる」よりも温かい愛情のこもったニュアンスがある。",
+  "etymology": "ナワトル語papatzoa（抱きしめる、優しく触れる）に由来。",
+  "synonyms": [
+   "abrazar（抱きしめる、より一般的）"
+  ],
+  "derived": [
+   "apapacho（甘やかし、愛情表現）"
+  ],
+  "dialogue": {
+   "es": "— Ven, déjame apapacharte.\n— Gracias, necesitaba eso.",
+   "ja": "「おいで、甘やかさせて」「ありがとう、それが必要だったんだ」"
+  }
+ },
+ "sacar la vuelta": {
+  "nuance": "「避ける、逃げる」を意味するメキシコの口語表現。責任や困難な状況を避けることを表す。",
+  "etymology": "sacar（取り出す）+ vuelta（回転、遠回り）の組み合わせ。",
+  "synonyms": [
+   "evitar（避ける、より標準的）"
+  ],
+  "derived": [
+   "vuelta（回転）"
+  ],
+  "dialogue": {
+   "es": "— Le está sacando la vuelta al problema.\n— Tarde o temprano lo va a tener que enfrentar.",
+   "ja": "「彼はその問題を避けているんだ」「遅かれ早かれ向き合わないといけなくなるよ」"
+  }
+ },
+ "ni modo": {
+  "nuance": "「仕方ない」を意味するメキシコの非常によく使われる口語表現。どうしようもない状況を受け入れるときに使う。",
+  "etymology": "ni（〜さえない）+ modo（方法）の組み合わせ。",
+  "synonyms": [
+   "qué se le va a hacer（仕方ないね）"
+  ],
+  "derived": [
+   "modo（方法）"
+  ],
+  "dialogue": {
+   "es": "— Se canceló el vuelo.\n— Ni modo, hay que esperar al siguiente.",
+   "ja": "「フライトがキャンセルになったんだ」「仕方ない、次のを待たないとね」"
+  }
+ },
+ "a poco": {
+  "nuance": "「まさか、本当に？」を意味するメキシコの口語表現。驚きを表すときによく使う。",
+  "etymology": "a（〜へ）+ poco（少し）の組み合わせ、意味の変遷ははっきりしない。",
+  "synonyms": [
+   "¿en serio?（本当に？）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Me gané la lotería.\n— ¿A poco? ¡Qué envidia!",
+   "ja": "「宝くじ当たったんだ」「まさか？うらやましい！」"
+  }
+ },
+ "en chinga": {
+  "nuance": "「大急ぎで」を意味するメキシコの口語表現（やや砕けた表現なので使う場面を選ぶ）。",
+  "etymology": "chingar（急かす、俗語）から派生した表現。",
+  "synonyms": [
+   "rápido（速く、標準的な言い方）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Tengo que hacer esto en chinga.\n— ¿Necesitas ayuda?",
+   "ja": "「これを大急ぎでやらないといけないんだ」「手伝い必要？」"
+  }
+ },
+ "fifí": {
+  "nuance": "「お高くとまった、上流気取りの」を意味するメキシコの口語。fresaと似た意味だが、より皮肉・批判的なニュアンスで使われることが多い（政治的な文脈で使われることもある）。",
+  "etymology": "フランス語fifils（お坊ちゃん）に由来するとされる。",
+  "synonyms": [
+   "fresa（気取った、ほぼ同義）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Ese restaurante es muy fifí.\n— Sí, y los precios también.",
+   "ja": "「あのレストランはすごくお高くとまっているんだ」「うん、値段もね」"
+  }
+ },
+ "chava": {
+  "nuance": "「若者、少女」を意味するメキシコの口語。chavo（少年）の女性形。muchachaよりカジュアルな言い方。",
+  "etymology": "起源は諸説あるが、俗語として広まった。",
+  "synonyms": [
+   "muchacha（若者、より標準的）"
+  ],
+  "derived": [
+   "chavo（少年）"
+  ],
+  "dialogue": {
+   "es": "— Esa chava es mi compañera de clase.\n— Se ve muy amable.",
+   "ja": "「あの女の子は私のクラスメートなんだ」「とても親切そうだね」"
+  }
+ },
+ "amar": {
+  "nuance": "「深く愛する」の基本語。querer（好き・愛してる、より日常的）よりも重く真剣な響きを持つ動詞で、パートナーや配偶者、神への愛など、深い愛情を表すときに使われる。日常会話では家族・友人へはquererの方が自然。",
+  "etymology": "ラテン語amare（愛する）に由来。",
+  "synonyms": [
+   "querer（愛する・好き、より日常的）"
+  ],
+  "derived": [
+   "amor（愛）",
+   "amoroso（愛情深い）"
+  ],
+  "dialogue": {
+   "es": "— Te amo con todo mi corazón.\n— Yo también te amo.",
+   "ja": "「心から君を愛しているよ」「私もあなたを愛しているよ」"
   }
  }
 };

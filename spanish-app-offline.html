@@ -574,7 +574,7 @@ const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
 /* ---------- Lazy loading of per-tab data files ---------- */
-const LAZY_SCRIPTS = { conj:"drills.js", dict:"dictionary.js", grammar:"grammar.js", column:"column.js", news:"news.js", phrases:"phrases.js" };
+const LAZY_SCRIPTS = { conj:"drills.js", dict:"dictionary.js", grammar:"grammar.js", column:"column.js", news:"news.js", phrases:"phrases.js", faq:"faq.js" };
 const LAZY_STATE = {}; // src -> "loading" | "done" | "error"
 function ensureTabScript(tab){
   const src = LAZY_SCRIPTS[tab];
@@ -614,6 +614,7 @@ function render(){
     || (state.tab==="conj" && !!state.conjSubTab)
     || (state.tab==="dict" && !!state.dictDetailWord)
     || (state.tab==="grammar" && grammarDetailIdx!==null)
+    || (state.tab==="faq" && faqDetailIdx!==null)
     || (state.tab==="phrases" && state.phraseSceneIdx!==null && state.phraseSceneIdx!==undefined);
   if(!hideNav) app.appendChild(navBar());
   if(state.tab==="vocab"){
@@ -643,13 +644,15 @@ function render(){
     renderNews();
   } else if(state.tab==="phrases"){
     renderPhrases();
+  } else if(state.tab==="faq"){
+    renderFaq();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; stopDictAutoPlay(); columnDeck=[]; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; stopDictAutoPlay(); columnDeck=[]; faqDetailIdx=null; }
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","ドリル"],["phrases","フレーズ"],["dict","辞書"],["grammar","文法"],["more","その他"]].forEach(([key,label])=>{
-    const isActive = state.tab===key || (key==="more" && (state.tab==="column"||state.tab==="news"));
+    const isActive = state.tab===key || (key==="more" && (state.tab==="column"||state.tab==="news"||state.tab==="faq"));
     const b = el("button","nav-btn"+(isActive?" active":""), label);
     b.onclick = ()=>{ playTap(); state.tab=key; state.mode="home"; resetSessions(); render(); };
     row.appendChild(b);
@@ -663,7 +666,7 @@ function renderMoreMenu(){
   app.appendChild(header);
   const spacer = el("div"); spacer.style.height="16px"; app.appendChild(spacer);
   const grid = el("div","mode-grid");
-  [["column","📰","コラム","日本人・英語脳向けの豆知識、メキシコ文化"],["news","🗞️","ニュース","メキシコの時事・話題のスペイン語記事"]].forEach(([key,icon,name,desc])=>{
+  [["column","📰","コラム","日本人・英語脳向けの豆知識、メキシコ文化"],["news","🗞️","ニュース","メキシコの時事・話題のスペイン語記事"],["faq","❓","質問箱","ahí/acá/allá、ser/estarなど、よく混乱するポイントのQ&A"]].forEach(([key,icon,name,desc])=>{
     const card = el("button","mode-card");
     card.innerHTML = `<div class="mode-icon">${icon}</div><div class="mode-name">${name}</div><div class="mode-desc">${desc}</div>`;
     card.onclick = ()=>{ playTap(); state.tab=key; render(); };
@@ -776,7 +779,7 @@ function renderCalendar(){
   app.appendChild(grid);
   app.appendChild(el("div","footer-hint","塗りつぶされた日が学習した日です"));
 }
-function normDictKey(s){ return (s||"").trim().toLowerCase().replace(/^(el|la|los|las)\s+/,""); }
+function normDictKey(s){ return (s||"").trim().toLowerCase().replace(/^[¡¿]+|[!?]+$/g,"").replace(/^(el|la|los|las)\s+/,""); }
 function normalizeDictionaryKeysOnce(){
   if(typeof DICTIONARY_DATA === "undefined") return;
   const fixed = {};
@@ -840,6 +843,7 @@ function returnToSummary(){
   if(ctx.mode) state.mode = ctx.mode;
   if(ctx.conjSubTab) state.conjSubTab = ctx.conjSubTab;
   if(ctx.phraseSceneIdx !== undefined) state.phraseSceneIdx = ctx.phraseSceneIdx;
+  if(ctx.faqDetailIdx !== undefined) faqDetailIdx = ctx.faqDetailIdx;
   state.dictDetailWord = null;
   grammarDetailIdx = null;
   render();
@@ -1704,6 +1708,7 @@ function renderListeningDrill(){
 
 /* ---------- Grammar reference feed ---------- */
 let grammarDetailIdx = null;
+let faqDetailIdx = null;
 function renderGrammar(){
   if(state.pendingGrammarTitle){
     const idx = GRAMMAR_ARTICLES.findIndex(a=>a.title===state.pendingGrammarTitle);
@@ -2019,6 +2024,44 @@ function renderColumnList(){
     const art = el("div","article");
     art.innerHTML = `<div class="article-title">${a.title}</div><div class="article-body">${a.body}</div>`;
     app.appendChild(art);
+  });
+}
+function renderFaq(){
+  if(faqDetailIdx!==null){
+    const item = FAQ_ITEMS[faqDetailIdx];
+    app.appendChild(topBar("質問箱", "", ()=>{ faqDetailIdx=null; render(); }));
+    const header = el("div");
+    header.appendChild(el("div","eyebrow","Q&A"));
+    header.appendChild(el("h1","title", item.q));
+    app.appendChild(header);
+    const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
+    const box = el("div","article");
+    box.style.whiteSpace = "pre-wrap"; box.style.lineHeight = "1.8"; box.style.fontSize = "14.5px";
+    box.textContent = item.a;
+    app.appendChild(box);
+    if(item.related){
+      const linkWrap = el("div"); linkWrap.style.marginTop="16px";
+      linkWrap.appendChild(grammarLinkBtn(item.related, {tab:"faq", faqDetailIdx:faqDetailIdx}));
+      app.appendChild(linkWrap);
+    }
+    const idx = faqDetailIdx;
+    const nav = el("div"); nav.style.marginTop="20px";
+    const onPrev = idx>0 ? ()=>{ playTap(); faqDetailIdx=idx-1; render(); } : null;
+    const onNext = idx<FAQ_ITEMS.length-1 ? ()=>{ playTap(); faqDetailIdx=idx+1; render(); } : null;
+    app.appendChild(buildFloatingNav("← 前の質問", "次の質問 →", onPrev, onNext));
+    return;
+  }
+  const header = el("div");
+  header.appendChild(el("div","eyebrow","Q&A"));
+  header.appendChild(el("h1","title","質問箱"));
+  app.appendChild(header);
+  app.appendChild(el("div","footer-hint","スペイン語学習でよく混乱するポイントをQ&A形式でまとめました。気になる質問をタップしてください。"));
+  const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
+  FAQ_ITEMS.forEach((item,i)=>{
+    const row = el("div","grammar-list-item");
+    row.innerHTML = `<div class="grammar-list-title">${item.q}</div>`;
+    row.onclick = ()=>{ playTap(); faqDetailIdx=i; render(); };
+    app.appendChild(row);
   });
 }
 

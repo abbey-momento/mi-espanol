@@ -765,6 +765,87 @@ const EXAMPLES = [
   { before:"El mes pasado, ", verb:"necesitar", tense:"indefinido", p:0, after:" ayuda con la mudanza.", ja:"先月、引っ越しの手伝いが必要だった。", topic:"preterito_imperfecto" },
   { before:"Cuando era joven, ", verb:"trabajar", tense:"imperfecto", p:0, after:" en una tienda los fines de semana.", ja:"若い頃、週末に店で働いていた。", topic:"preterito_imperfecto" },
   { before:"Anoche ", verb:"esperar", tense:"indefinido", p:0, after:" el autobús por media hora.", ja:"昨夜、30分間バスを待った。", topic:"preterito_imperfecto" },
+  // ---------- 追加分（第2弾、各トピックの充実） ----------
+  // 冠詞
+  { before:"Compré ", answer:"un", after:" paraguas nuevo porque perdí el otro.", ja:"別のをなくしたので、新しい傘を買った。", label:"冠詞", topic:"articulos", note:"不特定の一本の傘なのでun。" },
+  { before:"", answer:"El", after:" presidente dará un discurso esta noche.", ja:"大統領は今夜演説をする予定だ。", label:"冠詞", topic:"articulos", note:"特定の（その国の）大統領を指すので定冠詞El。" },
+  { before:"Nunca he visto ", answer:"un", after:" elefante en persona.", ja:"実物のゾウを見たことが一度もない。", label:"冠詞", topic:"articulos", note:"不特定の一頭のゾウなのでun。" },
+  { before:"Prefiero ", answer:"el", after:" café sin azúcar.", ja:"コーヒーは砂糖なしの方が好きだ。", label:"冠詞", topic:"articulos", note:"「コーヒーというもの全般」を表すときは定冠詞を使う。" },
+  // 名詞の性
+  { before:"", answer:"El", after:" mapa de la ciudad está desactualizado.", ja:"その街の地図は情報が古い。", label:"名詞の性", topic:"genero", note:"mapaは-aで終わるが男性名詞（ギリシャ語源）。" },
+  { before:"", answer:"El", after:" clima ha cambiado mucho este año.", ja:"今年、気候はとても変わった。", label:"名詞の性", topic:"genero", note:"climaは-aで終わるが男性名詞（ギリシャ語源）。" },
+  { before:"Compramos ", answer:"unas", after:" cortinas nuevas para la sala.", ja:"リビング用に新しいカーテンを買った。", label:"名詞の性", topic:"genero", note:"cortinasは規則通り女性複数名詞。" },
+  { before:"", answer:"El", after:" dilema es difícil de resolver.", ja:"そのジレンマは解決するのが難しい。", label:"名詞の性", topic:"genero", note:"dilemaは-aで終わるが男性名詞（ギリシャ語源）。" },
+  // 指示形容詞
+  { before:"", answer:"Esa", after:" situación que vivimos el año pasado fue difícil.", ja:"去年私たちが経験したあの状況は大変だった。", label:"指示形容詞", topic:"demostrativos", note:"少し前の話題にはeseを使う。" },
+  { before:"Prefiero ", answer:"esta", after:" opción sobre la otra.", ja:"もう一方より、こちらの選択肢の方がいい。", label:"指示形容詞", topic:"demostrativos", note:"今まさに検討している選択肢にはestaを使う。" },
+  { before:"No puedo creer lo que pasó ", answer:"aquel", after:" día.", ja:"あの日起きたことが信じられない。", label:"指示形容詞", topic:"demostrativos", note:"時間的に遠い過去の日にはaquelを使う。" },
+  { before:"¿Me pasas ", answer:"ese", after:" plato que está junto a ti?", ja:"君のそばにあるその皿を取ってくれる？", label:"指示形容詞", topic:"demostrativos", note:"聞き手のそばにあるものにはeseを使う。" },
+  // 所有形容詞
+  { before:"¿Dónde dejaste ", answer:"tu", after:" mochila?", ja:"君のリュックどこに置いた？", label:"所有形容詞", topic:"posesivos", note:"「君の」は単数名詞の前でtu。" },
+  { before:"Este proyecto es completamente ", answer:"nuestro", after:".", ja:"このプロジェクトは完全に私たちのものだ。", label:"所有代名詞", topic:"posesivos", note:"「私たちのもの」という所有代名詞、男性単数名詞proyectoに一致してnuestro。" },
+  { before:"", answer:"Mis", after:" abuelos vinieron a visitarnos.", ja:"私の祖父母が訪ねてきてくれた。", label:"所有形容詞", topic:"posesivos", note:"「私の」は複数名詞の前でmis。" },
+  { before:"La culpa no es mía, es ", answer:"suya", after:".", ja:"責任は私にではなく、彼らにある。", label:"所有代名詞", topic:"posesivos", note:"「彼らのもの」という所有代名詞、女性単数名詞culpaに一致してsuya。" },
+  // hay / estar
+  { before:"¿", answer:"Hay", after:" un baño cerca de aquí?", ja:"この近くにトイレはありますか？", label:"hay / estar", topic:"hay_estar", note:"不特定のものの存在を尋ねるときはhayを使う。" },
+  { before:"El restaurante que buscas ", answer:"está", after:" a la vuelta de la esquina.", ja:"君が探しているレストランは角を曲がったところにある。", label:"hay / estar", topic:"hay_estar", note:"特定の（すでに話題の）ものの場所にはestarを使う。" },
+  { before:"", answer:"Hay", after:" poca gente en el cine hoy.", ja:"今日は映画館に人が少ない。", label:"hay / estar", topic:"hay_estar", note:"不特定の量を表すのでhayを使う。" },
+  { before:"Los boletos ", answer:"están", after:" agotados.", ja:"チケットは売り切れている。", label:"hay / estar", topic:"hay_estar", note:"特定の（話題の）チケットの状態にはestarを使う。" },
+  // 受け身
+  { before:"Este edificio ", answer:"fue diseñado", after:" por un arquitecto famoso.", ja:"この建物は有名な建築家によって設計された。", label:"受け身", topic:"pasiva", note:"男性単数主語edificioに一致してdiseñado。" },
+  { before:"Las reglas ", answer:"son explicadas", after:" al inicio de la clase.", ja:"ルールは授業の最初に説明される。", label:"受け身", topic:"pasiva", note:"現在形の受け身、女性複数主語reglasに一致。" },
+  { before:"", answer:"Se prohíbe", after:" fumar en este restaurante.", ja:"このレストランでは喫煙が禁止されている。", label:"受け身（se pasivo）", topic:"pasiva", note:"se+動詞の受け身表現、掲示物などでよく見る形。" },
+  { before:"El puente ", answer:"fue construido", after:" en 1920.", ja:"その橋は1920年に建設された。", label:"受け身", topic:"pasiva", note:"男性単数主語puenteに一致してconstruido。" },
+  // 否定語
+  { before:"No conozco a ", answer:"nadie", after:" en esta ciudad.", ja:"この街には誰も知り合いがいない。", label:"否定語", topic:"negacion", note:"「誰も〜ない」を表すnadie。" },
+  { before:"No hay ", answer:"ninguna", after:" excusa para llegar tan tarde.", ja:"こんなに遅く来る言い訳はない。", label:"否定語", topic:"negacion", note:"excusaは女性名詞なのでninguna。" },
+  { before:"No he estado ", answer:"nunca", after:" tan cansado.", ja:"こんなに疲れたことは一度もない。", label:"否定語", topic:"negacion", note:"「一度も〜ない」を表すnunca。" },
+  { before:"No tengo ", answer:"ninguna", after:" queja sobre el servicio.", ja:"サービスについて何の不満もない。", label:"否定語", topic:"negacion", note:"quejaは女性名詞なのでninguna。" },
+  // muy / mucho
+  { before:"Trabajamos ", answer:"mucho", after:" para terminar a tiempo.", ja:"時間通りに終わらせるためにたくさん働いた。", label:"muy / mucho", topic:"muy_mucho", note:"動詞を修飾する副詞としてmuchoを使う。" },
+  { before:"Es una decisión ", answer:"muy", after:" importante.", ja:"とても重要な決断だ。", label:"muy / mucho", topic:"muy_mucho", note:"形容詞の前にはmuyを使う。" },
+  { before:"Tenemos ", answer:"muchas", after:" ganas de verte.", ja:"君に会いたくてたまらない。", label:"muy / mucho", topic:"muy_mucho", note:"ganasは女性複数名詞なのでmuchas。" },
+  { before:"Está ", answer:"muy", after:" lejos de aquí.", ja:"ここからとても遠い。", label:"muy / mucho", topic:"muy_mucho", note:"副詞lejosの前にはmuyを使う。" },
+  // también / tampoco
+  { before:"Estudié toda la noche, y mis amigos ", answer:"también", after:".", ja:"一晩中勉強した、私の友達もだ。", label:"también / tampoco", topic:"tambien_tampoco", note:"肯定内容への同意はtambién。" },
+  { before:"No fuimos a la reunión, y ellos ", answer:"tampoco", after:".", ja:"私たちは会議に行かなかった、彼らもだ。", label:"también / tampoco", topic:"tambien_tampoco", note:"否定内容への同意はtampoco。" },
+  { before:"Le encanta viajar, y a nosotros ", answer:"también", after:".", ja:"彼は旅行が大好きだ、私たちもだ。", label:"también / tampoco", topic:"tambien_tampoco", note:"肯定内容への同意はtambién。" },
+  { before:"No sabe cocinar, y yo ", answer:"tampoco", after:".", ja:"彼は料理ができない、私もだ。", label:"también / tampoco", topic:"tambien_tampoco", note:"否定内容への同意はtampoco。" },
+  // 関係代名詞
+  { before:"El hotel ", answer:"donde", after:" nos quedamos era muy cómodo.", ja:"私たちが泊まったホテルはとても快適だった。", label:"関係代名詞", topic:"relativos", note:"場所（宿泊先）を先行詞とするときはdonde。" },
+  { before:"La persona ", answer:"que", after:" me ayudó fue muy amable.", ja:"私を助けてくれた人はとても親切だった。", label:"関係代名詞", topic:"relativos", note:"人・物どちらにも使える万能なque。" },
+  { before:"Mi hermana, ", answer:"quien", after:" vive en Toronto, nos visitará pronto.", ja:"トロントに住んでいる私の姉が、もうすぐ私たちを訪ねてくる。", label:"関係代名詞", topic:"relativos", note:"人を先行詞とし、コンマで区切る非制限用法ではquienが使われる。" },
+  { before:"Ese es el libro ", answer:"que", after:" te recomendé.", ja:"それが私が君に勧めた本だ。", label:"関係代名詞", topic:"relativos", note:"物を先行詞とするときはque。" },
+  // algo/alguno系
+  { before:"¿Falta ", answer:"algo", after:" por hacer?", ja:"何かやり残したことある？", label:"不定語", topic:"algo_alguno", note:"「何か」を表す不変化の代名詞。" },
+  { before:"No queda ", answer:"ningún", after:" pan en la cocina.", ja:"台所にパンが一つも残っていない。", label:"不定語", topic:"algo_alguno", note:"panは男性名詞なのでningún。" },
+  { before:"¿Hay ", answer:"alguna", after:" manera de arreglar esto?", ja:"これを直す何か方法はある？", label:"不定語", topic:"algo_alguno", note:"maneraは女性名詞なのでalguna。" },
+  { before:"No conozco a ", answer:"nadie", after:" que hable ruso.", ja:"ロシア語を話す人を誰も知らない。", label:"不定語", topic:"algo_alguno", note:"「誰も〜ない」を表す不変化の代名詞。" },
+  // 接続詞
+  { before:"Quiero pastel ", answer:"y", after:" helado de postre.", ja:"デザートにケーキとアイスクリームが欲しい。", label:"接続詞", topic:"conjunciones", note:"通常の「そして」はy。" },
+  { before:"No sé si ir en tren ", answer:"o", after:" en autobús.", ja:"電車で行くかバスで行くか分からない。", label:"接続詞", topic:"conjunciones", note:"通常の「または」はo。" },
+  { before:"No llegamos tarde, ", answer:"sino", after:" temprano.", ja:"私たちは遅れたのではなく、早く着いた。", label:"接続詞", topic:"conjunciones", note:"否定した内容を訂正するときはsinoを使う。" },
+  { before:"Hay siete ", answer:"u", after:" ocho personas en la sala.", ja:"部屋には7人か8人いる。", label:"接続詞", topic:"conjunciones", note:"次の単語がo/hoの音で始まるときoはuに変わる。" },
+  // 時間の経過表現
+  { before:"", answer:"Hace", after:" tres semanas que no hablamos.", ja:"話さなくなって3週間になる。", label:"時間の経過", topic:"tiempo_exp", note:"hace+期間+queの構文。" },
+  { before:"Trabajo en esta empresa ", answer:"desde", after:" 2019.", ja:"2019年からこの会社で働いている。", label:"時間の経過", topic:"tiempo_exp", note:"起点を表すdesde。" },
+  { before:"", answer:"Llevo", after:" dos horas esperando el autobús.", ja:"2時間バスを待ち続けている。", label:"時間の経過", topic:"tiempo_exp", note:"llevar+期間+現在分詞の構文。" },
+  { before:"No la veo ", answer:"desde", after:" su graduación.", ja:"彼女の卒業式以来会っていない。", label:"時間の経過", topic:"tiempo_exp", note:"起点を表すdesde。" },
+  // todo/toda
+  { before:"Limpié ", answer:"todo", after:" mi cuarto esta mañana.", ja:"今朝、部屋を全部掃除した。", label:"todo/toda", topic:"todo_toda", note:"男性単数名詞cuartoの前にはtodoを使う。" },
+  { before:"", answer:"Todas", after:" las tiendas cierran a las nueve.", ja:"すべての店は9時に閉まる。", label:"todo/toda", topic:"todo_toda", note:"女性複数名詞tiendasの前にはtodasを使う。" },
+  { before:"Invitamos a ", answer:"todos", after:" nuestros vecinos.", ja:"近所の人たち全員を招待した。", label:"todo/toda", topic:"todo_toda", note:"男性複数名詞vecinosの前にはtodosを使う。" },
+  { before:"Ella conoce ", answer:"todo", after:" sobre este tema.", ja:"彼女はこのテーマについてすべて知っている。", label:"todo/toda", topic:"todo_toda", note:"代名詞として使うときはtodo（中性的）。" },
+  // 疑問詞
+  { before:"¿", answer:"Cuál", after:" es tu color favorito?", ja:"君の好きな色は何？", label:"疑問詞", topic:"interrogativos", note:"具体的な情報を選ぶときはcuál。" },
+  { before:"¿", answer:"Cuándo", after:" empieza la película?", ja:"映画はいつ始まるの？", label:"疑問詞", topic:"interrogativos", note:"時を尋ねるときはcuándo。" },
+  { before:"¿", answer:"Cuál", after:" prefieres, quedarte o salir?", ja:"残るのと出かけるの、どっちがいい？", label:"疑問詞", topic:"interrogativos", note:"2つの選択肢から選ぶときはcuál。" },
+  { before:"¿", answer:"Cuánto", after:" cuesta el pasaje de ida y vuelta?", ja:"往復チケットはいくらですか？", label:"疑問詞", topic:"interrogativos", note:"金額を尋ねるときはcuánto。" },
+  // 点過去 vs 線過去
+  { before:"Cuando yo era niño, ", verb:"tener", tense:"imperfecto", p:0, after:" un perro llamado Rex.", ja:"子供の頃、レックスという名前の犬を飼っていた。", topic:"preterito_imperfecto" },
+  { before:"Ayer ", verb:"ver", tense:"indefinido", p:0, after:" una película muy buena.", ja:"昨日、とても良い映画を見た。", topic:"preterito_imperfecto" },
+  { before:"Mientras ella ", verb:"hablar", tense:"imperfecto", p:2, after:" por teléfono, empezó a llover.", ja:"彼女が電話で話している間に、雨が降り始めた。", topic:"preterito_imperfecto" },
+  { before:"El año pasado, nosotros ", verb:"comprar", tense:"indefinido", p:3, after:" una casa nueva.", ja:"去年、私たちは新しい家を買った。", topic:"preterito_imperfecto" },
 ];
 
 /* ---------- Listening / dictation items (2 blanks per sentence, ~100-140 chars) ---------- */

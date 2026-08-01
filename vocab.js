@@ -8272,5 +8272,821 @@ const VOCAB_DATA = [
   "en": "Shy / embarrassing",
   "ja": "恥ずかしがりな、恥ずべき",
   "cat": "Adjetivos"
+ },
+ {
+  "es": "El trámite",
+  "en": "Procedure / paperwork",
+  "ja": "手続き",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El requisito",
+  "en": "Requirement",
+  "ja": "要件",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El comprobante",
+  "en": "Receipt / proof",
+  "ja": "領収書・証明書",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "Vigente",
+  "en": "Valid / in effect",
+  "ja": "有効な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Encargarse de",
+  "en": "To be in charge of",
+  "ja": "〜を担当する",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La retroalimentación",
+  "en": "Feedback",
+  "ja": "フィードバック",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Cumplir con",
+  "en": "To fulfill / comply with",
+  "ja": "〜を果たす",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El desempeño",
+  "en": "Performance",
+  "ja": "（仕事の）成果",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El plazo de entrega",
+  "en": "Delivery deadline",
+  "ja": "納期",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El malentendido",
+  "en": "Misunderstanding",
+  "ja": "誤解",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Aclarar",
+  "en": "To clarify",
+  "ja": "明確にする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Insistir",
+  "en": "To insist",
+  "ja": "主張する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Ceder",
+  "en": "To give in / yield",
+  "ja": "譲歩する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El reclamo",
+  "en": "Complaint / claim",
+  "ja": "クレーム",
+  "cat": "Compras"
+ },
+ {
+  "es": "La queja",
+  "en": "Complaint",
+  "ja": "苦情",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El inconveniente",
+  "en": "Inconvenience",
+  "ja": "不都合",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La avería",
+  "en": "Breakdown / malfunction",
+  "ja": "故障",
+  "cat": "Herramientas"
+ },
+ {
+  "es": "La cita médica",
+  "en": "Medical appointment",
+  "ja": "診察予約",
+  "cat": "Salud"
+ },
+ {
+  "es": "La receta médica",
+  "en": "Prescription",
+  "ja": "処方箋",
+  "cat": "Salud"
+ },
+ {
+  "es": "El diagnóstico",
+  "en": "Diagnosis",
+  "ja": "診断",
+  "cat": "Salud"
+ },
+ {
+  "es": "El formulario",
+  "en": "Form",
+  "ja": "書式",
+  "cat": "Educación"
+ },
+ {
+  "es": "La firma",
+  "en": "Signature",
+  "ja": "署名",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La identificación oficial",
+  "en": "Official ID",
+  "ja": "公的身分証明書",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Expedir",
+  "en": "To issue",
+  "ja": "発行する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Vencer",
+  "en": "To expire",
+  "ja": "期限切れになる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Renovar",
+  "en": "To renew",
+  "ja": "更新する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La cotización",
+  "en": "Quote / estimate",
+  "ja": "見積もり",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El proveedor",
+  "en": "Supplier",
+  "ja": "供給業者",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La sucursal",
+  "en": "Branch (office)",
+  "ja": "支店",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El horario de atención",
+  "en": "Business hours",
+  "ja": "営業時間",
+  "cat": "Compras"
+ },
+ {
+  "es": "La disponibilidad",
+  "en": "Availability",
+  "ja": "空き状況",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Malinterpretar",
+  "en": "To misinterpret",
+  "ja": "誤解する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Ponerse de acuerdo",
+  "en": "To reach an agreement",
+  "ja": "合意する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Disculparse",
+  "en": "To apologize",
+  "ja": "謝る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Justificar",
+  "en": "To justify",
+  "ja": "正当化する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Postergar",
+  "en": "To postpone",
+  "ja": "延期する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Coordinar",
+  "en": "To coordinate",
+  "ja": "調整する",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Negociar",
+  "en": "To negotiate",
+  "ja": "交渉する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Asumir",
+  "en": "To take on / assume",
+  "ja": "引き受ける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Delegar",
+  "en": "To delegate",
+  "ja": "委任する",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Priorizar",
+  "en": "To prioritize",
+  "ja": "優先させる",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Implementar",
+  "en": "To implement",
+  "ja": "実施する",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La solicitud",
+  "en": "Application / request",
+  "ja": "申請",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El acuerdo",
+  "en": "Agreement",
+  "ja": "合意",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El contrato",
+  "en": "Contract",
+  "ja": "契約",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La cláusula",
+  "en": "Clause",
+  "ja": "条項",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El arrendamiento",
+  "en": "Lease / rental",
+  "ja": "賃貸借",
+  "cat": "Casa"
+ },
+ {
+  "es": "El inquilino",
+  "en": "Tenant",
+  "ja": "賃借人",
+  "cat": "Casa"
+ },
+ {
+  "es": "El propietario",
+  "en": "Owner / landlord",
+  "ja": "所有者・大家",
+  "cat": "Casa"
+ },
+ {
+  "es": "La póliza",
+  "en": "Insurance policy",
+  "ja": "保険証券",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El siniestro",
+  "en": "Insurance claim event",
+  "ja": "保険事故",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La indemnización",
+  "en": "Compensation",
+  "ja": "賠償金",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La nómina",
+  "en": "Payroll",
+  "ja": "給与明細",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El sueldo neto",
+  "en": "Net salary",
+  "ja": "手取り給与",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Las prestaciones",
+  "en": "Benefits",
+  "ja": "福利厚生",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La jubilación",
+  "en": "Retirement",
+  "ja": "退職・年金",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La renuncia",
+  "en": "Resignation",
+  "ja": "退職・辞職",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El despido",
+  "en": "Dismissal / layoff",
+  "ja": "解雇",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El desempleo",
+  "en": "Unemployment",
+  "ja": "失業",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Postularse",
+  "en": "To apply (for a job)",
+  "ja": "応募する",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La entrevista de trabajo",
+  "en": "Job interview",
+  "ja": "就職面接",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La tripa",
+  "en": "Tripe (taco filling)",
+  "ja": "（タコスの）トリッパ・臓物",
+  "cat": "Comida"
+ },
+ {
+  "es": "El suadero",
+  "en": "Beef flank cut (popular taco filling)",
+  "ja": "スアデロ（牛の腹肉、タコスの定番）",
+  "cat": "Comida"
+ },
+ {
+  "es": "Las carnitas",
+  "en": "Braised pork (taco filling)",
+  "ja": "カルニータス（豚肉の煮込み）",
+  "cat": "Comida"
+ },
+ {
+  "es": "La birria",
+  "en": "Birria (spiced stewed meat)",
+  "ja": "ビリア（スパイス煮込み肉料理）",
+  "cat": "Comida"
+ },
+ {
+  "es": "La barbacoa",
+  "en": "Slow-cooked meat (barbacoa)",
+  "ja": "バルバコア（じっくり蒸し焼きにした肉）",
+  "cat": "Comida"
+ },
+ {
+  "es": "La cochinita pibil",
+  "en": "Yucatan-style slow-roasted pork",
+  "ja": "コチニータ・ピビル（ユカタン風豚肉料理）",
+  "cat": "Comida"
+ },
+ {
+  "es": "El chicharrón",
+  "en": "Fried pork rind",
+  "ja": "チチャロン（豚の皮の揚げ物）",
+  "cat": "Comida"
+ },
+ {
+  "es": "La lengua",
+  "en": "Tongue (taco filling)",
+  "ja": "タン（舌、タコスの具）",
+  "cat": "Comida"
+ },
+ {
+  "es": "El bistec",
+  "en": "Steak",
+  "ja": "ビステック（薄切りステーキ肉）",
+  "cat": "Comida"
+ },
+ {
+  "es": "El chorizo",
+  "en": "Mexican sausage",
+  "ja": "チョリソ（メキシコ風ソーセージ）",
+  "cat": "Comida"
+ },
+ {
+  "es": "El campechano",
+  "en": "Mixed-meat taco",
+  "ja": "カンペチャーノ（複数の肉を混ぜたタコス）",
+  "cat": "Comida"
+ },
+ {
+  "es": "Los nopales",
+  "en": "Cactus paddles (food)",
+  "ja": "ノパル（食用サボテン）",
+  "cat": "Comida"
+ },
+ {
+  "es": "El cilantro",
+  "en": "Cilantro",
+  "ja": "パクチー（コリアンダーの葉）",
+  "cat": "Comida"
+ },
+ {
+  "es": "Los antojitos",
+  "en": "Mexican street snacks",
+  "ja": "アントヒート（メキシコの軽食・屋台料理の総称）",
+  "cat": "Comida"
+ },
+ {
+  "es": "El comal",
+  "en": "Griddle (for tortillas)",
+  "ja": "コマル（トルティーヤを焼く鉄板）",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El molcajete",
+  "en": "Mortar and pestle (also serving dish)",
+  "ja": "モルカヘテ（すり鉢、盛り付け皿にも使う）",
+  "cat": "Cocina"
+ },
+ {
+  "es": "La combi",
+  "en": "Shared minibus / van",
+  "ja": "コンビ（乗り合いミニバン）",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El pesero",
+  "en": "Local minibus (Mexico City)",
+  "ja": "ペセロ（メキシコシティの乗り合いバス）",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El changarro",
+  "en": "Small informal shop",
+  "ja": "チャンガロ（小さな個人商店）",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El tianguis",
+  "en": "Street market",
+  "ja": "ティアングイス（青空市・露天市場）",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La colonia",
+  "en": "Neighborhood (Mexican term)",
+  "ja": "コロニア（メキシコでの「地区・町内」の呼び方）",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El fraccionamiento",
+  "en": "Housing development / gated community",
+  "ja": "フラクシオナミエント（住宅開発区・分譲地）",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La banqueta",
+  "en": "Sidewalk (Mexican term)",
+  "ja": "バンケタ（メキシコでの「歩道」の呼び方）",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La alberca",
+  "en": "Swimming pool (Mexican term)",
+  "ja": "アルベルカ（メキシコでの「プール」の呼び方）",
+  "cat": "Casa"
+ },
+ {
+  "es": "El popote",
+  "en": "Drinking straw (Mexican term)",
+  "ja": "ポポテ（メキシコでの「ストロー」の呼び方）",
+  "cat": "Cocina"
+ },
+ {
+  "es": "La fonda",
+  "en": "Small family-run eatery",
+  "ja": "フォンダ（家族経営の小さな食堂）",
+  "cat": "Lugares"
+ },
+ {
+  "es": "La credencial para votar",
+  "en": "Voter ID (used as general ID in Mexico)",
+  "ja": "選挙人証（メキシコで身分証明書として使われる）",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El INE",
+  "en": "National Electoral Institute (issues voter ID)",
+  "ja": "INE（国立選挙機構、選挙人証の発行元）",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El CURP",
+  "en": "Unique Population Registry Code",
+  "ja": "CURP（個人識別番号）",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El RFC",
+  "en": "Federal Taxpayer Registry number",
+  "ja": "RFC（税務者登録番号）",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El IMSS",
+  "en": "Mexican Social Security Institute",
+  "ja": "IMSS（メキシコ社会保障機構）",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La chela",
+  "en": "Beer (colloquial)",
+  "ja": "ビール（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "La autopista",
+  "en": "Highway / expressway",
+  "ja": "高速道路",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La carretera",
+  "en": "Road / highway",
+  "ja": "幹線道路",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La caseta de cobro",
+  "en": "Toll booth",
+  "ja": "料金所",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La cuota",
+  "en": "Toll fee (Mexican term)",
+  "ja": "通行料金",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La carretera libre",
+  "en": "Toll-free road (Mexican term)",
+  "ja": "無料道路",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La gasolinera",
+  "en": "Gas station",
+  "ja": "ガソリンスタンド",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La gasolina",
+  "en": "Gasoline",
+  "ja": "ガソリン",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La grúa",
+  "en": "Tow truck",
+  "ja": "レッカー車",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La verificación vehicular",
+  "en": "Vehicle emissions inspection",
+  "ja": "車検（排ガス検査）",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La tenencia",
+  "en": "Vehicle tax (Mexican term)",
+  "ja": "自動車税",
+  "cat": "Transporte"
+ },
+ {
+  "es": "Las placas",
+  "en": "License plates",
+  "ja": "ナンバープレート",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El estacionamiento",
+  "en": "Parking lot",
+  "ja": "駐車場",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El tope",
+  "en": "Speed bump (Mexican term)",
+  "ja": "減速バンプ",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El carril",
+  "en": "Lane",
+  "ja": "車線",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El límite de velocidad",
+  "en": "Speed limit",
+  "ja": "制限速度",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La multa de tránsito",
+  "en": "Traffic ticket",
+  "ja": "交通違反切符",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El seguro de auto",
+  "en": "Car insurance",
+  "ja": "自動車保険",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El taller mecánico",
+  "en": "Auto repair shop",
+  "ja": "自動車修理工場",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La ponchadura",
+  "en": "Flat tire (Mexican term)",
+  "ja": "パンク",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El libramiento",
+  "en": "Bypass road",
+  "ja": "バイパス道路",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El segundo piso",
+  "en": "Elevated highway (Mexico City term)",
+  "ja": "高架高速道路（メキシコシティの二階建て道路）",
+  "cat": "Transporte"
+ },
+ {
+  "es": "Chafa",
+  "en": "Cheap / low quality (colloquial)",
+  "ja": "安っぽい・質の悪い（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "A huevo",
+  "en": "For sure / definitely (colloquial)",
+  "ja": "絶対に・当然（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Simón",
+  "en": "Yes (colloquial)",
+  "ja": "うん（口語のはい）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Nel",
+  "en": "No (colloquial)",
+  "ja": "いや（口語のいいえ）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Sale",
+  "en": "Okay / deal (colloquial)",
+  "ja": "オーケー・決まり（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Híjole",
+  "en": "Wow / oh no (exclamation)",
+  "ja": "うわあ・げっ（口語の間投詞）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "El chavo",
+  "en": "Kid / young guy (colloquial)",
+  "ja": "若者・少年（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "La chava",
+  "en": "Kid / young girl (colloquial)",
+  "ja": "若者・少女（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "El compa",
+  "en": "Buddy (colloquial, short for compadre)",
+  "ja": "相棒（口語、compadreの略）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Carnal",
+  "en": "Close friend / bro (colloquial)",
+  "ja": "親友・兄弟のような仲（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Al chile",
+  "en": "Seriously / honestly (colloquial)",
+  "ja": "マジで・正直言うと（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "La troca",
+  "en": "Pickup truck (colloquial)",
+  "ja": "トラック（口語、英語truckから）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "La banda",
+  "en": "The crew / friends (colloquial)",
+  "ja": "仲間たち（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "El rollo",
+  "en": "The situation / deal (colloquial)",
+  "ja": "事情・話（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "El desmadre",
+  "en": "Mess / chaos (colloquial)",
+  "ja": "めちゃくちゃな状況（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Apapachar",
+  "en": "To pamper / hug affectionately",
+  "ja": "愛情を込めて甘やかす・抱きしめる",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Sacar la vuelta",
+  "en": "To dodge / avoid someone or something",
+  "ja": "避ける・逃げる（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Ni modo",
+  "en": "Oh well / nothing to be done",
+  "ja": "仕方ない（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "A poco",
+  "en": "Really? / No way (colloquial)",
+  "ja": "まさか・本当に？（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "En chinga",
+  "en": "In a hurry / quickly (colloquial)",
+  "ja": "大急ぎで（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Fifí",
+  "en": "Posh / snobbish (colloquial)",
+  "ja": "お高くとまった（口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Amar",
+  "en": "To love deeply",
+  "ja": "深く愛する",
+  "cat": "Verbos"
  }
 ];
