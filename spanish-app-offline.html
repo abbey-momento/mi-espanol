@@ -139,7 +139,7 @@
   .swipe-card-title { font-family:Georgia,serif; font-size:19px; font-weight:700; padding:20px 20px 14px; cursor:grab;
     background: rgba(255,255,255,0.06); border-bottom:1px solid rgba(255,255,255,0.1); }
   .swipe-card-title:active { cursor:grabbing; }
-  .swipe-card-body { padding:18px 20px; font-size:14.5px; line-height:1.8; white-space:pre-wrap; max-height:46vh; overflow-y:auto; -webkit-overflow-scrolling:touch; }
+  .swipe-card-body { padding:18px 20px; font-size:14.5px; line-height:1.8; white-space:pre-wrap; max-height:46vh; overflow-y:auto; -webkit-overflow-scrolling:touch; touch-action:pan-y; }
   .swipe-btn-row { display:flex; gap:14px; justify-content:center; margin-top:22px; }
   .swipe-btn { flex:1; max-width:150px; padding:16px 10px; border-radius:18px; border:none; font-size:15px; font-weight:700; cursor:pointer; font-family:inherit; }
   .swipe-btn.dislike { background:rgba(255,60,60,0.12); color:#FF8C8C; border:1px solid rgba(255,60,60,0.25); }
@@ -854,7 +854,7 @@ function summaryReturnBtn(){
 }
 /* ---------- Drill → Grammar reference linking ---------- */
 const TOPIC_TO_GRAMMAR = {
-  preposicion: "por と para の使い分け",
+  preposicion: "基本の前置詞一覧と使い方",
   pronombre: "直接目的語の代名詞（lo/la/los/las）",
   pronombre_doble: "二重目的語代名詞のくわしい語順",
   reflexivo: "再帰動詞の基本",
@@ -878,6 +878,22 @@ const TOPIC_TO_GRAMMAR = {
   interrogativos: "疑問詞の使い分け（qué / cuál / quién など）",
   preterito_imperfecto: "点過去 vs 線過去：使い分けの実践",
 };
+function grammarTitleForItem(ex, topic){
+  if(topic==="preposicion" && ex.label==="por / para") return "por と para の使い分け";
+  return TOPIC_TO_GRAMMAR[topic];
+}
+function classifyPronounRole(pron){
+  const p = (pron||"").toLowerCase().trim();
+  const words = p.split(/\s+/);
+  if(words.length===2){
+    return `間接目的語「${words[0]}」＋直接目的語「${words[1]}」`;
+  }
+  if(["lo","la","los","las"].includes(p)) return "直接目的語";
+  if(["le","les"].includes(p)) return "間接目的語";
+  if(p==="se") return "間接目的語（le/lesがseに変化）";
+  if(["me","te","nos","os"].includes(p)) return "直接目的語 or 間接目的語（文脈による）";
+  return null;
+}
 const TENSE_TO_GRAMMAR = {
   presente: "現在形の作り方（規則活用）",
   indefinido: "点過去の作り方",
@@ -900,6 +916,7 @@ function goToGrammarTopic(title, returnContext){
   playTap();
   state.detailReturnTo = returnContext || null;
   state.tab = "grammar";
+  state.grammarRoadmapOpen = false;
   state.pendingGrammarTitle = title;
   grammarDetailIdx = null;
   render();
@@ -1455,8 +1472,9 @@ function renderExamples(){
       item.innerHTML = `<div class="review-q" style="color:${markColor};">${mark}　${log.ex.before}${answerFor(log.ex)}${log.ex.after}</div>
         <div class="review-a">${log.ex.ja}</div>
         ${!log.correct ? `<div class="review-note">あなたの回答: ${log.userAnswer || "（未回答）"}</div><div class="review-note">${noteFor(log.ex)}</div>` : ""}`;
-      if(!log.correct && topic==="conjugacion" && log.ex.tense && TENSE_TO_GRAMMAR[log.ex.tense]){
-        item.appendChild(grammarLinkBtn(TENSE_TO_GRAMMAR[log.ex.tense], {tab:"conj", conjSubTab:"examples"}));
+      if(!log.correct){
+        const itemTitle = topic==="conjugacion" ? TENSE_TO_GRAMMAR[log.ex.tense] : grammarTitleForItem(log.ex, topic);
+        if(itemTitle) item.appendChild(grammarLinkBtn(itemTitle, {tab:"conj", conjSubTab:"examples"}));
       }
       rl.appendChild(item);
     });
@@ -1490,10 +1508,12 @@ function renderExamples(){
     const answer = answerFor(ex);
     const ok = norm(val) === norm(answer);
     document.getElementById("exblank").textContent = answer;
-    if(ok){ exScore++; playCorrect(); fb.textContent="¡Correcto! ✓"; fb.className="conj-feedback ok"; }
-    else{ playWrong(); fb.textContent=`正解: ${answer}`; fb.className="conj-feedback no"; exMissed.push(ex); }
+    const roleTag = (topic==="pronombre"||topic==="pronombre_doble") ? classifyPronounRole(answer) : null;
+    const roleHtml = roleTag ? ` <span style="font-size:11px;color:var(--accent3);">（${roleTag}）</span>` : "";
+    if(ok){ exScore++; playCorrect(); fb.innerHTML = "¡Correcto! ✓"+roleHtml; fb.className="conj-feedback ok"; }
+    else{ playWrong(); fb.innerHTML = `正解: ${answer}`+roleHtml; fb.className="conj-feedback no"; exMissed.push(ex); }
     exLog.push({ ex, correct:ok, userAnswer:val });
-    const statTitle = topic==="conjugacion" ? TENSE_TO_GRAMMAR[ex.tense] : TOPIC_TO_GRAMMAR[topic];
+    const statTitle = topic==="conjugacion" ? TENSE_TO_GRAMMAR[ex.tense] : grammarTitleForItem(ex, topic);
     recordGrammarStat(statTitle, ok);
     jaLine.textContent = ex.ja;
     submit.disabled=true;
@@ -1914,31 +1934,44 @@ function buildSwipeCard(article, onSwipe){
   const titleBar = el("div","swipe-card-title", article.title);
   const bodyBox = el("div","swipe-card-body"); bodyBox.textContent = article.body;
   card.appendChild(titleBar); card.appendChild(bodyBox);
-  let startX=0, curX=0, dragging=false;
-  function onDown(x){ dragging=true; startX=x; curX=0; card.style.transition="none"; }
-  function onMove(x){
+  let startX=0, startY=0, curX=0, dragging=false, decided=false, isHorizontal=false;
+  function onDown(x,y){ dragging=true; decided=false; isHorizontal=false; startX=x; startY=y; curX=0; card.style.transition="none"; }
+  function onMove(x,y,e){
     if(!dragging) return;
-    curX = x-startX;
+    const dx = x-startX, dy = y-startY;
+    if(!decided){
+      if(Math.abs(dx)<10 && Math.abs(dy)<10) return;
+      decided = true;
+      isHorizontal = Math.abs(dx) > Math.abs(dy);
+    }
+    if(!isHorizontal) return;
+    if(e && e.cancelable) e.preventDefault();
+    curX = dx;
     card.style.transform = `translateX(${curX}px) rotate(${curX/20}deg)`;
   }
   function onUp(){
     if(!dragging) return;
     dragging=false;
-    card.style.transition = "transform 0.3s ease";
-    if(curX > 90){
-      card.style.transform = `translateX(700px) rotate(25deg)`;
-      setTimeout(()=> onSwipe(true), 220);
-    } else if(curX < -90){
-      card.style.transform = `translateX(-700px) rotate(-25deg)`;
-      setTimeout(()=> onSwipe(false), 220);
-    } else {
-      card.style.transform = "translateX(0) rotate(0)";
+    if(isHorizontal){
+      card.style.transition = "transform 0.3s ease";
+      if(curX > 90){
+        card.style.transform = `translateX(700px) rotate(25deg)`;
+        setTimeout(()=> onSwipe(true), 220);
+      } else if(curX < -90){
+        card.style.transform = `translateX(-700px) rotate(-25deg)`;
+        setTimeout(()=> onSwipe(false), 220);
+      } else {
+        card.style.transform = "translateX(0) rotate(0)";
+      }
     }
+    curX=0; decided=false; isHorizontal=false;
   }
-  titleBar.addEventListener("pointerdown", (e)=>{ onDown(e.clientX); try{ titleBar.setPointerCapture(e.pointerId); }catch(err){} });
-  titleBar.addEventListener("pointermove", (e)=> onMove(e.clientX));
-  titleBar.addEventListener("pointerup", onUp);
-  titleBar.addEventListener("pointercancel", onUp);
+  [titleBar, bodyBox].forEach(area=>{
+    area.addEventListener("pointerdown", (e)=>{ onDown(e.clientX, e.clientY); try{ area.setPointerCapture(e.pointerId); }catch(err){} });
+    area.addEventListener("pointermove", (e)=> onMove(e.clientX, e.clientY, e));
+    area.addEventListener("pointerup", onUp);
+    area.addEventListener("pointercancel", onUp);
+  });
   return card;
 }
 function renderColumn(){
@@ -1958,7 +1991,7 @@ function renderColumn(){
   if(columnDeck.length===0){ columnDeck = weightedColumnSample(COLUMN_ARTICLES); columnIdx = 0; }
   if(columnIdx >= columnDeck.length){ columnDeck = weightedColumnSample(COLUMN_ARTICLES); columnIdx = 0; }
   const article = columnDeck[columnIdx];
-  app.appendChild(el("div","footer-hint", `${columnIdx+1} / ${columnDeck.length}　·　タイトルを左右にスワイプ、またはボタンで評価`));
+  app.appendChild(el("div","footer-hint", `${columnIdx+1} / ${columnDeck.length}`));
   const advance = (liked)=>{ rateColumn(article.title, liked); columnIdx++; render(); };
   app.appendChild(buildSwipeCard(article, advance));
   const btnRow = el("div","swipe-btn-row");
@@ -2003,6 +2036,9 @@ function renderNews(){
   NEWS_ITEMS.forEach((n,i)=>{
     const art = el("div","article");
     const expanded = !!newsExpanded[i];
+    const dateLabel = el("div"); dateLabel.style.fontSize="11px"; dateLabel.style.color="var(--accent3)"; dateLabel.style.fontWeight="700"; dateLabel.style.marginBottom="6px";
+    dateLabel.textContent = n.date ? `📅 ${n.date}` : "📚 背景知識（特定の日付なし）";
+    art.appendChild(dateLabel);
     const topRow = el("div"); topRow.style.display="flex"; topRow.style.alignItems="flex-start"; topRow.style.gap="10px";
     const bodyEl = el("div","article-body"); bodyEl.style.fontStyle="italic"; bodyEl.style.flex="1"; bodyEl.textContent = n.es;
     const speakBtn = el("button","speak-btn","🔊"); speakBtn.style.flexShrink="0";
