@@ -667,6 +667,50 @@ const GRAMMAR_ARTICLES = [
   "cat": "動詞の時制（直説法）"
  },
  {
+  "title": "よく使う動詞句（acabar de, volver a, estar a punto de など）",
+  "cat": "動詞の時制（直説法）",
+  "body": "「動詞＋前置詞＋不定詞」の形で、単独の時制では表せない細かいニュアンスを表す組み合わせです。まとめて覚えると表現力が大きく広がります。\n\nacabar de+不定詞（〜したばかりだ）: Acabo de comer.（食べたばかりだ）\nvolver a+不定詞（また〜する）: Volví a verlo.（また彼に会った）\nempezar a / comenzar a+不定詞（〜し始める）: Empezó a llover.（雨が降り始めた）\ndejar de+不定詞（〜するのをやめる）: Dejé de fumar.（タバコをやめた）\nestar a punto de+不定詞（まさに〜しようとしている）: Estoy a punto de salir.（今まさに出かけるところだ）\nponerse a+不定詞（〜し始める、突然の開始）: Se puso a llorar.（突然泣き出した）\nseguir/continuar+現在分詞（〜し続けている）: Sigue trabajando.（まだ働き続けている）",
+  "table": {
+   "cols": [
+    "動詞句",
+    "意味",
+    "例"
+   ],
+   "rows": [
+    [
+     "acabar de + 不定詞",
+     "〜したばかりだ",
+     "Acabo de llegar."
+    ],
+    [
+     "volver a + 不定詞",
+     "また〜する",
+     "Volvió a intentarlo."
+    ],
+    [
+     "empezar a + 不定詞",
+     "〜し始める",
+     "Empezó a estudiar."
+    ],
+    [
+     "dejar de + 不定詞",
+     "〜するのをやめる",
+     "Dejó de llover."
+    ],
+    [
+     "estar a punto de + 不定詞",
+     "まさに〜しようとしている",
+     "Está a punto de dormir."
+    ],
+    [
+     "ponerse a + 不定詞",
+     "（突然）〜し始める",
+     "Se puso a cantar."
+    ]
+   ]
+  }
+ },
+ {
   "title": "接続法現在の作り方の基本",
   "body": "接続法（subjuntivo）は、事実そのものではなく「願望・感情・疑い・不確実さ」など話し手の心の中を表す時制です。Espero que...（〜だといいな）、Quiero que...（〜してほしい）のような表現の後によく使われます。作り方は直説法現在のyoの形から-oを取り、-ar動詞は-e系、-er/-ir動詞は-a系の語尾に変えます（直説法と語尾が入れ替わるイメージです）。\n\n例: Espero que tengas un buen viaje.（良い旅行になりますように）",
   "table": {
@@ -1662,6 +1706,40 @@ const GRAMMAR_ARTICLES = [
   "cat": "文の組み立て・その他"
  },
  {
+  "title": "非人称のse（se dice que...型）",
+  "cat": "文の組み立て・その他",
+  "body": "主語が「一般の人々」「誰でも」であることを表す構文です。se+動詞（三人称単数）の形を取り、受け身のse（se venden libros＝本が売られている）とは違って、目的語が伴わないか、目的語があっても数に一致させません。\n\n例: Se dice que va a llover.（雨が降るらしい＝人々はそう言っている）\n例: En México se come mucho picante.（メキシコでは辛いものをよく食べる＝一般的に）\n例: Se vive bien aquí.（ここは暮らしやすい）\n例: No se puede fumar aquí.（ここでは喫煙できない）\n\nse pasivo（se venden libros、主語librosに動詞が一致して複数形venden）との違いは、非人称のseは常に三人称単数のままで、特定の「モノ」が主語になっていない点です。"
+ },
+ {
+  "title": "無意志のse（se me olvidó型）",
+  "cat": "文の組み立て・その他",
+  "body": "「うっかり〜してしまった」「〜が壊れた」のように、自分の意志とは関係なく起きたことを表す特別なse構文です。se＋間接目的語代名詞（me/te/le/nos/les）＋動詞（主語に一致）という語順で作ります。\n\n例: Se me olvidó tu cumpleaños.（君の誕生日をうっかり忘れてしまった＝直訳「私にとって、それが忘れられた」）\n例: Se le rompió el vaso.（彼のコップが割れてしまった）\n例: Se nos acabó el tiempo.（時間が尽きてしまった）\n\n動詞（olvidó, rompió, acabó）は「誰が」ではなく「何が」（tu cumpleaños, el vaso, el tiempo）に一致する点が重要です。単に「Olvidé tu cumpleaños.」と言うより、「わざとじゃなく、そうなってしまった」という責任を和らげるニュアンスが加わります。",
+  "table": {
+   "cols": [
+    "直接的な言い方",
+    "無意志のse構文",
+    "ニュアンスの違い"
+   ],
+   "rows": [
+    [
+     "Olvidé la tarea.",
+     "Se me olvidó la tarea.",
+     "後者は「うっかり」という响き"
+    ],
+    [
+     "Rompí el plato.",
+     "Se me rompió el plato.",
+     "後者は「わざとじゃない」という响き"
+    ],
+    [
+     "Perdí las llaves.",
+     "Se me perdieron las llaves.",
+     "後者は自分の不注意さを和らげる"
+    ]
+   ]
+  }
+ },
+ {
   "title": "gustar型動詞の語順",
   "body": "gustar（好き）は英語のlikeとは文法構造がまったく違い、「主語」と「好きな対象」が入れ替わります。直訳すると「〜にとって、それは好ましい」という構造です。\n\n例: Me gusta el café.（私はコーヒーが好き＝直訳「私にとってコーヒーは好ましい」）\n例: Me gustan los tacos.（タコスが好き＝主語がtacos複数なのでgustanと複数形になる）\n\n同じ構造を取る動詞に、me duele（痛い）、me interesa（興味がある）、me molesta（迷惑だ）、me falta（足りない）などがあります。「主語は好きな対象、間接目的語代名詞が人」という構造を意識すると混乱しにくくなります。",
   "table": {
@@ -1713,7 +1791,7 @@ const GRAMMAR_ARTICLES = [
  {
   "title": "疑問詞の使い分け（qué / cuál / quién など）",
   "cat": "文の組み立て・その他",
-  "body": "スペイン語の疑問詞は英語よりも使い分けが細かい部分があります。\n\nqué（何）: 定義や説明を求めるとき、または名詞の前で「どの」の意味。¿Qué es esto?（これは何？）／ ¿Qué libro quieres?（どの本が欲しい？）\ncuál/cuáles（どれ）: 選択肢の中から選ぶとき。¿Cuál prefieres?（どれが好き？）。qué+名詞の形と混同しやすいが、cuálは基本的に単独で使い、名詞の直前には置かない。\nquién/quiénes（誰）: 人を尋ねるとき。¿Quién es ella?（彼女は誰？）\ndónde（どこ）: 場所。¿Dónde vives?（どこに住んでる？）\ncuándo（いつ）: 時。¿Cuándo llegas?（いつ着く？）\ncómo（どのように）: 方法・様子。¿Cómo estás?（元気？）\ncuánto/cuánta/cuántos/cuántas（どれくらい）: 量・数、名詞の性数に一致。¿Cuántos años tienes?（何歳？）\npor qué（なぜ）: 理由。答えはporque（つなげて一語）で返す。",
+  "body": "スペイン語の疑問詞は英語よりも使い分けが細かい部分があります。特に迷いやすいqué と cuál は「定義か、特定か」で考えると区別しやすくなります。\n\n■ qué と cuál の核心的な違い\nqué（何）: 「〜とは何か」という定義・説明を求めるとき。¿Qué es la democracia?（民主主義とは何ですか？）\ncuál/cuáles（どれ）: すでにある選択肢・具体的な情報の中から一つを選ぶとき。¿Cuál es la capital de México?（メキシコの首都はどこですか？＝「首都」に当てはまる具体的な地名を選んでいる）\n\n英語のWhatにつられて¿Qué es tu nombre?と言ってしまいがちですが、これは誤りです。名前という具体的な情報を選んでいるので、正しくは¿Cuál es tu nombre?になります。この「英語のwhatは全部quéだと思い込む」のが最大の落とし穴です。\n\n■ 名詞との位置関係\nqué+名詞はOKですが（¿Qué libro quieres?＝どの本が欲しい？）、cuálは基本的に名詞の直前には置きません（×cuál libro）。名詞を伴わせたいときは¿Cuál de estos libros quieres?（これらの本のうちどれ？）のようにcuál de+名詞の形にします。\n\n■ その他の疑問詞\nquién/quiénes（誰）: 人を尋ねるとき。¿Quién es ella?（彼女は誰？）\ndónde（どこ）: 場所。¿Dónde vives?（どこに住んでる？）\ncuándo（いつ）: 時。¿Cuándo llegas?（いつ着く？）\ncómo（どのように）: 方法・様子。¿Cómo estás?（元気？）\ncuánto/cuánta/cuántos/cuántas（どれくらい）: 量・数、名詞の性数に一致。¿Cuántos años tienes?（何歳？）\npor qué（なぜ）: 理由。答えはporque（つなげて一語）で返す。",
   "table": {
    "cols": [
     "疑問詞",
@@ -1760,6 +1838,11 @@ const GRAMMAR_ARTICLES = [
      "por qué",
      "なぜ",
      "¿Por qué lo hiciste?（なぜそれをしたの？）"
+    ],
+    [
+     "qué vs cuál",
+     "定義 vs 特定",
+     "¿Qué es esto?（これは何？） vs ¿Cuál es tu apellido?（苗字は何？）"
     ]
    ]
   }
