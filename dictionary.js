@@ -6927,5 +6927,276 @@ const DICTIONARY_DATA = {
    "es": "— Me hace falta más tiempo para terminar.\n— Te entiendo, a mí también.",
    "ja": "「終わらせるのにもっと時間が必要なんだ」「わかるよ、私もだよ」"
   }
+ },
+ "gobierno": {
+  "nuance": "「政府」の基本語。gobernar（統治する）から派生した語。",
+  "etymology": "gobernar（統治する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "gobernar（統治する）",
+   "gobernador（知事）"
+  ],
+  "dialogue": {
+   "es": "— El gobierno anunció nuevas medidas económicas.\n— Espero que ayuden a la gente.",
+   "ja": "「政府が新しい経済対策を発表したんだ」「人々の助けになるといいね」"
+  }
+ },
+ "presidente": {
+  "nuance": "「大統領」の基本語。女性形はpresidenta。",
+  "etymology": "ラテン語praesidens（前に座る者）に由来。",
+  "synonyms": [],
+  "derived": [
+   "presidir（議長を務める）",
+   "presidencia（大統領職）"
+  ],
+  "dialogue": {
+   "es": "— ¿Quién es el presidente actual?\n— Tendría que buscarlo, no estoy seguro.",
+   "ja": "「今の大統領は誰？」「調べないと、確信が持てないな」"
+  }
+ },
+ "ciudadano": {
+  "nuance": "「市民」の基本語。ciudad（都市）から派生した語。",
+  "etymology": "ciudad（都市）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "ciudad（都市）",
+   "ciudadanía（市民権）"
+  ],
+  "dialogue": {
+   "es": "— Como ciudadanos, tenemos responsabilidades.\n— Sí, y también derechos.",
+   "ja": "「市民として、私たちには責任があるよね」「うん、そして権利もね」"
+  }
+ },
+ "ley": {
+  "nuance": "「法律」の基本語。aprobar una ley（法律を可決する）はよく使う組み合わせ。",
+  "etymology": "ラテン語lex（法）に由来。",
+  "synonyms": [],
+  "derived": [
+   "legal（合法の）",
+   "legislar（立法する）"
+  ],
+  "dialogue": {
+   "es": "— Van a aprobar una nueva ley.\n— ¿Sobre qué tema?",
+   "ja": "「新しい法律が可決されるらしいよ」「どんなテーマについて？」"
+  }
+ },
+ "derecho": {
+  "nuance": "「権利」の基本語。「法学」「まっすぐな、右」という意味にもなる多義語。",
+  "etymology": "ラテン語directus（まっすぐな）に由来。",
+  "synonyms": [],
+  "derived": [
+   "derecha（右）",
+   "directo（直接の）"
+  ],
+  "dialogue": {
+   "es": "— Todos tenemos derecho a la educación.\n— Estoy totalmente de acuerdo.",
+   "ja": "「私たちには皆、教育を受ける権利がある」「まったく同感だよ」"
+  }
+ },
+ "elección": {
+  "nuance": "「選挙」の基本語。elegir（選ぶ）の名詞形。",
+  "etymology": "elegir（選ぶ）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "elegir（選ぶ）",
+   "electoral（選挙の）"
+  ],
+  "dialogue": {
+   "es": "— Las elecciones son el próximo mes.\n— ¿Ya sabes por quién vas a votar?",
+   "ja": "「選挙は来月なんだ」「もう誰に投票するか決めた？」"
+  }
+ },
+ "voto": {
+  "nuance": "「投票」の基本語。votar（投票する）の名詞形。",
+  "etymology": "ラテン語votum（誓い、願い）に由来。",
+  "synonyms": [],
+  "derived": [
+   "votar（投票する）"
+  ],
+  "dialogue": {
+   "es": "— Mi voto es muy importante para mí.\n— Sí, hay que ejercerlo con responsabilidad.",
+   "ja": "「私にとって自分の一票はとても大切なんだ」「うん、責任を持って行使しないとね」"
+  }
+ },
+ "congreso": {
+  "nuance": "「議会」の基本語。「学会、大会」という意味にもなる。",
+  "etymology": "ラテン語congressus（会合）に由来。",
+  "synonyms": [],
+  "derived": [
+   "congresista（議員）"
+  ],
+  "dialogue": {
+   "es": "— El congreso votará la ley mañana.\n— Espero que la aprueben.",
+   "ja": "「議会は明日その法律を採決するんだ」「可決されるといいね」"
+  }
+ },
+ "constitución": {
+  "nuance": "「憲法」の基本語。「体格、構成」という意味にもなる。",
+  "etymology": "ラテン語constitutio（設立、制定）に由来。",
+  "synonyms": [],
+  "derived": [
+   "constituir（構成する）",
+   "constitucional（憲法の）"
+  ],
+  "dialogue": {
+   "es": "— La constitución protege nuestros derechos.\n— Es importante conocerla bien.",
+   "ja": "「憲法は私たちの権利を守ってくれるんだ」「よく知っておくことが大切だよね」"
+  }
+ },
+ "comunidad": {
+  "nuance": "「地域社会」の基本語。común（共通の）から派生した語。",
+  "etymology": "ラテン語communitas（共同体）に由来。",
+  "synonyms": [],
+  "derived": [
+   "común（共通の）",
+   "comunitario（地域社会の）"
+  ],
+  "dialogue": {
+   "es": "— Esta comunidad es muy unida.\n— Sí, todos se ayudan mucho.",
+   "ja": "「この地域社会はとても団結しているね」「うん、みんなよく助け合っているよね」"
+  }
+ },
+ "vecino": {
+  "nuance": "「隣人」の基本語。女性形はvecina。",
+  "etymology": "ラテン語vicinus（近くの）に由来。",
+  "synonyms": [],
+  "derived": [
+   "vecindad（近隣）",
+   "vecindario（近所）"
+  ],
+  "dialogue": {
+   "es": "— Mi vecino es muy amable.\n— Qué suerte tener buenos vecinos.",
+   "ja": "「私の隣人はとても親切なんだ」「良い隣人がいるのは幸運だよね」"
+  }
+ },
+ "generación": {
+  "nuance": "「世代」の基本語。generar（生み出す）から派生した語。",
+  "etymology": "generar（生み出す）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "generar（生み出す）",
+   "generacional（世代の）"
+  ],
+  "dialogue": {
+   "es": "— Cada generación tiene su propia música.\n— Es cierto, la mía era muy diferente.",
+   "ja": "「世代ごとに独自の音楽があるよね」「本当だね、私の世代は全然違ったよ」"
+  }
+ },
+ "pastilla": {
+  "nuance": "「錠剤」の基本語。tomar una pastilla（錠剤を飲む）はよく使う組み合わせ。",
+  "etymology": "フランス語pastille（薬用トローチ）に由来。",
+  "synonyms": [
+   "píldora（錠剤、より一般的な言い方）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Tomaste tu pastilla hoy?\n— Sí, la tomé después de desayunar.",
+   "ja": "「今日薬飲んだ？」「うん、朝食後に飲んだよ」"
+  }
+ },
+ "yeso": {
+  "nuance": "「ギプス」の基本語。「石膏」という建材の意味にもなる。",
+  "etymology": "ギリシャ語gypsos（石膏）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Cuánto tiempo tienes que usar el yeso?\n— Seis semanas más.",
+   "ja": "「ギプスはあとどれくらいつけないといけないの？」「あと6週間だよ」"
+  }
+ },
+ "incendio": {
+  "nuance": "「火事」の基本語。encender（火をつける）と同語源。",
+  "etymology": "ラテン語incendium（火事）に由来。",
+  "synonyms": [],
+  "derived": [
+   "encender（火をつける）",
+   "incendiar（放火する）"
+  ],
+  "dialogue": {
+   "es": "— Hubo un incendio en el edificio vecino.\n— ¡Qué susto! ¿Hubo heridos?",
+   "ja": "「隣のビルで火事があったんだ」「怖い！怪我人はいた？」"
+  }
+ },
+ "evacuación": {
+  "nuance": "「避難」の基本語。evacuar（避難する）の名詞形。",
+  "etymology": "evacuar（避難させる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "evacuar（避難する）"
+  ],
+  "dialogue": {
+   "es": "— La evacuación se hizo de manera ordenada.\n— Menos mal que todos estaban preparados.",
+   "ja": "「避難は秩序立てて行われたんだ」「みんな準備ができていて良かったね」"
+  }
+ },
+ "primeros auxilios": {
+  "nuance": "「応急処置」の基本語。primero（最初の）+ auxilio（助け）の組み合わせ。",
+  "etymology": "primero（最初の）+ auxilio（助け）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "auxiliar（助ける）"
+  ],
+  "dialogue": {
+   "es": "— Tomé un curso de primeros auxilios.\n— Qué útil, eso puede salvar vidas.",
+   "ja": "「応急処置の講習を受けたんだ」「役に立つね、命を救うこともあるから」"
+  }
+ },
+ "tratamiento": {
+  "nuance": "「治療」の基本語。tratar（扱う、治療する）から派生した語。",
+  "etymology": "tratar（治療する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "tratar（治療する）"
+  ],
+  "dialogue": {
+   "es": "— El tratamiento está funcionando bien.\n— Qué buena noticia.",
+   "ja": "「治療がうまくいっているんだ」「それは良い知らせだね」"
+  }
+ },
+ "termómetro": {
+  "nuance": "「体温計」の基本語。",
+  "etymology": "ギリシャ語thermos（熱い）+ metron（測定）の組み合わせ。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Dónde está el termómetro?\n— Está en el botiquín.",
+   "ja": "「体温計どこにある？」「救急箱の中にあるよ」"
+  }
+ },
+ "presión arterial": {
+  "nuance": "「血圧」の基本語。presión（圧力）+ arterial（動脈の）の組み合わせ。",
+  "etymology": "presión（圧力）+ arterial（動脈の）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "arteria（動脈）"
+  ],
+  "dialogue": {
+   "es": "— Tengo la presión arterial un poco alta.\n— Deberías cuidar tu alimentación.",
+   "ja": "「血圧が少し高いんだ」「食生活に気をつけた方がいいね」"
+  }
+ },
+ "pulso": {
+  "nuance": "「脈拍」の基本語。tomar el pulso（脈を測る）はよく使う組み合わせ。",
+  "etymology": "ラテン語pulsus（打つこと）に由来。",
+  "synonyms": [],
+  "derived": [
+   "pulsar（押す、脈打つ）"
+  ],
+  "dialogue": {
+   "es": "— El médico me tomó el pulso.\n— ¿Estaba todo normal?",
+   "ja": "「医者が脈を測ってくれたんだ」「異常はなかった？」"
+  }
+ },
+ "tos": {
+  "nuance": "「咳」の基本語。tener tos（咳が出る）はよく使う組み合わせ。",
+  "etymology": "ラテン語tussis（咳）に由来。",
+  "synonyms": [],
+  "derived": [
+   "toser（咳をする）"
+  ],
+  "dialogue": {
+   "es": "— Tengo mucha tos desde ayer.\n— Deberías tomar algo caliente.",
+   "ja": "「昨日からひどい咳が出るんだ」「何か温かいものを飲んだ方がいいよ」"
+  }
  }
 };
