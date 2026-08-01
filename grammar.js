@@ -1445,8 +1445,61 @@ const GRAMMAR_ARTICLES = [
  },
  {
   "title": "二重目的語代名詞のくわしい語順",
-  "body": "間接目的語（〜に）と直接目的語（〜を）を同時に使うとき、必ず「間接→直接」の順で並べます。そして間接目的語がle/lesの場合はseに変わります。\n\n例: ¿Me prestas el libro? → Sí, te lo presto.（本を貸してくれる？→うん、それを君に貸すよ）\n例: ¿Le diste el regalo a María? → Sí, se lo di.（マリアにプレゼントをあげた？→うん、それを彼女にあげた）\n\n「le lo」という形は存在しないので、必ずseに変える点に注意してください。",
-  "cat": "代名詞"
+  "body": "これは多くの学習者がつまずくポイントなので、順を追ってゆっくり整理します。焦らず一つずつ確認してください。\n\n■ ステップ0：そもそも直接目的語・間接目的語とは\nまず前提として、2種類の代名詞をおさらいします。\n・直接目的語代名詞（〜を）：lo, la, los, las\n・間接目的語代名詞（〜に）：me, te, le, nos, os, les\n\n「本を（直接目的語）彼に（間接目的語）貸す」のように、一つの文に両方が登場することがあります。これを一度に代名詞化するときの話がこのページのテーマです。\n\n■ ステップ1：語順は必ず「間接→直接」\n2つの代名詞を並べるときの順番は、例外なく「間接目的語→直接目的語」です。日本語の「彼に・それを」という語順とは逆で、英語の \"to him it\" のような感覚に近いです。\n\n例: te lo（間接te＋直接lo）、me la（間接me＋直接la）、nos los（間接nos＋直接los）\n\n■ ステップ2：le/lesはloやlaの前でseに変わる（最重要ルール）\n本来なら間接目的語le（彼に）と直接目的語lo（それを）を並べると「le lo」になるはずですが、この形はスペイン語には存在しません。発音のしやすさのため、le/lesはlo/la/los/lasの直前に来るときだけseに変わります。\n\n× le lo di\n○ se lo di（彼に、それをあげた）\n\nこのseは再帰動詞のseとは全くの別物なので、混同しないように注意してください。あくまで「le/lesの変装した姿」というだけです。\n\n■ ステップ3：一緒に組み立てる練習（3段階）\n実際に文を作るときは、次の3段階で考えると迷いません。\n\n① 間接目的語（誰に？）を特定する → 例：a María（マリアに）→ le\n② 直接目的語（何を？）を特定する → 例：el regalo（プレゼントを、男性単数）→ lo\n③ 間接＋直接の順で並べ、必要ならle/lesをseに変える → le+lo → se lo\n\n例文: Le di el regalo a María.（マリアにプレゼントをあげた）\n　　→ Se lo di.（それを彼女にあげた）\n\n■ ステップ4：me/te/nos/osは変化しない\nseに変わるのはle/lesだけです。me, te, nos, osはそのまま直接目的語代名詞の前に置くだけで大丈夫です。\n\n例: ¿Me prestas el libro? → Sí, te lo presto.（本を貸してくれる？→うん、それを君に貸すよ＝te＋lo、変化なし）\n例: ¿Nos vas a dar la noticia? → Sí, nos la voy a dar.（そのニュースを私たちにくれる？→うん、それを君たちにあげるよ＝nos＋la、変化なし）\n\n■ ステップ5：位置のルール（他の代名詞と同じ）\n2つ並んだ代名詞も、通常の目的語代名詞と同じ位置ルールに従います。\n・活用した動詞の前：Se lo di.\n・不定詞・現在分詞の後ろに一語としてくっつける：Voy a dártelo. / Estoy diciéndoselo.（このときアクセント記号が必要になることが多い点に注意）\n・肯定命令の後ろにくっつける：¡Dímelo!（言って、それを私に！）\n・否定命令の前に置く：¡No me lo digas!（言わないで、それを私に！）\n\n■ よくある間違い\n✕ le lo di → ○ se lo di（le/lesは必ずseに変わる）\n✕ lo le di（順番が逆）→ ○ se lo di（間接が先）\n✕ se lo lo di（seをつけたのにloを二重に書いてしまう）→ se+直接目的語は1つだけ",
+  "cat": "代名詞",
+  "table": {
+   "cols": [
+    "間接目的語",
+    "＋lo",
+    "＋la",
+    "＋los",
+    "＋las"
+   ],
+   "rows": [
+    [
+     "me",
+     "me lo",
+     "me la",
+     "me los",
+     "me las"
+    ],
+    [
+     "te",
+     "te lo",
+     "te la",
+     "te los",
+     "te las"
+    ],
+    [
+     "le → se",
+     "se lo",
+     "se la",
+     "se los",
+     "se las"
+    ],
+    [
+     "nos",
+     "nos lo",
+     "nos la",
+     "nos los",
+     "nos las"
+    ],
+    [
+     "os",
+     "os lo",
+     "os la",
+     "os los",
+     "os las"
+    ],
+    [
+     "les → se",
+     "se lo",
+     "se la",
+     "se los",
+     "se las"
+    ]
+   ]
+  }
  },
  {
   "title": "中性のlo（lo bueno, lo que）",

@@ -224,7 +224,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ir": {
-  "nuance": "「行く」の基本動詞で、ir a+動詞の原形（〜するつもりだ）という未来を表す用法も非常によく使われる。",
+  "nuance": "「行く」の基本動詞で、ir a+動詞の原形（〜するつもりだ）という未来を表す用法も非常によく使われる。 また、ir de+名詞（〜しに行く、〜の外出をする）という別の決まった用法もある：vamos de compras（買い物に行く）、vamos de viaje（旅行に行く）。vamos a（＋不定詞または場所）とは形も意味も違うので混同しないよう注意。ir a＋不定詞＝「〜するつもりだ」、ir a＋場所＝「〜へ行く」、ir de＋活動名詞＝「〜をしに出かける」。",
   "etymology": "ラテン語のire（行く）由来だが、活用は別の動詞vadere由来の形も混ざった特殊な不規則動詞。",
   "synonyms": [
    "dirigirse a（〜に向かう、ややフォーマル）"
@@ -1467,7 +1467,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mañana": {
-  "nuance": "「明日」と「朝」の両方の意味を持つ単語。文脈で判断する（mañana por la mañana＝明日の朝）。",
+  "nuance": "「明日」と「朝」の両方の意味を持つ単語。見分け方のコツ：冠詞（la）がついてla mañanaの形なら「朝」（名詞）、単独でmañanaだけなら副詞として「明日」を意味することがほとんど。mañana por la mañana（明日の朝）のように組み合わさることも多い。",
   "etymology": "俗ラテン語maneana（朝の）に由来。",
   "synonyms": [],
   "derived": [
@@ -6912,6 +6912,20 @@ const DICTIONARY_DATA = {
   "dialogue": {
    "es": "— ¿Me prestas un lápiz?\n— Claro, toma.",
    "ja": "「鉛筆貸してくれる？」「もちろん、どうぞ」"
+  }
+ },
+ "hacer falta": {
+  "nuance": "「必要である、足りない」。faltarとほぼ同じ意味・語順で使われる（gustar型の構文：hacer faltaの主語は「必要とされているもの」、必要としている人は間接目的語代名詞で表す）。Me hace falta dinero.（お金が足りない、直訳「私にとってお金が不足を成す」）のように使う。",
+  "etymology": "hacer（する）+ falta（不足）の組み合わせ。",
+  "synonyms": [
+   "faltar（足りない、ほぼ同義）"
+  ],
+  "derived": [
+   "falta（不足、欠席）"
+  ],
+  "dialogue": {
+   "es": "— Me hace falta más tiempo para terminar.\n— Te entiendo, a mí también.",
+   "ja": "「終わらせるのにもっと時間が必要なんだ」「わかるよ、私もだよ」"
   }
  }
 };
