@@ -2631,7 +2631,7 @@ const EXAMPLES = [
   "after": ".",
   "ja": "コーヒーが好きだ。私も。",
   "label": "también / tampoco",
-  "topic": "tambien_tampoco",
+  "topic": "reglas_menores",
   "note": "肯定文に同意するときはtambién。"
  },
  {
@@ -2640,26 +2640,8 @@ const EXAMPLES = [
   "after": ".",
   "ja": "コーヒーが好きじゃない。私も（好きじゃない）。",
   "label": "también / tampoco",
-  "topic": "tambien_tampoco",
+  "topic": "reglas_menores",
   "note": "否定文に同意するときはtampoco。"
- },
- {
-  "before": "Ella habla francés y yo ",
-  "answer": "también",
-  "after": ".",
-  "ja": "彼女はフランス語を話すし、私も話す。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "肯定内容に同意するのでtambién。"
- },
- {
-  "before": "Él no sabe nadar y yo ",
-  "answer": "tampoco",
-  "after": ".",
-  "ja": "彼は泳げないし、私も泳げない。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "否定内容に同意するのでtampoco。"
  },
  {
   "before": "Quiero ir al cine. Yo ",
@@ -2667,7 +2649,7 @@ const EXAMPLES = [
   "after": " quiero ir.",
   "ja": "映画に行きたい。私も行きたい。",
   "label": "también / tampoco",
-  "topic": "tambien_tampoco",
+  "topic": "reglas_menores",
   "note": "肯定文への同意はtambién。"
  },
  {
@@ -2676,26 +2658,8 @@ const EXAMPLES = [
   "after": " quiero salir.",
   "ja": "今日は出かけたくない。私も出かけたくない。",
   "label": "también / tampoco",
-  "topic": "tambien_tampoco",
+  "topic": "reglas_menores",
   "note": "否定文への同意はtampoco。"
- },
- {
-  "before": "Estudió mucho para el examen, y sus amigos ",
-  "answer": "también",
-  "after": ".",
-  "ja": "彼は試験のためによく勉強したし、友達もそうだった。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "肯定内容への同意はtambién。"
- },
- {
-  "before": "No trajo el paraguas, y nosotros ",
-  "answer": "tampoco",
-  "after": ".",
-  "ja": "彼は傘を持ってこなかったし、私たちも持ってこなかった。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "否定内容への同意はtampoco。"
  },
  {
   "before": "La persona ",
@@ -2856,7 +2820,7 @@ const EXAMPLES = [
   "after": " hijas.",
   "ja": "私には兄弟と娘がいる。",
   "label": "接続詞",
-  "topic": "conjunciones",
+  "topic": "reglas_menores",
   "note": "次の単語がi/hiの音で始まるときyはeに変わる。"
  },
  {
@@ -2874,7 +2838,7 @@ const EXAMPLES = [
   "after": " ocho estudiantes.",
   "ja": "7人か8人の生徒だ。",
   "label": "接続詞",
-  "topic": "conjunciones",
+  "topic": "reglas_menores",
   "note": "次の単語がo/hoの音で始まるときoはuに変わる。"
  },
  {
@@ -3783,7 +3747,7 @@ const EXAMPLES = [
   "after": ".",
   "ja": "土曜日に映画に行った、そして彼らも行った。",
   "label": "también / tampoco",
-  "topic": "tambien_tampoco",
+  "topic": "reglas_menores",
   "note": "肯定内容への同意はtambién。"
  },
  {
@@ -3792,25 +3756,7 @@ const EXAMPLES = [
   "after": ".",
   "ja": "出かける前に何も食べなかった、君もだね。",
   "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "否定内容への同意はtampoco。"
- },
- {
-  "before": "Le gusta el café, y a mí ",
-  "answer": "también",
-  "after": ".",
-  "ja": "彼はコーヒーが好きだ、私もだ。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "肯定内容への同意はtambién。"
- },
- {
-  "before": "No sabe nadar, y su hermano ",
-  "answer": "tampoco",
-  "after": ".",
-  "ja": "彼は泳げない、彼の弟もだ。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
+  "topic": "reglas_menores",
   "note": "否定内容への同意はtampoco。"
  },
  {
@@ -3819,7 +3765,7 @@ const EXAMPLES = [
   "after": ".",
   "ja": "私たちは遅れそうだ、あなたたちもだ。",
   "label": "también / tampoco",
-  "topic": "tambien_tampoco",
+  "topic": "reglas_menores",
   "note": "肯定内容への同意はtambién。"
  },
  {
@@ -3828,25 +3774,7 @@ const EXAMPLES = [
   "after": ".",
   "ja": "今日は予定がない、彼女もだ。",
   "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "否定内容への同意はtampoco。"
- },
- {
-  "before": "Aprendí mucho en ese curso, y mis compañeros ",
-  "answer": "también",
-  "after": ".",
-  "ja": "その講座でたくさん学んだ、同僚たちもだ。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "肯定内容への同意はtambién。"
- },
- {
-  "before": "No pudimos terminar el proyecto, y el equipo ",
-  "answer": "tampoco",
-  "after": ".",
-  "ja": "私たちはプロジェクトを終えられなかった、チームもだ。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
+  "topic": "reglas_menores",
   "note": "否定内容への同意はtampoco。"
  },
  {
@@ -4026,7 +3954,7 @@ const EXAMPLES = [
   "after": " ocho gatos, no recuerdo bien.",
   "ja": "猫を7匹か8匹飼っている、正確には覚えていない。",
   "label": "接続詞",
-  "topic": "conjunciones",
+  "topic": "reglas_menores",
   "note": "次の単語がo/hoの音で始まるときoはuに変わる。"
  },
  {
@@ -4062,7 +3990,7 @@ const EXAMPLES = [
   "after": " Irlanda el año pasado.",
   "ja": "去年イタリアとアイルランドを旅行した。",
   "label": "接続詞",
-  "topic": "conjunciones",
+  "topic": "reglas_menores",
   "note": "次の単語がi音で始まるときyはeに変わる。"
  },
  {
@@ -4642,42 +4570,6 @@ const EXAMPLES = [
   "note": "副詞lejosの前にはmuyを使う。"
  },
  {
-  "before": "Estudié toda la noche, y mis amigos ",
-  "answer": "también",
-  "after": ".",
-  "ja": "一晩中勉強した、私の友達もだ。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "肯定内容への同意はtambién。"
- },
- {
-  "before": "No fuimos a la reunión, y ellos ",
-  "answer": "tampoco",
-  "after": ".",
-  "ja": "私たちは会議に行かなかった、彼らもだ。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "否定内容への同意はtampoco。"
- },
- {
-  "before": "Le encanta viajar, y a nosotros ",
-  "answer": "también",
-  "after": ".",
-  "ja": "彼は旅行が大好きだ、私たちもだ。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "肯定内容への同意はtambién。"
- },
- {
-  "before": "No sabe cocinar, y yo ",
-  "answer": "tampoco",
-  "after": ".",
-  "ja": "彼は料理ができない、私もだ。",
-  "label": "también / tampoco",
-  "topic": "tambien_tampoco",
-  "note": "否定内容への同意はtampoco。"
- },
- {
   "before": "El hotel ",
   "answer": "donde",
   "after": " nos quedamos era muy cómodo.",
@@ -4782,7 +4674,7 @@ const EXAMPLES = [
   "after": " ocho personas en la sala.",
   "ja": "部屋には7人か8人いる。",
   "label": "接続詞",
-  "topic": "conjunciones",
+  "topic": "reglas_menores",
   "note": "次の単語がo/hoの音で始まるときoはuに変わる。"
  },
  {
