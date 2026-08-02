@@ -1017,16 +1017,16 @@ function renderDictionary(){
   app.appendChild(listWrap);
   renderDictList();
 }
-function getDictList(){
+function getDictList(keepId){
   const q = normDictKey(state.dictSearch);
   let list = state.dictShuffled ? VOCAB : [...VOCAB].sort((a,b)=> dictCategoryRank(a.cat)-dictCategoryRank(b.cat));
-  if(state.dictFilterMode==="flagged") list = list.filter(w => (progress.flagged||{})[w.id]);
-  else if(state.dictFilterMode==="hidden") list = list.filter(w => (progress.hidden||{})[w.id]);
-  else list = list.filter(w => !(progress.hidden||{})[w.id]);
-  if(state.dictColloquialOnly) list = list.filter(w=>w.cat==="Coloquial");
-  if(state.dictLevelFilter && state.dictLevelFilter.length>0) list = list.filter(w=>state.dictLevelFilter.includes(w.cefr));
+  if(state.dictFilterMode==="flagged") list = list.filter(w => (progress.flagged||{})[w.id] || w.id===keepId);
+  else if(state.dictFilterMode==="hidden") list = list.filter(w => (progress.hidden||{})[w.id] || w.id===keepId);
+  else list = list.filter(w => !(progress.hidden||{})[w.id] || w.id===keepId);
+  if(state.dictColloquialOnly) list = list.filter(w=>w.cat==="Coloquial" || w.id===keepId);
+  if(state.dictLevelFilter && state.dictLevelFilter.length>0) list = list.filter(w=>state.dictLevelFilter.includes(w.cefr) || w.id===keepId);
   if(q){
-    list = list.filter(w => normDictKey(w.es).includes(q) || normDictKey(w.ja).includes(q) || normDictKey(w.en).includes(q));
+    list = list.filter(w => normDictKey(w.es).includes(q) || normDictKey(w.ja).includes(q) || normDictKey(w.en).includes(q) || w.id===keepId);
   }
   if(state.dictShuffled && dictShuffleOrder){
     const orderIdx = {}; dictShuffleOrder.forEach((es,i)=>{ orderIdx[es]=i; });
@@ -1168,7 +1168,7 @@ function renderDictDetail(){
     }
   }
   // prev/next navigation within the current filtered list
-  const list = getDictList();
+  const list = getDictList(vocabWord ? vocabWord.id : undefined);
   const idx = list.findIndex(w => normDictKey(w.es)===key);
   if(idx!==-1){
     app.appendChild(el("div","footer-hint", `${idx+1} / ${list.length}`));

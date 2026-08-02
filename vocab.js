@@ -9730,5 +9730,629 @@ const VOCAB_DATA = [
   "en": "To break the ice",
   "ja": "場を和ませる",
   "cat": "Verbos"
+ },
+ {
+  "es": "Hacer planes",
+  "en": "To make plans",
+  "ja": "計画を立てる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Quedar con alguien",
+  "en": "To arrange to meet someone",
+  "ja": "誰かと会う約束をする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dar un consejo",
+  "en": "To give advice",
+  "ja": "アドバイスする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tomar nota",
+  "en": "To take note",
+  "ja": "メモを取る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Hacer una pausa",
+  "en": "To take a break",
+  "ja": "休憩する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dar por hecho",
+  "en": "To take for granted",
+  "ja": "当然だと思う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Hacer un esfuerzo",
+  "en": "To make an effort",
+  "ja": "努力する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tener celos",
+  "en": "To be jealous",
+  "ja": "嫉妬する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dar igual",
+  "en": "To not matter, be all the same",
+  "ja": "どっちでもいい",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Llevarse bien",
+  "en": "To get along well",
+  "ja": "仲良くやる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Llevarse mal",
+  "en": "To not get along",
+  "ja": "仲が悪い",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Caer bien",
+  "en": "To make a good impression, be likable",
+  "ja": "好印象を与える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Caer mal",
+  "en": "To make a bad impression",
+  "ja": "悪印象を与える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tener ganas de",
+  "en": "To feel like doing something",
+  "ja": "〜したい気分だ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Estar dispuesto a",
+  "en": "To be willing to",
+  "ja": "〜する気がある",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Hacer falta",
+  "en": "To be needed",
+  "ja": "必要である",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dar la bienvenida",
+  "en": "To welcome",
+  "ja": "歓迎する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tener paciencia",
+  "en": "To have patience",
+  "ja": "我慢する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dar vueltas",
+  "en": "To go around, to mull over",
+  "ja": "ぐるぐる回る、思い悩む",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Pasar de moda",
+  "en": "To go out of style",
+  "ja": "流行遅れになる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Estar de moda",
+  "en": "To be trendy",
+  "ja": "流行っている",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Hacer clic",
+  "en": "To click",
+  "ja": "クリックする",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Apagar el teléfono",
+  "en": "To turn off the phone",
+  "ja": "携帯の電源を切る",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Quedarse sin batería",
+  "en": "To run out of battery",
+  "ja": "バッテリーが切れる",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Tener señal",
+  "en": "To have signal/reception",
+  "ja": "電波がある",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Estar conectado",
+  "en": "To be connected",
+  "ja": "接続されている",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Arreglar",
+  "en": "To fix, arrange",
+  "ja": "直す、整える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Revisar",
+  "en": "To check, review",
+  "ja": "確認する、見直す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Conseguir",
+  "en": "To get, obtain",
+  "ja": "手に入れる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Acompañar",
+  "en": "To accompany",
+  "ja": "同行する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Avisar",
+  "en": "To notify, warn",
+  "ja": "知らせる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Entregar",
+  "en": "To deliver, hand over",
+  "ja": "渡す、届ける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Recoger",
+  "en": "To pick up, collect",
+  "ja": "拾う、迎えに行く",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Devolver",
+  "en": "To return (something)",
+  "ja": "返す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Ahorrar",
+  "en": "To save (money)",
+  "ja": "貯金する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Gastar",
+  "en": "To spend (money)",
+  "ja": "使う（お金）",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Invertir",
+  "en": "To invest",
+  "ja": "投資する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Empeorar",
+  "en": "To worsen",
+  "ja": "悪化する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Cuidar",
+  "en": "To take care of",
+  "ja": "世話をする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Proteger",
+  "en": "To protect",
+  "ja": "守る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Recomendar",
+  "en": "To recommend",
+  "ja": "勧める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Notar",
+  "en": "To notice",
+  "ja": "気づく",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Fijarse",
+  "en": "To pay attention, notice",
+  "ja": "注意して見る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Imaginar",
+  "en": "To imagine",
+  "ja": "想像する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Despertar",
+  "en": "To wake (someone) up",
+  "ja": "起こす",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Descansar",
+  "en": "To rest",
+  "ja": "休む",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Relajarse",
+  "en": "To relax",
+  "ja": "リラックスする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Preocuparse",
+  "en": "To worry",
+  "ja": "心配する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Molestar",
+  "en": "To bother, annoy",
+  "ja": "邪魔する、悩ませる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Enojarse",
+  "en": "To get angry",
+  "ja": "怒る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Calmarse",
+  "en": "To calm down",
+  "ja": "落ち着く",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sorprender",
+  "en": "To surprise",
+  "ja": "驚かせる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Asustar",
+  "en": "To scare",
+  "ja": "怖がらせる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Aburrir",
+  "en": "To bore",
+  "ja": "退屈させる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Divertirse",
+  "en": "To have fun",
+  "ja": "楽しむ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Disfrutar",
+  "en": "To enjoy",
+  "ja": "満喫する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sufrir",
+  "en": "To suffer",
+  "ja": "苦しむ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Soportar",
+  "en": "To tolerate, bear",
+  "ja": "我慢する、耐える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Aguantar",
+  "en": "To endure, put up with",
+  "ja": "我慢する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Resolver",
+  "en": "To resolve, solve",
+  "ja": "解決する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Solucionar",
+  "en": "To solve",
+  "ja": "解決する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Crear",
+  "en": "To create",
+  "ja": "創造する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Inventar",
+  "en": "To invent",
+  "ja": "発明する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Descubrir",
+  "en": "To discover",
+  "ja": "発見する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Investigar",
+  "en": "To investigate, research",
+  "ja": "調査する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Explicar",
+  "en": "To explain",
+  "ja": "説明する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Describir",
+  "en": "To describe",
+  "ja": "描写する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Definir",
+  "en": "To define",
+  "ja": "定義する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Distinguir",
+  "en": "To distinguish",
+  "ja": "区別する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Confundir",
+  "en": "To confuse",
+  "ja": "混同する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Reconocer",
+  "en": "To recognize",
+  "ja": "認識する、認める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Elegir",
+  "en": "To choose",
+  "ja": "選ぶ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Preferir",
+  "en": "To prefer",
+  "ja": "〜の方が好きだ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Odiar",
+  "en": "To hate",
+  "ja": "嫌う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Desear",
+  "en": "To wish, desire",
+  "ja": "望む",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Confiar",
+  "en": "To trust",
+  "ja": "信頼する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dudar",
+  "en": "To doubt",
+  "ja": "疑う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sospechar",
+  "en": "To suspect",
+  "ja": "疑う、勘づく",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Suponer",
+  "en": "To suppose, assume",
+  "ja": "推測する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Deducir",
+  "en": "To deduce",
+  "ja": "推理する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Concluir",
+  "en": "To conclude",
+  "ja": "結論づける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Negar",
+  "en": "To deny",
+  "ja": "否定する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Admitir",
+  "en": "To admit",
+  "ja": "認める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Rendirse",
+  "en": "To give up, surrender",
+  "ja": "降参する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Persistir",
+  "en": "To persist",
+  "ja": "固執する、続ける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Continuar",
+  "en": "To continue",
+  "ja": "続ける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Detener",
+  "en": "To stop, halt",
+  "ja": "止める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Parar",
+  "en": "To stop",
+  "ja": "止まる、止める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Acabar",
+  "en": "To finish",
+  "ja": "終える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Iniciar",
+  "en": "To initiate, start",
+  "ja": "開始する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Comenzar",
+  "en": "To begin",
+  "ja": "始める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Establecer",
+  "en": "To establish",
+  "ja": "確立する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Fundar",
+  "en": "To found",
+  "ja": "設立する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Preparar",
+  "en": "To prepare",
+  "ja": "準備する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dirigir",
+  "en": "To direct, manage",
+  "ja": "指揮する、経営する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Liderar",
+  "en": "To lead",
+  "ja": "率いる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Administrar",
+  "en": "To administer, manage",
+  "ja": "管理する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Manejar",
+  "en": "To handle, drive",
+  "ja": "扱う、運転する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Controlar",
+  "en": "To control",
+  "ja": "制御する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dominar",
+  "en": "To dominate, master",
+  "ja": "支配する、習得する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Superar",
+  "en": "To overcome, surpass",
+  "ja": "乗り越える、上回る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Triunfar",
+  "en": "To triumph",
+  "ja": "勝利する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Fallar",
+  "en": "To fail, malfunction",
+  "ja": "失敗する、故障する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Equivocarse",
+  "en": "To be mistaken",
+  "ja": "間違える",
+  "cat": "Verbos"
  }
 ];

@@ -281,7 +281,7 @@ const DICTIONARY_DATA = {
   }
  },
  "amigo": {
-  "nuance": "「友達」の基本語。女性形はamiga。親しさの度合いはbuen amigo（親友）などで調整する。",
+  "nuance": "女性形はamiga。親しさの度合いはbuen amigo（親友）などで調整する。",
   "etymology": "ラテン語amicus（友人）に由来、amare（愛する）と同語源。",
   "synonyms": [
    "compañero（仲間）",
@@ -297,7 +297,7 @@ const DICTIONARY_DATA = {
   }
  },
  "casa": {
-  "nuance": "「家」の基本語。hogar（家庭、家庭的な意味合いを含む）とはニュアンスが少し異なる。",
+  "nuance": "hogar（家庭、家庭的な意味合いを含む）とはニュアンスが少し異なる。",
   "etymology": "ラテン語casa（小屋）に由来。",
   "synonyms": [
    "hogar（家庭）",
@@ -313,7 +313,7 @@ const DICTIONARY_DATA = {
   }
  },
  "trabajo": {
-  "nuance": "「仕事」の基本語。口語ではchamba（メキシコ等）もよく使われる。",
+  "nuance": "口語ではchamba（メキシコ等）もよく使われる。",
   "etymology": "俗ラテン語tripaliare（拷問器具tripaliumで苦しめる）に由来するとされ、元々「苦労」の意味合いが強かった。",
   "synonyms": [
    "empleo（雇用、職）",
@@ -388,7 +388,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pequeño": {
-  "nuance": "「小さい」の基本語。人に対して使うと「幼い、年下の」という意味にもなる。",
+  "nuance": "人に対して使うと「幼い、年下の」という意味にもなる。",
   "etymology": "起源ははっきりしないが、俗ラテン語系の語とされる。",
   "synonyms": [
    "chico（口語）",
@@ -403,7 +403,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bueno": {
-  "nuance": "「良い」の基本語。名詞の前ではbuenに短縮される（un buen día）。感嘆詞的に「ええと」「まあ」という意味でも使われる。",
+  "nuance": "名詞の前ではbuenに短縮される（un buen día）。感嘆詞的に「ええと」「まあ」という意味でも使われる。",
   "etymology": "ラテン語bonus（良い）に由来。",
   "synonyms": [
    "bien（副詞形）"
@@ -418,7 +418,7 @@ const DICTIONARY_DATA = {
   }
  },
  "malo": {
-  "nuance": "「悪い」の基本語。名詞の前ではmalに短縮される（un mal día）。",
+  "nuance": "名詞の前ではmalに短縮される（un mal día）。",
   "etymology": "ラテン語malus（悪い）に由来。",
   "synonyms": [
    "pésimo（最悪の）"
@@ -477,7 +477,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dinero": {
-  "nuance": "「お金」の基本語。口語ではlanaやferiaもよく使われる（メキシコ）。",
+  "nuance": "口語ではlanaやferiaもよく使われる（メキシコ）。",
   "etymology": "ラテン語denarius（古代ローマの銀貨）に由来。",
   "synonyms": [
    "plata（口語、多くのラテンアメリカで）",
@@ -507,7 +507,7 @@ const DICTIONARY_DATA = {
   }
  },
  "feliz": {
-  "nuance": "「幸せな」の基本語。¡Feliz cumpleaños!（誕生日おめでとう）のような決まり文句にも頻出。",
+  "nuance": "¡Feliz cumpleaños!（誕生日おめでとう）のような決まり文句にも頻出。",
   "etymology": "ラテン語felix（幸運な、実り豊かな）に由来。",
   "synonyms": [
    "contento（満足した、より一時的な喜び）"
@@ -623,7 +623,7 @@ const DICTIONARY_DATA = {
   }
  },
  "importante": {
-  "nuance": "「重要な」の基本語。es importante que+接続法という形もよく使われる。",
+  "nuance": "es importante que+接続法という形もよく使われる。",
   "etymology": "ラテン語importare（持ち込む、重要である）に由来。",
   "synonyms": [
    "fundamental（基本的な、より強い）",
@@ -853,7 +853,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mundo": {
-  "nuance": "「世界」の基本語。todo el mundo（みんな、直訳「世界中」）という慣用句もよく使われる。",
+  "nuance": "todo el mundo（みんな、直訳「世界中」）という慣用句もよく使われる。",
   "etymology": "ラテン語mundus（世界、宇宙）に由来。",
   "synonyms": [],
   "derived": [
@@ -865,7 +865,7 @@ const DICTIONARY_DATA = {
   }
  },
  "país": {
-  "nuance": "「国」の基本語。patria（祖国、感情的な響きが強い）とはニュアンスが異なる。",
+  "nuance": "patria（祖国、感情的な響きが強い）とはニュアンスが異なる。",
   "etymology": "俗ラテン語pagensis（田舎、地方）に由来。",
   "synonyms": [
    "nación（国家、より政治的な響き）"
@@ -923,7 +923,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lugar": {
-  "nuance": "「場所」の基本語。en lugar de（〜の代わりに）という前置詞的表現もよく使われる。",
+  "nuance": "en lugar de（〜の代わりに）という前置詞的表現もよく使われる。",
   "etymology": "ラテン語localis（場所の）に由来。",
   "synonyms": [
    "sitio（場所、ほぼ同義）",
@@ -938,7 +938,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vida": {
-  "nuance": "「人生・命」の基本語。toda la vida（生涯ずっと）のような表現にも使われる。",
+  "nuance": "toda la vida（生涯ずっと）のような表現にも使われる。",
   "etymology": "ラテン語vita（生命）に由来、vivir（生きる）と同語源。",
   "synonyms": [],
   "derived": [
@@ -964,7 +964,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cabeza": {
-  "nuance": "「頭」の基本語。tener en la cabeza（頭にある、覚えている）のような慣用表現も多い。",
+  "nuance": "tener en la cabeza（頭にある、覚えている）のような慣用表現も多い。",
   "etymology": "俗ラテン語capitia（頭部の覆い）に由来。",
   "synonyms": [],
   "derived": [
@@ -1018,7 +1018,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rojo": {
-  "nuance": "「赤」の基本語。ponerse rojo（顔が赤くなる、恥ずかしさで）という慣用表現もある。",
+  "nuance": "ponerse rojo（顔が赤くなる、恥ずかしさで）という慣用表現もある。",
   "etymology": "ラテン語russeus（赤みがかった）に由来。",
   "synonyms": [
    "colorado（一部地域で「赤」の意味、特にメキシコ）"
@@ -1033,7 +1033,7 @@ const DICTIONARY_DATA = {
   }
  },
  "azul": {
-  "nuance": "「青」の基本語。azul marino（ネイビー）、azul cielo（スカイブルー）のように別の語と組み合わせて色味を細かく表現できる。",
+  "nuance": "azul marino（ネイビー）、azul cielo（スカイブルー）のように別の語と組み合わせて色味を細かく表現できる。",
   "etymology": "アラビア語lāzaward（ラピスラズリ）に由来。",
   "synonyms": [],
   "derived": [
@@ -1226,7 +1226,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fácil": {
-  "nuance": "「簡単な」の基本語。es fácil que+接続法という構文もある。",
+  "nuance": "es fácil que+接続法という構文もある。",
   "etymology": "ラテン語facilis（しやすい）に由来。",
   "synonyms": [
    "sencillo（シンプルな）"
@@ -1241,7 +1241,7 @@ const DICTIONARY_DATA = {
   }
  },
  "difícil": {
-  "nuance": "「難しい」の基本語。es difícil que+接続法という構文でもよく使われる。",
+  "nuance": "es difícil que+接続法という構文でもよく使われる。",
   "etymology": "ラテン語difficilis（しにくい）に由来。",
   "synonyms": [
    "complicado（複雑な）"
@@ -1256,7 +1256,7 @@ const DICTIONARY_DATA = {
   }
  },
  "madre": {
-  "nuance": "「母」の基本語。mamáはより親しみのある呼び方。メキシコの口語では特別な慣用表現も多い単語。",
+  "nuance": "mamáはより親しみのある呼び方。メキシコの口語では特別な慣用表現も多い単語。",
   "etymology": "ラテン語mater（母）に由来。",
   "synonyms": [
    "mamá（お母さん、より親しみやすい）"
@@ -1271,7 +1271,7 @@ const DICTIONARY_DATA = {
   }
  },
  "padre": {
-  "nuance": "「父」の基本語。papáはより親しみのある呼び方。メキシコの口語では「padre」が「かっこいい、いいね」という形容詞的スラングとしても使われる（¡Qué padre!）。",
+  "nuance": "papáはより親しみのある呼び方。メキシコの口語では「padre」が「かっこいい、いいね」という形容詞的スラングとしても使われる（¡Qué padre!）。",
   "etymology": "ラテン語pater（父）に由来。",
   "synonyms": [
    "papá（お父さん、より親しみやすい）"
@@ -1286,7 +1286,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hermano": {
-  "nuance": "「兄弟」の基本語。年上・年下の区別なくhermanoと呼び、必要なら「hermano mayor（兄）」「hermano menor（弟）」で区別する。",
+  "nuance": "年上・年下の区別なくhermanoと呼び、必要なら「hermano mayor（兄）」「hermano menor（弟）」で区別する。",
   "etymology": "ラテン語germanus（実の、同じ両親の）に由来。",
   "synonyms": [],
   "derived": [
@@ -1299,7 +1299,7 @@ const DICTIONARY_DATA = {
   }
  },
  "libro": {
-  "nuance": "「本」の基本語。「libre（自由な）」と綴りが似ているが無関係な語源。",
+  "nuance": "「libre（自由な）」と綴りが似ているが無関係な語源。",
   "etymology": "ラテン語liber（木の内皮、書物の材料）に由来。",
   "synonyms": [],
   "derived": [
@@ -1312,7 +1312,7 @@ const DICTIONARY_DATA = {
   }
  },
  "puerta": {
-  "nuance": "「ドア」の基本語。puerta de embarque（搭乗ゲート）のように空港関連の語にも使われる。",
+  "nuance": "puerta de embarque（搭乗ゲート）のように空港関連の語にも使われる。",
   "etymology": "ラテン語porta（門、入口）に由来。",
   "synonyms": [],
   "derived": [
@@ -1325,7 +1325,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ventana": {
-  "nuance": "「窓」の基本語。ventanilla（小窓）は、乗り物の窓や窓口を指すのによく使われる派生語。",
+  "nuance": "ventanilla（小窓）は、乗り物の窓や窓口を指すのによく使われる派生語。",
   "etymology": "ラテン語ventus（風）に由来、風を通す穴が原義。",
   "synonyms": [],
   "derived": [
@@ -1337,7 +1337,7 @@ const DICTIONARY_DATA = {
   }
  },
  "silla": {
-  "nuance": "「椅子」の基本語。silla de ruedas（車椅子）のような複合語もよく使われる。",
+  "nuance": "silla de ruedas（車椅子）のような複合語もよく使われる。",
   "etymology": "ラテン語sella（座席）に由来。",
   "synonyms": [
    "asiento（座席、より広い意味）"
@@ -1364,7 +1364,7 @@ const DICTIONARY_DATA = {
   }
  },
  "perro": {
-  "nuance": "「犬」の基本語。メキシコの口語ではperro（きつい、大変な）という形容詞的な使い方もある（trabajo perro＝きつい仕事）。",
+  "nuance": "メキシコの口語ではperro（きつい、大変な）という形容詞的な使い方もある（trabajo perro＝きつい仕事）。",
   "etymology": "起源は不明だが、ラテン語canisに由来する語ではない珍しいケース。",
   "synonyms": [],
   "derived": [
@@ -1377,7 +1377,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gato": {
-  "nuance": "「猫」の基本語。メキシコシティの人を指す口語的な呼び名としても使われることがある（chilango等と並ぶ俗称の一つ）。",
+  "nuance": "メキシコシティの人を指す口語的な呼び名としても使われることがある（chilango等と並ぶ俗称の一つ）。",
   "etymology": "俗ラテン語cattus（猫）に由来。",
   "synonyms": [],
   "derived": [
@@ -1389,7 +1389,7 @@ const DICTIONARY_DATA = {
   }
  },
  "qué": {
-  "nuance": "疑問詞「何」の基本語。アクセントなしのqueは「〜すること」という関係代名詞・接続詞になる、別の単語。",
+  "nuance": "アクセントなしのqueは「〜すること」という関係代名詞・接続詞になる、別の単語。",
   "etymology": "ラテン語quid（何）に由来。",
   "synonyms": [],
   "derived": [
@@ -1457,7 +1457,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hoy": {
-  "nuance": "「今日」の基本語。hoy en día（最近は、今日では）という慣用表現もよく使われる。",
+  "nuance": "hoy en día（最近は、今日では）という慣用表現もよく使われる。",
   "etymology": "ラテン語hodie（この日に）に由来。",
   "synonyms": [],
   "derived": [],
@@ -1479,7 +1479,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ayer": {
-  "nuance": "「昨日」の基本語。点過去とセットで使われることが非常に多い時間表現。",
+  "nuance": "点過去とセットで使われることが非常に多い時間表現。",
   "etymology": "ラテン語ad heri（昨日に）に由来。",
   "synonyms": [],
   "derived": [
@@ -1516,7 +1516,7 @@ const DICTIONARY_DATA = {
   }
  },
  "alegría": {
-  "nuance": "「喜び」の基本語。con alegría（喜んで）、salto de alegría（うれしくて飛び跳ねる）のような表現でも使われる。",
+  "nuance": "con alegría（喜んで）、salto de alegría（うれしくて飛び跳ねる）のような表現でも使われる。",
   "etymology": "ラテン語alacer（活発な、うれしい）に由来。",
   "synonyms": [
    "felicidad（幸福）",
@@ -1532,7 +1532,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tristeza": {
-  "nuance": "「悲しみ」の基本語。con tristeza（悲しげに）という副詞的表現もよく使われる。",
+  "nuance": "con tristeza（悲しげに）という副詞的表現もよく使われる。",
   "etymology": "ラテン語tristitia（悲しみ）に由来。",
   "synonyms": [
    "pena（悲しみ、残念さ）"
@@ -1757,7 +1757,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tres": {
-  "nuance": "数字の「3」の基本語。",
+  "nuance": "文法上は数字の中でも特別な単語ではないが、a las tres（3時に）のように時刻表現でも使われる。",
   "etymology": "ラテン語tres（三つの）に由来。",
   "synonyms": [],
   "derived": [
@@ -1770,7 +1770,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuatro": {
-  "nuance": "数字の「4」の基本語。",
+  "nuance": "cuatro paredes（4つの壁、比喩的に「家の中だけ」）のような慣用表現にも使われる。",
   "etymology": "ラテン語quattuor（四つの）に由来。",
   "synonyms": [],
   "derived": [
@@ -1783,7 +1783,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cinco": {
-  "nuance": "数字の「5」の基本語。",
+  "nuance": "chócala los cinco（ハイタッチしよう、直訳「5を打ち合おう」）のような口語表現もある。",
   "etymology": "ラテン語quinque（五つの）に由来。",
   "synonyms": [],
   "derived": [
@@ -1795,7 +1795,7 @@ const DICTIONARY_DATA = {
   }
  },
  "diez": {
-  "nuance": "数字の「10」の基本語。切りの良い数として色々な表現に使われる。",
+  "nuance": "切りの良い数として色々な表現に使われる。",
   "etymology": "ラテン語decem（十）に由来。",
   "synonyms": [],
   "derived": [
@@ -1808,7 +1808,7 @@ const DICTIONARY_DATA = {
   }
  },
  "veinte": {
-  "nuance": "数字の「20」の基本語。21以降はveintiuno, veintidósのように1語につながる。",
+  "nuance": "21以降はveintiuno, veintidósのように1語につながる。",
   "etymology": "ラテン語viginti（二十）に由来。",
   "synonyms": [],
   "derived": [
@@ -1965,7 +1965,7 @@ const DICTIONARY_DATA = {
   }
  },
  "verde": {
-  "nuance": "「緑」の基本語。estar verde（未熟である）という慣用表現もある。",
+  "nuance": "estar verde（未熟である）という慣用表現もある。",
   "etymology": "ラテン語viridis（緑の）に由来。",
   "synonyms": [],
   "derived": [
@@ -1978,7 +1978,7 @@ const DICTIONARY_DATA = {
   }
  },
  "amarillo": {
-  "nuance": "「黄色」の基本語。メキシコのタクシーなど、黄色が使われる場面も多い。",
+  "nuance": "メキシコのタクシーなど、黄色が使われる場面も多い。",
   "etymology": "俗ラテン語amarellus（少し苦い→黄色っぽい、の意味変化）に由来。",
   "synonyms": [],
   "derived": [
@@ -1990,7 +1990,7 @@ const DICTIONARY_DATA = {
   }
  },
  "negro": {
-  "nuance": "「黒」の基本語。mercado negro（闇市場）のような比喩表現にも使われる。",
+  "nuance": "mercado negro（闇市場）のような比喩表現にも使われる。",
   "etymology": "ラテン語niger（黒い）に由来。",
   "synonyms": [],
   "derived": [
@@ -2003,7 +2003,7 @@ const DICTIONARY_DATA = {
   }
  },
  "blanco": {
-  "nuance": "「白」の基本語。en blanco（真っ白、頭が真っ白になる）という慣用表現もある。",
+  "nuance": "en blanco（真っ白、頭が真っ白になる）という慣用表現もある。",
   "etymology": "ゲルマン語系の語blank（輝く）に由来。",
   "synonyms": [],
   "derived": [
@@ -2016,7 +2016,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gris": {
-  "nuance": "「灰色」の基本語。天気が曇っているときにも使われる（un día gris＝どんよりした日）。",
+  "nuance": "天気が曇っているときにも使われる（un día gris＝どんよりした日）。",
   "etymology": "ゲルマン語系の語gris（灰色）に由来。",
   "synonyms": [],
   "derived": [
@@ -2043,7 +2043,7 @@ const DICTIONARY_DATA = {
   }
  },
  "morado": {
-  "nuance": "「紫」の基本語。violeta（バイオレット）とほぼ同義で使われることも多い。",
+  "nuance": "violeta（バイオレット）とほぼ同義で使われることも多い。",
   "etymology": "mora（桑の実）の色に由来。",
   "synonyms": [
    "violeta（紫、バイオレット）",
@@ -2068,7 +2068,7 @@ const DICTIONARY_DATA = {
   }
  },
  "marrón": {
-  "nuance": "「茶色」の基本語。café（コーヒー色）もラテンアメリカでは茶色の意味でよく使われる。",
+  "nuance": "café（コーヒー色）もラテンアメリカでは茶色の意味でよく使われる。",
   "etymology": "フランス語marron（マロン、栗）に由来。",
   "synonyms": [
    "café（茶色、ラテンアメリカで）"
@@ -2080,7 +2080,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dorado": {
-  "nuance": "「金色」の基本語。動詞dorar（金色にする、こんがり焼く）の過去分詞から形容詞化した語。",
+  "nuance": "動詞dorar（金色にする、こんがり焼く）の過去分詞から形容詞化した語。",
   "etymology": "dorar（金色にする）の過去分詞、ラテン語deaurare（金メッキする）に由来。",
   "synonyms": [],
   "derived": [
@@ -2092,7 +2092,7 @@ const DICTIONARY_DATA = {
   }
  },
  "plateado": {
-  "nuance": "「銀色」の基本語。platear（銀メッキする）の過去分詞から形容詞化した語。",
+  "nuance": "platear（銀メッキする）の過去分詞から形容詞化した語。",
   "etymology": "plata（銀）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -2129,7 +2129,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hermana": {
-  "nuance": "「姉/妹」の基本語。年上・年下の区別なくhermanaと呼び、必要ならhermana mayor/menorで区別する。",
+  "nuance": "年上・年下の区別なくhermanaと呼び、必要ならhermana mayor/menorで区別する。",
   "etymology": "ラテン語germana（実の、同じ両親の）の女性形に由来。",
   "synonyms": [],
   "derived": [
@@ -2167,7 +2167,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hija": {
-  "nuance": "「娘」の基本語。呼びかけとして「hija」だけで親しみを込めて使われることもある。",
+  "nuance": "呼びかけとして「hija」だけで親しみを込めて使われることもある。",
   "etymology": "ラテン語filia（娘）に由来。",
   "synonyms": [],
   "derived": [
@@ -2192,7 +2192,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tía": {
-  "nuance": "「おば」の基本語。",
+  "nuance": "口語では「知らない女性、おばさん」を指すカジュアルな呼びかけにもなる（地域による）。",
   "etymology": "ラテン語thia（女性形）に由来。",
   "synonyms": [],
   "derived": [
@@ -2216,7 +2216,7 @@ const DICTIONARY_DATA = {
   }
  },
  "prima": {
-  "nuance": "「いとこ(女)」の基本語。",
+  "nuance": "男性形primoと同様、いとこには性別で語尾が変わる（primo/prima）。",
   "etymology": "primoの女性形。",
   "synonyms": [],
   "derived": [],
@@ -2265,7 +2265,7 @@ const DICTIONARY_DATA = {
   }
  },
  "nieta": {
-  "nuance": "「孫娘」の基本語。",
+  "nuance": "男性形nietoと同様、孫にも性別で語尾が変わる（nieto/nieta）。",
   "etymology": "nietoの女性形。",
   "synonyms": [],
   "derived": [
@@ -2277,7 +2277,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sobrino": {
-  "nuance": "「甥」の基本語。",
+  "nuance": "女性形はsobrina。複数形sobrinos（甥・姪たち）は男女混合グループも指せる。",
   "etymology": "ラテン語sobrinus（いとこ→後に甥・姪の意味に変化）に由来。",
   "synonyms": [],
   "derived": [],
@@ -2287,7 +2287,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sobrina": {
-  "nuance": "「姪」の基本語。",
+  "nuance": "男性形sobrinoと同様、姪にも性別で語尾が変わる（sobrino/sobrina）。",
   "etymology": "sobrinoの女性形。",
   "synonyms": [],
   "derived": [],
@@ -2297,7 +2297,7 @@ const DICTIONARY_DATA = {
   }
  },
  "suegro": {
-  "nuance": "「義父」の基本語。suegrosは「義理の両親」という意味にもなる。",
+  "nuance": "suegrosは「義理の両親」という意味にもなる。",
   "etymology": "ラテン語socer（義父）に由来。",
   "synonyms": [],
   "derived": [
@@ -2599,7 +2599,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bajo": {
-  "nuance": "「背が低い」の基本語。前置詞として「〜の下に」という意味もある（bajo la mesa＝テーブルの下に）。",
+  "nuance": "前置詞として「〜の下に」という意味もある（bajo la mesa＝テーブルの下に）。",
   "etymology": "俗ラテン語bassus（低い）に由来。",
   "synonyms": [],
   "derived": [
@@ -2612,7 +2612,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rápido": {
-  "nuance": "「速い」の基本語。副詞としても使える（Habla rápido＝速く話す）。",
+  "nuance": "副詞としても使える（Habla rápido＝速く話す）。",
   "etymology": "ラテン語rapidus（急速な）に由来。",
   "synonyms": [
    "veloz（速い、ややフォーマル）"
@@ -2626,7 +2626,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lento": {
-  "nuance": "「遅い」の基本語。副詞としても使われることがある（más lento＝もっとゆっくり）。",
+  "nuance": "副詞としても使われることがある（más lento＝もっとゆっくり）。",
   "etymology": "ラテン語lentus（しなやかな、ゆっくりした）に由来。",
   "synonyms": [],
   "derived": [
@@ -2638,7 +2638,7 @@ const DICTIONARY_DATA = {
   }
  },
  "caro": {
-  "nuance": "「高い(値段)」の基本語。背が高いのはalto、値段が高いのはcaro、と使い分ける。",
+  "nuance": "背が高いのはalto、値段が高いのはcaro、と使い分ける。",
   "etymology": "ラテン語carus（親愛な、高価な）に由来。",
   "synonyms": [],
   "derived": [
@@ -2650,7 +2650,7 @@ const DICTIONARY_DATA = {
   }
  },
  "barato": {
-  "nuance": "「安い」の基本語。",
+  "nuance": "反対語はcaro（高い）。gangaという「掘り出し物」を表す名詞もよく一緒に使われる。",
   "etymology": "アラビア語baraka（祝福、幸運）に由来するという説がある。",
   "synonyms": [],
   "derived": [
@@ -2662,7 +2662,7 @@ const DICTIONARY_DATA = {
   }
  },
  "viejo": {
-  "nuance": "「古い・年をとった」の基本語。人にもモノにも使える（メキシコの口語ではviejoが「父」、viejaが「母」を指す親しみを込めた俗称にもなる）。",
+  "nuance": "人にもモノにも使える（メキシコの口語ではviejoが「父」、viejaが「母」を指す親しみを込めた俗称にもなる）。",
   "etymology": "ラテン語vetulus（veterの指小形、年老いた）に由来。",
   "synonyms": [
    "antiguo（古い、モノ限定的）"
@@ -2677,7 +2677,7 @@ const DICTIONARY_DATA = {
   }
  },
  "limpio": {
-  "nuance": "「きれいな、清潔な」の基本語。limpiar（掃除する）の過去分詞から形容詞化した語。",
+  "nuance": "limpiar（掃除する）の過去分詞から形容詞化した語。",
   "etymology": "ラテン語limpidus（澄んだ）に由来。",
   "synonyms": [],
   "derived": [
@@ -2690,7 +2690,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sucio": {
-  "nuance": "「汚い」の基本語。juego sucio（汚い手口）のような比喩表現にも使われる。",
+  "nuance": "juego sucio（汚い手口）のような比喩表現にも使われる。",
   "etymology": "ラテン語soccidus（濡れた、汚れた）に由来。",
   "synonyms": [],
   "derived": [
@@ -2703,7 +2703,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fuerte": {
-  "nuance": "「強い」の基本語。味が濃い、音が大きい、という意味にも使われる幅広い形容詞。",
+  "nuance": "味が濃い、音が大きい、という意味にも使われる幅広い形容詞。",
   "etymology": "ラテン語fortis（強い、勇敢な）に由来。",
   "synonyms": [],
   "derived": [
@@ -2716,7 +2716,7 @@ const DICTIONARY_DATA = {
   }
  },
  "débil": {
-  "nuance": "「弱い」の基本語。",
+  "nuance": "反対語はfuerte（強い）。punto débil（弱点）という組み合わせもよく使う。",
   "etymology": "ラテン語debilis（弱い、不自由な）に由来。",
   "synonyms": [],
   "derived": [
@@ -2729,7 +2729,7 @@ const DICTIONARY_DATA = {
   }
  },
  "feo": {
-  "nuance": "「醜い」の基本語。天気が悪いときにも使われる（hace un día feo＝嫌な天気だ）。",
+  "nuance": "天気が悪いときにも使われる（hace un día feo＝嫌な天気だ）。",
   "etymology": "ラテン語foedus（醜い、恥ずべき）に由来。",
   "synonyms": [],
   "derived": [
@@ -2741,7 +2741,7 @@ const DICTIONARY_DATA = {
   }
  },
  "inteligente": {
-  "nuance": "「賢い」の基本語。listo（賢い、機転が利く）とほぼ同義で使われることもある。",
+  "nuance": "listo（賢い、機転が利く）とほぼ同義で使われることもある。",
   "etymology": "ラテン語intelligens（理解する）に由来。",
   "synonyms": [
    "listo（賢い、機転が利く）"
@@ -2755,7 +2755,7 @@ const DICTIONARY_DATA = {
   }
  },
  "divertido": {
-  "nuance": "「楽しい」の基本語。divertirse（楽しむ、再帰動詞）の過去分詞から形容詞化した語。",
+  "nuance": "divertirse（楽しむ、再帰動詞）の過去分詞から形容詞化した語。",
   "etymology": "ラテン語divertere（脇にそれる→気晴らしする）に由来。",
   "synonyms": [
    "entretenido（楽しい、面白い）"
@@ -2770,7 +2770,7 @@ const DICTIONARY_DATA = {
   }
  },
  "amable": {
-  "nuance": "「親切な」の基本語。人柄を褒めるときによく使われる。",
+  "nuance": "人柄を褒めるときによく使われる。",
   "etymology": "ラテン語amabilis（愛すべき）に由来。",
   "synonyms": [
    "gentil（親切な、丁寧な）"
@@ -2784,7 +2784,7 @@ const DICTIONARY_DATA = {
   }
  },
  "generoso": {
-  "nuance": "「寛大な・気前がいい」の基本語。",
+  "nuance": "物惜しみせず与える性質を表す、ポジティブな性格の形容詞。",
   "etymology": "ラテン語generosus（高貴な生まれの→気高い）に由来。",
   "synonyms": [],
   "derived": [
@@ -2796,7 +2796,7 @@ const DICTIONARY_DATA = {
   }
  },
  "honesto": {
-  "nuance": "「正直な」の基本語。",
+  "nuance": "反対語はdeshonesto（不誠実な）。sincero（率直な）と近い文脈で使われることも多い。",
   "etymology": "ラテン語honestus（名誉ある、誠実な）に由来。",
   "synonyms": [
    "sincero（誠実な）"
@@ -2810,7 +2810,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pan": {
-  "nuance": "「パン」の基本語。pan dulce（甘いパン）はメキシコの朝食・おやつの定番。",
+  "nuance": "pan dulce（甘いパン）はメキシコの朝食・おやつの定番。",
   "etymology": "ラテン語panis（パン）に由来。",
   "synonyms": [],
   "derived": [
@@ -2836,7 +2836,7 @@ const DICTIONARY_DATA = {
   }
  },
  "manzana": {
-  "nuance": "「りんご」の基本語。メキシコを含む一部地域では「街区・ブロック」という意味でも使われる（一区画）。",
+  "nuance": "メキシコを含む一部地域では「街区・ブロック」という意味でも使われる（一区画）。",
   "etymology": "ラテン語mala matiana（マティウス家のりんご種）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -2901,7 +2901,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ojo": {
-  "nuance": "「目」の基本語。tener ojo para（〜を見る目がある）のような慣用表現もある。",
+  "nuance": "tener ojo para（〜を見る目がある）のような慣用表現もある。",
   "etymology": "ラテン語oculus（目）に由来。",
   "synonyms": [],
   "derived": [
@@ -2913,7 +2913,7 @@ const DICTIONARY_DATA = {
   }
  },
  "oreja": {
-  "nuance": "「耳」の基本語。oído（聴覚・内耳）とは区別される（orejaは外から見える耳の部分）。",
+  "nuance": "oído（聴覚・内耳）とは区別される（orejaは外から見える耳の部分）。",
   "etymology": "ラテン語auricula（小さな耳）に由来。",
   "synonyms": [],
   "derived": [
@@ -2925,7 +2925,7 @@ const DICTIONARY_DATA = {
   }
  },
  "nariz": {
-  "nuance": "「鼻」の基本語。meter las narices（首を突っ込む）のような慣用表現もある。",
+  "nuance": "meter las narices（首を突っ込む）のような慣用表現もある。",
   "etymology": "ラテン語naris（鼻孔）に由来。",
   "synonyms": [],
   "derived": [
@@ -2937,7 +2937,7 @@ const DICTIONARY_DATA = {
   }
  },
  "boca": {
-  "nuance": "「口」の基本語。boca abajo（うつ伏せ）のような表現にも使われる。",
+  "nuance": "boca abajo（うつ伏せ）のような表現にも使われる。",
   "etymology": "ラテン語bucca（頬、口）に由来。",
   "synonyms": [],
   "derived": [
@@ -2950,7 +2950,7 @@ const DICTIONARY_DATA = {
   }
  },
  "brazo": {
-  "nuance": "「腕」の基本語。brazo derecho（右腕、比喩的に「右腕、頼れる存在」の意味にもなる）。",
+  "nuance": "brazo derecho（右腕、比喩的に「右腕、頼れる存在」の意味にもなる）。",
   "etymology": "ラテン語brachium（腕）に由来。",
   "synonyms": [],
   "derived": [
@@ -2963,7 +2963,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pierna": {
-  "nuance": "「脚」の基本語。動物の脚にも使うが、鶏肉などの「もも肉」の意味にもなる。",
+  "nuance": "動物の脚にも使うが、鶏肉などの「もも肉」の意味にもなる。",
   "etymology": "俗ラテン語perna（もも肉、脚）に由来。",
   "synonyms": [],
   "derived": [],
@@ -2973,7 +2973,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pie": {
-  "nuance": "「足」の基本語。a pie（歩いて）、de pie（立って）のような慣用表現が多い。",
+  "nuance": "a pie（歩いて）、de pie（立って）のような慣用表現が多い。",
   "etymology": "ラテン語pes/pedis（足）に由来。",
   "synonyms": [],
   "derived": [
@@ -2998,7 +2998,7 @@ const DICTIONARY_DATA = {
   }
  },
  "espalda": {
-  "nuance": "「背中」の基本語。dar la espalda（背を向ける、見捨てる）のような比喩表現もある。",
+  "nuance": "dar la espalda（背を向ける、見捨てる）のような比喩表現もある。",
   "etymology": "俗ラテン語spatula（肩甲骨）に由来。",
   "synonyms": [],
   "derived": [
@@ -3010,7 +3010,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estómago": {
-  "nuance": "「お腹・胃」の基本語。dolor de estómago（腹痛）はよく使う組み合わせ。",
+  "nuance": "dolor de estómago（腹痛）はよく使う組み合わせ。",
   "etymology": "ギリシャ語stomachos（胃）に由来。",
   "synonyms": [
    "barriga（お腹、口語）"
@@ -3022,7 +3022,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cabello": {
-  "nuance": "「髪」の基本語。peloもほぼ同義でよく使われる（cabelloの方がややフォーマル）。",
+  "nuance": "peloもほぼ同義でよく使われる（cabelloの方がややフォーマル）。",
   "etymology": "ラテン語capillus（髪）に由来。",
   "synonyms": [
    "pelo（髪、より口語的）"
@@ -3036,7 +3036,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuello": {
-  "nuance": "「首」の基本語。cuello de la botella（瓶の首→ボトルネック）のような比喩表現もある。",
+  "nuance": "cuello de la botella（瓶の首→ボトルネック）のような比喩表現もある。",
   "etymology": "ラテン語collum（首）に由来。",
   "synonyms": [],
   "derived": [
@@ -3048,7 +3048,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hombro": {
-  "nuance": "「肩」の基本語。encogerse de hombros（肩をすくめる）はよく使われる表現。",
+  "nuance": "encogerse de hombros（肩をすくめる）はよく使われる表現。",
   "etymology": "ラテン語umerus（肩）に由来。",
   "synonyms": [],
   "derived": [],
@@ -3058,7 +3058,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rodilla": {
-  "nuance": "「ひざ」の基本語。de rodillas（ひざまずいて）という表現もある。",
+  "nuance": "de rodillas（ひざまずいて）という表現もある。",
   "etymology": "俗ラテン語rotella（小さな車輪→ひざの丸い形から）に由来。",
   "synonyms": [],
   "derived": [],
@@ -3068,7 +3068,7 @@ const DICTIONARY_DATA = {
   }
  },
  "diente": {
-  "nuance": "「歯」の基本語。muela（奥歯）とは区別される。",
+  "nuance": "muela（奥歯）とは区別される。",
   "etymology": "ラテン語dens/dentis（歯）に由来。",
   "synonyms": [],
   "derived": [
@@ -3081,7 +3081,7 @@ const DICTIONARY_DATA = {
   }
  },
  "piel": {
-  "nuance": "「肌・皮膚」の基本語。動物の「毛皮」という意味にもなる。",
+  "nuance": "動物の「毛皮」という意味にもなる。",
   "etymology": "ラテン語pellis（皮）に由来。",
   "synonyms": [],
   "derived": [
@@ -3093,7 +3093,7 @@ const DICTIONARY_DATA = {
   }
  },
  "uña": {
-  "nuance": "「爪」の基本語。comerse las uñas（爪を噛む）はよくある癖を表す表現。",
+  "nuance": "comerse las uñas（爪を噛む）はよくある癖を表す表現。",
   "etymology": "ラテン語ungula（爪、蹄）に由来。",
   "synonyms": [],
   "derived": [],
@@ -3103,7 +3103,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hueso": {
-  "nuance": "「骨」の基本語。果物の「種」（果肉の中の硬い芯）という意味にもなる。",
+  "nuance": "果物の「種」（果肉の中の硬い芯）という意味にもなる。",
   "etymology": "ラテン語ossum（骨）に由来。",
   "synonyms": [],
   "derived": [
@@ -3115,7 +3115,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sangre": {
-  "nuance": "「血」の基本語。sangre fría（冷血、冷静さ）のような比喩表現も多い。",
+  "nuance": "sangre fría（冷血、冷静さ）のような比喩表現も多い。",
   "etymology": "ラテン語sanguis（血）に由来。",
   "synonyms": [],
   "derived": [
@@ -3141,7 +3141,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dormitorio": {
-  "nuance": "「寝室」の基本語。habitación（部屋、より一般的）やcuarto（部屋、口語）もほぼ同義で使われる。",
+  "nuance": "habitación（部屋、より一般的）やcuarto（部屋、口語）もほぼ同義で使われる。",
   "etymology": "ラテン語dormitorium（寝る場所）に由来、dormir（眠る）と同語源。",
   "synonyms": [
    "habitación（部屋）",
@@ -3167,7 +3167,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sala": {
-  "nuance": "「リビング」の基本語。sala de espera（待合室）のような複合語にも使われる。",
+  "nuance": "sala de espera（待合室）のような複合語にも使われる。",
   "etymology": "ゲルマン語系の語sal（部屋、広間）に由来。",
   "synonyms": [],
   "derived": [],
@@ -3177,7 +3177,7 @@ const DICTIONARY_DATA = {
   }
  },
  "jardín": {
-  "nuance": "「庭」の基本語。jardín de niños（幼稚園）という複合表現もある。",
+  "nuance": "jardín de niños（幼稚園）という複合表現もある。",
   "etymology": "ゲルマン語系の語gard（囲われた場所）に由来。",
   "synonyms": [],
   "derived": [
@@ -3190,7 +3190,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cama": {
-  "nuance": "「ベッド」の基本語。hacer la cama（ベッドを整える）はよく使う表現。",
+  "nuance": "hacer la cama（ベッドを整える）はよく使う表現。",
   "etymology": "起源ははっきりしないが、俗ラテン語系の語とされる。",
   "synonyms": [],
   "derived": [
@@ -3202,7 +3202,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sofá": {
-  "nuance": "「ソファ」の基本語。フランス語経由でアラビア語からヨーロッパの言語に広まった単語。",
+  "nuance": "フランス語経由でアラビア語からヨーロッパの言語に広まった単語。",
   "etymology": "アラビア語suffa（クッション付きの座席）に由来。",
   "synonyms": [],
   "derived": [],
@@ -3222,7 +3222,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pared": {
-  "nuance": "「壁」の基本語。建物の内壁・外壁どちらにも使う（muroは主に外の塀・壁）。",
+  "nuance": "建物の内壁・外壁どちらにも使う（muroは主に外の塀・壁）。",
   "etymology": "ラテン語paries（壁）に由来。",
   "synonyms": [
    "muro（塀、外壁）"
@@ -3234,7 +3234,7 @@ const DICTIONARY_DATA = {
   }
  },
  "escalera": {
-  "nuance": "「階段」の基本語。escalera mecánica（エスカレーター）、escalera eléctrica（同左）も派生表現。",
+  "nuance": "escalera mecánica（エスカレーター）、escalera eléctrica（同左）も派生表現。",
   "etymology": "ラテン語scalaria（階段）に由来。",
   "synonyms": [],
   "derived": [
@@ -3247,7 +3247,7 @@ const DICTIONARY_DATA = {
   }
  },
  "garaje": {
-  "nuance": "「ガレージ」の基本語。フランス語からの借用語。",
+  "nuance": "フランス語からの借用語。",
   "etymology": "フランス語garage（保管場所）に由来。",
   "synonyms": [],
   "derived": [],
@@ -3281,7 +3281,7 @@ const DICTIONARY_DATA = {
   }
  },
  "horno": {
-  "nuance": "「オーブン」の基本語。al horno（オーブンで焼いた）という表現は料理名によく使われる。",
+  "nuance": "al horno（オーブンで焼いた）という表現は料理名によく使われる。",
   "etymology": "ラテン語furnus（かまど）に由来。",
   "synonyms": [],
   "derived": [
@@ -3294,7 +3294,7 @@ const DICTIONARY_DATA = {
   }
  },
  "triste": {
-  "nuance": "「悲しい」の基本語。estar tristeで一時的な悲しみの状態を表す。",
+  "nuance": "estar tristeで一時的な悲しみの状態を表す。",
   "etymology": "ラテン語tristis（悲しい）に由来。",
   "synonyms": [],
   "derived": [
@@ -3307,7 +3307,7 @@ const DICTIONARY_DATA = {
   }
  },
  "enojado": {
-  "nuance": "「怒っている」の基本語。enojarse（怒る、再帰動詞）の過去分詞から形容詞化。メキシコではenojado、スペインではenfadadoも同義でよく使われる。",
+  "nuance": "enojarse（怒る、再帰動詞）の過去分詞から形容詞化。メキシコではenojado、スペインではenfadadoも同義でよく使われる。",
   "etymology": "俗ラテン語inodiare（嫌悪させる）に由来。",
   "synonyms": [
    "enfadado（怒っている、主にスペイン）",
@@ -3323,7 +3323,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cansado": {
-  "nuance": "「疲れた」の基本語。estar cansado de+動詞の原形/名詞で「〜にうんざりしている」という意味にもなる。",
+  "nuance": "estar cansado de+動詞の原形/名詞で「〜にうんざりしている」という意味にもなる。",
   "etymology": "cansar（疲れさせる）の過去分詞、ラテン語campsare（コースを曲がる→疲れる）に由来。",
   "synonyms": [],
   "derived": [
@@ -3336,7 +3336,7 @@ const DICTIONARY_DATA = {
   }
  },
  "nervioso": {
-  "nuance": "「緊張している」の基本語。ponerse nervioso（緊張する、状態の変化を表す）という表現もよく使う。",
+  "nuance": "ponerse nervioso（緊張する、状態の変化を表す）という表現もよく使う。",
   "etymology": "ラテン語nervosus（筋のある、力強い→神経質な、に意味変化）に由来。",
   "synonyms": [],
   "derived": [
@@ -3401,7 +3401,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tranquilo": {
-  "nuance": "「落ち着いている」の基本語。¡Tranquilo!（落ち着いて！）は日常会話で非常によく使われる。",
+  "nuance": "¡Tranquilo!（落ち着いて！）は日常会話で非常によく使われる。",
   "etymology": "ラテン語tranquillus（穏やかな）に由来。",
   "synonyms": [],
   "derived": [
@@ -3531,7 +3531,7 @@ const DICTIONARY_DATA = {
   }
  },
  "indiferente": {
-  "nuance": "「無関心な」の基本語。me da igual（どちらでもいい）と近いニュアンスで使われることもある。",
+  "nuance": "me da igual（どちらでもいい）と近いニュアンスで使われることもある。",
   "etymology": "ラテン語indifferens（区別しない）に由来。",
   "synonyms": [],
   "derived": [
@@ -3543,7 +3543,7 @@ const DICTIONARY_DATA = {
   }
  },
  "camisa": {
-  "nuance": "「シャツ」の基本語。camisetaは「Tシャツ」を指す別の単語。",
+  "nuance": "camisetaは「Tシャツ」を指す別の単語。",
   "etymology": "ラテン語camisia（シャツ、下着）に由来。",
   "synonyms": [],
   "derived": [
@@ -3566,7 +3566,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vestido": {
-  "nuance": "「ワンピース」の基本語。vestir（服を着せる）と同語源。",
+  "nuance": "vestir（服を着せる）と同語源。",
   "etymology": "ラテン語vestire（服を着せる）に由来。",
   "synonyms": [],
   "derived": [
@@ -3579,7 +3579,7 @@ const DICTIONARY_DATA = {
   }
  },
  "zapato": {
-  "nuance": "「靴」の基本語。zapatería（靴屋）、zapatero（靴職人）などの派生語も多い。",
+  "nuance": "zapatería（靴屋）、zapatero（靴職人）などの派生語も多い。",
   "etymology": "起源は諸説あるが、トルコ語やアラビア語系の語と関連するとされる。",
   "synonyms": [],
   "derived": [
@@ -3592,7 +3592,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chaqueta": {
-  "nuance": "「ジャケット」の基本語。saco（ジャケット、地域による）とほぼ同義で使われることもある。",
+  "nuance": "saco（ジャケット、地域による）とほぼ同義で使われることもある。",
   "etymology": "フランス語jaquette（短い上着）に由来。",
   "synonyms": [
    "saco（ジャケット、地域による）"
@@ -3604,7 +3604,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sombrero": {
-  "nuance": "「帽子」の基本語。メキシコの伝統的な広いつばの帽子（ソンブレロ)は世界的にも有名。gorra（キャップ）とは形状が異なる。",
+  "nuance": "メキシコの伝統的な広いつばの帽子（ソンブレロ)は世界的にも有名。gorra（キャップ）とは形状が異なる。",
   "etymology": "sombra（影）から派生、ラテン語umbra（影）に由来。",
   "synonyms": [],
   "derived": [
@@ -3616,7 +3616,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gafas": {
-  "nuance": "「眼鏡」の基本語。ラテンアメリカではlentesもよく使われる（メキシコではlentesが一般的）。",
+  "nuance": "ラテンアメリカではlentesもよく使われる（メキシコではlentesが一般的）。",
   "etymology": "gafa（フック、留め具）に由来、耳にかける形状から。",
   "synonyms": [
    "lentes（眼鏡、ラテンアメリカで一般的）"
@@ -3628,7 +3628,7 @@ const DICTIONARY_DATA = {
   }
  },
  "coche": {
-  "nuance": "「車」の基本語。地域によってcarro（ラテンアメリカで一般的）やauto（アルゼンチン等）もよく使われる。メキシコではcarroが最も一般的。",
+  "nuance": "地域によってcarro（ラテンアメリカで一般的）やauto（アルゼンチン等）もよく使われる。メキシコではcarroが最も一般的。",
   "etymology": "フランス語coche（馬車）に由来。",
   "synonyms": [
    "carro（車、ラテンアメリカで一般的）",
@@ -3643,7 +3643,7 @@ const DICTIONARY_DATA = {
   }
  },
  "autobús": {
-  "nuance": "「バス」の基本語。メキシコではcamiónもバスを指すことがある（トラックとは別の意味、地域差に注意）。",
+  "nuance": "メキシコではcamiónもバスを指すことがある（トラックとは別の意味、地域差に注意）。",
   "etymology": "フランス語autobus（自動+乗合馬車）に由来。",
   "synonyms": [
    "camión（バス、メキシコの一部地域）"
@@ -3655,7 +3655,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tren": {
-  "nuance": "「電車」の基本語。メキシコは他のラテンアメリカ諸国と比べて鉄道網が限られている。",
+  "nuance": "メキシコは他のラテンアメリカ諸国と比べて鉄道網が限られている。",
   "etymology": "フランス語train（隊列、行列）に由来。",
   "synonyms": [],
   "derived": [
@@ -3667,7 +3667,7 @@ const DICTIONARY_DATA = {
   }
  },
  "avión": {
-  "nuance": "「飛行機」の基本語。por avión（航空便で）という表現もある。",
+  "nuance": "por avión（航空便で）という表現もある。",
   "etymology": "フランス語avion（鳥のように飛ぶもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -3680,7 +3680,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bicicleta": {
-  "nuance": "「自転車」の基本語。口語ではbiciと短縮されることも多い。",
+  "nuance": "口語ではbiciと短縮されることも多い。",
   "etymology": "フランス語bicyclette（二輪）に由来。",
   "synonyms": [
    "bici（自転車、口語）"
@@ -3706,7 +3706,7 @@ const DICTIONARY_DATA = {
   }
  },
  "taxi": {
-  "nuance": "「タクシー」の基本語。メキシコシティでは公式の(sitio）タクシーとアプリ配車の両方が一般的。",
+  "nuance": "メキシコシティでは公式の(sitio）タクシーとアプリ配車の両方が一般的。",
   "etymology": "taxímetro（タクシーメーター）の短縮形に由来。",
   "synonyms": [],
   "derived": [
@@ -3718,7 +3718,7 @@ const DICTIONARY_DATA = {
   }
  },
  "metro": {
-  "nuance": "「地下鉄」の基本語。メキシコシティの地下鉄は世界でも利用者数が多い交通機関の一つ。",
+  "nuance": "メキシコシティの地下鉄は世界でも利用者数が多い交通機関の一つ。",
   "etymology": "metropolitano（大都市の）の短縮形に由来。",
   "synonyms": [],
   "derived": [],
@@ -3728,7 +3728,7 @@ const DICTIONARY_DATA = {
   }
  },
  "camión": {
-  "nuance": "「トラック」の基本語。ただしメキシコの一部地域では「バス」の意味で使われることもある地域差の大きい単語。",
+  "nuance": "ただしメキシコの一部地域では「バス」の意味で使われることもある地域差の大きい単語。",
   "etymology": "フランス語camion（荷馬車）に由来。",
   "synonyms": [],
   "derived": [
@@ -3740,7 +3740,7 @@ const DICTIONARY_DATA = {
   }
  },
  "casco": {
-  "nuance": "「ヘルメット」の基本語。都市の「旧市街」（casco antiguo/histórico）という意味にもなる。",
+  "nuance": "都市の「旧市街」（casco antiguo/histórico）という意味にもなる。",
   "etymology": "起源は諸説あるが、頭部を覆うものという概念から発展したとされる。",
   "synonyms": [],
   "derived": [],
@@ -3774,7 +3774,7 @@ const DICTIONARY_DATA = {
   }
  },
  "natación": {
-  "nuance": "「水泳」の基本語。nadar（泳ぐ）の名詞形。",
+  "nuance": "nadar（泳ぐ）の名詞形。",
   "etymology": "ラテン語natare（泳ぐ）に由来。",
   "synonyms": [],
   "derived": [
@@ -3811,7 +3811,7 @@ const DICTIONARY_DATA = {
   }
  },
  "yoga": {
-  "nuance": "「ヨガ」の基本語。サンスクリット語由来で世界共通の呼び方。",
+  "nuance": "サンスクリット語由来で世界共通の呼び方。",
   "etymology": "サンスクリット語yoga（結びつける、統合する）に由来。",
   "synonyms": [],
   "derived": [],
@@ -3821,7 +3821,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gimnasio": {
-  "nuance": "「ジム」の基本語。口語ではgymと英語のまま使われることもある。",
+  "nuance": "口語ではgymと英語のまま使われることもある。",
   "etymology": "ギリシャ語gymnasion（裸で運動する場所）に由来。",
   "synonyms": [],
   "derived": [
@@ -3833,7 +3833,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sol": {
-  "nuance": "「太陽」の基本語。hace sol（晴れている）、tomar el sol（日光浴する）などの表現でよく使う。",
+  "nuance": "hace sol（晴れている）、tomar el sol（日光浴する）などの表現でよく使う。",
   "etymology": "ラテン語sol（太陽）に由来。",
   "synonyms": [],
   "derived": [
@@ -3846,7 +3846,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lluvia": {
-  "nuance": "「雨」の基本語。llover（雨が降る）の名詞形。",
+  "nuance": "llover（雨が降る）の名詞形。",
   "etymology": "ラテン語pluvia（雨）に由来。",
   "synonyms": [],
   "derived": [
@@ -3859,7 +3859,7 @@ const DICTIONARY_DATA = {
   }
  },
  "viento": {
-  "nuance": "「風」の基本語。hace viento（風が強い）という決まった表現がある。",
+  "nuance": "hace viento（風が強い）という決まった表現がある。",
   "etymology": "ラテン語ventus（風）に由来。",
   "synonyms": [],
   "derived": [
@@ -3872,7 +3872,7 @@ const DICTIONARY_DATA = {
   }
  },
  "nieve": {
-  "nuance": "「雪」の基本語。メキシコでは意外にも「アイスクリーム」という意味でも使われることがある（地域による）。",
+  "nuance": "メキシコでは意外にも「アイスクリーム」という意味でも使われることがある（地域による）。",
   "etymology": "ラテン語nix/nivis（雪）に由来。",
   "synonyms": [],
   "derived": [
@@ -3885,7 +3885,7 @@ const DICTIONARY_DATA = {
   }
  },
  "calor": {
-  "nuance": "「暑さ」の基本語。tener calor（暑いと感じる、人が主語）とhacer calor（暑い、天気）の使い分けに注意。",
+  "nuance": "tener calor（暑いと感じる、人が主語）とhacer calor（暑い、天気）の使い分けに注意。",
   "etymology": "ラテン語calor（熱）に由来。",
   "synonyms": [],
   "derived": [
@@ -3898,7 +3898,7 @@ const DICTIONARY_DATA = {
   }
  },
  "frío": {
-  "nuance": "「寒さ」の基本語。tener frío（寒いと感じる）とhacer frío（寒い、天気）の使い分けに注意（calorと同じパターン）。",
+  "nuance": "tener frío（寒いと感じる）とhacer frío（寒い、天気）の使い分けに注意（calorと同じパターン）。",
   "etymology": "ラテン語frigidus（冷たい）に由来。",
   "synonyms": [],
   "derived": [
@@ -3921,7 +3921,7 @@ const DICTIONARY_DATA = {
   }
  },
  "niebla": {
-  "nuance": "「霧」の基本語。conducir con niebla（霧の中を運転する）は注意が必要な状況としてよく話題になる。",
+  "nuance": "conducir con niebla（霧の中を運転する）は注意が必要な状況としてよく話題になる。",
   "etymology": "ラテン語nebula（霧、雲）に由来。",
   "synonyms": [],
   "derived": [
@@ -3962,7 +3962,7 @@ const DICTIONARY_DATA = {
   }
  },
  "caballo": {
-  "nuance": "「馬」の基本語。a caballo（馬に乗って）という表現もよく使う。",
+  "nuance": "a caballo（馬に乗って）という表現もよく使う。",
   "etymology": "俗ラテン語caballus（馬、駄馬）に由来。",
   "synonyms": [],
   "derived": [
@@ -3987,7 +3987,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cerdo": {
-  "nuance": "「豚」の基本語。puerco（豚、ラテンアメリカで一般的）、chancho（豚、南米で一般的）も同義でよく使われる。",
+  "nuance": "puerco（豚、ラテンアメリカで一般的）、chancho（豚、南米で一般的）も同義でよく使われる。",
   "etymology": "ラテン語porcus（豚）から派生したとされる。",
   "synonyms": [
    "puerco（豚、口語）",
@@ -4000,7 +4000,7 @@ const DICTIONARY_DATA = {
   }
  },
  "león": {
-  "nuance": "「ライオン」の基本語。比喩的に「勇敢な人」を指すこともある。",
+  "nuance": "比喩的に「勇敢な人」を指すこともある。",
   "etymology": "ラテン語leo（ライオン）に由来。",
   "synonyms": [],
   "derived": [
@@ -4012,7 +4012,7 @@ const DICTIONARY_DATA = {
   }
  },
  "elefante": {
-  "nuance": "「象」の基本語。elefante blanco（白い象、比喩的に「役に立たない高価なもの」という慣用表現もある）。",
+  "nuance": "elefante blanco（白い象、比喩的に「役に立たない高価なもの」という慣用表現もある）。",
   "etymology": "ラテン語elephantus、さらにギリシャ語elephas（象、象牙）に由来。",
   "synonyms": [],
   "derived": [],
@@ -4022,7 +4022,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mono": {
-  "nuance": "「猿」の基本語。形容詞として「かわいい」という意味にもなる（スペインの一部地域の口語、地域差あり）。",
+  "nuance": "形容詞として「かわいい」という意味にもなる（スペインの一部地域の口語、地域差あり）。",
   "etymology": "起源は諸説あるが、イタリア語monna（女性の呼びかけ）と関連するとされる。",
   "synonyms": [],
   "derived": [
@@ -4034,7 +4034,7 @@ const DICTIONARY_DATA = {
   }
  },
  "conejo": {
-  "nuance": "「うさぎ」の基本語。conejillo de Indias（モルモット、直訳「インドの小うさぎ」）という表現もある。",
+  "nuance": "conejillo de Indias（モルモット、直訳「インドの小うさぎ」）という表現もある。",
   "etymology": "ラテン語cuniculus（うさぎ、地下トンネル）に由来。",
   "synonyms": [],
   "derived": [
@@ -4046,7 +4046,7 @@ const DICTIONARY_DATA = {
   }
  },
  "oso": {
-  "nuance": "「熊」の基本語。oso de peluche（テディベア）はよく使う複合語。",
+  "nuance": "oso de peluche（テディベア）はよく使う複合語。",
   "etymology": "ラテン語ursus（熊）に由来。",
   "synonyms": [],
   "derived": [
@@ -4058,7 +4058,7 @@ const DICTIONARY_DATA = {
   }
  },
  "serpiente": {
-  "nuance": "「蛇」の基本語。víbora（毒蛇）はより限定的な語。",
+  "nuance": "víbora（毒蛇）はより限定的な語。",
   "etymology": "ラテン語serpens（這うもの）に由来。",
   "synonyms": [
    "víbora（毒蛇）"
@@ -4070,7 +4070,7 @@ const DICTIONARY_DATA = {
   }
  },
  "delfín": {
-  "nuance": "「イルカ」の基本語。知能の高い動物として親しまれている。",
+  "nuance": "知能の高い動物として親しまれている。",
   "etymology": "ギリシャ語delphis（イルカ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -4080,7 +4080,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ballena": {
-  "nuance": "「クジラ」の基本語。ballena azul（シロナガスクジラ）は地球最大の動物として知られる。",
+  "nuance": "ballena azul（シロナガスクジラ）は地球最大の動物として知られる。",
   "etymology": "ラテン語ballaena（クジラ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -4090,7 +4090,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tiburón": {
-  "nuance": "「サメ」の基本語。比喩的に「冷酷なビジネスマン」を指すこともある。",
+  "nuance": "比喩的に「冷酷なビジネスマン」を指すこともある。",
   "etymology": "起源は諸説あるが、カリブ海地域の言語からの借用語とされる。",
   "synonyms": [],
   "derived": [],
@@ -4100,7 +4100,7 @@ const DICTIONARY_DATA = {
   }
  },
  "árbol": {
-  "nuance": "「木」の基本語。árbol genealógico（家系図、直訳「家系の木」）という表現もある。",
+  "nuance": "árbol genealógico（家系図、直訳「家系の木」）という表現もある。",
   "etymology": "ラテン語arbor（木）に由来。",
   "synonyms": [],
   "derived": [
@@ -4113,7 +4113,7 @@ const DICTIONARY_DATA = {
   }
  },
  "flor": {
-  "nuance": "「花」の基本語。flor de un día（一日花、比喩的に「はかないもの」）という表現もある。",
+  "nuance": "flor de un día（一日花、比喩的に「はかないもの」）という表現もある。",
   "etymology": "ラテン語flos/floris（花）に由来。",
   "synonyms": [],
   "derived": [
@@ -4126,7 +4126,7 @@ const DICTIONARY_DATA = {
   }
  },
  "río": {
-  "nuance": "「川」の基本語。río abajo（川下へ）、río arriba（川上へ）のような方向表現もある。",
+  "nuance": "río abajo（川下へ）、río arriba（川上へ）のような方向表現もある。",
   "etymology": "ラテン語rivus（小川）に由来。",
   "synonyms": [],
   "derived": [
@@ -4138,7 +4138,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mar": {
-  "nuance": "「海」の基本語。océano（大洋、より広い海域）とは規模が異なる。",
+  "nuance": "océano（大洋、より広い海域）とは規模が異なる。",
   "etymology": "ラテン語mare（海）に由来。",
   "synonyms": [
    "océano（大洋）"
@@ -4153,7 +4153,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cielo": {
-  "nuance": "「空」の基本語。宗教的な文脈では「天国」という意味にもなる。",
+  "nuance": "宗教的な文脈では「天国」という意味にもなる。",
   "etymology": "ラテン語caelum（空、天）に由来。",
   "synonyms": [],
   "derived": [
@@ -4165,7 +4165,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estrella": {
-  "nuance": "「星」の基本語。比喩的に「有名人、スター」という意味にもなる（una estrella de cine＝映画スター）。",
+  "nuance": "比喩的に「有名人、スター」という意味にもなる（una estrella de cine＝映画スター）。",
   "etymology": "ラテン語stella（星）に由来。",
   "synonyms": [],
   "derived": [
@@ -4177,7 +4177,7 @@ const DICTIONARY_DATA = {
   }
  },
  "luna": {
-  "nuance": "「月」の基本語。luna de miel（ハネムーン、直訳「蜜の月」）という有名な表現もある。",
+  "nuance": "luna de miel（ハネムーン、直訳「蜜の月」）という有名な表現もある。",
   "etymology": "ラテン語luna（月）に由来。",
   "synonyms": [],
   "derived": [
@@ -4189,7 +4189,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bosque": {
-  "nuance": "「森」の基本語。selva（ジャングル、より密林・熱帯のイメージ）とは区別される。",
+  "nuance": "selva（ジャングル、より密林・熱帯のイメージ）とは区別される。",
   "etymology": "ゲルマン語系の語bosk（茂み、森）に由来。",
   "synonyms": [
    "selva（ジャングル）"
@@ -4203,7 +4203,7 @@ const DICTIONARY_DATA = {
   }
  },
  "volcán": {
-  "nuance": "「火山」の基本語。メキシコには活火山が多く、ポポカテペトル山などが有名。",
+  "nuance": "メキシコには活火山が多く、ポポカテペトル山などが有名。",
   "etymology": "ローマ神話の火の神ウルカヌス（Vulcano）に由来。",
   "synonyms": [],
   "derived": [
@@ -4215,7 +4215,7 @@ const DICTIONARY_DATA = {
   }
  },
  "desierto": {
-  "nuance": "「砂漠」の基本語。メキシコ北部には広大な砂漠地帯が広がる。",
+  "nuance": "メキシコ北部には広大な砂漠地帯が広がる。",
   "etymology": "ラテン語desertus（見捨てられた）に由来。",
   "synonyms": [],
   "derived": [
@@ -4227,7 +4227,7 @@ const DICTIONARY_DATA = {
   }
  },
  "isla": {
-  "nuance": "「島」の基本語。ラテンアメリカやスペインには美しい島々が多く、観光地としても人気。",
+  "nuance": "ラテンアメリカやスペインには美しい島々が多く、観光地としても人気。",
   "etymology": "ラテン語insula（島）に由来。",
   "synonyms": [],
   "derived": [
@@ -4239,7 +4239,7 @@ const DICTIONARY_DATA = {
   }
  },
  "médico": {
-  "nuance": "「医者」の基本語。doctorもほぼ同義で呼びかけ語としてよく使われる（Doctor, ¿puedo hacerle una pregunta?）。",
+  "nuance": "doctorもほぼ同義で呼びかけ語としてよく使われる（Doctor, ¿puedo hacerle una pregunta?）。",
   "etymology": "ラテン語medicus（医者）に由来。",
   "synonyms": [
    "doctor（医者、呼びかけにも使う）"
@@ -4267,7 +4267,7 @@ const DICTIONARY_DATA = {
   }
  },
  "maestro": {
-  "nuance": "「教師」の基本語。profesorもほぼ同義で使われるが、maestroは小学校の先生、profesorは中高・大学の先生というニュアンスの違いがある地域も。",
+  "nuance": "profesorもほぼ同義で使われるが、maestroは小学校の先生、profesorは中高・大学の先生というニュアンスの違いがある地域も。",
   "etymology": "ラテン語magister（師、指導者）に由来。",
   "synonyms": [
    "profesor（教師、より一般的）"
@@ -4281,7 +4281,7 @@ const DICTIONARY_DATA = {
   }
  },
  "abogado": {
-  "nuance": "「弁護士」の基本語。女性形はabogada。",
+  "nuance": "女性形はabogada。",
   "etymology": "ラテン語advocatus（呼び寄せられた者→弁護人）に由来。",
   "synonyms": [],
   "derived": [
@@ -4293,7 +4293,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ingeniero": {
-  "nuance": "「エンジニア」の基本語。スペイン語圏では肩書きとして名前の前にIngeniero（略Ing.）をつけて呼ぶ習慣がある国もある。",
+  "nuance": "スペイン語圏では肩書きとして名前の前にIngeniero（略Ing.）をつけて呼ぶ習慣がある国もある。",
   "etymology": "ラテン語ingenium（才能、独創性）に由来。",
   "synonyms": [],
   "derived": [
@@ -4305,7 +4305,7 @@ const DICTIONARY_DATA = {
   }
  },
  "periodista": {
-  "nuance": "「記者」の基本語。男女ともperiodistaの形を使う（性別で変化しない）。",
+  "nuance": "男女ともperiodistaの形を使う（性別で変化しない）。",
   "etymology": "periódico（新聞）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4318,7 +4318,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cocinero": {
-  "nuance": "「料理人」の基本語。chef（フランス語からの借用語、より専門的なシェフ）とも使い分けられる。",
+  "nuance": "chef（フランス語からの借用語、より専門的なシェフ）とも使い分けられる。",
   "etymology": "cocinar（料理する）から派生した語。",
   "synonyms": [
    "chef（シェフ、専門的）"
@@ -4333,7 +4333,7 @@ const DICTIONARY_DATA = {
   }
  },
  "policía": {
-  "nuance": "「警察官」の基本語。la policíaは「警察（組織）」という意味になり、性で意味が変わる面白い単語。",
+  "nuance": "la policíaは「警察（組織）」という意味になり、性で意味が変わる面白い単語。",
   "etymology": "ギリシャ語politeia（都市国家の統治）に由来。",
   "synonyms": [],
   "derived": [
@@ -4345,7 +4345,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bombero": {
-  "nuance": "「消防士」の基本語。bomba（ポンプ、爆弾）から派生、消火用のポンプを扱う人が原義。",
+  "nuance": "bomba（ポンプ、爆弾）から派生、消火用のポンプを扱う人が原義。",
   "etymology": "bomba（ポンプ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4357,7 +4357,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dentista": {
-  "nuance": "「歯医者」の基本語。男女ともdentistaの形を使う（性別で変化しない）。",
+  "nuance": "男女ともdentistaの形を使う（性別で変化しない）。",
   "etymology": "diente（歯）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4369,7 +4369,7 @@ const DICTIONARY_DATA = {
   }
  },
  "veterinario": {
-  "nuance": "「獣医」の基本語。口語ではvetと短縮されることもある。",
+  "nuance": "口語ではvetと短縮されることもある。",
   "etymology": "ラテン語veterinarius（家畜の医者）に由来。",
   "synonyms": [],
   "derived": [
@@ -4381,7 +4381,7 @@ const DICTIONARY_DATA = {
   }
  },
  "científico": {
-  "nuance": "「科学者」の基本語。女性形はcientífica。",
+  "nuance": "女性形はcientífica。",
   "etymology": "ciencia（科学）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4394,7 +4394,7 @@ const DICTIONARY_DATA = {
   }
  },
  "escritor": {
-  "nuance": "「作家」の基本語。女性形はescritora。",
+  "nuance": "女性形はescritora。",
   "etymology": "escribir（書く）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4407,7 +4407,7 @@ const DICTIONARY_DATA = {
   }
  },
  "actor": {
-  "nuance": "「俳優」の基本語。女性形はactriz。",
+  "nuance": "女性形はactriz。",
   "etymology": "ラテン語actor（行為者）に由来。",
   "synonyms": [],
   "derived": [
@@ -4420,7 +4420,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cantante": {
-  "nuance": "「歌手」の基本語。男女ともcantanteの形を使う（性別で変化しない）。",
+  "nuance": "男女ともcantanteの形を使う（性別で変化しない）。",
   "etymology": "cantar（歌う）の現在分詞から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4446,7 +4446,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hospital": {
-  "nuance": "「病院」の基本語。clínica（クリニック、より小規模な医療施設）とは規模が異なる。",
+  "nuance": "clínica（クリニック、より小規模な医療施設）とは規模が異なる。",
   "etymology": "ラテン語hospitalis（客をもてなす）に由来、hotelと同語源。",
   "synonyms": [
    "clínica（クリニック）"
@@ -4460,7 +4460,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mercado": {
-  "nuance": "「市場」の基本語。mercado sobre ruedas（移動市場）のような複合語もメキシコでよく使われる。",
+  "nuance": "mercado sobre ruedas（移動市場）のような複合語もメキシコでよく使われる。",
   "etymology": "ラテン語mercatus（取引、市場）に由来。",
   "synonyms": [],
   "derived": [
@@ -4473,7 +4473,7 @@ const DICTIONARY_DATA = {
   }
  },
  "parque": {
-  "nuance": "「公園」の基本語。parque de diversiones（遊園地）という複合語もよく使われる。",
+  "nuance": "parque de diversiones（遊園地）という複合語もよく使われる。",
   "etymology": "フランス語parc（囲われた土地）に由来。",
   "synonyms": [],
   "derived": [],
@@ -4483,7 +4483,7 @@ const DICTIONARY_DATA = {
   }
  },
  "biblioteca": {
-  "nuance": "「図書館」の基本語。英語のlibraryと形が似ているが、libreríaは「本屋」という別の意味になる紛らわしい単語（false friend）。",
+  "nuance": "英語のlibraryと形が似ているが、libreríaは「本屋」という別の意味になる紛らわしい単語（false friend）。",
   "etymology": "ギリシャ語bibliothēkē（本の保管場所）に由来。",
   "synonyms": [],
   "derived": [
@@ -4495,7 +4495,7 @@ const DICTIONARY_DATA = {
   }
  },
  "farmacia": {
-  "nuance": "「薬局」の基本語。メキシコでは処方箋なしで買える薬も多く、地域による違いがある。",
+  "nuance": "メキシコでは処方箋なしで買える薬も多く、地域による違いがある。",
   "etymology": "ギリシャ語pharmakeia（薬の使用）に由来。",
   "synonyms": [],
   "derived": [
@@ -4507,7 +4507,7 @@ const DICTIONARY_DATA = {
   }
  },
  "supermercado": {
-  "nuance": "「スーパー」の基本語。súperと短縮して呼ばれることも多い。",
+  "nuance": "súperと短縮して呼ばれることも多い。",
   "etymology": "super（超）+ mercado（市場）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -4519,7 +4519,7 @@ const DICTIONARY_DATA = {
   }
  },
  "playa": {
-  "nuance": "「ビーチ」の基本語。メキシコには美しいビーチが多く、人気の観光地。",
+  "nuance": "メキシコには美しいビーチが多く、人気の観光地。",
   "etymology": "俗ラテン語plagia（海岸）に由来。",
   "synonyms": [],
   "derived": [
@@ -4531,7 +4531,7 @@ const DICTIONARY_DATA = {
   }
  },
  "montaña": {
-  "nuance": "「山」の基本語。montaña rusa（ジェットコースター、直訳「ロシアの山」）という面白い表現もある。",
+  "nuance": "montaña rusa（ジェットコースター、直訳「ロシアの山」）という面白い表現もある。",
   "etymology": "俗ラテン語montanea（山の）に由来。",
   "synonyms": [],
   "derived": [
@@ -4544,7 +4544,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ciudad": {
-  "nuance": "「都市」の基本語。Ciudad de México（メキシコシティ）のように固有名詞にも使われる。",
+  "nuance": "Ciudad de México（メキシコシティ）のように固有名詞にも使われる。",
   "etymology": "ラテン語civitas（市民権、都市国家）に由来。",
   "synonyms": [],
   "derived": [
@@ -4556,7 +4556,7 @@ const DICTIONARY_DATA = {
   }
  },
  "museo": {
-  "nuance": "「美術館・博物館」の基本語。ギリシャ神話の学芸の女神ムーサ（musa）が語源。",
+  "nuance": "ギリシャ神話の学芸の女神ムーサ（musa）が語源。",
   "etymology": "ギリシャ語mouseion（ムーサの神殿）に由来。",
   "synonyms": [],
   "derived": [],
@@ -4566,7 +4566,7 @@ const DICTIONARY_DATA = {
   }
  },
  "teléfono": {
-  "nuance": "「電話」の基本語。celular（携帯電話、ラテンアメリカ）とmóvil（携帯電話、スペイン）で地域差がある。",
+  "nuance": "celular（携帯電話、ラテンアメリカ）とmóvil（携帯電話、スペイン）で地域差がある。",
   "etymology": "ギリシャ語tele（遠くの）+ phone（音）に由来。",
   "synonyms": [
    "celular（携帯電話、ラテンアメリカ）",
@@ -4594,7 +4594,7 @@ const DICTIONARY_DATA = {
   }
  },
  "aplicación": {
-  "nuance": "「アプリ」の基本語。口語ではappと英語のまま使われることも多い。",
+  "nuance": "口語ではappと英語のまま使われることも多い。",
   "etymology": "aplicar（適用する）から派生した語。",
   "synonyms": [
    "app（アプリ、口語）"
@@ -4608,7 +4608,7 @@ const DICTIONARY_DATA = {
   }
  },
  "contraseña": {
-  "nuance": "「パスワード」の基本語。口語ではpasswordと英語のまま使われることもある。",
+  "nuance": "口語ではpasswordと英語のまま使われることもある。",
   "etymology": "contra（対抗して）+ seña（合図）の組み合わせ、元は「合言葉」の意。",
   "synonyms": [
    "password（パスワード、口語）"
@@ -4620,7 +4620,7 @@ const DICTIONARY_DATA = {
   }
  },
  "batería": {
-  "nuance": "「バッテリー」の基本語。se me acabó la batería（電池が切れた）はよく使う表現。",
+  "nuance": "se me acabó la batería（電池が切れた）はよく使う表現。",
   "etymology": "フランス語batterie（一連の道具）に由来。",
   "synonyms": [],
   "derived": [
@@ -4632,7 +4632,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pantalla": {
-  "nuance": "「画面」の基本語。pantalla táctil（タッチスクリーン）のような複合語もよく使われる。",
+  "nuance": "pantalla táctil（タッチスクリーン）のような複合語もよく使われる。",
   "etymology": "パンタ（布の一種）から派生したとされる、光を遮るものが原義。",
   "synonyms": [],
   "derived": [],
@@ -4652,7 +4652,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mensaje": {
-  "nuance": "「メッセージ」の基本語。mensaje de texto（テキストメッセージ）、dejar un mensaje（伝言を残す）のような表現もよく使う。",
+  "nuance": "mensaje de texto（テキストメッセージ）、dejar un mensaje（伝言を残す）のような表現もよく使う。",
   "etymology": "ラテン語missus（送られたもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -4664,7 +4664,7 @@ const DICTIONARY_DATA = {
   }
  },
  "red social": {
-  "nuance": "「SNS」の基本語。redes sociales（複数形）で「SNS全般」を指すことが多い。",
+  "nuance": "redes sociales（複数形）で「SNS全般」を指すことが多い。",
   "etymology": "red（網）+ social（社会的な）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -4676,7 +4676,7 @@ const DICTIONARY_DATA = {
   }
  },
  "usuario": {
-  "nuance": "「ユーザー」の基本語。SNSの「ユーザー名」という意味にもなる（¿cuál es tu usuario?＝ユーザー名は何？）。",
+  "nuance": "SNSの「ユーザー名」という意味にもなる（¿cuál es tu usuario?＝ユーザー名は何？）。",
   "etymology": "usar（使う）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4689,7 +4689,7 @@ const DICTIONARY_DATA = {
   }
  },
  "publicación": {
-  "nuance": "「投稿」の基本語。publicar（公開する、投稿する）の名詞形。",
+  "nuance": "publicar（公開する、投稿する）の名詞形。",
   "etymology": "ラテン語publicare（公にする）に由来。",
   "synonyms": [],
   "derived": [
@@ -4701,7 +4701,7 @@ const DICTIONARY_DATA = {
   }
  },
  "comentario": {
-  "nuance": "「コメント」の基本語。comentar（コメントする、論評する）の名詞形。",
+  "nuance": "comentar（コメントする、論評する）の名詞形。",
   "etymology": "ラテン語commentarius（注釈書）に由来。",
   "synonyms": [],
   "derived": [
@@ -4713,7 +4713,7 @@ const DICTIONARY_DATA = {
   }
  },
  "enlace": {
-  "nuance": "「リンク」の基本語。link（英語のまま）と言われることも多い。",
+  "nuance": "link（英語のまま）と言われることも多い。",
   "etymology": "enlazar（結びつける）から派生した語。",
   "synonyms": [
    "link（リンク、口語）"
@@ -4727,7 +4727,7 @@ const DICTIONARY_DATA = {
   }
  },
  "archivo": {
-  "nuance": "「ファイル」の基本語。「公文書館、アーカイブ」という意味にもなる。",
+  "nuance": "「公文書館、アーカイブ」という意味にもなる。",
   "etymology": "ラテン語archivum（公文書保管所）に由来。",
   "synonyms": [],
   "derived": [
@@ -4739,7 +4739,7 @@ const DICTIONARY_DATA = {
   }
  },
  "carpeta": {
-  "nuance": "「フォルダ」の基本語。英語のcarpet（じゅうたん）と似ているが無関係な紛らわしい単語（false friend）。",
+  "nuance": "英語のcarpet（じゅうたん）と似ているが無関係な紛らわしい単語（false friend）。",
   "etymology": "ラテン語carpere（つかむ、集める）に由来。",
   "synonyms": [],
   "derived": [],
@@ -4749,7 +4749,7 @@ const DICTIONARY_DATA = {
   }
  },
  "navegador": {
-  "nuance": "「ブラウザ」の基本語。navegar（航海する→ネットサーフィンする）から派生。",
+  "nuance": "navegar（航海する→ネットサーフィンする）から派生。",
   "etymology": "navegar（航海する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4761,7 +4761,7 @@ const DICTIONARY_DATA = {
   }
  },
  "oficina": {
-  "nuance": "「オフィス」の基本語。oficina en casa（在宅ワークスペース）のような複合語もよく使われる。",
+  "nuance": "oficina en casa（在宅ワークスペース）のような複合語もよく使われる。",
   "etymology": "ラテン語officina（仕事場）に由来。",
   "synonyms": [],
   "derived": [
@@ -4773,7 +4773,7 @@ const DICTIONARY_DATA = {
   }
  },
  "jefe": {
-  "nuance": "「上司」の基本語。女性形はjefa。カジュアルな呼びかけとして「ボス」という意味でも使われる。",
+  "nuance": "女性形はjefa。カジュアルな呼びかけとして「ボス」という意味でも使われる。",
   "etymology": "フランス語chef（頭、リーダー）に由来。",
   "synonyms": [],
   "derived": [
@@ -4785,7 +4785,7 @@ const DICTIONARY_DATA = {
   }
  },
  "empleado": {
-  "nuance": "「従業員」の基本語。女性形はempleada。empleado del mes（今月の優秀従業員）のような表現もある。",
+  "nuance": "女性形はempleada。empleado del mes（今月の優秀従業員）のような表現もある。",
   "etymology": "emplear（雇う）の過去分詞から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4798,7 +4798,7 @@ const DICTIONARY_DATA = {
   }
  },
  "reunión": {
-  "nuance": "「会議」の基本語。reunión familiar（家族の集まり）のように、より広く「集まり」全般にも使われる。",
+  "nuance": "reunión familiar（家族の集まり）のように、より広く「集まり」全般にも使われる。",
   "etymology": "reunir（集める）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4825,7 +4825,7 @@ const DICTIONARY_DATA = {
   }
  },
  "correo electrónico": {
-  "nuance": "「メール」の基本語。口語ではcorreoやemail（英語のまま）と短縮されることも多い。",
+  "nuance": "口語ではcorreoやemail（英語のまま）と短縮されることも多い。",
   "etymology": "correo（郵便）+ electrónico（電子の）の組み合わせ。",
   "synonyms": [
    "email（メール、口語）"
@@ -4839,7 +4839,7 @@ const DICTIONARY_DATA = {
   }
  },
  "proyecto": {
-  "nuance": "「プロジェクト」の基本語。trabajar en un proyecto（プロジェクトに取り組む）はよく使う組み合わせ。",
+  "nuance": "trabajar en un proyecto（プロジェクトに取り組む）はよく使う組み合わせ。",
   "etymology": "ラテン語proiectus（前に投げられたもの→計画）に由来。",
   "synonyms": [],
   "derived": [
@@ -4851,7 +4851,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sueldo": {
-  "nuance": "「給料」の基本語。salario（給与、ややフォーマル）ともほぼ同義。",
+  "nuance": "salario（給与、ややフォーマル）ともほぼ同義。",
   "etymology": "ラテン語solidus（古代ローマの金貨）に由来。",
   "synonyms": [
    "salario（給与、フォーマル）"
@@ -4875,7 +4875,7 @@ const DICTIONARY_DATA = {
   }
  },
  "currículum": {
-  "nuance": "「履歴書」の基本語。CV（curriculum vitaeの略）と呼ばれることも多い。",
+  "nuance": "CV（curriculum vitaeの略）と呼ばれることも多い。",
   "etymology": "ラテン語curriculum vitae（人生の経歴）に由来。",
   "synonyms": [
    "CV（履歴書、略称）"
@@ -4887,7 +4887,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cliente": {
-  "nuance": "「顧客」の基本語。女性形はclienta（一部地域）またはclienteのまま使う地域もある。",
+  "nuance": "女性形はclienta（一部地域）またはclienteのまま使う地域もある。",
   "etymology": "ラテン語cliens（保護される者、依頼人）に由来。",
   "synonyms": [],
   "derived": [
@@ -4899,7 +4899,7 @@ const DICTIONARY_DATA = {
   }
  },
  "horario": {
-  "nuance": "「スケジュール・時間割」の基本語。horario de trabajo（勤務時間）のような複合語もよく使われる。",
+  "nuance": "horario de trabajo（勤務時間）のような複合語もよく使われる。",
   "etymology": "hora（時間）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4911,7 +4911,7 @@ const DICTIONARY_DATA = {
   }
  },
  "olla": {
-  "nuance": "「鍋」の基本語。olla exprés（圧力鍋）のような複合語もよく使われる。",
+  "nuance": "olla exprés（圧力鍋）のような複合語もよく使われる。",
   "etymology": "ラテン語olla（壺、鍋）に由来。",
   "synonyms": [],
   "derived": [],
@@ -4921,7 +4921,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sartén": {
-  "nuance": "「フライパン」の基本語。地域によって女性名詞（la sartén）と男性名詞（el sartén）どちらも使われる珍しい単語。",
+  "nuance": "地域によって女性名詞（la sartén）と男性名詞（el sartén）どちらも使われる珍しい単語。",
   "etymology": "ラテン語sartago（フライパン）に由来。",
   "synonyms": [],
   "derived": [],
@@ -4931,7 +4931,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuchillo": {
-  "nuance": "「包丁・ナイフ」の基本語。cuchillo de cocina（調理用包丁）のように用途を明示することも多い。",
+  "nuance": "cuchillo de cocina（調理用包丁）のように用途を明示することも多い。",
   "etymology": "俗ラテン語cultellus（小さな刃物）に由来。",
   "synonyms": [],
   "derived": [
@@ -4943,7 +4943,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuchara": {
-  "nuance": "「スプーン」の基本語。cucharita（小さじ、ティースプーン）は指小形。",
+  "nuance": "cucharita（小さじ、ティースプーン）は指小形。",
   "etymology": "ラテン語cochlear（スプーン）に由来。",
   "synonyms": [],
   "derived": [
@@ -4956,7 +4956,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tenedor": {
-  "nuance": "「フォーク」の基本語。tener（持つ）と同語源、「持つ道具」が原義。",
+  "nuance": "tener（持つ）と同語源、「持つ道具」が原義。",
   "etymology": "tener（持つ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4980,7 +4980,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vaso": {
-  "nuance": "「コップ」の基本語。copa（ワイングラスのような脚付きグラス）とは形状が異なる。",
+  "nuance": "copa（ワイングラスのような脚付きグラス）とは形状が異なる。",
   "etymology": "ラテン語vas（容器）に由来。",
   "synonyms": [
    "copa（脚付きグラス）"
@@ -4994,7 +4994,7 @@ const DICTIONARY_DATA = {
   }
  },
  "taza": {
-  "nuance": "「マグカップ」の基本語。計量単位の「カップ」という意味にもなる（レシピでよく使われる）。",
+  "nuance": "計量単位の「カップ」という意味にもなる（レシピでよく使われる）。",
   "etymology": "アラビア語ṭāsa（皿、椀）に由来。",
   "synonyms": [],
   "derived": [
@@ -5006,7 +5006,7 @@ const DICTIONARY_DATA = {
   }
  },
  "licuadora": {
-  "nuance": "「ミキサー」の基本語。メキシコ料理（サルサやアグアフレスカ作り）で頻繁に使われる家電。",
+  "nuance": "メキシコ料理（サルサやアグアフレスカ作り）で頻繁に使われる家電。",
   "etymology": "licuar（液状にする）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -5018,7 +5018,7 @@ const DICTIONARY_DATA = {
   }
  },
  "colador": {
-  "nuance": "「ざる」の基本語。colar（濾す）から派生した語。",
+  "nuance": "colar（濾す）から派生した語。",
   "etymology": "colar（濾す）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -5030,7 +5030,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tabla de cortar": {
-  "nuance": "「まな板」の基本語。tabla（板）+ cortar（切る）の組み合わせ。",
+  "nuance": "tabla（板）+ cortar（切る）の組み合わせ。",
   "etymology": "tabla（板）+ cortar（切る）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -5043,7 +5043,7 @@ const DICTIONARY_DATA = {
   }
  },
  "delantal": {
-  "nuance": "「エプロン」の基本語。",
+  "nuance": "キッチンや作業時に体の前面を覆うエプロン。mandilという言い方をする地域もある。",
   "etymology": "delante（前に）から派生した語、体の前につけるものが原義。",
   "synonyms": [],
   "derived": [
@@ -5175,7 +5175,7 @@ const DICTIONARY_DATA = {
   }
  },
  "salud": {
-  "nuance": "「健康」の基本語。乾杯するときの掛け声¡Salud!（乾杯！/お大事に）としてもよく使われる。",
+  "nuance": "乾杯するときの掛け声¡Salud!（乾杯！/お大事に）としてもよく使われる。",
   "etymology": "ラテン語salus（健康、安全）に由来。",
   "synonyms": [],
   "derived": [
@@ -5188,7 +5188,7 @@ const DICTIONARY_DATA = {
   }
  },
  "enfermedad": {
-  "nuance": "「病気」の基本語。enfermo（病気の、形容詞）と同語源。",
+  "nuance": "enfermo（病気の、形容詞）と同語源。",
   "etymology": "ラテン語infirmitas（弱さ、病弱）に由来。",
   "synonyms": [],
   "derived": [
@@ -5201,7 +5201,7 @@ const DICTIONARY_DATA = {
   }
  },
  "resfriado": {
-  "nuance": "「風邪」の基本語。resfriarse（風邪をひく、再帰動詞）から派生。gripeは「インフルエンザ」でより症状が重い。",
+  "nuance": "resfriarse（風邪をひく、再帰動詞）から派生。gripeは「インフルエンザ」でより症状が重い。",
   "etymology": "resfriar（冷やす）から派生した語。",
   "synonyms": [
    "gripe（インフルエンザ、より重い）"
@@ -5215,7 +5215,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fiebre": {
-  "nuance": "「発熱」の基本語。tener fiebre（熱がある）はよく使う組み合わせ。",
+  "nuance": "tener fiebre（熱がある）はよく使う組み合わせ。",
   "etymology": "ラテン語febris（熱）に由来。",
   "synonyms": [],
   "derived": [
@@ -5227,7 +5227,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dolor": {
-  "nuance": "「痛み」の基本語。dolor de cabeza（頭痛）、dolor de estómago（腹痛）のように「dolor de+部位」で具体的な痛みを表す。",
+  "nuance": "dolor de cabeza（頭痛）、dolor de estómago（腹痛）のように「dolor de+部位」で具体的な痛みを表す。",
   "etymology": "ラテン語dolor（痛み、苦しみ）に由来。",
   "synonyms": [],
   "derived": [
@@ -5253,7 +5253,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vacuna": {
-  "nuance": "「ワクチン」の基本語。vacunarse（ワクチンを接種する、再帰動詞）とセットで覚えると便利。",
+  "nuance": "vacunarse（ワクチンを接種する、再帰動詞）とセットで覚えると便利。",
   "etymology": "vaca（牛）に由来（牛痘から天然痘ワクチンが開発されたことから）。",
   "synonyms": [],
   "derived": [
@@ -5278,7 +5278,7 @@ const DICTIONARY_DATA = {
   }
  },
  "clínica": {
-  "nuance": "「クリニック」の基本語。hospital（病院、より大規模）とは規模が異なる。",
+  "nuance": "hospital（病院、より大規模）とは規模が異なる。",
   "etymology": "ギリシャ語klinike（ベッドサイドの医療）に由来。",
   "synonyms": [],
   "derived": [],
@@ -5288,7 +5288,7 @@ const DICTIONARY_DATA = {
   }
  },
  "síntoma": {
-  "nuance": "「症状」の基本語。-maで終わるギリシャ語源の男性名詞（el síntoma）。",
+  "nuance": "-maで終わるギリシャ語源の男性名詞（el síntoma）。",
   "etymology": "ギリシャ語symptoma（付随して起こること）に由来。",
   "synonyms": [],
   "derived": [
@@ -5300,7 +5300,7 @@ const DICTIONARY_DATA = {
   }
  },
  "alergia": {
-  "nuance": "「アレルギー」の基本語。tener alergia a（〜にアレルギーがある）という前置詞との組み合わせ。",
+  "nuance": "tener alergia a（〜にアレルギーがある）という前置詞との組み合わせ。",
   "etymology": "ギリシャ語allos（他の）+ ergon（反応）に由来。",
   "synonyms": [],
   "derived": [
@@ -5312,7 +5312,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cirugía": {
-  "nuance": "「手術」の基本語。cirujano（外科医）と同語源。",
+  "nuance": "cirujano（外科医）と同語源。",
   "etymology": "ギリシャ語kheirourgia（手仕事）に由来。",
   "synonyms": [],
   "derived": [
@@ -5325,7 +5325,7 @@ const DICTIONARY_DATA = {
   }
  },
  "venda": {
-  "nuance": "「包帯」の基本語。vendar（包帯を巻く）から派生。",
+  "nuance": "vendar（包帯を巻く）から派生。",
   "etymology": "ゲルマン語系の語binda（結びつけるもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -5337,7 +5337,7 @@ const DICTIONARY_DATA = {
   }
  },
  "emergencia": {
-  "nuance": "「緊急事態」の基本語。en caso de emergencia（緊急の場合）はよく見る表示。",
+  "nuance": "en caso de emergencia（緊急の場合）はよく見る表示。",
   "etymology": "ラテン語emergere（浮かび上がる、突然現れる）に由来。",
   "synonyms": [],
   "derived": [
@@ -5349,7 +5349,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ambulancia": {
-  "nuance": "「救急車」の基本語。llamar una ambulancia（救急車を呼ぶ）はよく使う表現。",
+  "nuance": "llamar una ambulancia（救急車を呼ぶ）はよく使う表現。",
   "etymology": "フランス語hôpital ambulant（移動病院）に由来。",
   "synonyms": [],
   "derived": [],
@@ -5359,7 +5359,7 @@ const DICTIONARY_DATA = {
   }
  },
  "accidente": {
-  "nuance": "「事故」の基本語。por accidente（偶然に、うっかり）という表現もある。",
+  "nuance": "por accidente（偶然に、うっかり）という表現もある。",
   "etymology": "ラテン語accidere（起こる）に由来。",
   "synonyms": [],
   "derived": [
@@ -5371,7 +5371,7 @@ const DICTIONARY_DATA = {
   }
  },
  "peligro": {
-  "nuance": "「危険」の基本語。fuera de peligro（危険を脱して）のような表現も医療現場でよく使われる。",
+  "nuance": "fuera de peligro（危険を脱して）のような表現も医療現場でよく使われる。",
   "etymology": "ラテン語periculum（危険、試み）に由来。",
   "synonyms": [],
   "derived": [
@@ -5383,7 +5383,7 @@ const DICTIONARY_DATA = {
   }
  },
  "seguridad": {
-  "nuance": "「安全・治安」の基本語。cinturón de seguridad（シートベルト）のような複合語もよく使われる。",
+  "nuance": "cinturón de seguridad（シートベルト）のような複合語もよく使われる。",
   "etymology": "seguro（安全な）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -5408,7 +5408,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tarjeta de crédito": {
-  "nuance": "「クレジットカード」の基本語。tarjeta de débito（デビットカード）と区別される。",
+  "nuance": "tarjeta de débito（デビットカード）と区別される。",
   "etymology": "tarjeta（カード）+ crédito（信用）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -5420,7 +5420,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cajero automático": {
-  "nuance": "「ATM」の基本語。口語ではcajeroと短縮されることも多い。",
+  "nuance": "口語ではcajeroと短縮されることも多い。",
   "etymology": "caja（レジ、金庫）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -5433,7 +5433,7 @@ const DICTIONARY_DATA = {
   }
  },
  "préstamo": {
-  "nuance": "「ローン」の基本語。prestar（貸す）から派生した語。",
+  "nuance": "prestar（貸す）から派生した語。",
   "etymology": "prestar（貸す）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -5446,7 +5446,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ahorro": {
-  "nuance": "「貯金」の基本語。ahorrar（貯金する、節約する）の名詞形。",
+  "nuance": "ahorrar（貯金する、節約する）の名詞形。",
   "etymology": "アラビア語horr（自由な）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -5458,7 +5458,7 @@ const DICTIONARY_DATA = {
   }
  },
  "impuesto": {
-  "nuance": "「税金」の基本語。impuesto sobre la renta（所得税）のような複合語もよく使われる。",
+  "nuance": "impuesto sobre la renta（所得税）のような複合語もよく使われる。",
   "etymology": "imponer（課す）の過去分詞から派生した語。",
   "synonyms": [],
   "derived": [
@@ -5470,7 +5470,7 @@ const DICTIONARY_DATA = {
   }
  },
  "presupuesto": {
-  "nuance": "「予算」の基本語。hacer un presupuesto（予算を組む）はよく使う表現。",
+  "nuance": "hacer un presupuesto（予算を組む）はよく使う表現。",
   "etymology": "presuponer（前提とする）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -5482,7 +5482,7 @@ const DICTIONARY_DATA = {
   }
  },
  "efectivo": {
-  "nuance": "「現金」の基本語。en efectivo（現金で）はよく使う表現。",
+  "nuance": "en efectivo（現金で）はよく使う表現。",
   "etymology": "efectivo（実効的な、実際の）から意味が転じた語。",
   "synonyms": [],
   "derived": [
@@ -5494,7 +5494,7 @@ const DICTIONARY_DATA = {
   }
  },
  "recibo": {
-  "nuance": "「領収書」の基本語。recibir（受け取る）から派生した語。",
+  "nuance": "recibir（受け取る）から派生した語。",
   "etymology": "recibir（受け取る）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -5506,7 +5506,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estar en las nubes": {
-  "nuance": "「上の空である、ぼーっとしている」。直訳は「雲の中にいる」で、日本語の「上の空」と発想が似ている面白いイディオム。",
+  "nuance": "直訳は「雲の中にいる」。雲は地上から遠く離れてふわふわ浮かんでいる存在。そこから「現実から離れてぼーっとしている、上の空」という意味に発展した。",
   "etymology": "estar（いる）+ en las nubes（雲の中に）の組み合わせ。",
   "synonyms": [
    "estar distraído（気が散っている）"
@@ -5518,7 +5518,7 @@ const DICTIONARY_DATA = {
   }
  },
  "costar un ojo de la cara": {
-  "nuance": "「非常に高い」。直訳は「顔の目玉の値段がする」で、日本語の「目が飛び出るほど高い」と似た発想。",
+  "nuance": "直訳は「顔から目玉一つ分の値段がする」。目玉は体の一部であり、失うことなど普通は考えられないほど大きな犠牲。そこから「目玉が飛び出るほど高い」という意味に発展した。",
   "etymology": "costar（値段がする）+ un ojo de la cara（顔の目玉）の組み合わせ。",
   "synonyms": [
    "ser muy caro（とても高い、直接的な表現）"
@@ -5530,7 +5530,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tomar el pelo": {
-  "nuance": "「からかう」。直訳は「髪を引っ張る」。¿Me estás tomando el pelo?（からかってるの？）は日常会話でよく使う。",
+  "nuance": "直訳は「髪をつかむ」。動物や人の髪をつかんでからかう仕草から、「からかう、冗談で人をだます」という意味に発展したとされる。",
   "etymology": "tomar（取る）+ el pelo（髪）の組み合わせ。",
   "synonyms": [
    "burlarse de（〜をからかう）"
@@ -5542,7 +5542,7 @@ const DICTIONARY_DATA = {
   }
  },
  "meter la pata": {
-  "nuance": "「やらかす、失敗する」。直訳は「足を突っ込む」。会話や行動で失敗したときに使う口語表現。",
+  "nuance": "直訳は「（動物の）足を突っ込む」。動物がうっかり足を踏み入れて物を壊すイメージから、「うっかりミスをする、失言する」という意味に発展した。",
   "etymology": "meter（入れる）+ la pata（動物の足）の組み合わせ。",
   "synonyms": [
    "equivocarse（間違える）"
@@ -5554,7 +5554,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ser pan comido": {
-  "nuance": "「朝飯前だ」。直訳は「食べられたパン」。とても簡単なことを表す口語表現。",
+  "nuance": "直訳は「すでに食べられたパン」。パンは日常的にあり、食べるのに苦労しないもの。そこから「とても簡単なこと」という意味に発展した。",
   "etymology": "ser（である）+ pan comido（食べられたパン）の組み合わせ。",
   "synonyms": [
    "ser muy fácil（とても簡単だ）"
@@ -5566,7 +5566,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ponerse las pilas": {
-  "nuance": "「気合を入れる、本気を出す」。直訳は「電池を入れる」。やる気を出す必要があるときによく使われる口語表現。",
+  "nuance": "直訳は「電池を入れる」。電池が切れた機械が電池を入れることで動き出すイメージから、「気合を入れる、本腰を入れて取り組む」という意味に発展した。",
   "etymology": "ponerse（自分に入れる）+ las pilas（電池）の組み合わせ。",
   "synonyms": [
    "esforzarse（努力する）"
@@ -5578,7 +5578,7 @@ const DICTIONARY_DATA = {
   }
  },
  "echar de menos": {
-  "nuance": "🇪🇸 主にスペインで使われる表現。extrañar（恋しく思う、ラテンアメリカでより一般的）とほぼ同じ意味。メキシコではextrañarの方が圧倒的によく使われるので、そちらを優先して覚えるのがおすすめ。",
+  "nuance": "🇪🇸 主にスペインで使われる表現（メキシコではextrañarの方が圧倒的によく使われる）。echar（投げる、〜と感じる）+ de menos（少ない、欠けている）の組み合わせで、直訳は「〜が欠けていると感じる」。誰か・何かが欠けていることに気づく感覚から、「〜がいなくて寂しい、恋しく思う」という意味になった。",
   "etymology": "echar（投げる）+ de menos（不足を）の組み合わせ、元は「不足を感じる」の意。",
   "synonyms": [
    "extrañar（恋しく思う、ラテンアメリカ）"
@@ -5590,7 +5590,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dar en el clavo": {
-  "nuance": "「図星をつく、的確に言い当てる」。直訳は「釘に当てる」。",
+  "nuance": "直訳は「釘に当てる」。金づちで釘の頭を正確に打つイメージから、「（推測・判断が）まさにその通りだ、的を射ている」という意味に発展した。",
   "etymology": "dar（当てる）+ en el clavo（釘に）の組み合わせ。",
   "synonyms": [
    "acertar（言い当てる）"
@@ -5602,7 +5602,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hacer la vista gorda": {
-  "nuance": "「見て見ぬふりをする」。直訳は「太った視線を作る」で少し奇妙だが、よく使われる口語表現。",
+  "nuance": "直訳は「太った視界を作る」。gordaは「太い、ぼやけた」というニュアンスで、わざと物がはっきり見えないようにするイメージから、「見て見ぬふりをする」という意味になった。",
   "etymology": "hacer（する）+ la vista gorda（太った視線）の組み合わせ、由来ははっきりしない。",
   "synonyms": [
    "ignorar（無視する）"
@@ -5614,7 +5614,7 @@ const DICTIONARY_DATA = {
   }
  },
  "quedarse de piedra": {
-  "nuance": "「あぜんとする、驚いて固まる」。直訳は「石になる」。ショックな知らせを聞いたときの反応を表す。",
+  "nuance": "直訳は「石のままになる」。衝撃や驚きで体が石のように固まって動けなくなるイメージから、「あまりの驚きで固まってしまう」という意味になった。",
   "etymology": "quedarse（〜のままになる）+ de piedra（石で）の組み合わせ。",
   "synonyms": [
    "quedarse boquiabierto（あっけにとられる）"
@@ -5640,13 +5640,14 @@ const DICTIONARY_DATA = {
   }
  },
  "darse cuenta de": {
-  "nuance": "「〜に気がつく」。ある事実に後から気づく、という結果的な気づきを表す。",
-  "etymology": "dar（与える）+ cuenta（勘定、認識）の再帰形。",
+  "nuance": "dar（与える）+ cuenta（説明、報告）が組み合わさったdar cuenta（説明する、報告を与える）という古い表現に、se（自分に）がついた形。\n\n「自分自身に説明を与える」→「自分の中で話がつながる」→「あ、そういうことか！」→「〜に気づく」という流れで今の意味に発展した。\n\n例えばMe di cuenta de mi error.を直訳すると「私は自分に、自分の間違いについての説明を与えた」となり、そこから「自分の間違いに気づいた」という意味になる。単語を一つずつ日本語に置き換えるより、seがつくことで「頭の中で自分に説明がつく」というイメージを持つと理解しやすい。",
+  "etymology": "dar（与える）+ cuenta（勘定、説明、報告）の組み合わせ。cuentaはcontar（数える、話す）と同語源。",
   "synonyms": [
    "notar（気づく）"
   ],
   "derived": [
-   "cuenta（勘定、口座）"
+   "cuenta（勘定、口座）",
+   "contar（数える、話す）"
   ],
   "dialogue": {
    "es": "— Me di cuenta de mi error muy tarde.\n— A todos nos pasa alguna vez.",
@@ -5761,7 +5762,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chamba": {
-  "nuance": "「仕事」のとてもくだけた言い方。trabajoよりずっとカジュアルで、友人同士の会話でよく使われる。フォーマルな場では使わない。",
+  "nuance": "起源ははっきりしないが、先住民言語や労働者階級の俗語から広まったとされる。trabajo（仕事）よりもずっとくだけた響きで、日常会話では「どんな仕事してるの？」を¿En qué chambeas?と聞くほど定着している。",
   "etymology": "バスク語zamba（重労働）に由来するとされる。",
   "synonyms": [
    "trabajo（仕事、標準語）"
@@ -5775,7 +5776,7 @@ const DICTIONARY_DATA = {
   }
  },
  "güey": {
-  "nuance": "友人同士で「お前」「やつ」のように使う、メキシコで非常によく聞く単語。目上の人や初対面の人には使わない、親しい間柄限定の言葉。文脈によっては侮辱的にもなり得るので使い所に注意。",
+  "nuance": "元々はbuey（牛、去勢された雄牛）が音変化した語。かつては「愚か者、ノロマ」を指す侮辱的な語だったが、時代とともに親しい友人同士が呼び合う中立的な呼びかけ語に変化した（親しい間柄限定、知らない人には使わない）。",
   "etymology": "buey（去勢牛、間抜けという意味の俗語）から転じたとされる。",
   "synonyms": [],
   "derived": [],
@@ -5785,7 +5786,7 @@ const DICTIONARY_DATA = {
   }
  },
  "neta": {
-  "nuance": "「本当のこと、マジで」という意味の万能スラング。¿Neta?（マジで？）、la neta es que...（実を言うと〜）のように色々な形で使われる。",
+  "nuance": "neto（純粋な、正味の）から派生した語で、直訳は「純粋なもの」。そこから「混じりけのない本当のこと」「真実」という意味の名詞・間投詞として定着した。",
   "etymology": "neto（正味の、純粋な）から派生した口語表現。",
   "synonyms": [
    "en serio（本気で）",
@@ -5798,7 +5799,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chido": {
-  "nuance": "「かっこいい、いいね」という意味のメキシコの口語。padreもほぼ同じ意味でよく使われる。",
+  "nuance": "起源は諸説あるが、ロマ系（カロー語）由来で「自由な」を意味した語から転じたとされる。今では「かっこいい、いいね」という肯定的な評価を表す最も日常的な口語形容詞の一つ。",
   "etymology": "起源は諸説あり、はっきりしない。",
   "synonyms": [
    "padre（いいね、メキシコの口語）",
@@ -5811,7 +5812,7 @@ const DICTIONARY_DATA = {
   }
  },
  "no manches": {
-  "nuance": "「うそでしょ、まさか」という驚きを表すメキシコの口語表現。より強い（下品とされる）バリエーションno mamesもあるが、no manchesの方が上品で広く使われる。",
+  "nuance": "本来はやや下品な感嘆詞no mamesの婉曲表現。manchar（汚す）という無関係な動詞に音を似せることで、同じニュアンス（信じられない、まさか）を保ちながら、どんな場面でも使える上品な言い方にしたもの。",
   "etymology": "mancharse（汚れる）を避けた婉曲表現とされる。",
   "synonyms": [
    "¿en serio?（本当に？）"
@@ -5835,7 +5836,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lana": {
-  "nuance": "「ウール、毛糸」の基本語。口語では「お金」を指すスラングとしても非常によく使われる（地域や世代によってplataやferiaなど他の言い方も好まれる）。文脈で判断する。",
+  "nuance": "「羊毛」が原義。羊毛が交易で価値ある商品だったことから、比喩的に「お金」を指すスラングに転じたとされる。plataやferiaなど、地域や世代によって好まれる言い方が異なる。",
   "etymology": "lana（羊毛）が比喩的に「お金」の意味に転じたとされる。",
   "synonyms": [
    "dinero（お金、標準語）",
@@ -5848,7 +5849,7 @@ const DICTIONARY_DATA = {
   }
  },
  "feria": {
-  "nuance": "「お金・小銭」を指すメキシコの口語表現。標準的な意味の「お祭り、見本市」とは別の俗語的な使い方。",
+  "nuance": "「祭り、市」が原義。市場でお金が活発にやり取りされる場のイメージから、「お金」、特に細かい「小銭」を指す口語表現に転じた。",
   "etymology": "feria（市、定期市）から、市で使うお金という連想で意味が転じたとされる。",
   "synonyms": [
    "lana（お金、口語）",
@@ -5861,7 +5862,7 @@ const DICTIONARY_DATA = {
   }
  },
  "crudo": {
-  "nuance": "「二日酔いの」という意味の口語表現。標準的な意味は「生の、未加工の」だが、体調を表す俗語としても非常によく使われる。",
+  "nuance": "「生の、加熱していない」が原義。お酒を飲みすぎた翌朝、体がまるで「まだ火が通っていない」ような不調な状態にあるイメージから、「二日酔いの」という意味に転じた。",
   "etymology": "crudo（生の）が比喩的に「（お酒で）まだ消化しきれていない」という意味に転じたとされる。",
   "synonyms": [
    "resaca（二日酔い、名詞形）"
@@ -5873,7 +5874,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fresa": {
-  "nuance": "「いちご」の基本語。口語では「気取っている、お坊ちゃん・お嬢様風の」という意味の形容詞としても使われる（皮肉を込めて使われることが多い）。文脈で判断する。",
+  "nuance": "「いちご」が原義。メキシコシティの裕福な地区に住む人々のイメージと結びつき、比喩的に「気取っている、お坊ちゃん・お嬢様風の」という意味の形容詞として定着した。",
   "etymology": "fresa（いちご）が「甘ったるい、気取った」というイメージから意味が転じたとされる。",
   "synonyms": [
    "presumido（うぬぼれた）"
@@ -5885,7 +5886,7 @@ const DICTIONARY_DATA = {
   }
  },
  "órale": {
-  "nuance": "「おおっ、さあ、了解」など場面に応じて色々な意味になる万能の間投詞。メキシコのスペイン語を象徴する言葉の一つ。",
+  "nuance": "ahora（今）から派生したándale系の感嘆詞の一つ。「さあ、今こそ」という促しのニュアンスから、驚き・同意・激励など幅広い場面で使われる万能な間投詞に発展した。",
   "etymology": "ahora（今）が変化したとされる。",
   "synonyms": [],
   "derived": [],
@@ -5895,7 +5896,7 @@ const DICTIONARY_DATA = {
   }
  },
  "no tener pelos en la lengua": {
-  "nuance": "「歯に衣着せぬ、率直に言う」。直訳は「舌に毛がない」で、思ったことをストレートに言う人を表す口語表現。",
+  "nuance": "直訳は「舌に毛がない」。舌に毛が生えていたら話しにくくなる、というイメージの裏返しで、「何の遠慮もなくはっきり話す」という意味になった。",
   "etymology": "no tener（持たない）+ pelos en la lengua（舌の上の毛）の組み合わせ。",
   "synonyms": [
    "ser muy directo（とても率直だ）"
@@ -5907,7 +5908,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estar como agua para chocolate": {
-  "nuance": "「かんかんに怒っている」。メキシコ発祥の表現で、同名の小説・映画のタイトルにもなった。直訳は「ホットチョコレート用のお湯のようだ」で、沸騰寸前の状態から怒りを連想させる。",
+  "nuance": "メキシコ発祥の表現。伝統的なホットチョコレート作りでは、チョコレートを溶かすために水をぐらぐらと沸騰させる必要があった。その「沸騰した水」のイメージから、「怒りが沸騰している、我慢の限界」という意味に発展した。",
   "etymology": "agua para chocolate（ホットチョコレートを作るための熱湯）に由来。",
   "synonyms": [
    "estar furioso（激怒している）"
@@ -5919,7 +5920,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estar hasta las narices": {
-  "nuance": "🇪🇸 主にスペインで使われる表現。「うんざりしている」という意味。メキシコでは estar harto（うんざりしている）や estar hasta la madre（口語、より強い表現）の方がよく使われる。",
+  "nuance": "🇪🇸 主にスペインで使われる表現（メキシコではestar hartoやestar hasta la madreの方が一般的）。直訳は「鼻先まで達している」。水などが鼻の高さまで来ている＝限界ぎりぎりのイメージから、「うんざりしている、我慢の限界だ」という意味に発展した。",
   "etymology": "estar（いる）+ hasta las narices（鼻まで）の組み合わせ。",
   "synonyms": [
    "estar harto（うんざりしている）"
@@ -5931,7 +5932,7 @@ const DICTIONARY_DATA = {
   }
  },
  "írsele la mano": {
-  "nuance": "「（何かを）やり過ぎる」。直訳は「手が行ってしまう」で、力加減や量を間違えたときに使う。",
+  "nuance": "se+間接目的語+irse（無意志のse）の構文。「手が（自分の意志とは関係なく）行ってしまう」という直訳から、力加減や量の調整を誤って「やりすぎてしまう」という意味に発展した（例：塩を入れすぎる）。",
   "etymology": "irse（行く）+ la mano（手）の再帰的な組み合わせ。",
   "synonyms": [
    "excederse（度を超す）"
@@ -5943,7 +5944,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ni fu ni fa": {
-  "nuance": "「どうでもいい、まあまあ」という無関心・平凡さを表す口語表現。",
+  "nuance": "fu、faという意味を持たない音の繰り返しで、可もなく不可もない、どちらとも言えない態度を音の響きだけで表現した口語表現。「良くも悪くもない、どうでもいい」という意味。",
   "etymology": "擬音的な表現で、明確な語源はない。",
   "synonyms": [
    "así así（まあまあ）"
@@ -5955,7 +5956,7 @@ const DICTIONARY_DATA = {
   }
  },
  "poner los puntos sobre las íes": {
-  "nuance": "「細部まではっきりさせる」。直訳は「iの上に点を打つ」で、あいまいさを残さず明確にすることを表す。",
+  "nuance": "直訳は「iの文字の上に点を打つ」。スペイン語のíやiには本来点（tilde/punto）が必要で、それを省略せずきちんと打つイメージから、「物事をあいまいにせず、はっきりさせる」という意味に発展した。",
   "etymology": "poner（置く）+ los puntos（点）+ sobre las íes（iの上に）の組み合わせ。",
   "synonyms": [
    "aclarar todo（すべてを明確にする）"
@@ -5967,7 +5968,7 @@ const DICTIONARY_DATA = {
   }
  },
  "írsele el santo al cielo": {
-  "nuance": "🇪🇸 主にスペインで使われる表現。「すっかり忘れる」という意味。直訳は「聖人が天に行ってしまう」。メキシコでは単に se me olvidó por completo（すっかり忘れた）と言う方が自然。",
+  "nuance": "🇪🇸 主にスペインで使われる表現（メキシコではse me olvidó por completoと言う方が自然）。直訳は「聖人が天に行ってしまう」。信心深く祈っていたはずの聖人への思いが、ふと天に上ってしまうように消えてしまうイメージから、「（言おうとしていたことを）すっかり忘れる」という意味になった。",
   "etymology": "irse（行く）+ el santo（聖人）+ al cielo（天に）の再帰的な組み合わせ。",
   "synonyms": [
    "olvidarse por completo（完全に忘れる）"
@@ -5979,7 +5980,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tirar la toalla": {
-  "nuance": "「あきらめる」。英語のthrow in the towelと同じボクシング由来の表現。",
+  "nuance": "直訳は「タオルを投げる」。ボクシングでセコンドが選手を守るためにリングにタオルを投げ入れて試合を止める仕草から、「あきらめる、降参する」という意味になった。",
   "etymology": "ボクシングで、セコンドがタオルを投げ入れて試合を止めさせることに由来。",
   "synonyms": [
    "rendirse（降参する）"
@@ -5991,7 +5992,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estar hecho polvo": {
-  "nuance": "🇪🇸 主にスペインで使われる表現。「くたくたに疲れている」という意味。メキシコでは estar muerto（口語）や estar exhausto の方が通じやすい。",
+  "nuance": "🇪🇸 主にスペインで使われる表現（メキシコではestar muertoの方が通じやすい）。直訳は「粉々にされている」。固いものが砕けて粉状になってしまうイメージから、「（疲労などで）ボロボロだ、くたくただ」という意味に発展した。",
   "etymology": "estar（いる）+ hecho polvo（ほこりになった）の組み合わせ。",
   "synonyms": [
    "estar exhausto（疲れ果てている）"
@@ -6003,7 +6004,7 @@ const DICTIONARY_DATA = {
   }
  },
  "no dar pie con bola": {
-  "nuance": "「何をやってもうまくいかない」。直訳は「ボールに足を当てられない」というサッカー由来のような表現。",
+  "nuance": "直訳は「足でボールに当てられない」。スポーツで何度蹴ってもボールに当たらない、何をやってもうまくいかない様子から、「何をやってもうまくいかない、的外れなことばかりする」という意味になった。",
   "etymology": "dar pie con bola（ボールに足を当てる）の否定形。",
   "synonyms": [
    "no acertar（うまくいかない）"
@@ -6015,7 +6016,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ser uña y carne": {
-  "nuance": "「切っても切れない仲」。直訳は「爪と肉」で、爪と皮膚のように離れられない親密な関係を表す。",
+  "nuance": "直訳は「爪と肉である」。爪とその下の肉は引き離せないほど密着しているイメージから、「切っても切れない間柄、大の仲良し」という意味に発展した。",
   "etymology": "uña（爪）+ carne（肉）の組み合わせ。",
   "synonyms": [
    "ser inseparables（離れられない仲）"
@@ -6027,7 +6028,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tomar el toro por los cuernos": {
-  "nuance": "「正面から立ち向かう」。直訳は「牛の角をつかむ」という闘牛由来の表現。",
+  "nuance": "直訳は「牛の角をつかむ」。闘牛で最も危険な牛の角を正面からつかみにいく勇気ある行為から、「困難な問題に真正面から立ち向かう」という意味になった。",
   "etymology": "闘牛で牛の角を直接つかむ危険な行為に由来。",
   "synonyms": [
    "enfrentar el problema（問題に立ち向かう）"
@@ -6039,7 +6040,7 @@ const DICTIONARY_DATA = {
   }
  },
  "costar un huevo": {
-  "nuance": "「ものすごく高い」という口語表現。costar un ojo de la caraとほぼ同義だが、こちらの方がよりカジュアル（一部地域ではやや下品とされることもある）。",
+  "nuance": "直訳は「卵一つ分の値段がする」。huevoは口語で「精力、根性」を指す俗語でもあり、そこから転じて「とても高い、大変な労力がかかる」という意味で使われる（やや砕けた表現）。",
   "etymology": "costar（値段がする）+ un huevo（卵一つ）の組み合わせ。",
   "synonyms": [
    "costar un ojo de la cara（目玉が飛び出るほど高い）"
@@ -6063,7 +6064,7 @@ const DICTIONARY_DATA = {
   }
  },
  "írsele la olla": {
-  "nuance": "🇪🇸 主にスペインで使われる表現。「頭がおかしくなる、我を忘れる」という意味。メキシコでは perder la cabeza や volverse loco の方が一般的。",
+  "nuance": "🇪🇸 主にスペインで使われる表現（メキシコではperder la cabezaやvolverse locoの方が一般的）。se+間接目的語+irse（無意志のse）の構文。olla（鍋）は口語で「頭」を指す俗語で、直訳は「（自分の意志とは関係なく）鍋が行ってしまう」。そこから「頭がおかしくなる、我を忘れる」という意味に発展した。",
   "etymology": "irse（行く）+ la olla（鍋、頭の比喩）の再帰的な組み合わせ。",
   "synonyms": [
    "perder la cabeza（頭がおかしくなる）"
@@ -6075,7 +6076,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dar la lata": {
-  "nuance": "🇪🇸 主にスペインで使われる表現。「うるさく迷惑をかける」という意味。メキシコでは fastidiar や molestar の方が広く通じる。",
+  "nuance": "🇪🇸 主にスペインで使われる表現（メキシコではfastidiarやmolestarの方が広く通じる）。直訳は「缶を与える」。缶を引きずったり叩いたりする不快な音のイメージから、「しつこく迷惑をかける、うるさく付きまとう」という意味になったとされる。",
   "etymology": "由来ははっきりしないが、古い機械の缶が立てる不快な音に関連するとされる。",
   "synonyms": [
    "molestar（迷惑をかける）"
@@ -6087,7 +6088,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ponerse las botas": {
-  "nuance": "🇪🇸 主にスペインで使われる表現。「思う存分楽しむ、たらふく食べる」という意味。メキシコではあまり使われないので、通じない場合がある。",
+  "nuance": "🇪🇸 主にスペインで使われる表現（メキシコではあまり使われないので通じない場合がある）。直訳は「ブーツを履く」。かつてブーツは裕福な人しか持てない贅沢品だったことから、「思う存分楽しむ、たらふく食べる」という意味に発展した。",
   "etymology": "かつて裕福な人だけがブーツを履けたことに由来するとされる。",
   "synonyms": [
    "disfrutar al máximo（最大限楽しむ）"
@@ -6099,7 +6100,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estar en pañales": {
-  "nuance": "「まだ始まったばかりである」。直訳は「おむつをしている」で、赤ちゃんの状態から未熟さ・初期段階を連想させる。",
+  "nuance": "直訳は「おむつをしている状態にある」。赤ちゃんがまだおむつをしている、人生のごく初期の段階にいるイメージから、「（物事が）まだ始まったばかり、初心者の段階だ」という意味になった。",
   "etymology": "pañal（おむつ）から派生した表現。",
   "synonyms": [
    "estar empezando（始まったばかりだ）"
@@ -6111,7 +6112,7 @@ const DICTIONARY_DATA = {
   }
  },
  "salirse con la suya": {
-  "nuance": "「自分の思い通りにする」という口語表現。多くの場合、他人の反対を押し切って、という少しネガティブなニュアンスを含む。",
+  "nuance": "直訳は「自分のものを持って出ていく」。suya（自分のもの）を貫いて状況から抜け出すイメージから、「自分の思い通りにする、我を通す」という意味に発展した。",
   "etymology": "salirse（出る）+ con la suya（自分のものと共に）の組み合わせ。",
   "synonyms": [
    "imponer su voluntad（自分の意志を押し通す）"
@@ -6123,7 +6124,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estar en la luna": {
-  "nuance": "「ぼーっとしている、上の空である」。直訳は「月にいる」で、周りのことに気づいていない状態を表す。",
+  "nuance": "直訳は「月にいる」。estar en las nubes（雲の中にいる）よりもさらに遠い場所というイメージで、「完全にぼーっとしていて周りに気づいていない」という意味を強調する表現。",
   "etymology": "estar（いる）+ en la luna（月に）の組み合わせ。",
   "synonyms": [
    "estar distraído（気が散っている）"
@@ -6135,7 +6136,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ser el pan de cada día": {
-  "nuance": "「日常茶飯事である」。直訳は「毎日のパンである」で、ありふれた出来事を表す。",
+  "nuance": "直訳は「毎日のパンである」。キリスト教の祈りの言葉「日々の糧をお与えください」に由来し、パンのように毎日繰り返される当たり前の存在から、「日常茶飯事だ、よくあることだ」という意味になった。",
   "etymology": "pan de cada día（毎日のパン）は主の祈りにも登場する聖書由来の表現。",
   "synonyms": [
    "ser algo común（よくあることだ）"
@@ -6147,7 +6148,7 @@ const DICTIONARY_DATA = {
   }
  },
  "meter la cuchara": {
-  "nuance": "「（頼まれてもいないのに）口を挟む」。直訳は「スプーンを入れる」。",
+  "nuance": "直訳は「スプーンを突っ込む」。誰かの料理に頼まれてもいないのにスプーンを入れるイメージから、「（頼まれてもいないのに）話に割り込む、口出しする」という意味になった。",
   "etymology": "meter（入れる）+ la cuchara（スプーン）の組み合わせ。",
   "synonyms": [
    "entrometerse（干渉する）"
@@ -6159,7 +6160,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dar en el blanco": {
-  "nuance": "「的を射る、まさにその通りだ」。直訳は「的（白い的）に当てる」。",
+  "nuance": "直訳は「的の白い部分に当てる」。射的の的の中心（白い部分）に命中させるイメージから、「的中する、まさに正解だ」という意味になった。",
   "etymology": "dar（当てる）+ en el blanco（的に）の組み合わせ、射撃・アーチェリー由来。",
   "synonyms": [
    "acertar（言い当てる）"
@@ -6171,7 +6172,7 @@ const DICTIONARY_DATA = {
   }
  },
  "no tener ni pies ni cabeza": {
-  "nuance": "「まったく筋が通らない」。直訳は「足も頭もない」で、論理が破綻している状態を表す。",
+  "nuance": "直訳は「足も頭もない」。体としての基本的な形すら成していないイメージから、「筋が通っていない、支離滅裂だ」という意味に発展した。",
   "etymology": "no tener（持たない）+ ni pies ni cabeza（足も頭も）の組み合わせ。",
   "synonyms": [
    "no tener sentido（意味をなさない）"
@@ -6183,7 +6184,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ser la gota que colma el vaso": {
-  "nuance": "「我慢の限界を超えるきっかけとなる出来事」。直訳は「コップを溢れさせる一滴」。",
+  "nuance": "直訳は「コップをあふれさせる一滴」。コップいっぱいに水が入っている状態で、最後のたった一滴が加わるとあふれてしまうイメージから、「（我慢の）限界を超えさせる最後の一撃」という意味になった。",
   "etymology": "la gota（一滴）+ que colma el vaso（コップを満たす）の組み合わせ。",
   "synonyms": [
    "ser el colmo（限界だ）"
@@ -6195,7 +6196,7 @@ const DICTIONARY_DATA = {
   }
  },
  "física": {
-  "nuance": "「物理学」の基本語。female article laがつく（-aで終わる学問名は一般的に女性名詞）。",
+  "nuance": "female article laがつく（-aで終わる学問名は一般的に女性名詞）。",
   "etymology": "ギリシャ語physiké（自然に関する学問）に由来。",
   "synonyms": [],
   "derived": [
@@ -6207,7 +6208,7 @@ const DICTIONARY_DATA = {
   }
  },
  "química": {
-  "nuance": "「化学」の基本語。",
+  "nuance": "学問分野としての「化学」。alquimia（錬金術）と語源を共有する。",
   "etymology": "アラビア語al-kīmiyā（錬金術）に由来。",
   "synonyms": [],
   "derived": [
@@ -6219,7 +6220,7 @@ const DICTIONARY_DATA = {
   }
  },
  "biología": {
-  "nuance": "「生物学」の基本語。",
+  "nuance": "学問分野としての「生物学」。biólogo（生物学者）はここから派生。",
   "etymology": "ギリシャ語bios（生命）+ logia（学問）に由来。",
   "synonyms": [],
   "derived": [
@@ -6232,7 +6233,7 @@ const DICTIONARY_DATA = {
   }
  },
  "matemáticas": {
-  "nuance": "「数学」の基本語。常に複数形で使われる（英語のmathematicsと同じパターン）。",
+  "nuance": "常に複数形で使われる（英語のmathematicsと同じパターン）。",
   "etymology": "ギリシャ語mathema（学ぶべきもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -6244,7 +6245,7 @@ const DICTIONARY_DATA = {
   }
  },
  "experimento": {
-  "nuance": "「実験」の基本語。hacer un experimento（実験をする）はよく使う組み合わせ。",
+  "nuance": "hacer un experimento（実験をする）はよく使う組み合わせ。",
   "etymology": "ラテン語experimentum（試み）に由来。",
   "synonyms": [],
   "derived": [
@@ -6256,7 +6257,7 @@ const DICTIONARY_DATA = {
   }
  },
  "átomo": {
-  "nuance": "「原子」の基本語。",
+  "nuance": "物質を構成する最小単位。núcleo（核）、electrón（電子）などと合わせて使われる。",
   "etymology": "ギリシャ語atomos（分割できないもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -6268,7 +6269,7 @@ const DICTIONARY_DATA = {
   }
  },
  "célula": {
-  "nuance": "「細胞」の基本語。",
+  "nuance": "生物の基本単位。célula madre（幹細胞）のような専門用語にも登場する。",
   "etymology": "ラテン語cellula（小さな部屋）に由来。",
   "synonyms": [],
   "derived": [
@@ -6280,7 +6281,7 @@ const DICTIONARY_DATA = {
   }
  },
  "planeta": {
-  "nuance": "「惑星」の基本語。-aで終わるが男性名詞（ギリシャ語源）。",
+  "nuance": "-aで終わるが男性名詞（ギリシャ語源）。",
   "etymology": "ギリシャ語planetes（さまよう星）に由来。",
   "synonyms": [],
   "derived": [
@@ -6292,7 +6293,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gravedad": {
-  "nuance": "「重力」の基本語。比喩的に「重大さ」という意味にもなる。",
+  "nuance": "比喩的に「重大さ」という意味にもなる。",
   "etymology": "ラテン語gravitas（重さ）に由来。",
   "synonyms": [],
   "derived": [
@@ -6304,7 +6305,7 @@ const DICTIONARY_DATA = {
   }
  },
  "energía": {
-  "nuance": "「エネルギー」の基本語。「元気、活力」という日常的な意味でもよく使われる。",
+  "nuance": "「元気、活力」という日常的な意味でもよく使われる。",
   "etymology": "ギリシャ語energeia（活動）に由来。",
   "synonyms": [],
   "derived": [
@@ -6316,7 +6317,7 @@ const DICTIONARY_DATA = {
   }
  },
  "laboratorio": {
-  "nuance": "「研究室、実験室」の基本語。",
+  "nuance": "研究や実験を行う場所。口語ではlabと略されることもある。",
   "etymology": "ラテン語laborare（働く）に由来。",
   "synonyms": [],
   "derived": [
@@ -6328,7 +6329,7 @@ const DICTIONARY_DATA = {
   }
  },
  "teoría": {
-  "nuance": "「理論」の基本語。en teoría（理論上は）という表現もよく使う。",
+  "nuance": "en teoría（理論上は）という表現もよく使う。",
   "etymology": "ギリシャ語theoria（観察、考察）に由来。",
   "synonyms": [],
   "derived": [
@@ -6340,7 +6341,7 @@ const DICTIONARY_DATA = {
   }
  },
  "universo": {
-  "nuance": "「宇宙」の基本語。",
+  "nuance": "「宇宙」全体を指す語。比喩的に「〜の世界、領域」という意味でも使われる（un universo de posibilidades＝可能性の世界）。",
   "etymology": "ラテン語universum（一つにまとまったもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -6352,7 +6353,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pintura": {
-  "nuance": "「絵画」の基本語。「ペンキ」という意味にもなる。",
+  "nuance": "「ペンキ」という意味にもなる。",
   "etymology": "pintar（描く）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6365,7 +6366,7 @@ const DICTIONARY_DATA = {
   }
  },
  "escultura": {
-  "nuance": "「彫刻」の基本語。",
+  "nuance": "彫刻という美術形式、または個々の彫刻作品を指す。escultor（彫刻家）はここから派生。",
   "etymology": "ラテン語sculpere（彫る）に由来。",
   "synonyms": [],
   "derived": [
@@ -6378,7 +6379,7 @@ const DICTIONARY_DATA = {
   }
  },
  "novela": {
-  "nuance": "「小説」の基本語。novela de misterio（ミステリー小説）のように種類を表す複合語も多い。",
+  "nuance": "novela de misterio（ミステリー小説）のように種類を表す複合語も多い。",
   "etymology": "イタリア語novella（新しい物語）に由来。",
   "synonyms": [],
   "derived": [
@@ -6390,7 +6391,7 @@ const DICTIONARY_DATA = {
   }
  },
  "autor": {
-  "nuance": "「著者」の基本語。女性形はautora。",
+  "nuance": "女性形はautora。",
   "etymology": "ラテン語auctor（創始者、著者）に由来。",
   "synonyms": [],
   "derived": [
@@ -6402,7 +6403,7 @@ const DICTIONARY_DATA = {
   }
  },
  "personaje": {
-  "nuance": "「登場人物」の基本語。",
+  "nuance": "小説・映画などの「登場人物」。「著名人」という意味でも使われる（un personaje importante＝重要人物）。",
   "etymology": "persona（人）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6414,7 +6415,7 @@ const DICTIONARY_DATA = {
   }
  },
  "trama": {
-  "nuance": "「筋書き、プロット」の基本語。",
+  "nuance": "物語の「筋、プロット」を指す。tejer（織る）のイメージから、話が織り成されていく様子を表す。",
   "etymology": "ラテン語trama（織物の横糸）に由来、物語の「織り成す」イメージから。",
   "synonyms": [
    "argumento（あらすじ）"
@@ -6426,7 +6427,7 @@ const DICTIONARY_DATA = {
   }
  },
  "exposición": {
-  "nuance": "「展覧会」の基本語。「説明、発表」という意味にもなる。",
+  "nuance": "「説明、発表」という意味にもなる。",
   "etymology": "ラテン語expositio（提示）に由来。",
   "synonyms": [],
   "derived": [
@@ -6438,7 +6439,7 @@ const DICTIONARY_DATA = {
   }
  },
  "galería": {
-  "nuance": "「ギャラリー」の基本語。",
+  "nuance": "美術館の展示室や、作品を展示する画廊を指す。ショッピングモールを指すこともある（地域による）。",
   "etymology": "イタリア語galleria（回廊）に由来。",
   "synonyms": [],
   "derived": [],
@@ -6512,7 +6513,7 @@ const DICTIONARY_DATA = {
   }
  },
  "famoso": {
-  "nuance": "「有名な」の基本語。los famosos（有名人たち）という名詞的な使い方もよくされる。",
+  "nuance": "los famosos（有名人たち）という名詞的な使い方もよくされる。",
   "etymology": "ラテン語famosus（評判の高い）に由来。",
   "synonyms": [],
   "derived": [
@@ -6536,7 +6537,7 @@ const DICTIONARY_DATA = {
   }
  },
  "peligroso": {
-  "nuance": "「危険な」の基本語。peligro（危険）から派生した形容詞。",
+  "nuance": "peligro（危険）から派生した形容詞。",
   "etymology": "peligro（危険）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6561,7 +6562,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ambicioso": {
-  "nuance": "「野心的な」の基本語。ポジティブにもネガティブにも使われる。",
+  "nuance": "ポジティブにもネガティブにも使われる。",
   "etymology": "ラテン語ambitiosus（野心のある）に由来。",
   "synonyms": [],
   "derived": [
@@ -6573,7 +6574,7 @@ const DICTIONARY_DATA = {
   }
  },
  "religioso": {
-  "nuance": "「信心深い」の基本語。宗教施設を指す名詞的用法もある。",
+  "nuance": "宗教施設を指す名詞的用法もある。",
   "etymology": "ラテン語religiosus（敬虔な）に由来。",
   "synonyms": [],
   "derived": [
@@ -6612,7 +6613,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cargador": {
-  "nuance": "「充電器」の基本語。cargar（充電する、積む）から派生した語。",
+  "nuance": "cargar（充電する、積む）から派生した語。",
   "etymology": "cargar（積む、充電する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6625,7 +6626,7 @@ const DICTIONARY_DATA = {
   }
  },
  "seguidor": {
-  "nuance": "「フォロワー」の基本語。seguir（従う、フォローする）から派生した語。",
+  "nuance": "seguir（従う、フォローする）から派生した語。",
   "etymology": "seguir（従う）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6637,7 +6638,7 @@ const DICTIONARY_DATA = {
   }
  },
  "notificación": {
-  "nuance": "「通知」の基本語。desactivar las notificaciones（通知をオフにする）のような表現でよく使われる。",
+  "nuance": "desactivar las notificaciones（通知をオフにする）のような表現でよく使われる。",
   "etymology": "notificar（通知する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6649,7 +6650,7 @@ const DICTIONARY_DATA = {
   }
  },
  "descarga": {
-  "nuance": "「ダウンロード」の基本語。descargar（ダウンロードする）の名詞形。",
+  "nuance": "descargar（ダウンロードする）の名詞形。",
   "etymology": "descargar（下ろす、ダウンロードする）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6661,7 +6662,7 @@ const DICTIONARY_DATA = {
   }
  },
  "actualización": {
-  "nuance": "「アップデート」の基本語。actualizar（更新する）の名詞形。",
+  "nuance": "actualizar（更新する）の名詞形。",
   "etymology": "actualizar（更新する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6674,7 +6675,7 @@ const DICTIONARY_DATA = {
   }
  },
  "video": {
-  "nuance": "「動画」の基本語。スペインではvídeo（アクセントつき）と綴ることも多い。",
+  "nuance": "スペインではvídeo（アクセントつき）と綴ることも多い。",
   "etymology": "ラテン語video（私は見る）に由来。",
   "synonyms": [],
   "derived": [
@@ -6701,7 +6702,7 @@ const DICTIONARY_DATA = {
   }
  },
  "inteligencia artificial": {
-  "nuance": "「人工知能」の基本語。略してIAとも呼ばれる。",
+  "nuance": "略してIAとも呼ばれる。",
   "etymology": "inteligencia（知能）+ artificial（人工の）の組み合わせ。",
   "synonyms": [
    "IA（略称）"
@@ -6715,7 +6716,7 @@ const DICTIONARY_DATA = {
   }
  },
  "robot": {
-  "nuance": "「ロボット」の基本語。チェコ語由来の国際的な単語。",
+  "nuance": "チェコ語由来の国際的な単語。",
   "etymology": "チェコ語robota（強制労働）に由来。",
   "synonyms": [],
   "derived": [
@@ -6727,7 +6728,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dron": {
-  "nuance": "「ドローン」の基本語。英語droneのスペイン語表記。",
+  "nuance": "英語droneのスペイン語表記。",
   "etymology": "英語drone（雄バチ、無人機）に由来。",
   "synonyms": [],
   "derived": [],
@@ -6737,7 +6738,7 @@ const DICTIONARY_DATA = {
   }
  },
  "realidad virtual": {
-  "nuance": "「バーチャルリアリティ」の基本語。略してVR（英語のまま）とも呼ばれる。",
+  "nuance": "略してVR（英語のまま）とも呼ばれる。",
   "etymology": "realidad（現実）+ virtual（仮想の）の組み合わせ。",
   "synonyms": [
    "VR（略称）"
@@ -6751,7 +6752,7 @@ const DICTIONARY_DATA = {
   }
  },
  "satélite": {
-  "nuance": "「人工衛星」の基本語。GPS等の技術説明でよく使われる。",
+  "nuance": "GPS等の技術説明でよく使われる。",
   "etymology": "ラテン語satelles（従者）に由来。",
   "synonyms": [],
   "derived": [],
@@ -6761,7 +6762,7 @@ const DICTIONARY_DATA = {
   }
  },
  "servidor": {
-  "nuance": "「サーバー」の基本語。servir（仕える、給仕する）から派生した語。",
+  "nuance": "servir（仕える、給仕する）から派生した語。",
   "etymology": "servir（仕える）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6773,7 +6774,7 @@ const DICTIONARY_DATA = {
   }
  },
  "base de datos": {
-  "nuance": "「データベース」の基本語。base（土台）+ de datos（データの）の組み合わせ。",
+  "nuance": "base（土台）+ de datos（データの）の組み合わせ。",
   "etymology": "base（土台）+ de datos（データの）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -6785,7 +6786,7 @@ const DICTIONARY_DATA = {
   }
  },
  "código": {
-  "nuance": "「コード」の基本語。プログラミングの「コード」と「暗証番号」の両方の意味を持つ。",
+  "nuance": "プログラミングの「コード」と「暗証番号」の両方の意味を持つ。",
   "etymology": "ラテン語codex（写本、法典）に由来。",
   "synonyms": [],
   "derived": [
@@ -6797,7 +6798,7 @@ const DICTIONARY_DATA = {
   }
  },
  "universidad": {
-  "nuance": "「大学」の基本語。地域によってはuniと短縮されることも多い。",
+  "nuance": "地域によってはuniと短縮されることも多い。",
   "etymology": "ラテン語universitas（全体、共同体）に由来。",
   "synonyms": [],
   "derived": [
@@ -6821,7 +6822,7 @@ const DICTIONARY_DATA = {
   }
  },
  "beca": {
-  "nuance": "「奨学金」の基本語。tener una beca（奨学金をもらっている）はよく使う表現。",
+  "nuance": "tener una beca（奨学金をもらっている）はよく使う表現。",
   "etymology": "起源ははっきりしないが、俗ラテン語系の語とされる。",
   "synonyms": [],
   "derived": [
@@ -6833,7 +6834,7 @@ const DICTIONARY_DATA = {
   }
  },
  "examen": {
-  "nuance": "「試験」の基本語。presentar un examen（試験を受ける）という組み合わせでよく使う。",
+  "nuance": "presentar un examen（試験を受ける）という組み合わせでよく使う。",
   "etymology": "ラテン語examen（計量、検査）に由来。",
   "synonyms": [],
   "derived": [
@@ -6845,7 +6846,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tarea": {
-  "nuance": "「宿題」の基本語。「任務、仕事」という一般的な意味でも使われる。",
+  "nuance": "「任務、仕事」という一般的な意味でも使われる。",
   "etymology": "アラビア語ṭāriḥa（課された仕事）に由来。",
   "synonyms": [],
   "derived": [],
@@ -6855,7 +6856,7 @@ const DICTIONARY_DATA = {
   }
  },
  "nota": {
-  "nuance": "「成績」の基本語。「メモ、注釈」という意味にもなる。",
+  "nuance": "「メモ、注釈」という意味にもなる。",
   "etymology": "ラテン語nota（印、記号）に由来。",
   "synonyms": [
    "calificación（成績、ややフォーマル）"
@@ -6881,7 +6882,7 @@ const DICTIONARY_DATA = {
   }
  },
  "semestre": {
-  "nuance": "「学期」の基本語。多くのラテンアメリカの大学は1年を2学期制で運営している。",
+  "nuance": "多くのラテンアメリカの大学は1年を2学期制で運営している。",
   "etymology": "ラテン語semestris（6ヶ月の）に由来。",
   "synonyms": [],
   "derived": [],
@@ -6891,7 +6892,7 @@ const DICTIONARY_DATA = {
   }
  },
  "aula": {
-  "nuance": "「教室」の基本語。女性名詞だがel aulaとなる（aguaと同じ、アクセントのあるa音を避けるため）。",
+  "nuance": "女性名詞だがel aulaとなる（aguaと同じ、アクセントのあるa音を避けるため）。",
   "etymology": "ラテン語aula（広間）に由来。",
   "synonyms": [
    "salón de clases（教室、より一般的な言い方）"
@@ -6903,7 +6904,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lápiz": {
-  "nuance": "「鉛筆」の基本語。複数形はlápices（z→c）という綴りの変化に注意。",
+  "nuance": "複数形はlápices（z→c）という綴りの変化に注意。",
   "etymology": "ラテン語lapis（石）に由来。",
   "synonyms": [],
   "derived": [
@@ -6929,7 +6930,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gobierno": {
-  "nuance": "「政府」の基本語。gobernar（統治する）から派生した語。",
+  "nuance": "gobernar（統治する）から派生した語。",
   "etymology": "gobernar（統治する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6942,7 +6943,7 @@ const DICTIONARY_DATA = {
   }
  },
  "presidente": {
-  "nuance": "「大統領」の基本語。女性形はpresidenta。",
+  "nuance": "女性形はpresidenta。",
   "etymology": "ラテン語praesidens（前に座る者）に由来。",
   "synonyms": [],
   "derived": [
@@ -6955,7 +6956,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ciudadano": {
-  "nuance": "「市民」の基本語。ciudad（都市）から派生した語。",
+  "nuance": "ciudad（都市）から派生した語。",
   "etymology": "ciudad（都市）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6968,7 +6969,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ley": {
-  "nuance": "「法律」の基本語。aprobar una ley（法律を可決する）はよく使う組み合わせ。",
+  "nuance": "aprobar una ley（法律を可決する）はよく使う組み合わせ。",
   "etymology": "ラテン語lex（法）に由来。",
   "synonyms": [],
   "derived": [
@@ -6981,7 +6982,7 @@ const DICTIONARY_DATA = {
   }
  },
  "derecho": {
-  "nuance": "「権利」の基本語。「法学」「まっすぐな、右」という意味にもなる多義語。",
+  "nuance": "「法学」「まっすぐな、右」という意味にもなる多義語。",
   "etymology": "ラテン語directus（まっすぐな）に由来。",
   "synonyms": [],
   "derived": [
@@ -6994,7 +6995,7 @@ const DICTIONARY_DATA = {
   }
  },
  "elección": {
-  "nuance": "「選挙」の基本語。elegir（選ぶ）の名詞形。",
+  "nuance": "elegir（選ぶ）の名詞形。",
   "etymology": "elegir（選ぶ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7007,7 +7008,7 @@ const DICTIONARY_DATA = {
   }
  },
  "voto": {
-  "nuance": "「投票」の基本語。votar（投票する）の名詞形。",
+  "nuance": "votar（投票する）の名詞形。",
   "etymology": "ラテン語votum（誓い、願い）に由来。",
   "synonyms": [],
   "derived": [
@@ -7019,7 +7020,7 @@ const DICTIONARY_DATA = {
   }
  },
  "congreso": {
-  "nuance": "「議会」の基本語。「学会、大会」という意味にもなる。",
+  "nuance": "「学会、大会」という意味にもなる。",
   "etymology": "ラテン語congressus（会合）に由来。",
   "synonyms": [],
   "derived": [
@@ -7031,7 +7032,7 @@ const DICTIONARY_DATA = {
   }
  },
  "constitución": {
-  "nuance": "「憲法」の基本語。「体格、構成」という意味にもなる。",
+  "nuance": "「体格、構成」という意味にもなる。",
   "etymology": "ラテン語constitutio（設立、制定）に由来。",
   "synonyms": [],
   "derived": [
@@ -7044,7 +7045,7 @@ const DICTIONARY_DATA = {
   }
  },
  "comunidad": {
-  "nuance": "「地域社会」の基本語。común（共通の）から派生した語。",
+  "nuance": "común（共通の）から派生した語。",
   "etymology": "ラテン語communitas（共同体）に由来。",
   "synonyms": [],
   "derived": [
@@ -7057,7 +7058,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vecino": {
-  "nuance": "「隣人」の基本語。女性形はvecina。",
+  "nuance": "女性形はvecina。",
   "etymology": "ラテン語vicinus（近くの）に由来。",
   "synonyms": [],
   "derived": [
@@ -7070,7 +7071,7 @@ const DICTIONARY_DATA = {
   }
  },
  "generación": {
-  "nuance": "「世代」の基本語。generar（生み出す）から派生した語。",
+  "nuance": "generar（生み出す）から派生した語。",
   "etymology": "generar（生み出す）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7083,7 +7084,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pastilla": {
-  "nuance": "「錠剤」の基本語。tomar una pastilla（錠剤を飲む）はよく使う組み合わせ。",
+  "nuance": "tomar una pastilla（錠剤を飲む）はよく使う組み合わせ。",
   "etymology": "フランス語pastille（薬用トローチ）に由来。",
   "synonyms": [
    "píldora（錠剤、より一般的な言い方）"
@@ -7095,7 +7096,7 @@ const DICTIONARY_DATA = {
   }
  },
  "yeso": {
-  "nuance": "「ギプス」の基本語。「石膏」という建材の意味にもなる。",
+  "nuance": "「石膏」という建材の意味にもなる。",
   "etymology": "ギリシャ語gypsos（石膏）に由来。",
   "synonyms": [],
   "derived": [],
@@ -7105,7 +7106,7 @@ const DICTIONARY_DATA = {
   }
  },
  "incendio": {
-  "nuance": "「火事」の基本語。encender（火をつける）と同語源。",
+  "nuance": "encender（火をつける）と同語源。",
   "etymology": "ラテン語incendium（火事）に由来。",
   "synonyms": [],
   "derived": [
@@ -7118,7 +7119,7 @@ const DICTIONARY_DATA = {
   }
  },
  "evacuación": {
-  "nuance": "「避難」の基本語。evacuar（避難する）の名詞形。",
+  "nuance": "evacuar（避難する）の名詞形。",
   "etymology": "evacuar（避難させる）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7130,7 +7131,7 @@ const DICTIONARY_DATA = {
   }
  },
  "primeros auxilios": {
-  "nuance": "「応急処置」の基本語。primero（最初の）+ auxilio（助け）の組み合わせ。",
+  "nuance": "primero（最初の）+ auxilio（助け）の組み合わせ。",
   "etymology": "primero（最初の）+ auxilio（助け）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7142,7 +7143,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tratamiento": {
-  "nuance": "「治療」の基本語。tratar（扱う、治療する）から派生した語。",
+  "nuance": "tratar（扱う、治療する）から派生した語。",
   "etymology": "tratar（治療する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7154,7 +7155,7 @@ const DICTIONARY_DATA = {
   }
  },
  "termómetro": {
-  "nuance": "「体温計」の基本語。",
+  "nuance": "体温・気温を測る道具。tomar la temperatura con el termómetro（体温計で熱を測る）のように使う。",
   "etymology": "ギリシャ語thermos（熱い）+ metron（測定）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -7164,7 +7165,7 @@ const DICTIONARY_DATA = {
   }
  },
  "presión arterial": {
-  "nuance": "「血圧」の基本語。presión（圧力）+ arterial（動脈の）の組み合わせ。",
+  "nuance": "presión（圧力）+ arterial（動脈の）の組み合わせ。",
   "etymology": "presión（圧力）+ arterial（動脈の）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7176,7 +7177,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pulso": {
-  "nuance": "「脈拍」の基本語。tomar el pulso（脈を測る）はよく使う組み合わせ。",
+  "nuance": "tomar el pulso（脈を測る）はよく使う組み合わせ。",
   "etymology": "ラテン語pulsus（打つこと）に由来。",
   "synonyms": [],
   "derived": [
@@ -7188,7 +7189,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tos": {
-  "nuance": "「咳」の基本語。tener tos（咳が出る）はよく使う組み合わせ。",
+  "nuance": "tener tos（咳が出る）はよく使う組み合わせ。",
   "etymology": "ラテン語tussis（咳）に由来。",
   "synonyms": [],
   "derived": [
@@ -7200,7 +7201,7 @@ const DICTIONARY_DATA = {
   }
  },
  "piedra": {
-  "nuance": "「石」の基本語。tirar la primera piedra（最初に石を投げる、比喩的に「最初に非難する」）のような表現もある。",
+  "nuance": "tirar la primera piedra（最初に石を投げる、比喩的に「最初に非難する」）のような表現もある。",
   "etymology": "ラテン語petra（岩）に由来。",
   "synonyms": [],
   "derived": [
@@ -7212,7 +7213,7 @@ const DICTIONARY_DATA = {
   }
  },
  "costa": {
-  "nuance": "「海岸」の基本語。メキシコには太平洋岸・カリブ海岸両方に美しい海岸線がある。",
+  "nuance": "メキシコには太平洋岸・カリブ海岸両方に美しい海岸線がある。",
   "etymology": "ラテン語costa（あばら骨、側面）に由来。",
   "synonyms": [],
   "derived": [
@@ -7224,7 +7225,7 @@ const DICTIONARY_DATA = {
   }
  },
  "valle": {
-  "nuance": "「谷」の基本語。地名にもよく使われる（Valle de México＝メキシコ盆地）。",
+  "nuance": "地名にもよく使われる（Valle de México＝メキシコ盆地）。",
   "etymology": "ラテン語vallis（谷）に由来。",
   "synonyms": [],
   "derived": [],
@@ -7234,7 +7235,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cascada": {
-  "nuance": "「滝」の基本語。catarataとほぼ同義。メキシコにはアグア・アスルなど有名な滝が多い。",
+  "nuance": "catarataとほぼ同義。メキシコにはアグア・アスルなど有名な滝が多い。",
   "etymology": "イタリア語cascare（落ちる）に由来。",
   "synonyms": [
    "catarata（滝、より大規模なものに使うことも）"
@@ -7246,7 +7247,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lago": {
-  "nuance": "「湖」の基本語。lagunaは「潟、より小さい湖」を指す近い語。",
+  "nuance": "lagunaは「潟、より小さい湖」を指す近い語。",
   "etymology": "ラテン語lacus（湖）に由来。",
   "synonyms": [
    "laguna（潟、小さな湖）"
@@ -7258,7 +7259,7 @@ const DICTIONARY_DATA = {
   }
  },
  "terremoto": {
-  "nuance": "「地震」の基本語。メキシコは地震が多い地域として知られている。",
+  "nuance": "メキシコは地震が多い地域として知られている。",
   "etymology": "tierra（地）+ mover（動く）に由来。",
   "synonyms": [
    "sismo（地震、ややフォーマル）"
@@ -7270,7 +7271,7 @@ const DICTIONARY_DATA = {
   }
  },
  "huracán": {
-  "nuance": "「ハリケーン」の基本語。メキシコのカリブ海沿岸・太平洋沿岸ではハリケーンシーズンに注意が必要。",
+  "nuance": "メキシコのカリブ海沿岸・太平洋沿岸ではハリケーンシーズンに注意が必要。",
   "etymology": "タイノ語hurakán（嵐の神）に由来、英語hurricaneも同語源。",
   "synonyms": [],
   "derived": [],
@@ -7280,7 +7281,7 @@ const DICTIONARY_DATA = {
   }
  },
  "amanecer": {
-  "nuance": "「夜明け」の基本語。動詞としても使われ「夜が明ける」という意味になる。",
+  "nuance": "動詞としても使われ「夜が明ける」という意味になる。",
   "etymology": "a（〜へ）+ mañana（朝）の組み合わせから派生。",
   "synonyms": [],
   "derived": [
@@ -7292,7 +7293,7 @@ const DICTIONARY_DATA = {
   }
  },
  "atardecer": {
-  "nuance": "「夕暮れ」の基本語。動詞としても使われ「日が暮れる」という意味になる。",
+  "nuance": "動詞としても使われ「日が暮れる」という意味になる。",
   "etymology": "a（〜へ）+ tarde（午後）の組み合わせから派生。",
   "synonyms": [
    "puesta de sol（日没）"
@@ -7306,7 +7307,7 @@ const DICTIONARY_DATA = {
   }
  },
  "selva": {
-  "nuance": "「ジャングル」の基本語。bosque（森、より温帯的）とは区別される。メキシコ南部にはマヤ文明の遺跡を包むジャングルが広がる。",
+  "nuance": "bosque（森、より温帯的）とは区別される。メキシコ南部にはマヤ文明の遺跡を包むジャングルが広がる。",
   "etymology": "ラテン語silva（森）に由来。",
   "synonyms": [],
   "derived": [
@@ -7318,7 +7319,7 @@ const DICTIONARY_DATA = {
   }
  },
  "españa": {
-  "nuance": "「スペイン」の基本語。スペイン語の発祥地。",
+  "nuance": "スペイン語の発祥地。",
   "etymology": "フェニキア語i-shepan-ha（ウサギの島）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -7330,7 +7331,7 @@ const DICTIONARY_DATA = {
   }
  },
  "méxico": {
-  "nuance": "「メキシコ」の基本語。正式名称はEstados Unidos Mexicanos（メキシコ合衆国）。",
+  "nuance": "正式名称はEstados Unidos Mexicanos（メキシコ合衆国）。",
   "etymology": "アステカの言葉Mēxihcoに由来、アステカ族の自称に関連するとされる。",
   "synonyms": [],
   "derived": [
@@ -7342,7 +7343,7 @@ const DICTIONARY_DATA = {
   }
  },
  "argentina": {
-  "nuance": "「アルゼンチン」の基本語。南米で2番目に大きな国。",
+  "nuance": "南米で2番目に大きな国。",
   "etymology": "ラテン語argentum（銀）に由来。",
   "synonyms": [],
   "derived": [
@@ -7354,7 +7355,7 @@ const DICTIONARY_DATA = {
   }
  },
  "colombia": {
-  "nuance": "「コロンビア」の基本語。コロンブスの名前に由来する。",
+  "nuance": "コロンブスの名前に由来する。",
   "etymology": "クリストファー・コロンブス（Cristóbal Colón）の名前に由来。",
   "synonyms": [],
   "derived": [
@@ -7366,7 +7367,7 @@ const DICTIONARY_DATA = {
   }
  },
  "perú": {
-  "nuance": "「ペルー」の基本語。マチュピチュなど古代インカ文明の遺跡で知られる。",
+  "nuance": "マチュピチュなど古代インカ文明の遺跡で知られる。",
   "etymology": "古い先住民言語の川の名前に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -7378,7 +7379,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chile": {
-  "nuance": "「チリ」の基本語。南北に非常に細長い国として知られる。「唐辛子」を意味するchileとは別の単語（アクセントの位置が違う：Chile国名は最後にアクセント、chile唐辛子も同じ綴りだが文脈で判断）。",
+  "nuance": "南北に非常に細長い国として知られる。「唐辛子」を意味するchileとは別の単語（アクセントの位置が違う：Chile国名は最後にアクセント、chile唐辛子も同じ綴りだが文脈で判断）。",
   "etymology": "マプチェ語chilli（大地の果て）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -7390,7 +7391,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estados unidos": {
-  "nuance": "「アメリカ合衆国」の基本語。EE.UU.またはEU.と略されることもある。",
+  "nuance": "EE.UU.またはEU.と略されることもある。",
   "etymology": "estado（州）+ unido（連合した）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7402,7 +7403,7 @@ const DICTIONARY_DATA = {
   }
  },
  "francia": {
-  "nuance": "「フランス」の基本語。",
+  "nuance": "ヨーロッパの国。首都はParís（パリ）。",
   "etymology": "ゲルマン系のフランク族（francos）に由来。",
   "synonyms": [],
   "derived": [
@@ -7414,7 +7415,7 @@ const DICTIONARY_DATA = {
   }
  },
  "japón": {
-  "nuance": "「日本」の基本語。",
+  "nuance": "アジアの島国。首都はTokio（東京）。",
   "etymology": "マルコ・ポーロが伝えた中国語由来の名称Cipangu経由でヨーロッパに広まったとされる。",
   "synonyms": [],
   "derived": [
@@ -7426,7 +7427,7 @@ const DICTIONARY_DATA = {
   }
  },
  "brasil": {
-  "nuance": "「ブラジル」の基本語。南米最大の国で、ポルトガル語圏。",
+  "nuance": "南米最大の国で、ポルトガル語圏。",
   "etymology": "赤色染料が取れる木brasilに由来。",
   "synonyms": [],
   "derived": [
@@ -7438,7 +7439,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuba": {
-  "nuance": "「キューバ」の基本語。カリブ海の島国。",
+  "nuance": "カリブ海の島国。",
   "etymology": "タイノ語cubanacánに由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -7450,7 +7451,7 @@ const DICTIONARY_DATA = {
   }
  },
  "martillo": {
-  "nuance": "「ハンマー」の基本語。martillar（打つ）から派生した語。",
+  "nuance": "martillar（打つ）から派生した語。",
   "etymology": "ラテン語martellus（小さなハンマー）に由来。",
   "synonyms": [],
   "derived": [
@@ -7462,7 +7463,7 @@ const DICTIONARY_DATA = {
   }
  },
  "destornillador": {
-  "nuance": "「ドライバー」の基本語。tornillo（ねじ）から派生した語。",
+  "nuance": "tornillo（ねじ）から派生した語。",
   "etymology": "tornillo（ねじ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7475,7 +7476,7 @@ const DICTIONARY_DATA = {
   }
  },
  "llave inglesa": {
-  "nuance": "「レンチ」の基本語。直訳は「イギリスの鍵」という面白い表現。",
+  "nuance": "直訳は「イギリスの鍵」という面白い表現。",
   "etymology": "llave（鍵）+ inglesa（イギリスの）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7487,7 +7488,7 @@ const DICTIONARY_DATA = {
   }
  },
  "taladro": {
-  "nuance": "「ドリル」の基本語。taladrar（穴をあける）から派生した語。",
+  "nuance": "taladrar（穴をあける）から派生した語。",
   "etymology": "taladrar（穴をあける）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7499,7 +7500,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sierra": {
-  "nuance": "「のこぎり」の基本語。「山脈」という意味にもなる（Sierra Madreなど地名によく使われる）。",
+  "nuance": "「山脈」という意味にもなる（Sierra Madreなど地名によく使われる）。",
   "etymology": "ラテン語serra（のこぎり）に由来。",
   "synonyms": [],
   "derived": [
@@ -7511,7 +7512,7 @@ const DICTIONARY_DATA = {
   }
  },
  "clavo": {
-  "nuance": "「釘」の基本語。dar en el clavo（釘に当てる、的を射る）という慣用句にも使われる。",
+  "nuance": "dar en el clavo（釘に当てる、的を射る）という慣用句にも使われる。",
   "etymology": "ラテン語clavus（釘）に由来。",
   "synonyms": [],
   "derived": [
@@ -7523,7 +7524,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tornillo": {
-  "nuance": "「ねじ」の基本語。faltar un tornillo（ねじが足りない、比喩的に「頭がおかしい」）という慣用句もある。",
+  "nuance": "faltar un tornillo（ねじが足りない、比喩的に「頭がおかしい」）という慣用句もある。",
   "etymology": "torno（旋盤、回転）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7536,7 +7537,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pegamento": {
-  "nuance": "「接着剤」の基本語。pegar（くっつける）から派生した語。",
+  "nuance": "pegar（くっつける）から派生した語。",
   "etymology": "pegar（くっつける）から派生した語。",
   "synonyms": [
    "cola（接着剤、地域による）"
@@ -7550,7 +7551,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuerda": {
-  "nuance": "「ロープ」の基本語。「楽器の弦」という意味にもなる。",
+  "nuance": "「楽器の弦」という意味にもなる。",
   "etymology": "ラテン語chorda（腸線、弦）に由来。",
   "synonyms": [],
   "derived": [
@@ -7562,7 +7563,7 @@ const DICTIONARY_DATA = {
   }
  },
  "llave": {
-  "nuance": "「鍵」の基本語。「（水道などの）栓」「レンチ」という意味にもなる多義語。",
+  "nuance": "「（水道などの）栓」「レンチ」という意味にもなる多義語。",
   "etymology": "ラテン語clavis（鍵）に由来。",
   "synonyms": [],
   "derived": [
@@ -7574,7 +7575,7 @@ const DICTIONARY_DATA = {
   }
  },
  "navidad": {
-  "nuance": "「クリスマス」の基本語。メキシコでは12月に盛大に祝われる。",
+  "nuance": "メキシコでは12月に盛大に祝われる。",
   "etymology": "ラテン語nativitas（誕生）に由来。",
   "synonyms": [],
   "derived": [
@@ -7586,7 +7587,7 @@ const DICTIONARY_DATA = {
   }
  },
  "semana santa": {
-  "nuance": "「聖週間」の基本語。イースター前の1週間で、メキシコでは長期休暇としても知られる。",
+  "nuance": "イースター前の1週間で、メキシコでは長期休暇としても知られる。",
   "etymology": "semana（週）+ santa（聖なる）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -7596,7 +7597,7 @@ const DICTIONARY_DATA = {
   }
  },
  "año nuevo": {
-  "nuance": "「新年」の基本語。Feliz Año Nuevo（新年おめでとう）はよく使う挨拶。",
+  "nuance": "Feliz Año Nuevo（新年おめでとう）はよく使う挨拶。",
   "etymology": "año（年）+ nuevo（新しい）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7608,7 +7609,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cumpleaños": {
-  "nuance": "「誕生日」の基本語。単数形も複数形も同じ形（cumple+años＝「年を満たす」から）。",
+  "nuance": "単数形も複数形も同じ形（cumple+años＝「年を満たす」から）。",
   "etymology": "cumplir（満たす）+ años（年）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7620,7 +7621,7 @@ const DICTIONARY_DATA = {
   }
  },
  "boda": {
-  "nuance": "「結婚式」の基本語。casarse（結婚する）とは別の語。",
+  "nuance": "casarse（結婚する）とは別の語。",
   "etymology": "ラテン語vota（誓い）に由来。",
   "synonyms": [],
   "derived": [
@@ -7632,7 +7633,7 @@ const DICTIONARY_DATA = {
   }
  },
  "carnaval": {
-  "nuance": "「カーニバル」の基本語。メキシコのベラクルスなどで盛大に祝われる。",
+  "nuance": "メキシコのベラクルスなどで盛大に祝われる。",
   "etymology": "イタリア語carnevale（謝肉祭）に由来。",
   "synonyms": [],
   "derived": [],
@@ -7642,7 +7643,7 @@ const DICTIONARY_DATA = {
   }
  },
  "día de la independencia": {
-  "nuance": "「独立記念日」の基本語。メキシコでは9月16日。",
+  "nuance": "メキシコでは9月16日。",
   "etymology": "día（日）+ de la independencia（独立の）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7654,7 +7655,7 @@ const DICTIONARY_DATA = {
   }
  },
  "día de los muertos": {
-  "nuance": "「死者の日」の基本語。11月1日・2日、亡くなった家族を明るく迎えるメキシコの伝統行事。",
+  "nuance": "11月1日・2日、亡くなった家族を明るく迎えるメキシコの伝統行事。",
   "etymology": "día（日）+ de los muertos（死者たちの）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7666,7 +7667,7 @@ const DICTIONARY_DATA = {
   }
  },
  "posadas": {
-  "nuance": "「ポサーダス」の基本語。12月16日から24日にかけて行われる、メキシコのクリスマス前の伝統行事。マリアとホセの宿探しを再現する。",
+  "nuance": "12月16日から24日にかけて行われる、メキシコのクリスマス前の伝統行事。マリアとホセの宿探しを再現する。",
   "etymology": "posada（宿）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7678,7 +7679,7 @@ const DICTIONARY_DATA = {
   }
  },
  "quinceañera": {
-  "nuance": "「キンセアニェーラ」の基本語。ラテンアメリカで女の子の15歳を祝う伝統的な通過儀礼（少女から大人の女性への節目とされる）。法律上の成人年齢（メキシコでは18歳）とは別の、文化的・宗教的な意味合いの強いお祝いである点に注意。",
+  "nuance": "ラテンアメリカで女の子の15歳を祝う伝統的な通過儀礼（少女から大人の女性への節目とされる）。法律上の成人年齢（メキシコでは18歳）とは別の、文化的・宗教的な意味合いの強いお祝いである点に注意。",
   "etymology": "quince（15）+ años（歳）の組み合わせから派生。",
   "synonyms": [],
   "derived": [
@@ -7690,7 +7691,7 @@ const DICTIONARY_DATA = {
   }
  },
  "aeropuerto": {
-  "nuance": "「空港」の基本語。aero（空の）+ puerto（港）の組み合わせ。",
+  "nuance": "aero（空の）+ puerto（港）の組み合わせ。",
   "etymology": "aero（空の）+ puerto（港）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7702,7 +7703,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estación": {
-  "nuance": "「駅」の基本語。「季節」という意味にもなる多義語。",
+  "nuance": "「季節」という意味にもなる多義語。",
   "etymology": "ラテン語statio（立つこと、駐留地）に由来。",
   "synonyms": [],
   "derived": [
@@ -7714,7 +7715,7 @@ const DICTIONARY_DATA = {
   }
  },
  "billete": {
-  "nuance": "「切符」の基本語。ラテンアメリカではboleto、スペインではbilleteが一般的（地域差）。「紙幣」という意味にもなる。",
+  "nuance": "ラテンアメリカではboleto、スペインではbilleteが一般的（地域差）。「紙幣」という意味にもなる。",
   "etymology": "フランス語billet（短い文書、切符）に由来。",
   "synonyms": [
    "boleto（切符、ラテンアメリカで一般的）"
@@ -7726,7 +7727,7 @@ const DICTIONARY_DATA = {
   }
  },
  "equipaje": {
-  "nuance": "「荷物」の基本語。equipaje de mano（機内持ち込み荷物）とも組み合わせる。",
+  "nuance": "equipaje de mano（機内持ち込み荷物）とも組み合わせる。",
   "etymology": "フランス語équiper（装備する）に由来。",
   "synonyms": [],
   "derived": [
@@ -7738,7 +7739,7 @@ const DICTIONARY_DATA = {
   }
  },
  "maleta": {
-  "nuance": "「スーツケース」の基本語。hacer la maleta（荷造りする）はよく使う表現。",
+  "nuance": "hacer la maleta（荷造りする）はよく使う表現。",
   "etymology": "フランス語malette（小さな鞄）に由来。",
   "synonyms": [],
   "derived": [
@@ -7750,7 +7751,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hotel": {
-  "nuance": "「ホテル」の基本語。世界共通の借用語。",
+  "nuance": "世界共通の借用語。",
   "etymology": "フランス語hôtel（宿泊施設）に由来。",
   "synonyms": [],
   "derived": [
@@ -7762,7 +7763,7 @@ const DICTIONARY_DATA = {
   }
  },
  "reserva": {
-  "nuance": "「予約」の基本語。reservar（予約する）の名詞形。地域によってreservación（より英語reservationに近い形）も使われる。",
+  "nuance": "reservar（予約する）の名詞形。地域によってreservación（より英語reservationに近い形）も使われる。",
   "etymology": "reservar（予約する、取っておく）から派生した語。",
   "synonyms": [
    "reservación（予約、一部地域）"
@@ -7776,7 +7777,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pasaporte": {
-  "nuance": "「パスポート」の基本語。pasar（通る）+ puerto（港）に由来。",
+  "nuance": "pasar（通る）+ puerto（港）に由来。",
   "etymology": "pasar（通る）+ puerto（港）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7788,7 +7789,7 @@ const DICTIONARY_DATA = {
   }
  },
  "aduana": {
-  "nuance": "「税関」の基本語。アラビア語由来。",
+  "nuance": "アラビア語由来。",
   "etymology": "アラビア語al-diwan（帳簿、役所）に由来。",
   "synonyms": [],
   "derived": [
@@ -7800,7 +7801,7 @@ const DICTIONARY_DATA = {
   }
  },
  "visa": {
-  "nuance": "「ビザ」の基本語。visadoという言い方も一部地域で使われる。",
+  "nuance": "visadoという言い方も一部地域で使われる。",
   "etymology": "ラテン語visa（見られたもの）に由来。",
   "synonyms": [
    "visado（ビザ、一部地域）"
@@ -7812,7 +7813,7 @@ const DICTIONARY_DATA = {
   }
  },
  "puerta de embarque": {
-  "nuance": "「搭乗ゲート」の基本語。puerta（扉）+ embarque（搭乗）の組み合わせ。",
+  "nuance": "puerta（扉）+ embarque（搭乗）の組み合わせ。",
   "etymology": "puerta（扉）+ embarque（搭乗）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7824,7 +7825,7 @@ const DICTIONARY_DATA = {
   }
  },
  "escala": {
-  "nuance": "「乗り継ぎ」の基本語。「規模、目盛り」という意味にもなる。",
+  "nuance": "「規模、目盛り」という意味にもなる。",
   "etymology": "ラテン語scala（はしご）に由来。",
   "synonyms": [],
   "derived": [
@@ -7836,7 +7837,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mostrador": {
-  "nuance": "「カウンター」の基本語。mostrar（見せる）から派生した語。",
+  "nuance": "mostrar（見せる）から派生した語。",
   "etymology": "mostrar（見せる）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7848,7 +7849,7 @@ const DICTIONARY_DATA = {
   }
  },
  "horario de trabajo": {
-  "nuance": "「勤務時間」の基本語。horario（時間割）+ de trabajo（仕事の）の組み合わせ。",
+  "nuance": "horario（時間割）+ de trabajo（仕事の）の組み合わせ。",
   "etymology": "hora（時間）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7860,7 +7861,7 @@ const DICTIONARY_DATA = {
   }
  },
  "videollamada": {
-  "nuance": "「ビデオ通話」の基本語。video（動画）+ llamada（電話）の組み合わせ。",
+  "nuance": "video（動画）+ llamada（電話）の組み合わせ。",
   "etymology": "video（動画）+ llamada（電話）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -7872,7 +7873,7 @@ const DICTIONARY_DATA = {
   }
  },
  "teletrabajo": {
-  "nuance": "「テレワーク」の基本語。tele（遠隔の）+ trabajo（仕事）の組み合わせ。",
+  "nuance": "tele（遠隔の）+ trabajo（仕事）の組み合わせ。",
   "etymology": "tele（遠隔の）+ trabajo（仕事）の組み合わせ。",
   "synonyms": [
    "trabajo remoto（リモートワーク）"
@@ -7886,7 +7887,7 @@ const DICTIONARY_DATA = {
   }
  },
  "capacitación": {
-  "nuance": "「研修」の基本語。capacitar（能力をつけさせる）から派生した語。ラテンアメリカでよく使われる（スペインではformaciónが一般的）。",
+  "nuance": "capacitar（能力をつけさせる）から派生した語。ラテンアメリカでよく使われる（スペインではformaciónが一般的）。",
   "etymology": "capacitar（能力をつけさせる）から派生した語。",
   "synonyms": [
    "formación（研修、スペインで一般的）"
@@ -7900,7 +7901,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ascenso": {
-  "nuance": "「昇進」の基本語。ascender（登る、昇進する）から派生した語。",
+  "nuance": "ascender（登る、昇進する）から派生した語。",
   "etymology": "ascender（登る）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7912,7 +7913,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tenis": {
-  "nuance": "「テニス」の基本語。「スニーカー」という意味にもなる（地域による、メキシコでよく使われる用法）。",
+  "nuance": "「スニーカー」という意味にもなる（地域による、メキシコでよく使われる用法）。",
   "etymology": "フランス語tenez（さあどうぞ、サーブの掛け声）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -7937,7 +7938,7 @@ const DICTIONARY_DATA = {
   }
  },
  "boxeo": {
-  "nuance": "「ボクシング」の基本語。メキシコはボクシングの世界チャンピオンを多く輩出している国として知られる。",
+  "nuance": "メキシコはボクシングの世界チャンピオンを多く輩出している国として知られる。",
   "etymology": "英語boxing（箱を打つ→殴る）に由来。",
   "synonyms": [],
   "derived": [
@@ -7950,7 +7951,7 @@ const DICTIONARY_DATA = {
   }
  },
  "golf": {
-  "nuance": "「ゴルフ」の基本語。英語からの借用語。",
+  "nuance": "英語からの借用語。",
   "etymology": "英語golf（起源は不明）に由来。",
   "synonyms": [],
   "derived": [
@@ -7962,7 +7963,7 @@ const DICTIONARY_DATA = {
   }
  },
  "surf": {
-  "nuance": "「サーフィン」の基本語。メキシコの太平洋岸は世界的なサーフスポットとしても有名。",
+  "nuance": "メキシコの太平洋岸は世界的なサーフスポットとしても有名。",
   "etymology": "英語surf（波、波乗り）に由来。",
   "synonyms": [],
   "derived": [
@@ -7975,7 +7976,7 @@ const DICTIONARY_DATA = {
   }
  },
  "esquí": {
-  "nuance": "「スキー」の基本語。ノルウェー語由来。",
+  "nuance": "ノルウェー語由来。",
   "etymology": "ノルウェー語ski（雪の板）に由来。",
   "synonyms": [],
   "derived": [
@@ -7988,7 +7989,7 @@ const DICTIONARY_DATA = {
   }
  },
  "escalada": {
-  "nuance": "「クライミング」の基本語。escalar（登る）から派生した語。",
+  "nuance": "escalar（登る）から派生した語。",
   "etymology": "escalar（登る）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8001,7 +8002,7 @@ const DICTIONARY_DATA = {
   }
  },
  "voleibol": {
-  "nuance": "「バレーボール」の基本語。英語volleyballのスペイン語表記。",
+  "nuance": "英語volleyballのスペイン語表記。",
   "etymology": "英語volleyball（ボレー＋ボール）に由来。",
   "synonyms": [],
   "derived": [],
@@ -8011,7 +8012,7 @@ const DICTIONARY_DATA = {
   }
  },
  "artes marciales": {
-  "nuance": "「格闘技」の基本語。arte（技術）+ marcial（軍事の）の組み合わせ。",
+  "nuance": "arte（技術）+ marcial（軍事の）の組み合わせ。",
   "etymology": "arte（技術）+ marcial（軍事の、ローマ神話の軍神マルスに由来）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -8021,7 +8022,7 @@ const DICTIONARY_DATA = {
   }
  },
  "atletismo": {
-  "nuance": "「陸上競技」の基本語。atleta（アスリート）から派生した語。",
+  "nuance": "atleta（アスリート）から派生した語。",
   "etymology": "atleta（アスリート）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8033,7 +8034,7 @@ const DICTIONARY_DATA = {
   }
  },
  "guitarra": {
-  "nuance": "「ギター」の基本語。メキシコ音楽（マリアッチなど）に欠かせない楽器。",
+  "nuance": "メキシコ音楽（マリアッチなど）に欠かせない楽器。",
   "etymology": "アラビア語qitara経由でギリシャ語kithara（弦楽器）に由来。",
   "synonyms": [],
   "derived": [
@@ -8045,7 +8046,7 @@ const DICTIONARY_DATA = {
   }
  },
  "piano": {
-  "nuance": "「ピアノ」の基本語。世界共通の借用語（イタリア語由来）。",
+  "nuance": "世界共通の借用語（イタリア語由来）。",
   "etymology": "イタリア語pianoforte（弱く強く）の短縮形に由来。",
   "synonyms": [],
   "derived": [
@@ -8057,7 +8058,7 @@ const DICTIONARY_DATA = {
   }
  },
  "violín": {
-  "nuance": "「バイオリン」の基本語。マリアッチの重要な楽器の一つ。",
+  "nuance": "マリアッチの重要な楽器の一つ。",
   "etymology": "イタリア語violino（小さなヴィオラ）に由来。",
   "synonyms": [],
   "derived": [
@@ -8069,7 +8070,7 @@ const DICTIONARY_DATA = {
   }
  },
  "trompeta": {
-  "nuance": "「トランペット」の基本語。マリアッチの象徴的な楽器の一つ。",
+  "nuance": "マリアッチの象徴的な楽器の一つ。",
   "etymology": "フランス語trompette（トランペット）に由来。",
   "synonyms": [],
   "derived": [
@@ -8081,7 +8082,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tambor": {
-  "nuance": "「太鼓」の基本語。パーカッションの基本的な楽器。",
+  "nuance": "パーカッションの基本的な楽器。",
   "etymology": "アラビア語ṭunbūr（弦楽器）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -8093,7 +8094,7 @@ const DICTIONARY_DATA = {
   }
  },
  "acordeón": {
-  "nuance": "「アコーディオン」の基本語。北メキシコの音楽（norteño、corridos）に欠かせない楽器。",
+  "nuance": "北メキシコの音楽（norteño、corridos）に欠かせない楽器。",
   "etymology": "ドイツ語Akkordeonに由来。",
   "synonyms": [],
   "derived": [
@@ -8105,7 +8106,7 @@ const DICTIONARY_DATA = {
   }
  },
  "órgano": {
-  "nuance": "「オルガン」の基本語。「臓器」という意味にもなる多義語。",
+  "nuance": "「臓器」という意味にもなる多義語。",
   "etymology": "ギリシャ語organon（道具、器官）に由来。",
   "synonyms": [],
   "derived": [
@@ -8130,7 +8131,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuento": {
-  "nuance": "「短編小説」の基本語。contar（語る）から派生した語、子供向けの「お話」という意味にもなる。",
+  "nuance": "contar（語る）から派生した語、子供向けの「お話」という意味にもなる。",
   "etymology": "contar（語る、数える）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8143,7 +8144,7 @@ const DICTIONARY_DATA = {
   }
  },
  "poema": {
-  "nuance": "「詩（作品）」の基本語。poesía（詩というジャンル全体）とは区別される。",
+  "nuance": "poesía（詩というジャンル全体）とは区別される。",
   "etymology": "ギリシャ語poiema（作られたもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -8156,7 +8157,7 @@ const DICTIONARY_DATA = {
   }
  },
  "obra de teatro": {
-  "nuance": "「演劇作品」の基本語。obra（作品）+ de teatro（演劇の）の組み合わせ。",
+  "nuance": "obra（作品）+ de teatro（演劇の）の組み合わせ。",
   "etymology": "obra（作品）+ teatro（劇場）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -8168,7 +8169,7 @@ const DICTIONARY_DATA = {
   }
  },
  "escenario": {
-  "nuance": "「舞台」の基本語。「シナリオ、状況」という意味にもなる。",
+  "nuance": "「シナリオ、状況」という意味にもなる。",
   "etymology": "イタリア語scenario（場面設定）に由来。",
   "synonyms": [],
   "derived": [
@@ -8180,7 +8181,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lienzo": {
-  "nuance": "「キャンバス」の基本語。絵画を描く布・支持体を指す。",
+  "nuance": "絵画を描く布・支持体を指す。",
   "etymology": "ラテン語linteum（亜麻布）に由来。",
   "synonyms": [],
   "derived": [],
@@ -8190,7 +8191,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pincel": {
-  "nuance": "「絵筆」の基本語。",
+  "nuance": "絵の具を塗るための道具。pintar con pincel（筆で描く）のように使う。",
   "etymology": "ラテン語penicillus（小さな尾、筆）に由来。",
   "synonyms": [],
   "derived": [
@@ -8202,7 +8203,7 @@ const DICTIONARY_DATA = {
   }
  },
  "danza": {
-  "nuance": "「舞踊」の基本語。bailarよりもフォーマルな文脈でよく使われる（芸術としてのダンス）。",
+  "nuance": "bailarよりもフォーマルな文脈でよく使われる（芸術としてのダンス）。",
   "etymology": "フランク語系の語danson（引っ張る）に由来。",
   "synonyms": [
    "baile（踊り、より一般的）"
@@ -8216,7 +8217,7 @@ const DICTIONARY_DATA = {
   }
  },
  "folclore": {
-  "nuance": "「民間伝承」の基本語。英語folkloreのスペイン語表記。",
+  "nuance": "英語folkloreのスペイン語表記。",
   "etymology": "英語folklore（民衆の知恵）に由来。",
   "synonyms": [],
   "derived": [
@@ -8228,7 +8229,7 @@ const DICTIONARY_DATA = {
   }
  },
  "artesanía": {
-  "nuance": "「手工芸」の基本語。artesano（職人）から派生した語。メキシコの市場では伝統的な手工芸品がよく売られている。",
+  "nuance": "artesano（職人）から派生した語。メキシコの市場では伝統的な手工芸品がよく売られている。",
   "etymology": "artesano（職人）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8240,7 +8241,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mural": {
-  "nuance": "「壁画」の基本語。メキシコはディエゴ・リベラなど壁画運動（muralismo）で世界的に有名。",
+  "nuance": "メキシコはディエゴ・リベラなど壁画運動（muralismo）で世界的に有名。",
   "etymology": "ラテン語murus（壁）に由来。",
   "synonyms": [],
   "derived": [
@@ -8253,7 +8254,7 @@ const DICTIONARY_DATA = {
   }
  },
  "leyenda": {
-  "nuance": "「伝説」の基本語。「凡例、地図記号の説明」という意味にもなる。",
+  "nuance": "「凡例、地図記号の説明」という意味にもなる。",
   "etymology": "ラテン語legenda（読まれるべきもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -8265,7 +8266,7 @@ const DICTIONARY_DATA = {
   }
  },
  "patrimonio": {
-  "nuance": "「遺産」の基本語。patrimonio cultural（文化遺産）はよく使う組み合わせ。",
+  "nuance": "patrimonio cultural（文化遺産）はよく使う組み合わせ。",
   "etymology": "ラテン語patrimonium（父から受け継いだもの）に由来。",
   "synonyms": [],
   "derived": [],
@@ -8275,7 +8276,7 @@ const DICTIONARY_DATA = {
   }
  },
  "microscopio": {
-  "nuance": "「顕微鏡」の基本語。micro（小さい）+ scopio（見るもの）の組み合わせ。",
+  "nuance": "micro（小さい）+ scopio（見るもの）の組み合わせ。",
   "etymology": "ギリシャ語mikros（小さい）+ skopein（見る）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -8285,7 +8286,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fórmula": {
-  "nuance": "「公式」の基本語。「調合、処方」という意味にもなる。",
+  "nuance": "「調合、処方」という意味にもなる。",
   "etymology": "ラテン語formula（小さな型）に由来。",
   "synonyms": [],
   "derived": [
@@ -8297,7 +8298,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuenta bancaria": {
-  "nuance": "「銀行口座」の基本語。cuenta（勘定）+ bancaria（銀行の）の組み合わせ。",
+  "nuance": "cuenta（勘定）+ bancaria（銀行の）の組み合わせ。",
   "etymology": "cuenta（勘定）+ banco（銀行）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -8310,7 +8311,7 @@ const DICTIONARY_DATA = {
   }
  },
  "inversión": {
-  "nuance": "「投資」の基本語。invertir（投資する）の名詞形。",
+  "nuance": "invertir（投資する）の名詞形。",
   "etymology": "invertir（投資する、逆にする）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8335,7 +8336,7 @@ const DICTIONARY_DATA = {
   }
  },
  "factura": {
-  "nuance": "「請求書」の基本語。メキシコではpedir factura（領収書を発行してもらう）という表現もよく使われる（税務申告関連）。",
+  "nuance": "メキシコではpedir factura（領収書を発行してもらう）という表現もよく使われる（税務申告関連）。",
   "etymology": "ラテン語factura（作られたもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -8347,7 +8348,7 @@ const DICTIONARY_DATA = {
   }
  },
  "suscripción": {
-  "nuance": "「サブスクリプション」の基本語。suscribirse（登録する）の名詞形。",
+  "nuance": "suscribirse（登録する）の名詞形。",
   "etymology": "suscribir（署名する、登録する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8359,7 +8360,7 @@ const DICTIONARY_DATA = {
   }
  },
  "deuda": {
-  "nuance": "「借金」の基本語。tener deudas（借金がある）はよく使う組み合わせ。",
+  "nuance": "tener deudas（借金がある）はよく使う組み合わせ。",
   "etymology": "ラテン語debita（借りているもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -8371,7 +8372,7 @@ const DICTIONARY_DATA = {
   }
  },
  "arquitecto": {
-  "nuance": "「建築家」の基本語。女性形はarquitecta。",
+  "nuance": "女性形はarquitecta。",
   "etymology": "ギリシャ語arkhitekton（主任建築家）に由来。",
   "synonyms": [],
   "derived": [
@@ -8383,7 +8384,7 @@ const DICTIONARY_DATA = {
   }
  },
  "contador": {
-  "nuance": "「会計士」の基本語。女性形はcontadora。「カウンター、計測器」という意味にもなる。",
+  "nuance": "女性形はcontadora。「カウンター、計測器」という意味にもなる。",
   "etymology": "contar（数える）から派生した語。",
   "synonyms": [
    "contable（会計士、スペイン）"
@@ -8398,7 +8399,7 @@ const DICTIONARY_DATA = {
   }
  },
  "camarero": {
-  "nuance": "「ウェイター」の基本語。ラテンアメリカではmesero、スペインではcamareroが一般的（地域差）。",
+  "nuance": "ラテンアメリカではmesero、スペインではcamareroが一般的（地域差）。",
   "etymology": "cámara（部屋、宮廷の部屋）から派生した語。",
   "synonyms": [
    "mesero（ウェイター、ラテンアメリカで一般的）"
@@ -8410,7 +8411,7 @@ const DICTIONARY_DATA = {
   }
  },
  "piloto": {
-  "nuance": "「パイロット」の基本語。男女ともpilotoの形を使う（性別で変化しない）。",
+  "nuance": "男女ともpilotoの形を使う（性別で変化しない）。",
   "etymology": "ギリシャ語pedon（オール）から派生したとされる。",
   "synonyms": [],
   "derived": [
@@ -8422,7 +8423,7 @@ const DICTIONARY_DATA = {
   }
  },
  "electricista": {
-  "nuance": "「電気技師」の基本語。男女ともelectricistaの形を使う。",
+  "nuance": "男女ともelectricistaの形を使う。",
   "etymology": "electricidad（電気）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8434,7 +8435,7 @@ const DICTIONARY_DATA = {
   }
  },
  "plomero": {
-  "nuance": "「配管工」の基本語。地域によってfontanero（スペインで一般的）とも呼ばれる。",
+  "nuance": "地域によってfontanero（スペインで一般的）とも呼ばれる。",
   "etymology": "plomo（鉛、かつて配管に使われた金属）から派生した語。",
   "synonyms": [
    "fontanero（配管工、スペイン）"
@@ -8448,7 +8449,7 @@ const DICTIONARY_DATA = {
   }
  },
  "carpintero": {
-  "nuance": "「大工」の基本語。carpintería（大工仕事）から派生。",
+  "nuance": "carpintería（大工仕事）から派生。",
   "etymology": "ラテン語carpentarius（車大工）に由来。",
   "synonyms": [],
   "derived": [
@@ -8460,7 +8461,7 @@ const DICTIONARY_DATA = {
   }
  },
  "peluquero": {
-  "nuance": "「美容師」の基本語。女性形はpeluquera。peluquería（美容院）から派生。",
+  "nuance": "女性形はpeluquera。peluquería（美容院）から派生。",
   "etymology": "peluca（かつら）から派生した語。",
   "synonyms": [
    "estilista（スタイリスト）"
@@ -8474,7 +8475,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pintor": {
-  "nuance": "「画家」の基本語。女性形はpintora。「ペンキ屋」という意味にもなる。",
+  "nuance": "女性形はpintora。「ペンキ屋」という意味にもなる。",
   "etymology": "pintar（描く）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8487,7 +8488,7 @@ const DICTIONARY_DATA = {
   }
  },
  "granjero": {
-  "nuance": "「農家」の基本語。女性形はgranjera。granja（農場）から派生。",
+  "nuance": "女性形はgranjera。granja（農場）から派生。",
   "etymology": "granja（農場）から派生した語。",
   "synonyms": [
    "agricultor（農業従事者、よりフォーマル）"
@@ -8501,7 +8502,7 @@ const DICTIONARY_DATA = {
   }
  },
  "conferencia": {
-  "nuance": "「講義・会議」の基本語。「電話会議」という意味にもなる（conferencia telefónica）。",
+  "nuance": "「電話会議」という意味にもなる（conferencia telefónica）。",
   "etymology": "ラテン語conferre（持ち寄る）に由来。",
   "synonyms": [],
   "derived": [
@@ -8513,7 +8514,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuaderno": {
-  "nuance": "「ノート」の基本語。cuarto（4分の1）から派生した語（紙を折りたたむ単位に由来するとされる）。",
+  "nuance": "cuarto（4分の1）から派生した語（紙を折りたたむ単位に由来するとされる）。",
   "etymology": "ラテン語quaterni（4つずつ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -8523,7 +8524,7 @@ const DICTIONARY_DATA = {
   }
  },
  "regla": {
-  "nuance": "「定規」の基本語。「ルール、規則」という意味にもなる多義語。",
+  "nuance": "「ルール、規則」という意味にもなる多義語。",
   "etymology": "ラテン語regula（まっすぐな棒、規則）に由来。",
   "synonyms": [],
   "derived": [
@@ -8535,7 +8536,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bolígrafo": {
-  "nuance": "「ボールペン」の基本語。口語ではplumaと短縮されることも多い（メキシコ）。",
+  "nuance": "口語ではplumaと短縮されることも多い（メキシコ）。",
   "etymology": "bola（球）+ grafo（書くもの）の組み合わせ。",
   "synonyms": [
    "pluma（ペン、口語・メキシコ）"
@@ -8547,7 +8548,7 @@ const DICTIONARY_DATA = {
   }
  },
  "calculadora": {
-  "nuance": "「電卓」の基本語。calcular（計算する）から派生した語。",
+  "nuance": "calcular（計算する）から派生した語。",
   "etymology": "calcular（計算する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8559,7 +8560,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sobre": {
-  "nuance": "「封筒」の基本語。前置詞「〜の上に」という意味にもなる同形異義語。",
+  "nuance": "前置詞「〜の上に」という意味にもなる同形異義語。",
   "etymology": "ラテン語super（〜の上に）に由来。",
   "synonyms": [],
   "derived": [],
@@ -8569,7 +8570,7 @@ const DICTIONARY_DATA = {
   }
  },
  "agenda": {
-  "nuance": "「手帳」の基本語。「議題、アジェンダ」という意味にもなる。",
+  "nuance": "「議題、アジェンダ」という意味にもなる。",
   "etymology": "ラテン語agenda（行われるべきこと）に由来。",
   "synonyms": [],
   "derived": [],
@@ -8615,7 +8616,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mejorar": {
-  "nuance": "「改善する」の基本語。自動詞・他動詞両方で使える（Mejoró＝良くなった／Mejoré mi español＝スペイン語を上達させた）。",
+  "nuance": "自動詞・他動詞両方で使える（Mejoró＝良くなった／Mejoré mi español＝スペイン語を上達させた）。",
   "etymology": "mejor（より良い）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8628,7 +8629,7 @@ const DICTIONARY_DATA = {
   }
  },
  "permitir": {
-  "nuance": "「許可する」の基本語。permitir que+接続法、またはpermitir+不定詞の形を取る。",
+  "nuance": "permitir que+接続法、またはpermitir+不定詞の形を取る。",
   "etymology": "ラテン語permittere（通過させる、許す）に由来。",
   "synonyms": [],
   "derived": [
@@ -8640,7 +8641,7 @@ const DICTIONARY_DATA = {
   }
  },
  "prohibir": {
-  "nuance": "「禁止する」の基本語。está prohibido（禁止されている）という受け身の形もよく見る。",
+  "nuance": "está prohibido（禁止されている）という受け身の形もよく見る。",
   "etymology": "ラテン語prohibere（遠ざける、禁じる）に由来。",
   "synonyms": [],
   "derived": [
@@ -8653,7 +8654,7 @@ const DICTIONARY_DATA = {
   }
  },
  "peinarse": {
-  "nuance": "「髪をとかす」の基本語。peine（くし）から派生した再帰動詞。",
+  "nuance": "peine（くし）から派生した再帰動詞。",
   "etymology": "peine（くし）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8665,7 +8666,7 @@ const DICTIONARY_DATA = {
   }
  },
  "maquillarse": {
-  "nuance": "「化粧をする」の基本語。maquillaje（化粧）から派生した再帰動詞。",
+  "nuance": "maquillaje（化粧）から派生した再帰動詞。",
   "etymology": "フランス語maquiller（化粧する）に由来。",
   "synonyms": [],
   "derived": [
@@ -8677,7 +8678,7 @@ const DICTIONARY_DATA = {
   }
  },
  "afeitarse": {
-  "nuance": "「ひげを剃る」の基本語。",
+  "nuance": "顔や体のひげ・毛を剃る動作を表す再帰動詞。afeitadora（電動シェーバー）と関連。",
   "etymology": "ラテン語ad-fictare（こする）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -8689,7 +8690,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cocinar": {
-  "nuance": "「料理する」の基本語。cocina（台所、料理）から派生した語。",
+  "nuance": "cocina（台所、料理）から派生した語。",
   "etymology": "cocina（台所）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8702,7 +8703,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hervir": {
-  "nuance": "「煮る、沸かす」の基本語。e→ieの語根母音変化動詞。",
+  "nuance": "e→ieの語根母音変化動詞。",
   "etymology": "ラテン語fervere（沸く）に由来。",
   "synonyms": [],
   "derived": [
@@ -8715,7 +8716,7 @@ const DICTIONARY_DATA = {
   }
  },
  "freír": {
-  "nuance": "「揚げる」の基本語。過去分詞が2つある珍しい動詞（freído/frito、fritoの方がよく使われる）。",
+  "nuance": "過去分詞が2つある珍しい動詞（freído/frito、fritoの方がよく使われる）。",
   "etymology": "ラテン語frigere（揚げる）に由来。",
   "synonyms": [],
   "derived": [
@@ -8752,7 +8753,7 @@ const DICTIONARY_DATA = {
   }
  },
  "quitarse": {
-  "nuance": "「脱ぐ」の基本語。quitar（取り除く）の再帰形。ponerse（着る）と対になる表現。",
+  "nuance": "quitar（取り除く）の再帰形。ponerse（着る）と対になる表現。",
   "etymology": "quitar（取り除く）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8764,7 +8765,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ponerse": {
-  "nuance": "「着る、身につける」の基本語。vestirse（服を着る、より全体的な動作）とは対照的に、個別のアイテムを身につけるときによく使う。",
+  "nuance": "vestirse（服を着る、より全体的な動作）とは対照的に、個別のアイテムを身につけるときによく使う。",
   "etymology": "poner（置く）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8789,7 +8790,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hornear": {
-  "nuance": "「オーブンで焼く」の基本語。horno（オーブン）から派生した語。",
+  "nuance": "horno（オーブン）から派生した語。",
   "etymology": "horno（オーブン）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8814,7 +8815,7 @@ const DICTIONARY_DATA = {
   }
  },
  "limpiar": {
-  "nuance": "「掃除する」の基本語。limpio（きれいな）から派生した語。",
+  "nuance": "limpio（きれいな）から派生した語。",
   "etymology": "limpio（きれいな）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8839,7 +8840,7 @@ const DICTIONARY_DATA = {
   }
  },
  "reparar": {
-  "nuance": "「修理する」の基本語。arreglar（直す、より口語的）とほぼ同義。",
+  "nuance": "arreglar（直す、より口語的）とほぼ同義。",
   "etymology": "ラテン語reparare（元に戻す）に由来。",
   "synonyms": [
    "arreglar（直す、より口語的）"
@@ -8853,7 +8854,7 @@ const DICTIONARY_DATA = {
   }
  },
  "construir": {
-  "nuance": "「建てる」の基本語。不規則動詞（construyo, construyes...のようにyが入る）。",
+  "nuance": "不規則動詞（construyo, construyes...のようにyが入る）。",
   "etymology": "ラテン語construere（組み立てる）に由来。",
   "synonyms": [],
   "derived": [
@@ -8866,7 +8867,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pintar": {
-  "nuance": "「塗る、絵を描く」の基本語。pintura（絵画、ペンキ）から派生。",
+  "nuance": "pintura（絵画、ペンキ）から派生。",
   "etymology": "ラテン語pinctare（絵を描く）に由来。",
   "synonyms": [],
   "derived": [
@@ -8931,7 +8932,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bajar": {
-  "nuance": "「下がる」の基本語。「（ファイルを）ダウンロードする」という意味にもなる。",
+  "nuance": "「（ファイルを）ダウンロードする」という意味にもなる。",
   "etymology": "俗ラテン語bassiare（低くする）に由来。",
   "synonyms": [],
   "derived": [
@@ -8955,7 +8956,7 @@ const DICTIONARY_DATA = {
   }
  },
  "egoísta": {
-  "nuance": "「利己的な」の基本語。男女同形（-istaで終わる形容詞は性で変化しない）。",
+  "nuance": "男女同形（-istaで終わる形容詞は性で変化しない）。",
   "etymology": "ego（ラテン語で「私」）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -8967,7 +8968,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sincero": {
-  "nuance": "「誠実な」の基本語。honesto（正直な）とほぼ同義で使われることも多い。",
+  "nuance": "honesto（正直な）とほぼ同義で使われることも多い。",
   "etymology": "ラテン語sincerus（純粋な、混じりけのない）に由来。",
   "synonyms": [
    "honesto（正直な）"
@@ -8981,7 +8982,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tímido": {
-  "nuance": "「恥ずかしがりな」の基本語。vergonzoso（恥ずかしがりな、恥ずべき）とほぼ同義。",
+  "nuance": "vergonzoso（恥ずかしがりな、恥ずべき）とほぼ同義。",
   "etymology": "ラテン語timidus（恐れる）に由来。",
   "synonyms": [
    "vergonzoso（恥ずかしがりな）"
@@ -8995,7 +8996,7 @@ const DICTIONARY_DATA = {
   }
  },
  "valiente": {
-  "nuance": "「勇敢な」の基本語。valor（勇気）から派生した語。",
+  "nuance": "valor（勇気）から派生した語。",
   "etymology": "ラテン語valens（強い、力のある）に由来。",
   "synonyms": [],
   "derived": [
@@ -9008,7 +9009,7 @@ const DICTIONARY_DATA = {
   }
  },
  "paciente": {
-  "nuance": "「忍耐強い」の基本語。名詞として「患者」という意味にもなる。",
+  "nuance": "名詞として「患者」という意味にもなる。",
   "etymology": "ラテン語patiens（耐える）に由来。",
   "synonyms": [],
   "derived": [
@@ -9020,7 +9021,7 @@ const DICTIONARY_DATA = {
   }
  },
  "curioso": {
-  "nuance": "「好奇心旺盛な」の基本語。「奇妙な、珍しい」という意味にもなる。",
+  "nuance": "「奇妙な、珍しい」という意味にもなる。",
   "etymology": "ラテン語curiosus（気にかける）に由来。",
   "synonyms": [],
   "derived": [
@@ -9032,7 +9033,7 @@ const DICTIONARY_DATA = {
   }
  },
  "creativo": {
-  "nuance": "「創造的な」の基本語。crear（創造する）から派生した語。",
+  "nuance": "crear（創造する）から派生した語。",
   "etymology": "crear（創造する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9045,7 +9046,7 @@ const DICTIONARY_DATA = {
   }
  },
  "responsable": {
-  "nuance": "「責任感のある」の基本語。ser responsable de（〜の責任がある）はよく使う組み合わせ。",
+  "nuance": "ser responsable de（〜の責任がある）はよく使う組み合わせ。",
   "etymology": "responder（応答する、責任を負う）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9057,7 +9058,7 @@ const DICTIONARY_DATA = {
   }
  },
  "perezoso": {
-  "nuance": "「怠惰な」の基本語。pereza（怠惰）から派生した語。動物の「ナマケモノ」という意味にもなる。",
+  "nuance": "pereza（怠惰）から派生した語。動物の「ナマケモノ」という意味にもなる。",
   "etymology": "pereza（怠惰）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9069,7 +9070,7 @@ const DICTIONARY_DATA = {
   }
  },
  "trabajador": {
-  "nuance": "「勤勉な」の基本語。名詞として「労働者」という意味にもなる。",
+  "nuance": "名詞として「労働者」という意味にもなる。",
   "etymology": "trabajar（働く）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9082,7 +9083,7 @@ const DICTIONARY_DATA = {
   }
  },
  "optimista": {
-  "nuance": "「楽観的な」の基本語。男女同形（-istaで終わる形容詞）。",
+  "nuance": "男女同形（-istaで終わる形容詞）。",
   "etymology": "ラテン語optimus（最良の）に由来。",
   "synonyms": [],
   "derived": [
@@ -9094,7 +9095,7 @@ const DICTIONARY_DATA = {
   }
  },
  "serio": {
-  "nuance": "「真面目な」の基本語。en serio（本気で、真剣に）という副詞句もよく使う。",
+  "nuance": "en serio（本気で、真剣に）という副詞句もよく使う。",
   "etymology": "ラテン語serius（重大な）に由来。",
   "synonyms": [],
   "derived": [
@@ -9106,7 +9107,7 @@ const DICTIONARY_DATA = {
   }
  },
  "educado": {
-  "nuance": "「礼儀正しい」の基本語。educar（教育する）の過去分詞から形容詞化。「教育を受けた」という意味ではなく「行儀がいい」という意味なのが日本語話者には注意点。",
+  "nuance": "educar（教育する）の過去分詞から形容詞化。「教育を受けた」という意味ではなく「行儀がいい」という意味なのが日本語話者には注意点。",
   "etymology": "educar（教育する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9119,7 +9120,7 @@ const DICTIONARY_DATA = {
   }
  },
  "redondo": {
-  "nuance": "「丸い」の基本語。基本的な形の形容詞。",
+  "nuance": "基本的な形の形容詞。",
   "etymology": "俗ラテン語retundus（丸い）に由来。",
   "synonyms": [],
   "derived": [
@@ -9131,7 +9132,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ancho": {
-  "nuance": "「幅広い」の基本語。基本的なサイズの形容詞。",
+  "nuance": "基本的なサイズの形容詞。",
   "etymology": "ラテン語amplus（広い）に由来。",
   "synonyms": [],
   "derived": [
@@ -9144,7 +9145,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estrecho": {
-  "nuance": "「狭い」の基本語。anchoの反対語。「海峡」という意味にもなる名詞（el estrecho）。",
+  "nuance": "anchoの反対語。「海峡」という意味にもなる名詞（el estrecho）。",
   "etymology": "ラテン語strictus（きつく締められた）に由来。",
   "synonyms": [],
   "derived": [
@@ -9156,7 +9157,7 @@ const DICTIONARY_DATA = {
   }
  },
  "músculo": {
-  "nuance": "「筋肉」の基本語。hacer músculo（筋肉をつける）はよく使う表現。",
+  "nuance": "hacer músculo（筋肉をつける）はよく使う表現。",
   "etymology": "ラテン語musculus（小さなネズミ→筋肉の動きから）に由来。",
   "synonyms": [],
   "derived": [
@@ -9168,7 +9169,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cerebro": {
-  "nuance": "「脳」の基本語。比喩的に「頭脳、知恵」という意味にもなる。",
+  "nuance": "比喩的に「頭脳、知恵」という意味にもなる。",
   "etymology": "ラテン語cerebrum（脳）に由来。",
   "synonyms": [],
   "derived": [
@@ -9180,7 +9181,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cintura": {
-  "nuance": "「腰、ウエスト」の基本語。",
+  "nuance": "腰回り、ウエストの部分を指す。cinturón（ベルト）はここから派生した語。",
   "etymology": "ラテン語cinctura（帯、締めるもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -9192,7 +9193,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tobillo": {
-  "nuance": "「足首」の基本語。torcerse el tobillo（足首をひねる）はよく使う組み合わせ。",
+  "nuance": "torcerse el tobillo（足首をひねる）はよく使う組み合わせ。",
   "etymology": "ラテン語tibiaculum（すね骨の小さなもの）に由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -9202,7 +9203,7 @@ const DICTIONARY_DATA = {
   }
  },
  "garganta": {
-  "nuance": "「喉」の基本語。dolor de garganta（喉の痛み）はよく使う組み合わせ。",
+  "nuance": "dolor de garganta（喉の痛み）はよく使う組み合わせ。",
   "etymology": "俗ラテン語gargantaに由来、擬音的な語源とされる。",
   "synonyms": [],
   "derived": [
@@ -9214,7 +9215,7 @@ const DICTIONARY_DATA = {
   }
  },
  "codo": {
-  "nuance": "「肘」の基本語。hablar por los codos（ひじで話す、比喩的に「おしゃべりだ」）という慣用句もある。",
+  "nuance": "hablar por los codos（ひじで話す、比喩的に「おしゃべりだ」）という慣用句もある。",
   "etymology": "ラテン語cubitus（肘）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9224,7 +9225,7 @@ const DICTIONARY_DATA = {
   }
  },
  "muñeca": {
-  "nuance": "「手首」の基本語。「人形」という意味にもなる同形異義語。",
+  "nuance": "「人形」という意味にもなる同形異義語。",
   "etymology": "起源は諸説あるが、人形の意味との関連ははっきりしない。",
   "synonyms": [],
   "derived": [],
@@ -9234,7 +9235,7 @@ const DICTIONARY_DATA = {
   }
  },
  "falda": {
-  "nuance": "「スカート」の基本語。",
+  "nuance": "女性用のスカート。falda larga（ロングスカート）、falda corta（ミニスカート）のように使う。",
   "etymology": "起源ははっきりしないが、俗ラテン語系の語とされる。",
   "synonyms": [],
   "derived": [],
@@ -9244,7 +9245,7 @@ const DICTIONARY_DATA = {
   }
  },
  "calcetín": {
-  "nuance": "「靴下」の基本語。calceta（靴下）の指小形から派生。",
+  "nuance": "calceta（靴下）の指小形から派生。",
   "etymology": "calza（脚衣）から派生した語。",
   "synonyms": [
    "media（靴下、地域による）"
@@ -9256,7 +9257,7 @@ const DICTIONARY_DATA = {
   }
  },
  "abrigo": {
-  "nuance": "「コート」の基本語。abrigar（暖める、守る）から派生した語。",
+  "nuance": "abrigar（暖める、守る）から派生した語。",
   "etymology": "abrigar（暖める）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9268,7 +9269,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bufanda": {
-  "nuance": "「マフラー」の基本語。",
+  "nuance": "首に巻く防寒具。冬の定番アイテム。",
   "etymology": "イタリア語buffare（膨らむ）に由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -9278,7 +9279,7 @@ const DICTIONARY_DATA = {
   }
  },
  "guante": {
-  "nuance": "「手袋」の基本語。",
+  "nuance": "手を保護・防寒するための衣類。par de guantes（手袋一組）のように数える。",
   "etymology": "ゲルマン語系の語want（手袋）に由来。",
   "synonyms": [],
   "derived": [
@@ -9290,7 +9291,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cinturón": {
-  "nuance": "「ベルト」の基本語。cinturón de seguridad（シートベルト）という複合語もよく使われる。",
+  "nuance": "cinturón de seguridad（シートベルト）という複合語もよく使われる。",
   "etymology": "cintura（ウエスト）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9302,7 +9303,7 @@ const DICTIONARY_DATA = {
   }
  },
  "corbata": {
-  "nuance": "「ネクタイ」の基本語。クロアチアの傭兵の首巻きに由来する（英語cravatと同語源）。",
+  "nuance": "クロアチアの傭兵の首巻きに由来する（英語cravatと同語源）。",
   "etymology": "クロアチア語hrvat（クロアチア人）に由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -9312,7 +9313,7 @@ const DICTIONARY_DATA = {
   }
  },
  "paraguas": {
-  "nuance": "「傘」の基本語。para（防ぐ）+ aguas（水）の組み合わせ、単数複数同形。",
+  "nuance": "para（防ぐ）+ aguas（水）の組み合わせ、単数複数同形。",
   "etymology": "parar（防ぐ）+ aguas（水）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -9324,7 +9325,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bolso": {
-  "nuance": "「バッグ」の基本語。bolsa（袋、より一般的な語）とは少しニュアンスが違い、ハンドバッグを指すことが多い。",
+  "nuance": "bolsa（袋、より一般的な語）とは少しニュアンスが違い、ハンドバッグを指すことが多い。",
   "etymology": "ラテン語bursa（袋）に由来。",
   "synonyms": [
    "bolsa（袋、より一般的）"
@@ -9338,7 +9339,7 @@ const DICTIONARY_DATA = {
   }
  },
  "reloj": {
-  "nuance": "「時計」の基本語。reloj de pulsera（腕時計）、reloj de pared（壁掛け時計）のような組み合わせもよく使う。",
+  "nuance": "reloj de pulsera（腕時計）、reloj de pared（壁掛け時計）のような組み合わせもよく使う。",
   "etymology": "ラテン語horologium（時を告げる装置）に由来。",
   "synonyms": [],
   "derived": [
@@ -9350,7 +9351,7 @@ const DICTIONARY_DATA = {
   }
  },
  "anillo": {
-  "nuance": "「指輪」の基本語。anillo de compromiso（婚約指輪）はよく使う組み合わせ。",
+  "nuance": "anillo de compromiso（婚約指輪）はよく使う組み合わせ。",
   "etymology": "ラテン語anellus（小さな輪）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9360,7 +9361,7 @@ const DICTIONARY_DATA = {
   }
  },
  "oveja": {
-  "nuance": "「羊」の基本語。carnero（雄羊）とは区別される。oveja negra（黒い羊、比喩的に「厄介者、家族の異端児」）という慣用句もある。",
+  "nuance": "carnero（雄羊）とは区別される。oveja negra（黒い羊、比喩的に「厄介者、家族の異端児」）という慣用句もある。",
   "etymology": "ラテン語ovicula（小さな羊）に由来。",
   "synonyms": [],
   "derived": [
@@ -9372,7 +9373,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ratón": {
-  "nuance": "「ねずみ」の基本語。「（パソコンの）マウス」という意味にもなる。",
+  "nuance": "「（パソコンの）マウス」という意味にもなる。",
   "etymology": "俗ラテン語ratto（ねずみ）に由来。",
   "synonyms": [],
   "derived": [
@@ -9384,7 +9385,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tigre": {
-  "nuance": "「虎」の基本語。女性形はtigresa。",
+  "nuance": "女性形はtigresa。",
   "etymology": "ギリシャ語tigris（虎）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9394,7 +9395,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pulpo": {
-  "nuance": "「タコ」の基本語。メキシコ料理でよく使われる食材でもある（pulpo a las brasas＝炭焼きタコなど）。",
+  "nuance": "メキシコ料理でよく使われる食材でもある（pulpo a las brasas＝炭焼きタコなど）。",
   "etymology": "ラテン語polypus（多くの足を持つもの）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9404,7 +9405,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cangrejo": {
-  "nuance": "「カニ」の基本語。",
+  "nuance": "横歩きで知られる甲殻類。海辺でよく見られる生き物。",
   "etymology": "フランク語系の語krabbeに由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -9414,7 +9415,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tortuga": {
-  "nuance": "「カメ」の基本語。a paso de tortuga（カメの歩調で、比喩的に「とてもゆっくり」）という慣用句もある。",
+  "nuance": "a paso de tortuga（カメの歩調で、比喩的に「とてもゆっくり」）という慣用句もある。",
   "etymology": "俗ラテン語tartaruca（地獄の生き物→硬い甲羅から連想）に由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -9424,7 +9425,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mariposa": {
-  "nuance": "「蝶」の基本語。水泳の「バタフライ」という意味にもなる。",
+  "nuance": "水泳の「バタフライ」という意味にもなる。",
   "etymology": "起源は諸説あるが、「マリアが飛ぶ」という民間語源説もある。",
   "synonyms": [],
   "derived": [],
@@ -9434,7 +9435,7 @@ const DICTIONARY_DATA = {
   }
  },
  "abeja": {
-  "nuance": "「ハチ」の基本語。picadura de abeja（ハチに刺されること）はよく使う組み合わせ。",
+  "nuance": "picadura de abeja（ハチに刺されること）はよく使う組み合わせ。",
   "etymology": "ラテン語apicula（小さなハチ）に由来。",
   "synonyms": [],
   "derived": [
@@ -9446,7 +9447,7 @@ const DICTIONARY_DATA = {
   }
  },
  "araña": {
-  "nuance": "「クモ」の基本語。多くの人が苦手とする虫の代表格。",
+  "nuance": "多くの人が苦手とする虫の代表格。",
   "etymology": "ラテン語aranea（クモ）に由来。",
   "synonyms": [],
   "derived": [
@@ -9458,7 +9459,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mosquito": {
-  "nuance": "「蚊」の基本語。picadura de mosquito（蚊に刺されること）はよく使う組み合わせ。",
+  "nuance": "picadura de mosquito（蚊に刺されること）はよく使う組み合わせ。",
   "etymology": "mosca（ハエ）の指小形に由来。",
   "synonyms": [],
   "derived": [
@@ -9470,7 +9471,7 @@ const DICTIONARY_DATA = {
   }
  },
  "águila": {
-  "nuance": "「ワシ」の基本語。águilaは女性名詞だが、アクセントのあるa音を避けるため単数形ではelを使う。メキシコの国章にも描かれている。",
+  "nuance": "águilaは女性名詞だが、アクセントのあるa音を避けるため単数形ではelを使う。メキシコの国章にも描かれている。",
   "etymology": "ラテン語aquila（ワシ）に由来。",
   "synonyms": [],
   "derived": [
@@ -9482,7 +9483,7 @@ const DICTIONARY_DATA = {
   }
  },
  "búho": {
-  "nuance": "「フクロウ」の基本語。lechuza（メンフクロウ）とは種類が異なる近い語。",
+  "nuance": "lechuza（メンフクロウ）とは種類が異なる近い語。",
   "etymology": "ラテン語bubo（フクロウ）に由来。",
   "synonyms": [
    "lechuza（メンフクロウ）"
@@ -9494,7 +9495,7 @@ const DICTIONARY_DATA = {
   }
  },
  "loro": {
-  "nuance": "「オウム」の基本語。papagayoとほぼ同義。比喩的に「おしゃべりな人」という意味にもなる。",
+  "nuance": "papagayoとほぼ同義。比喩的に「おしゃべりな人」という意味にもなる。",
   "etymology": "起源ははっきりしないが、擬音的な語源とされる。",
   "synonyms": [
    "papagayo（オウム）"
@@ -9506,7 +9507,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pingüino": {
-  "nuance": "「ペンギン」の基本語。ウェールズ語由来とされる。",
+  "nuance": "ウェールズ語由来とされる。",
   "etymology": "ウェールズ語pen gwyn（白い頭）に由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -9516,7 +9517,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pavo": {
-  "nuance": "「七面鳥」の基本語。メキシコ原産の鳥で、感謝祭・クリスマスの定番料理。",
+  "nuance": "メキシコ原産の鳥で、感謝祭・クリスマスの定番料理。",
   "etymology": "ラテン語pavo（クジャク、混同から意味が転じたとされる）に由来。",
   "synonyms": [],
   "derived": [
@@ -9528,7 +9529,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cena": {
-  "nuance": "「夕食」の基本語。cenar（夕食を食べる）から派生した名詞。",
+  "nuance": "cenar（夕食を食べる）から派生した名詞。",
   "etymology": "ラテン語cena（食事）に由来。",
   "synonyms": [],
   "derived": [
@@ -9540,7 +9541,7 @@ const DICTIONARY_DATA = {
   }
  },
  "desayuno": {
-  "nuance": "「朝食」の基本語。desayunar（朝食を食べる）から派生した名詞。",
+  "nuance": "desayunar（朝食を食べる）から派生した名詞。",
   "etymology": "des（否定）+ ayuno（断食）の組み合わせ、「断食を解く」が原義。",
   "synonyms": [],
   "derived": [
@@ -9552,7 +9553,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuenta": {
-  "nuance": "「お会計」の基本語。「口座」「勘定」という意味にもなる。La cuenta, por favor.（お会計お願いします）は非常によく使う表現。",
+  "nuance": "「口座」「勘定」という意味にもなる。La cuenta, por favor.（お会計お願いします）は非常によく使う表現。",
   "etymology": "contar（数える）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9565,7 +9566,7 @@ const DICTIONARY_DATA = {
   }
  },
  "uva": {
-  "nuance": "「ぶどう」の基本語。メキシコでは新年の12回の鐘の音とともにぶどうを12粒食べる習慣もある。",
+  "nuance": "メキシコでは新年の12回の鐘の音とともにぶどうを12粒食べる習慣もある。",
   "etymology": "ラテン語uva（ぶどう）に由来。",
   "synonyms": [],
   "derived": [
@@ -9577,7 +9578,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sandía": {
-  "nuance": "「スイカ」の基本語。夏によく食べられるフルーツ。",
+  "nuance": "夏によく食べられるフルーツ。",
   "etymology": "アラビア語sindiyya（インドの実）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9587,7 +9588,7 @@ const DICTIONARY_DATA = {
   }
  },
  "piña": {
-  "nuance": "「パイナップル」の基本語。「松ぼっくり」という意味にもなる（見た目の類似から）。",
+  "nuance": "「松ぼっくり」という意味にもなる（見た目の類似から）。",
   "etymology": "pino（松）の実に似ていることから派生。",
   "synonyms": [],
   "derived": [
@@ -9599,7 +9600,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mango": {
-  "nuance": "「マンゴー」の基本語。メキシコでは非常によく食べられる夏のフルーツ。",
+  "nuance": "メキシコでは非常によく食べられる夏のフルーツ。",
   "etymology": "タミル語mankay経由でポルトガル語mangaに由来。",
   "synonyms": [],
   "derived": [],
@@ -9609,7 +9610,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pera": {
-  "nuance": "「梨」の基本語。西洋梨（洋梨）を指すことが一般的。",
+  "nuance": "西洋梨（洋梨）を指すことが一般的。",
   "etymology": "ラテン語pira（梨）に由来。",
   "synonyms": [],
   "derived": [
@@ -9621,7 +9622,7 @@ const DICTIONARY_DATA = {
   }
  },
  "papaya": {
-  "nuance": "「パパイヤ」の基本語。メキシコの朝食によく登場するフルーツ。",
+  "nuance": "メキシコの朝食によく登場するフルーツ。",
   "etymology": "タイノ語papaya（パパイヤ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9631,7 +9632,7 @@ const DICTIONARY_DATA = {
   }
  },
  "zanahoria": {
-  "nuance": "「にんじん」の基本語。",
+  "nuance": "オレンジ色の根菜。目に良いとされ、サラダやスープによく使われる。",
   "etymology": "アラビア語isfannāriyaに由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -9641,7 +9642,7 @@ const DICTIONARY_DATA = {
   }
  },
  "papa": {
-  "nuance": "「じゃがいも」の基本語。ラテンアメリカで一般的（スペインではpatataが一般的）。「ローマ教皇」という意味にもなる同形異義語（大文字Papaで区別）。",
+  "nuance": "ラテンアメリカで一般的（スペインではpatataが一般的）。「ローマ教皇」という意味にもなる同形異義語（大文字Papaで区別）。",
   "etymology": "ケチュア語papa（じゃがいも）に由来。",
   "synonyms": [
    "patata（じゃがいも、スペインで一般的）"
@@ -9653,7 +9654,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cebolla": {
-  "nuance": "「玉ねぎ」の基本語。多くのメキシコ料理の基本食材。",
+  "nuance": "多くのメキシコ料理の基本食材。",
   "etymology": "ラテン語cepulla（小さな玉ねぎ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9663,7 +9664,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ajo": {
-  "nuance": "「にんにく」の基本語。多くの料理の基本食材。",
+  "nuance": "多くの料理の基本食材。",
   "etymology": "ラテン語allium（にんにく）に由来。",
   "synonyms": [],
   "derived": [
@@ -9675,7 +9676,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tomate": {
-  "nuance": "「トマト」の基本語。メキシコ料理に欠かせない食材。verdeとrojoの2種類がよく使われる（緑トマトはサルサ・ベルデに）。",
+  "nuance": "メキシコ料理に欠かせない食材。verdeとrojoの2種類がよく使われる（緑トマトはサルサ・ベルデに）。",
   "etymology": "ナワトル語tomatlに由来。",
   "synonyms": [],
   "derived": [],
@@ -9685,7 +9686,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lechuga": {
-  "nuance": "「レタス」の基本語。leche（ミルク）と同語源（レタスの茎から出る白い樹液から）。",
+  "nuance": "leche（ミルク）と同語源（レタスの茎から出る白い樹液から）。",
   "etymology": "ラテン語lactuca（レタス）に由来、leche（ミルク）と同語源。",
   "synonyms": [],
   "derived": [],
@@ -9695,7 +9696,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pepino": {
-  "nuance": "「きゅうり」の基本語。",
+  "nuance": "緑色で水分の多い野菜。サラダによく使われる、体を冷やす食材としても知られる。",
   "etymology": "ラテン語pepo（メロン）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9705,7 +9706,7 @@ const DICTIONARY_DATA = {
   }
  },
  "brócoli": {
-  "nuance": "「ブロッコリー」の基本語。イタリア語からの借用語。",
+  "nuance": "イタリア語からの借用語。",
   "etymology": "イタリア語broccolo（キャベツの芽）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9715,7 +9716,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mesa": {
-  "nuance": "「テーブル」の基本語。poner la mesa（食卓の準備をする）はよく使う組み合わせ。",
+  "nuance": "poner la mesa（食卓の準備をする）はよく使う組み合わせ。",
   "etymology": "ラテン語mensa（テーブル）に由来。",
   "synonyms": [],
   "derived": [
@@ -9727,7 +9728,7 @@ const DICTIONARY_DATA = {
   }
  },
  "microondas": {
-  "nuance": "「電子レンジ」の基本語。micro（小さい）+ ondas（波）の組み合わせ、単数複数同形。",
+  "nuance": "micro（小さい）+ ondas（波）の組み合わせ、単数複数同形。",
   "etymology": "micro（小さい）+ ondas（波）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -9739,7 +9740,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lavadora": {
-  "nuance": "「洗濯機」の基本語。lavar（洗う）から派生した語。",
+  "nuance": "lavar（洗う）から派生した語。",
   "etymology": "lavar（洗う）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9751,7 +9752,7 @@ const DICTIONARY_DATA = {
   }
  },
  "televisor": {
-  "nuance": "「テレビ」の基本語。televisión（テレビ放送、番組の意味も）とは少し違い、televisorは「機器」を指すことが多い。",
+  "nuance": "televisión（テレビ放送、番組の意味も）とは少し違い、televisorは「機器」を指すことが多い。",
   "etymology": "tele（遠くの）+ visor（見るもの）の組み合わせ。",
   "synonyms": [
    "televisión（テレビ、放送）"
@@ -9765,7 +9766,7 @@ const DICTIONARY_DATA = {
   }
  },
  "espejo": {
-  "nuance": "「鏡」の基本語。mirarse al espejo（鏡で自分を見る）はよく使う組み合わせ。",
+  "nuance": "mirarse al espejo（鏡で自分を見る）はよく使う組み合わせ。",
   "etymology": "ラテン語speculum（鏡）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9775,7 +9776,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lámpara": {
-  "nuance": "「ランプ」の基本語。",
+  "nuance": "光を灯す照明器具。encender/apagar la lámpara（ランプをつける/消す）のように使う。",
   "etymology": "ギリシャ語lampas（明かり、たいまつ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9785,7 +9786,7 @@ const DICTIONARY_DATA = {
   }
  },
  "almohada": {
-  "nuance": "「枕」の基本語。アラビア語由来。",
+  "nuance": "アラビア語由来。",
   "etymology": "アラビア語al-mikhadda（頬のためのもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -9797,7 +9798,7 @@ const DICTIONARY_DATA = {
   }
  },
  "manta": {
-  "nuance": "「毛布」の基本語。cobija（毛布、ラテンアメリカでも一般的）とほぼ同義。",
+  "nuance": "cobija（毛布、ラテンアメリカでも一般的）とほぼ同義。",
   "etymology": "ラテン語mantum（マント、覆い）に由来。",
   "synonyms": [
    "cobija（毛布、ラテンアメリカで一般的）"
@@ -9809,7 +9810,7 @@ const DICTIONARY_DATA = {
   }
  },
  "armario": {
-  "nuance": "「クローゼット」の基本語。closet（英語借用、地域による）とも呼ばれる。",
+  "nuance": "closet（英語借用、地域による）とも呼ばれる。",
   "etymology": "ラテン語armarium（武器や道具を入れる棚）に由来。",
   "synonyms": [
    "clóset（クローゼット、一部地域）"
@@ -9821,7 +9822,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estante": {
-  "nuance": "「棚」の基本語。estar（立つ）から派生した語。",
+  "nuance": "estar（立つ）から派生した語。",
   "etymology": "estar（立つ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9833,7 +9834,7 @@ const DICTIONARY_DATA = {
   }
  },
  "alfombra": {
-  "nuance": "「じゅうたん」の基本語。アラビア語由来。",
+  "nuance": "アラビア語由来。",
   "etymology": "アラビア語al-khumra（マット）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9843,7 +9844,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vela": {
-  "nuance": "「ろうそく」の基本語。「帆（船の）」という意味にもなる同形異義語。",
+  "nuance": "「帆（船の）」という意味にもなる同形異義語。",
   "etymology": "ラテン語vigilia（見張り→夜に使う明かり）に由来。",
   "synonyms": [],
   "derived": [
@@ -9855,7 +9856,7 @@ const DICTIONARY_DATA = {
   }
  },
  "despertador": {
-  "nuance": "「目覚まし時計」の基本語。despertar（目覚めさせる）から派生した語。",
+  "nuance": "despertar（目覚めさせる）から派生した語。",
   "etymology": "despertar（目覚めさせる）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9867,7 +9868,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ducha": {
-  "nuance": "「シャワー」の基本語。ducharse（シャワーを浴びる）から派生した名詞。",
+  "nuance": "ducharse（シャワーを浴びる）から派生した名詞。",
   "etymology": "イタリア語doccia（水の管）に由来。",
   "synonyms": [],
   "derived": [
@@ -9879,7 +9880,7 @@ const DICTIONARY_DATA = {
   }
  },
  "aspiradora": {
-  "nuance": "「掃除機」の基本語。aspirar（吸い込む）から派生した語。",
+  "nuance": "aspirar（吸い込む）から派生した語。",
   "etymology": "aspirar（吸い込む）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -9891,7 +9892,7 @@ const DICTIONARY_DATA = {
   }
  },
  "iglesia": {
-  "nuance": "「教会」の基本語。メキシコの街の中心には必ずと言っていいほど教会が建っている。",
+  "nuance": "メキシコの街の中心には必ずと言っていいほど教会が建っている。",
   "etymology": "ギリシャ語ekklesia（集会）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9901,7 +9902,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pueblo": {
-  "nuance": "「町」の基本語。「民衆、人民」という意味にもなる。メキシコには美しい「プエブロ・マヒコ(魔法の町)」に認定された小さな町が多くある。",
+  "nuance": "「民衆、人民」という意味にもなる。メキシコには美しい「プエブロ・マヒコ(魔法の町)」に認定された小さな町が多くある。",
   "etymology": "ラテン語populus（民衆）に由来。",
   "synonyms": [],
   "derived": [
@@ -9913,7 +9914,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ayuntamiento": {
-  "nuance": "「市役所」の基本語。",
+  "nuance": "市の行政を担う役所。市長（alcalde）が拠点とする建物でもある。",
   "etymology": "ayuntar（集める）から派生した語。",
   "synonyms": [],
   "derived": [],
@@ -9923,7 +9924,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estadio": {
-  "nuance": "「スタジアム」の基本語。メキシコシティのアステカ・スタジアムは複数回ワールドカップの会場となった歴史的な場所。",
+  "nuance": "メキシコシティのアステカ・スタジアムは複数回ワールドカップの会場となった歴史的な場所。",
   "etymology": "ギリシャ語stadion（古代の距離単位、競技場）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9933,7 +9934,7 @@ const DICTIONARY_DATA = {
   }
  },
  "teatro": {
-  "nuance": "「劇場」の基本語。「演劇」という意味にもなる。",
+  "nuance": "「演劇」という意味にもなる。",
   "etymology": "ギリシャ語theatron（見る場所）に由来。",
   "synonyms": [],
   "derived": [
@@ -9945,7 +9946,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cine": {
-  "nuance": "「映画館」の基本語。「映画」という意味にもなる。cinematógrafoの短縮形。",
+  "nuance": "「映画」という意味にもなる。cinematógrafoの短縮形。",
   "etymology": "ギリシャ語kinema（動き）に由来。",
   "synonyms": [],
   "derived": [
@@ -9957,7 +9958,7 @@ const DICTIONARY_DATA = {
   }
  },
  "catedral": {
-  "nuance": "「大聖堂」の基本語。メキシコシティの中央広場にある大聖堂は北米最大級として有名。",
+  "nuance": "メキシコシティの中央広場にある大聖堂は北米最大級として有名。",
   "etymology": "ギリシャ語kathedra（司教座）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9967,7 +9968,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rascacielos": {
-  "nuance": "「高層ビル」の基本語。直訳は「空を引っ掻くもの」、単数複数同形。",
+  "nuance": "直訳は「空を引っ掻くもの」、単数複数同形。",
   "etymology": "rascar（引っ掻く）+ cielos（空）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -9979,7 +9980,7 @@ const DICTIONARY_DATA = {
   }
  },
  "plaza": {
-  "nuance": "「広場」の基本語。メキシコの街の中心にある伝統的な公共広場（zócaloとも呼ばれる）。",
+  "nuance": "メキシコの街の中心にある伝統的な公共広場（zócaloとも呼ばれる）。",
   "etymology": "ラテン語platea（広い通り）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9989,7 +9990,7 @@ const DICTIONARY_DATA = {
   }
  },
  "avenida": {
-  "nuance": "「大通り」の基本語。calle（通り）よりも広い道を指す。",
+  "nuance": "calle（通り）よりも広い道を指す。",
   "etymology": "llegar（到着する）と同語源のavenir（到着する）から派生。",
   "synonyms": [],
   "derived": [],
@@ -9999,7 +10000,7 @@ const DICTIONARY_DATA = {
   }
  },
  "puente": {
-  "nuance": "「橋」の基本語。「連休」という比喩的な意味にもなる（祝日と週末をつなぐ休みのこと）。",
+  "nuance": "「連休」という比喩的な意味にもなる（祝日と週末をつなぐ休みのこと）。",
   "etymology": "ラテン語pons（橋）に由来。",
   "synonyms": [],
   "derived": [],
@@ -10009,7 +10010,7 @@ const DICTIONARY_DATA = {
   }
  },
  "monumento": {
-  "nuance": "「記念碑」の基本語。メキシコシティの独立記念塔（El Ángel）などが有名。",
+  "nuance": "メキシコシティの独立記念塔（El Ángel）などが有名。",
   "etymology": "ラテン語monumentum（記念するもの）に由来。",
   "synonyms": [],
   "derived": [],
@@ -10019,7 +10020,7 @@ const DICTIONARY_DATA = {
   }
  },
  "semáforo": {
-  "nuance": "「信号機」の基本語。semá（信号）+ foro（運ぶもの、光を運ぶ）の組み合わせ。",
+  "nuance": "semá（信号）+ foro（運ぶもの、光を運ぶ）の組み合わせ。",
   "etymology": "ギリシャ語sema（信号）+ phoros（運ぶもの）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -10029,7 +10030,7 @@ const DICTIONARY_DATA = {
   }
  },
  "acera": {
-  "nuance": "「歩道」の基本語。スペインで一般的（メキシコではbanquetaもよく使われる、地域差）。",
+  "nuance": "スペインで一般的（メキシコではbanquetaもよく使われる、地域差）。",
   "etymology": "ラテン語acies（列、縁）に由来。",
   "synonyms": [
    "banqueta（歩道、メキシコで一般的）"
@@ -10041,7 +10042,7 @@ const DICTIONARY_DATA = {
   }
  },
  "oficina de correos": {
-  "nuance": "「郵便局」の基本語。oficina（オフィス）+ de correos（郵便の）の組み合わせ。",
+  "nuance": "oficina（オフィス）+ de correos（郵便の）の組み合わせ。",
   "etymology": "correo（郵便）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10053,7 +10054,7 @@ const DICTIONARY_DATA = {
   }
  },
  "siempre": {
-  "nuance": "「いつも」の基本語。頻度を表す副詞の中で最も高頻度を表す。",
+  "nuance": "頻度を表す副詞の中で最も高頻度を表す。",
   "etymology": "ラテン語semper（常に）に由来。",
   "synonyms": [],
   "derived": [],
@@ -10063,7 +10064,7 @@ const DICTIONARY_DATA = {
   }
  },
  "nunca": {
-  "nuance": "「決して〜ない」の基本語。文頭に置くとnoが不要になる（Nunca voy＝Noなしで文頭）。",
+  "nuance": "文頭に置くとnoが不要になる（Nunca voy＝Noなしで文頭）。",
   "etymology": "ラテン語numquam（決して〜ない）に由来。",
   "synonyms": [
    "jamás（決して〜ない、より強調）"
@@ -10075,7 +10076,7 @@ const DICTIONARY_DATA = {
   }
  },
  "a veces": {
-  "nuance": "「時々」の基本語。中頻度を表す副詞句。",
+  "nuance": "中頻度を表す副詞句。",
   "etymology": "vez（回、度）から派生した表現。",
   "synonyms": [],
   "derived": [
@@ -10087,7 +10088,7 @@ const DICTIONARY_DATA = {
   }
  },
  "a menudo": {
-  "nuance": "「よく」の基本語。a vecesよりも高頻度を表す。",
+  "nuance": "a vecesよりも高頻度を表す。",
   "etymology": "menudo（小さい、細かい）から派生した表現、「細かく＝頻繁に」の意。",
   "synonyms": [
    "frecuentemente（頻繁に）"
@@ -10099,7 +10100,7 @@ const DICTIONARY_DATA = {
   }
  },
  "todavía": {
-  "nuance": "「まだ」の基本語。否定文でも肯定文でも使える（todavía no＝まだ〜ない）。",
+  "nuance": "否定文でも肯定文でも使える（todavía no＝まだ〜ない）。",
   "etymology": "toda（すべて）+ vía（道）の組み合わせから派生したとされる。",
   "synonyms": [
    "aún（まだ、ほぼ同義）"
@@ -10111,7 +10112,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ya": {
-  "nuance": "「すでに」の基本語。todavíaと対照的に使われることが多い（Ya terminé＝もう終わった）。",
+  "nuance": "todavíaと対照的に使われることが多い（Ya terminé＝もう終わった）。",
   "etymology": "ラテン語iam（すでに）に由来。",
   "synonyms": [],
   "derived": [],
@@ -10121,7 +10122,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pronto": {
-  "nuance": "「すぐに」の基本語。hasta pronto（またすぐにね）という別れの挨拶もよく使う。",
+  "nuance": "hasta pronto（またすぐにね）という別れの挨拶もよく使う。",
   "etymology": "ラテン語promptus（用意のできた）に由来。",
   "synonyms": [],
   "derived": [],
@@ -10131,7 +10132,7 @@ const DICTIONARY_DATA = {
   }
  },
  "temprano": {
-  "nuance": "「早く」の基本語。levantarse temprano（早起きする）はよく使う組み合わせ。",
+  "nuance": "levantarse temprano（早起きする）はよく使う組み合わせ。",
   "etymology": "ラテン語tempranus（時期の早い）に由来。",
   "synonyms": [],
   "derived": [],
@@ -10141,7 +10142,7 @@ const DICTIONARY_DATA = {
   }
  },
  "siglo": {
-  "nuance": "「世紀」の基本語。siglo veintiuno（21世紀）のように使う。",
+  "nuance": "siglo veintiuno（21世紀）のように使う。",
   "etymology": "ラテン語saeculum（時代、世代）に由来。",
   "synonyms": [],
   "derived": [],
@@ -10151,7 +10152,7 @@ const DICTIONARY_DATA = {
   }
  },
  "década": {
-  "nuance": "「10年間」の基本語。ラテン語deca（10）に由来。",
+  "nuance": "ラテン語deca（10）に由来。",
   "etymology": "ギリシャ語deka（10）に由来。",
   "synonyms": [],
   "derived": [],
@@ -10161,7 +10162,7 @@ const DICTIONARY_DATA = {
   }
  },
  "temporada": {
-  "nuance": "「シーズン」の基本語。temporada alta（ハイシーズン）、temporada baja（オフシーズン）はよく使う組み合わせ。",
+  "nuance": "temporada alta（ハイシーズン）、temporada baja（オフシーズン）はよく使う組み合わせ。",
   "etymology": "tiempo（時間）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10173,7 +10174,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tienda": {
-  "nuance": "「店」の基本語。tienda de campaña（テント）という別の意味にもなる。",
+  "nuance": "tienda de campaña（テント）という別の意味にもなる。",
   "etymology": "ラテン語tendere（張る）に由来。",
   "synonyms": [],
   "derived": [],
@@ -10183,7 +10184,7 @@ const DICTIONARY_DATA = {
   }
  },
  "centro comercial": {
-  "nuance": "「ショッピングモール」の基本語。centro（中心）+ comercial（商業の）の組み合わせ。",
+  "nuance": "centro（中心）+ comercial（商業の）の組み合わせ。",
   "etymology": "centro（中心）+ comercio（商業）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -10195,7 +10196,7 @@ const DICTIONARY_DATA = {
   }
  },
  "caja": {
-  "nuance": "「レジ」の基本語。「箱」という意味にもなる。",
+  "nuance": "「箱」という意味にもなる。",
   "etymology": "ラテン語capsa（箱）に由来。",
   "synonyms": [],
   "derived": [
@@ -10207,7 +10208,7 @@ const DICTIONARY_DATA = {
   }
  },
  "oferta": {
-  "nuance": "「セール」の基本語。「申し出、提案」という意味にもなる。en oferta（セール中）はよく使う組み合わせ。",
+  "nuance": "「申し出、提案」という意味にもなる。en oferta（セール中）はよく使う組み合わせ。",
   "etymology": "ラテン語offerre（提供する）に由来。",
   "synonyms": [],
   "derived": [
@@ -10219,7 +10220,7 @@ const DICTIONARY_DATA = {
   }
  },
  "descuento": {
-  "nuance": "「割引」の基本語。descontar（差し引く）から派生した語。",
+  "nuance": "descontar（差し引く）から派生した語。",
   "etymology": "descontar（差し引く）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10231,7 +10232,7 @@ const DICTIONARY_DATA = {
   }
  },
  "talla": {
-  "nuance": "「サイズ」の基本語。衣服のサイズを指すときによく使う（números＝数値のサイズとは区別）。",
+  "nuance": "衣服のサイズを指すときによく使う（números＝数値のサイズとは区別）。",
   "etymology": "tallar（彫る、切る）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10243,7 +10244,7 @@ const DICTIONARY_DATA = {
   }
  },
  "carrito": {
-  "nuance": "「カート」の基本語。carro（車）の指小形。",
+  "nuance": "carro（車）の指小形。",
   "etymology": "carro（車）の指小形に由来。",
   "synonyms": [],
   "derived": [
@@ -10255,7 +10256,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pedido": {
-  "nuance": "「注文」の基本語。pedir（頼む）の過去分詞から名詞化。",
+  "nuance": "pedir（頼む）の過去分詞から名詞化。",
   "etymology": "pedir（頼む）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10267,7 +10268,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sala de emergencias": {
-  "nuance": "「救急外来」の基本語。sala（部屋）+ de emergencias（緊急の）の組み合わせ。",
+  "nuance": "sala（部屋）+ de emergencias（緊急の）の組み合わせ。",
   "etymology": "sala（部屋）+ emergencia（緊急事態）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -10279,7 +10280,7 @@ const DICTIONARY_DATA = {
   }
  },
  "inyección": {
-  "nuance": "「注射」の基本語。poner una inyección（注射を打つ）はよく使う組み合わせ。",
+  "nuance": "poner una inyección（注射を打つ）はよく使う組み合わせ。",
   "etymology": "ラテン語iniectio（中に投げ入れること）に由来。",
   "synonyms": [],
   "derived": [
@@ -10291,7 +10292,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cicatriz": {
-  "nuance": "「傷跡」の基本語。",
+  "nuance": "ケガや手術の跡に残る傷跡。dejar una cicatriz（傷跡を残す）のように使う。",
   "etymology": "ラテン語cicatrix（傷跡）に由来。",
   "synonyms": [],
   "derived": [
@@ -10303,7 +10304,7 @@ const DICTIONARY_DATA = {
   }
  },
  "respiración": {
-  "nuance": "「呼吸」の基本語。respirar（呼吸する）の名詞形。",
+  "nuance": "respirar（呼吸する）の名詞形。",
   "etymology": "respirar（呼吸する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10315,7 +10316,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estornudo": {
-  "nuance": "「くしゃみ」の基本語。estornudar（くしゃみをする）の名詞形。¡Salud!（お大事に）はくしゃみをした人にかける定番の言葉。",
+  "nuance": "estornudar（くしゃみをする）の名詞形。¡Salud!（お大事に）はくしゃみをした人にかける定番の言葉。",
   "etymology": "ラテン語sternutare（くしゃみをする）に由来。",
   "synonyms": [],
   "derived": [
@@ -10327,7 +10328,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mareo": {
-  "nuance": "「めまい」の基本語。marear（めまいを起こす、酔わせる）から派生した名詞。",
+  "nuance": "marear（めまいを起こす、酔わせる）から派生した名詞。",
   "etymology": "mar（海）から派生した語（船酔いのイメージから）。",
   "synonyms": [],
   "derived": [
@@ -10340,7 +10341,7 @@ const DICTIONARY_DATA = {
   }
  },
  "programador": {
-  "nuance": "「プログラマー」の基本語。女性形はprogramadora。",
+  "nuance": "女性形はprogramadora。",
   "etymology": "programar（プログラムする）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10353,7 +10354,7 @@ const DICTIONARY_DATA = {
   }
  },
  "impresora": {
-  "nuance": "「プリンター」の基本語。imprimir（印刷する）から派生した語。",
+  "nuance": "imprimir（印刷する）から派生した語。",
   "etymology": "imprimir（印刷する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10365,7 +10366,7 @@ const DICTIONARY_DATA = {
   }
  },
  "teclado": {
-  "nuance": "「キーボード」の基本語。tecla（キー）から派生した語。",
+  "nuance": "tecla（キー）から派生した語。",
   "etymology": "tecla（キー）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10377,7 +10378,7 @@ const DICTIONARY_DATA = {
   }
  },
  "auriculares": {
-  "nuance": "「ヘッドホン」の基本語。audífonos（イヤホン、地域による）ともほぼ同義。",
+  "nuance": "audífonos（イヤホン、地域による）ともほぼ同義。",
   "etymology": "ラテン語auris（耳）から派生した語。",
   "synonyms": [
    "audífonos（イヤホン、地域による）"
@@ -10389,7 +10390,7 @@ const DICTIONARY_DATA = {
   }
  },
  "podcast": {
-  "nuance": "「ポッドキャスト」の基本語。英語からの借用語で、そのまま使われる。",
+  "nuance": "英語からの借用語で、そのまま使われる。",
   "etymology": "英語pod（iPod）+ broadcast（放送）の組み合わせに由来。",
   "synonyms": [],
   "derived": [],
@@ -10399,7 +10400,7 @@ const DICTIONARY_DATA = {
   }
  },
  "virus informático": {
-  "nuance": "「コンピューターウイルス」の基本語。virus（ウイルス）+ informático（情報科学の）の組み合わせ。",
+  "nuance": "virus（ウイルス）+ informático（情報科学の）の組み合わせ。",
   "etymology": "ラテン語virus（毒）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10411,7 +10412,7 @@ const DICTIONARY_DATA = {
   }
  },
  "almacenamiento": {
-  "nuance": "「ストレージ」の基本語。almacenar（保存する）から派生した語。",
+  "nuance": "almacenar（保存する）から派生した語。",
   "etymology": "almacenar（保存する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10423,7 +10424,7 @@ const DICTIONARY_DATA = {
   }
  },
  "configuración": {
-  "nuance": "「設定」の基本語。configurar（設定する）から派生した語。",
+  "nuance": "configurar（設定する）から派生した語。",
   "etymology": "configurar（設定する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10435,7 +10436,7 @@ const DICTIONARY_DATA = {
   }
  },
  "conexión": {
-  "nuance": "「接続」の基本語。conectar（接続する）から派生した語。",
+  "nuance": "conectar（接続する）から派生した語。",
   "etymology": "conectar（接続する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10668,7 +10669,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cereza": {
-  "nuance": "「さくらんぼ」の基本語。",
+  "nuance": "小さくて赤い果物。cereza負けの発音に注意（seではなくce）。",
   "etymology": "ラテン語ceresia（さくらんぼ）に由来。",
   "synonyms": [],
   "derived": [
@@ -10680,7 +10681,7 @@ const DICTIONARY_DATA = {
   }
  },
  "durazno": {
-  "nuance": "「桃」の基本語。ラテンアメリカで一般的（スペインではmelocotónが一般的、地域差）。",
+  "nuance": "ラテンアメリカで一般的（スペインではmelocotónが一般的、地域差）。",
   "etymology": "ラテン語duracinus（硬い皮の実）に由来。",
   "synonyms": [
    "melocotón（桃、スペイン）"
@@ -10692,7 +10693,7 @@ const DICTIONARY_DATA = {
   }
  },
  "coco": {
-  "nuance": "「ココナッツ」の基本語。agua de coco（ココナッツウォーター）はメキシコの海沿いでよく飲まれる。",
+  "nuance": "agua de coco（ココナッツウォーター）はメキシコの海沿いでよく飲まれる。",
   "etymology": "ポルトガル語coco（お化け→実の3つの穴が顔に見えることから）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -10704,7 +10705,7 @@ const DICTIONARY_DATA = {
   }
  },
  "calabaza": {
-  "nuance": "「かぼちゃ」の基本語。死者の日やハロウィンの時期によく使われる食材・飾り。",
+  "nuance": "死者の日やハロウィンの時期によく使われる食材・飾り。",
   "etymology": "起源は諸説あるが、先住民言語系の語とされる。",
   "synonyms": [],
   "derived": [],
@@ -10714,7 +10715,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pizza": {
-  "nuance": "「ピザ」の基本語。イタリア語からの国際的な借用語。",
+  "nuance": "イタリア語からの国際的な借用語。",
   "etymology": "イタリア語pizza（起源は諸説あり）に由来。",
   "synonyms": [],
   "derived": [
@@ -10726,7 +10727,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hamburguesa": {
-  "nuance": "「ハンバーガー」の基本語。ドイツの都市ハンブルクに由来。",
+  "nuance": "ドイツの都市ハンブルクに由来。",
   "etymology": "ドイツの都市Hamburgに由来。",
   "synonyms": [],
   "derived": [],
@@ -10736,7 +10737,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sopa": {
-  "nuance": "「スープ」の基本語。メキシコではsopa secaという「乾いたスープ」（実は米やパスタ料理）という独特な用法もある。",
+  "nuance": "メキシコではsopa secaという「乾いたスープ」（実は米やパスタ料理）という独特な用法もある。",
   "etymology": "ゲルマン語系の語suppa（パンを浸した食事）に由来。",
   "synonyms": [],
   "derived": [],
@@ -10746,7 +10747,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ensalada": {
-  "nuance": "「サラダ」の基本語。sal（塩）と同語源（元々は塩で味付けした野菜料理から）。",
+  "nuance": "sal（塩）と同語源（元々は塩で味付けした野菜料理から）。",
   "etymology": "sal（塩）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10758,7 +10759,7 @@ const DICTIONARY_DATA = {
   }
  },
  "postre": {
-  "nuance": "「デザート」の基本語。食後に出されるものを指す。",
+  "nuance": "食後に出されるものを指す。",
   "etymology": "post（後の）から派生した語。",
   "synonyms": [],
   "derived": [],
@@ -10768,7 +10769,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pastel": {
-  "nuance": "「ケーキ」の基本語。ラテンアメリカで一般的（スペインではtartaもよく使われる）。「パステル画」という意味にもなる。",
+  "nuance": "ラテンアメリカで一般的（スペインではtartaもよく使われる）。「パステル画」という意味にもなる。",
   "etymology": "フランス語pastel（練り粉）に由来。",
   "synonyms": [
    "tarta（ケーキ、スペイン）"
@@ -10782,7 +10783,7 @@ const DICTIONARY_DATA = {
   }
  },
  "helado": {
-  "nuance": "「アイスクリーム」の基本語。helar（凍らせる）の過去分詞から名詞化。",
+  "nuance": "helar（凍らせる）の過去分詞から名詞化。",
   "etymology": "helar（凍らせる）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10795,7 +10796,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chocolate": {
-  "nuance": "「チョコレート」の基本語。ナワトル語（アステカの言葉）由来で、メキシコから世界に広まった。",
+  "nuance": "ナワトル語（アステカの言葉）由来で、メキシコから世界に広まった。",
   "etymology": "ナワトル語xocolatl（苦い水）に由来。",
   "synonyms": [],
   "derived": [
@@ -10807,7 +10808,7 @@ const DICTIONARY_DATA = {
   }
  },
  "jugo": {
-  "nuance": "「ジュース」の基本語。zumo（ジュース、スペインで一般的）とほぼ同義（地域差）。",
+  "nuance": "zumo（ジュース、スペインで一般的）とほぼ同義（地域差）。",
   "etymology": "ラテン語sucus（樹液、汁）に由来。",
   "synonyms": [
    "zumo（ジュース、スペインで一般的）"
@@ -10819,7 +10820,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cerveza": {
-  "nuance": "「ビール」の基本語。メキシコは世界的なビール輸出国でもある（Corona, Modeloなど）。",
+  "nuance": "メキシコは世界的なビール輸出国でもある（Corona, Modeloなど）。",
   "etymology": "ラテン語cervesia（ビール）に由来。",
   "synonyms": [],
   "derived": [
@@ -10831,7 +10832,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vino": {
-  "nuance": "「ワイン」の基本語。メキシコの北部（バハ・カリフォルニアなど）にもワイン産地がある。",
+  "nuance": "メキシコの北部（バハ・カリフォルニアなど）にもワイン産地がある。",
   "etymology": "ラテン語vinum（ワイン）に由来。",
   "synonyms": [],
   "derived": [
@@ -10844,7 +10845,7 @@ const DICTIONARY_DATA = {
   }
  },
  "azúcar": {
-  "nuance": "「砂糖」の基本語。性が不安定な珍しい単語（男性・女性どちらでも使われる：el azúcar/la azúcar）。",
+  "nuance": "性が不安定な珍しい単語（男性・女性どちらでも使われる：el azúcar/la azúcar）。",
   "etymology": "アラビア語as-sukkarに由来。",
   "synonyms": [],
   "derived": [
@@ -10857,7 +10858,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sal": {
-  "nuance": "「塩」の基本語。pasarla sal（塩を取る）という日常会話のフレーズもよく使う。",
+  "nuance": "pasarla sal（塩を取る）という日常会話のフレーズもよく使う。",
   "etymology": "ラテン語sal（塩）に由来。",
   "synonyms": [],
   "derived": [
@@ -10870,7 +10871,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pimienta": {
-  "nuance": "「こしょう」の基本語。pimiento（ピーマン、パプリカ）とは別の単語なので混同しないよう注意。",
+  "nuance": "pimiento（ピーマン、パプリカ）とは別の単語なので混同しないよう注意。",
   "etymology": "ラテン語pigmenta（染料、香辛料）に由来。",
   "synonyms": [],
   "derived": [],
@@ -10880,7 +10881,7 @@ const DICTIONARY_DATA = {
   }
  },
  "aceite": {
-  "nuance": "「油」の基本語。aceite de oliva（オリーブオイル）はよく使う組み合わせ。",
+  "nuance": "aceite de oliva（オリーブオイル）はよく使う組み合わせ。",
   "etymology": "アラビア語az-zayt（オリーブの汁）に由来。",
   "synonyms": [],
   "derived": [
@@ -10892,7 +10893,7 @@ const DICTIONARY_DATA = {
   }
  },
  "impaciente": {
-  "nuance": "「せっかちな」の基本語。pacienteの反対語。",
+  "nuance": "pacienteの反対語。",
   "etymology": "in（否定）+ paciente（忍耐強い）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -10904,7 +10905,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pesimista": {
-  "nuance": "「悲観的な」の基本語。optimistaの反対語。男女同形（-istaで終わる形容詞）。",
+  "nuance": "optimistaの反対語。男女同形（-istaで終わる形容詞）。",
   "etymology": "ラテン語pessimus（最悪の）に由来。",
   "synonyms": [],
   "derived": [
@@ -10916,7 +10917,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gracioso": {
-  "nuance": "「面白い」の基本語。chistosoとほぼ同義でよく使われる。",
+  "nuance": "chistosoとほぼ同義でよく使われる。",
   "etymology": "gracia（優雅さ、面白さ）から派生した語。",
   "synonyms": [
    "chistoso（面白い、ほぼ同義）"
@@ -10930,7 +10931,7 @@ const DICTIONARY_DATA = {
   }
  },
  "profundo": {
-  "nuance": "「深い」の基本語。「深遠な、深みのある」という比喩的な意味にもなる。",
+  "nuance": "「深遠な、深みのある」という比喩的な意味にもなる。",
   "etymology": "ラテン語profundus（底が深い）に由来。",
   "synonyms": [],
   "derived": [
@@ -10943,7 +10944,7 @@ const DICTIONARY_DATA = {
   }
  },
  "plano": {
-  "nuance": "「平らな」の基本語。「地図、計画」という意味の名詞にもなる。",
+  "nuance": "「地図、計画」という意味の名詞にもなる。",
   "etymology": "ラテン語planus（平らな）に由来。",
   "synonyms": [],
   "derived": [
@@ -10955,7 +10956,7 @@ const DICTIONARY_DATA = {
   }
  },
  "suave": {
-  "nuance": "「柔らかい」の基本語。触感だけでなく、性格や音についても使える幅広い形容詞。",
+  "nuance": "触感だけでなく、性格や音についても使える幅広い形容詞。",
   "etymology": "ラテン語suavis（甘美な、心地よい）に由来。",
   "synonyms": [],
   "derived": [
@@ -10968,7 +10969,7 @@ const DICTIONARY_DATA = {
   }
  },
  "brillante": {
-  "nuance": "「輝いている」の基本語。「優秀な、素晴らしい」という比喩的な意味にもなる。",
+  "nuance": "「優秀な、素晴らしい」という比喩的な意味にもなる。",
   "etymology": "brillar（輝く）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -10981,7 +10982,7 @@ const DICTIONARY_DATA = {
   }
  },
  "oscuro": {
-  "nuance": "「暗い」の基本語。claroの反対語。色の濃さを表すときにもよく使う（azul oscuro＝濃い青）。",
+  "nuance": "claroの反対語。色の濃さを表すときにもよく使う（azul oscuro＝濃い青）。",
   "etymology": "ラテン語obscurus（暗い）に由来。",
   "synonyms": [],
   "derived": [
@@ -11007,7 +11008,7 @@ const DICTIONARY_DATA = {
   }
  },
  "transparente": {
-  "nuance": "「透明な」の基本語。「透明性のある、正直な」という比喩的な意味にもなる。",
+  "nuance": "「透明性のある、正直な」という比喩的な意味にもなる。",
   "etymology": "trans（通して）+ parecer（見える）の組み合わせに由来。",
   "synonyms": [],
   "derived": [
@@ -11019,7 +11020,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ligero": {
-  "nuance": "「軽い」の基本語。pesadoの反対語。「軽食」という意味の名詞的用法もある。",
+  "nuance": "pesadoの反対語。「軽食」という意味の名詞的用法もある。",
   "etymology": "俗ラテン語levarius（軽い）に由来。",
   "synonyms": [],
   "derived": [
@@ -11031,7 +11032,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pesado": {
-  "nuance": "「重い」の基本語。比喩的に「うっとうしい、面倒な（人）」という意味にもなる。",
+  "nuance": "比喩的に「うっとうしい、面倒な（人）」という意味にもなる。",
   "etymology": "pesar（重さがある）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11044,7 +11045,7 @@ const DICTIONARY_DATA = {
   }
  },
  "flexible": {
-  "nuance": "「柔軟な」の基本語。物理的にも、性格・スケジュールについても使える。",
+  "nuance": "物理的にも、性格・スケジュールについても使える。",
   "etymology": "ラテン語flexibilis（曲げられる）に由来。",
   "synonyms": [],
   "derived": [
@@ -11056,7 +11057,7 @@ const DICTIONARY_DATA = {
   }
  },
  "seco": {
-  "nuance": "「乾いた」の基本語。「辛口の（ワイン）」という意味にもなる。",
+  "nuance": "「辛口の（ワイン）」という意味にもなる。",
   "etymology": "ラテン語siccus（乾いた）に由来。",
   "synonyms": [],
   "derived": [
@@ -11069,7 +11070,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tibio": {
-  "nuance": "「ぬるい」の基本語。calienteとfríoの中間。",
+  "nuance": "calienteとfríoの中間。",
   "etymology": "ラテン語tepidus（ぬるい）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11079,7 +11080,7 @@ const DICTIONARY_DATA = {
   }
  },
  "maduro": {
-  "nuance": "「熟した」の基本語。「成熟した、大人びた（性格）」という比喩的な意味にもなる。",
+  "nuance": "「成熟した、大人びた（性格）」という比喩的な意味にもなる。",
   "etymology": "ラテン語maturus（成熟した）に由来。",
   "synonyms": [],
   "derived": [
@@ -11092,7 +11093,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fresco": {
-  "nuance": "「新鮮な」の基本語。「涼しい」という意味にもなる。",
+  "nuance": "「涼しい」という意味にもなる。",
   "etymology": "ゲルマン語系の語frisk（新鮮な）に由来。",
   "synonyms": [],
   "derived": [
@@ -11105,7 +11106,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuidadoso": {
-  "nuance": "「注意深い」の基本語。cuidado（注意）から派生した語。",
+  "nuance": "cuidado（注意）から派生した語。",
   "etymology": "cuidado（注意、世話）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11118,7 +11119,7 @@ const DICTIONARY_DATA = {
   }
  },
  "puntual": {
-  "nuance": "「時間に正確な」の基本語。punto（点、時点）から派生した語。",
+  "nuance": "punto（点、時点）から派生した語。",
   "etymology": "punto（点）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11130,7 +11131,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sombra": {
-  "nuance": "「影」の基本語。「日陰」という意味にもなる。",
+  "nuance": "「日陰」という意味にもなる。",
   "etymology": "ラテン語umbra（影）に由来。",
   "synonyms": [],
   "derived": [
@@ -11143,7 +11144,7 @@ const DICTIONARY_DATA = {
   }
  },
  "luz": {
-  "nuance": "「光」の基本語。「電気、灯り」という意味でもよく使われる（apagar la luz＝電気を消す）。",
+  "nuance": "「電気、灯り」という意味でもよく使われる（apagar la luz＝電気を消す）。",
   "etymology": "ラテン語lux（光）に由来。",
   "synonyms": [],
   "derived": [
@@ -11155,7 +11156,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ruido": {
-  "nuance": "「騒音」の基本語。hacer ruido（音を立てる）はよく使う組み合わせ。",
+  "nuance": "hacer ruido（音を立てる）はよく使う組み合わせ。",
   "etymology": "ラテン語rugitus（吠え声）に由来。",
   "synonyms": [],
   "derived": [
@@ -11167,7 +11168,7 @@ const DICTIONARY_DATA = {
   }
  },
  "silencio": {
-  "nuance": "「静けさ」の基本語。guardar silencio（沈黙を守る）はよく使う組み合わせ。",
+  "nuance": "guardar silencio（沈黙を守る）はよく使う組み合わせ。",
   "etymology": "ラテン語silentium（静寂）に由来。",
   "synonyms": [],
   "derived": [
@@ -11180,7 +11181,7 @@ const DICTIONARY_DATA = {
   }
  },
  "voz": {
-  "nuance": "「声」の基本語。en voz alta（大きな声で）、en voz baja（小さな声で）はよく使う組み合わせ。",
+  "nuance": "en voz alta（大きな声で）、en voz baja（小さな声で）はよく使う組み合わせ。",
   "etymology": "ラテン語vox（声）に由来。",
   "synonyms": [],
   "derived": [
@@ -11193,7 +11194,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sonido": {
-  "nuance": "「音」の基本語。sonar（鳴る）から派生した語。",
+  "nuance": "sonar（鳴る）から派生した語。",
   "etymology": "sonar（鳴る）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11205,7 +11206,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sabor": {
-  "nuance": "「味」の基本語。saber（知る、味がする）と同語源。",
+  "nuance": "saber（知る、味がする）と同語源。",
   "etymology": "ラテン語sapor（味）に由来。",
   "synonyms": [],
   "derived": [
@@ -11217,7 +11218,7 @@ const DICTIONARY_DATA = {
   }
  },
  "olor": {
-  "nuance": "「匂い」の基本語。oler（匂いがする）から派生した語。",
+  "nuance": "oler（匂いがする）から派生した語。",
   "etymology": "oler（匂いがする）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11230,7 +11231,7 @@ const DICTIONARY_DATA = {
   }
  },
  "principio": {
-  "nuance": "「始まり」の基本語。「原則」という意味にもなる。al principio（最初は）はよく使う表現。",
+  "nuance": "「原則」という意味にもなる。al principio（最初は）はよく使う表現。",
   "etymology": "ラテン語principium（始まり）に由来。",
   "synonyms": [],
   "derived": [
@@ -11242,7 +11243,7 @@ const DICTIONARY_DATA = {
   }
  },
  "final": {
-  "nuance": "「終わり」の基本語。「決勝戦」という意味にもなる。al final（最後には）はよく使う表現。",
+  "nuance": "「決勝戦」という意味にもなる。al final（最後には）はよく使う表現。",
   "etymology": "ラテン語finalis（終わりの）に由来。",
   "synonyms": [],
   "derived": [
@@ -11254,7 +11255,7 @@ const DICTIONARY_DATA = {
   }
  },
  "resto": {
-  "nuance": "「残り」の基本語。los restos（残骸、遺跡）という意味にもなる。",
+  "nuance": "los restos（残骸、遺跡）という意味にもなる。",
   "etymology": "ラテン語restare（残る）に由来。",
   "synonyms": [],
   "derived": [
@@ -11266,7 +11267,7 @@ const DICTIONARY_DATA = {
   }
  },
  "grupo": {
-  "nuance": "「グループ」の基本語。「バンド、音楽グループ」という意味にもなる。",
+  "nuance": "「バンド、音楽グループ」という意味にもなる。",
   "etymology": "イタリア語gruppo（かたまり）に由来。",
   "synonyms": [],
   "derived": [
@@ -11278,7 +11279,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lista": {
-  "nuance": "「リスト」の基本語。hacer una lista（リストを作る）はよく使う組み合わせ。",
+  "nuance": "hacer una lista（リストを作る）はよく使う組み合わせ。",
   "etymology": "ゲルマン語系の語lista（縁、帯）に由来。",
   "synonyms": [],
   "derived": [
@@ -11290,7 +11291,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ejemplo": {
-  "nuance": "「例」の基本語。por ejemplo（例えば）は非常によく使う表現。",
+  "nuance": "por ejemplo（例えば）は非常によく使う表現。",
   "etymology": "ラテン語exemplum（見本、例）に由来。",
   "synonyms": [],
   "derived": [
@@ -11302,7 +11303,7 @@ const DICTIONARY_DATA = {
   }
  },
  "solución": {
-  "nuance": "「解決策」の基本語。resolver（解決する）と関連。",
+  "nuance": "resolver（解決する）と関連。",
   "etymology": "resolver（解決する）と同語源、ラテン語solutio（解決）に由来。",
   "synonyms": [],
   "derived": [
@@ -11315,7 +11316,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pregunta": {
-  "nuance": "「質問」の基本語。preguntar（質問する）から派生した語。",
+  "nuance": "preguntar（質問する）から派生した語。",
   "etymology": "preguntar（質問する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11327,7 +11328,7 @@ const DICTIONARY_DATA = {
   }
  },
  "respuesta": {
-  "nuance": "「答え」の基本語。responder（答える）から派生した語。",
+  "nuance": "responder（答える）から派生した語。",
   "etymology": "responder（答える）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11339,7 +11340,7 @@ const DICTIONARY_DATA = {
   }
  },
  "duda": {
-  "nuance": "「疑問」の基本語。tener duda（疑問がある）、sin duda（間違いなく）はよく使う組み合わせ。",
+  "nuance": "tener duda（疑問がある）、sin duda（間違いなく）はよく使う組み合わせ。",
   "etymology": "ラテン語dubitare（疑う）に由来。",
   "synonyms": [],
   "derived": [
@@ -11352,7 +11353,7 @@ const DICTIONARY_DATA = {
   }
  },
  "opinión": {
-  "nuance": "「意見」の基本語。en mi opinión（私の意見では）はよく使う表現。",
+  "nuance": "en mi opinión（私の意見では）はよく使う表現。",
   "etymology": "ラテン語opinio（見解）に由来。",
   "synonyms": [],
   "derived": [
@@ -11364,7 +11365,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pararse": {
-  "nuance": "「立つ」の基本語。ラテンアメリカで一般的（スペインではponerse de pieの方がよく使われる、地域差）。「止まる」という意味にもなる。",
+  "nuance": "ラテンアメリカで一般的（スペインではponerse de pieの方がよく使われる、地域差）。「止まる」という意味にもなる。",
   "etymology": "parar（止まる）から派生した再帰動詞。",
   "synonyms": [
    "ponerse de pie（立つ、スペインで一般的）"
@@ -11378,7 +11379,7 @@ const DICTIONARY_DATA = {
   }
  },
  "quitar": {
-  "nuance": "「取り除く」の基本語。quitarse（脱ぐ、自分から取り除く）の元になる動詞。",
+  "nuance": "quitarse（脱ぐ、自分から取り除く）の元になる動詞。",
   "etymology": "ラテン語quietare（静止させる）に由来。",
   "synonyms": [],
   "derived": [
@@ -11390,7 +11391,7 @@ const DICTIONARY_DATA = {
   }
  },
  "enfriar": {
-  "nuance": "「冷やす」の基本語。frío（寒い、冷たい）から派生した語。",
+  "nuance": "frío（寒い、冷たい）から派生した語。",
   "etymology": "frío（冷たい）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11403,7 +11404,7 @@ const DICTIONARY_DATA = {
   }
  },
  "destruir": {
-  "nuance": "「破壊する」の基本語。construir（建てる）の反対語。不規則動詞（destruyo, destruyes...）。",
+  "nuance": "construir（建てる）の反対語。不規則動詞（destruyo, destruyes...）。",
   "etymology": "ラテン語destruere（積み上げたものを崩す）に由来。",
   "synonyms": [],
   "derived": [
@@ -11415,7 +11416,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dibujar": {
-  "nuance": "「絵を描く」の基本語。pintar（塗る、絵の具で描く）とは対照的に、線画・スケッチを指すことが多い。",
+  "nuance": "pintar（塗る、絵の具で描く）とは対照的に、線画・スケッチを指すことが多い。",
   "etymology": "フランス語dessiner（描く）に由来。",
   "synonyms": [],
   "derived": [
@@ -11428,7 +11429,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bailar": {
-  "nuance": "「踊る」の基本語。メキシコでもとても一般的な語。",
+  "nuance": "メキシコでもとても一般的な語。",
   "etymology": "俗ラテン語ballare（踊る）に由来。",
   "synonyms": [],
   "derived": [
@@ -11465,7 +11466,7 @@ const DICTIONARY_DATA = {
   }
  },
  "regresar": {
-  "nuance": "「戻る」の基本語。volver（帰ってくる）とほぼ同義。ラテンアメリカでよく使われる。",
+  "nuance": "volver（帰ってくる）とほぼ同義。ラテンアメリカでよく使われる。",
   "etymology": "ラテン語regredi（戻る）に由来。",
   "synonyms": [
    "volver（帰ってくる、ほぼ同義）"
@@ -11479,7 +11480,7 @@ const DICTIONARY_DATA = {
   }
  },
  "volver": {
-  "nuance": "「帰ってくる」の基本語。regresarとほぼ同義。volver a+不定詞（また〜する）という表現も非常によく使われる。",
+  "nuance": "regresarとほぼ同義。volver a+不定詞（また〜する）という表現も非常によく使われる。",
   "etymology": "ラテン語volvere（回転する→戻る）に由来。",
   "synonyms": [
    "regresar（戻る、ほぼ同義）"
@@ -11493,7 +11494,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sugerir": {
-  "nuance": "「提案する」の基本語。sugerir que+接続法の形を取る。",
+  "nuance": "sugerir que+接続法の形を取る。",
   "etymology": "ラテン語suggerere（下から運ぶ→示唆する）に由来。",
   "synonyms": [
    "proponer（提案する）"
@@ -11507,7 +11508,7 @@ const DICTIONARY_DATA = {
   }
  },
  "proponer": {
-  "nuance": "「提案する」の基本語。ponerと同じ活用パターンの不規則動詞。",
+  "nuance": "ponerと同じ活用パターンの不規則動詞。",
   "etymology": "ラテン語proponere（前に置く→提案する）に由来。",
   "synonyms": [
    "sugerir（提案する）"
@@ -11521,7 +11522,7 @@ const DICTIONARY_DATA = {
   }
  },
  "aceptar": {
-  "nuance": "「受け入れる」の基本語。rechazarの反対語。",
+  "nuance": "rechazarの反対語。",
   "etymology": "ラテン語acceptare（受け取る）に由来。",
   "synonyms": [],
   "derived": [
@@ -11534,7 +11535,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rechazar": {
-  "nuance": "「拒否する」の基本語。aceptarの反対語。",
+  "nuance": "aceptarの反対語。",
   "etymology": "俗ラテン語recusare（拒む）に由来。",
   "synonyms": [],
   "derived": [
@@ -11546,7 +11547,7 @@ const DICTIONARY_DATA = {
   }
  },
  "colina": {
-  "nuance": "「丘」の基本語。montaña（山）よりも小規模な高地。",
+  "nuance": "montaña（山）よりも小規模な高地。",
   "etymology": "ラテン語collis（丘）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11556,7 +11557,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sequía": {
-  "nuance": "「干ばつ」の基本語。seco（乾いた）から派生した語。",
+  "nuance": "seco（乾いた）から派生した語。",
   "etymology": "seco（乾いた）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11568,7 +11569,7 @@ const DICTIONARY_DATA = {
   }
  },
  "marea": {
-  "nuance": "「潮」の基本語。marea alta（満潮）、marea baja（干潮）はよく使う組み合わせ。",
+  "nuance": "marea alta（満潮）、marea baja（干潮）はよく使う組み合わせ。",
   "etymology": "mar（海）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11580,7 +11581,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cueva": {
-  "nuance": "「洞窟」の基本語。メキシコのユカタン半島には有名なセノーテ（地下水を湛えた洞窟）が多い。",
+  "nuance": "メキシコのユカタン半島には有名なセノーテ（地下水を湛えた洞窟）が多い。",
   "etymology": "ラテン語cova（くぼんだ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11590,7 +11591,7 @@ const DICTIONARY_DATA = {
   }
  },
  "acantilado": {
-  "nuance": "「崖」の基本語。",
+  "nuance": "海や川に面した切り立った崖。景色の良いスポットとしてもよく知られる。",
   "etymology": "cantil（崖）の指小形から派生した語。",
   "synonyms": [],
   "derived": [],
@@ -11600,7 +11601,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cordillera": {
-  "nuance": "「山脈」の基本語。cuerda（ロープ、山々が連なる様子から）から派生。",
+  "nuance": "cuerda（ロープ、山々が連なる様子から）から派生。",
   "etymology": "cuerda（ロープ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11612,7 +11613,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ecosistema": {
-  "nuance": "「生態系」の基本語。eco（家、環境）+ sistema（体系）の組み合わせ。",
+  "nuance": "eco（家、環境）+ sistema（体系）の組み合わせ。",
   "etymology": "ギリシャ語oikos（家）+ systema（体系）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -11624,7 +11625,7 @@ const DICTIONARY_DATA = {
   }
  },
  "contaminación": {
-  "nuance": "「汚染」の基本語。contaminar（汚染する）から派生した語。",
+  "nuance": "contaminar（汚染する）から派生した語。",
   "etymology": "contaminar（汚染する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11636,7 +11637,7 @@ const DICTIONARY_DATA = {
   }
  },
  "reciclaje": {
-  "nuance": "「リサイクル」の基本語。reciclar（リサイクルする）から派生した語。",
+  "nuance": "reciclar（リサイクルする）から派生した語。",
   "etymology": "reciclar（リサイクルする）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11648,7 +11649,7 @@ const DICTIONARY_DATA = {
   }
  },
  "calentamiento global": {
-  "nuance": "「地球温暖化」の基本語。calentar（温める）から派生した語。",
+  "nuance": "calentar（温める）から派生した語。",
   "etymology": "calentar（温める）+ global（地球規模の）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -11660,7 +11661,7 @@ const DICTIONARY_DATA = {
   }
  },
  "especie": {
-  "nuance": "「種」の基本語。生物学的な種を指す。",
+  "nuance": "生物学的な種を指す。",
   "etymology": "ラテン語species（見た目、種類）に由来。",
   "synonyms": [],
   "derived": [
@@ -11672,7 +11673,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hábitat": {
-  "nuance": "「生息地」の基本語。",
+  "nuance": "生物が自然に生息する場所。habitar（住む）と語源を共有する。",
   "etymology": "ラテン語habitat（それは住む）に由来。",
   "synonyms": [],
   "derived": [
@@ -11684,7 +11685,7 @@ const DICTIONARY_DATA = {
   }
  },
  "extinción": {
-  "nuance": "「絶滅」の基本語。extinguir（消す、絶滅させる）から派生した語。",
+  "nuance": "extinguir（消す、絶滅させる）から派生した語。",
   "etymology": "extinguir（消す）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11697,7 +11698,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pijama": {
-  "nuance": "「パジャマ」の基本語。地域によって男性名詞・女性名詞両方使われる（el pijama/la pijamaは地域差）。",
+  "nuance": "地域によって男性名詞・女性名詞両方使われる（el pijama/la pijamaは地域差）。",
   "etymology": "ペルシャ語pay-jama（脚の衣服）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11707,7 +11708,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mochila": {
-  "nuance": "「リュック」の基本語。ケチュア語由来。",
+  "nuance": "ケチュア語由来。",
   "etymology": "ケチュア語muchila（袋）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11717,7 +11718,7 @@ const DICTIONARY_DATA = {
   }
  },
  "collar": {
-  "nuance": "「ネックレス」の基本語。「（犬などの）首輪」という意味にもなる。",
+  "nuance": "「（犬などの）首輪」という意味にもなる。",
   "etymology": "ラテン語collare（首の周りのもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -11729,7 +11730,7 @@ const DICTIONARY_DATA = {
   }
  },
  "aretes": {
-  "nuance": "「ピアス、イヤリング」の基本語。ラテンアメリカで一般的（スペインではpendientesが一般的、地域差）。",
+  "nuance": "ラテンアメリカで一般的（スペインではpendientesが一般的、地域差）。",
   "etymology": "arete（小さな輪）から派生した語。",
   "synonyms": [
    "pendientes（ピアス、スペイン）"
@@ -11741,7 +11742,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pulsera": {
-  "nuance": "「ブレスレット」の基本語。pulso（脈拍、手首）から派生した語。",
+  "nuance": "pulso（脈拍、手首）から派生した語。",
   "etymology": "pulso（脈拍、手首）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11753,7 +11754,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pañuelo": {
-  "nuance": "「ハンカチ」の基本語。paño（布）から派生した語。「スカーフ」という意味にもなる。",
+  "nuance": "paño（布）から派生した語。「スカーフ」という意味にもなる。",
   "etymology": "paño（布）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11765,7 +11766,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sandalias": {
-  "nuance": "「サンダル」の基本語。夏によく履かれる履物。",
+  "nuance": "夏によく履かれる履物。",
   "etymology": "ギリシャ語sandalon（サンダル）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11775,7 +11776,7 @@ const DICTIONARY_DATA = {
   }
  },
  "botas": {
-  "nuance": "「ブーツ」の基本語。メキシコの伝統的なカウボーイブーツ（botas vaqueras）も有名。",
+  "nuance": "メキシコの伝統的なカウボーイブーツ（botas vaqueras）も有名。",
   "etymology": "フランス語botte（ブーツ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11785,7 +11786,7 @@ const DICTIONARY_DATA = {
   }
  },
  "algodón": {
-  "nuance": "「綿」の基本語。100% algodón（綿100%）という表示でよく見る。",
+  "nuance": "100% algodón（綿100%）という表示でよく見る。",
   "etymology": "アラビア語al-qutn（綿）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11795,7 +11796,7 @@ const DICTIONARY_DATA = {
   }
  },
  "seda": {
-  "nuance": "「絹」の基本語。高級な生地としてよく知られる。",
+  "nuance": "高級な生地としてよく知られる。",
   "etymology": "ラテン語seta（剛毛、絹）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11805,7 +11806,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuero": {
-  "nuance": "「革」の基本語。piel（皮膚、皮革）ともほぼ同義で使われる。",
+  "nuance": "piel（皮膚、皮革）ともほぼ同義で使われる。",
   "etymology": "ラテン語corium（皮）に由来。",
   "synonyms": [
    "piel（革、ほぼ同義）"
@@ -11817,7 +11818,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tela": {
-  "nuance": "「生地」の基本語。テキスタイル全般を指す。",
+  "nuance": "テキスタイル全般を指す。",
   "etymology": "ラテン語tela（織物、機織り）に由来。",
   "synonyms": [],
   "derived": [
@@ -11829,7 +11830,7 @@ const DICTIONARY_DATA = {
   }
  },
  "uniforme": {
-  "nuance": "「制服」の基本語。uni（一つの）+ forma（形）の組み合わせ。",
+  "nuance": "uni（一つの）+ forma（形）の組み合わせ。",
   "etymology": "ラテン語uniformis（一つの形の）に由来。",
   "synonyms": [],
   "derived": [
@@ -11841,7 +11842,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chaleco": {
-  "nuance": "「ベスト」の基本語。chaleco salvavidas（救命胴衣）はよく使う組み合わせ。",
+  "nuance": "chaleco salvavidas（救命胴衣）はよく使う組み合わせ。",
   "etymology": "トルコ語yelek（袖のない上着）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11851,7 +11852,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sudadera": {
-  "nuance": "「パーカー」の基本語。sudar（汗をかく）から派生した語。",
+  "nuance": "sudar（汗をかく）から派生した語。",
   "etymology": "sudar（汗をかく）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11875,7 +11876,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tarjeta de embarque": {
-  "nuance": "「搭乗券」の基本語。tarjeta（カード）+ de embarque（搭乗の）の組み合わせ。",
+  "nuance": "tarjeta（カード）+ de embarque（搭乗の）の組み合わせ。",
   "etymology": "tarjeta（カード）+ embarque（搭乗）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -11887,7 +11888,7 @@ const DICTIONARY_DATA = {
   }
  },
  "destino": {
-  "nuance": "「目的地」の基本語。「運命」という意味にもなる。",
+  "nuance": "「運命」という意味にもなる。",
   "etymology": "ラテン語destinare（決定する）に由来。",
   "synonyms": [],
   "derived": [
@@ -11899,7 +11900,7 @@ const DICTIONARY_DATA = {
   }
  },
  "itinerario": {
-  "nuance": "「旅程」の基本語。",
+  "nuance": "旅行や移動の行程表。旅行の計画を立てるときによく使う語。",
   "etymology": "ラテン語itinerarium（道程の記録）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11909,7 +11910,7 @@ const DICTIONARY_DATA = {
   }
  },
  "excursión": {
-  "nuance": "「小旅行」の基本語。日帰りまたは短期間の旅行を指す。",
+  "nuance": "日帰りまたは短期間の旅行を指す。",
   "etymology": "ラテン語excursio（外出、遠征）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11919,7 +11920,7 @@ const DICTIONARY_DATA = {
   }
  },
  "guía turístico": {
-  "nuance": "「観光ガイド」の基本語。女性形はguía turística。「ガイドブック」という意味にもなる。",
+  "nuance": "女性形はguía turística。「ガイドブック」という意味にもなる。",
   "etymology": "guiar（案内する）+ turístico（観光の）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -11931,7 +11932,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mapa": {
-  "nuance": "「地図」の基本語。-aで終わるが男性名詞（ギリシャ語源）。",
+  "nuance": "-aで終わるが男性名詞（ギリシャ語源）。",
   "etymology": "ラテン語mappa（布、地図）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11941,7 +11942,7 @@ const DICTIONARY_DATA = {
   }
  },
  "brújula": {
-  "nuance": "「コンパス」の基本語。",
+  "nuance": "方角を知るための道具。北を指す磁針が入っている。",
   "etymology": "イタリア語bussola（コンパス）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11951,7 +11952,7 @@ const DICTIONARY_DATA = {
   }
  },
  "seguro de viaje": {
-  "nuance": "「旅行保険」の基本語。seguro（保険）+ de viaje（旅行の）の組み合わせ。",
+  "nuance": "seguro（保険）+ de viaje（旅行の）の組み合わせ。",
   "etymology": "seguro（安全な、保険）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11963,7 +11964,7 @@ const DICTIONARY_DATA = {
   }
  },
  "embajada": {
-  "nuance": "「大使館」の基本語。embajador（大使）から派生した語。",
+  "nuance": "embajador（大使）から派生した語。",
   "etymology": "embajador（大使）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -11975,7 +11976,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tour": {
-  "nuance": "「ツアー」の基本語。英語からの借用語で、そのまま使われる。",
+  "nuance": "英語からの借用語で、そのまま使われる。",
   "etymology": "英語tour（旅、周遊）に由来。",
   "synonyms": [
    "recorrido（ツアー、より正式）"
@@ -11987,7 +11988,7 @@ const DICTIONARY_DATA = {
   }
  },
  "propina": {
-  "nuance": "「チップ」の基本語。メキシコでは通常含まれておらず、10〜15%程度が目安。",
+  "nuance": "メキシコでは通常含まれておらず、10〜15%程度が目安。",
   "etymology": "ギリシャ語propinein（乾杯する→気前よく渡す）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11997,7 +11998,7 @@ const DICTIONARY_DATA = {
   }
  },
  "círculo": {
-  "nuance": "「円」の基本語。基本的な幾何図形。",
+  "nuance": "基本的な幾何図形。",
   "etymology": "ラテン語circulus（小さな輪）に由来。",
   "synonyms": [],
   "derived": [
@@ -12009,7 +12010,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuadrado": {
-  "nuance": "「正方形」の基本語。cuatro（4）から派生した語。「形が四角い、頭が固い」という比喩的な意味にもなる。",
+  "nuance": "cuatro（4）から派生した語。「形が四角い、頭が固い」という比喩的な意味にもなる。",
   "etymology": "cuatro（4）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -12021,7 +12022,7 @@ const DICTIONARY_DATA = {
   }
  },
  "triángulo": {
-  "nuance": "「三角形」の基本語。tri（3）+ ángulo（角）の組み合わせ。",
+  "nuance": "tri（3）+ ángulo（角）の組み合わせ。",
   "etymology": "tres（3）+ ángulo（角）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -12033,7 +12034,7 @@ const DICTIONARY_DATA = {
   }
  },
  "línea": {
-  "nuance": "「線」の基本語。「（電話・交通の）路線」という意味にもなる。",
+  "nuance": "「（電話・交通の）路線」という意味にもなる。",
   "etymology": "ラテン語linea（麻糸から作った線）に由来。",
   "synonyms": [],
   "derived": [
@@ -12045,7 +12046,7 @@ const DICTIONARY_DATA = {
   }
  },
  "punto": {
-  "nuance": "「点」の基本語。「地点、要点」という意味にもなる。en punto（ちょうど、時刻について）はよく使う表現。",
+  "nuance": "「地点、要点」という意味にもなる。en punto（ちょうど、時刻について）はよく使う表現。",
   "etymology": "ラテン語punctum（刺されたもの、点）に由来。",
   "synonyms": [],
   "derived": [
@@ -12057,7 +12058,7 @@ const DICTIONARY_DATA = {
   }
  },
  "docena": {
-  "nuance": "「1ダース」の基本語。doce（12）から派生した語。",
+  "nuance": "doce（12）から派生した語。",
   "etymology": "doce（12）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -12069,7 +12070,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mitad": {
-  "nuance": "「半分」の基本語。a mitad de precio（半額で）はよく使う表現。",
+  "nuance": "a mitad de precio（半額で）はよく使う表現。",
   "etymology": "ラテン語medietas（中間）に由来。",
   "synonyms": [],
   "derived": [
@@ -12081,7 +12082,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estrella de mar": {
-  "nuance": "「ヒトデ」の基本語。estrella（星）+ de mar（海の）の組み合わせ。",
+  "nuance": "estrella（星）+ de mar（海の）の組み合わせ。",
   "etymology": "estrella（星）+ mar（海）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -12093,7 +12094,7 @@ const DICTIONARY_DATA = {
   }
  },
  "medusa": {
-  "nuance": "「クラゲ」の基本語。ギリシャ神話のメドゥーサに由来。",
+  "nuance": "ギリシャ神話のメドゥーサに由来。",
   "etymology": "ギリシャ神話のメドゥーサ（髪が蛇の怪物）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12103,7 +12104,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hormiga": {
-  "nuance": "「アリ」の基本語。trabajar como una hormiga（アリのように働く、勤勉に働く）という慣用句もある。",
+  "nuance": "trabajar como una hormiga（アリのように働く、勤勉に働く）という慣用句もある。",
   "etymology": "ラテン語formica（アリ）に由来。",
   "synonyms": [],
   "derived": [
@@ -12115,7 +12116,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gallo": {
-  "nuance": "「おんどり」の基本語。gallina（めんどり）の男性形。メキシコの慣習で誕生日の朝に「ガジェアタ」という歌の風習と関連。",
+  "nuance": "gallina（めんどり）の男性形。メキシコの慣習で誕生日の朝に「ガジェアタ」という歌の風習と関連。",
   "etymology": "ラテン語gallus（おんどり）に由来。",
   "synonyms": [],
   "derived": [
@@ -12127,7 +12128,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gallina": {
-  "nuance": "「めんどり」の基本語。「臆病者」という比喩的な意味にもなる（口語）。",
+  "nuance": "「臆病者」という比喩的な意味にもなる（口語）。",
   "etymology": "gallo（おんどり）の女性形。",
   "synonyms": [],
   "derived": [
@@ -12139,7 +12140,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pato": {
-  "nuance": "「アヒル」の基本語。女性形はpata。",
+  "nuance": "女性形はpata。",
   "etymology": "起源ははっきりしないが、アラビア語系の語とされる。",
   "synonyms": [],
   "derived": [],
@@ -12149,7 +12150,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lobo": {
-  "nuance": "「オオカミ」の基本語。女性形はloba。",
+  "nuance": "女性形はloba。",
   "etymology": "ラテン語lupus（オオカミ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12159,7 +12160,7 @@ const DICTIONARY_DATA = {
   }
  },
  "jirafa": {
-  "nuance": "「キリン」の基本語。アラビア語由来。",
+  "nuance": "アラビア語由来。",
   "etymology": "アラビア語zarafa（キリン）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12169,7 +12170,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cocodrilo": {
-  "nuance": "「ワニ」の基本語。caimán（カイマン、より小型のワニ科）とは区別される。",
+  "nuance": "caimán（カイマン、より小型のワニ科）とは区別される。",
   "etymology": "ギリシャ語krokodilos（トカゲ）に由来。",
   "synonyms": [
    "caimán（カイマン）"
@@ -12181,7 +12182,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cebra": {
-  "nuance": "「シマウマ」の基本語。「横断歩道」という意味にもなる（paso de cebra）。",
+  "nuance": "「横断歩道」という意味にもなる（paso de cebra）。",
   "etymology": "ラテン語equiferus（野生の馬）に由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -12191,7 +12192,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tetera": {
-  "nuance": "「ティーポット」の基本語。té（お茶）から派生した語。",
+  "nuance": "té（お茶）から派生した語。",
   "etymology": "té（お茶）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -12203,7 +12204,7 @@ const DICTIONARY_DATA = {
   }
  },
  "abrelatas": {
-  "nuance": "「缶切り」の基本語。abrir（開ける）+ latas（缶）の組み合わせ、単数複数同形。",
+  "nuance": "abrir（開ける）+ latas（缶）の組み合わせ、単数複数同形。",
   "etymology": "abrir（開ける）+ lata（缶）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -12216,7 +12217,7 @@ const DICTIONARY_DATA = {
   }
  },
  "parrilla": {
-  "nuance": "「グリル」の基本語。asar a la parrilla（グリルで焼く）はよく使う組み合わせ。",
+  "nuance": "asar a la parrilla（グリルで焼く）はよく使う組み合わせ。",
   "etymology": "parra（ぶどうの木、格子状の構造から）に由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -12226,7 +12227,7 @@ const DICTIONARY_DATA = {
   }
  },
  "motocicleta": {
-  "nuance": "「バイク」の基本語。moto（口語での短縮形）ともよく呼ばれる。",
+  "nuance": "moto（口語での短縮形）ともよく呼ばれる。",
   "etymology": "motor（モーター）+ cicleta（bicicletaから派生）の組み合わせ。",
   "synonyms": [
    "moto（バイク、口語）"
@@ -12238,7 +12239,7 @@ const DICTIONARY_DATA = {
   }
  },
  "helicóptero": {
-  "nuance": "「ヘリコプター」の基本語。helico（螺旋）+ ptero（翼）の組み合わせ。",
+  "nuance": "helico（螺旋）+ ptero（翼）の組み合わせ。",
   "etymology": "ギリシャ語helix（螺旋）+ pteron（翼）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -12248,7 +12249,7 @@ const DICTIONARY_DATA = {
   }
  },
  "transbordador": {
-  "nuance": "「フェリー」の基本語。transbordar（乗り換える）から派生した語。",
+  "nuance": "transbordar（乗り換える）から派生した語。",
   "etymology": "transbordar（積み替える、乗り換える）から派生した語。",
   "synonyms": [
    "ferri（フェリー、英語借用）"
@@ -12260,7 +12261,7 @@ const DICTIONARY_DATA = {
   }
  },
  "furgoneta": {
-  "nuance": "「バン」の基本語。furgón（貨車、より大型の意味）の指小形。",
+  "nuance": "furgón（貨車、より大型の意味）の指小形。",
   "etymology": "furgón（貨車）の指小形に由来。",
   "synonyms": [],
   "derived": [
@@ -12272,7 +12273,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cinturón de seguridad": {
-  "nuance": "「シートベルト」の基本語。cinturón（ベルト）+ de seguridad（安全の）の組み合わせ。",
+  "nuance": "cinturón（ベルト）+ de seguridad（安全の）の組み合わせ。",
   "etymology": "cinturón（ベルト）+ seguridad（安全）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -12285,7 +12286,7 @@ const DICTIONARY_DATA = {
   }
  },
  "licencia de conducir": {
-  "nuance": "「運転免許証」の基本語。地域によってlicencia de manejo（運転免許証、メキシコで一般的）とも呼ばれる。",
+  "nuance": "地域によってlicencia de manejo（運転免許証、メキシコで一般的）とも呼ばれる。",
   "etymology": "licencia（許可証）+ conducir（運転する）の組み合わせ。",
   "synonyms": [
    "licencia de manejo（運転免許証、メキシコで一般的）"
@@ -12299,7 +12300,7 @@ const DICTIONARY_DATA = {
   }
  },
  "celoso": {
-  "nuance": "「嫉妬している」の基本語。恋愛関係でよく使われる（envidiosoは物・成功への嫉妬、celosoは人間関係での嫉妬というニュアンスの違いがある）。",
+  "nuance": "恋愛関係でよく使われる（envidiosoは物・成功への嫉妬、celosoは人間関係での嫉妬というニュアンスの違いがある）。",
   "etymology": "ラテン語zelosus（熱心な、嫉妬深い）に由来。",
   "synonyms": [
    "envidioso（嫉妬深い、物事への）"
@@ -12313,7 +12314,7 @@ const DICTIONARY_DATA = {
   }
  },
  "aliviado": {
-  "nuance": "「ほっとしている」の基本語。aliviar（和らげる）の過去分詞から形容詞化。",
+  "nuance": "aliviar（和らげる）の過去分詞から形容詞化。",
   "etymology": "aliviar（和らげる）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -12326,7 +12327,7 @@ const DICTIONARY_DATA = {
   }
  },
  "esperanzado": {
-  "nuance": "「希望を持っている」の基本語。esperanza（希望）から派生した語。",
+  "nuance": "esperanza（希望）から派生した語。",
   "etymology": "esperanza（希望）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -12339,7 +12340,7 @@ const DICTIONARY_DATA = {
   }
  },
  "nube": {
-  "nuance": "「雲」の基本語。estar en las nubes（雲の中にいる＝ぼーっとしている）という慣用句もある。",
+  "nuance": "estar en las nubes（雲の中にいる＝ぼーっとしている）という慣用句もある。",
   "etymology": "ラテン語nubes（雲）に由来。",
   "synonyms": [],
   "derived": [
@@ -12351,7 +12352,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tormenta": {
-  "nuance": "「嵐」の基本語。tormenta eléctrica（雷雨）はよく使う組み合わせ。",
+  "nuance": "tormenta eléctrica（雷雨）はよく使う組み合わせ。",
   "etymology": "ラテン語tormentum（ねじれ、苦しみ）に由来。",
   "synonyms": [],
   "derived": [
@@ -12363,7 +12364,7 @@ const DICTIONARY_DATA = {
   }
  },
  "húmedo": {
-  "nuance": "「湿気がある」の基本語。secoの反対語。",
+  "nuance": "secoの反対語。",
   "etymology": "ラテン語humidus（湿った）に由来。",
   "synonyms": [],
   "derived": [
@@ -12596,7 +12597,7 @@ const DICTIONARY_DATA = {
   }
  },
  "espinaca": {
-  "nuance": "「ほうれん草」の基本語。",
+  "nuance": "緑色の葉物野菜。鉄分が豊富とされる。",
   "etymology": "アラビア語isbinakh（ほうれん草）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12606,7 +12607,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pimiento": {
-  "nuance": "「ピーマン」の基本語。pimienta（こしょう）とは別の単語なので混同しないよう注意。",
+  "nuance": "pimienta（こしょう）とは別の単語なので混同しないよう注意。",
   "etymology": "pimienta（こしょう）から派生した語（見た目の類似から）。",
   "synonyms": [],
   "derived": [
@@ -12618,7 +12619,7 @@ const DICTIONARY_DATA = {
   }
  },
  "galleta": {
-  "nuance": "「クッキー」の基本語。galleta salada（クラッカー）のような組み合わせもよく使う。",
+  "nuance": "galleta salada（クラッカー）のような組み合わせもよく使う。",
   "etymology": "フランス語galette（平たいパン）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12628,7 +12629,7 @@ const DICTIONARY_DATA = {
   }
  },
  "refresco": {
-  "nuance": "「炭酸飲料」の基本語。ラテンアメリカで一般的（refrescar＝涼しくするから派生）。",
+  "nuance": "ラテンアメリカで一般的（refrescar＝涼しくするから派生）。",
   "etymology": "refrescar（涼しくする）から派生した語。",
   "synonyms": [
    "soda（ソーダ、地域による）"
@@ -12642,7 +12643,7 @@ const DICTIONARY_DATA = {
   }
  },
  "té": {
-  "nuance": "「お茶」の基本語。中国語由来の国際的な単語。",
+  "nuance": "中国語由来の国際的な単語。",
   "etymology": "中国語（福建語）te（茶）に由来。",
   "synonyms": [],
   "derived": [
@@ -12654,7 +12655,7 @@ const DICTIONARY_DATA = {
   }
  },
  "leche": {
-  "nuance": "「牛乳」の基本語。leche entera（全脂乳）、leche deslactosada（乳糖不使用）のような種類もよく話題になる。",
+  "nuance": "leche entera（全脂乳）、leche deslactosada（乳糖不使用）のような種類もよく話題になる。",
   "etymology": "ラテン語lac（乳）に由来。",
   "synonyms": [],
   "derived": [
@@ -12666,7 +12667,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mantequilla": {
-  "nuance": "「バター」の基本語。",
+  "nuance": "乳製品から作る、パンに塗る食材。margarina（マーガリン）とは区別される。",
   "etymology": "manteca（脂肪）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -12678,7 +12679,7 @@ const DICTIONARY_DATA = {
   }
  },
  "queso": {
-  "nuance": "「チーズ」の基本語。メキシコにはqueso oaxaca、queso frescoなど独自の種類が多い。",
+  "nuance": "メキシコにはqueso oaxaca、queso frescoなど独自の種類が多い。",
   "etymology": "ラテン語caseus（チーズ）に由来。",
   "synonyms": [],
   "derived": [
@@ -12690,7 +12691,7 @@ const DICTIONARY_DATA = {
   }
  },
  "huevo": {
-  "nuance": "「卵」の基本語。huevos rancheros（メキシコ式卵料理）は朝食の定番。",
+  "nuance": "huevos rancheros（メキシコ式卵料理）は朝食の定番。",
   "etymology": "ラテン語ovum（卵）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12700,7 +12701,7 @@ const DICTIONARY_DATA = {
   }
  },
  "arroz": {
-  "nuance": "「米」の基本語。arroz a la mexicana（メキシコ風ライス）はよく食べられる副菜。",
+  "nuance": "arroz a la mexicana（メキシコ風ライス）はよく食べられる副菜。",
   "etymology": "アラビア語ar-ruzz（米）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12710,7 +12711,7 @@ const DICTIONARY_DATA = {
   }
  },
  "frijoles": {
-  "nuance": "「豆」の基本語。メキシコ料理の基本食材で、frijoles refritos（練り豆）はよく食べられる。",
+  "nuance": "メキシコ料理の基本食材で、frijoles refritos（練り豆）はよく食べられる。",
   "etymology": "ラテン語phaseolus（豆）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12720,7 +12721,7 @@ const DICTIONARY_DATA = {
   }
  },
  "taco": {
-  "nuance": "「タコス」の基本語。メキシコを代表する料理で、地域ごとに様々な種類がある（tacos al pastor, tacos de canastaなど）。",
+  "nuance": "メキシコを代表する料理で、地域ごとに様々な種類がある（tacos al pastor, tacos de canastaなど）。",
   "etymology": "起源は諸説あるが、ナワトル語系の語とされる。",
   "synonyms": [],
   "derived": [
@@ -12733,7 +12734,7 @@ const DICTIONARY_DATA = {
   }
  },
  "quesadilla": {
-  "nuance": "「ケサディーヤ」の基本語。queso（チーズ）から派生、トルティーヤにチーズなどを挟んで焼いた料理。",
+  "nuance": "queso（チーズ）から派生、トルティーヤにチーズなどを挟んで焼いた料理。",
   "etymology": "queso（チーズ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -12745,7 +12746,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tamal": {
-  "nuance": "「タマル」の基本語。トウモロコシの葉やバナナの葉で包んで蒸したメキシコの伝統料理。複数形はtamales。",
+  "nuance": "トウモロコシの葉やバナナの葉で包んで蒸したメキシコの伝統料理。複数形はtamales。",
   "etymology": "ナワトル語tamalliに由来。",
   "synonyms": [],
   "derived": [],
@@ -12755,7 +12756,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mole": {
-  "nuance": "「モーレ」の基本語。チョコレートや複数のチリを使った複雑なメキシコの伝統ソース。プエブラ・オアハカが有名な産地。",
+  "nuance": "チョコレートや複数のチリを使った複雑なメキシコの伝統ソース。プエブラ・オアハカが有名な産地。",
   "etymology": "ナワトル語molli（ソース）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12765,7 +12766,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tortilla": {
-  "nuance": "「トルティーヤ」の基本語。トウモロコシまたは小麦粉で作られる、メキシコ料理に欠かせない主食。スペインのtortilla（オムレツ）とは全く別物なので注意。",
+  "nuance": "トウモロコシまたは小麦粉で作られる、メキシコ料理に欠かせない主食。スペインのtortilla（オムレツ）とは全く別物なので注意。",
   "etymology": "torta（丸いパン）の指小形に由来。",
   "synonyms": [],
   "derived": [
@@ -12777,7 +12778,7 @@ const DICTIONARY_DATA = {
   }
  },
  "guacamole": {
-  "nuance": "「ワカモレ」の基本語。アボカドをベースにしたメキシコの伝統的なディップ。世界的に有名になった料理。",
+  "nuance": "アボカドをベースにしたメキシコの伝統的なディップ。世界的に有名になった料理。",
   "etymology": "ナワトル語ahuacamolli（アボカドのソース）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12787,7 +12788,7 @@ const DICTIONARY_DATA = {
   }
  },
  "salsa": {
-  "nuance": "「サルサ」の基本語。料理の「ソース」と、音楽・ダンスの「サルサ」の両方の意味を持つ。",
+  "nuance": "料理の「ソース」と、音楽・ダンスの「サルサ」の両方の意味を持つ。",
   "etymology": "ラテン語salsus（塩味のついた）に由来。",
   "synonyms": [],
   "derived": [
@@ -12799,7 +12800,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sushi": {
-  "nuance": "「寿司」の基本語。日本語からの国際的な借用語。メキシコでも人気の高い外国料理の一つ。",
+  "nuance": "日本語からの国際的な借用語。メキシコでも人気の高い外国料理の一つ。",
   "etymology": "日本語「寿司」に由来。",
   "synonyms": [],
   "derived": [],
@@ -12809,7 +12810,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pasta": {
-  "nuance": "「パスタ」の基本語。イタリア語からの国際的な借用語。",
+  "nuance": "イタリア語からの国際的な借用語。",
   "etymology": "イタリア語pasta（練り粉）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12819,7 +12820,7 @@ const DICTIONARY_DATA = {
   }
  },
  "imagen": {
-  "nuance": "「画像」の基本語。「イメージ、印象」という意味にもなる。",
+  "nuance": "「イメージ、印象」という意味にもなる。",
   "etymology": "ラテン語imago（像、姿）に由来。",
   "synonyms": [],
   "derived": [
@@ -12831,7 +12832,7 @@ const DICTIONARY_DATA = {
   }
  },
  "textura": {
-  "nuance": "「質感」の基本語。tejer（織る）と同語源。",
+  "nuance": "tejer（織る）と同語源。",
   "etymology": "ラテン語textura（織り方）に由来。",
   "synonyms": [],
   "derived": [
@@ -12843,7 +12844,7 @@ const DICTIONARY_DATA = {
   }
  },
  "superficie": {
-  "nuance": "「表面」の基本語。super（上に）+ facies（顔、外見）の組み合わせ。",
+  "nuance": "super（上に）+ facies（顔、外見）の組み合わせ。",
   "etymology": "ラテン語superficies（表面）に由来。",
   "synonyms": [],
   "derived": [
@@ -12855,7 +12856,7 @@ const DICTIONARY_DATA = {
   }
  },
  "borde": {
-  "nuance": "「へり、端」の基本語。al borde de（〜の瀬戸際に）という比喩的な表現もよく使う。",
+  "nuance": "al borde de（〜の瀬戸際に）という比喩的な表現もよく使う。",
   "etymology": "ゲルマン語系の語bord（端）に由来。",
   "synonyms": [],
   "derived": [
@@ -12867,7 +12868,7 @@ const DICTIONARY_DATA = {
   }
  },
  "conjunto": {
-  "nuance": "「集合」の基本語。「服の一式、音楽グループ」という意味にもなる。en conjunto（全体として）はよく使う表現。",
+  "nuance": "「服の一式、音楽グループ」という意味にもなる。en conjunto（全体として）はよく使う表現。",
   "etymology": "ラテン語conjunctus（結合した）に由来。",
   "synonyms": [],
   "derived": [
@@ -12879,7 +12880,7 @@ const DICTIONARY_DATA = {
   }
  },
  "motivo": {
-  "nuance": "「動機」の基本語。「理由」という意味にもなる。con motivo de（〜を機に）はよく使う表現。",
+  "nuance": "「理由」という意味にもなる。con motivo de（〜を機に）はよく使う表現。",
   "etymology": "ラテン語motivus（動かす）に由来。",
   "synonyms": [],
   "derived": [
@@ -12891,7 +12892,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ventaja": {
-  "nuance": "「利点」の基本語。desventaja（欠点）と対で使われることが多い。",
+  "nuance": "desventaja（欠点）と対で使われることが多い。",
   "etymology": "ラテン語ab ante（前に）に由来。",
   "synonyms": [],
   "derived": [
@@ -12903,7 +12904,7 @@ const DICTIONARY_DATA = {
   }
  },
  "desventaja": {
-  "nuance": "「欠点」の基本語。ventaja（利点）の反対語。",
+  "nuance": "ventaja（利点）の反対語。",
   "etymology": "des（否定）+ ventaja（利点）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -12915,7 +12916,7 @@ const DICTIONARY_DATA = {
   }
  },
  "perspectiva": {
-  "nuance": "「視点」の基本語。「展望、見通し」という意味にもなる。",
+  "nuance": "「展望、見通し」という意味にもなる。",
   "etymology": "ラテン語perspicere（見通す）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12925,7 +12926,7 @@ const DICTIONARY_DATA = {
   }
  },
  "prejuicio": {
-  "nuance": "「偏見」の基本語。pre（前もって）+ juicio（判断）の組み合わせ。",
+  "nuance": "pre（前もって）+ juicio（判断）の組み合わせ。",
   "etymology": "pre（前もって）+ juicio（判断）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -12937,7 +12938,7 @@ const DICTIONARY_DATA = {
   }
  },
  "percepción": {
-  "nuance": "「知覚」の基本語。percibir（知覚する）から派生した語。",
+  "nuance": "percibir（知覚する）から派生した語。",
   "etymology": "percibir（知覚する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -12949,7 +12950,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dilema": {
-  "nuance": "「ジレンマ」の基本語。-aで終わるが男性名詞（ギリシャ語源）。",
+  "nuance": "-aで終わるが男性名詞（ギリシャ語源）。",
   "etymology": "ギリシャ語dilemma（二つの前提）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12959,7 +12960,7 @@ const DICTIONARY_DATA = {
   }
  },
  "controversia": {
-  "nuance": "「論争」の基本語。causar controversia（論争を引き起こす）はよく使う組み合わせ。",
+  "nuance": "causar controversia（論争を引き起こす）はよく使う組み合わせ。",
   "etymology": "ラテン語controversia（対立する意見）に由来。",
   "synonyms": [],
   "derived": [
@@ -12971,7 +12972,7 @@ const DICTIONARY_DATA = {
   }
  },
  "consenso": {
-  "nuance": "「合意」の基本語。llegar a un consenso（合意に達する）はよく使う組み合わせ。",
+  "nuance": "llegar a un consenso（合意に達する）はよく使う組み合わせ。",
   "etymology": "ラテン語consensus（同意）に由来。",
   "synonyms": [],
   "derived": [],
@@ -12981,7 +12982,7 @@ const DICTIONARY_DATA = {
   }
  },
  "noticia": {
-  "nuance": "「ニュース」の基本語。単数形も複数形も使われる（las noticias＝ニュース番組・報道）。",
+  "nuance": "単数形も複数形も使われる（las noticias＝ニュース番組・報道）。",
   "etymology": "ラテン語notitia（知識、認識）に由来。",
   "synonyms": [],
   "derived": [
@@ -12993,7 +12994,7 @@ const DICTIONARY_DATA = {
   }
  },
  "periódico": {
-  "nuance": "「新聞」の基本語。periodo（期間）から派生、定期刊行物が原義。",
+  "nuance": "periodo（期間）から派生、定期刊行物が原義。",
   "etymology": "periodo（期間）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -13005,7 +13006,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ahora": {
-  "nuance": "「今」の基本語。ahora mismo（今すぐ）はよく使う表現。",
+  "nuance": "ahora mismo（今すぐ）はよく使う表現。",
   "etymology": "ラテン語hac hora（この時に）に由来。",
   "synonyms": [],
   "derived": [],
@@ -13015,7 +13016,7 @@ const DICTIONARY_DATA = {
   }
  },
  "después": {
-  "nuance": "「あとで」の基本語。después de（〜の後で）という前置詞句もよく使う。",
+  "nuance": "después de（〜の後で）という前置詞句もよく使う。",
   "etymology": "ラテン語de ex post（後から）に由来。",
   "synonyms": [
    "luego（それから）"
@@ -13027,7 +13028,7 @@ const DICTIONARY_DATA = {
   }
  },
  "antes": {
-  "nuance": "「前に」の基本語。antes de（〜の前に）という前置詞句もよく使う。",
+  "nuance": "antes de（〜の前に）という前置詞句もよく使う。",
   "etymology": "ラテン語ante（前に）に由来。",
   "synonyms": [],
   "derived": [
@@ -13039,7 +13040,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tarde": {
-  "nuance": "「遅く」の基本語。「午後」という名詞の意味にもなる（la tarde）。llegar tarde（遅刻する）はよく使う組み合わせ。",
+  "nuance": "「午後」という名詞の意味にもなる（la tarde）。llegar tarde（遅刻する）はよく使う組み合わせ。",
   "etymology": "ラテン語tardus（遅い）に由来。",
   "synonyms": [],
   "derived": [
@@ -13052,7 +13053,7 @@ const DICTIONARY_DATA = {
   }
  },
  "medianoche": {
-  "nuance": "「真夜中」の基本語。media（半分の）+ noche（夜）の組み合わせ。",
+  "nuance": "media（半分の）+ noche（夜）の組み合わせ。",
   "etymology": "media（半分）+ noche（夜）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -13064,7 +13065,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mediodía": {
-  "nuance": "「正午」の基本語。media（半分の）+ día（日）の組み合わせ。",
+  "nuance": "media（半分の）+ día（日）の組み合わせ。",
   "etymology": "medio（半分の）+ día（日）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -13076,7 +13077,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fecha": {
-  "nuance": "「日付」の基本語。fecha de nacimiento（生年月日）はよく使う組み合わせ。",
+  "nuance": "fecha de nacimiento（生年月日）はよく使う組み合わせ。",
   "etymology": "ラテン語facta（作られた→記録された）に由来。",
   "synonyms": [],
   "derived": [
@@ -13088,7 +13089,7 @@ const DICTIONARY_DATA = {
   }
  },
  "calendario": {
-  "nuance": "「カレンダー」の基本語。",
+  "nuance": "日付や予定を管理する道具・仕組み。calendario escolar（学年暦）のように使う。",
   "etymology": "ラテン語calendarium（帳簿）に由来。",
   "synonyms": [],
   "derived": [],
@@ -13098,7 +13099,7 @@ const DICTIONARY_DATA = {
   }
  },
  "plazo": {
-  "nuance": "「期限」の基本語。cumplir el plazo（期限を守る）はよく使う組み合わせ。",
+  "nuance": "cumplir el plazo（期限を守る）はよく使う組み合わせ。",
   "etymology": "ラテン語placitum（合意された期間）に由来。",
   "synonyms": [],
   "derived": [],
@@ -13108,7 +13109,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rutina": {
-  "nuance": "「日課」の基本語。tener una rutina（決まった日課がある）はよく使う組み合わせ。",
+  "nuance": "tener una rutina（決まった日課がある）はよく使う組み合わせ。",
   "etymology": "フランス語routine（習慣的な道）に由来。",
   "synonyms": [],
   "derived": [
@@ -13120,7 +13121,7 @@ const DICTIONARY_DATA = {
   }
  },
  "siesta": {
-  "nuance": "「昼寝」の基本語。ラテンアメリカやスペインの文化に根付いた習慣。",
+  "nuance": "ラテンアメリカやスペインの文化に根付いた習慣。",
   "etymology": "ラテン語sexta hora（第六の時間、正午）に由来。",
   "synonyms": [],
   "derived": [],
@@ -13130,7 +13131,7 @@ const DICTIONARY_DATA = {
   }
  },
  "descanso": {
-  "nuance": "「休憩」の基本語。descansar（休む）から派生した語。",
+  "nuance": "descansar（休む）から派生した語。",
   "etymology": "descansar（休む）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -13142,7 +13143,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fin de semana": {
-  "nuance": "「週末」の基本語。fin（終わり）+ de semana（週の）の組み合わせ。",
+  "nuance": "fin（終わり）+ de semana（週の）の組み合わせ。",
   "etymology": "fin（終わり）+ semana（週）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -13154,7 +13155,7 @@ const DICTIONARY_DATA = {
   }
  },
  "costumbre": {
-  "nuance": "「習慣」の基本語。tener la costumbre de（〜する習慣がある）はよく使う組み合わせ。",
+  "nuance": "tener la costumbre de（〜する習慣がある）はよく使う組み合わせ。",
   "etymology": "ラテン語consuetudo（慣習）に由来。",
   "synonyms": [],
   "derived": [
@@ -13166,7 +13167,7 @@ const DICTIONARY_DATA = {
   }
  },
  "canadá": {
-  "nuance": "「カナダ」の基本語。北米の国、メキシコ・アメリカとともにワールドカップ2026の共催国だった。",
+  "nuance": "北米の国、メキシコ・アメリカとともにワールドカップ2026の共催国だった。",
   "etymology": "先住民言語の「村、集落」を意味する語kanataに由来。",
   "synonyms": [],
   "derived": [
@@ -13178,7 +13179,7 @@ const DICTIONARY_DATA = {
   }
  },
  "alemania": {
-  "nuance": "「ドイツ」の基本語。",
+  "nuance": "ヨーロッパの国。首都はBerlín（ベルリン）。",
   "etymology": "ゲルマン民族の一部族Alemanniに由来。",
   "synonyms": [],
   "derived": [
@@ -13190,7 +13191,7 @@ const DICTIONARY_DATA = {
   }
  },
  "italia": {
-  "nuance": "「イタリア」の基本語。",
+  "nuance": "ヨーロッパの国。首都はRoma（ローマ）。",
   "etymology": "古代の部族名Italoiに由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -13202,7 +13203,7 @@ const DICTIONARY_DATA = {
   }
  },
  "china": {
-  "nuance": "「中国」の基本語。",
+  "nuance": "アジアの国。首都はBeijing（北京）。",
   "etymology": "秦（Qin）王朝の名前に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -13214,7 +13215,7 @@ const DICTIONARY_DATA = {
   }
  },
  "guatemala": {
-  "nuance": "「グアテマラ」の基本語。メキシコの南に隣接する中米の国。",
+  "nuance": "メキシコの南に隣接する中米の国。",
   "etymology": "ナワトル語Quauhtemallan（森の多い土地）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -13226,7 +13227,7 @@ const DICTIONARY_DATA = {
   }
  },
  "venezuela": {
-  "nuance": "「ベネズエラ」の基本語。「小さなベネチア」を意味する名前に由来。",
+  "nuance": "「小さなベネチア」を意味する名前に由来。",
   "etymology": "Venecia（ベネチア）の指小形に由来。",
   "synonyms": [],
   "derived": [
@@ -13238,7 +13239,7 @@ const DICTIONARY_DATA = {
   }
  },
  "américa": {
-  "nuance": "「アメリカ大陸」の基本語。イタリアの探検家アメリゴ・ヴェスプッチに由来。北米・中米・南米を含む大陸全体を指す（米国のみを指す場合はEstados Unidosと区別する）。",
+  "nuance": "イタリアの探検家アメリゴ・ヴェスプッチに由来。北米・中米・南米を含む大陸全体を指す（米国のみを指す場合はEstados Unidosと区別する）。",
   "etymology": "探検家アメリゴ・ヴェスプッチ（Amerigo Vespucci）の名前に由来。",
   "synonyms": [],
   "derived": [
@@ -13250,7 +13251,7 @@ const DICTIONARY_DATA = {
   }
  },
  "europa": {
-  "nuance": "「ヨーロッパ」の基本語。ギリシャ神話のエウロペ姫に由来。",
+  "nuance": "ギリシャ神話のエウロペ姫に由来。",
   "etymology": "ギリシャ神話のエウロペ（Europa）姫に由来。",
   "synonyms": [],
   "derived": [
@@ -13262,7 +13263,7 @@ const DICTIONARY_DATA = {
   }
  },
  "asia": {
-  "nuance": "「アジア」の基本語。世界最大の大陸。",
+  "nuance": "世界最大の大陸。",
   "etymology": "起源は諸説あるが、アッシリア語系の語とされる。",
   "synonyms": [],
   "derived": [
@@ -13274,7 +13275,7 @@ const DICTIONARY_DATA = {
   }
  },
  "áfrica": {
-  "nuance": "「アフリカ」の基本語。",
+  "nuance": "世界第2位の面積を持つ大陸。54の国から成る。",
   "etymology": "起源は諸説あるが、フェニキア語系の語とされる。",
   "synonyms": [],
   "derived": [
@@ -13432,7 +13433,7 @@ const DICTIONARY_DATA = {
   }
  },
  "empeñarse en": {
-  "nuance": "「〜に固執する」の基本語。empeño（決意、こだわり）から派生した再帰動詞。",
+  "nuance": "empeño（決意、こだわり）から派生した再帰動詞。",
   "etymology": "empeñar（質に入れる→力を注ぐ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -13444,7 +13445,7 @@ const DICTIONARY_DATA = {
   }
  },
  "confirmar": {
-  "nuance": "「確認する」の基本語。confirmar una reservación（予約を確認する）はよく使う組み合わせ。",
+  "nuance": "confirmar una reservación（予約を確認する）はよく使う組み合わせ。",
   "etymology": "ラテン語confirmare（固める、確証する）に由来。",
   "synonyms": [],
   "derived": [
@@ -13456,7 +13457,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cancelar": {
-  "nuance": "「キャンセルする」の基本語。cancelar una cita（予約をキャンセルする）はよく使う組み合わせ。",
+  "nuance": "cancelar una cita（予約をキャンセルする）はよく使う組み合わせ。",
   "etymology": "ラテン語cancellare（格子で消す）に由来。",
   "synonyms": [],
   "derived": [
@@ -13468,7 +13469,7 @@ const DICTIONARY_DATA = {
   }
  },
  "reservar": {
-  "nuance": "「予約する」の基本語。reservar una mesa（テーブルを予約する）はよく使う組み合わせ。",
+  "nuance": "reservar una mesa（テーブルを予約する）はよく使う組み合わせ。",
   "etymology": "ラテン語reservare（取っておく）に由来。",
   "synonyms": [],
   "derived": [
@@ -13480,7 +13481,7 @@ const DICTIONARY_DATA = {
   }
  },
  "organizar": {
-  "nuance": "「整理する、企画する」の基本語。organizar una fiesta（パーティーを企画する）はよく使う組み合わせ。",
+  "nuance": "organizar una fiesta（パーティーを企画する）はよく使う組み合わせ。",
   "etymology": "órgano（器官、組織）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -13492,7 +13493,7 @@ const DICTIONARY_DATA = {
   }
  },
  "planear": {
-  "nuance": "「計画する」の基本語。planear un viaje（旅行を計画する）はよく使う組み合わせ。",
+  "nuance": "planear un viaje（旅行を計画する）はよく使う組み合わせ。",
   "etymology": "plano（平面、計画）から派生した語。",
   "synonyms": [
    "planificar（計画する、ややフォーマル）"
@@ -13506,7 +13507,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lograr": {
-  "nuance": "「達成する」の基本語。lograr+不定詞（〜することに成功する）という組み合わせもよく使う。",
+  "nuance": "lograr+不定詞（〜することに成功する）という組み合わせもよく使う。",
   "etymology": "ラテン語lucrari（利益を得る）に由来。",
   "synonyms": [],
   "derived": [
@@ -13518,7 +13519,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fracasar": {
-  "nuance": "「失敗する」の基本語。lograr（達成する）の反対語。",
+  "nuance": "lograr（達成する）の反対語。",
   "etymology": "イタリア語fracassare（打ち砕く）に由来。",
   "synonyms": [],
   "derived": [
@@ -13530,7 +13531,7 @@ const DICTIONARY_DATA = {
   }
  },
  "intentar": {
-  "nuance": "「試みる」の基本語。intentar+不定詞（〜しようと試みる）という組み合わせが定番。",
+  "nuance": "intentar+不定詞（〜しようと試みる）という組み合わせが定番。",
   "etymology": "ラテン語intentare（向ける、試みる）に由来。",
   "synonyms": [
    "tratar de（〜しようとする）"
@@ -13544,7 +13545,7 @@ const DICTIONARY_DATA = {
   }
  },
  "evitar": {
-  "nuance": "「避ける」の基本語。evitar+不定詞（〜するのを避ける）という組み合わせもよく使う。",
+  "nuance": "evitar+不定詞（〜するのを避ける）という組み合わせもよく使う。",
   "etymology": "ラテン語evitare（避ける）に由来。",
   "synonyms": [],
   "derived": [
@@ -13556,7 +13557,7 @@ const DICTIONARY_DATA = {
   }
  },
  "impedir": {
-  "nuance": "「妨げる」の基本語。impedir que+接続法の形を取る。",
+  "nuance": "impedir que+接続法の形を取る。",
   "etymology": "ラテン語impedire（足を絡ませる）に由来。",
   "synonyms": [],
   "derived": [
@@ -13568,7 +13569,7 @@ const DICTIONARY_DATA = {
   }
  },
  "comparar": {
-  "nuance": "「比較する」の基本語。comparar A con B（AとBを比較する）という組み合わせが定番。",
+  "nuance": "comparar A con B（AとBを比較する）という組み合わせが定番。",
   "etymology": "ラテン語comparare（対にする）に由来。",
   "synonyms": [],
   "derived": [
@@ -13580,7 +13581,7 @@ const DICTIONARY_DATA = {
   }
  },
  "combinar": {
-  "nuance": "「組み合わせる」の基本語。",
+  "nuance": "複数の要素を組み合わせること。色・食材・スケジュールなど幅広い文脈で使われる。",
   "etymology": "ラテン語combinare（二つを組み合わせる）に由来。",
   "synonyms": [],
   "derived": [
@@ -13592,7 +13593,7 @@ const DICTIONARY_DATA = {
   }
  },
  "separar": {
-  "nuance": "「分ける」の基本語。separar la basura（ゴミを分別する）はよく使う組み合わせ。",
+  "nuance": "separar la basura（ゴミを分別する）はよく使う組み合わせ。",
   "etymology": "ラテン語separare（離す）に由来。",
   "synonyms": [],
   "derived": [
@@ -13604,7 +13605,7 @@ const DICTIONARY_DATA = {
   }
  },
  "maleducado": {
-  "nuance": "「無礼な」の基本語。mal（悪い）+ educado（礼儀正しい）の組み合わせ。educadoの反対語。",
+  "nuance": "mal（悪い）+ educado（礼儀正しい）の組み合わせ。educadoの反対語。",
   "etymology": "mal（悪い）+ educado（教育された）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -13616,7 +13617,7 @@ const DICTIONARY_DATA = {
   }
  },
  "áspero": {
-  "nuance": "「ざらざらした」の基本語。suave（柔らかい）の反対語。「（性格が）荒っぽい」という比喩的な意味にもなる。",
+  "nuance": "suave（柔らかい）の反対語。「（性格が）荒っぽい」という比喩的な意味にもなる。",
   "etymology": "ラテン語asper（粗い）に由来。",
   "synonyms": [],
   "derived": [
@@ -13628,7 +13629,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rígido": {
-  "nuance": "「硬直した」の基本語。flexible（柔軟な）の反対語。性格についても使える。",
+  "nuance": "flexible（柔軟な）の反対語。性格についても使える。",
   "etymology": "ラテン語rigidus（硬い）に由来。",
   "synonyms": [],
   "derived": [
@@ -13640,7 +13641,7 @@ const DICTIONARY_DATA = {
   }
  },
  "caliente": {
-  "nuance": "「熱い」の基本語。fríoの反対語。tener calor（人が暑いと感じる）とestar caliente（物が熱い）の違いに注意。",
+  "nuance": "fríoの反対語。tener calor（人が暑いと感じる）とestar caliente（物が熱い）の違いに注意。",
   "etymology": "ラテン語calens（熱している）に由来。",
   "synonyms": [],
   "derived": [
@@ -13653,7 +13654,7 @@ const DICTIONARY_DATA = {
   }
  },
  "descuidado": {
-  "nuance": "「不注意な」の基本語。cuidadoso（注意深い）の反対語。",
+  "nuance": "cuidadoso（注意深い）の反対語。",
   "etymology": "des（否定）+ cuidado（注意）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -13665,7 +13666,7 @@ const DICTIONARY_DATA = {
   }
  },
  "impuntual": {
-  "nuance": "「時間にルーズな」の基本語。puntual（時間に正確な）の反対語。",
+  "nuance": "puntual（時間に正確な）の反対語。",
   "etymology": "in（否定）+ puntual（時間に正確な）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -13677,7 +13678,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estricto": {
-  "nuance": "「厳しい」の基本語。comprensivo（理解のある）と対照的に使われることが多い。",
+  "nuance": "comprensivo（理解のある）と対照的に使われることが多い。",
   "etymology": "ラテン語strictus（引き締められた）に由来。",
   "synonyms": [],
   "derived": [
@@ -13689,7 +13690,7 @@ const DICTIONARY_DATA = {
   }
  },
  "comprensivo": {
-  "nuance": "「理解のある」の基本語。comprender（理解する）から派生。estricto（厳しい）の対比としてよく使われる。",
+  "nuance": "comprender（理解する）から派生。estricto（厳しい）の対比としてよく使われる。",
   "etymology": "comprender（理解する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -13701,7 +13702,7 @@ const DICTIONARY_DATA = {
   }
  },
  "justo": {
-  "nuance": "「公正な」の基本語。injusto（不公正な）の反対語。「ちょうど」という副詞的な意味にもなる。",
+  "nuance": "injusto（不公正な）の反対語。「ちょうど」という副詞的な意味にもなる。",
   "etymology": "ラテン語iustus（正しい）に由来。",
   "synonyms": [],
   "derived": [
@@ -13714,7 +13715,7 @@ const DICTIONARY_DATA = {
   }
  },
  "modesto": {
-  "nuance": "「謙虚な」の基本語。arrogante（傲慢な）の反対語。",
+  "nuance": "arrogante（傲慢な）の反対語。",
   "etymology": "ラテン語modestus（適度な、慎み深い）に由来。",
   "synonyms": [],
   "derived": [
@@ -13726,7 +13727,7 @@ const DICTIONARY_DATA = {
   }
  },
  "arrogante": {
-  "nuance": "「傲慢な」の基本語。modesto（謙虚な）の反対語。",
+  "nuance": "modesto（謙虚な）の反対語。",
   "etymology": "ラテン語arrogans（要求する、傲慢な）に由来。",
   "synonyms": [],
   "derived": [
@@ -13738,7 +13739,7 @@ const DICTIONARY_DATA = {
   }
  },
  "leal": {
-  "nuance": "「忠実な」の基本語。ペット・友人・パートナーなど幅広い対象に使える。",
+  "nuance": "ペット・友人・パートナーなど幅広い対象に使える。",
   "etymology": "ラテン語legalis（法にかなった→忠実な）に由来。",
   "synonyms": [],
   "derived": [
@@ -13750,7 +13751,7 @@ const DICTIONARY_DATA = {
   }
  },
  "confiable": {
-  "nuance": "「信頼できる」の基本語。confiar（信頼する）から派生した語。",
+  "nuance": "confiar（信頼する）から派生した語。",
   "etymology": "confiar（信頼する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -13763,7 +13764,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ingenuo": {
-  "nuance": "「世間知らずな、純真な」の基本語。ネガティブにもポジティブにも使われる。",
+  "nuance": "ネガティブにもポジティブにも使われる。",
   "etymology": "ラテン語ingenuus（生まれながらに自由な→純真な）に由来。",
   "synonyms": [],
   "derived": [
@@ -13775,7 +13776,7 @@ const DICTIONARY_DATA = {
   }
  },
  "práctico": {
-  "nuance": "「実用的な」の基本語。practicar（練習する）と同語源。",
+  "nuance": "practicar（練習する）と同語源。",
   "etymology": "ラテン語practicus（実行の）に由来。",
   "synonyms": [],
   "derived": [
@@ -13787,7 +13788,7 @@ const DICTIONARY_DATA = {
   }
  },
  "detallista": {
-  "nuance": "「細かいところに気がつく」の基本語。detalle（細部）から派生。男女同形。",
+  "nuance": "detalle（細部）から派生。男女同形。",
   "etymology": "detalle（細部）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -13799,7 +13800,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vinagre": {
-  "nuance": "「酢」の基本語。vino（ワイン）+ agre（酸っぱい）の組み合わせ。",
+  "nuance": "vino（ワイン）+ agre（酸っぱい）の組み合わせ。",
   "etymology": "vino（ワイン）+ agre（酸っぱい）の組み合わせに由来。",
   "synonyms": [],
   "derived": [
@@ -13811,7 +13812,7 @@ const DICTIONARY_DATA = {
   }
  },
  "burrito": {
-  "nuance": "「ブリトー」の基本語。小さいロバ（burro）の指小形に由来するとされる。北メキシコ発祥の料理。",
+  "nuance": "小さいロバ（burro）の指小形に由来するとされる。北メキシコ発祥の料理。",
   "etymology": "burro（ロバ）の指小形に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -13823,7 +13824,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pozole": {
-  "nuance": "「ポソレ」の基本語。トウモロコシ（ポソル）と肉を使ったメキシコの伝統的なスープ料理。ナワトル語由来。",
+  "nuance": "トウモロコシ（ポソル）と肉を使ったメキシコの伝統的なスープ料理。ナワトル語由来。",
   "etymology": "ナワトル語pozolli（泡立った）に由来。",
   "synonyms": [],
   "derived": [],
@@ -13833,7 +13834,7 @@ const DICTIONARY_DATA = {
   }
  },
  "merienda": {
-  "nuance": "「おやつ」の基本語。午後の軽食を指す。",
+  "nuance": "午後の軽食を指す。",
   "etymology": "ラテン語merenda（正午の食事）に由来。",
   "synonyms": [],
   "derived": [
@@ -13845,7 +13846,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fideos": {
-  "nuance": "「麺」の基本語。sopa de fideos（麺スープ）はよく食べられるメキシコ料理。",
+  "nuance": "sopa de fideos（麺スープ）はよく食べられるメキシコ料理。",
   "etymology": "アラビア語fidaws（麺）に由来。",
   "synonyms": [],
   "derived": [],
@@ -13855,7 +13856,7 @@ const DICTIONARY_DATA = {
   }
  },
  "miel": {
-  "nuance": "「蜂蜜」の基本語。luna de miel（ハネムーン、直訳「蜜の月」）という表現もある。",
+  "nuance": "luna de miel（ハネムーン、直訳「蜜の月」）という表現もある。",
   "etymology": "ラテン語mel（蜂蜜）に由来。",
   "synonyms": [],
   "derived": [
@@ -13867,7 +13868,7 @@ const DICTIONARY_DATA = {
   }
  },
  "yogur": {
-  "nuance": "「ヨーグルト」の基本語。トルコ語由来の国際的な単語。",
+  "nuance": "トルコ語由来の国際的な単語。",
   "etymology": "トルコ語yoğurt（ヨーグルト）に由来。",
   "synonyms": [],
   "derived": [],
@@ -13877,7 +13878,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cereal": {
-  "nuance": "「シリアル」の基本語。「穀物」という意味にもなる。",
+  "nuance": "「穀物」という意味にもなる。",
   "etymology": "ローマ神話の農業の女神ケレース（Ceres）に由来。",
   "synonyms": [],
   "derived": [],
@@ -13887,7 +13888,7 @@ const DICTIONARY_DATA = {
   }
  },
  "caldo": {
-  "nuance": "「だし・スープの素」の基本語。caldo de pollo（チキンスープ）はよく食べられるメキシコ料理。",
+  "nuance": "caldo de pollo（チキンスープ）はよく食べられるメキシコ料理。",
   "etymology": "ラテン語calidus（熱い）に由来。",
   "synonyms": [],
   "derived": [
@@ -13899,7 +13900,7 @@ const DICTIONARY_DATA = {
   }
  },
  "calle": {
-  "nuance": "「通り」の基本語。en la calle（通りで、街中で）はよく使う表現。",
+  "nuance": "en la calle（通りで、街中で）はよく使う表現。",
   "etymology": "ラテン語callis（小道）に由来。",
   "synonyms": [],
   "derived": [
@@ -13911,7 +13912,7 @@ const DICTIONARY_DATA = {
   }
  },
  "torre": {
-  "nuance": "「タワー」の基本語。チェスの「ルーク」という意味にもなる。",
+  "nuance": "チェスの「ルーク」という意味にもなる。",
   "etymology": "ラテン語turris（塔）に由来。",
   "synonyms": [],
   "derived": [],
@@ -13921,7 +13922,7 @@ const DICTIONARY_DATA = {
   }
  },
  "consulado": {
-  "nuance": "「領事館」の基本語。embajada（大使館）とは規模・役割が異なる。",
+  "nuance": "embajada（大使館）とは規模・役割が異なる。",
   "etymology": "cónsul（領事）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -13933,7 +13934,7 @@ const DICTIONARY_DATA = {
   }
  },
  "zoológico": {
-  "nuance": "「動物園」の基本語。zoo（口語での短縮形）ともよく呼ばれる。",
+  "nuance": "zoo（口語での短縮形）ともよく呼ばれる。",
   "etymology": "ギリシャ語zoon（動物）+ logos（学問）の組み合わせ。",
   "synonyms": [
    "zoo（動物園、口語）"
@@ -13945,7 +13946,7 @@ const DICTIONARY_DATA = {
   }
  },
  "acuario": {
-  "nuance": "「水族館」の基本語。agua（水）から派生した語。",
+  "nuance": "agua（水）から派生した語。",
   "etymology": "ラテン語aquarium（水の場所）に由来。",
   "synonyms": [],
   "derived": [
@@ -14035,7 +14036,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mosca": {
-  "nuance": "「ハエ」の基本語。por si las moscas（念のため、直訳「ハエの場合に備えて」）という慣用句もある。",
+  "nuance": "por si las moscas（念のため、直訳「ハエの場合に備えて」）という慣用句もある。",
   "etymology": "ラテン語musca（ハエ）に由来。",
   "synonyms": [],
   "derived": [
@@ -14047,7 +14048,7 @@ const DICTIONARY_DATA = {
   }
  },
  "caracol": {
-  "nuance": "「かたつむり」の基本語。「（渦巻き状の）貝殻、内耳の蝸牛」という意味にもなる。",
+  "nuance": "「（渦巻き状の）貝殻、内耳の蝸牛」という意味にもなる。",
   "etymology": "ラテン語cochlea（螺旋、蝸牛）に由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -14057,7 +14058,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cisne": {
-  "nuance": "「白鳥」の基本語。elegante（優雅な）という比喩でよく使われる。",
+  "nuance": "elegante（優雅な）という比喩でよく使われる。",
   "etymology": "ラテン語cygnus（白鳥）に由来。",
   "synonyms": [],
   "derived": [],
@@ -14067,7 +14068,7 @@ const DICTIONARY_DATA = {
   }
  },
  "paloma": {
-  "nuance": "「ハト」の基本語。平和の象徴としてもよく使われる。",
+  "nuance": "平和の象徴としてもよく使われる。",
   "etymology": "ラテン語palumbes（野生のハト）に由来。",
   "synonyms": [],
   "derived": [],
@@ -14077,7 +14078,7 @@ const DICTIONARY_DATA = {
   }
  },
  "zorro": {
-  "nuance": "「キツネ」の基本語。「ずる賢い人」という比喩的な意味にもなる。",
+  "nuance": "「ずる賢い人」という比喩的な意味にもなる。",
   "etymology": "起源は諸説あるが、アラビア語系の語とされる。",
   "synonyms": [],
   "derived": [],
@@ -14087,7 +14088,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ciervo": {
-  "nuance": "「シカ」の基本語。女性形はcierva。",
+  "nuance": "女性形はcierva。",
   "etymology": "ラテン語cervus（シカ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -14097,7 +14098,7 @@ const DICTIONARY_DATA = {
   }
  },
  "canguro": {
-  "nuance": "「カンガルー」の基本語。オーストラリア先住民言語由来。",
+  "nuance": "オーストラリア先住民言語由来。",
   "etymology": "オーストラリア先住民言語ガグーの語gangurruに由来。",
   "synonyms": [],
   "derived": [],
@@ -14107,7 +14108,7 @@ const DICTIONARY_DATA = {
   }
  },
  "murciélago": {
-  "nuance": "「コウモリ」の基本語。murus（壁）+ ciego（盲目の）から派生したとされる。",
+  "nuance": "murus（壁）+ ciego（盲目の）から派生したとされる。",
   "etymology": "ラテン語mus caecus（盲目のネズミ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -14117,7 +14118,7 @@ const DICTIONARY_DATA = {
   }
  },
  "secadora": {
-  "nuance": "「乾燥機」の基本語。secar（乾かす）から派生した語。",
+  "nuance": "secar（乾かす）から派生した語。",
   "etymology": "secar（乾かす）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14129,7 +14130,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lavaplatos": {
-  "nuance": "「食洗機」の基本語。lavar（洗う）+ platos（皿）の組み合わせ、単数複数同形。",
+  "nuance": "lavar（洗う）+ platos（皿）の組み合わせ、単数複数同形。",
   "etymology": "lavar（洗う）+ platos（皿）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -14142,7 +14143,7 @@ const DICTIONARY_DATA = {
   }
  },
  "linterna": {
-  "nuance": "「懐中電灯」の基本語。ギリシャ語ランタン由来。",
+  "nuance": "ギリシャ語ランタン由来。",
   "etymology": "ラテン語lanterna（ランプ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -14152,7 +14153,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fósforo": {
-  "nuance": "「マッチ」の基本語。cerillo（マッチ、地域による）ともほぼ同義。「リン（元素）」という意味にもなる。",
+  "nuance": "cerillo（マッチ、地域による）ともほぼ同義。「リン（元素）」という意味にもなる。",
   "etymology": "ギリシャ語phosphoros（光を運ぶもの）に由来。",
   "synonyms": [
    "cerillo（マッチ、地域による）"
@@ -14164,7 +14165,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cepillo de dientes": {
-  "nuance": "「歯ブラシ」の基本語。cepillo（ブラシ）+ de dientes（歯の）の組み合わせ。",
+  "nuance": "cepillo（ブラシ）+ de dientes（歯の）の組み合わせ。",
   "etymology": "cepillo（ブラシ）+ diente（歯）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -14177,7 +14178,7 @@ const DICTIONARY_DATA = {
   }
  },
  "plancha": {
-  "nuance": "「アイロン」の基本語。「鉄板（料理用）」という意味にもなる（a la plancha＝鉄板焼きの）。",
+  "nuance": "「鉄板（料理用）」という意味にもなる（a la plancha＝鉄板焼きの）。",
   "etymology": "フランク語系の語planca（板）に由来。",
   "synonyms": [],
   "derived": [
@@ -14189,7 +14190,7 @@ const DICTIONARY_DATA = {
   }
  },
  "basurero": {
-  "nuance": "「ゴミ箱」の基本語。basura（ゴミ）から派生した語。「ゴミ収集人」という意味にもなる。",
+  "nuance": "basura（ゴミ）から派生した語。「ゴミ収集人」という意味にもなる。",
   "etymology": "basura（ゴミ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14201,7 +14202,7 @@ const DICTIONARY_DATA = {
   }
  },
  "escoba": {
-  "nuance": "「ほうき」の基本語。barrer con la escoba（ほうきで掃く）はよく使う組み合わせ。",
+  "nuance": "barrer con la escoba（ほうきで掃く）はよく使う組み合わせ。",
   "etymology": "ラテン語scopa（小枝の束）に由来。",
   "synonyms": [],
   "derived": [
@@ -14213,7 +14214,7 @@ const DICTIONARY_DATA = {
   }
  },
  "detergente": {
-  "nuance": "「洗剤」の基本語。detergente para ropa（洗濯用洗剤）、detergente para platos（食器用洗剤）のように使う。",
+  "nuance": "detergente para ropa（洗濯用洗剤）、detergente para platos（食器用洗剤）のように使う。",
   "etymology": "ラテン語detergere（拭き取る）に由来。",
   "synonyms": [],
   "derived": [],
@@ -14223,7 +14224,7 @@ const DICTIONARY_DATA = {
   }
  },
  "matiz": {
-  "nuance": "「ニュアンス」の基本語。matizar（ニュアンスを加える）から派生した語。",
+  "nuance": "matizar（ニュアンスを加える）から派生した語。",
   "etymology": "ラテン語mateola（打つ道具→色調から派生）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -14235,7 +14236,7 @@ const DICTIONARY_DATA = {
   }
  },
  "trasfondo": {
-  "nuance": "「背景」の基本語。tras（後ろに）+ fondo（底、背景）の組み合わせ。",
+  "nuance": "tras（後ろに）+ fondo（底、背景）の組み合わせ。",
   "etymology": "tras（後ろに）+ fondo（底）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -14247,7 +14248,7 @@ const DICTIONARY_DATA = {
   }
  },
  "revista": {
-  "nuance": "「雑誌」の基本語。revisar（見直す）と同語源。",
+  "nuance": "revisar（見直す）と同語源。",
   "etymology": "revisar（見直す）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14259,7 +14260,7 @@ const DICTIONARY_DATA = {
   }
  },
  "anuncio": {
-  "nuance": "「広告、お知らせ」の基本語。anunciar（発表する、宣伝する）から派生した語。",
+  "nuance": "anunciar（発表する、宣伝する）から派生した語。",
   "etymology": "anunciar（発表する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14271,7 +14272,7 @@ const DICTIONARY_DATA = {
   }
  },
  "titular": {
-  "nuance": "「見出し」の基本語。「保有者」「タイトルをつける」という動詞の意味にもなる。",
+  "nuance": "「保有者」「タイトルをつける」という動詞の意味にもなる。",
   "etymology": "título（タイトル）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14395,7 +14396,7 @@ const DICTIONARY_DATA = {
   }
  },
  "profundizar": {
-  "nuance": "「深く掘り下げる」の基本語。profundo（深い）から派生した語。",
+  "nuance": "profundo（深い）から派生した語。",
   "etymology": "profundo（深い）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14407,7 +14408,7 @@ const DICTIONARY_DATA = {
   }
  },
  "plantear": {
-  "nuance": "「提起する」の基本語。plantear una pregunta（質問を投げかける）はよく使う組み合わせ。",
+  "nuance": "plantear una pregunta（質問を投げかける）はよく使う組み合わせ。",
   "etymology": "planta（植物、根を張る）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14419,7 +14420,7 @@ const DICTIONARY_DATA = {
   }
  },
  "abordar": {
-  "nuance": "「取り組む」の基本語。「（乗り物に）乗り込む」という意味にもなる。",
+  "nuance": "「（乗り物に）乗り込む」という意味にもなる。",
   "etymology": "a（〜へ）+ bordo（船縁）の組み合わせに由来。",
   "synonyms": [],
   "derived": [
@@ -14431,7 +14432,7 @@ const DICTIONARY_DATA = {
   }
  },
  "reflexionar": {
-  "nuance": "「熟考する」の基本語。reflejar（反射する）と同語源。",
+  "nuance": "reflejar（反射する）と同語源。",
   "etymology": "ラテン語reflectere（曲げ戻す→反射する、内省する）に由来。",
   "synonyms": [],
   "derived": [
@@ -14443,7 +14444,7 @@ const DICTIONARY_DATA = {
   }
  },
  "reunir": {
-  "nuance": "「集める」の基本語。reunirse（集まる、再帰形）もよく使われる。",
+  "nuance": "reunirse（集まる、再帰形）もよく使われる。",
   "etymology": "re（再び）+ unir（結びつける）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -14456,7 +14457,7 @@ const DICTIONARY_DATA = {
   }
  },
  "compartir": {
-  "nuance": "「共有する」の基本語。compartir con（〜と分かち合う）という組み合わせもよく使う。",
+  "nuance": "compartir con（〜と分かち合う）という組み合わせもよく使う。",
   "etymology": "con（一緒に）+ partir（分ける）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -14468,7 +14469,7 @@ const DICTIONARY_DATA = {
   }
  },
  "canal": {
-  "nuance": "「チャンネル」の基本語。「運河」という意味にもなる。",
+  "nuance": "「運河」という意味にもなる。",
   "etymology": "ラテン語canalis（水路）に由来。",
   "synonyms": [],
   "derived": [],
@@ -14478,7 +14479,7 @@ const DICTIONARY_DATA = {
   }
  },
  "transmisión": {
-  "nuance": "「放送」の基本語。transmitir（放送する、伝える）から派生した語。",
+  "nuance": "transmitir（放送する、伝える）から派生した語。",
   "etymology": "transmitir（伝える）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14490,7 +14491,7 @@ const DICTIONARY_DATA = {
   }
  },
  "código qr": {
-  "nuance": "「QRコード」の基本語。código（コード）+ QR（Quick Responseの略）の組み合わせ。",
+  "nuance": "código（コード）+ QR（Quick Responseの略）の組み合わせ。",
   "etymology": "英語Quick Response（速い反応）の略。",
   "synonyms": [],
   "derived": [
@@ -14502,7 +14503,7 @@ const DICTIONARY_DATA = {
   }
  },
  "asistente virtual": {
-  "nuance": "「バーチャルアシスタント」の基本語。asistente（アシスタント）+ virtual（仮想の）の組み合わせ。",
+  "nuance": "asistente（アシスタント）+ virtual（仮想の）の組み合わせ。",
   "etymology": "asistir（助ける）+ virtual（仮想の）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -14514,7 +14515,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gorro": {
-  "nuance": "「ニット帽」の基本語。sombrero（帽子全般、つばのある帽子）とは区別される。",
+  "nuance": "sombrero（帽子全般、つばのある帽子）とは区別される。",
   "etymology": "ラテン語系の語gurra（帽子）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -14526,7 +14527,7 @@ const DICTIONARY_DATA = {
   }
  },
  "impermeable": {
-  "nuance": "「レインコート」の基本語。im（否定）+ permeable（透過性の）の組み合わせ、「水を通さない」が原義。",
+  "nuance": "im（否定）+ permeable（透過性の）の組み合わせ、「水を通さない」が原義。",
   "etymology": "im（否定）+ permeable（透過性の）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -14538,7 +14539,7 @@ const DICTIONARY_DATA = {
   }
  },
  "suéter": {
-  "nuance": "「セーター」の基本語。英語sweaterのスペイン語表記。",
+  "nuance": "英語sweaterのスペイン語表記。",
   "etymology": "英語sweater（汗をかかせるもの）に由来。",
   "synonyms": [
    "chompa（セーター、一部地域）"
@@ -14550,7 +14551,7 @@ const DICTIONARY_DATA = {
   }
  },
  "medias": {
-  "nuance": "「タイツ、ストッキング」の基本語。地域によってcalcetines（靴下）を指すこともある（地域差）。",
+  "nuance": "地域によってcalcetines（靴下）を指すこともある（地域差）。",
   "etymology": "media（半分の）から派生、元々は「膝までの靴下」を指した。",
   "synonyms": [],
   "derived": [
@@ -14562,7 +14563,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gorra": {
-  "nuance": "「キャップ」の基本語。野球帽のような、つばのある帽子を指す。gorro（ニット帽）とは形状が違う。",
+  "nuance": "野球帽のような、つばのある帽子を指す。gorro（ニット帽）とは形状が違う。",
   "etymology": "gorro（帽子）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14574,7 +14575,7 @@ const DICTIONARY_DATA = {
   }
  },
  "glaciar": {
-  "nuance": "「氷河」の基本語。hielo（氷）と関連するが別語源。",
+  "nuance": "hielo（氷）と関連するが別語源。",
   "etymology": "フランス語glacier（氷河）に由来。",
   "synonyms": [],
   "derived": [
@@ -14586,7 +14587,7 @@ const DICTIONARY_DATA = {
   }
  },
  "oasis": {
-  "nuance": "「オアシス」の基本語。単数複数同形。",
+  "nuance": "単数複数同形。",
   "etymology": "エジプト語系の語に由来、ギリシャ語oasisを経由。",
   "synonyms": [],
   "derived": [],
@@ -14596,7 +14597,7 @@ const DICTIONARY_DATA = {
   }
  },
  "energía solar": {
-  "nuance": "「太陽エネルギー」の基本語。energía（エネルギー）+ solar（太陽の）の組み合わせ。",
+  "nuance": "energía（エネルギー）+ solar（太陽の）の組み合わせ。",
   "etymology": "sol（太陽）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14608,7 +14609,7 @@ const DICTIONARY_DATA = {
   }
  },
  "paisaje": {
-  "nuance": "「景色」の基本語。país（国）から派生した語。",
+  "nuance": "país（国）から派生した語。",
   "etymology": "país（国）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14620,7 +14621,7 @@ const DICTIONARY_DATA = {
   }
  },
  "matrícula": {
-  "nuance": "「授業料、入学登録」の基本語。「ナンバープレート」という意味にもなる（地域による）。",
+  "nuance": "「ナンバープレート」という意味にもなる（地域による）。",
   "etymology": "ラテン語matricula（登録簿）に由来。",
   "synonyms": [],
   "derived": [
@@ -14632,7 +14633,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pizarrón": {
-  "nuance": "「黒板」の基本語。ラテンアメリカで一般的（スペインではpizarraが一般的、地域差）。",
+  "nuance": "ラテンアメリカで一般的（スペインではpizarraが一般的、地域差）。",
   "etymology": "pizarra（黒板、スレート石）から派生した語。",
   "synonyms": [
    "pizarra（黒板、スペイン）"
@@ -14644,7 +14645,7 @@ const DICTIONARY_DATA = {
   }
  },
  "grapadora": {
-  "nuance": "「ホッチキス」の基本語。grapa（ホッチキスの針）から派生した語。",
+  "nuance": "grapa（ホッチキスの針）から派生した語。",
   "etymology": "grapa（ホッチキスの針、留め金）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14656,7 +14657,7 @@ const DICTIONARY_DATA = {
   }
  },
  "probador": {
-  "nuance": "「試着室」の基本語。probar（試す）から派生した語。",
+  "nuance": "probar（試す）から派生した語。",
   "etymology": "probar（試す）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14668,7 +14669,7 @@ const DICTIONARY_DATA = {
   }
  },
  "etiqueta": {
-  "nuance": "「タグ」の基本語。「エチケット、礼儀作法」という意味にもなる。",
+  "nuance": "「エチケット、礼儀作法」という意味にもなる。",
   "etymology": "フランス語étiquette（貼り紙）に由来。",
   "synonyms": [],
   "derived": [
@@ -14680,7 +14681,7 @@ const DICTIONARY_DATA = {
   }
  },
  "garantía": {
-  "nuance": "「保証」の基本語。tener garantía（保証がある）はよく使う組み合わせ。",
+  "nuance": "tener garantía（保証がある）はよく使う組み合わせ。",
   "etymology": "フランス語garantie（保証）に由来。",
   "synonyms": [],
   "derived": [
@@ -14692,7 +14693,7 @@ const DICTIONARY_DATA = {
   }
  },
  "reembolso": {
-  "nuance": "「返金」の基本語。re（再び）+ embolsar（財布に入れる）の組み合わせ。",
+  "nuance": "re（再び）+ embolsar（財布に入れる）の組み合わせ。",
   "etymology": "embolsar（財布に入れる）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14704,7 +14705,7 @@ const DICTIONARY_DATA = {
   }
  },
  "envío": {
-  "nuance": "「配送」の基本語。enviar（送る）から派生した語。envío gratis（送料無料）はよく使う組み合わせ。",
+  "nuance": "enviar（送る）から派生した語。envío gratis（送料無料）はよく使う組み合わせ。",
   "etymology": "enviar（送る）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14716,7 +14717,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vecindad": {
-  "nuance": "「近隣」の基本語。vecino（隣人）から派生した語。",
+  "nuance": "vecino（隣人）から派生した語。",
   "etymology": "vecino（隣人）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14728,7 +14729,7 @@ const DICTIONARY_DATA = {
   }
  },
  "igualdad": {
-  "nuance": "「平等」の基本語。igual（同じ）から派生した語。",
+  "nuance": "igual（同じ）から派生した語。",
   "etymology": "igual（同じ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14740,7 +14741,7 @@ const DICTIONARY_DATA = {
   }
  },
  "diversidad": {
-  "nuance": "「多様性」の基本語。diverso（多様な）から派生した語。",
+  "nuance": "diverso（多様な）から派生した語。",
   "etymology": "diverso（多様な）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -14752,7 +14753,7 @@ const DICTIONARY_DATA = {
   }
  },
  "flauta": {
-  "nuance": "「フルート」の基本語。",
+  "nuance": "息を吹き込んで演奏する管楽器。オーケストラの定番楽器の一つ。",
   "etymology": "ラテン語flare（吹く）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -14764,7 +14765,7 @@ const DICTIONARY_DATA = {
   }
  },
  "saxofón": {
-  "nuance": "「サックス」の基本語。発明者ベルギー人アドルフ・サックスに由来。",
+  "nuance": "発明者ベルギー人アドルフ・サックスに由来。",
   "etymology": "発明者アドルフ・サックス（Adolphe Sax）の名前に由来。",
   "synonyms": [],
   "derived": [
@@ -14776,7 +14777,7 @@ const DICTIONARY_DATA = {
   }
  },
  "clarinete": {
-  "nuance": "「クラリネット」の基本語。",
+  "nuance": "リードを使って演奏する木管楽器。",
   "etymology": "イタリア語clarinetto（小さなラッパ）に由来。",
   "synonyms": [],
   "derived": [
@@ -14788,7 +14789,7 @@ const DICTIONARY_DATA = {
   }
  },
  "actriz": {
-  "nuance": "「女優」の基本語。actor（俳優）の女性形。",
+  "nuance": "actor（俳優）の女性形。",
   "etymology": "actor（俳優）の女性形。",
   "synonyms": [],
   "derived": [
@@ -14801,7 +14802,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ecuador": {
-  "nuance": "「エクアドル」の基本語。赤道（equator）を意味するスペイン語から国名がついた。",
+  "nuance": "赤道（equator）を意味するスペイン語から国名がついた。",
   "etymology": "ecuador（赤道）に由来、赤道直下の国であることから。",
   "synonyms": [],
   "derived": [
@@ -14813,7 +14814,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bolivia": {
-  "nuance": "「ボリビア」の基本語。独立の英雄シモン・ボリバルに由来。",
+  "nuance": "独立の英雄シモン・ボリバルに由来。",
   "etymology": "独立の指導者シモン・ボリバル（Simón Bolívar）の名前に由来。",
   "synonyms": [],
   "derived": [
@@ -14825,7 +14826,7 @@ const DICTIONARY_DATA = {
   }
  },
  "uruguay": {
-  "nuance": "「ウルグアイ」の基本語。先住民言語グアラニー語由来。",
+  "nuance": "先住民言語グアラニー語由来。",
   "etymology": "グアラニー語uruguáy（鳥の川）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -14837,7 +14838,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estación de policía": {
-  "nuance": "「警察署」の基本語。estación（駅、局）+ de policía（警察の）の組み合わせ。",
+  "nuance": "estación（駅、局）+ de policía（警察の）の組み合わせ。",
   "etymology": "estación（局）+ policía（警察）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -14849,7 +14850,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rugby": {
-  "nuance": "「ラグビー」の基本語。イギリスの町ラグビーに由来。",
+  "nuance": "イギリスの町ラグビーに由来。",
   "etymology": "イギリスの町Rugbyに由来。",
   "synonyms": [],
   "derived": [],
@@ -14859,7 +14860,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rectángulo": {
-  "nuance": "「長方形」の基本語。recto（まっすぐな）+ ángulo（角）の組み合わせ。",
+  "nuance": "recto（まっすぐな）+ ángulo（角）の組み合わせ。",
   "etymology": "recto（直角の）+ ángulo（角）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -14871,7 +14872,7 @@ const DICTIONARY_DATA = {
   }
  },
  "centímetro": {
-  "nuance": "「センチメートル」の基本語。centi（100分の1）+ metro（メートル）の組み合わせ。",
+  "nuance": "centi（100分の1）+ metro（メートル）の組み合わせ。",
   "etymology": "ラテン語centum（100）+ metro（メートル）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -14883,7 +14884,7 @@ const DICTIONARY_DATA = {
   }
  },
  "kilómetro": {
-  "nuance": "「キロメートル」の基本語。kilo（1000）+ metro（メートル）の組み合わせ。",
+  "nuance": "kilo（1000）+ metro（メートル）の組み合わせ。",
   "etymology": "ギリシャ語khilioi（1000）+ metro（メートル）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -14895,7 +14896,7 @@ const DICTIONARY_DATA = {
   }
  },
  "litro": {
-  "nuance": "「リットル」の基本語。容量の基本単位。",
+  "nuance": "容量の基本単位。",
   "etymology": "フランス語litre（容量単位）に由来。",
   "synonyms": [],
   "derived": [],
@@ -14905,7 +14906,7 @@ const DICTIONARY_DATA = {
   }
  },
  "kilogramo": {
-  "nuance": "「キログラム」の基本語。口語ではkiloと短縮されることも多い。",
+  "nuance": "口語ではkiloと短縮されることも多い。",
   "etymology": "kilo（1000）+ gramo（グラム）の組み合わせ。",
   "synonyms": [
    "kilo（キロ、口語）"
@@ -14919,7 +14920,7 @@ const DICTIONARY_DATA = {
   }
  },
  "par": {
-  "nuance": "「一組」の基本語。un par de（〜のペア、口語で「いくつかの」という意味にもなる）。",
+  "nuance": "un par de（〜のペア、口語で「いくつかの」という意味にもなる）。",
   "etymology": "ラテン語par（等しい、対）に由来。",
   "synonyms": [],
   "derived": [
@@ -14931,7 +14932,7 @@ const DICTIONARY_DATA = {
   }
  },
  "doble": {
-  "nuance": "「二倍」の基本語。「（映画の）吹き替え、スタントマン」という意味にもなる。",
+  "nuance": "「（映画の）吹き替え、スタントマン」という意味にもなる。",
   "etymology": "ラテン語duplus（二倍の）に由来。",
   "synonyms": [],
   "derived": [
@@ -14943,7 +14944,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rinoceronte": {
-  "nuance": "「サイ」の基本語。ギリシャ語「鼻の角」に由来。",
+  "nuance": "ギリシャ語「鼻の角」に由来。",
   "etymology": "ギリシャ語rhis（鼻）+ keras（角）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -14953,7 +14954,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hipopótamo": {
-  "nuance": "「カバ」の基本語。ギリシャ語「川の馬」に由来。",
+  "nuance": "ギリシャ語「川の馬」に由来。",
   "etymology": "ギリシャ語hippos（馬）+ potamos（川）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -14963,7 +14964,7 @@ const DICTIONARY_DATA = {
   }
  },
  "camello": {
-  "nuance": "「ラクダ」の基本語。",
+  "nuance": "砂漠での移動手段として使われる、背中にこぶを持つ動物。",
   "etymology": "ラテン語camelus（ラクダ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -14973,7 +14974,7 @@ const DICTIONARY_DATA = {
   }
  },
  "panda": {
-  "nuance": "「パンダ」の基本語。ネパール語系の言語由来。",
+  "nuance": "ネパール語系の言語由来。",
   "etymology": "ネパール語系の語ponyaに由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -14983,7 +14984,7 @@ const DICTIONARY_DATA = {
   }
  },
  "koala": {
-  "nuance": "「コアラ」の基本語。オーストラリア先住民言語由来。",
+  "nuance": "オーストラリア先住民言語由来。",
   "etymology": "オーストラリア先住民言語の語に由来。",
   "synonyms": [],
   "derived": [],
@@ -14993,7 +14994,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ardilla": {
-  "nuance": "「リス」の基本語。",
+  "nuance": "木に登る小さな哺乳類。木の実を集める習性で知られる。",
   "etymology": "ラテン語sciurellus（小さなリス）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15003,7 +15004,7 @@ const DICTIONARY_DATA = {
   }
  },
  "traje formal": {
-  "nuance": "「フォーマルスーツ」の基本語。traje（スーツ）+ formal（正式な）の組み合わせ。",
+  "nuance": "traje（スーツ）+ formal（正式な）の組み合わせ。",
   "etymology": "traer（着せる）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15015,7 +15016,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bata": {
-  "nuance": "「ガウン」の基本語。医師の白衣（bata blanca）という意味にもなる。",
+  "nuance": "医師の白衣（bata blanca）という意味にもなる。",
   "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
   "synonyms": [],
   "derived": [],
@@ -15025,7 +15026,7 @@ const DICTIONARY_DATA = {
   }
  },
  "circo": {
-  "nuance": "「サーカス」の基本語。ラテン語「円形の場所」に由来。",
+  "nuance": "ラテン語「円形の場所」に由来。",
   "etymology": "ラテン語circus（円形の場所）に由来。",
   "synonyms": [],
   "derived": [
@@ -15037,7 +15038,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pulmón": {
-  "nuance": "「肺」の基本語。",
+  "nuance": "呼吸に使う体内の器官。左右に一つずつある。",
   "etymology": "ラテン語pulmo（肺）に由来。",
   "synonyms": [],
   "derived": [
@@ -15049,7 +15050,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hígado": {
-  "nuance": "「肝臓」の基本語。",
+  "nuance": "解毒や消化を助ける体内の器官。人体最大の内臓の一つ。",
   "etymology": "ラテン語ficatum（イチジクで育てた肝臓→肝臓の意味に転じた）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15059,7 +15060,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estación de bomberos": {
-  "nuance": "「消防署」の基本語。estación（局）+ de bomberos（消防士の）の組み合わせ。",
+  "nuance": "estación（局）+ de bomberos（消防士の）の組み合わせ。",
   "etymology": "bombero（消防士）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15071,7 +15072,7 @@ const DICTIONARY_DATA = {
   }
  },
  "planetario": {
-  "nuance": "「プラネタリウム」の基本語。planeta（惑星）から派生した語。",
+  "nuance": "planeta（惑星）から派生した語。",
   "etymology": "planeta（惑星）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15083,7 +15084,7 @@ const DICTIONARY_DATA = {
   }
  },
  "observatorio": {
-  "nuance": "「天文台」の基本語。observar（観察する）から派生した語。",
+  "nuance": "observar（観察する）から派生した語。",
   "etymology": "observar（観察する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15095,7 +15096,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bolsa": {
-  "nuance": "「袋」の基本語。「株式市場」という意味にもなる（la bolsa de valores）。",
+  "nuance": "「株式市場」という意味にもなる（la bolsa de valores）。",
   "etymology": "ラテン語bursa（袋）に由来。",
   "synonyms": [],
   "derived": [
@@ -15107,7 +15108,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cronómetro": {
-  "nuance": "「ストップウォッチ」の基本語。crono（時間）+ metro（測定）の組み合わせ。",
+  "nuance": "crono（時間）+ metro（測定）の組み合わせ。",
   "etymology": "ギリシャ語khronos（時間）+ metron（測定）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -15117,7 +15118,7 @@ const DICTIONARY_DATA = {
   }
  },
  "centro": {
-  "nuance": "「中心」の基本語。「繁華街」という意味にもなる（el centro＝街の中心地）。",
+  "nuance": "「繁華街」という意味にもなる（el centro＝街の中心地）。",
   "etymology": "ラテン語centrum（中心）に由来。",
   "synonyms": [],
   "derived": [
@@ -15129,7 +15130,7 @@ const DICTIONARY_DATA = {
   }
  },
  "candado": {
-  "nuance": "「南京錠」の基本語。",
+  "nuance": "ドアや自転車などに取り付けて施錠する道具。llave（鍵）とセットで使う。",
   "etymology": "ラテン語catenatus（鎖でつながれた）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15139,7 +15140,7 @@ const DICTIONARY_DATA = {
   }
  },
  "manguera": {
-  "nuance": "「ホース」の基本語。",
+  "nuance": "水やホースを通すための柔らかい管。庭の水やりや消火に使われる。",
   "etymology": "起源は諸説あるが、アラビア語系の語とされる。",
   "synonyms": [],
   "derived": [],
@@ -15149,7 +15150,7 @@ const DICTIONARY_DATA = {
   }
  },
  "marcador": {
-  "nuance": "「マーカー」の基本語。「スコアボード、得点」という意味にもなる。",
+  "nuance": "「スコアボード、得点」という意味にもなる。",
   "etymology": "marcar（印をつける）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15161,7 +15162,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sello": {
-  "nuance": "「切手、印」の基本語。sellar（封をする、印を押す）から派生した語。",
+  "nuance": "sellar（封をする、印を押す）から派生した語。",
   "etymology": "ラテン語sigillum（小さな印）に由来。",
   "synonyms": [],
   "derived": [
@@ -15173,7 +15174,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pantano": {
-  "nuance": "「沼地」の基本語。",
+  "nuance": "水が溜まってぬかるんだ湿地帯。生態系が豊かな場所でもある。",
   "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
   "synonyms": [],
   "derived": [
@@ -15185,7 +15186,7 @@ const DICTIONARY_DATA = {
   }
  },
  "arrecife": {
-  "nuance": "「サンゴ礁」の基本語。メキシコのカリブ海沿岸には世界第2位の規模のサンゴ礁がある。",
+  "nuance": "メキシコのカリブ海沿岸には世界第2位の規模のサンゴ礁がある。",
   "etymology": "アラビア語ar-raṣīf（舗装された道）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15195,7 +15196,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pradera": {
-  "nuance": "「草原」の基本語。prado（草地）から派生した語。",
+  "nuance": "prado（草地）から派生した語。",
   "etymology": "prado（草地）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15207,7 +15208,7 @@ const DICTIONARY_DATA = {
   }
  },
  "manantial": {
-  "nuance": "「泉」の基本語。manar（湧き出る）から派生した語。",
+  "nuance": "manar（湧き出る）から派生した語。",
   "etymology": "manar（湧き出る）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15219,7 +15220,7 @@ const DICTIONARY_DATA = {
   }
  },
  "constatar": {
-  "nuance": "「確認する」の基本語。con（一緒に）+ stare（立つ）から派生した語。",
+  "nuance": "con（一緒に）+ stare（立つ）から派生した語。",
   "etymology": "ラテン語constare（確固としている）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15229,7 +15230,7 @@ const DICTIONARY_DATA = {
   }
  },
  "prevalecer": {
-  "nuance": "「優勢である」の基本語。pre（前に）+ valer（価値がある）の組み合わせ。",
+  "nuance": "pre（前に）+ valer（価値がある）の組み合わせ。",
   "etymology": "ラテン語praevalere（他より強い）に由来。",
   "synonyms": [],
   "derived": [
@@ -15241,7 +15242,7 @@ const DICTIONARY_DATA = {
   }
  },
  "discrepar": {
-  "nuance": "「意見が食い違う」の基本語。discrepancia（食い違い）から派生した語。",
+  "nuance": "discrepancia（食い違い）から派生した語。",
   "etymology": "ラテン語discrepare（不協和音を出す）に由来。",
   "synonyms": [],
   "derived": [
@@ -15253,7 +15254,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lista de tareas": {
-  "nuance": "「タスクリスト」の基本語。lista（リスト）+ de tareas（タスクの）の組み合わせ。",
+  "nuance": "lista（リスト）+ de tareas（タスクの）の組み合わせ。",
   "etymology": "tarea（仕事、宿題）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15265,7 +15266,7 @@ const DICTIONARY_DATA = {
   }
  },
  "día libre": {
-  "nuance": "「休みの日」の基本語。día（日）+ libre（自由な）の組み合わせ。",
+  "nuance": "día（日）+ libre（自由な）の組み合わせ。",
   "etymology": "libre（自由な）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15277,7 +15278,7 @@ const DICTIONARY_DATA = {
   }
  },
  "emisora": {
-  "nuance": "「放送局」の基本語。emitir（放送する）から派生した語。",
+  "nuance": "emitir（放送する）から派生した語。",
   "etymology": "emitir（放送する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15289,7 +15290,7 @@ const DICTIONARY_DATA = {
   }
  },
  "costumbre social": {
-  "nuance": "「社会習慣」の基本語。costumbre（習慣）+ social（社会的な）の組み合わせ。",
+  "nuance": "costumbre（習慣）+ social（社会的な）の組み合わせ。",
   "etymology": "costumbre（習慣）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15301,7 +15302,7 @@ const DICTIONARY_DATA = {
   }
  },
  "voluntariado": {
-  "nuance": "「ボランティア活動」の基本語。voluntario（ボランティア）から派生した語。",
+  "nuance": "voluntario（ボランティア）から派生した語。",
   "etymology": "voluntario（ボランティア）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15313,7 +15314,7 @@ const DICTIONARY_DATA = {
   }
  },
  "extintor": {
-  "nuance": "「消火器」の基本語。extinguir（消す）から派生した語。",
+  "nuance": "extinguir（消す）から派生した語。",
   "etymology": "extinguir（消す）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15325,7 +15326,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chándal": {
-  "nuance": "「ジャージ」の基本語。スペインで一般的（メキシコではsudaderaやpants）。フランス語由来。",
+  "nuance": "スペインで一般的（メキシコではsudaderaやpants）。フランス語由来。",
   "etymology": "フランス語chandail（漁師のセーター）に由来。",
   "synonyms": [
    "pants（ジャージ、メキシコ）"
@@ -15337,7 +15338,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ceja": {
-  "nuance": "「眉」の基本語。levantar la ceja（眉をひそめる、疑う仕草）はよく使う表現。",
+  "nuance": "levantar la ceja（眉をひそめる、疑う仕草）はよく使う表現。",
   "etymology": "ラテン語supercilia（眉）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15347,7 +15348,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pestaña": {
-  "nuance": "「まつげ」の基本語。「（ウェブブラウザの）タブ」という意味にもなる。",
+  "nuance": "「（ウェブブラウザの）タブ」という意味にもなる。",
   "etymology": "ラテン語pectinare（くしでとかす）に由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -15357,7 +15358,7 @@ const DICTIONARY_DATA = {
   }
  },
  "barco de vela": {
-  "nuance": "「ヨット」の基本語。barco（船）+ de vela（帆の）の組み合わせ。",
+  "nuance": "barco（船）+ de vela（帆の）の組み合わせ。",
   "etymology": "barco（船）+ vela（帆）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15370,7 +15371,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tranvía": {
-  "nuance": "「路面電車」の基本語。tram（英語）+ vía（線路）の組み合わせ。",
+  "nuance": "tram（英語）+ vía（線路）の組み合わせ。",
   "etymology": "英語tram + vía（道）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15382,7 +15383,7 @@ const DICTIONARY_DATA = {
   }
  },
  "curry": {
-  "nuance": "「カレー」の基本語。タミル語由来の国際的な単語。",
+  "nuance": "タミル語由来の国際的な単語。",
   "etymology": "タミル語kari（ソース）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15392,7 +15393,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mermelada": {
-  "nuance": "「ジャム」の基本語。ポルトガル語marmelada（マルメロのジャム）に由来。",
+  "nuance": "ポルトガル語marmelada（マルメロのジャム）に由来。",
   "etymology": "ポルトガル語marmelo（マルメロ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15402,7 +15403,7 @@ const DICTIONARY_DATA = {
   }
  },
  "avena": {
-  "nuance": "「オートミール」の基本語。",
+  "nuance": "オート麦から作られる朝食用の穀物食品。健康食としてよく食べられる。",
   "etymology": "ラテン語avena（オート麦）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15412,7 +15413,7 @@ const DICTIONARY_DATA = {
   }
  },
  "museo de arte": {
-  "nuance": "「美術館」の基本語。museo（美術館・博物館）+ de arte（芸術の）の組み合わせ。",
+  "nuance": "museo（美術館・博物館）+ de arte（芸術の）の組み合わせ。",
   "etymology": "museo（博物館）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15424,7 +15425,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tradición": {
-  "nuance": "「伝統」の基本語。tradicional（伝統的な）から派生した語の元になる語。",
+  "nuance": "tradicional（伝統的な）から派生した語の元になる語。",
   "etymology": "ラテン語traditio（伝えること）に由来。",
   "synonyms": [],
   "derived": [
@@ -15436,7 +15437,7 @@ const DICTIONARY_DATA = {
   }
  },
  "autenticación": {
-  "nuance": "「認証」の基本語。autenticar（認証する）から派生した語。",
+  "nuance": "autenticar（認証する）から派生した語。",
   "etymology": "auténtico（本物の）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15448,7 +15449,7 @@ const DICTIONARY_DATA = {
   }
  },
  "conservación": {
-  "nuance": "「保全」の基本語。conservar（保存する）から派生した語。",
+  "nuance": "conservar（保存する）から派生した語。",
   "etymology": "conservar（保存する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15460,7 +15461,7 @@ const DICTIONARY_DATA = {
   }
  },
  "injusto": {
-  "nuance": "「不公正な」の基本語。justo（公正な）の反対語。",
+  "nuance": "justo（公正な）の反対語。",
   "etymology": "in（否定）+ justo（正しい）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15472,7 +15473,7 @@ const DICTIONARY_DATA = {
   }
  },
  "entrega": {
-  "nuance": "「配達」の基本語。entregar（届ける）から派生した語。",
+  "nuance": "entregar（届ける）から派生した語。",
   "etymology": "entregar（届ける）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15484,7 +15485,7 @@ const DICTIONARY_DATA = {
   }
  },
  "día de las madres": {
-  "nuance": "「母の日」の基本語。メキシコでは5月10日に固定で祝われる（アメリカと違い5月の第2日曜日ではない）。",
+  "nuance": "メキシコでは5月10日に固定で祝われる（アメリカと違い5月の第2日曜日ではない）。",
   "etymology": "día（日）+ de las madres（母たちの）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15508,7 +15509,7 @@ const DICTIONARY_DATA = {
   }
  },
  "equipo de trabajo": {
-  "nuance": "「仕事のチーム」の基本語。equipo（チーム）+ de trabajo（仕事の）の組み合わせ。",
+  "nuance": "equipo（チーム）+ de trabajo（仕事の）の組み合わせ。",
   "etymology": "equipo（チーム、装備）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15520,7 +15521,7 @@ const DICTIONARY_DATA = {
   }
  },
  "check-in": {
-  "nuance": "「チェックイン」の基本語。英語からの借用語。",
+  "nuance": "英語からの借用語。",
   "etymology": "英語check-in（確認して入る）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15530,7 +15531,7 @@ const DICTIONARY_DATA = {
   }
  },
  "taco al pastor": {
-  "nuance": "「タコス・アル・パストール」の基本語。豚肉をスパイスに漬けて回転焼きにする、メキシコシティで特に人気のタコス。中東のシャワルマから影響を受けたとされる。",
+  "nuance": "豚肉をスパイスに漬けて回転焼きにする、メキシコシティで特に人気のタコス。中東のシャワルマから影響を受けたとされる。",
   "etymology": "pastor（羊飼い）に由来、中東移民の料理法から発展したとされる。",
   "synonyms": [],
   "derived": [
@@ -15542,7 +15543,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pan dulce": {
-  "nuance": "「甘いパン」の基本語。メキシコの朝食・おやつの定番、様々な種類がある。",
+  "nuance": "メキシコの朝食・おやつの定番、様々な種類がある。",
   "etymology": "pan（パン）+ dulce（甘い）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15555,7 +15556,7 @@ const DICTIONARY_DATA = {
   }
  },
  "helada": {
-  "nuance": "「霜」の基本語。helar（凍らせる）から派生した語。",
+  "nuance": "helar（凍らせる）から派生した語。",
   "etymology": "helar（凍らせる）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15568,7 +15569,7 @@ const DICTIONARY_DATA = {
   }
  },
  "arpa": {
-  "nuance": "「ハープ」の基本語。arpaは女性名詞だが、アクセントのあるa音を避けるため単数形ではelを使う。ベラクルスの音楽（son jarocho）で有名な楽器。",
+  "nuance": "arpaは女性名詞だが、アクセントのあるa音を避けるため単数形ではelを使う。ベラクルスの音楽（son jarocho）で有名な楽器。",
   "etymology": "ゲルマン語系の語harpa（ハープ）に由来。",
   "synonyms": [],
   "derived": [
@@ -15580,7 +15581,7 @@ const DICTIONARY_DATA = {
   }
  },
  "contrabajo": {
-  "nuance": "「コントラバス」の基本語。contra（〜に対する）+ bajo（低い）の組み合わせ。",
+  "nuance": "contra（〜に対する）+ bajo（低い）の組み合わせ。",
   "etymology": "イタリア語contrabbasso（さらに低い音）に由来。",
   "synonyms": [],
   "derived": [
@@ -15592,7 +15593,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ukelele": {
-  "nuance": "「ウクレレ」の基本語。ハワイ語由来。",
+  "nuance": "ハワイ語由来。",
   "etymology": "ハワイ語ukulele（跳ねるノミ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15602,7 +15603,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pandereta": {
-  "nuance": "「タンバリン」の基本語。",
+  "nuance": "手で叩いたり振ったりして音を出す打楽器。フラメンコなどでよく使われる。",
   "etymology": "pandero（大型の太鼓）の指小形に由来。",
   "synonyms": [],
   "derived": [
@@ -15614,7 +15615,7 @@ const DICTIONARY_DATA = {
   }
  },
  "oceanía": {
-  "nuance": "「オセアニア」の基本語。オーストラリア・ニュージーランド・太平洋諸島を含む大陸。",
+  "nuance": "オーストラリア・ニュージーランド・太平洋諸島を含む大陸。",
   "etymology": "ラテン語oceanus（大洋）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15626,7 +15627,7 @@ const DICTIONARY_DATA = {
   }
  },
  "antártida": {
-  "nuance": "「南極大陸」の基本語。ártico（北極の）の反対語anti-ártico（南極の）から派生。",
+  "nuance": "ártico（北極の）の反対語anti-ártico（南極の）から派生。",
   "etymology": "anti（反対の）+ ártico（北極の）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15638,7 +15639,7 @@ const DICTIONARY_DATA = {
   }
  },
  "equipaje de mano": {
-  "nuance": "「機内持ち込み荷物」の基本語。equipaje（荷物）+ de mano（手の）の組み合わせ。",
+  "nuance": "equipaje（荷物）+ de mano（手の）の組み合わせ。",
   "etymology": "equipaje（荷物）+ mano（手）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15650,7 +15651,7 @@ const DICTIONARY_DATA = {
   }
  },
  "snowboard": {
-  "nuance": "「スノーボード」の基本語。英語からの借用語。",
+  "nuance": "英語からの借用語。",
   "etymology": "英語snowboard（雪の板）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15660,7 +15661,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hockey": {
-  "nuance": "「ホッケー」の基本語。英語からの借用語。",
+  "nuance": "英語からの借用語。",
   "etymology": "英語hockey（起源は諸説あり）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15682,7 +15683,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cinta métrica": {
-  "nuance": "「巻き尺」の基本語。cinta（テープ）+ métrica（測定の）の組み合わせ。",
+  "nuance": "cinta（テープ）+ métrica（測定の）の組み合わせ。",
   "etymology": "cinta（テープ）+ metro（メートル）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15694,7 +15695,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gancho": {
-  "nuance": "「フック」の基本語。「（ボクシングの）フックパンチ」という意味にもなる。",
+  "nuance": "「（ボクシングの）フックパンチ」という意味にもなる。",
   "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
   "synonyms": [],
   "derived": [
@@ -15706,7 +15707,7 @@ const DICTIONARY_DATA = {
   }
  },
  "clip": {
-  "nuance": "「クリップ」の基本語。英語からの借用語。「動画クリップ」という意味にもなる。",
+  "nuance": "英語からの借用語。「動画クリップ」という意味にもなる。",
   "etymology": "英語clip（挟むもの）に由来。",
   "synonyms": [],
   "derived": [],
@@ -15716,7 +15717,7 @@ const DICTIONARY_DATA = {
   }
  },
  "archivador": {
-  "nuance": "「書類棚」の基本語。archivo（ファイル、書類）から派生した語。",
+  "nuance": "archivo（ファイル、書類）から派生した語。",
   "etymology": "archivo（ファイル）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15728,7 +15729,7 @@ const DICTIONARY_DATA = {
   }
  },
  "incertidumbre": {
-  "nuance": "「不確実性」の基本語。cierto（確かな）+ incierto（不確かな）から派生。",
+  "nuance": "cierto（確かな）+ incierto（不確かな）から派生。",
   "etymology": "incierto（不確かな）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15741,7 +15742,7 @@ const DICTIONARY_DATA = {
   }
  },
  "contradicción": {
-  "nuance": "「矛盾」の基本語。contra（反対に）+ decir（言う）の組み合わせ。",
+  "nuance": "contra（反対に）+ decir（言う）の組み合わせ。",
   "etymology": "contra（反対に）+ decir（言う）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15753,7 +15754,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ambigüedad": {
-  "nuance": "「曖昧さ」の基本語。ambiguo（曖昧な）から派生した語。",
+  "nuance": "ambiguo（曖昧な）から派生した語。",
   "etymology": "ambiguo（曖昧な）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15765,7 +15766,7 @@ const DICTIONARY_DATA = {
   }
  },
  "coherencia": {
-  "nuance": "「一貫性」の基本語。cohesión（結束）と同語源。",
+  "nuance": "cohesión（結束）と同語源。",
   "etymology": "ラテン語cohaerere（くっついている）に由来。",
   "synonyms": [],
   "derived": [
@@ -15777,7 +15778,7 @@ const DICTIONARY_DATA = {
   }
  },
  "trascendencia": {
-  "nuance": "「重要性、超越性」の基本語。trascender（超える）から派生した語。",
+  "nuance": "trascender（超える）から派生した語。",
   "etymology": "trascender（超える）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15789,7 +15790,7 @@ const DICTIONARY_DATA = {
   }
  },
  "discrepancia": {
-  "nuance": "「食い違い」の基本語。discrepar（意見が食い違う）から派生した語。",
+  "nuance": "discrepar（意見が食い違う）から派生した語。",
   "etymology": "discrepar（食い違う）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15801,7 +15802,7 @@ const DICTIONARY_DATA = {
   }
  },
  "escepticismo": {
-  "nuance": "「懐疑主義」の基本語。escéptico（懐疑的な）から派生した語。",
+  "nuance": "escéptico（懐疑的な）から派生した語。",
   "etymology": "ギリシャ語skeptikos（探求する）に由来。",
   "synonyms": [],
   "derived": [
@@ -15813,7 +15814,7 @@ const DICTIONARY_DATA = {
   }
  },
  "suscitar": {
-  "nuance": "「引き起こす」の基本語。sub（下から）+ citar（呼び起こす）の組み合わせ。",
+  "nuance": "sub（下から）+ citar（呼び起こす）の組み合わせ。",
   "etymology": "ラテン語suscitare（下から起こす）に由来。",
   "synonyms": [],
   "derived": [
@@ -15825,7 +15826,7 @@ const DICTIONARY_DATA = {
   }
  },
  "matizar": {
-  "nuance": "「ニュアンスを加える」の基本語。matiz（ニュアンス）から派生した語。",
+  "nuance": "matiz（ニュアンス）から派生した語。",
   "etymology": "matiz（ニュアンス）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15837,7 +15838,7 @@ const DICTIONARY_DATA = {
   }
  },
  "desencadenar": {
-  "nuance": "「引き起こす（連鎖的に）」の基本語。des（外す）+ encadenar（鎖でつなぐ）の組み合わせ、「鎖を解き放つ」が原義。",
+  "nuance": "des（外す）+ encadenar（鎖でつなぐ）の組み合わせ、「鎖を解き放つ」が原義。",
   "etymology": "des（外す）+ encadenar（鎖でつなぐ）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15849,7 +15850,7 @@ const DICTIONARY_DATA = {
   }
  },
  "botas de nieve": {
-  "nuance": "「スノーブーツ」の基本語。botas（ブーツ）+ de nieve（雪の）の組み合わせ。",
+  "nuance": "botas（ブーツ）+ de nieve（雪の）の組み合わせ。",
   "etymology": "botas（ブーツ）+ nieve（雪）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15862,7 +15863,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ensalada de frutas": {
-  "nuance": "「フルーツサラダ」の基本語。ensalada（サラダ）+ de frutas（フルーツの）の組み合わせ。",
+  "nuance": "ensalada（サラダ）+ de frutas（フルーツの）の組み合わせ。",
   "etymology": "ensalada（サラダ）+ fruta（果物）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15875,7 +15876,7 @@ const DICTIONARY_DATA = {
   }
  },
  "escultura moderna": {
-  "nuance": "「現代彫刻」の基本語。escultura（彫刻）+ moderna（現代の）の組み合わせ。",
+  "nuance": "escultura（彫刻）+ moderna（現代の）の組み合わせ。",
   "etymology": "esculpir（彫刻する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15888,7 +15889,7 @@ const DICTIONARY_DATA = {
   }
  },
  "festival": {
-  "nuance": "「フェスティバル」の基本語。festividad（祝祭）と関連語。",
+  "nuance": "festividad（祝祭）と関連語。",
   "etymology": "ラテン語festivus（祭りの）に由来。",
   "synonyms": [],
   "derived": [
@@ -15900,7 +15901,7 @@ const DICTIONARY_DATA = {
   }
  },
  "actualización de software": {
-  "nuance": "「ソフトウェア更新」の基本語。actualización（更新）+ de software（ソフトウェアの）の組み合わせ。",
+  "nuance": "actualización（更新）+ de software（ソフトウェアの）の組み合わせ。",
   "etymology": "actualizar（更新する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -15912,7 +15913,7 @@ const DICTIONARY_DATA = {
   }
  },
  "copia de seguridad": {
-  "nuance": "「バックアップ」の基本語。copia（コピー）+ de seguridad（安全の）の組み合わせ。",
+  "nuance": "copia（コピー）+ de seguridad（安全の）の組み合わせ。",
   "etymology": "copia（コピー）+ seguridad（安全）の組み合わせ。",
   "synonyms": [
    "backup（バックアップ、英語借用）"
@@ -15927,7 +15928,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chip electrónico": {
-  "nuance": "「電子チップ」の基本語。chip（チップ）+ electrónico（電子の）の組み合わせ。",
+  "nuance": "chip（チップ）+ electrónico（電子の）の組み合わせ。",
   "etymology": "英語chip（欠片）+ electrónico（電子の）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -15975,7 +15976,7 @@ const DICTIONARY_DATA = {
   }
  },
  "día de reyes": {
-  "nuance": "「公現祭」の基本語。1月6日、メキシコでは子供たちがプレゼントをもらう伝統的な祝日でロスカ・デ・レジェス（王様のパン）を食べる。",
+  "nuance": "1月6日、メキシコでは子供たちがプレゼントをもらう伝統的な祝日でロスカ・デ・レジェス（王様のパン）を食べる。",
   "etymology": "día（日）+ de reyes（王たちの）の組み合わせ、東方の三賢者に由来。",
   "synonyms": [],
   "derived": [
@@ -15987,7 +15988,7 @@ const DICTIONARY_DATA = {
   }
  },
  "equipaje facturado": {
-  "nuance": "「預け荷物」の基本語。equipaje（荷物）+ facturado（チェックインされた）の組み合わせ。",
+  "nuance": "equipaje（荷物）+ facturado（チェックインされた）の組み合わせ。",
   "etymology": "facturar（荷物を預ける、請求する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16089,7 +16090,7 @@ const DICTIONARY_DATA = {
   }
  },
  "miel de maple": {
-  "nuance": "「メープルシロップ」の基本語。miel（蜂蜜）+ de maple（カエデの）の組み合わせ。",
+  "nuance": "miel（蜂蜜）+ de maple（カエデの）の組み合わせ。",
   "etymology": "miel（蜂蜜）+ 英語maple（カエデ）の組み合わせ。",
   "synonyms": [
    "jarabe de maple（メープルシロップ）"
@@ -16141,7 +16142,7 @@ const DICTIONARY_DATA = {
   }
  },
  "echar la hueva": {
-  "nuance": "メキシコの口語表現で「サボる、だらだらする」という意味。huevaは「怠け心」を表す俗語。",
+  "nuance": "huevaは本来「魚卵」を意味するが、俗語で「怠け心」を指す。echar（投げる、放つ）と組み合わさり、「怠け心を解き放つ」＝「だらだらする、サボる」という口語表現になった。",
   "etymology": "echar（投げる）+ hueva（卵、俗語で怠け心）の組み合わせ。",
   "synonyms": [
    "flojear（怠ける、口語）"
@@ -16231,7 +16232,7 @@ const DICTIONARY_DATA = {
   }
  },
  "interés（financiero）": {
-  "nuance": "「利子」の基本語。金融文脈での「利子」を明確にするための表記。単なるinterés（興味・利子）と区別している。",
+  "nuance": "金融文脈での「利子」を明確にするための表記。単なるinterés（興味・利子）と区別している。",
   "etymology": "ラテン語interesse（間にある→重要である）に由来。",
   "synonyms": [],
   "derived": [
@@ -16257,7 +16258,7 @@ const DICTIONARY_DATA = {
   }
  },
  "flexible（personalidad）": {
-  "nuance": "「柔軟な（性格）」の基本語。物理的な柔軟性と区別して、性格の柔軟性を明確にする表記。",
+  "nuance": "物理的な柔軟性と区別して、性格の柔軟性を明確にする表記。",
   "etymology": "ラテン語flexibilis（曲げられる）に由来。",
   "synonyms": [],
   "derived": [
@@ -16269,7 +16270,7 @@ const DICTIONARY_DATA = {
   }
  },
  "trámite": {
-  "nuance": "「手続き」の基本語。hacer un trámite（手続きをする）はよく使う組み合わせ、役所などでの事務手続き全般を指す。",
+  "nuance": "hacer un trámite（手続きをする）はよく使う組み合わせ、役所などでの事務手続き全般を指す。",
   "etymology": "tramitar（手続きする）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16281,7 +16282,7 @@ const DICTIONARY_DATA = {
   }
  },
  "requisito": {
-  "nuance": "「要件」の基本語。cumplir con los requisitos（要件を満たす）はよく使う組み合わせ。",
+  "nuance": "cumplir con los requisitos（要件を満たす）はよく使う組み合わせ。",
   "etymology": "ラテン語requisitus（求められた）に由来。",
   "synonyms": [],
   "derived": [
@@ -16293,7 +16294,7 @@ const DICTIONARY_DATA = {
   }
  },
  "comprobante": {
-  "nuance": "「領収書、証明書」の基本語。comprobar（確認する）から派生した語。",
+  "nuance": "comprobar（確認する）から派生した語。",
   "etymology": "comprobar（確認する）から派生した語。",
   "synonyms": [
    "recibo（領収書、ほぼ同義）"
@@ -16307,7 +16308,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vigente": {
-  "nuance": "「有効な」の基本語。estar vigente（有効である）はよく使う組み合わせ、法律・書類の有効性を表す。",
+  "nuance": "estar vigente（有効である）はよく使う組み合わせ、法律・書類の有効性を表す。",
   "etymology": "ラテン語vigens（力強い、生きている）に由来。",
   "synonyms": [],
   "derived": [
@@ -16331,7 +16332,7 @@ const DICTIONARY_DATA = {
   }
  },
  "retroalimentación": {
-  "nuance": "「フィードバック」の基本語。フォーマルな職場文脈でよく使われる（口語ではfeedbackという英語借用もよく使われる）。",
+  "nuance": "フォーマルな職場文脈でよく使われる（口語ではfeedbackという英語借用もよく使われる）。",
   "etymology": "retro（後ろへ）+ alimentación（栄養補給）の組み合わせ。",
   "synonyms": [
    "feedback（フィードバック、英語借用・口語）"
@@ -16357,7 +16358,7 @@ const DICTIONARY_DATA = {
   }
  },
  "desempeño": {
-  "nuance": "「(仕事の)成果」の基本語。desempeñar（果たす、演じる）から派生した語。",
+  "nuance": "desempeñar（果たす、演じる）から派生した語。",
   "etymology": "desempeñar（役目を果たす）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16369,7 +16370,7 @@ const DICTIONARY_DATA = {
   }
  },
  "plazo de entrega": {
-  "nuance": "「納期」の基本語。plazo（期限）+ de entrega（納品の）の組み合わせ。",
+  "nuance": "plazo（期限）+ de entrega（納品の）の組み合わせ。",
   "etymology": "plazo（期限）+ entregar（届ける）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -16382,7 +16383,7 @@ const DICTIONARY_DATA = {
   }
  },
  "malentendido": {
-  "nuance": "「誤解」の基本語。mal（悪く）+ entender（理解する）の組み合わせ。",
+  "nuance": "mal（悪く）+ entender（理解する）の組み合わせ。",
   "etymology": "mal（悪く）+ entender（理解する）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -16394,7 +16395,7 @@ const DICTIONARY_DATA = {
   }
  },
  "aclarar": {
-  "nuance": "「明確にする」の基本語。claro（明るい、明確な）から派生した語。",
+  "nuance": "claro（明るい、明確な）から派生した語。",
   "etymology": "claro（明確な）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16406,7 +16407,7 @@ const DICTIONARY_DATA = {
   }
  },
  "insistir": {
-  "nuance": "「主張する」の基本語。insistir en（〜を主張する）という組み合わせでよく使う。",
+  "nuance": "insistir en（〜を主張する）という組み合わせでよく使う。",
   "etymology": "ラテン語insistere（上に立つ→固執する）に由来。",
   "synonyms": [],
   "derived": [
@@ -16418,7 +16419,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ceder": {
-  "nuance": "「譲歩する」の基本語。「（席などを）譲る」という意味にもなる。",
+  "nuance": "「（席などを）譲る」という意味にもなる。",
   "etymology": "ラテン語cedere（下がる、譲る）に由来。",
   "synonyms": [],
   "derived": [
@@ -16430,7 +16431,7 @@ const DICTIONARY_DATA = {
   }
  },
  "reclamo": {
-  "nuance": "「クレーム」の基本語。hacer un reclamo（クレームを出す）はよく使う組み合わせ。",
+  "nuance": "hacer un reclamo（クレームを出す）はよく使う組み合わせ。",
   "etymology": "reclamar（要求する、クレームをつける）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16442,7 +16443,7 @@ const DICTIONARY_DATA = {
   }
  },
  "queja": {
-  "nuance": "「苦情」の基本語。quejarse（不満を言う）から派生した語。",
+  "nuance": "quejarse（不満を言う）から派生した語。",
   "etymology": "quejarse（不満を言う）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16454,7 +16455,7 @@ const DICTIONARY_DATA = {
   }
  },
  "inconveniente": {
-  "nuance": "「不都合」の基本語。「不便な、都合が悪い」という形容詞の意味にもなる。",
+  "nuance": "「不便な、都合が悪い」という形容詞の意味にもなる。",
   "etymology": "in（否定）+ conveniente（都合の良い）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -16466,7 +16467,7 @@ const DICTIONARY_DATA = {
   }
  },
  "avería": {
-  "nuance": "「故障」の基本語。tener una avería（故障している）はよく使う組み合わせ。",
+  "nuance": "tener una avería（故障している）はよく使う組み合わせ。",
   "etymology": "アラビア語awariyya（損傷した商品）に由来。",
   "synonyms": [],
   "derived": [
@@ -16479,7 +16480,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cita médica": {
-  "nuance": "「診察予約」の基本語。cita（予約）+ médica（医療の）の組み合わせ。",
+  "nuance": "cita（予約）+ médica（医療の）の組み合わせ。",
   "etymology": "citar（呼び出す）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16491,7 +16492,7 @@ const DICTIONARY_DATA = {
   }
  },
  "receta médica": {
-  "nuance": "「処方箋」の基本語。receta（レシピ、処方箋）+ médica（医療の）の組み合わせ。",
+  "nuance": "receta（レシピ、処方箋）+ médica（医療の）の組み合わせ。",
   "etymology": "ラテン語recepta（受け取られたもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -16503,7 +16504,7 @@ const DICTIONARY_DATA = {
   }
  },
  "diagnóstico": {
-  "nuance": "「診断」の基本語。diagnosticar（診断する）から派生した語。",
+  "nuance": "diagnosticar（診断する）から派生した語。",
   "etymology": "ギリシャ語diagnosis（見分けること）に由来。",
   "synonyms": [],
   "derived": [
@@ -16515,7 +16516,7 @@ const DICTIONARY_DATA = {
   }
  },
  "formulario": {
-  "nuance": "「書式」の基本語。llenar un formulario（フォームに記入する）はよく使う組み合わせ。",
+  "nuance": "llenar un formulario（フォームに記入する）はよく使う組み合わせ。",
   "etymology": "fórmula（公式、書式）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16527,7 +16528,7 @@ const DICTIONARY_DATA = {
   }
  },
  "firma": {
-  "nuance": "「署名」の基本語。firmar（署名する）から派生した名詞。「会社」という意味にもなる。",
+  "nuance": "firmar（署名する）から派生した名詞。「会社」という意味にもなる。",
   "etymology": "firmar（署名する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16539,7 +16540,7 @@ const DICTIONARY_DATA = {
   }
  },
  "identificación oficial": {
-  "nuance": "「公的身分証明書」の基本語。identificación（身分証明）+ oficial（公的な）の組み合わせ。",
+  "nuance": "identificación（身分証明）+ oficial（公的な）の組み合わせ。",
   "etymology": "identificar（身元を確認する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16551,7 +16552,7 @@ const DICTIONARY_DATA = {
   }
  },
  "expedir": {
-  "nuance": "「発行する」の基本語。書類・証明書を正式に発行するときに使う。",
+  "nuance": "書類・証明書を正式に発行するときに使う。",
   "etymology": "ラテン語expedire（足かせを解く→発送する）に由来。",
   "synonyms": [],
   "derived": [
@@ -16563,7 +16564,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vencer": {
-  "nuance": "「期限切れになる」の基本語。「（試合などで）勝つ」という意味にもなる。",
+  "nuance": "「（試合などで）勝つ」という意味にもなる。",
   "etymology": "ラテン語vincere（勝つ）に由来。",
   "synonyms": [],
   "derived": [
@@ -16575,7 +16576,7 @@ const DICTIONARY_DATA = {
   }
  },
  "renovar": {
-  "nuance": "「更新する」の基本語。renovar un documento（書類を更新する）はよく使う組み合わせ。",
+  "nuance": "renovar un documento（書類を更新する）はよく使う組み合わせ。",
   "etymology": "re（再び）+ novar（新しくする）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -16588,7 +16589,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cotización": {
-  "nuance": "「見積もり」の基本語。cotizar（見積もる）から派生した語。",
+  "nuance": "cotizar（見積もる）から派生した語。",
   "etymology": "cotizar（見積もる、相場をつける）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16600,7 +16601,7 @@ const DICTIONARY_DATA = {
   }
  },
  "proveedor": {
-  "nuance": "「供給業者」の基本語。proveer（供給する）から派生した語。",
+  "nuance": "proveer（供給する）から派生した語。",
   "etymology": "proveer（供給する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16612,7 +16613,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sucursal": {
-  "nuance": "「支店」の基本語。会社・銀行の支店を指す。",
+  "nuance": "会社・銀行の支店を指す。",
   "etymology": "ラテン語sub（下に）から派生した語。",
   "synonyms": [],
   "derived": [],
@@ -16622,7 +16623,7 @@ const DICTIONARY_DATA = {
   }
  },
  "horario de atención": {
-  "nuance": "「営業時間」の基本語。horario（時間割）+ de atención（対応の）の組み合わせ。",
+  "nuance": "horario（時間割）+ de atención（対応の）の組み合わせ。",
   "etymology": "hora（時間）+ atender（対応する）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -16634,7 +16635,7 @@ const DICTIONARY_DATA = {
   }
  },
  "disponibilidad": {
-  "nuance": "「空き状況」の基本語。disponible（利用可能な）から派生した語。",
+  "nuance": "disponible（利用可能な）から派生した語。",
   "etymology": "disponible（利用可能な）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16646,7 +16647,7 @@ const DICTIONARY_DATA = {
   }
  },
  "malinterpretar": {
-  "nuance": "「誤解する」の基本語。mal（悪く）+ interpretar（解釈する）の組み合わせ。",
+  "nuance": "mal（悪く）+ interpretar（解釈する）の組み合わせ。",
   "etymology": "mal（悪く）+ interpretar（解釈する）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -16670,7 +16671,7 @@ const DICTIONARY_DATA = {
   }
  },
  "disculparse": {
-  "nuance": "「謝る」の基本語。disculpa（謝罪、許し）から派生した再帰動詞。",
+  "nuance": "disculpa（謝罪、許し）から派生した再帰動詞。",
   "etymology": "disculpa（許し）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16682,7 +16683,7 @@ const DICTIONARY_DATA = {
   }
  },
  "justificar": {
-  "nuance": "「正当化する」の基本語。justo（正しい）から派生した語。",
+  "nuance": "justo（正しい）から派生した語。",
   "etymology": "justo（正しい）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16695,7 +16696,7 @@ const DICTIONARY_DATA = {
   }
  },
  "postergar": {
-  "nuance": "「延期する」の基本語。aplazar（延期する）とほぼ同義。",
+  "nuance": "aplazar（延期する）とほぼ同義。",
   "etymology": "ラテン語posterus（後の）に由来。",
   "synonyms": [
    "aplazar（延期する、ほぼ同義）"
@@ -16707,7 +16708,7 @@ const DICTIONARY_DATA = {
   }
  },
  "coordinar": {
-  "nuance": "「調整する」の基本語。coordinar con（〜と調整する）という組み合わせもよく使う。",
+  "nuance": "coordinar con（〜と調整する）という組み合わせもよく使う。",
   "etymology": "co（一緒に）+ ordinar（順序立てる）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -16720,7 +16721,7 @@ const DICTIONARY_DATA = {
   }
  },
  "negociar": {
-  "nuance": "「交渉する」の基本語。negociar el precio（値段を交渉する）はよく使う組み合わせ。",
+  "nuance": "negociar el precio（値段を交渉する）はよく使う組み合わせ。",
   "etymology": "ラテン語negotiari（商売をする）に由来。",
   "synonyms": [],
   "derived": [
@@ -16732,7 +16733,7 @@ const DICTIONARY_DATA = {
   }
  },
  "asumir": {
-  "nuance": "「引き受ける」の基本語。asumir la responsabilidad（責任を引き受ける）はよく使う組み合わせ。",
+  "nuance": "asumir la responsabilidad（責任を引き受ける）はよく使う組み合わせ。",
   "etymology": "ラテン語assumere（取り上げる）に由来。",
   "synonyms": [],
   "derived": [
@@ -16744,7 +16745,7 @@ const DICTIONARY_DATA = {
   }
  },
  "delegar": {
-  "nuance": "「委任する」の基本語。delegar tareas（仕事を委任する）はよく使う組み合わせ。",
+  "nuance": "delegar tareas（仕事を委任する）はよく使う組み合わせ。",
   "etymology": "ラテン語delegare（委ねる）に由来。",
   "synonyms": [],
   "derived": [
@@ -16757,7 +16758,7 @@ const DICTIONARY_DATA = {
   }
  },
  "priorizar": {
-  "nuance": "「優先させる」の基本語。prioridad（優先事項）から派生した語。",
+  "nuance": "prioridad（優先事項）から派生した語。",
   "etymology": "prioridad（優先事項）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16769,7 +16770,7 @@ const DICTIONARY_DATA = {
   }
  },
  "implementar": {
-  "nuance": "「実施する」の基本語。フォーマルなビジネス文脈でよく使う。",
+  "nuance": "フォーマルなビジネス文脈でよく使う。",
   "etymology": "英語implement（実行する）に由来。",
   "synonyms": [],
   "derived": [
@@ -16781,7 +16782,7 @@ const DICTIONARY_DATA = {
   }
  },
  "solicitud": {
-  "nuance": "「申請」の基本語。solicitar（申請する）から派生した語。hacer una solicitud（申請をする）はよく使う組み合わせ。",
+  "nuance": "solicitar（申請する）から派生した語。hacer una solicitud（申請をする）はよく使う組み合わせ。",
   "etymology": "solicitar（申請する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16793,7 +16794,7 @@ const DICTIONARY_DATA = {
   }
  },
  "acuerdo": {
-  "nuance": "「合意」の基本語。llegar a un acuerdo（合意に達する）はよく使う組み合わせ。de acuerdo（了解、賛成）という表現もよく使う。",
+  "nuance": "llegar a un acuerdo（合意に達する）はよく使う組み合わせ。de acuerdo（了解、賛成）という表現もよく使う。",
   "etymology": "ラテン語accordare（心を一致させる）に由来。",
   "synonyms": [],
   "derived": [
@@ -16805,7 +16806,7 @@ const DICTIONARY_DATA = {
   }
  },
  "contrato": {
-  "nuance": "「契約」の基本語。firmar un contrato（契約書に署名する）はよく使う組み合わせ。",
+  "nuance": "firmar un contrato（契約書に署名する）はよく使う組み合わせ。",
   "etymology": "ラテン語contractus（結ばれたもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -16817,7 +16818,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cláusula": {
-  "nuance": "「条項」の基本語。契約書などの個別の項目を指す。",
+  "nuance": "契約書などの個別の項目を指す。",
   "etymology": "ラテン語clausula（閉じられたもの）に由来。",
   "synonyms": [],
   "derived": [],
@@ -16827,7 +16828,7 @@ const DICTIONARY_DATA = {
   }
  },
  "arrendamiento": {
-  "nuance": "「賃貸借」の基本語。arrendar（賃貸する）から派生した語。alquilerともほぼ同義でよく使われる。",
+  "nuance": "arrendar（賃貸する）から派生した語。alquilerともほぼ同義でよく使われる。",
   "etymology": "arrendar（賃貸する）から派生した語。",
   "synonyms": [
    "alquiler（賃貸、より一般的）"
@@ -16841,7 +16842,7 @@ const DICTIONARY_DATA = {
   }
  },
  "inquilino": {
-  "nuance": "「賃借人」の基本語。propietario（所有者、大家）の対義語。",
+  "nuance": "propietario（所有者、大家）の対義語。",
   "etymology": "ラテン語inquilinus（住み込みの人）に由来。",
   "synonyms": [],
   "derived": [],
@@ -16851,7 +16852,7 @@ const DICTIONARY_DATA = {
   }
  },
  "propietario": {
-  "nuance": "「所有者、大家」の基本語。女性形はpropietaria。dueño（オーナー、より口語的）とほぼ同義。",
+  "nuance": "女性形はpropietaria。dueño（オーナー、より口語的）とほぼ同義。",
   "etymology": "propiedad（所有物）から派生した語。",
   "synonyms": [
    "dueño（オーナー、より口語的）"
@@ -16865,7 +16866,7 @@ const DICTIONARY_DATA = {
   }
  },
  "póliza": {
-  "nuance": "「保険証券」の基本語。póliza de seguro（保険証券）はよく使う組み合わせ。",
+  "nuance": "póliza de seguro（保険証券）はよく使う組み合わせ。",
   "etymology": "イタリア語polizza（証書）に由来。",
   "synonyms": [],
   "derived": [],
@@ -16875,7 +16876,7 @@ const DICTIONARY_DATA = {
   }
  },
  "indemnización": {
-  "nuance": "「賠償金」の基本語。indemnizar（賠償する）から派生した語。",
+  "nuance": "indemnizar（賠償する）から派生した語。",
   "etymology": "indemnizar（賠償する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16887,7 +16888,7 @@ const DICTIONARY_DATA = {
   }
  },
  "nómina": {
-  "nuance": "「給与明細」の基本語。estar en nómina（正社員として雇われている）という表現もよく使う。",
+  "nuance": "estar en nómina（正社員として雇われている）という表現もよく使う。",
   "etymology": "ラテン語nomina（名前のリスト）に由来。",
   "synonyms": [],
   "derived": [],
@@ -16897,7 +16898,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sueldo neto": {
-  "nuance": "「手取り給与」の基本語。sueldo bruto（総支給額）との対比でよく使われる。",
+  "nuance": "sueldo bruto（総支給額）との対比でよく使われる。",
   "etymology": "neto（純粋な、正味の）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16909,7 +16910,7 @@ const DICTIONARY_DATA = {
   }
  },
  "prestaciones": {
-  "nuance": "「福利厚生」の基本語。健康保険・ボーナスなど給与以外の待遇を指す。",
+  "nuance": "健康保険・ボーナスなど給与以外の待遇を指す。",
   "etymology": "prestar（貸す、提供する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16921,7 +16922,7 @@ const DICTIONARY_DATA = {
   }
  },
  "jubilación": {
-  "nuance": "「退職、年金」の基本語。jubilarse（退職する）から派生した語。",
+  "nuance": "jubilarse（退職する）から派生した語。",
   "etymology": "ラテン語jubilare（喜びを表す）に由来。",
   "synonyms": [],
   "derived": [
@@ -16933,7 +16934,7 @@ const DICTIONARY_DATA = {
   }
  },
  "renuncia": {
-  "nuance": "「退職、辞職」の基本語。renunciar（辞める）から派生した語。",
+  "nuance": "renunciar（辞める）から派生した語。",
   "etymology": "renunciar（辞める）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16945,7 +16946,7 @@ const DICTIONARY_DATA = {
   }
  },
  "despido": {
-  "nuance": "「解雇」の基本語。despedir（解雇する）から派生した語。",
+  "nuance": "despedir（解雇する）から派生した語。",
   "etymology": "despedir（解雇する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16957,7 +16958,7 @@ const DICTIONARY_DATA = {
   }
  },
  "desempleo": {
-  "nuance": "「失業」の基本語。desempleado（失業者）から派生した語。",
+  "nuance": "desempleado（失業者）から派生した語。",
   "etymology": "des（否定）+ empleo（雇用）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -16970,7 +16971,7 @@ const DICTIONARY_DATA = {
   }
  },
  "postularse": {
-  "nuance": "「応募する」の基本語。postular（推薦する、応募する）の再帰形。aplicarとほぼ同義。",
+  "nuance": "postular（推薦する、応募する）の再帰形。aplicarとほぼ同義。",
   "etymology": "ラテン語postulare（要求する）に由来。",
   "synonyms": [
    "aplicar（応募する、ほぼ同義）"
@@ -16984,7 +16985,7 @@ const DICTIONARY_DATA = {
   }
  },
  "entrevista de trabajo": {
-  "nuance": "「就職面接」の基本語。entrevista（面接）+ de trabajo（仕事の）の組み合わせ。",
+  "nuance": "entrevista（面接）+ de trabajo（仕事の）の組み合わせ。",
   "etymology": "entrevistar（インタビューする）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -16996,7 +16997,7 @@ const DICTIONARY_DATA = {
   }
  },
  "siniestro": {
-  "nuance": "「保険事故」の基本語。保険が適用される事故・災害を指す。「不吉な、邪悪な」という形容詞の意味にもなる。",
+  "nuance": "保険が適用される事故・災害を指す。「不吉な、邪悪な」という形容詞の意味にもなる。",
   "etymology": "ラテン語sinister（左の、不吉な）に由来。",
   "synonyms": [],
   "derived": [],
@@ -17006,7 +17007,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tripa": {
-  "nuance": "「トリッパ、臓物」の基本語。タコスの具材として使われ、コリコリとした食感が特徴。tripasと複数形で使われることも多い。",
+  "nuance": "タコスの具材として使われ、コリコリとした食感が特徴。tripasと複数形で使われることも多い。",
   "etymology": "ラテン語系の語tripa（内臓）に由来。",
   "synonyms": [],
   "derived": [],
@@ -17016,7 +17017,7 @@ const DICTIONARY_DATA = {
   }
  },
  "suadero": {
-  "nuance": "「スアデロ」の基本語。牛の腹部・胸の肉を使った、メキシコシティのタコスで特に人気の部位。柔らかくジューシーなのが特徴。",
+  "nuance": "牛の腹部・胸の肉を使った、メキシコシティのタコスで特に人気の部位。柔らかくジューシーなのが特徴。",
   "etymology": "sudar（汗をかく）から派生した語、調理法に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -17028,7 +17029,7 @@ const DICTIONARY_DATA = {
   }
  },
  "carnitas": {
-  "nuance": "「カルニータス」の基本語。豚肉をじっくり油で煮込んで作る、ミチョアカン州発祥の料理。タコスやトルタの具として大人気。",
+  "nuance": "豚肉をじっくり油で煮込んで作る、ミチョアカン州発祥の料理。タコスやトルタの具として大人気。",
   "etymology": "carne（肉）の指小形に由来。",
   "synonyms": [],
   "derived": [
@@ -17040,7 +17041,7 @@ const DICTIONARY_DATA = {
   }
  },
  "birria": {
-  "nuance": "「ビリア」の基本語。ハリスコ州発祥の、スパイスで煮込んだ肉料理（伝統的にはヤギ肉、現在は牛肉も一般的）。スープに浸して食べるtacos de birriaが特に有名。",
+  "nuance": "ハリスコ州発祥の、スパイスで煮込んだ肉料理（伝統的にはヤギ肉、現在は牛肉も一般的）。スープに浸して食べるtacos de birriaが特に有名。",
   "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
   "synonyms": [],
   "derived": [],
@@ -17050,7 +17051,7 @@ const DICTIONARY_DATA = {
   }
  },
  "barbacoa": {
-  "nuance": "「バルバコア」の基本語。肉を地下の穴やマゲイの葉で包んでじっくり蒸し焼きにする伝統的な調理法。特にイダルゴ州で有名で、日曜日の朝食としてよく食べられる。",
+  "nuance": "肉を地下の穴やマゲイの葉で包んでじっくり蒸し焼きにする伝統的な調理法。特にイダルゴ州で有名で、日曜日の朝食としてよく食べられる。",
   "etymology": "タイノ語barbacoa（木の台）に由来、英語barbecueも同語源。",
   "synonyms": [],
   "derived": [],
@@ -17060,7 +17061,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cochinita pibil": {
-  "nuance": "「コチニータ・ピビル」の基本語。ユカタン半島発祥の料理で、豚肉をアチオテ（アナトー）とサワーオレンジでマリネしてバナナの葉で包んで蒸し焼きにする。",
+  "nuance": "ユカタン半島発祥の料理で、豚肉をアチオテ（アナトー）とサワーオレンジでマリネしてバナナの葉で包んで蒸し焼きにする。",
   "etymology": "cochino（豚）+ マヤ語pibil（地中で焼いた）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -17072,7 +17073,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chicharrón": {
-  "nuance": "「チチャロン」の基本語。豚の皮を揚げたスナック・食材。サラダやタコスの具、そのままおやつとしても食べられる。",
+  "nuance": "豚の皮を揚げたスナック・食材。サラダやタコスの具、そのままおやつとしても食べられる。",
   "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
   "synonyms": [],
   "derived": [],
@@ -17082,7 +17083,7 @@ const DICTIONARY_DATA = {
   }
  },
  "lengua": {
-  "nuance": "「タン」の基本語。牛の舌を柔らかく煮込んだタコスの具材として人気。「言語」という意味にもなる。",
+  "nuance": "牛の舌を柔らかく煮込んだタコスの具材として人気。「言語」という意味にもなる。",
   "etymology": "ラテン語lingua（舌、言語）に由来。",
   "synonyms": [],
   "derived": [],
@@ -17092,7 +17093,7 @@ const DICTIONARY_DATA = {
   }
  },
  "bistec": {
-  "nuance": "「ビステック」の基本語。英語beefsteakのスペイン語表記。メキシコでは薄切り肉全般を指すことが多い。",
+  "nuance": "英語beefsteakのスペイン語表記。メキシコでは薄切り肉全般を指すことが多い。",
   "etymology": "英語beefsteak（牛肉のステーキ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -17102,7 +17103,7 @@ const DICTIONARY_DATA = {
   }
  },
  "campechano": {
-  "nuance": "「カンペチャーノ」の基本語。複数の種類の肉(bistec+chorizoなど)を混ぜたタコス。カンペチェ州とは直接関係なく、「混ぜ合わせた」という意味の口語から。",
+  "nuance": "複数の種類の肉(bistec+chorizoなど)を混ぜたタコス。カンペチェ州とは直接関係なく、「混ぜ合わせた」という意味の口語から。",
   "etymology": "Campeche（カンペチェ州）に由来するとされるが、混合を意味する口語表現として広まった。",
   "synonyms": [],
   "derived": [],
@@ -17112,7 +17113,7 @@ const DICTIONARY_DATA = {
   }
  },
  "nopales": {
-  "nuance": "「ノパル」の基本語。食用サボテンの若い葉。焼いたりサラダにしたり、様々な調理法で食べられるメキシコ料理の定番食材。",
+  "nuance": "食用サボテンの若い葉。焼いたりサラダにしたり、様々な調理法で食べられるメキシコ料理の定番食材。",
   "etymology": "ナワトル語nohpalliに由来。",
   "synonyms": [],
   "derived": [],
@@ -17122,7 +17123,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cilantro": {
-  "nuance": "「パクチー」の基本語。メキシコ料理に欠かせないハーブで、タコスの薬味として玉ねぎと一緒に使われることが多い。",
+  "nuance": "メキシコ料理に欠かせないハーブで、タコスの薬味として玉ねぎと一緒に使われることが多い。",
   "etymology": "ラテン語coriandrum（コリアンダー）に由来。",
   "synonyms": [],
   "derived": [],
@@ -17132,7 +17133,7 @@ const DICTIONARY_DATA = {
   }
  },
  "antojitos": {
-  "nuance": "「アントヒート」の基本語。屋台や市場で売られるメキシコの軽食・スナック料理全般を指す総称（タコス、ケサディーヤ、ソペスなど）。",
+  "nuance": "屋台や市場で売られるメキシコの軽食・スナック料理全般を指す総称（タコス、ケサディーヤ、ソペスなど）。",
   "etymology": "antojo（食欲、欲求）の指小形に由来。",
   "synonyms": [],
   "derived": [
@@ -17144,7 +17145,7 @@ const DICTIONARY_DATA = {
   }
  },
  "comal": {
-  "nuance": "「コマル」の基本語。トルティーヤを焼くための平たい鉄板・陶板。メキシコの台所に欠かせない伝統的な調理器具。",
+  "nuance": "トルティーヤを焼くための平たい鉄板・陶板。メキシコの台所に欠かせない伝統的な調理器具。",
   "etymology": "ナワトル語comalliに由来。",
   "synonyms": [],
   "derived": [],
@@ -17154,7 +17155,7 @@ const DICTIONARY_DATA = {
   }
  },
  "molcajete": {
-  "nuance": "「モルカヘテ」の基本語。火山岩でできたすり鉢で、サルサをすりつぶすのに使う伝統的な道具。料理をそのまま盛り付ける器としても使われる。",
+  "nuance": "火山岩でできたすり鉢で、サルサをすりつぶすのに使う伝統的な道具。料理をそのまま盛り付ける器としても使われる。",
   "etymology": "ナワトル語molcaxitl（すり鉢）に由来。",
   "synonyms": [],
   "derived": [],
@@ -17164,7 +17165,7 @@ const DICTIONARY_DATA = {
   }
  },
  "combi": {
-  "nuance": "「コンビ」の基本語。乗り合いのミニバン・小型バス。メキシコの地方都市でよく使われる庶民の交通手段。",
+  "nuance": "乗り合いのミニバン・小型バス。メキシコの地方都市でよく使われる庶民の交通手段。",
   "etymology": "英語combination（組み合わせ）から派生したとされる。",
   "synonyms": [],
   "derived": [],
@@ -17174,7 +17175,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pesero": {
-  "nuance": "「ペセロ」の基本語。メキシコシティの乗り合いミニバス。かつて運賃が1ペソだったことに由来する名称。",
+  "nuance": "メキシコシティの乗り合いミニバス。かつて運賃が1ペソだったことに由来する名称。",
   "etymology": "peso（ペソ）から派生した語、かつての運賃に由来。",
   "synonyms": [],
   "derived": [
@@ -17186,7 +17187,7 @@ const DICTIONARY_DATA = {
   }
  },
  "changarro": {
-  "nuance": "「チャンガロ」の基本語。個人経営の小さな店・商店を指すメキシコの口語。",
+  "nuance": "個人経営の小さな店・商店を指すメキシコの口語。",
   "etymology": "起源ははっきりしないが、俗語として広まった。",
   "synonyms": [
    "tiendita（小さな店）"
@@ -17198,7 +17199,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tianguis": {
-  "nuance": "「ティアングイス」の基本語。決まった曜日に開かれる青空市・露天市場。アステカ時代からの伝統が今も続いている。",
+  "nuance": "決まった曜日に開かれる青空市・露天市場。アステカ時代からの伝統が今も続いている。",
   "etymology": "ナワトル語tianquiztli（市場）に由来。",
   "synonyms": [],
   "derived": [],
@@ -17208,7 +17209,7 @@ const DICTIONARY_DATA = {
   }
  },
  "colonia": {
-  "nuance": "「コロニア」の基本語。メキシコで「地区、町内」を意味する語（他のスペイン語圏ではbarrioの方が一般的）。住所にもよく使われる（例:Colonia Roma）。「香水」という意味にもなる。",
+  "nuance": "メキシコで「地区、町内」を意味する語（他のスペイン語圏ではbarrioの方が一般的）。住所にもよく使われる（例:Colonia Roma）。「香水」という意味にもなる。",
   "etymology": "ラテン語colonia（植民地）に由来。",
   "synonyms": [
    "barrio（地区、他地域で一般的）"
@@ -17220,7 +17221,7 @@ const DICTIONARY_DATA = {
   }
  },
  "banqueta": {
-  "nuance": "「バンケタ」の基本語。メキシコで「歩道」を意味する語（他のスペイン語圏ではaceraの方が一般的）。",
+  "nuance": "メキシコで「歩道」を意味する語（他のスペイン語圏ではaceraの方が一般的）。",
   "etymology": "フランス語banquette（小さなベンチ）に由来。",
   "synonyms": [
    "acera（歩道、他地域で一般的）"
@@ -17232,7 +17233,7 @@ const DICTIONARY_DATA = {
   }
  },
  "alberca": {
-  "nuance": "「アルベルカ」の基本語。メキシコで「プール」を意味する語（他のスペイン語圏ではpiscinaの方が一般的）。",
+  "nuance": "メキシコで「プール」を意味する語（他のスペイン語圏ではpiscinaの方が一般的）。",
   "etymology": "アラビア語al-birka（貯水池）に由来。",
   "synonyms": [
    "piscina（プール、他地域で一般的）"
@@ -17244,7 +17245,7 @@ const DICTIONARY_DATA = {
   }
  },
  "popote": {
-  "nuance": "「ポポテ」の基本語。メキシコで「ストロー」を意味する語（他のスペイン語圏ではpajita/sorbete/bombillaなど地域差が大きい）。",
+  "nuance": "メキシコで「ストロー」を意味する語（他のスペイン語圏ではpajita/sorbete/bombillaなど地域差が大きい）。",
   "etymology": "ナワトル語popotl（葦、茎）に由来。",
   "synonyms": [
    "pajita（ストロー、他地域で一般的）"
@@ -17256,7 +17257,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fonda": {
-  "nuance": "「フォンダ」の基本語。家族経営の小さな食堂で、comida corrida（日替わり定食）を出す庶民的な店。",
+  "nuance": "家族経営の小さな食堂で、comida corrida（日替わり定食）を出す庶民的な店。",
   "etymology": "アラビア語funduq（宿屋）に由来。",
   "synonyms": [],
   "derived": [],
@@ -17266,7 +17267,7 @@ const DICTIONARY_DATA = {
   }
  },
  "credencial para votar": {
-  "nuance": "「選挙人証」の基本語。メキシコでは投票のためだけでなく、事実上の身分証明書として銀行口座開設など様々な場面で使われる。INE（国立選挙機構）が発行する。",
+  "nuance": "メキシコでは投票のためだけでなく、事実上の身分証明書として銀行口座開設など様々な場面で使われる。INE（国立選挙機構）が発行する。",
   "etymology": "credencial（証明書）+ para votar（投票のための）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -17278,7 +17279,7 @@ const DICTIONARY_DATA = {
   }
  },
  "curp": {
-  "nuance": "「CURP」の基本語。Clave Única de Registro de Poblaciónの略で、メキシコ国民・居住者に割り当てられる18桁の個人識別コード。ほぼすべての公的手続きで必要。",
+  "nuance": "Clave Única de Registro de Poblaciónの略で、メキシコ国民・居住者に割り当てられる18桁の個人識別コード。ほぼすべての公的手続きで必要。",
   "etymology": "Clave Única de Registro de Población（人口登録統一コード）の略。",
   "synonyms": [],
   "derived": [],
@@ -17288,7 +17289,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rfc": {
-  "nuance": "「RFC」の基本語。Registro Federal de Contribuyentesの略で、税務者登録番号。領収書の発行などに必要。",
+  "nuance": "Registro Federal de Contribuyentesの略で、税務者登録番号。領収書の発行などに必要。",
   "etymology": "Registro Federal de Contribuyentes（連邦納税者登録）の略。",
   "synonyms": [],
   "derived": [],
@@ -17298,7 +17299,7 @@ const DICTIONARY_DATA = {
   }
  },
  "imss": {
-  "nuance": "「IMSS」の基本語。Instituto Mexicano del Seguro Socialの略で、メキシコの社会保障機構。公的医療・年金制度を運営する。",
+  "nuance": "Instituto Mexicano del Seguro Socialの略で、メキシコの社会保障機構。公的医療・年金制度を運営する。",
   "etymology": "Instituto Mexicano del Seguro Social（メキシコ社会保障機構）の略。",
   "synonyms": [],
   "derived": [],
@@ -17320,7 +17321,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chorizo": {
-  "nuance": "「チョリソ」の基本語。メキシコのチョリソはスペイン産と違い、生の状態で調理する軟らかいソーセージが一般的。タコスやサルサ用の具材としてもよく使われる。",
+  "nuance": "メキシコのチョリソはスペイン産と違い、生の状態で調理する軟らかいソーセージが一般的。タコスやサルサ用の具材としてもよく使われる。",
   "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
   "synonyms": [],
   "derived": [],
@@ -17330,7 +17331,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fraccionamiento": {
-  "nuance": "「住宅開発区、分譲地」の基本語。フェンスやゲートで区切られた計画的な住宅地区を指す、メキシコでよく使われる語。",
+  "nuance": "フェンスやゲートで区切られた計画的な住宅地区を指す、メキシコでよく使われる語。",
   "etymology": "fraccionar（区分する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17342,7 +17343,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ine": {
-  "nuance": "「INE」の基本語。Instituto Nacional Electoralの略で、国立選挙機構。選挙人証（credencial para votar）を発行する機関で、この証明書自体を指して「INE」と呼ぶことも日常会話で非常に多い。",
+  "nuance": "Instituto Nacional Electoralの略で、国立選挙機構。選挙人証（credencial para votar）を発行する機関で、この証明書自体を指して「INE」と呼ぶことも日常会話で非常に多い。",
   "etymology": "Instituto Nacional Electoral（国立選挙機構）の略。",
   "synonyms": [],
   "derived": [],
@@ -17352,7 +17353,7 @@ const DICTIONARY_DATA = {
   }
  },
  "autopista": {
-  "nuance": "「高速道路」の基本語。auto（自動車の）+ pista（道）の組み合わせ。メキシコの高速道路は有料（de cuota）と無料（libre）の2種類があることが多い。",
+  "nuance": "auto（自動車の）+ pista（道）の組み合わせ。メキシコの高速道路は有料（de cuota）と無料（libre）の2種類があることが多い。",
   "etymology": "auto（自動車）+ pista（道）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -17362,7 +17363,7 @@ const DICTIONARY_DATA = {
   }
  },
  "carretera": {
-  "nuance": "「幹線道路」の基本語。autopista（高速道路、より大規模）とは区別されるが、一般的な道路全般を指すこともある。",
+  "nuance": "autopista（高速道路、より大規模）とは区別されるが、一般的な道路全般を指すこともある。",
   "etymology": "carro（車）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17374,7 +17375,7 @@ const DICTIONARY_DATA = {
   }
  },
  "caseta de cobro": {
-  "nuance": "「料金所」の基本語。caseta（小屋）+ de cobro（徴収の）の組み合わせ。メキシコの高速道路で通行料を支払う場所。",
+  "nuance": "caseta（小屋）+ de cobro（徴収の）の組み合わせ。メキシコの高速道路で通行料を支払う場所。",
   "etymology": "caseta（小屋）+ cobrar（徴収する）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -17386,7 +17387,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuota": {
-  "nuance": "「通行料金」の基本語。メキシコでは高速道路の通行料を指す一般的な語（peajeも通じるが、cuotaの方が日常でよく使われる）。carretera de cuota（有料道路）はよく使う組み合わせ。",
+  "nuance": "メキシコでは高速道路の通行料を指す一般的な語（peajeも通じるが、cuotaの方が日常でよく使われる）。carretera de cuota（有料道路）はよく使う組み合わせ。",
   "etymology": "ラテン語quota（各自の分）に由来。",
   "synonyms": [
    "peaje（通行料、他地域でより一般的）"
@@ -17398,7 +17399,7 @@ const DICTIONARY_DATA = {
   }
  },
  "carretera libre": {
-  "nuance": "「無料道路」の基本語。carretera de cuota（有料道路）の対義語。時間はかかるが料金がかからない。",
+  "nuance": "carretera de cuota（有料道路）の対義語。時間はかかるが料金がかからない。",
   "etymology": "carretera（道路）+ libre（自由な、無料の）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -17410,7 +17411,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gasolinera": {
-  "nuance": "「ガソリンスタンド」の基本語。gasolina（ガソリン）から派生した語。",
+  "nuance": "gasolina（ガソリン）から派生した語。",
   "etymology": "gasolina（ガソリン）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17422,7 +17423,7 @@ const DICTIONARY_DATA = {
   }
  },
  "gasolina": {
-  "nuance": "「ガソリン」の基本語。gasolina magna（レギュラー）、gasolina premium（ハイオク）のように種類を区別する。",
+  "nuance": "gasolina magna（レギュラー）、gasolina premium（ハイオク）のように種類を区別する。",
   "etymology": "英語gasoline（gas＋oil由来）に由来。",
   "synonyms": [],
   "derived": [
@@ -17434,7 +17435,7 @@ const DICTIONARY_DATA = {
   }
  },
  "grúa": {
-  "nuance": "「レッカー車」の基本語。「クレーン」という建設機械の意味にもなる。",
+  "nuance": "「クレーン」という建設機械の意味にもなる。",
   "etymology": "grulla（鶴、首の長い形状から）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17446,7 +17447,7 @@ const DICTIONARY_DATA = {
   }
  },
  "verificación vehicular": {
-  "nuance": "「車検（排ガス検査）」の基本語。メキシコシティなど都市部で義務付けられている、ナンバープレートの末尾番号によって時期が決まる排出ガス検査制度。",
+  "nuance": "メキシコシティなど都市部で義務付けられている、ナンバープレートの末尾番号によって時期が決まる排出ガス検査制度。",
   "etymology": "verificar（確認する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17458,7 +17459,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tenencia": {
-  "nuance": "「自動車税」の基本語。メキシコで車両所有者が支払う年間税金（州によって呼び名や制度が異なる場合がある）。",
+  "nuance": "メキシコで車両所有者が支払う年間税金（州によって呼び名や制度が異なる場合がある）。",
   "etymology": "tener（持つ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17470,7 +17471,7 @@ const DICTIONARY_DATA = {
   }
  },
  "placas": {
-  "nuance": "「ナンバープレート」の基本語。単数形placaもあるが、車には通常2枚あるため複数形でよく使われる。",
+  "nuance": "単数形placaもあるが、車には通常2枚あるため複数形でよく使われる。",
   "etymology": "フランス語plaque（板）に由来。",
   "synonyms": [],
   "derived": [],
@@ -17480,7 +17481,7 @@ const DICTIONARY_DATA = {
   }
  },
  "estacionamiento": {
-  "nuance": "「駐車場」の基本語。estacionar（駐車する）から派生した語。",
+  "nuance": "estacionar（駐車する）から派生した語。",
   "etymology": "estacionar（駐車する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17492,7 +17493,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tope": {
-  "nuance": "「減速バンプ」の基本語。メキシコの道路に非常に多く設置されている、車の速度を落とすための盛り上がり。他地域ではreductor de velocidad、topeなど様々な呼び方がある。",
+  "nuance": "メキシコの道路に非常に多く設置されている、車の速度を落とすための盛り上がり。他地域ではreductor de velocidad、topeなど様々な呼び方がある。",
   "etymology": "topar（ぶつかる）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17504,7 +17505,7 @@ const DICTIONARY_DATA = {
   }
  },
  "carril": {
-  "nuance": "「車線」の基本語。cambiar de carril（車線変更する）はよく使う組み合わせ。",
+  "nuance": "cambiar de carril（車線変更する）はよく使う組み合わせ。",
   "etymology": "carro（車）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17516,7 +17517,7 @@ const DICTIONARY_DATA = {
   }
  },
  "límite de velocidad": {
-  "nuance": "「制限速度」の基本語。límite（限界）+ de velocidad（速度の）の組み合わせ。",
+  "nuance": "límite（限界）+ de velocidad（速度の）の組み合わせ。",
   "etymology": "límite（限界）+ velocidad（速度）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -17529,7 +17530,7 @@ const DICTIONARY_DATA = {
   }
  },
  "multa de tránsito": {
-  "nuance": "「交通違反切符」の基本語。multa（罰金）+ de tránsito（交通の）の組み合わせ。",
+  "nuance": "multa（罰金）+ de tránsito（交通の）の組み合わせ。",
   "etymology": "multa（罰金）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17541,7 +17542,7 @@ const DICTIONARY_DATA = {
   }
  },
  "seguro de auto": {
-  "nuance": "「自動車保険」の基本語。seguro（保険）+ de auto（車の）の組み合わせ。",
+  "nuance": "seguro（保険）+ de auto（車の）の組み合わせ。",
   "etymology": "seguro（安全な、保険）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17553,7 +17554,7 @@ const DICTIONARY_DATA = {
   }
  },
  "taller mecánico": {
-  "nuance": "「自動車修理工場」の基本語。taller（工房）+ mecánico（機械の、修理工の）の組み合わせ。",
+  "nuance": "taller（工房）+ mecánico（機械の、修理工の）の組み合わせ。",
   "etymology": "taller（作業場）+ mecánico（機械工）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -17565,7 +17566,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ponchadura": {
-  "nuance": "「パンク」の基本語。メキシコで一般的な言い方（他地域ではpinchazoも使われる）。ponchar（パンクさせる）から派生。",
+  "nuance": "メキシコで一般的な言い方（他地域ではpinchazoも使われる）。ponchar（パンクさせる）から派生。",
   "etymology": "ponchar（パンクさせる）から派生した語。",
   "synonyms": [
    "pinchazo（パンク、他地域）"
@@ -17579,7 +17580,7 @@ const DICTIONARY_DATA = {
   }
  },
  "libramiento": {
-  "nuance": "「バイパス道路」の基本語。都市の中心部を避けて通る迂回路。",
+  "nuance": "都市の中心部を避けて通る迂回路。",
   "etymology": "librar（免れる、解放する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17591,7 +17592,7 @@ const DICTIONARY_DATA = {
   }
  },
  "segundo piso": {
-  "nuance": "「高架高速道路」の基本語。直訳は「二階」で、メキシコシティにある既存の道路の上に建てられた高架式高速道路を指す通称。",
+  "nuance": "直訳は「二階」で、メキシコシティにある既存の道路の上に建てられた高架式高速道路を指す通称。",
   "etymology": "segundo（第二の）+ piso（階）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -17603,7 +17604,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chafa": {
-  "nuance": "「安っぽい、質の悪い」を意味するメキシコの口語形容詞。malo（悪い）よりも「見た目や質が安っぽい」というニュアンスが強い。",
+  "nuance": "起源ははっきりしないが、ロマ系（カロー語）のchafar（潰す、台無しにする）に由来するという説がある。「潰れた、傷んだ」というイメージから、「安っぽい、質が悪い」という意味の口語形容詞になった。",
   "etymology": "起源ははっきりしないが、俗語として広まった。",
   "synonyms": [
    "barato（安い、より中立的）"
@@ -17615,7 +17616,7 @@ const DICTIONARY_DATA = {
   }
  },
  "a huevo": {
-  "nuance": "「絶対に、当然」を意味するメキシコの口語表現。強い確信・強制を表す（やや荒っぽい表現なので使う相手を選ぶ）。",
+  "nuance": "huevo（卵）は口語で「気合、根性」を指す俗語でもある。「卵にかけて」という直訳イメージから、「絶対に、当然そうする」という強い確信・決意を表す表現になった（やや荒っぽい表現）。",
   "etymology": "huevo（卵、俗語では「気合、根性」）から派生した表現。",
   "synonyms": [
    "claro que sí（もちろん）"
@@ -17627,7 +17628,7 @@ const DICTIONARY_DATA = {
   }
  },
  "simón": {
-  "nuance": "「うん」を意味するメキシコの口語表現。síの砕けた言い方。",
+  "nuance": "sí（はい）の音を面白おかしく変化させた俗語。メキシコの口語では、こうした単語の音を遊び心で変形させる表現がよく見られる。",
   "etymology": "sí（はい）が音変化した俗語とされる。",
   "synonyms": [
    "sí（はい、標準的な言い方）"
@@ -17639,7 +17640,7 @@ const DICTIONARY_DATA = {
   }
  },
  "nel": {
-  "nuance": "「いや」を意味するメキシコの口語表現。noの砕けた言い方。",
+  "nuance": "no（いいえ）の音を面白おかしく変化させた俗語。simónと対になる形でよく使われる。",
   "etymology": "no（いいえ）が音変化した俗語とされる。",
   "synonyms": [
    "no（いいえ、標準的な言い方）"
@@ -17651,7 +17652,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sale": {
-  "nuance": "「オーケー、決まり」を意味するメキシコの口語表現。合意・了承を表す。",
+  "nuance": "salir（うまくいく、出る）の活用形が定型化した表現。「うまくいく」というイメージから、「オーケー、それで決まり」という合意・了承を表す口語表現になった。",
   "etymology": "salir（うまくいく）から派生した表現とされる。",
   "synonyms": [
    "está bien（大丈夫、標準的な言い方）"
@@ -17665,7 +17666,7 @@ const DICTIONARY_DATA = {
   }
  },
  "híjole": {
-  "nuance": "「うわあ、げっ」を意味するメキシコの間投詞。驚き・困惑・失望など幅広い感情を表す。",
+  "nuance": "hijo（息子）を伸ばして変化させた感嘆詞。より下品な言い回しを避けつつ、驚きや困惑の気持ちを表すために生まれた婉曲的な表現とされる。",
   "etymology": "hijo（息子）が音変化した感嘆詞とされる。",
   "synonyms": [],
   "derived": [],
@@ -17675,7 +17676,7 @@ const DICTIONARY_DATA = {
   }
  },
  "chavo": {
-  "nuance": "「若者、少年」を意味するメキシコの口語。女性形はchava。muchachoよりカジュアルな言い方。",
+  "nuance": "起源は諸説あるが、ロマ系（カロー語）のchaval（若者）に由来するという説が有力。標準的なmuchachoよりもくだけた、親しみのある呼び方。",
   "etymology": "起源は諸説あるが、俗語として広まった。",
   "synonyms": [
    "muchacho（若者、より標準的）"
@@ -17689,7 +17690,7 @@ const DICTIONARY_DATA = {
   }
  },
  "compa": {
-  "nuance": "「相棒」を意味するメキシコの口語。compadre（名付け親同士の関係、転じて親しい友人）の短縮形。",
+  "nuance": "compadre（名付け親同士の関係）の短縮形。メキシコではカトリックの伝統で子供の名付け親になった相手とはcompadreと呼び合う強い絆が生まれ、そこから転じて親しい友人全般を指す言葉になった。",
   "etymology": "compadre（名付け親、親友）の短縮形。",
   "synonyms": [
    "amigo（友達、標準的な言い方）"
@@ -17703,7 +17704,7 @@ const DICTIONARY_DATA = {
   }
  },
  "carnal": {
-  "nuance": "「兄弟のように親しい友人」を意味するメキシコの口語。hermano（兄弟）と同じくらい近い間柄の友人を指す。",
+  "nuance": "「肉親の、血のつながった」が原義。血のつながった兄弟のように深く信頼できる友人を指す比喩表現として定着した。",
   "etymology": "ラテン語carnalis（血肉の、身内の）に由来。",
   "synonyms": [
    "hermano（兄弟、比喩的にも使う）"
@@ -17715,7 +17716,7 @@ const DICTIONARY_DATA = {
   }
  },
  "al chile": {
-  "nuance": "「マジで、正直言うと」を意味するメキシコの口語表現。率直さを強調するときに使う（やや砕けた表現）。",
+  "nuance": "chile（唐辛子）の「辛さ、刺激」のイメージから、「オブラートに包まず、辛辣なくらい率直に」という意味の口語表現に発展した。",
   "etymology": "chile（唐辛子）から派生した表現、「辛辣に率直に」のイメージ。",
   "synonyms": [
    "de verdad（本当に）"
@@ -17729,7 +17730,7 @@ const DICTIONARY_DATA = {
   }
  },
  "troca": {
-  "nuance": "「トラック、ピックアップトラック」を意味するメキシコ北部でよく使われる口語。英語truckからの借用語（camionetaが標準的な言い方）。",
+  "nuance": "英語truckの発音をスペイン語風にそのまま取り入れた語。アメリカと国境を接する北部メキシコでよく使われる、英語の影響が強い地域の口語表現。",
   "etymology": "英語truck（トラック）に由来。",
   "synonyms": [
    "camioneta（トラック、標準的な言い方）"
@@ -17741,7 +17742,7 @@ const DICTIONARY_DATA = {
   }
  },
  "banda": {
-  "nuance": "「仲間たち」を意味するメキシコの口語。「バンド（音楽グループ）」という標準的な意味もある。",
+  "nuance": "「（音楽の）バンド、集団」が原義。一緒に活動する音楽グループのまとまりのイメージから、「友人グループ、仲間たち」を指す口語表現に広がった。",
   "etymology": "イタリア語banda（集団）に由来。",
   "synonyms": [
    "amigos（友達、標準的な言い方）"
@@ -17753,7 +17754,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rollo": {
-  "nuance": "「事情、話」を意味するメキシコの口語。「（フィルムの）ロール」という標準的な意味もある。¿cuál es tu rollo?（お前の話は何なんだ？）のように使う。",
+  "nuance": "「（紙やフィルムの）巻物、ロール」が原義。話が長く巻かれて続いていくイメージから、「込み入った事情、話」を指す口語表現になった。",
   "etymology": "ラテン語rotulus（巻いたもの）に由来。",
   "synonyms": [
    "asunto（事柄、標準的な言い方）"
@@ -17765,7 +17766,7 @@ const DICTIONARY_DATA = {
   }
  },
  "desmadre": {
-  "nuance": "「めちゃくちゃな状況、大混乱」を意味するメキシコの口語（やや砕けた表現）。友人同士のくだけた会話でよく使われる。",
+  "nuance": "des（否定・崩壊）+ madre（母）の組み合わせで、直訳的には「母がいない状態」という強いニュアンスを持つ俗語（madreはメキシコの口語で物事を強調する語としてよく使われる）。秩序が完全に崩れた「大混乱」を表す。",
   "etymology": "des（否定）+ madre（母）の組み合わせから派生した俗語。",
   "synonyms": [
    "caos（混乱、より中立的な言い方）"
@@ -17831,7 +17832,7 @@ const DICTIONARY_DATA = {
   }
  },
  "en chinga": {
-  "nuance": "「大急ぎで」を意味するメキシコの口語表現（やや砕けた表現なので使う場面を選ぶ）。",
+  "nuance": "chingar（急かす、俗語で「〜する」全般を指す動詞）から派生した表現。「大急ぎで、猛スピードで」という意味の口語表現（やや荒っぽい表現なので使う場面を選ぶ）。",
   "etymology": "chingar（急かす、俗語）から派生した表現。",
   "synonyms": [
    "rápido（速く、標準的な言い方）"
@@ -17843,7 +17844,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fifí": {
-  "nuance": "「お高くとまった、上流気取りの」を意味するメキシコの口語。fresaと似た意味だが、より皮肉・批判的なニュアンスで使われることが多い（政治的な文脈で使われることもある）。",
+  "nuance": "フランス語fils（息子）が変化したfifils（お坊ちゃん）に由来するとされる。裕福な家庭に育った「お坊ちゃん風」のイメージから、「お高くとまった、気取った」という皮肉を込めた形容詞になった。",
   "etymology": "フランス語fifils（お坊ちゃん）に由来するとされる。",
   "synonyms": [
    "fresa（気取った、ほぼ同義）"
@@ -17869,7 +17870,7 @@ const DICTIONARY_DATA = {
   }
  },
  "amar": {
-  "nuance": "「深く愛する」の基本語。querer（好き・愛してる、より日常的）よりも重く真剣な響きを持つ動詞で、パートナーや配偶者、神への愛など、深い愛情を表すときに使われる。日常会話では家族・友人へはquererの方が自然。",
+  "nuance": "querer（好き・愛してる、より日常的）よりも重く真剣な響きを持つ動詞で、パートナーや配偶者、神への愛など、深い愛情を表すときに使われる。日常会話では家族・友人へはquererの方が自然。",
   "etymology": "ラテン語amare（愛する）に由来。",
   "synonyms": [
    "querer（愛する・好き、より日常的）"
@@ -17884,7 +17885,7 @@ const DICTIONARY_DATA = {
   }
  },
  "borracho": {
-  "nuance": "「酔っ払い」「酔っている」の基本語。crudo（二日酔いの）とは別の状態（borrachoは酔っている最中、crudoは翌朝の二日酔い）。estar borracho（酔っている）の形でよく使われる。",
+  "nuance": "crudo（二日酔いの）とは別の状態（borrachoは酔っている最中、crudoは翌朝の二日酔い）。estar borracho（酔っている）の形でよく使われる。",
   "etymology": "ラテン語系の語burra（毛織物→酔いでふらつく様子）に由来するとされる。",
   "synonyms": [
    "tomado（酔っている、口語）"
@@ -17912,7 +17913,7 @@ const DICTIONARY_DATA = {
   }
  },
  "afirmar": {
-  "nuance": "「断言する、述べる」の基本語。ニュース記事で「〜は述べた」という引用の導入によく使われる、フォーマルな「言う」の言い換え。",
+  "nuance": "ニュース記事で「〜は述べた」という引用の導入によく使われる、フォーマルな「言う」の言い換え。",
   "etymology": "ラテン語affirmare（確固とする）に由来。",
   "synonyms": [
    "decir（言う、より一般的）"
@@ -17926,7 +17927,7 @@ const DICTIONARY_DATA = {
   }
  },
  "señalar": {
-  "nuance": "「指摘する」の基本語。「指し示す」という文字通りの意味と、報道記事で「〜は指摘した」という引用の導入の両方でよく使われる。",
+  "nuance": "「指し示す」という文字通りの意味と、報道記事で「〜は指摘した」という引用の導入の両方でよく使われる。",
   "etymology": "señal（印、合図）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -17938,7 +17939,7 @@ const DICTIONARY_DATA = {
   }
  },
  "destacar": {
-  "nuance": "「強調する、際立つ」の基本語。他動詞（〜を強調する）としても自動詞（際立つ）としても使われる、報道・論説文でよく使う動詞。",
+  "nuance": "他動詞（〜を強調する）としても自動詞（際立つ）としても使われる、報道・論説文でよく使う動詞。",
   "etymology": "des（分離）+ tacar（触れる、打つ）の組み合わせに由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -17950,7 +17951,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sostener": {
-  "nuance": "「主張する」の基本語。「支える、持ちこたえる」という文字通りの意味もある。論説文で「〜と主張する」という文脈でよく使われる。",
+  "nuance": "「支える、持ちこたえる」という文字通りの意味もある。論説文で「〜と主張する」という文脈でよく使われる。",
   "etymology": "ラテン語sustinere（下から支える）に由来。",
   "synonyms": [
    "mantener（主張する、維持する）"
@@ -17964,7 +17965,7 @@ const DICTIONARY_DATA = {
   }
  },
  "subrayar": {
-  "nuance": "「強調する」の基本語。直訳は「下に線を引く」で、比喩的に「特に重要だと強調する」という意味で使われる。",
+  "nuance": "直訳は「下に線を引く」で、比喩的に「特に重要だと強調する」という意味で使われる。",
   "etymology": "sub（下に）+ rayar（線を引く）の組み合わせ。",
   "synonyms": [
    "destacar（強調する）"
@@ -17978,7 +17979,7 @@ const DICTIONARY_DATA = {
   }
  },
  "revelar": {
-  "nuance": "「明らかにする」の基本語。調査結果やニュースで「〜が明らかになった」という文脈でよく使われる。",
+  "nuance": "調査結果やニュースで「〜が明らかになった」という文脈でよく使われる。",
   "etymology": "ラテン語revelare（ベールを取り除く）に由来。",
   "synonyms": [],
   "derived": [
@@ -18002,7 +18003,7 @@ const DICTIONARY_DATA = {
   }
  },
  "fenómeno": {
-  "nuance": "「現象」の基本語。自然現象から社会現象まで幅広く使われる、論説文の定番語彙。",
+  "nuance": "自然現象から社会現象まで幅広く使われる、論説文の定番語彙。",
   "etymology": "ギリシャ語phainomenon（現れるもの）に由来。",
   "synonyms": [],
   "derived": [],
@@ -18012,7 +18013,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ámbito": {
-  "nuance": "「領域、分野」の基本語。en el ámbito de（〜の分野において）はよく使う組み合わせ、論説文の定番語彙。",
+  "nuance": "en el ámbito de（〜の分野において）はよく使う組み合わせ、論説文の定番語彙。",
   "etymology": "ラテン語ambitus（周囲、範囲）に由来。",
   "synonyms": [],
   "derived": [],
@@ -18022,7 +18023,7 @@ const DICTIONARY_DATA = {
   }
  },
  "entorno": {
-  "nuance": "「環境、周囲」の基本語。物理的な環境からビジネス環境まで幅広く使われる。",
+  "nuance": "物理的な環境からビジネス環境まで幅広く使われる。",
   "etymology": "en（〜において）+ torno（周り）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -18034,7 +18035,7 @@ const DICTIONARY_DATA = {
   }
  },
  "panorama": {
-  "nuance": "「全体像、見通し」の基本語。「景色」という文字通りの意味もある。論説文で「今後の見通し」を語るときによく使われる。",
+  "nuance": "「景色」という文字通りの意味もある。論説文で「今後の見通し」を語るときによく使われる。",
   "etymology": "ギリシャ語pan（すべて）+ horama（見えるもの）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -18044,7 +18045,7 @@ const DICTIONARY_DATA = {
   }
  },
  "enfoque": {
-  "nuance": "「アプローチ、視点」の基本語。enfocar（焦点を合わせる）から派生した語。",
+  "nuance": "enfocar（焦点を合わせる）から派生した語。",
   "etymology": "enfocar（焦点を合わせる）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -18056,7 +18057,7 @@ const DICTIONARY_DATA = {
   }
  },
  "rasgo": {
-  "nuance": "「特徴」の基本語。性格・外見・現象の特徴を表すときに幅広く使われる。",
+  "nuance": "性格・外見・現象の特徴を表すときに幅広く使われる。",
   "etymology": "rasgar（引っかく、線を引く）から派生した語。",
   "synonyms": [
    "característica（特徴、より一般的）"
@@ -18068,7 +18069,7 @@ const DICTIONARY_DATA = {
   }
  },
  "medida": {
-  "nuance": "「対策、措置」の基本語。「測定、寸法」という文字通りの意味もある。tomar medidas（対策を講じる）はよく使う組み合わせ。",
+  "nuance": "「測定、寸法」という文字通りの意味もある。tomar medidas（対策を講じる）はよく使う組み合わせ。",
   "etymology": "medir（測る）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -18080,7 +18081,7 @@ const DICTIONARY_DATA = {
   }
  },
  "consecuencia": {
-  "nuance": "「結果、影響」の基本語。como consecuencia de（〜の結果として）はよく使う組み合わせ。",
+  "nuance": "como consecuencia de（〜の結果として）はよく使う組み合わせ。",
   "etymology": "ラテン語consequentia（後に続くもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -18092,7 +18093,7 @@ const DICTIONARY_DATA = {
   }
  },
  "factor": {
-  "nuance": "「要因」の基本語。un factor importante（重要な要因）はよく使う組み合わせ。",
+  "nuance": "un factor importante（重要な要因）はよく使う組み合わせ。",
   "etymology": "ラテン語factor（作る者）に由来。",
   "synonyms": [],
   "derived": [],
@@ -18102,7 +18103,7 @@ const DICTIONARY_DATA = {
   }
  },
  "repercusión": {
-  "nuance": "「影響、反響」の基本語。tener repercusión（反響を呼ぶ）はよく使う組み合わせ。",
+  "nuance": "tener repercusión（反響を呼ぶ）はよく使う組み合わせ。",
   "etymology": "ラテン語repercutere（跳ね返る）に由来。",
   "synonyms": [],
   "derived": [],
@@ -18112,7 +18113,7 @@ const DICTIONARY_DATA = {
   }
  },
  "impacto": {
-  "nuance": "「インパクト、衝撃」の基本語。物理的な衝撃と比喩的な影響力の両方で使われる。",
+  "nuance": "物理的な衝撃と比喩的な影響力の両方で使われる。",
   "etymology": "ラテン語impactus（打ち当てられた）に由来。",
   "synonyms": [],
   "derived": [
@@ -18124,7 +18125,7 @@ const DICTIONARY_DATA = {
   }
  },
  "contraste": {
-  "nuance": "「対比」の基本語。en contraste con（〜と対照的に）はよく使う組み合わせ。",
+  "nuance": "en contraste con（〜と対照的に）はよく使う組み合わせ。",
   "etymology": "contrastar（対比する）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -18136,7 +18137,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hallazgo": {
-  "nuance": "「発見」の基本語。hallar（見つける）から派生した語。科学的・考古学的な発見によく使われる。",
+  "nuance": "hallar（見つける）から派生した語。科学的・考古学的な発見によく使われる。",
   "etymology": "hallar（見つける）から派生した語。",
   "synonyms": [
    "descubrimiento（発見、より一般的）"
@@ -18150,7 +18151,7 @@ const DICTIONARY_DATA = {
   }
  },
  "dato": {
-  "nuance": "「データ、情報」の基本語。複数形datosがよく使われる（一つの情報でも複数扱いになりがち）。",
+  "nuance": "複数形datosがよく使われる（一つの情報でも複数扱いになりがち）。",
   "etymology": "ラテン語datum（与えられたもの）に由来。",
   "synonyms": [],
   "derived": [],
@@ -18160,7 +18161,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cifra": {
-  "nuance": "「数字」の基本語。統計や金額を表す数字を指す、報道文の定番語彙。",
+  "nuance": "統計や金額を表す数字を指す、報道文の定番語彙。",
   "etymology": "アラビア語sifr（ゼロ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -18170,7 +18171,7 @@ const DICTIONARY_DATA = {
   }
  },
  "porcentaje": {
-  "nuance": "「割合、パーセンテージ」の基本語。un pequeño porcentaje（小さな割合）のように使う。",
+  "nuance": "un pequeño porcentaje（小さな割合）のように使う。",
   "etymology": "por（〜につき）+ ciento（100）の組み合わせに由来。",
   "synonyms": [],
   "derived": [
@@ -18182,7 +18183,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tendencia": {
-  "nuance": "「傾向」の基本語。tener tendencia a（〜する傾向がある）はよく使う組み合わせ。",
+  "nuance": "tener tendencia a（〜する傾向がある）はよく使う組み合わせ。",
   "etymology": "tender（傾向がある、伸ばす）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -18194,7 +18195,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vínculo": {
-  "nuance": "「つながり、関連」の基本語。「（インターネットの）リンク」という意味にもなる。",
+  "nuance": "「（インターネットの）リンク」という意味にもなる。",
   "etymology": "ラテン語vinculum（結びつけるもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -18262,7 +18263,7 @@ const DICTIONARY_DATA = {
   }
  },
  "constituir": {
-  "nuance": "「〜を構成する」の基本語。ser（〜である）よりもフォーマルで、論説文でよく使われる。",
+  "nuance": "ser（〜である）よりもフォーマルで、論説文でよく使われる。",
   "etymology": "ラテン語constituere（設立する）に由来。",
   "synonyms": [],
   "derived": [
@@ -18274,7 +18275,7 @@ const DICTIONARY_DATA = {
   }
  },
  "abarcar": {
-  "nuance": "「含む、網羅する」の基本語。abarcar todo（すべてを網羅する）のように使う。",
+  "nuance": "abarcar todo（すべてを網羅する）のように使う。",
   "etymology": "a（〜へ）+ brazo（腕）に由来するとされる（腕で抱え込むイメージ）。",
   "synonyms": [],
   "derived": [
@@ -18286,7 +18287,7 @@ const DICTIONARY_DATA = {
   }
  },
  "surgir": {
-  "nuance": "「生じる、現れる」の基本語。un problema surgió（問題が生じた）のように使う。",
+  "nuance": "un problema surgió（問題が生じた）のように使う。",
   "etymology": "ラテン語surgere（立ち上がる）に由来。",
   "synonyms": [],
   "derived": [
@@ -18340,7 +18341,7 @@ const DICTIONARY_DATA = {
   }
  },
  "según": {
-  "nuance": "「〜によると」の基本語。情報源を示すときによく使う前置詞。",
+  "nuance": "情報源を示すときによく使う前置詞。",
   "etymology": "ラテン語secundum（〜に沿って）に由来。",
   "synonyms": [
    "de acuerdo con（〜によれば、フォーマル）"
@@ -18364,7 +18365,7 @@ const DICTIONARY_DATA = {
   }
  },
  "indicar": {
-  "nuance": "「示す」の基本語。señalar（指摘する）とほぼ同義で、データや標識、方向などを「示す」ときによく使われる。",
+  "nuance": "señalar（指摘する）とほぼ同義で、データや標識、方向などを「示す」ときによく使われる。",
   "etymology": "ラテン語indicare（示す）に由来。",
   "synonyms": [
    "señalar（指摘する、ほぼ同義）"
@@ -18379,7 +18380,7 @@ const DICTIONARY_DATA = {
   }
  },
  "declarar": {
-  "nuance": "「表明する」の基本語。公式な場での発言・宣言を表す、報道文でよく使われるフォーマルな「言う」の言い換え。「（税関で）申告する」という意味にもなる。",
+  "nuance": "公式な場での発言・宣言を表す、報道文でよく使われるフォーマルな「言う」の言い換え。「（税関で）申告する」という意味にもなる。",
   "etymology": "ラテン語declarare（明らかにする）に由来。",
   "synonyms": [
    "afirmar（断言する）"
@@ -18393,7 +18394,7 @@ const DICTIONARY_DATA = {
   }
  },
  "asegurar": {
-  "nuance": "「保証する、断言する」の基本語。「（保険で）保証する」という意味にもなる。報道文で「〜と断言した」という引用の導入にもよく使われる。",
+  "nuance": "「（保険で）保証する」という意味にもなる。報道文で「〜と断言した」という引用の導入にもよく使われる。",
   "etymology": "seguro（確かな、安全な）から派生した語。",
   "synonyms": [
    "afirmar（断言する）"
@@ -18408,7 +18409,7 @@ const DICTIONARY_DATA = {
   }
  },
  "representar": {
-  "nuance": "「表す、代表する」の基本語。数値・概念・人を「代表する、表す」という幅広い文脈で使われる、論説文の定番語彙。",
+  "nuance": "数値・概念・人を「代表する、表す」という幅広い文脈で使われる、論説文の定番語彙。",
   "etymology": "ラテン語repraesentare（目の前に示す）に由来。",
   "synonyms": [],
   "derived": [
@@ -18573,7 +18574,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hacia": {
-  "nuance": "「〜へ向かって」の基本語。方向を表す前置詞、a（到達点）よりも「その方向へ」という漠然とした動きを表す。",
+  "nuance": "方向を表す前置詞、a（到達点）よりも「その方向へ」という漠然とした動きを表す。",
   "etymology": "ラテン語系の語faciaに由来するとされる。",
   "synonyms": [],
   "derived": [],
@@ -19235,6 +19236,1314 @@ const DICTIONARY_DATA = {
   "dialogue": {
    "es": "— Es fácil hacer amigos aquí.\n— Sí, la gente es muy amigable.",
    "ja": "「ここでは友達を作りやすいんだ」「うん、みんなとても親しみやすいよね」"
+  }
+ },
+ "hacer planes": {
+  "nuance": "「計画を立てる」の基本表現。hacer planes para（〜のための計画を立てる）という組み合わせでよく使う。",
+  "etymology": "plan（計画）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "plan（計画）"
+  ],
+  "dialogue": {
+   "es": "— ¿Ya hicieron planes para las vacaciones?\n— Todavía no, pero queremos ir a la playa.",
+   "ja": "「もう休暇の計画立てた？」「まだだけど、ビーチに行きたいと思ってるんだ」"
+  }
+ },
+ "quedar con alguien": {
+  "nuance": "「誰かと会う約束をする」の基本表現。quedar（残る、会う約束をする）の再帰的でない用法。",
+  "etymology": "quedar（残る、留まる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "quedar（残る、会う）"
+  ],
+  "dialogue": {
+   "es": "— Quedé con mi amiga para tomar un café.\n— Qué bien, ¿a qué hora?",
+   "ja": "「友達とコーヒーを飲む約束をしたんだ」「いいね、何時に？」"
+  }
+ },
+ "dar un consejo": {
+  "nuance": "「アドバイスする」の基本表現。aconsejar（助言する、動詞一語）とほぼ同じ意味。",
+  "etymology": "consejo（助言）から派生した表現。",
+  "synonyms": [
+   "aconsejar（助言する）"
+  ],
+  "derived": [
+   "consejo（助言）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me puedes dar un consejo?\n— Claro, cuéntame qué pasa.",
+   "ja": "「アドバイスもらえる？」「もちろん、何があったか教えて」"
+  }
+ },
+ "tomar nota": {
+  "nuance": "「メモを取る」の基本表現。tomar（取る）+ nota（メモ）の組み合わせ。",
+  "etymology": "nota（メモ、注記）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "nota（メモ）"
+  ],
+  "dialogue": {
+   "es": "— Voy a tomar nota de esto.\n— Buena idea, es importante recordarlo.",
+   "ja": "「これメモしておくね」「いい考えだね、覚えておくの大事だから」"
+  }
+ },
+ "hacer una pausa": {
+  "nuance": "「休憩する」の基本表現。descansarとほぼ同義だが、より短い一時的な休憩を指すことが多い。",
+  "etymology": "pausa（休止）から派生した表現。",
+  "synonyms": [
+   "descansar（休む、より一般的）"
+  ],
+  "derived": [
+   "pausa（休止）"
+  ],
+  "dialogue": {
+   "es": "— ¿Hacemos una pausa?\n— Sí, llevamos horas trabajando.",
+   "ja": "「休憩しようか？」「うん、何時間も働いているもんね」"
+  }
+ },
+ "dar por hecho": {
+  "nuance": "「当然だと思う」の基本表現。dar（与える）+ por hecho（完了したこととして）の組み合わせ。",
+  "etymology": "hecho（なされたこと）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "hacer（する）"
+  ],
+  "dialogue": {
+   "es": "— No des por hecho que va a funcionar.\n— Tienes razón, deberíamos tener un plan B.",
+   "ja": "「うまくいくと当然だと思わない方がいいよ」「その通りだね、プランBを用意しておくべきだね」"
+  }
+ },
+ "hacer un esfuerzo": {
+  "nuance": "「努力する」の基本表現。esfuerzo（努力）から派生した表現。",
+  "etymology": "esforzarse（努力する）から派生した語。",
+  "synonyms": [
+   "esforzarse（努力する）"
+  ],
+  "derived": [
+   "esfuerzo（努力）"
+  ],
+  "dialogue": {
+   "es": "— Voy a hacer un esfuerzo por llegar temprano.\n— Te lo agradezco.",
+   "ja": "「早く着くよう努力するよ」「ありがたいよ」"
+  }
+ },
+ "tener celos": {
+  "nuance": "「嫉妬する」の基本表現。celoso（嫉妬深い）と関連。tener celos de（〜に嫉妬する）という組み合わせでよく使う。",
+  "etymology": "celos（嫉妬）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "celoso（嫉妬深い）"
+  ],
+  "dialogue": {
+   "es": "— Creo que tiene celos de su hermano.\n— Es común entre hermanos.",
+   "ja": "「彼は兄に嫉妬していると思うんだ」「兄弟の間ではよくあることだよね」"
+  }
+ },
+ "dar igual": {
+  "nuance": "「どっちでもいい」の基本表現。me da igual（私にとってはどっちでもいい）という形でよく使う。",
+  "etymology": "igual（同じ）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "igual（同じ）"
+  ],
+  "dialogue": {
+   "es": "— ¿Prefieres pizza o tacos?\n— Me da igual, los dos me gustan.",
+   "ja": "「ピザとタコス、どっちがいい？」「どっちでもいいよ、両方好きだから」"
+  }
+ },
+ "llevarse bien": {
+  "nuance": "「仲良くやる」の基本表現。llevarse bien con（〜と仲良くやる）という組み合わせでよく使う。",
+  "etymology": "llevar（運ぶ、持つ）から派生した再帰表現。",
+  "synonyms": [],
+  "derived": [
+   "llevar（運ぶ）"
+  ],
+  "dialogue": {
+   "es": "— Me llevo muy bien con mis compañeros de trabajo.\n— Qué suerte, eso hace el trabajo más agradable.",
+   "ja": "「同僚とはとても仲良くやっているんだ」「幸運だね、それで仕事がより快適になるよね」"
+  }
+ },
+ "llevarse mal": {
+  "nuance": "「仲が悪い」の基本表現。llevarse bien（仲良くやる）の反対語。",
+  "etymology": "llevar（運ぶ、持つ）から派生した再帰表現。",
+  "synonyms": [],
+  "derived": [
+   "llevar（運ぶ）"
+  ],
+  "dialogue": {
+   "es": "— Se llevan mal desde hace años.\n— Qué lástima, espero que se reconcilien.",
+   "ja": "「彼らは何年も前から仲が悪いんだ」「残念だね、仲直りするといいけど」"
+  }
+ },
+ "caer bien": {
+  "nuance": "「好印象を与える」の基本表現。gustarと似た構文で、「〜は私に良い印象を与える」という間接目的語構文。",
+  "etymology": "caer（落ちる）から派生した比喩的表現。",
+  "synonyms": [],
+  "derived": [
+   "caer（落ちる）"
+  ],
+  "dialogue": {
+   "es": "— Tu amigo me cae muy bien.\n— Me alegra que se lleven bien.",
+   "ja": "「君の友達、とても好印象だな」「仲良くなれて嬉しいよ」"
+  }
+ },
+ "caer mal": {
+  "nuance": "「悪印象を与える」の基本表現。caer bien（好印象を与える）の反対語。",
+  "etymology": "caer（落ちる）から派生した比喩的表現。",
+  "synonyms": [],
+  "derived": [
+   "caer（落ちる）"
+  ],
+  "dialogue": {
+   "es": "— Ese comentario me cayó mal.\n— Entiendo, fue un poco grosero.",
+   "ja": "「その発言、悪印象だったな」「わかるよ、少し失礼だったよね」"
+  }
+ },
+ "tener ganas de": {
+  "nuance": "「〜したい気分だ」の基本表現。querer（〜したい）よりも「その気分になっている」というニュアンスが強い。",
+  "etymology": "gana（欲求）から派生した表現。",
+  "synonyms": [
+   "querer（〜したい）"
+  ],
+  "derived": [
+   "gana（欲求）"
+  ],
+  "dialogue": {
+   "es": "— Tengo ganas de comer algo dulce.\n— Yo también, vamos por un postre.",
+   "ja": "「甘いもの食べたい気分なんだ」「私もだよ、デザート食べに行こう」"
+  }
+ },
+ "estar dispuesto a": {
+  "nuance": "「〜する気がある」の基本表現。disponer（配置する、用意する）から派生。",
+  "etymology": "disponer（用意する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "disponer（用意する）"
+  ],
+  "dialogue": {
+   "es": "— Estoy dispuesto a ayudarte con lo que necesites.\n— Muchas gracias, significa mucho.",
+   "ja": "「君が必要なことなら何でも手伝う気があるよ」「本当にありがとう、とても意味があるよ」"
+  }
+ },
+ "dar la bienvenida": {
+  "nuance": "「歓迎する」の基本表現。bienvenido（ようこそ）と関連。",
+  "etymology": "bienvenida（歓迎）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "bienvenido（ようこそ）"
+  ],
+  "dialogue": {
+   "es": "— Quiero darte la bienvenida al equipo.\n— Muchas gracias, estoy emocionado de empezar.",
+   "ja": "「チームへようこそと伝えたいんだ」「ありがとうございます、始めるのが楽しみです」"
+  }
+ },
+ "tener paciencia": {
+  "nuance": "「我慢する」の基本表現。paciencia（忍耐）から派生した表現。ten paciencia（我慢して）は命令形でよく使う。",
+  "etymology": "paciencia（忍耐）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "paciente（忍耐強い）"
+  ],
+  "dialogue": {
+   "es": "— Ten paciencia, el resultado llegará pronto.\n— Tienes razón, no debo apresurarme.",
+   "ja": "「我慢して、結果はすぐ出るから」「その通りだね、焦っちゃいけないよね」"
+  }
+ },
+ "dar vueltas": {
+  "nuance": "「ぐるぐる回る」「思い悩む」の基本表現。dar vueltas a algo（何かについてあれこれ考える）という比喩的な使い方もよくする。",
+  "etymology": "vuelta（回転）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "vuelta（回転）",
+   "volver（戻る）"
+  ],
+  "dialogue": {
+   "es": "— Llevo días dando vueltas a esta decisión.\n— Tómate el tiempo que necesites.",
+   "ja": "「この決断について何日も思い悩んでいるんだ」「必要な時間をかけていいよ」"
+  }
+ },
+ "pasar de moda": {
+  "nuance": "「流行遅れになる」の基本表現。moda（流行）から派生した表現。",
+  "etymology": "pasar（過ぎる）+ moda（流行）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "moda（流行）"
+  ],
+  "dialogue": {
+   "es": "— Ese estilo nunca pasa de moda.\n— Es cierto, es un clásico.",
+   "ja": "「そのスタイルは決して流行遅れにならないね」「本当だね、クラシックだもんね」"
+  }
+ },
+ "estar de moda": {
+  "nuance": "「流行っている」の基本表現。pasar de moda（流行遅れになる）の対極の状態。",
+  "etymology": "moda（流行）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "moda（流行）"
+  ],
+  "dialogue": {
+   "es": "— Ese color está muy de moda ahora.\n— Sí, lo veo en todas partes.",
+   "ja": "「その色、今すごく流行っているんだ」「うん、どこでも見かけるよね」"
+  }
+ },
+ "hacer clic": {
+  "nuance": "「クリックする」の基本表現。英語clickからの借用語。",
+  "etymology": "英語click（クリック音）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Haz clic aquí para continuar.\n— Ya lo hice, gracias.",
+   "ja": "「続けるにはここをクリックして」「もうやったよ、ありがとう」"
+  }
+ },
+ "quedarse sin batería": {
+  "nuance": "「バッテリーが切れる」の基本表現。quedarse sin（〜がなくなる）+ batería（バッテリー）の組み合わせ。",
+  "etymology": "batería（バッテリー）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "batería（バッテリー）"
+  ],
+  "dialogue": {
+   "es": "— Mi teléfono se quedó sin batería.\n— Toma, te presto mi cargador.",
+   "ja": "「携帯のバッテリーが切れちゃった」「はい、充電器貸すよ」"
+  }
+ },
+ "tener señal": {
+  "nuance": "「電波がある」の基本表現。no tener señal（電波がない）という否定形もよく使う。",
+  "etymology": "señal（信号）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "señal（信号）"
+  ],
+  "dialogue": {
+   "es": "— No tengo señal aquí.\n— Yo tampoco, debe ser la zona.",
+   "ja": "「ここ電波がないんだ」「私もだよ、この辺りのせいかもね」"
+  }
+ },
+ "estar conectado": {
+  "nuance": "「接続されている」の基本表現。conectar（接続する）から派生した表現。",
+  "etymology": "conectar（接続する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "conectar（接続する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Estás conectado al wifi?\n— Sí, ya funciona bien.",
+   "ja": "「Wi-Fiに接続されている？」「うん、もう問題なく動いているよ」"
+  }
+ },
+ "apagar el teléfono": {
+  "nuance": "「携帯の電源を切る」の基本表現。apagar（消す、電源を切る）+ el teléfono（携帯電話）の組み合わせ。",
+  "etymology": "apagar（消す）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "apagar（消す）"
+  ],
+  "dialogue": {
+   "es": "— Apaga el teléfono antes de la reunión.\n— Ya lo hice.",
+   "ja": "「会議の前に携帯の電源を切って」「もうやったよ」"
+  }
+ },
+ "arreglar": {
+  "nuance": "物を直す・整えるだけでなく、arreglarse（身支度を整える）の再帰形もよく使われる。問題を「うまく収める」というニュアンスでも使われる（Todo se va a arreglar.＝すべてうまくいくよ）。",
+  "etymology": "regla（規則、定規）から派生した語。「規則正しい状態に戻す」が原義。",
+  "synonyms": [
+   "reparar（修理する）"
+  ],
+  "derived": [
+   "regla（規則）",
+   "arreglo（修理、取り決め）"
+  ],
+  "dialogue": {
+   "es": "— ¿Puedes arreglar mi computadora?\n— Voy a intentarlo.",
+   "ja": "「私のパソコン直せる？」「試してみるよ」"
+  }
+ },
+ "revisar": {
+  "nuance": "「確認する、見直す」の基本語。書類・作業内容などをもう一度チェックするときに使う。",
+  "etymology": "re（再び）+ visar（見る）の組み合わせ、「もう一度見る」が原義。",
+  "synonyms": [],
+  "derived": [
+   "revisión（見直し、点検）"
+  ],
+  "dialogue": {
+   "es": "— ¿Puedes revisar mi informe antes de enviarlo?\n— Claro, dame unos minutos.",
+   "ja": "「送る前に私の報告書を確認してもらえる？」「もちろん、数分ちょうだい」"
+  }
+ },
+ "conseguir": {
+  "nuance": "「手に入れる」の基本語。lograr（達成する）と似ているが、conseguirは「探し求めて手に入れる」というニュアンスがより強い。",
+  "etymology": "ラテン語consequi（後を追って得る）に由来。",
+  "synonyms": [
+   "obtener（得る、よりフォーマル）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Por fin conseguí boletos para el concierto.\n— ¡Qué suerte! Estaban agotados.",
+   "ja": "「ついにコンサートのチケット手に入れたよ」「運がいいね！売り切れてたのに」"
+  }
+ },
+ "avisar": {
+  "nuance": "「知らせる」の基本語。何か重要な情報を事前に伝えるときに使う。avísame（知らせてね）はよく使う命令形。",
+  "etymology": "aviso（お知らせ）から派生した語。",
+  "synonyms": [
+   "informar（知らせる、よりフォーマル）"
+  ],
+  "derived": [
+   "aviso（お知らせ）"
+  ],
+  "dialogue": {
+   "es": "— Avísame cuando llegues.\n— Claro, te mando un mensaje.",
+   "ja": "「着いたら知らせてね」「うん、メッセージ送るよ」"
+  }
+ },
+ "entregar": {
+  "nuance": "「渡す、届ける」の基本語。entregar la tarea（宿題を提出する）のように「提出する」という意味でもよく使われる。",
+  "etymology": "en（〜へ）+ tregar（渡す、ラテン語tradereに由来）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "entrega（配達、提出）"
+  ],
+  "dialogue": {
+   "es": "— Tengo que entregar el proyecto mañana.\n— ¿Ya casi terminas?",
+   "ja": "「明日プロジェクトを提出しないといけないんだ」「もうすぐ終わる？」"
+  }
+ },
+ "recoger": {
+  "nuance": "「拾う」「迎えに行く」の両方の意味を持つ、日常でとても頻繁に使う動詞。recoger a alguien（誰かを迎えに行く）はよく使う組み合わせ。",
+  "etymology": "re（再び）+ coger（つかむ）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "coger（つかむ）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me puedes recoger a las cinco?\n— Claro, ahí estaré.",
+   "ja": "「5時に迎えに来てもらえる？」「もちろん、そこに行くね」"
+  }
+ },
+ "devolver": {
+  "nuance": "「（物を）返す」の基本語。volver（戻る、自動詞）とは異なり、devolverは他動詞で「物を持ち主に戻す」という意味。",
+  "etymology": "de（分離）+ volver（戻す）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "volver（戻る）"
+  ],
+  "dialogue": {
+   "es": "— Tengo que devolver este libro a la biblioteca.\n— ¿Cuándo vence el plazo?",
+   "ja": "「この本を図書館に返さないといけないんだ」「期限はいつまで？」"
+  }
+ },
+ "ahorrar": {
+  "nuance": "「貯金する」の基本語。ahorrar dinero（お金を貯める）、ahorrar tiempo（時間を節約する）のように、お金以外の資源にも使える。",
+  "etymology": "アラビア語al-ḥurr（自由な）に由来するとされる。",
+  "synonyms": [],
+  "derived": [
+   "ahorro（貯金、節約）"
+  ],
+  "dialogue": {
+   "es": "— Estoy tratando de ahorrar para un viaje.\n— Qué buena meta.",
+   "ja": "「旅行のために貯金しようとしているんだ」「いい目標だね」"
+  }
+ },
+ "gastar": {
+  "nuance": "「使う(お金)」の基本語。ahorrar（貯金する）の反対語。gastar tiempo（時間を費やす）のようにも使える。",
+  "etymology": "ラテン語vastare（浪費する、荒らす）に由来。",
+  "synonyms": [],
+  "derived": [
+   "gasto（出費）"
+  ],
+  "dialogue": {
+   "es": "— Gasté mucho dinero este mes.\n— Deberíamos hacer un presupuesto.",
+   "ja": "「今月お金使いすぎちゃった」「予算を立てた方がいいね」"
+  }
+ },
+ "invertir": {
+  "nuance": "「投資する」の基本語。「（順序を）逆にする」という意味にもなる。",
+  "etymology": "ラテン語invertere（ひっくり返す）に由来。",
+  "synonyms": [],
+  "derived": [
+   "inversión（投資）"
+  ],
+  "dialogue": {
+   "es": "— Decidió invertir en bienes raíces.\n— Es una buena estrategia a largo plazo.",
+   "ja": "「彼は不動産に投資することにしたんだ」「長期的にいい戦略だね」"
+  }
+ },
+ "empeorar": {
+  "nuance": "「悪化する」の基本語。mejorar（改善する）の反対語。",
+  "etymology": "peor（より悪い）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "peor（より悪い）"
+  ],
+  "dialogue": {
+   "es": "— Su condición empeoró durante la noche.\n— Espero que se recupere pronto.",
+   "ja": "「彼の容体は夜の間に悪化したんだ」「早く回復するといいね」"
+  }
+ },
+ "cuidar": {
+  "nuance": "「世話をする」の基本語。cuidar de（〜の世話をする）という組み合わせもよく使う。¡Cuídate!（お大事に、気をつけてね）は別れ際の定番表現。",
+  "etymology": "ラテン語cogitare（考える、気にかける）に由来。",
+  "synonyms": [],
+  "derived": [
+   "cuidado（注意）",
+   "cuidadoso（注意深い）"
+  ],
+  "dialogue": {
+   "es": "— ¿Puedes cuidar a mi perro este fin de semana?\n— Claro, con gusto.",
+   "ja": "「今週末、私の犬の世話をしてもらえる？」「もちろん、喜んで」"
+  }
+ },
+ "proteger": {
+  "nuance": "「守る」の基本語。proteger de（〜から守る）という組み合わせでよく使う。",
+  "etymology": "ラテン語protegere（前面を覆う）に由来。",
+  "synonyms": [],
+  "derived": [
+   "protección（保護）"
+  ],
+  "dialogue": {
+   "es": "— Este casco te protege la cabeza.\n— Es importante usarlo siempre.",
+   "ja": "「このヘルメットは頭を守ってくれるよ」「いつも使うことが大事だよね」"
+  }
+ },
+ "recomendar": {
+  "nuance": "「勧める」の基本語。recomendar que+接続法の形も取れる。",
+  "etymology": "re（強調）+ comendar（委ねる、ラテン語commendareに由来）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "recomendación（推薦）"
+  ],
+  "dialogue": {
+   "es": "— ¿Qué me recomiendas de este menú?\n— El pescado está delicioso aquí.",
+   "ja": "「このメニューから何がおすすめ？」「ここの魚料理は美味しいよ」"
+  }
+ },
+ "notar": {
+  "nuance": "「気づく」の基本語。darse cuenta de（気づく、より一般的）と似た意味だが、notarは主に「見た目・変化に気づく」という文脈でよく使う。",
+  "etymology": "ラテン語notare（印をつける、記録する）に由来。",
+  "synonyms": [
+   "darse cuenta de（気づく）"
+  ],
+  "derived": [
+   "nota（メモ、注記）"
+  ],
+  "dialogue": {
+   "es": "— Noté que estabas un poco triste hoy.\n— Sí, tuve un día difícil.",
+   "ja": "「今日ちょっと悲しそうだって気づいたよ」「うん、大変な一日だったんだ」"
+  }
+ },
+ "fijarse": {
+  "nuance": "「注意して見る」の基本語。fijarse en（〜に注目する）という組み合わせでよく使う。fijo（固定された）の再帰形から。",
+  "etymology": "fijo（固定された）から派生した再帰動詞。",
+  "synonyms": [],
+  "derived": [
+   "fijo（固定された）"
+  ],
+  "dialogue": {
+   "es": "— Fíjate bien antes de cruzar la calle.\n— Siempre lo hago.",
+   "ja": "「道を渡る前によく注意して見てね」「いつもそうしているよ」"
+  }
+ },
+ "imaginar": {
+  "nuance": "「想像する」の基本語。imaginarse（再帰形、ほぼ同じ意味）もよく使われる。",
+  "etymology": "imagen（イメージ、像）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "imagen（イメージ）",
+   "imaginación（想像力）"
+  ],
+  "dialogue": {
+   "es": "— No puedo imaginar cómo sería vivir sin internet.\n— Yo tampoco, sería muy diferente.",
+   "ja": "「インターネットなしで生活するのがどんな感じか想像できないな」「私もだよ、すごく違うだろうね」"
+  }
+ },
+ "despertar": {
+  "nuance": "「(誰かを)起こす」の基本語。再帰形despertarse（自分が目覚める）とは区別される。",
+  "etymology": "ラテン語expergisci（目覚める）に由来。",
+  "synonyms": [],
+  "derived": [
+   "despertarse（目覚める）",
+   "despertador（目覚まし時計）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me puedes despertar a las siete?\n— Claro, sin problema.",
+   "ja": "「7時に起こしてもらえる？」「もちろん、大丈夫だよ」"
+  }
+ },
+ "descansar": {
+  "nuance": "「休む」の基本語。descanso（休憩、名詞）と関連。¡Que descanses!（ゆっくり休んでね）は寝る前の挨拶の定番。",
+  "etymology": "des（否定）+ cansar（疲れさせる）の組み合わせ、「疲れを取り除く」が原義。",
+  "synonyms": [],
+  "derived": [
+   "cansar（疲れさせる）",
+   "descanso（休憩）"
+  ],
+  "dialogue": {
+   "es": "— Necesito descansar un poco.\n— Tómate el tiempo que necesites.",
+   "ja": "「少し休む必要があるんだ」「必要な時間をかけていいよ」"
+  }
+ },
+ "relajarse": {
+  "nuance": "「リラックスする」の基本語。relajado（リラックスした）という形容詞もよく使う。",
+  "etymology": "ラテン語relaxare（緩める）に由来。",
+  "synonyms": [],
+  "derived": [
+   "relajado（リラックスした）"
+  ],
+  "dialogue": {
+   "es": "— Necesito relajarme después de esta semana.\n— Deberías darte un masaje.",
+   "ja": "「この一週間の後、リラックスする必要があるな」「マッサージを受けた方がいいよ」"
+  }
+ },
+ "preocuparse": {
+  "nuance": "「心配する」の基本語。preocuparse por（〜について心配する）という組み合わせでよく使う。No te preocupes.（心配しないで）は非常によく使う表現。",
+  "etymology": "pre（前もって）+ ocupar（占める）の組み合わせ、「先に心を占める」が原義。",
+  "synonyms": [],
+  "derived": [
+   "preocupado（心配している）",
+   "preocupación（心配）"
+  ],
+  "dialogue": {
+   "es": "— No te preocupes, todo va a salir bien.\n— Gracias, necesitaba escuchar eso.",
+   "ja": "「心配しないで、すべてうまくいくから」「ありがとう、それを聞く必要があったんだ」"
+  }
+ },
+ "molestar": {
+  "nuance": "「邪魔する、悩ませる」の基本語。gustar型の構文でも使われる（Me molesta el ruido.＝その音が私を悩ませる＝うるさくて嫌だ）。",
+  "etymology": "ラテン語molestare（不快にさせる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "molestia（不快、迷惑）"
+  ],
+  "dialogue": {
+   "es": "— Perdón, ¿te molesto si abro la ventana?\n— No, para nada, adelante.",
+   "ja": "「ごめん、窓開けたら迷惑？」「いや、全然、どうぞ」"
+  }
+ },
+ "enojarse": {
+  "nuance": "「怒る」の基本語。enojarse con（〜に対して怒る）という組み合わせでよく使う。enfadarse（スペインで一般的）とほぼ同義。",
+  "etymology": "enojo（怒り）から派生した再帰動詞。",
+  "synonyms": [
+   "enfadarse（怒る、スペインで一般的）"
+  ],
+  "derived": [
+   "enojo（怒り）",
+   "enojado（怒っている）"
+  ],
+  "dialogue": {
+   "es": "— Se enojó porque llegué tarde.\n— Deberías disculparte.",
+   "ja": "「私が遅刻したから彼は怒ったんだ」「謝った方がいいよ」"
+  }
+ },
+ "calmarse": {
+  "nuance": "「落ち着く」の基本語。calma（落ち着き）から派生した再帰動詞。Cálmate.（落ち着いて）はよく使う命令形。",
+  "etymology": "calma（落ち着き）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "calma（落ち着き）"
+  ],
+  "dialogue": {
+   "es": "— Cálmate, todo va a estar bien.\n— Tienes razón, estoy exagerando.",
+   "ja": "「落ち着いて、すべて大丈夫だから」「その通りだね、大げさになってるな」"
+  }
+ },
+ "sorprender": {
+  "nuance": "「驚かせる」の基本語。gustar型の構文でも使われる（Me sorprende que...＝〜ということに驚く）。",
+  "etymology": "sobre（〜の上に）+ prender（つかむ）の組み合わせ、「不意打ちする」が原義。",
+  "synonyms": [],
+  "derived": [
+   "sorpresa（驚き）",
+   "sorprendente（驚くべき）"
+  ],
+  "dialogue": {
+   "es": "— Me sorprende lo rápido que aprendiste esto.\n— Gracias, practiqué mucho.",
+   "ja": "「これをこんなに早く覚えたなんて驚きだよ」「ありがとう、たくさん練習したんだ」"
+  }
+ },
+ "asustar": {
+  "nuance": "「怖がらせる」の基本語。asustarse（再帰形、怖がる）もよく使われる。",
+  "etymology": "ラテン語ex-terrere経由の語に由来するとされる。",
+  "synonyms": [],
+  "derived": [
+   "susto（驚き、恐怖）",
+   "asustado（怖がっている）"
+  ],
+  "dialogue": {
+   "es": "— No quise asustarte.\n— Está bien, solo me sorprendiste.",
+   "ja": "「怖がらせるつもりじゃなかったんだ」「大丈夫、ただびっくりしただけだから」"
+  }
+ },
+ "aburrir": {
+  "nuance": "「退屈させる」の基本語。gustar型の構文でも使われる（Me aburre esta película.＝この映画は私を退屈させる＝つまらない）。",
+  "etymology": "a（強調）+ ラテン語horrere（ぞっとする）の組み合わせに由来するとされる。",
+  "synonyms": [],
+  "derived": [
+   "aburrido（退屈な、退屈している）"
+  ],
+  "dialogue": {
+   "es": "— Esta clase me aburre un poco.\n— A mí también, es muy lenta.",
+   "ja": "「この授業ちょっと退屈だな」「私もだよ、進みがすごく遅いよね」"
+  }
+ },
+ "divertirse": {
+  "nuance": "「楽しむ」の基本語。¡Que te diviertas!（楽しんできてね）はよく使う別れの挨拶。",
+  "etymology": "ラテン語divertere（それる、方向を変える）に由来、日常から離れて楽しむイメージ。",
+  "synonyms": [
+   "pasarla bien（楽しく過ごす、口語）"
+  ],
+  "derived": [
+   "diversión（楽しみ）",
+   "divertido（楽しい）"
+  ],
+  "dialogue": {
+   "es": "— Nos divertimos mucho en la fiesta.\n— Se nota, llegaron muy tarde.",
+   "ja": "「パーティーでとても楽しんだよ」「わかるよ、すごく遅く帰ってきたもんね」"
+  }
+ },
+ "disfrutar": {
+  "nuance": "「満喫する」の基本語。disfrutar de（〜を満喫する）という組み合わせでよく使う。",
+  "etymology": "フランス語desfruitar（果実を得る）に由来するとされる。",
+  "synonyms": [],
+  "derived": [
+   "disfrute（享受）"
+  ],
+  "dialogue": {
+   "es": "— Disfruté mucho el viaje.\n— Me alegra escuchar eso.",
+   "ja": "「旅行をとても満喫したよ」「それを聞いて嬉しいよ」"
+  }
+ },
+ "sufrir": {
+  "nuance": "「苦しむ」の基本語。sufrir de（〜を患う、病気について）という組み合わせでも使われる。",
+  "etymology": "ラテン語sufferre（下から支える、耐える）に由来。",
+  "synonyms": [],
+  "derived": [
+   "sufrimiento（苦しみ）"
+  ],
+  "dialogue": {
+   "es": "— Sufrió mucho durante esa época.\n— Espero que esté mejor ahora.",
+   "ja": "「その時期、彼はとても苦しんだんだ」「今は良くなっているといいね」"
+  }
+ },
+ "soportar": {
+  "nuance": "「我慢する、耐える」の基本語。「支える」という文字通りの意味もある。No lo soporto.（我慢できない）はよく使う表現。",
+  "etymology": "ラテン語supportare（下から運ぶ、支える）に由来。",
+  "synonyms": [
+   "aguantar（我慢する）"
+  ],
+  "derived": [
+   "soporte（サポート、支え）"
+  ],
+  "dialogue": {
+   "es": "— No soporto el ruido de la construcción.\n— A mí tampoco, es insoportable.",
+   "ja": "「工事の音が我慢できないよ」「私もだよ、耐えられないよね」"
+  }
+ },
+ "aguantar": {
+  "nuance": "「我慢する」の基本語。soportar（我慢する）とほぼ同義で、より口語的な響き。",
+  "etymology": "イタリア語agguantare（つかむ、持ちこたえる）に由来。",
+  "synonyms": [
+   "soportar（我慢する）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— No sé cuánto tiempo más puedo aguantar esto.\n— Ya casi terminamos, resiste un poco más.",
+   "ja": "「これ以上どれくらい我慢できるかわからないよ」「もうすぐ終わるから、もう少し頑張って」"
+  }
+ },
+ "resolver": {
+  "nuance": "「解決する」の基本語。solucionar（解決する）とほぼ同義。過去分詞が不規則（resuelto）な点に注意。",
+  "etymology": "ラテン語resolvere（解きほぐす）に由来。",
+  "synonyms": [
+   "solucionar（解決する）"
+  ],
+  "derived": [
+   "resuelto（解決した）",
+   "resolución（決議、解決）"
+  ],
+  "dialogue": {
+   "es": "— Logramos resolver el problema a tiempo.\n— ¡Qué alivio!",
+   "ja": "「時間内に問題を解決できたよ」「なんて安心なんだ！」"
+  }
+ },
+ "solucionar": {
+  "nuance": "「解決する」の基本語。resolver（解決する）とほぼ同義で、規則活用のみの分だけやや使いやすい。",
+  "etymology": "solución（解決策）から派生した語。",
+  "synonyms": [
+   "resolver（解決する）"
+  ],
+  "derived": [
+   "solución（解決策）"
+  ],
+  "dialogue": {
+   "es": "— Vamos a solucionar esto juntos.\n— Gracias, no sabía qué hacer.",
+   "ja": "「一緒にこれを解決しよう」「ありがとう、どうしたらいいかわからなかったんだ」"
+  }
+ },
+ "crear": {
+  "nuance": "「創造する」の基本語。crear算はcrearse（自分を作り出す＝築き上げる）という再帰形もよく使われる。",
+  "etymology": "ラテン語creare（作り出す）に由来。",
+  "synonyms": [],
+  "derived": [
+   "creación（創造）",
+   "creativo（創造的な）"
+  ],
+  "dialogue": {
+   "es": "— Ella creó su propia empresa desde cero.\n— Qué admirable.",
+   "ja": "「彼女はゼロから自分の会社を作ったんだ」「なんて立派なんだ」"
+  }
+ },
+ "inventar": {
+  "nuance": "「発明する」の基本語。「（話などを）でっち上げる」という比喩的な意味にもなる。",
+  "etymology": "ラテン語invenire（見つける、思いつく）に由来。",
+  "synonyms": [],
+  "derived": [
+   "invento（発明）",
+   "inventor（発明者）"
+  ],
+  "dialogue": {
+   "es": "— ¿Quién inventó el teléfono?\n— Alexander Graham Bell, creo.",
+   "ja": "「電話を発明したのは誰？」「アレクサンダー・グラハム・ベルだったと思うよ」"
+  }
+ },
+ "descubrir": {
+  "nuance": "「発見する」の基本語。過去分詞が不規則（descubierto）な点に注意。",
+  "etymology": "des（否定）+ cubrir（覆う）の組み合わせ、「覆いを取る」が原義。",
+  "synonyms": [],
+  "derived": [
+   "cubrir（覆う）",
+   "descubrimiento（発見）"
+  ],
+  "dialogue": {
+   "es": "— Descubrimos un restaurante increíble ayer.\n— ¿Dónde está? Quiero ir.",
+   "ja": "「昨日すごいレストランを見つけたんだ」「どこにあるの？行きたいな」"
+  }
+ },
+ "investigar": {
+  "nuance": "「調査する」の基本語。学術的な研究から警察の捜査まで幅広く使える。",
+  "etymology": "ラテン語investigare（足跡をたどる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "investigación（調査、研究）"
+  ],
+  "dialogue": {
+   "es": "— Voy a investigar más sobre este tema.\n— Avísame si encuentras algo interesante.",
+   "ja": "「このテーマについてもっと調査するよ」「面白いこと見つけたら教えてね」"
+  }
+ },
+ "explicar": {
+  "nuance": "「説明する」の基本語。explicar que+直説法（〜だと説明する）の形を取る。",
+  "etymology": "ラテン語explicare（広げる、解き明かす）に由来。",
+  "synonyms": [],
+  "derived": [
+   "explicación（説明）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me puedes explicar esto de nuevo?\n— Claro, con gusto.",
+   "ja": "「これもう一度説明してもらえる？」「もちろん、喜んで」"
+  }
+ },
+ "describir": {
+  "nuance": "「描写する」の基本語。過去分詞が不規則（descrito）な点に注意。",
+  "etymology": "de（下に）+ escribir（書く）の組み合わせ、「詳しく書き記す」が原義。",
+  "synonyms": [],
+  "derived": [
+   "escribir（書く）",
+   "descripción（描写）"
+  ],
+  "dialogue": {
+   "es": "— ¿Puedes describir cómo era la casa?\n— Era pequeña pero muy acogedora.",
+   "ja": "「その家がどんな感じだったか説明してもらえる？」「小さかったけどとても居心地が良かったよ」"
+  }
+ },
+ "definir": {
+  "nuance": "「定義する」の基本語。¿Cómo definirías...?（〜をどう定義する？）という質問の形もよく使う。",
+  "etymology": "ラテン語definire（境界を定める）に由来。",
+  "synonyms": [],
+  "derived": [
+   "definición（定義）",
+   "definitivo（決定的な）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cómo definirías el éxito?\n— Para mí, es ser feliz con lo que hago.",
+   "ja": "「成功をどう定義する？」「私にとっては、自分のやっていることに幸せを感じることかな」"
+  }
+ },
+ "distinguir": {
+  "nuance": "「区別する」の基本語。distinguir entre A y B（AとBを区別する）という組み合わせでよく使う。",
+  "etymology": "ラテン語distinguere（分けて印をつける）に由来。",
+  "synonyms": [],
+  "derived": [
+   "distinción（区別）",
+   "distinto（異なる）"
+  ],
+  "dialogue": {
+   "es": "— No puedo distinguir entre estos dos colores.\n— Son casi idénticos.",
+   "ja": "「この2つの色を区別できないんだ」「ほとんど同じだもんね」"
+  }
+ },
+ "confundir": {
+  "nuance": "「混同する」の基本語。confundir A con B（AをBと勘違いする）という組み合わせでよく使う。",
+  "etymology": "ラテン語confundere（一緒に注ぐ、混ぜる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "confusión（混乱）",
+   "confundido（混乱している）"
+  ],
+  "dialogue": {
+   "es": "— Te confundí con tu hermano.\n— Nos pasa seguido, nos parecemos mucho.",
+   "ja": "「君を君のお兄さんと勘違いしちゃった」「よくあることだよ、すごく似てるからね」"
+  }
+ },
+ "reconocer": {
+  "nuance": "「認識する、認める」の基本語。人を「見覚えがある」という意味と、事実・過ちを「認める」という意味の両方で使われる。",
+  "etymology": "re（再び）+ conocer（知る）の組み合わせ、「再び知る＝見覚えがある」が原義。",
+  "synonyms": [],
+  "derived": [
+   "conocer（知る）",
+   "reconocimiento（認識、称賛）"
+  ],
+  "dialogue": {
+   "es": "— Casi no te reconocí con el nuevo corte de pelo.\n— Jaja, es un cambio grande.",
+   "ja": "「新しい髪型でほとんど君だとわからなかったよ」「あはは、大きな変化だもんね」"
+  }
+ },
+ "acompañar": {
+  "nuance": "「同行する」の基本語。acompañar a alguien（誰かに付き添う）という組み合わせでよく使う。感情的な「寄り添う」という意味でも使われる。",
+  "etymology": "a（〜へ）+ compañero（仲間）の組み合わせに由来。",
+  "synonyms": [],
+  "derived": [
+   "compañero（仲間）",
+   "compañía（会社、同伴）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me acompañas al médico?\n— Claro, ¿a qué hora es tu cita?",
+   "ja": "「病院に付き添ってくれる？」「もちろん、予約は何時？」"
+  }
+ },
+ "elegir": {
+  "nuance": "「選ぶ」の基本語。seleccionar（選択する、よりフォーマル）とほぼ同義。e→iの語根母音変化動詞。",
+  "etymology": "ラテン語eligere（選び出す）に由来。",
+  "synonyms": [
+   "seleccionar（選択する、フォーマル）"
+  ],
+  "derived": [
+   "elección（選挙、選択）"
+  ],
+  "dialogue": {
+   "es": "— Es difícil elegir entre tantas opciones.\n— Tómate tu tiempo.",
+   "ja": "「こんなにたくさんの選択肢から選ぶのは難しいな」「時間をかけていいよ」"
+  }
+ },
+ "preferir": {
+  "nuance": "「〜の方が好きだ」の基本語。preferir A a B（BよりAの方が好きだ）という組み合わせでよく使う。",
+  "etymology": "pre（前に）+ ferir（運ぶ、ラテン語ferreに由来）の組み合わせ、「前に持ってくる＝優先する」が原義。",
+  "synonyms": [],
+  "derived": [
+   "preferencia（好み）"
+  ],
+  "dialogue": {
+   "es": "— ¿Qué prefieres, café o té?\n— Prefiero el té, gracias.",
+   "ja": "「コーヒーとお茶、どっちが好き？」「お茶の方が好きだよ、ありがとう」"
+  }
+ },
+ "odiar": {
+  "nuance": "「嫌う」の基本語。amar（愛する）と対になる強い感情動詞。no soportar（我慢できない）よりもさらに強い拒絶感を表す。",
+  "etymology": "ラテン語odiare（憎む）に由来。",
+  "synonyms": [],
+  "derived": [
+   "odio（憎しみ）"
+  ],
+  "dialogue": {
+   "es": "— Odio esperar en el tráfico.\n— A nadie le gusta eso.",
+   "ja": "「渋滞で待つのが嫌いなんだ」「誰もそれ好きじゃないよね」"
+  }
+ },
+ "desear": {
+  "nuance": "「望む」の基本語。querer（欲しい）よりもフォーマルで、願い事や挨拶によく使われる（Te deseo lo mejor.＝ご多幸をお祈りします）。",
+  "etymology": "ラテン語desiderare（星を見て願う）に由来するとされる。",
+  "synonyms": [
+   "querer（欲しい、より一般的）"
+  ],
+  "derived": [
+   "deseo（願い）"
+  ],
+  "dialogue": {
+   "es": "— Te deseo mucho éxito en tu nuevo trabajo.\n— Muchas gracias, significa mucho.",
+   "ja": "「新しい仕事でのご成功を願っているよ」「本当にありがとう、とても嬉しいよ」"
+  }
+ },
+ "confiar": {
+  "nuance": "「信頼する」の基本語。confiar en（〜を信頼する）という組み合わせでよく使う。",
+  "etymology": "con（一緒に）+ fiar（信用する）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "confianza（信頼）"
+  ],
+  "dialogue": {
+   "es": "— Confío en tu criterio.\n— Gracias, haré lo mejor que pueda.",
+   "ja": "「君の判断を信頼しているよ」「ありがとう、最善を尽くすよ」"
+  }
+ },
+ "dudar": {
+  "nuance": "「疑う」の基本語。dudar de（〜を疑う）、dudar que+接続法（〜だとは思わない）という組み合わせでよく使う。",
+  "etymology": "ラテン語dubitare（迷う、疑う）に由来。",
+  "synonyms": [],
+  "derived": [
+   "duda（疑問）"
+  ],
+  "dialogue": {
+   "es": "— Dudo que llegue a tiempo.\n— Yo también, hay mucho tráfico.",
+   "ja": "「彼が時間通りに着くとは思えないな」「私もだよ、渋滞がひどいから」"
+  }
+ },
+ "sospechar": {
+  "nuance": "「疑う、勘づく」の基本語。dudar（疑う、確信が持てない）とは異なり、「何か悪いことがあると感づく」というニュアンスが強い。",
+  "etymology": "ラテン語suspectare（下から見上げる、疑う）に由来。",
+  "synonyms": [],
+  "derived": [
+   "sospecha（疑い）",
+   "sospechoso（怪しい）"
+  ],
+  "dialogue": {
+   "es": "— Sospecho que algo no está bien.\n— Yo también tengo ese presentimiento.",
+   "ja": "「何かがおかしいと勘づいているんだ」「私もそんな予感がするよ」"
+  }
+ },
+ "suponer": {
+  "nuance": "「推測する」の基本語。poner（置く）と同じ活用パターンの不規則動詞。Supongo que...（〜だと思う）はよく使う表現。",
+  "etymology": "ラテン語supponere（下に置く、仮定する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "suposición（仮定）"
+  ],
+  "dialogue": {
+   "es": "— Supongo que llegarán pronto.\n— Eso espero.",
+   "ja": "「もうすぐ着くと思うよ」「そうだといいな」"
+  }
+ },
+ "concluir": {
+  "nuance": "「結論づける」の基本語。terminar（終える）よりもフォーマルで、論理的な結論を導くときに使う。",
+  "etymology": "ラテン語concludere（閉じる、まとめる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "conclusión（結論）"
+  ],
+  "dialogue": {
+   "es": "— Podemos concluir que el plan funcionó.\n— Estoy de acuerdo con ese análisis.",
+   "ja": "「計画がうまくいったと結論づけられるね」「その分析に同意するよ」"
+  }
+ },
+ "negar": {
+  "nuance": "「否定する」の基本語。e→ieの語根母音変化動詞。negarse a（〜することを拒否する）という組み合わせもよく使う。",
+  "etymology": "ラテン語negare（否定する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "negación（否定）"
+  ],
+  "dialogue": {
+   "es": "— Negó haber roto el jarrón.\n— ¿Le creíste?",
+   "ja": "「彼は花瓶を割ったことを否定したんだ」「彼のこと信じた？」"
+  }
+ },
+ "admitir": {
+  "nuance": "「認める」の基本語。「（入学などを）受け入れる」という意味にもなる。admitir que+直説法（〜だと認める）の形を取る。",
+  "etymology": "ラテン語admittere（中に入れる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "admisión（入場、承認）"
+  ],
+  "dialogue": {
+   "es": "— Tengo que admitir que tenías razón.\n— No te preocupes, a veces pasa.",
+   "ja": "「君が正しかったと認めないといけないな」「気にしないで、時々あることだから」"
+  }
+ },
+ "rendirse": {
+  "nuance": "「降参する」の基本語。No te rindas.（あきらめないで）はよく使う励ましの表現。",
+  "etymology": "ラテン語reddere（返す、明け渡す）に由来。",
+  "synonyms": [
+   "darse por vencido（あきらめる）"
+  ],
+  "derived": [
+   "rendición（降伏）"
+  ],
+  "dialogue": {
+   "es": "— No pienso rendirme tan fácilmente.\n— Esa es la actitud correcta.",
+   "ja": "「そんなに簡単にあきらめるつもりはないよ」「その姿勢は正しいよ」"
+  }
+ },
+ "persistir": {
+  "nuance": "「固執する、続ける」の基本語。困難があっても続けるという、粘り強さを表すフォーマルな動詞。",
+  "etymology": "ラテン語persistere（しっかり立ち続ける）に由来。",
+  "synonyms": [],
+  "derived": [
+   "persistencia（粘り強さ）"
+  ],
+  "dialogue": {
+   "es": "— Si el dolor persiste, deberías ver a un médico.\n— Tienes razón, iré mañana.",
+   "ja": "「痛みが続くなら、医者に診てもらった方がいいよ」「その通りだね、明日行くよ」"
+  }
+ },
+ "continuar": {
+  "nuance": "「続ける」の基本語。seguir（続ける）とほぼ同義だが、continuarはよりフォーマルな響き。",
+  "etymology": "ラテン語continuare（つなげる）に由来。",
+  "synonyms": [
+   "seguir（続ける、より一般的）"
+  ],
+  "derived": [
+   "continuación（続き）"
+  ],
+  "dialogue": {
+   "es": "— Vamos a continuar mañana.\n— Perfecto, ya es tarde.",
+   "ja": "「明日続きをやろう」「いいね、もう遅いから」"
+  }
+ },
+ "detener": {
+  "nuance": "「止める」の基本語。tener（持つ）と同じ活用パターンの不規則動詞。「（警察が）逮捕する」という意味にもなる。",
+  "etymology": "de（強調）+ tener（持つ、止める）の組み合わせ。",
+  "synonyms": [
+   "parar（止める）"
+  ],
+  "derived": [
+   "tener（持つ）",
+   "detención（逮捕、停止）"
+  ],
+  "dialogue": {
+   "es": "— El conductor detuvo el auto de repente.\n— ¿Por qué? ¿Pasó algo?",
+   "ja": "「運転手が突然車を止めたんだ」「どうして？何かあったの？」"
+  }
+ },
+ "parar": {
+  "nuance": "「止まる、止める」の基本語。自動詞・他動詞どちらでも使える、日常でよく使う動詞。sin parar（止まることなく）という表現もよく使う。",
+  "etymology": "ラテン語parare（準備する、防ぐ）に由来。",
+  "synonyms": [],
+  "derived": [
+   "parada（停留所）"
+  ],
+  "dialogue": {
+   "es": "— Para el coche aquí, por favor.\n— Claro, un momento.",
+   "ja": "「ここで車を止めてください」「わかりました、少々お待ちを」"
+  }
+ },
+ "acabar": {
+  "nuance": "「終える」の基本語。terminar（終える）とほぼ同義。acabar de+不定詞（〜したばかりだ）という重要な構文もこの動詞から。",
+  "etymology": "a（〜へ）+ cabo（端）の組み合わせ、「端に到達する」が原義。",
+  "synonyms": [
+   "terminar（終える）"
+  ],
+  "derived": [
+   "cabo（端）"
+  ],
+  "dialogue": {
+   "es": "— ¿Ya acabaste la tarea?\n— Casi, me falta un poco.",
+   "ja": "「もう宿題終わった？」「もうすぐ、あと少しなんだ」"
+  }
+ },
+ "iniciar": {
+  "nuance": "「開始する」の基本語。comenzar（始める）とほぼ同義だが、よりフォーマルな響き。iniciar sesión（ログインする）はIT用語でよく使う組み合わせ。",
+  "etymology": "ラテン語initiare（始める）に由来。",
+  "synonyms": [
+   "comenzar（始める）"
+  ],
+  "derived": [
+   "inicio（開始）"
+  ],
+  "dialogue": {
+   "es": "— Vamos a iniciar la reunión.\n— Perfecto, todos están listos.",
+   "ja": "「会議を始めよう」「いいね、みんな準備できているよ」"
+  }
+ },
+ "comenzar": {
+  "nuance": "「始める」の基本語。empezar（始める）とほぼ同義で、どちらも日常でよく使われる。e→ieの語根母音変化動詞。",
+  "etymology": "ラテン語cominitiare（一緒に始める）に由来。",
+  "synonyms": [
+   "empezar（始める、ほぼ同義）"
+  ],
+  "derived": [
+   "comienzo（始まり）"
+  ],
+  "dialogue": {
+   "es": "— La película comienza a las ocho.\n— Perfecto, tenemos tiempo para cenar antes.",
+   "ja": "「映画は8時に始まるよ」「いいね、その前に夕食を食べる時間があるね」"
+  }
+ },
+ "establecer": {
+  "nuance": "「確立する」の基本語。「制度・関係・記録などを打ち立てる」という幅広い文脈で使われるフォーマルな動詞。",
+  "etymology": "ラテン語stabilire（安定させる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "establecimiento（設立、施設）"
+  ],
+  "dialogue": {
+   "es": "— Establecimos una buena relación con ellos.\n— Eso será útil a largo plazo.",
+   "ja": "「彼らといい関係を築けたね」「長期的に役立つだろうね」"
+  }
+ },
+ "fundar": {
+  "nuance": "「設立する」の基本語。会社・組織・都市などを「創設する」ときに使う。",
+  "etymology": "ラテン語fundare（土台を築く）に由来。",
+  "synonyms": [],
+  "derived": [
+   "fundación（設立、財団）",
+   "fundador（創設者）"
+  ],
+  "dialogue": {
+   "es": "— Fundaron la empresa hace diez años.\n— Ha crecido mucho desde entonces.",
+   "ja": "「10年前に会社を設立したんだ」「それからすごく成長したよね」"
+  }
+ },
+ "preparar": {
+  "nuance": "「準備する」の基本語。prepararse（自分の準備をする、再帰形）もよく使われる。",
+  "etymology": "ラテン語praeparare（前もって用意する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "preparación（準備）"
+  ],
+  "dialogue": {
+   "es": "— Estoy preparando la cena.\n— Huele delicioso.",
+   "ja": "「夕食を準備しているところなんだ」「美味しそうな匂いがするね」"
+  }
+ },
+ "dirigir": {
+  "nuance": "「指揮する、経営する」の基本語。「（乗り物・視線などを）向ける」という意味にもなる。dirigirse a（〜に向かう、〜に話しかける）という再帰形もよく使う。",
+  "etymology": "ラテン語dirigere（まっすぐに導く）に由来。",
+  "synonyms": [],
+  "derived": [
+   "director（監督、director）",
+   "dirección（方向、住所）"
+  ],
+  "dialogue": {
+   "es": "— Ella dirige el proyecto desde el inicio.\n— Está haciendo un gran trabajo.",
+   "ja": "「彼女は最初からこのプロジェクトを指揮しているんだ」「素晴らしい仕事をしているよね」"
+  }
+ },
+ "liderar": {
+  "nuance": "「率いる」の基本語。líder（リーダー）から派生した比較的新しい動詞。dirigir（指揮する）とほぼ同義。",
+  "etymology": "英語leaderから派生したlíderに由来する動詞。",
+  "synonyms": [
+   "dirigir（指揮する）"
+  ],
+  "derived": [
+   "líder（リーダー）",
+   "liderazgo（リーダーシップ）"
+  ],
+  "dialogue": {
+   "es": "— Va a liderar el equipo este año.\n— Confío en que le irá muy bien.",
+   "ja": "「今年チームを率いることになるんだ」「きっとうまくいくと信じているよ」"
+  }
+ },
+ "administrar": {
+  "nuance": "「管理する」の基本語。組織やお金を管理・運営するときに使う、gestionarとほぼ同義。",
+  "etymology": "ラテン語administrare（仕える、管理する）に由来。",
+  "synonyms": [
+   "gestionar（管理する）"
+  ],
+  "derived": [
+   "administración（管理、行政）"
+  ],
+  "dialogue": {
+   "es": "— Ella administra las finanzas de la empresa.\n— Es un trabajo de mucha responsabilidad.",
+   "ja": "「彼女は会社の財務を管理しているんだ」「とても責任の重い仕事だよね」"
+  }
+ },
+ "manejar": {
+  "nuance": "「扱う」の基本語。ラテンアメリカでは「運転する」という意味でも非常によく使われる（conducirのメキシコでの一般的な言い方）。",
+  "etymology": "mano（手）から派生した語、「手で扱う」が原義。",
+  "synonyms": [
+   "conducir（運転する、よりフォーマル）"
+  ],
+  "derived": [
+   "mano（手）"
+  ],
+  "dialogue": {
+   "es": "— ¿Sabes manejar?\n— Sí, tengo licencia desde los dieciocho.",
+   "ja": "「運転できる？」「うん、18歳から免許持っているよ」"
+  }
+ },
+ "controlar": {
+  "nuance": "「制御する」の基本語。感情・状況・機械など幅広い対象に使われる。",
+  "etymology": "フランス語contrôler（照合する、監督する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "control（コントロール）"
+  ],
+  "dialogue": {
+   "es": "— Necesito controlar mis gastos este mes.\n— Es una buena meta.",
+   "ja": "「今月は出費を管理する必要があるんだ」「いい目標だね」"
+  }
+ },
+ "dominar": {
+  "nuance": "「支配する」「習得する」の両方の意味を持つ動詞。dominar un idioma（言語をマスターする）はよく使う組み合わせ。",
+  "etymology": "ラテン語dominari（主人として振る舞う）に由来。",
+  "synonyms": [],
+  "derived": [
+   "dominio（支配、習熟）"
+  ],
+  "dialogue": {
+   "es": "— Domina tres idiomas perfectamente.\n— Qué impresionante.",
+   "ja": "「彼は3言語を完璧にマスターしているんだ」「なんてすごいんだ」"
+  }
+ },
+ "superar": {
+  "nuance": "「乗り越える」「上回る」の両方の意味を持つ動詞。superar un obstáculo（障害を乗り越える）はよく使う組み合わせ。",
+  "etymology": "ラテン語superare（上に立つ、勝る）に由来。",
+  "synonyms": [],
+  "derived": [
+   "superación（克服）"
+  ],
+  "dialogue": {
+   "es": "— Logró superar muchos obstáculos.\n— Es una persona muy fuerte.",
+   "ja": "「彼は多くの障害を乗り越えたんだ」「とても強い人だよね」"
+  }
+ },
+ "triunfar": {
+  "nuance": "「勝利する」の基本語。ganar（勝つ）よりもフォーマルで、大きな成功を収めたときに使う。",
+  "etymology": "ラテン語triumphare（凱旋する）に由来。",
+  "synonyms": [
+   "ganar（勝つ、より一般的）"
+  ],
+  "derived": [
+   "triunfo（勝利）"
+  ],
+  "dialogue": {
+   "es": "— Su equipo triunfó en el campeonato.\n— Se lo merecían.",
+   "ja": "「彼のチームは選手権で勝利したんだ」「それに値するチームだよね」"
+  }
+ },
+ "fallar": {
+  "nuance": "「失敗する」「故障する」の両方の意味を持つ動詞。機械の不具合にも人の失敗にも使える。",
+  "etymology": "ラテン語fallere（欺く、失敗させる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "fallo（失敗、不具合）"
+  ],
+  "dialogue": {
+   "es": "— El plan falló por falta de tiempo.\n— Deberíamos intentarlo de nuevo con más tiempo.",
+   "ja": "「時間不足で計画が失敗したんだ」「もっと時間をかけてもう一度試すべきだね」"
+  }
+ },
+ "equivocarse": {
+  "nuance": "「間違える」の基本語。cometer un error（ミスをする）とほぼ同義。Me equivoqué.（間違えちゃった）は非常によく使う表現。",
+  "etymology": "equívoco（あいまいな、誤った）から派生した再帰動詞。",
+  "synonyms": [],
+  "derived": [
+   "equívoco（誤解）"
+  ],
+  "dialogue": {
+   "es": "— Me equivoqué de número.\n— No te preocupes, me pasa seguido.",
+   "ja": "「番号を間違えちゃった」「気にしないで、私もよくあることだから」"
+  }
+ },
+ "deducir": {
+  "nuance": "「推理する」の基本語。証拠や情報から論理的に結論を導くときに使う。「（金額を）差し引く」という意味にもなる。",
+  "etymology": "ラテン語deducere（下に導く）に由来。",
+  "synonyms": [],
+  "derived": [
+   "deducción（推理、控除）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cómo dedujiste eso?\n— Fue fácil, había varias pistas.",
+   "ja": "「どうやってそれを推理したの？」「簡単だったよ、いくつか手がかりがあったんだ」"
   }
  }
 };
