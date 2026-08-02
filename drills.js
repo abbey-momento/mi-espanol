@@ -4811,6 +4811,528 @@ const EXAMPLES = [
   "label": "hay / estar",
   "topic": "reglas_menores",
   "note": "特定の（話題の）ものの状態にはestar。"
+ },
+ {
+  "before": "Quiero que tú ",
+  "answer": "vengas",
+  "after": " a mi fiesta.",
+  "ja": "君が私のパーティーに来てほしい。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "querer queは接続法を要求する典型的なトリガー。venirの接続法tú形。"
+ },
+ {
+  "before": "Es importante que nosotros ",
+  "answer": "lleguemos",
+  "after": " a tiempo.",
+  "ja": "私たちが時間通りに着くことが重要だ。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "es importante queは価値判断のトリガー。llegarのnosotros形（g→gu）。"
+ },
+ {
+  "before": "Dudo que él ",
+  "answer": "sepa",
+  "after": " la respuesta.",
+  "ja": "彼がその答えを知っているとは思えない。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "dudar queは疑いを表すトリガー。saberの不規則接続法。"
+ },
+ {
+  "before": "Ojalá que ",
+  "answer": "haga",
+  "after": " buen tiempo mañana.",
+  "ja": "明日いい天気になりますように。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "ojaláは願望を表す代表的なトリガー。hacer（天気）の不規則接続法。"
+ },
+ {
+  "before": "Espero que ustedes ",
+  "answer": "disfruten",
+  "after": " del viaje.",
+  "ja": "皆さんが旅行を楽しんでくれるといいな。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "esperar queは願望のトリガー。disfrutarのustedes形。"
+ },
+ {
+  "before": "Me alegro de que tú ",
+  "answer": "estés",
+  "after": " aquí.",
+  "ja": "君がここにいてくれて嬉しい。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "alegrarse deは感情のトリガー。estarの不規則接続法（アクセント注意）。"
+ },
+ {
+  "before": "No creo que ella ",
+  "answer": "pueda",
+  "after": " terminar hoy.",
+  "ja": "彼女が今日終わらせられるとは思わない。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "no creer queは否定的な疑いのトリガー。poderの不規則接続法。"
+ },
+ {
+  "before": "Te aconsejo que ",
+  "answer": "duermas",
+  "after": " más.",
+  "ja": "もっと眠ることを勧めるよ。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "aconsejar queは助言のトリガー。dormirの語根母音変化（o→ue）。"
+ },
+ {
+  "before": "Es necesario que todos ",
+  "answer": "participen",
+  "after": ".",
+  "ja": "全員が参加することが必要だ。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "es necesario queは必要性のトリガー。participarのellos/ustedes形。"
+ },
+ {
+  "before": "Cuando ",
+  "answer": "tengas",
+  "after": " tiempo, llámame.",
+  "ja": "時間ができたら、電話して。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "cuandoが未来の出来事を指すときは接続法を使う。tenerの不規則接続法。"
+ },
+ {
+  "before": "Para que tú ",
+  "answer": "entiendas",
+  "after": ", te lo explico de nuevo.",
+  "ja": "君が理解できるように、もう一度説明するね。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "para queは目的のトリガー。entenderの語根母音変化（e→ie）。"
+ },
+ {
+  "before": "No voy a salir sin que ",
+  "answer": "deje",
+  "after": " de llover.",
+  "ja": "雨がやむまで（やまないうちに）外出しないよ。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "sin queは「〜しないうちに」を表すトリガー。dejarの規則接続法。"
+ },
+ {
+  "before": "Es posible que ellos ya ",
+  "answer": "sepan",
+  "after": " la noticia.",
+  "ja": "彼らはもうその知らせを知っているかもしれない。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "es posible queは可能性のトリガー。saberの不規則接続法。"
+ },
+ {
+  "before": "Recomiendo que ",
+  "answer": "leas",
+  "after": " este libro.",
+  "ja": "この本を読むことをお勧めするよ。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "recomendar queは推薦のトリガー。leerの規則接続法。"
+ },
+ {
+  "before": "No pienso que eso ",
+  "answer": "sea",
+  "after": " verdad.",
+  "ja": "それが本当だとは思わない。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "no pensar queは否定的な疑いのトリガー。serの不規則接続法。"
+ },
+ {
+  "before": "Ojalá ",
+  "answer": "pueda",
+  "after": " verte pronto.",
+  "ja": "すぐに君に会えるといいな。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "ojaláの後は接続法。poderの不規則接続法（yo形）。"
+ },
+ {
+  "before": "Quiero que ustedes ",
+  "answer": "sean",
+  "after": " felices.",
+  "ja": "皆さんが幸せでありますように。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "querer queのトリガー。serの不規則接続法。"
+ },
+ {
+  "before": "Es una lástima que no ",
+  "answer": "vengas",
+  "after": " tú.",
+  "ja": "君が来ないなんて残念だ。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "es una lástima queは感情・評価のトリガー。venirの不規則接続法。"
+ },
+ {
+  "before": "Dudamos que él ",
+  "answer": "diga",
+  "after": " la verdad.",
+  "ja": "彼が本当のことを言っているとは思えない。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "dudar queのトリガー。decirの不規則接続法。"
+ },
+ {
+  "before": "Antes de que tú ",
+  "answer": "te vayas",
+  "after": ", hablemos un momento.",
+  "ja": "君が行ってしまう前に、少し話そう。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "antes de queは時間的トリガー。irseの再帰接続法tú形。"
+ },
+ {
+  "before": "¡",
+  "answer": "Habla",
+  "after": " con más claridad, no te entiendo bien.",
+  "ja": "もっとはっきり話して、よく聞こえないよ。",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "tú肯定命令、規則動詞はpresente直説法のél/ella形と同じ。"
+ },
+ {
+  "before": "¡No ",
+  "answer": "hables",
+  "after": " tan rápido!",
+  "ja": "そんなに早く話さないで！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "tú否定命令は接続法の形を使う。"
+ },
+ {
+  "before": "¡",
+  "answer": "Ven",
+  "after": " aquí ahora mismo!",
+  "ja": "今すぐこっちに来て！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "venirのtú肯定命令は不規則形ven。"
+ },
+ {
+  "before": "¡",
+  "answer": "Pon",
+  "after": " la mesa, por favor!",
+  "ja": "テーブルの準備をして！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "ponerのtú肯定命令は不規則形pon。"
+ },
+ {
+  "before": "¡",
+  "answer": "Ten",
+  "after": " cuidado!",
+  "ja": "気をつけて！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "tenerのtú肯定命令は不規則形ten。"
+ },
+ {
+  "before": "¡",
+  "answer": "Haz",
+  "after": " la tarea antes de salir!",
+  "ja": "出かける前に宿題をやりなさい！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "hacerのtú肯定命令は不規則形haz。"
+ },
+ {
+  "before": "¡",
+  "answer": "Di",
+  "after": " la verdad!",
+  "ja": "本当のことを言って！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "decirのtú肯定命令は不規則形di。"
+ },
+ {
+  "before": "¡",
+  "answer": "Sé",
+  "after": " bueno con tu hermana!",
+  "ja": "妹に優しくしてね！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "serのtú肯定命令は不規則形sé（アクセントに注意、seと区別）。"
+ },
+ {
+  "before": "¡",
+  "answer": "Ve",
+  "after": " a tu cuarto ahora!",
+  "ja": "今すぐ自分の部屋に行きなさい！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "irのtú肯定命令は不規則形ve。"
+ },
+ {
+  "before": "¡",
+  "answer": "Hable",
+  "after": " más alto, por favor!",
+  "ja": "もっと大きな声で話してください！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "usted命令は接続法の形を使う。"
+ },
+ {
+  "before": "¡No ",
+  "answer": "lleguen",
+  "after": " tarde, por favor!",
+  "ja": "遅れないでくださいね！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "ustedes否定命令は接続法の形を使う。"
+ },
+ {
+  "before": "¡",
+  "answer": "Pasen",
+  "after": " todos, por favor!",
+  "ja": "皆さん、どうぞお入りください！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "ustedes肯定命令は接続法の形と同じ。"
+ },
+ {
+  "before": "¡",
+  "answer": "Siéntense",
+  "after": " aquí, hay lugar para todos!",
+  "ja": "ここに座ってください、みんなの席がありますよ！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "再帰動詞の肯定命令は代名詞が語尾につく（sienten+se→siéntense、アクセント注意）。"
+ },
+ {
+  "before": "¡",
+  "answer": "Dámelo",
+  "after": " ahora!",
+  "ja": "今それを私にちょうだい！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "肯定命令に目的代名詞2つ（me+lo）がつくと語尾に結合し、アクセントが必要になる（da→dámelo）。"
+ },
+ {
+  "before": "¡No me lo ",
+  "answer": "digas",
+  "after": "!",
+  "ja": "それを私に言わないで！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "否定命令では代名詞は動詞の前に置く（肯定命令とは逆）。"
+ },
+ {
+  "before": "¡",
+  "answer": "Cállate",
+  "after": ", por favor!",
+  "ja": "お願いだから黙って！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "callarseのtú肯定命令、再帰代名詞teが語尾につきアクセントが必要（calla→cállate）。"
+ },
+ {
+  "before": "¡",
+  "answer": "Levántense",
+  "after": " temprano mañana!",
+  "ja": "明日は早く起きてね！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "levantarseのustedes肯定命令、seが語尾につきアクセントが必要。"
+ },
+ {
+  "before": "¡No te ",
+  "answer": "preocupes",
+  "after": " por eso!",
+  "ja": "それについて心配しないで！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "再帰動詞の否定命令は代名詞が動詞の前に来る。"
+ },
+ {
+  "before": "¡",
+  "answer": "Escúchame",
+  "after": " un momento!",
+  "ja": "少し私の話を聞いて！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "escucharのtú肯定命令、meが語尾につきアクセントが必要（escucha→escúchame）。"
+ },
+ {
+  "before": "¡No lo ",
+  "answer": "hagas",
+  "after": " sin avisarme!",
+  "ja": "私に知らせずにそれをやらないで！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "hacerのtú否定命令は接続法の形hagasを使う。"
+ },
+ {
+  "before": "Si llueve, no ",
+  "answer": "salgo",
+  "after": " hoy.",
+  "ja": "雨が降ったら、今日は外出しない。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "現実的な条件：si+現在形、結果も現在形。"
+ },
+ {
+  "before": "Si tienes hambre, ",
+  "answer": "hay",
+  "after": " comida en la cocina.",
+  "ja": "お腹が空いたら、台所に食べ物があるよ。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "現実的な条件文でのhayの使用。"
+ },
+ {
+  "before": "Si ",
+  "answer": "tengo",
+  "after": " tiempo mañana, te llamo.",
+  "ja": "明日時間があったら、電話するね。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "現実的な条件：si+現在形。"
+ },
+ {
+  "before": "Si fuera rico, ",
+  "answer": "viajaría",
+  "after": " por todo el mundo.",
+  "ja": "もしお金持ちだったら、世界中を旅行するだろう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "非現実的な仮定：si+接続法過去、結果は条件法。"
+ },
+ {
+  "before": "Si yo ",
+  "answer": "fuera",
+  "after": " tú, no lo haría así.",
+  "ja": "もし私が君だったら、そんな風にはやらないだろう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "非現実的な仮定：serの接続法過去fuera。"
+ },
+ {
+  "before": "Si supiera la respuesta, te la ",
+  "answer": "diría",
+  "after": ".",
+  "ja": "もし答えを知っていたら、君に教えるのに。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "非現実的な仮定の結果節：decirの条件法。"
+ },
+ {
+  "before": "Si tuviéramos más dinero, ",
+  "answer": "compraríamos",
+  "after": " una casa más grande.",
+  "ja": "もっとお金があったら、もっと大きな家を買うだろう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "非現実的な仮定：条件法のnosotros形。"
+ },
+ {
+  "before": "Si ella ",
+  "answer": "estudiara",
+  "after": " más, aprobaría el examen.",
+  "ja": "彼女がもっと勉強すれば、試験に合格するだろう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "非現実的な仮定：estudiarの接続法過去。"
+ },
+ {
+  "before": "Si pudieras viajar a cualquier lugar, ¿adónde ",
+  "answer": "irías",
+  "after": "?",
+  "ja": "どこへでも旅行できるとしたら、どこに行く？",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "非現実的な仮定の疑問文：irの条件法。"
+ },
+ {
+  "before": "Si hace buen tiempo el sábado, ",
+  "answer": "vamos",
+  "after": " a la playa.",
+  "ja": "土曜日にいい天気なら、ビーチに行こう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "現実的な条件：結果節に現在形（近接未来的に）を使うのも自然。"
+ },
+ {
+  "before": "Si no llueve mañana, ",
+  "answer": "haremos",
+  "after": " un picnic.",
+  "ja": "明日雨が降らなければ、ピクニックをするつもりだ。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "現実的な条件：結果節に未来形。"
+ },
+ {
+  "before": "Si ",
+  "answer": "ganara",
+  "after": " la lotería, dejaría mi trabajo.",
+  "ja": "もし宝くじに当たったら、仕事を辞めるだろう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "非現実的な仮定：ganarの接続法過去。"
+ },
+ {
+  "before": "Si necesitas ayuda, ",
+  "answer": "llama",
+  "after": " a este número.",
+  "ja": "助けが必要なら、この番号に電話して。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "現実的な条件の結果節に命令形もよく使われる。"
+ },
+ {
+  "before": "Si tuviera más experiencia, me ",
+  "answer": "contratarían",
+  "after": " para ese puesto.",
+  "ja": "もっと経験があったら、その職に採用してもらえるだろう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "非現実的な仮定の結果節：条件法。"
+ },
+ {
+  "before": "Si estudias todos los días, ",
+  "answer": "mejorarás",
+  "after": " mucho.",
+  "ja": "毎日勉強すれば、すごく上達するよ。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "現実的な条件：結果節に未来形。"
+ },
+ {
+  "before": "Si yo hubiera sabido eso, no ",
+  "answer": "habría venido",
+  "after": ".",
+  "ja": "もしそれを知っていたら、来なかっただろう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "過去の非現実（もう変えられない過去）：条件法完了。"
+ },
+ {
+  "before": "Si no hubieras llegado tarde, no ",
+  "answer": "habrías perdido",
+  "after": " el tren.",
+  "ja": "もし遅刻していなければ、電車に乗り遅れなかっただろう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "過去の非現実の結果節：条件法完了。"
+ },
+ {
+  "before": "Si consigo el trabajo, me ",
+  "answer": "mudaré",
+  "after": " a otra ciudad.",
+  "ja": "その仕事に就けたら、別の街に引っ越すつもりだ。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "現実的な条件：結果節に未来形（再帰動詞）。"
  }
 ];
 

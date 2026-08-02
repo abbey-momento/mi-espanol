@@ -887,6 +887,9 @@ const TOPIC_TO_GRAMMAR = {
   todo_toda: "todo/toda/todos/todasの使い方",
   interrogativos: "疑問詞の使い分け（qué / cuál / quién など）",
   preterito_imperfecto: "点過去 vs 線過去：使い分けの実践",
+  subjuntivo: "接続法を使うべき場面（トリガー）",
+  imperativo: "命令形の使い方（肯定・否定・代名詞の位置）",
+  condicional_si: "条件文（si〜）の3つのパターン",
 };
 function grammarTitleForItem(ex, topic){
   if(topic==="preposicion" && ex.label==="por / para") return "por と para の使い分け";
@@ -1348,6 +1351,9 @@ const DRILL_MENU = [
   { key:"examples-tiempo_exp", icon:"⏳", name:"時間経過ドリル", desc:"desde/hace/llevar の練習" },
   { key:"examples-todo_toda", icon:"🌐", name:"todo/todaドリル", desc:"性数一致を練習" },
   { key:"examples-interrogativos", icon:"🙋", name:"疑問詞ドリル", desc:"qué/cuál/quién の使い分け" },
+  { key:"examples-subjuntivo", icon:"🌀", name:"接続法ドリル", desc:"que+接続法のトリガーを見分けて活用する" },
+  { key:"examples-imperativo", icon:"❗", name:"命令形ドリル", desc:"肯定・否定命令、不規則形、代名詞の位置" },
+  { key:"examples-condicional_si", icon:"🔀", name:"si構文ドリル", desc:"現実的・非現実的・過去の仮定を見分ける" },
 ];
 function renderConjTab(){
   if(!state.conjSubTab){
