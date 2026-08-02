@@ -2365,33 +2365,6 @@ const EXAMPLES = [
   "note": "不特定の存在を尋ねるときはhayを使う。"
  },
  {
-  "before": "La leche que compraste ayer ",
-  "answer": "está",
-  "after": " en el refrigerador.",
-  "ja": "昨日買った牛乳は冷蔵庫にある。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "特定のものの場所にはestarを使う。"
- },
- {
-  "before": "",
-  "answer": "Hay",
-  "after": " dos parques en mi colonia.",
-  "ja": "私の住む地区には公園が2つある。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "数を数える不特定のものにはhayを使う。"
- },
- {
-  "before": "Los dos parques de mi colonia ",
-  "answer": "están",
-  "after": " muy cerca uno del otro.",
-  "ja": "私の地区の2つの公園はお互いとても近くにある。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "特定の（前で言及した）ものにはestarを使う、主語が複数ならestán。"
- },
- {
   "before": "¿Dónde ",
   "answer": "está",
   "after": " la estación del metro más cercana?",
@@ -2399,15 +2372,6 @@ const EXAMPLES = [
   "label": "hay / estar",
   "topic": "hay_estar",
   "note": "la（定冠詞）がついた特定のものの場所にはestarを使う。"
- },
- {
-  "before": "",
-  "answer": "Hay",
-  "after": " una estación del metro a dos cuadras de aquí.",
-  "ja": "ここから2ブロック先に地下鉄の駅がある。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "una（不定冠詞）がついた不特定のものにはhayを使う。"
  },
  {
   "before": "La casa ",
@@ -2482,49 +2446,13 @@ const EXAMPLES = [
   "note": "romperの過去分詞rotoは不規則。女性単数主語に一致してrota。"
  },
  {
-  "before": "No tengo ",
-  "answer": "nada",
-  "after": " de dinero.",
-  "ja": "お金が全くない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "「何も〜ない」を表す不変化の否定代名詞。"
- },
- {
-  "before": "No conozco a ",
-  "answer": "nadie",
-  "after": " aquí.",
-  "ja": "ここでは誰も知らない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "「誰も〜ない」を表す不変化の否定代名詞。"
- },
- {
-  "before": "No tengo ",
-  "answer": "ninguna",
-  "after": " idea de qué hacer.",
-  "ja": "何をすべきか全く分からない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "ningunoは名詞の性に一致する。ideaは女性名詞なのでninguna。"
- },
- {
   "before": "",
   "answer": "Nadie",
   "after": " vino a la fiesta.",
   "ja": "誰もパーティーに来なかった。",
   "label": "否定語",
-  "topic": "negacion",
+  "topic": "algo_alguno",
   "note": "文頭に否定語を置くときはnoを省略できる。"
- },
- {
-  "before": "No quiero ",
-  "answer": "ningún",
-  "after": " postre, gracias.",
-  "ja": "デザートは何もいりません、ありがとう。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "ningunoは男性単数名詞の直前でningúnに短縮される。"
  },
  {
   "before": "No he ido ",
@@ -2532,7 +2460,7 @@ const EXAMPLES = [
   "after": " a España.",
   "ja": "スペインには一度も行ったことがない。",
   "label": "否定語",
-  "topic": "negacion",
+  "topic": "algo_alguno",
   "note": "「一度も〜ない」を表す否定副詞。"
  },
  {
@@ -2541,17 +2469,8 @@ const EXAMPLES = [
   "after": " pescado.",
   "ja": "私は肉も魚も食べない。",
   "label": "否定語",
-  "topic": "negacion",
+  "topic": "algo_alguno",
   "note": "「〜も〜ない」を重ねるときのni。"
- },
- {
-  "before": "No tengo tiempo para ",
-  "answer": "nada",
-  "after": " hoy.",
-  "ja": "今日は何をする時間もない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "「何のためにも〜ない」を表すnada。"
  },
  {
   "before": "Estoy ",
@@ -3463,15 +3382,6 @@ const EXAMPLES = [
   "note": "不特定の量を表すのでhayを使う。"
  },
  {
-  "before": "El tráfico ",
-  "answer": "está",
-  "after": " peor los lunes.",
-  "ja": "月曜日は交通状況がより悪い。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "特定の（すでに話題の）交通状況の様子にはestarを使う。"
- },
- {
   "before": "¿",
   "answer": "Hay",
   "after": " algo de comer en la cocina?",
@@ -3479,33 +3389,6 @@ const EXAMPLES = [
   "label": "hay / estar",
   "topic": "hay_estar",
   "note": "不特定のものを尋ねるときはhayを使う。"
- },
- {
-  "before": "La comida que sobró ",
-  "answer": "está",
-  "after": " en el refrigerador.",
-  "ja": "残った食べ物は冷蔵庫にある。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "特定のものの場所にはestarを使う。"
- },
- {
-  "before": "",
-  "answer": "Hay",
-  "after": " varias opciones para elegir.",
-  "ja": "選べる選択肢がいくつかある。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "不特定の複数のものにはhayを使う。"
- },
- {
-  "before": "Las opciones que mencionaste ",
-  "answer": "están",
-  "after": " en la lista.",
-  "ja": "君が言った選択肢はリストに載っている。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "特定の（すでに言及した）ものにはestarを使う。"
  },
  {
   "before": "¿Dónde ",
@@ -3598,58 +3481,13 @@ const EXAMPLES = [
   "note": "主語tres idiomas（複数）に一致してse hablan。"
  },
  {
-  "before": "No hay ",
-  "answer": "ninguna",
-  "after": " manera de solucionar esto.",
-  "ja": "これを解決する方法は一つもない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "maneraは女性名詞なのでninguna。"
- },
- {
   "before": "",
   "answer": "Ninguno",
   "after": " de mis amigos vino a la fiesta.",
   "ja": "私の友達の誰一人としてパーティーに来なかった。",
   "label": "否定語",
-  "topic": "negacion",
+  "topic": "algo_alguno",
   "note": "「誰も〜ない（〜のうち）」を表すninguno。"
- },
- {
-  "before": "No quiero hablar con ",
-  "answer": "nadie",
-  "after": " ahora mismo.",
-  "ja": "今は誰とも話したくない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "「誰とも〜ない」を表すnadie。"
- },
- {
-  "before": "No he probado ",
-  "answer": "nunca",
-  "after": " ese plato.",
-  "ja": "その料理を一度も食べたことがない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "「一度も〜ない」を表すnunca。"
- },
- {
-  "before": "No tengo ",
-  "answer": "ningún",
-  "after": " interés en ese tema.",
-  "ja": "その話題には全く興味がない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "男性単数名詞interésの前でningúnに短縮。"
- },
- {
-  "before": "No veo a ",
-  "answer": "nadie",
-  "after": " en la calle.",
-  "ja": "通りに誰も見当たらない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "「誰も〜ない」を表すnadie。"
  },
  {
   "before": "Jamás he visto ",
@@ -3657,16 +3495,7 @@ const EXAMPLES = [
   "after": " tan hermoso.",
   "ja": "これほど美しいものを見たことがない。",
   "label": "否定語",
-  "topic": "negacion",
-  "note": "「何も〜ない」を表すnada。"
- },
- {
-  "before": "No me queda ",
-  "answer": "nada",
-  "after": " de dinero.",
-  "ja": "お金が全く残っていない。",
-  "label": "否定語",
-  "topic": "negacion",
+  "topic": "algo_alguno",
   "note": "「何も〜ない」を表すnada。"
  },
  {
@@ -4426,24 +4255,6 @@ const EXAMPLES = [
   "note": "「彼らのもの」という所有代名詞、女性単数名詞culpaに一致してsuya。"
  },
  {
-  "before": "¿",
-  "answer": "Hay",
-  "after": " un baño cerca de aquí?",
-  "ja": "この近くにトイレはありますか？",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "不特定のものの存在を尋ねるときはhayを使う。"
- },
- {
-  "before": "El restaurante que buscas ",
-  "answer": "está",
-  "after": " a la vuelta de la esquina.",
-  "ja": "君が探しているレストランは角を曲がったところにある。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "特定の（すでに話題の）ものの場所にはestarを使う。"
- },
- {
   "before": "",
   "answer": "Hay",
   "after": " poca gente en el cine hoy.",
@@ -4496,42 +4307,6 @@ const EXAMPLES = [
   "label": "受け身",
   "topic": "pasiva",
   "note": "男性単数主語puenteに一致してconstruido。"
- },
- {
-  "before": "No conozco a ",
-  "answer": "nadie",
-  "after": " en esta ciudad.",
-  "ja": "この街には誰も知り合いがいない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "「誰も〜ない」を表すnadie。"
- },
- {
-  "before": "No hay ",
-  "answer": "ninguna",
-  "after": " excusa para llegar tan tarde.",
-  "ja": "こんなに遅く来る言い訳はない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "excusaは女性名詞なのでninguna。"
- },
- {
-  "before": "No he estado ",
-  "answer": "nunca",
-  "after": " tan cansado.",
-  "ja": "こんなに疲れたことは一度もない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "「一度も〜ない」を表すnunca。"
- },
- {
-  "before": "No tengo ",
-  "answer": "ninguna",
-  "after": " queja sobre el servicio.",
-  "ja": "サービスについて何の不満もない。",
-  "label": "否定語",
-  "topic": "negacion",
-  "note": "quejaは女性名詞なのでninguna。"
  },
  {
   "before": "Trabajamos ",
