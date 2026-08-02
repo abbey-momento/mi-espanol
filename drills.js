@@ -2338,42 +2338,6 @@ const EXAMPLES = [
   "note": "「君の」は単数名詞の前でtu。"
  },
  {
-  "before": "",
-  "answer": "Hay",
-  "after": " un restaurante muy bueno cerca de aquí.",
-  "ja": "この近くにとても良いレストランがある。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "初出の不特定のものにはhayを使う。"
- },
- {
-  "before": "El restaurante que mencioné ",
-  "answer": "está",
-  "after": " en la esquina.",
-  "ja": "私が言ったレストランは角にある。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "すでに話題に出た特定のものの場所にはestarを使う。"
- },
- {
-  "before": "¿",
-  "answer": "Hay",
-  "after": " leche en el refrigerador?",
-  "ja": "冷蔵庫に牛乳ある？",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "不特定の存在を尋ねるときはhayを使う。"
- },
- {
-  "before": "¿Dónde ",
-  "answer": "está",
-  "after": " la estación del metro más cercana?",
-  "ja": "一番近い地下鉄の駅はどこですか？",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "la（定冠詞）がついた特定のものの場所にはestarを使う。"
- },
- {
   "before": "La casa ",
   "answer": "fue pintada",
   "after": " el año pasado.",
@@ -3373,42 +3337,6 @@ const EXAMPLES = [
   "note": "「彼のもの」という所有代名詞、女性単数名詞mochilaに一致してsuya。"
  },
  {
-  "before": "",
-  "answer": "Hay",
-  "after": " mucho tráfico a esta hora.",
-  "ja": "この時間は交通量がとても多い。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "不特定の量を表すのでhayを使う。"
- },
- {
-  "before": "¿",
-  "answer": "Hay",
-  "after": " algo de comer en la cocina?",
-  "ja": "台所に何か食べるものある？",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "不特定のものを尋ねるときはhayを使う。"
- },
- {
-  "before": "¿Dónde ",
-  "answer": "están",
-  "after": " los baños?",
-  "ja": "トイレはどこですか？",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "los（定冠詞）がついた特定のものの場所にはestarを使う。"
- },
- {
-  "before": "",
-  "answer": "Hay",
-  "after": " dos baños en este piso.",
-  "ja": "この階には2つのトイレがある。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "不特定の数を数えるときはhayを使う。"
- },
- {
   "before": "El contrato ",
   "answer": "fue firmado",
   "after": " por ambas partes.",
@@ -4255,24 +4183,6 @@ const EXAMPLES = [
   "note": "「彼らのもの」という所有代名詞、女性単数名詞culpaに一致してsuya。"
  },
  {
-  "before": "",
-  "answer": "Hay",
-  "after": " poca gente en el cine hoy.",
-  "ja": "今日は映画館に人が少ない。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "不特定の量を表すのでhayを使う。"
- },
- {
-  "before": "Los boletos ",
-  "answer": "están",
-  "after": " agotados.",
-  "ja": "チケットは売り切れている。",
-  "label": "hay / estar",
-  "topic": "hay_estar",
-  "note": "特定の（話題の）チケットの状態にはestarを使う。"
- },
- {
   "before": "Este edificio ",
   "answer": "fue diseñado",
   "after": " por un arquitecto famoso.",
@@ -4596,28 +4506,312 @@ const EXAMPLES = [
   "ja": "去年、私たちは新しい家を買った。",
   "topic": "preterito_imperfecto"
  },
- { "before":"El cuadro está colgado ", "answer":"sobre", "after":" la chimenea.", "ja":"絵は暖炉の上に掛かっている。", "label":"前置詞", "topic":"preposicion", "note":"「〜の上に」を表すsobre。" },
- { "before":"El gato duerme ", "answer":"bajo", "after":" la mesa.", "ja":"猫はテーブルの下で寝ている。", "label":"前置詞", "topic":"preposicion", "note":"「〜の下に」を表すbajo（debajo deとほぼ同義、よりフォーマル）。" },
- { "before":"La farmacia está ", "answer":"entre", "after":" el banco y la panadería.", "ja":"薬局は銀行とパン屋の間にある。", "label":"前置詞", "topic":"preposicion", "note":"「〜の間に」を表すentre。" },
- { "before":"Caminamos ", "answer":"desde", "after":" el hotel hasta la playa.", "ja":"ホテルからビーチまで歩いた。", "label":"前置詞", "topic":"preposicion", "note":"起点を表すdesde。" },
- { "before":"Voy a estudiar ", "answer":"hasta", "after":" muy tarde hoy.", "ja":"今日はとても遅くまで勉強するつもりだ。", "label":"前置詞", "topic":"preposicion", "note":"終点を表すhasta。" },
- { "before":"El avión vuela ", "answer":"hacia", "after":" el norte.", "ja":"飛行機は北へ向かって飛んでいる。", "label":"前置詞", "topic":"preposicion", "note":"方向を表すhacia。" },
- { "before":"Estudié español ", "answer":"durante", "after":" tres años.", "ja":"3年間スペイン語を勉強した。", "label":"前置詞", "topic":"preposicion", "note":"期間を表すdurante。" },
- { "before":"Jugamos ", "answer":"contra", "after":" el mejor equipo de la liga.", "ja":"リーグ最強のチームと対戦した。", "label":"前置詞", "topic":"preposicion", "note":"「〜に対して、〜と対戦して」を表すcontra。" },
- { "before":"El abogado habló ", "answer":"ante", "after":" el juez.", "ja":"弁護士は裁判官の前で話した。", "label":"前置詞", "topic":"preposicion", "note":"「〜の面前で」を表すante（delante deよりフォーマル）。" },
- { "before":"No puedo vivir ", "answer":"sin", "after":" mi teléfono.", "ja":"携帯なしでは生きていけない。", "label":"前置詞", "topic":"preposicion", "note":"「〜なしで」を表すsin。" },
- { "before":"Prefiero el café ", "answer":"con", "after":" leche.", "ja":"ミルク入りのコーヒーの方が好きだ。", "label":"前置詞", "topic":"preposicion", "note":"「〜と一緒に」を表すcon。" },
- { "before":"El regalo es ", "answer":"para", "after":" mi mamá.", "ja":"このプレゼントは私の母のためのものだ。", "label":"前置詞", "topic":"preposicion", "note":"受取人を表すpara。" },
- { "before":"Nos vemos ", "answer":"entre", "after":" semana, no el fin de semana.", "ja":"週末じゃなくて平日に会おうね。", "label":"前置詞", "topic":"preposicion", "note":"entre semana（平日に）は決まった表現。" },
- { "before":"El tesoro está enterrado ", "answer":"bajo", "after":" tierra.", "ja":"宝物は地下に埋まっている。", "label":"前置詞", "topic":"preposicion", "note":"bajo tierra（地下に）は決まった表現。" },
- { "before":"La reunión es ", "answer":"desde", "after":" las tres hasta las cinco.", "ja":"会議は3時から5時までだ。", "label":"前置詞", "topic":"preposicion", "note":"desde...hasta...（〜から〜まで）の組み合わせ。" },
- { "before":"Trabajamos ", "answer":"durante", "after":" toda la noche.", "ja":"一晩中働いた。", "label":"前置詞", "topic":"preposicion", "note":"期間を表すdurante。" },
- { "before":"El barco navega ", "answer":"hacia", "after":" la isla.", "ja":"船は島へ向かって航行している。", "label":"前置詞", "topic":"preposicion", "note":"方向を表すhacia。" },
- { "before":"No hay nada ", "answer":"sobre", "after":" la mesa.", "ja":"テーブルの上には何もない。", "label":"前置詞", "topic":"preposicion", "note":"「〜の上に」を表すsobre。" },
- { "before":"El equipo luchó ", "answer":"contra", "after":" viento y marea.", "ja":"チームはあらゆる困難に立ち向かった。", "label":"前置詞", "topic":"preposicion", "note":"contra viento y marea（あらゆる困難に逆らって）は決まった表現。" },
- { "before":"Firmó el documento ", "answer":"ante", "after":" un notario.", "ja":"公証人の前で書類に署名した。", "label":"前置詞", "topic":"preposicion", "note":"「〜の面前で」を表すante。" },
- { "before":"Puedes venir ", "answer":"con", "after":" tu familia.", "ja":"家族と一緒に来ていいよ。", "label":"前置詞", "topic":"preposicion", "note":"「〜と一緒に」を表すcon。" },
- { "before":"El parque está ", "answer":"entre", "after":" mi casa y la escuela.", "ja":"公園は私の家と学校の間にある。", "label":"前置詞", "topic":"preposicion", "note":"「〜の間に」を表すentre。" }
+ {
+  "before": "El cuadro está colgado ",
+  "answer": "sobre",
+  "after": " la chimenea.",
+  "ja": "絵は暖炉の上に掛かっている。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "「〜の上に」を表すsobre。"
+ },
+ {
+  "before": "El gato duerme ",
+  "answer": "bajo",
+  "after": " la mesa.",
+  "ja": "猫はテーブルの下で寝ている。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "「〜の下に」を表すbajo（debajo deとほぼ同義、よりフォーマル）。"
+ },
+ {
+  "before": "La farmacia está ",
+  "answer": "entre",
+  "after": " el banco y la panadería.",
+  "ja": "薬局は銀行とパン屋の間にある。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "「〜の間に」を表すentre。"
+ },
+ {
+  "before": "Jugamos ",
+  "answer": "contra",
+  "after": " el mejor equipo de la liga.",
+  "ja": "リーグ最強のチームと対戦した。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "「〜に対して、〜と対戦して」を表すcontra。"
+ },
+ {
+  "before": "El abogado habló ",
+  "answer": "ante",
+  "after": " el juez.",
+  "ja": "弁護士は裁判官の前で話した。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "「〜の面前で」を表すante（delante deよりフォーマル）。"
+ },
+ {
+  "before": "No puedo vivir ",
+  "answer": "sin",
+  "after": " mi teléfono.",
+  "ja": "携帯なしでは生きていけない。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "「〜なしで」を表すsin。"
+ },
+ {
+  "before": "Prefiero el café ",
+  "answer": "con",
+  "after": " leche.",
+  "ja": "ミルク入りのコーヒーの方が好きだ。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "「〜と一緒に」を表すcon。"
+ },
+ {
+  "before": "El regalo es ",
+  "answer": "para",
+  "after": " mi mamá.",
+  "ja": "このプレゼントは私の母のためのものだ。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "受取人を表すpara。"
+ },
+ {
+  "before": "Nos vemos ",
+  "answer": "entre",
+  "after": " semana, no el fin de semana.",
+  "ja": "週末じゃなくて平日に会おうね。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "entre semana（平日に）は決まった表現。"
+ },
+ {
+  "before": "El tesoro está enterrado ",
+  "answer": "bajo",
+  "after": " tierra.",
+  "ja": "宝物は地下に埋まっている。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "bajo tierra（地下に）は決まった表現。"
+ },
+ {
+  "before": "La reunión es ",
+  "answer": "desde",
+  "after": " las tres hasta las cinco.",
+  "ja": "会議は3時から5時までだ。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "desde...hasta...（〜から〜まで）の組み合わせ。"
+ },
+ {
+  "before": "Trabajamos ",
+  "answer": "durante",
+  "after": " toda la noche.",
+  "ja": "一晩中働いた。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "期間を表すdurante。"
+ },
+ {
+  "before": "El barco navega ",
+  "answer": "hacia",
+  "after": " la isla.",
+  "ja": "船は島へ向かって航行している。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "方向を表すhacia。"
+ },
+ {
+  "before": "No hay nada ",
+  "answer": "sobre",
+  "after": " la mesa.",
+  "ja": "テーブルの上には何もない。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "「〜の上に」を表すsobre。"
+ },
+ {
+  "before": "El equipo luchó ",
+  "answer": "contra",
+  "after": " viento y marea.",
+  "ja": "チームはあらゆる困難に立ち向かった。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "contra viento y marea（あらゆる困難に逆らって）は決まった表現。"
+ },
+ {
+  "before": "Firmó el documento ",
+  "answer": "ante",
+  "after": " un notario.",
+  "ja": "公証人の前で書類に署名した。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "「〜の面前で」を表すante。"
+ },
+ {
+  "before": "Puedes venir ",
+  "answer": "con",
+  "after": " tu familia.",
+  "ja": "家族と一緒に来ていいよ。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "「〜と一緒に」を表すcon。"
+ },
+ {
+  "before": "El parque está ",
+  "answer": "entre",
+  "after": " mi casa y la escuela.",
+  "ja": "公園は私の家と学校の間にある。",
+  "label": "前置詞",
+  "topic": "preposicion",
+  "note": "「〜の間に」を表すentre。"
+ },
+ {
+  "before": "",
+  "answer": "Hay",
+  "after": " dos parques en mi colonia.",
+  "ja": "私の地区には2つの公園がある。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "不特定の数の存在を表すhay。"
+ },
+ {
+  "before": "Los dos parques de mi colonia ",
+  "answer": "están",
+  "after": " muy cerca uno del otro.",
+  "ja": "私の地区の2つの公園はお互いにとても近い。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "特定の（話題の）ものの位置関係にはestar。"
+ },
+ {
+  "before": "La leche que compraste ayer ",
+  "answer": "está",
+  "after": " en el refrigerador.",
+  "ja": "昨日買った牛乳は冷蔵庫にある。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "特定のものの場所にはestar。"
+ },
+ {
+  "before": "",
+  "answer": "Hay",
+  "after": " una estación del metro a dos cuadras de aquí.",
+  "ja": "ここから2ブロックのところに地下鉄の駅がある。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "不特定の存在を表すhay。"
+ },
+ {
+  "before": "El tráfico ",
+  "answer": "está",
+  "after": " peor los lunes.",
+  "ja": "交通は月曜日にもっとひどい。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "特定の（話題の）ものの状態にはestar。"
+ },
+ {
+  "before": "La comida que sobró ",
+  "answer": "está",
+  "after": " en el refrigerador.",
+  "ja": "残った食べ物は冷蔵庫にある。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "特定のものの場所にはestar。"
+ },
+ {
+  "before": "",
+  "answer": "Hay",
+  "after": " varias opciones para elegir.",
+  "ja": "選べる選択肢がいくつかある。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "不特定の存在を表すhay。"
+ },
+ {
+  "before": "Las opciones que mencionaste ",
+  "answer": "están",
+  "after": " en la lista.",
+  "ja": "君が言った選択肢はリストにある。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "特定のものの場所にはestar。"
+ },
+ {
+  "before": "¿",
+  "answer": "Hay",
+  "after": " un baño cerca de aquí?",
+  "ja": "この近くにトイレはありますか？",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "不特定のものの存在を尋ねるhay。"
+ },
+ {
+  "before": "El restaurante que buscas ",
+  "answer": "está",
+  "after": " a la vuelta de la esquina.",
+  "ja": "君が探しているレストランは角を曲がったところにある。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "特定のものの場所にはestar。"
+ },
+ {
+  "before": "",
+  "answer": "Hay",
+  "after": " un supermercado nuevo en el centro.",
+  "ja": "中心街に新しいスーパーがある。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "不特定の存在を表すhay。"
+ },
+ {
+  "before": "El supermercado nuevo ",
+  "answer": "está",
+  "after": " cerca de mi trabajo.",
+  "ja": "その新しいスーパーは私の職場の近くにある。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "特定のものの場所にはestar。"
+ },
+ {
+  "before": "¿Cuántas personas ",
+  "answer": "hay",
+  "after": " en la sala?",
+  "ja": "部屋に何人いますか？",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "不特定の人数を尋ねるhay。"
+ },
+ {
+  "before": "Mis llaves no ",
+  "answer": "están",
+  "after": " donde las dejé.",
+  "ja": "私の鍵が置いた場所にない。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "特定のものの場所にはestar。"
+ },
+ {
+  "before": "",
+  "answer": "Hay",
+  "after": " un problema con el sistema.",
+  "ja": "システムに問題がある。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "不特定の存在を表すhay。"
+ },
+ {
+  "before": "El problema ",
+  "answer": "está",
+  "after": " resuelto ya.",
+  "ja": "その問題はもう解決している。",
+  "label": "hay / estar",
+  "topic": "reglas_menores",
+  "note": "特定の（話題の）ものの状態にはestar。"
+ }
 ];
 
 /* ---------- Listening / dictation items (2 blanks per sentence, ~100-140 chars) ---------- */
