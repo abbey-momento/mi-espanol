@@ -4595,7 +4595,29 @@ const EXAMPLES = [
   "after": " una casa nueva.",
   "ja": "去年、私たちは新しい家を買った。",
   "topic": "preterito_imperfecto"
- }
+ },
+ { "before":"El cuadro está colgado ", "answer":"sobre", "after":" la chimenea.", "ja":"絵は暖炉の上に掛かっている。", "label":"前置詞", "topic":"preposicion", "note":"「〜の上に」を表すsobre。" },
+ { "before":"El gato duerme ", "answer":"bajo", "after":" la mesa.", "ja":"猫はテーブルの下で寝ている。", "label":"前置詞", "topic":"preposicion", "note":"「〜の下に」を表すbajo（debajo deとほぼ同義、よりフォーマル）。" },
+ { "before":"La farmacia está ", "answer":"entre", "after":" el banco y la panadería.", "ja":"薬局は銀行とパン屋の間にある。", "label":"前置詞", "topic":"preposicion", "note":"「〜の間に」を表すentre。" },
+ { "before":"Caminamos ", "answer":"desde", "after":" el hotel hasta la playa.", "ja":"ホテルからビーチまで歩いた。", "label":"前置詞", "topic":"preposicion", "note":"起点を表すdesde。" },
+ { "before":"Voy a estudiar ", "answer":"hasta", "after":" muy tarde hoy.", "ja":"今日はとても遅くまで勉強するつもりだ。", "label":"前置詞", "topic":"preposicion", "note":"終点を表すhasta。" },
+ { "before":"El avión vuela ", "answer":"hacia", "after":" el norte.", "ja":"飛行機は北へ向かって飛んでいる。", "label":"前置詞", "topic":"preposicion", "note":"方向を表すhacia。" },
+ { "before":"Estudié español ", "answer":"durante", "after":" tres años.", "ja":"3年間スペイン語を勉強した。", "label":"前置詞", "topic":"preposicion", "note":"期間を表すdurante。" },
+ { "before":"Jugamos ", "answer":"contra", "after":" el mejor equipo de la liga.", "ja":"リーグ最強のチームと対戦した。", "label":"前置詞", "topic":"preposicion", "note":"「〜に対して、〜と対戦して」を表すcontra。" },
+ { "before":"El abogado habló ", "answer":"ante", "after":" el juez.", "ja":"弁護士は裁判官の前で話した。", "label":"前置詞", "topic":"preposicion", "note":"「〜の面前で」を表すante（delante deよりフォーマル）。" },
+ { "before":"No puedo vivir ", "answer":"sin", "after":" mi teléfono.", "ja":"携帯なしでは生きていけない。", "label":"前置詞", "topic":"preposicion", "note":"「〜なしで」を表すsin。" },
+ { "before":"Prefiero el café ", "answer":"con", "after":" leche.", "ja":"ミルク入りのコーヒーの方が好きだ。", "label":"前置詞", "topic":"preposicion", "note":"「〜と一緒に」を表すcon。" },
+ { "before":"El regalo es ", "answer":"para", "after":" mi mamá.", "ja":"このプレゼントは私の母のためのものだ。", "label":"前置詞", "topic":"preposicion", "note":"受取人を表すpara。" },
+ { "before":"Nos vemos ", "answer":"entre", "after":" semana, no el fin de semana.", "ja":"週末じゃなくて平日に会おうね。", "label":"前置詞", "topic":"preposicion", "note":"entre semana（平日に）は決まった表現。" },
+ { "before":"El tesoro está enterrado ", "answer":"bajo", "after":" tierra.", "ja":"宝物は地下に埋まっている。", "label":"前置詞", "topic":"preposicion", "note":"bajo tierra（地下に）は決まった表現。" },
+ { "before":"La reunión es ", "answer":"desde", "after":" las tres hasta las cinco.", "ja":"会議は3時から5時までだ。", "label":"前置詞", "topic":"preposicion", "note":"desde...hasta...（〜から〜まで）の組み合わせ。" },
+ { "before":"Trabajamos ", "answer":"durante", "after":" toda la noche.", "ja":"一晩中働いた。", "label":"前置詞", "topic":"preposicion", "note":"期間を表すdurante。" },
+ { "before":"El barco navega ", "answer":"hacia", "after":" la isla.", "ja":"船は島へ向かって航行している。", "label":"前置詞", "topic":"preposicion", "note":"方向を表すhacia。" },
+ { "before":"No hay nada ", "answer":"sobre", "after":" la mesa.", "ja":"テーブルの上には何もない。", "label":"前置詞", "topic":"preposicion", "note":"「〜の上に」を表すsobre。" },
+ { "before":"El equipo luchó ", "answer":"contra", "after":" viento y marea.", "ja":"チームはあらゆる困難に立ち向かった。", "label":"前置詞", "topic":"preposicion", "note":"contra viento y marea（あらゆる困難に逆らって）は決まった表現。" },
+ { "before":"Firmó el documento ", "answer":"ante", "after":" un notario.", "ja":"公証人の前で書類に署名した。", "label":"前置詞", "topic":"preposicion", "note":"「〜の面前で」を表すante。" },
+ { "before":"Puedes venir ", "answer":"con", "after":" tu familia.", "ja":"家族と一緒に来ていいよ。", "label":"前置詞", "topic":"preposicion", "note":"「〜と一緒に」を表すcon。" },
+ { "before":"El parque está ", "answer":"entre", "after":" mi casa y la escuela.", "ja":"公園は私の家と学校の間にある。", "label":"前置詞", "topic":"preposicion", "note":"「〜の間に」を表すentre。" }
 ];
 
 /* ---------- Listening / dictation items (2 blanks per sentence, ~100-140 chars) ---------- */
