@@ -1942,7 +1942,7 @@ const VOCAB_DATA = [
  {
   "es": "No tener pelos en la lengua",
   "en": "To speak one's mind bluntly",
-  "ja": "歯に衣着せぬ（直訳:舌に毛がない）",
+  "ja": "歯にきぬ着せぬ（直訳:舌に毛がない）",
   "cat": "Modismos",
   "nivel": "avanzado"
  },
@@ -3493,7 +3493,7 @@ const VOCAB_DATA = [
  {
   "es": "El arroz",
   "en": "Rice",
-  "ja": "米",
+  "ja": "こめ",
   "cat": "Comida"
  },
  {
@@ -8027,7 +8027,7 @@ const VOCAB_DATA = [
  {
   "es": "La horchata",
   "en": "Horchata (rice drink)",
-  "ja": "オルチャータ（米の飲み物）",
+  "ja": "オルチャータ（こめの飲み物）",
   "cat": "Comida"
  },
  {
@@ -9087,6 +9087,648 @@ const VOCAB_DATA = [
   "es": "Amar",
   "en": "To love deeply",
   "ja": "深く愛する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Borracho",
+  "en": "Drunk person",
+  "ja": "酔っ払い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Rumbo a",
+  "en": "Heading towards",
+  "ja": "〜に向かって",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Afirmar",
+  "en": "To affirm, state",
+  "ja": "断言する、述べる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Señalar",
+  "en": "To point out, note",
+  "ja": "指摘する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Destacar",
+  "en": "To highlight, stand out",
+  "ja": "強調する、際立つ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Indicar",
+  "en": "To indicate",
+  "ja": "示す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sostener",
+  "en": "To maintain, argue",
+  "ja": "主張する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Declarar",
+  "en": "To declare, state",
+  "ja": "表明する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Subrayar",
+  "en": "To underline, emphasize",
+  "ja": "強調する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Asegurar",
+  "en": "To assure, ensure",
+  "ja": "保証する、断言する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Revelar",
+  "en": "To reveal",
+  "ja": "明らかにする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Advertir",
+  "en": "To warn, notice",
+  "ja": "警告する、気づく",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El fenómeno",
+  "en": "Phenomenon",
+  "ja": "現象",
+  "cat": "General"
+ },
+ {
+  "es": "El ámbito",
+  "en": "Field, sphere",
+  "ja": "領域、分野",
+  "cat": "General"
+ },
+ {
+  "es": "El entorno",
+  "en": "Environment, surroundings",
+  "ja": "環境、周囲",
+  "cat": "General"
+ },
+ {
+  "es": "El panorama",
+  "en": "Panorama, overview",
+  "ja": "全体像、見通し",
+  "cat": "General"
+ },
+ {
+  "es": "El enfoque",
+  "en": "Approach, focus",
+  "ja": "アプローチ、視点",
+  "cat": "General"
+ },
+ {
+  "es": "El rasgo",
+  "en": "Trait, feature",
+  "ja": "特徴",
+  "cat": "General"
+ },
+ {
+  "es": "La medida",
+  "en": "Measure, measurement",
+  "ja": "対策、措置",
+  "cat": "General"
+ },
+ {
+  "es": "La consecuencia",
+  "en": "Consequence",
+  "ja": "結果、影響",
+  "cat": "General"
+ },
+ {
+  "es": "El factor",
+  "en": "Factor",
+  "ja": "要因",
+  "cat": "General"
+ },
+ {
+  "es": "La repercusión",
+  "en": "Repercussion, impact",
+  "ja": "影響、反響",
+  "cat": "General"
+ },
+ {
+  "es": "El impacto",
+  "en": "Impact",
+  "ja": "インパクト、衝撃",
+  "cat": "General"
+ },
+ {
+  "es": "El contraste",
+  "en": "Contrast",
+  "ja": "対比",
+  "cat": "General"
+ },
+ {
+  "es": "El hallazgo",
+  "en": "Finding, discovery",
+  "ja": "発見",
+  "cat": "General"
+ },
+ {
+  "es": "El dato",
+  "en": "Data, piece of information",
+  "ja": "データ、情報",
+  "cat": "General"
+ },
+ {
+  "es": "La cifra",
+  "en": "Figure, number",
+  "ja": "数字",
+  "cat": "General"
+ },
+ {
+  "es": "El porcentaje",
+  "en": "Percentage",
+  "ja": "割合、パーセンテージ",
+  "cat": "General"
+ },
+ {
+  "es": "La tendencia",
+  "en": "Trend",
+  "ja": "傾向",
+  "cat": "General"
+ },
+ {
+  "es": "El vínculo",
+  "en": "Link, bond",
+  "ja": "つながり、関連",
+  "cat": "General"
+ },
+ {
+  "es": "Llevar a cabo",
+  "en": "To carry out",
+  "ja": "実行する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dar lugar a",
+  "en": "To give rise to",
+  "ja": "〜を引き起こす",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tener en cuenta",
+  "en": "To take into account",
+  "ja": "考慮に入れる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Poner de relieve",
+  "en": "To highlight, emphasize",
+  "ja": "際立たせる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Constituir",
+  "en": "To constitute",
+  "ja": "〜を構成する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Representar",
+  "en": "To represent",
+  "ja": "表す、代表する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Abarcar",
+  "en": "To encompass",
+  "ja": "含む、網羅する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Surgir",
+  "en": "To arise, emerge",
+  "ja": "生じる、現れる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Carecer de",
+  "en": "To lack",
+  "ja": "〜が欠けている",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Respecto a",
+  "en": "Regarding",
+  "ja": "〜に関して",
+  "cat": "Frases"
+ },
+ {
+  "es": "De acuerdo con",
+  "en": "According to",
+  "ja": "〜によれば",
+  "cat": "Frases"
+ },
+ {
+  "es": "Según",
+  "en": "According to",
+  "ja": "〜によると",
+  "cat": "Frases"
+ },
+ {
+  "es": "Cabe señalar",
+  "en": "It should be noted",
+  "ja": "指摘すべきは",
+  "cat": "Frases"
+ },
+ {
+  "es": "Cerca de",
+  "en": "Near",
+  "ja": "〜の近くに",
+  "cat": "Frases"
+ },
+ {
+  "es": "Lejos de",
+  "en": "Far from",
+  "ja": "〜から遠くに",
+  "cat": "Frases"
+ },
+ {
+  "es": "Al lado de",
+  "en": "Next to",
+  "ja": "〜の隣に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Enfrente de",
+  "en": "In front of, facing",
+  "ja": "〜の向かいに",
+  "cat": "Frases"
+ },
+ {
+  "es": "Detrás de",
+  "en": "Behind",
+  "ja": "〜の後ろに",
+  "cat": "Frases"
+ },
+ {
+  "es": "Delante de",
+  "en": "In front of",
+  "ja": "〜の前に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Alrededor de",
+  "en": "Around",
+  "ja": "〜の周りに",
+  "cat": "Frases"
+ },
+ {
+  "es": "A través de",
+  "en": "Through",
+  "ja": "〜を通して",
+  "cat": "Frases"
+ },
+ {
+  "es": "Junto a",
+  "en": "Next to, together with",
+  "ja": "〜のそばに",
+  "cat": "Frases"
+ },
+ {
+  "es": "Frente a",
+  "en": "Facing, opposite",
+  "ja": "〜に面して",
+  "cat": "Frases"
+ },
+ {
+  "es": "Dentro de",
+  "en": "Inside, within",
+  "ja": "〜の中に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Fuera de",
+  "en": "Outside of",
+  "ja": "〜の外に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Encima de",
+  "en": "On top of",
+  "ja": "〜の上に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Debajo de",
+  "en": "Under, beneath",
+  "ja": "〜の下に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Hacia",
+  "en": "Toward",
+  "ja": "〜へ向かって",
+  "cat": "Frases"
+ },
+ {
+  "es": "A lo largo de",
+  "en": "Along, throughout",
+  "ja": "〜に沿って、〜の間ずっと",
+  "cat": "Frases"
+ },
+ {
+  "es": "En medio de",
+  "en": "In the middle of",
+  "ja": "〜の真ん中に",
+  "cat": "Frases"
+ },
+ {
+  "es": "De repente",
+  "en": "Suddenly",
+  "ja": "突然",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "De vez en cuando",
+  "en": "From time to time",
+  "ja": "時々",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Poco a poco",
+  "en": "Little by little",
+  "ja": "少しずつ",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "De nuevo",
+  "en": "Again",
+  "ja": "再び",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Al mismo tiempo",
+  "en": "At the same time",
+  "ja": "同時に",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "De todos modos",
+  "en": "Anyway, regardless",
+  "ja": "とにかく、いずれにせよ",
+  "cat": "Frases"
+ },
+ {
+  "es": "En cambio",
+  "en": "On the other hand",
+  "ja": "一方で",
+  "cat": "Frases"
+ },
+ {
+  "es": "Por lo general",
+  "en": "Generally",
+  "ja": "一般的に",
+  "cat": "Frases"
+ },
+ {
+  "es": "A partir de",
+  "en": "Starting from",
+  "ja": "〜から（時点）",
+  "cat": "Frases"
+ },
+ {
+  "es": "Hasta ahora",
+  "en": "Until now",
+  "ja": "今のところ",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "De momento",
+  "en": "For the moment",
+  "ja": "今のところ",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "En seguida",
+  "en": "Right away",
+  "ja": "すぐに",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "A lo mejor",
+  "en": "Maybe, perhaps",
+  "ja": "もしかしたら",
+  "cat": "Frases"
+ },
+ {
+  "es": "Sobre todo",
+  "en": "Above all, especially",
+  "ja": "とりわけ",
+  "cat": "Frases"
+ },
+ {
+  "es": "En particular",
+  "en": "In particular",
+  "ja": "特に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Al fin y al cabo",
+  "en": "After all, in the end",
+  "ja": "結局のところ",
+  "cat": "Frases"
+ },
+ {
+  "es": "Tarde o temprano",
+  "en": "Sooner or later",
+  "ja": "遅かれ早かれ",
+  "cat": "Frases"
+ },
+ {
+  "es": "Hacer cola",
+  "en": "To wait in line",
+  "ja": "列に並ぶ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Estar de acuerdo",
+  "en": "To agree",
+  "ja": "賛成する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Ponerse de pie",
+  "en": "To stand up",
+  "ja": "立ち上がる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dar un paseo",
+  "en": "To take a walk",
+  "ja": "散歩する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Hacer ejercicio",
+  "en": "To exercise",
+  "ja": "運動する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tomar una decisión",
+  "en": "To make a decision",
+  "ja": "決断する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Pedir prestado",
+  "en": "To borrow",
+  "ja": "借りる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Prestar atención",
+  "en": "To pay attention",
+  "ja": "注意を払う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Hacer caso",
+  "en": "To pay attention, to obey",
+  "ja": "言うことを聞く",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tener suerte",
+  "en": "To be lucky",
+  "ja": "運がいい",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tener razón",
+  "en": "To be right",
+  "ja": "正しい（人が）",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Estar equivocado",
+  "en": "To be wrong",
+  "ja": "間違っている",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Cometer un error",
+  "en": "To make a mistake",
+  "ja": "ミスをする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sacar fotos",
+  "en": "To take photos",
+  "ja": "写真を撮る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Hacer las paces",
+  "en": "To make up, reconcile",
+  "ja": "仲直りする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Hacer amigos",
+  "en": "To make friends",
+  "ja": "友達を作る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Cambiar de opinión",
+  "en": "To change one's mind",
+  "ja": "考えを変える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Darse prisa",
+  "en": "To hurry up",
+  "ja": "急ぐ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Echar un vistazo",
+  "en": "To take a look",
+  "ja": "ちょっと見る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Perder el tiempo",
+  "en": "To waste time",
+  "ja": "時間を無駄にする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Valer la pena",
+  "en": "To be worth it",
+  "ja": "価値がある",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Estar harto",
+  "en": "To be fed up",
+  "ja": "うんざりしている",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Ponerse nervioso",
+  "en": "To get nervous",
+  "ja": "緊張する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Quedarse dormido",
+  "en": "To fall asleep",
+  "ja": "寝落ちする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Hacer una llamada",
+  "en": "To make a phone call",
+  "ja": "電話をかける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dar las gracias",
+  "en": "To thank",
+  "ja": "感謝を伝える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Pedir perdón",
+  "en": "To ask for forgiveness",
+  "ja": "許しを乞う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tener cuidado",
+  "en": "To be careful",
+  "ja": "気をつける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Hacer trampa",
+  "en": "To cheat",
+  "ja": "ズルをする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Romper el hielo",
+  "en": "To break the ice",
+  "ja": "場を和ませる",
   "cat": "Verbos"
  }
 ];

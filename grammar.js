@@ -711,6 +711,11 @@ const GRAMMAR_ARTICLES = [
   }
  },
  {
+  "title": "不定詞の名詞的用法（el fumar es malo）",
+  "cat": "動詞の時制（直説法）",
+  "body": "スペイン語では、動詞の原形（不定詞）がそのまま名詞として文の主語や目的語になれます。英語のing形（smoking is bad）に近い役割ですが、スペイン語では不定詞のまま使うのがポイントです。\n\n■ 主語として使う\nEl fumar es malo para la salud.（喫煙は健康に悪い）\nViajar es una de mis pasiones.（旅することは私の情熱の一つだ）\n\n主語として使うときは定冠詞el（男性単数扱い）をつけることが多いですが、Viajar es divertido.のように冠詞なしでも自然に使われます。\n\n■ 目的語・前置詞の後ろで使う\nMe gusta el nadar por las mañanas.（朝泳ぐのが好きだ）\nAntes de salir, cierra la puerta.（出る前に、ドアを閉めて）\n\n前置詞の後ろに動詞を続けるときは、必ず不定詞を使うという点も合わせて覚えておくと便利です（英語のing形につられて現在分詞を使わないよう注意）。"
+ },
+ {
   "title": "接続法現在の作り方の基本",
   "body": "接続法（subjuntivo）は、事実そのものではなく「願望・感情・疑い・不確実さ」など話し手の心の中を表す時制です。Espero que...（〜だといいな）、Quiero que...（〜してほしい）のような表現の後によく使われます。作り方は直説法現在のyoの形から-oを取り、-ar動詞は-e系、-er/-ir動詞は-a系の語尾に変えます（直説法と語尾が入れ替わるイメージです）。\n\n例: Espero que tengas un buen viaje.（良い旅行になりますように）",
   "table": {
@@ -1671,6 +1676,43 @@ const GRAMMAR_ARTICLES = [
   "cat": "前置詞"
  },
  {
+  "title": "動詞とセットになる前置詞（pensar en, soñar con など）",
+  "cat": "前置詞",
+  "body": "スペイン語には、特定の前置詞とセットで使うのが決まっている動詞がたくさんあります。日本語や英語の感覚と前置詞が一致しないことも多いため、動詞ごとにセットで覚えるのが確実です。\n\n■ よく使う組み合わせ\npensar en＋名詞（〜のことを考える）: Pienso en ti.（君のことを考えている）\nsoñar con＋名詞（〜の夢を見る、〜を夢見る）: Sueño con viajar por el mundo.（世界中を旅することを夢見ている）\ndepender de＋名詞（〜次第だ）: Depende del clima.（天気次第だ）\nconsistir en＋名詞（〜から成り立つ）: El trabajo consiste en atender clientes.（仕事は接客が中心だ）\nenamorarse de＋人（〜に恋をする）: Se enamoró de ella.（彼は彼女に恋をした）\npreocuparse por＋名詞（〜を心配する）: Me preocupo por tu salud.（君の健康を心配している）\nconfiar en＋人（〜を信頼する）: Confío en ti.（君を信頼している）\ntratarse de＋名詞（〜に関することだ）: Se trata de un problema serio.（それは深刻な問題に関することだ）\n\n英語のthink about（en ではなく of/about）、dream of（con ではなく of/about）のように、前置詞が英語と一致しないケースが多いため、英語経由で覚えようとすると混乱しやすい点に注意してください。",
+  "table": {
+   "cols": [
+    "動詞＋前置詞",
+    "意味"
+   ],
+   "rows": [
+    [
+     "pensar en",
+     "〜のことを考える"
+    ],
+    [
+     "soñar con",
+     "〜の夢を見る"
+    ],
+    [
+     "depender de",
+     "〜次第だ"
+    ],
+    [
+     "consistir en",
+     "〜から成り立つ"
+    ],
+    [
+     "enamorarse de",
+     "〜に恋をする"
+    ],
+    [
+     "confiar en",
+     "〜を信頼する"
+    ]
+   ]
+  }
+ },
+ {
   "title": "ser と estar の使い分け",
   "body": "どちらも「〜である」と訳せるため混同しやすいですが、seres「本質的・変わりにくい性質」、estarは「一時的な状態・場所」を表す、という軸で整理できます。\n\n面白いのは同じ形容詞でも、ser/estarのどちらと組み合わせるかで意味が変わることです。例：Él es aburrido.（彼は（性格が）つまらない人だ）vs Él está aburrido.（彼は（今）退屈している）。",
   "table": {
@@ -1752,6 +1794,45 @@ const GRAMMAR_ARTICLES = [
    ]
   },
   "cat": "文の組み立て・その他"
+ },
+ {
+  "title": "絶対最上級（-ísimo）の作り方",
+  "cat": "名詞・冠詞・形容詞・数",
+  "body": "比較級の「一番〜（el más alto de...）」とは別に、比較対象なしに「とても〜」を強調する「絶対最上級（superlativo absoluto）」という形があります。muyよりもさらに強い響きになります。\n\n■ 基本の作り方\n形容詞の語末の母音を取り、-ísimo/a/os/asをつけます。\n\nmucho → muchísimo（ものすごくたくさん）\nfácil → facilísimo（とても簡単）\ngrande → grandísimo（とても大きい）\n\n■ スペルが変化するパターン\n発音を保つため、語幹の子音字が変わることがあります。\n\nrico → riqu<b>í</b>simo（c→qu）\nlargo → largu<b>í</b>simo（g→gu）\nfeliz → felic<b>í</b>simo（z→c）\n\n■ 一部の形容詞は不規則な語幹を使う\nbueno → buenísimo（規則的でもOKだが、口語ではbuenísimoが一般的）\nantiguo → antiquísimo（ラテン語由来の不規則形）\npobre → paupérrimo（かなりフォーマルな文語、日常会話ではpobrísimoで十分）\n\n口語では、muy+形容詞よりも-ísimoの方が感情のこもった強調に聞こえることが多く、日常会話でも非常によく使われます。",
+  "table": {
+   "cols": [
+    "形容詞",
+    "絶対最上級",
+    "意味"
+   ],
+   "rows": [
+    [
+     "alto",
+     "altísimo",
+     "とても高い"
+    ],
+    [
+     "rico",
+     "riquísimo",
+     "とても美味しい・裕福な"
+    ],
+    [
+     "largo",
+     "larguísimo",
+     "とても長い"
+    ],
+    [
+     "feliz",
+     "felicísimo",
+     "とても幸せな"
+    ],
+    [
+     "mucho",
+     "muchísimo",
+     "ものすごくたくさん"
+    ]
+   ]
+  }
  },
  {
   "title": "受け身の表現（ser+過去分詞 / se pasivo）",
@@ -1914,6 +1995,30 @@ const GRAMMAR_ARTICLES = [
   "title": "関係代名詞（que / quien / donde）",
   "body": "que（〜する〜、人にもモノにも使える万能選手）、quien（〜する人、前置詞の後で人を指すときに使う）、donde（〜する場所）が代表的です。\n\n例: El libro que compré es interesante.（私が買った本は面白い）\n例: La persona con quien hablé es mi profesora.（私が話した相手は私の先生だ）\n例: La ciudad donde nací es pequeña.（私が生まれた街は小さい）\n\nqueは日常会話で圧倒的によく使われ、quienは主に前置詞（con quien, de quienなど）とセットで使われることが多いです。",
   "cat": "文の組み立て・その他"
+ },
+ {
+  "title": "応用的な関係代名詞（el cual/la cual、cuyo）",
+  "cat": "文の組み立て・その他",
+  "body": "que/quien/donde以外にも、ややフォーマルな文脈でよく使われる関係代名詞があります。\n\n■ el cual / la cual / los cuales / las cuales（〜であるところの）\nqueよりもフォーマルで、先行詞の性・数に一致します。前置詞の後や、長い節で先行詞をはっきりさせたいときによく使われます。\n\n例: La empresa para la cual trabajo es internacional.（私が働いている会社は国際的だ）\n※ para la que（口語的）と言い換えても意味は同じです。\n\n■ cuyo / cuya / cuyos / cuyas（〜の、所有を表す関係代名詞）\n英語のwhoseに相当し、「〜の」という所有関係を表します。cuyoは後ろに続く名詞（所有されるもの）の性・数に一致する点に注意（先行詞ではなく）。\n\n例: El escritor cuyo libro leí es famoso.（私が本を読んだその作家は有名だ＝直訳「その本を私が読んだところの作家」）\n例: La mujer cuya casa visitamos es mi tía.（私たちが家を訪れたその女性は私の叔母だ）\n\ncuyoは書き言葉・フォーマルな話し言葉で使われ、日常会話ではde quien/de que+所有格の言い換えで済ませることも多いです。",
+  "table": {
+   "cols": [
+    "関係代名詞",
+    "意味",
+    "例"
+   ],
+   "rows": [
+    [
+     "el cual / la cual",
+     "〜であるところの（que より正式）",
+     "la razón por la cual"
+    ],
+    [
+     "cuyo / cuya",
+     "〜の（所有、whoseに相当）",
+     "el autor cuyo libro..."
+    ]
+   ]
+  }
  },
  {
   "title": "接続詞 y/o の変化と pero vs sino",

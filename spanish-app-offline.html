@@ -71,7 +71,7 @@
   .mode-desc { font-size:11.5px; color:#C9BBE8; margin-top:3px; }
   .footer-hint { text-align:center; font-size:11.5px; color:#9C8FC2; margin-top:22px; }
   .top-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
-  .exit-btn { background:none; border:none; color:#D9CCEF; font-size:14px; font-weight:700; cursor:pointer; width:60px; font-family:inherit; }
+  .exit-btn { background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.18); color:#FFFFFF; font-size:14px; font-weight:700; cursor:pointer; padding:7px 12px; border-radius:12px; font-family:inherit; white-space:nowrap; }
   .top-bar-center { text-align:center; }
   .top-bar-label { font-size:11px; color:var(--accent3); font-weight:700; letter-spacing:0.06em; }
   .top-bar-progress { font-size:13px; color:#E4D9F7; font-weight:700; margin-top:2px; }
@@ -569,7 +569,7 @@ function labelFor(ex){ return ex.verb ? `${ex.verb}（${TENSE_LABELS[ex.tense]}�
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:"Todos", dictColloquialOnly:false, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, grammarRoadmapOpen:false, columnMode:"cards" };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:[], dictColloquialOnly:false, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, grammarRoadmapOpen:false, columnMode:"cards" };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -804,6 +804,15 @@ function startDictAutoPlay(){
   requestWakeLock();
   goToDictAutoWord();
 }
+function resumeDictAutoPlay(){
+  if(dictAutoList.length===0) return;
+  state.dictAutoPlaying = true;
+  requestWakeLock();
+  const word = dictAutoList[dictAutoIdx];
+  state.dictDetailWord = normDictKey(word.es);
+  render();
+  playDictAutoSequence(word);
+}
 function goToDictAutoWord(){
   if(dictAutoIdx >= dictAutoList.length) dictAutoIdx = 0;
   const word = dictAutoList[dictAutoIdx];
@@ -957,7 +966,7 @@ function renderDictionary(){
   search.oninput = (e)=>{ state.dictSearch = e.target.value; state.dictListLimit=60; renderDictList(); };
   app.appendChild(search);
   const chipRow = el("div","chip-row");
-  [["all","すべて"],["flagged","⭐ フラグのみ"]].forEach(([mode,label])=>{
+  [["all","すべて"],["flagged","⭐ フラグのみ"],["hidden","🙈 非表示リスト"]].forEach(([mode,label])=>{
     const chip = el("button","chip"+(state.dictFilterMode===mode?" active":""), label);
     chip.onclick = ()=>{ playTap(); state.dictFilterMode=mode; state.dictListLimit=60; render(); };
     chipRow.appendChild(chip);
@@ -979,11 +988,27 @@ function renderDictionary(){
   app.appendChild(colloqRow);
   const levelRow = el("div","chip-row");
   [["Todos","全レベル"],["A1","A1"],["A2","A2"],["B1","B1"],["B2","B2"]].forEach(lv=>{
-    const chip = el("button","chip"+(state.dictLevelFilter===lv[0]?" active":""), lv[1]);
-    chip.onclick = ()=>{ playTap(); state.dictLevelFilter=lv[0]; state.dictListLimit=60; render(); };
+    const isActive = lv[0]==="Todos" ? state.dictLevelFilter.length===0 : state.dictLevelFilter.includes(lv[0]);
+    const chip = el("button","chip"+(isActive?" active":""), lv[1]);
+    chip.onclick = ()=>{
+      playTap();
+      if(lv[0]==="Todos"){ state.dictLevelFilter = []; }
+      else{
+        const idx = state.dictLevelFilter.indexOf(lv[0]);
+        if(idx===-1) state.dictLevelFilter = [...state.dictLevelFilter, lv[0]];
+        else state.dictLevelFilter = state.dictLevelFilter.filter(l=>l!==lv[0]);
+      }
+      state.dictListLimit=60; render();
+    };
     levelRow.appendChild(chip);
   });
   app.appendChild(levelRow);
+  if(dictAutoList.length>0 && !state.dictAutoPlaying){
+    const resumeBtn = el("button","primary-btn",`▶️ 続きから聞き流す（${dictAutoIdx+1}/${dictAutoList.length}）`);
+    resumeBtn.style.display="block"; resumeBtn.style.width="100%"; resumeBtn.style.margin="4px 0 8px";
+    resumeBtn.onclick = ()=>{ playTap(); resumeDictAutoPlay(); };
+    app.appendChild(resumeBtn);
+  }
   const autoPlayBtn = el("button","primary-btn","🎧 連続聞き流し");
   autoPlayBtn.style.display="block"; autoPlayBtn.style.width="100%"; autoPlayBtn.style.margin="4px 0 14px";
   autoPlayBtn.onclick = ()=>{ playTap(); startDictAutoPlay(); };
@@ -996,8 +1021,10 @@ function getDictList(){
   const q = normDictKey(state.dictSearch);
   let list = state.dictShuffled ? VOCAB : [...VOCAB].sort((a,b)=> dictCategoryRank(a.cat)-dictCategoryRank(b.cat));
   if(state.dictFilterMode==="flagged") list = list.filter(w => (progress.flagged||{})[w.id]);
+  else if(state.dictFilterMode==="hidden") list = list.filter(w => (progress.hidden||{})[w.id]);
+  else list = list.filter(w => !(progress.hidden||{})[w.id]);
   if(state.dictColloquialOnly) list = list.filter(w=>w.cat==="Coloquial");
-  if(state.dictLevelFilter && state.dictLevelFilter!=="Todos") list = list.filter(w=>w.cefr===state.dictLevelFilter);
+  if(state.dictLevelFilter && state.dictLevelFilter.length>0) list = list.filter(w=>state.dictLevelFilter.includes(w.cefr));
   if(q){
     list = list.filter(w => normDictKey(w.es).includes(q) || normDictKey(w.ja).includes(q) || normDictKey(w.en).includes(q));
   }
@@ -1006,6 +1033,11 @@ function getDictList(){
     list = [...list].sort((a,b)=> (orderIdx[a.es]??1e9) - (orderIdx[b.es]??1e9));
   }
   return list;
+}
+function toggleHidden(id){
+  progress.hidden = progress.hidden || {};
+  if(progress.hidden[id]) delete progress.hidden[id]; else progress.hidden[id] = true;
+  saveProgress(progress);
 }
 function renderDictList(){
   const wrap = document.getElementById("dict-list-wrap");
@@ -1067,6 +1099,16 @@ function renderDictDetail(){
     pauseBtn.onclick = ()=>{ playTap(); stopDictAutoPlay(); render(); };
     autoRow.appendChild(autoLabel); autoRow.appendChild(pauseBtn);
     app.appendChild(autoRow);
+  } else if(dictAutoList.length>0 && key===normDictKey(dictAutoList[dictAutoIdx].es)){
+    const autoRow = el("div"); autoRow.style.display="flex"; autoRow.style.alignItems="center"; autoRow.style.justifyContent="center";
+    autoRow.style.gap="10px"; autoRow.style.marginBottom="18px";
+    const autoLabel = el("div"); autoLabel.style.fontSize="12px"; autoLabel.style.color="#C9BBE8";
+    autoLabel.textContent = `⏸ 一時停止中（${dictAutoIdx+1} / ${dictAutoList.length}）`;
+    const resumeBtn = el("button","dict-nav-side-toggle","▶️");
+    resumeBtn.style.width="26px"; resumeBtn.style.height="26px"; resumeBtn.style.fontSize="11px";
+    resumeBtn.onclick = ()=>{ playTap(); resumeDictAutoPlay(); };
+    autoRow.appendChild(autoLabel); autoRow.appendChild(resumeBtn);
+    app.appendChild(autoRow);
   }
   const backBtn = summaryReturnBtn();
   if(backBtn) app.appendChild(backBtn);
@@ -1085,8 +1127,15 @@ function renderDictDetail(){
     const isFlagged = !!(progress.flagged && progress.flagged[vocabWord.id]);
     const flagBtn = el("button","speak-btn", isFlagged ? "⭐" : "☆");
     flagBtn.onclick = ()=>{ playTap(); toggleFlag(vocabWord.id); render(); };
-    actionRow.appendChild(speakBtn); actionRow.appendChild(flagBtn);
+    const isHidden = !!(progress.hidden && progress.hidden[vocabWord.id]);
+    const hideBtn = el("button","speak-btn", isHidden ? "🙈" : "🙉");
+    hideBtn.title = isHidden ? "非表示リストから戻す" : "簡単すぎるので非表示にする";
+    hideBtn.onclick = ()=>{ playTap(); toggleHidden(vocabWord.id); render(); };
+    actionRow.appendChild(speakBtn); actionRow.appendChild(flagBtn); actionRow.appendChild(hideBtn);
     app.appendChild(actionRow);
+    if(isHidden){
+      app.appendChild(el("div","footer-hint","この単語は非表示リストに入っています（一覧には表示されません）"));
+    }
   }
   if(!detail){
     app.appendChild(el("div","dict-pending","詳しい解説（ニュアンス・語源・類語など）は準備中です 🚧\n基本の意味は上に表示されている通りです。"));
@@ -1229,20 +1278,26 @@ function renderQuiz(){
   }
   if(lastSpokenQuizId !== quizQuestion.word.id){ lastSpokenQuizId = quizQuestion.word.id; if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(quizQuestion.word.es), 150); }
   app.appendChild(topBar(quizQuestion.word.cefr, `${quizIdx+1} / ${quizTotal}`, ()=>{ state.mode="home"; quizQuestion=null; render(); }));
+  const langToggleRow = el("div"); langToggleRow.style.display="flex"; langToggleRow.style.justifyContent="flex-end"; langToggleRow.style.marginBottom="8px";
+  const quizLang = (progress.settings && progress.settings.quizLang) || "en";
+  const langBtn = el("button","chip", quizLang==="en" ? "🇬🇧 English" : "🇯🇵 日本語");
+  langBtn.onclick = ()=>{ playTap(); progress.settings = progress.settings || {}; progress.settings.quizLang = quizLang==="en" ? "ja" : "en"; saveProgress(progress); render(); };
+  langToggleRow.appendChild(langBtn);
+  app.appendChild(langToggleRow);
   const prompt = el("div","quiz-prompt");
   prompt.innerHTML = `<div class="quiz-label">¿Cómo se dice…?</div><div class="quiz-word">${quizQuestion.word.es}</div>`;
   app.appendChild(prompt);
   app.appendChild(speakRow(quizQuestion.word.es));
   const grid = el("div","options-grid");
   quizQuestion.options.forEach(opt=>{
-    const btn = el("button","option-btn", opt.en);
+    const btn = el("button","option-btn", opt[quizLang]);
     if(quizPicked!==null){ if(opt.id===quizQuestion.word.id) btn.classList.add("correct"); else if(opt.id===quizPicked) btn.classList.add("wrong"); }
     btn.onclick = ()=>{
       if(quizPicked!==null) return;
       const correct = opt.id===quizQuestion.word.id;
       quizPicked = opt.id;
       markResult(quizQuestion.word.id, correct);
-      quizLog.push({ word:quizQuestion.word, pickedEn:opt.en, correct });
+      quizLog.push({ word:quizQuestion.word, pickedEn:opt[quizLang], correct });
       if(correct){ quizScore++; playCorrect(); } else { playWrong(); quizMissed.push(quizQuestion.word); }
       render();
     };

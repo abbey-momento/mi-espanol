@@ -1613,7 +1613,7 @@ const DICTIONARY_DATA = {
  },
  "horchata": {
   "nuance": "米や桂皮(シナモン)などから作る甘い冷たい飲み物。メキシコの定番の水（agua fresca）の一種。",
-  "etymology": "諸説あるが、ラテン語hordeata（大麦の飲み物）に由来するという説が有力。",
+  "etymology": "諸説あるが、スペインで大麦から作られていた飲み物hordeataに由来するという説が有力（ラテン語hordeum＝大麦）。メキシコでは主に米で作られるが、語源となった飲み物とは原材料が異なる点に注意。",
   "synonyms": [],
   "derived": [],
   "dialogue": {
@@ -7678,7 +7678,7 @@ const DICTIONARY_DATA = {
   }
  },
  "quinceañera": {
-  "nuance": "「キンセアニェーラ」の基本語。ラテンアメリカで女の子の15歳を祝う伝統的な成人の儀式。",
+  "nuance": "「キンセアニェーラ」の基本語。ラテンアメリカで女の子の15歳を祝う伝統的な通過儀礼（少女から大人の女性への節目とされる）。法律上の成人年齢（メキシコでは18歳）とは別の、文化的・宗教的な意味合いの強いお祝いである点に注意。",
   "etymology": "quince（15）+ años（歳）の組み合わせから派生。",
   "synonyms": [],
   "derived": [
@@ -17881,6 +17881,1360 @@ const DICTIONARY_DATA = {
   "dialogue": {
    "es": "— Te amo con todo mi corazón.\n— Yo también te amo.",
    "ja": "「心から君を愛しているよ」「私もあなたを愛しているよ」"
+  }
+ },
+ "borracho": {
+  "nuance": "「酔っ払い」「酔っている」の基本語。crudo（二日酔いの）とは別の状態（borrachoは酔っている最中、crudoは翌朝の二日酔い）。estar borracho（酔っている）の形でよく使われる。",
+  "etymology": "ラテン語系の語burra（毛織物→酔いでふらつく様子）に由来するとされる。",
+  "synonyms": [
+   "tomado（酔っている、口語）"
+  ],
+  "derived": [
+   "emborracharse（酔っ払う）"
+  ],
+  "dialogue": {
+   "es": "— Está muy borracho, no debería manejar.\n— Tienes razón, vamos a pedirle un taxi.",
+   "ja": "「彼、すごく酔っ払ってるね、運転すべきじゃないよ」「その通りだね、タクシー呼んであげよう」"
+  }
+ },
+ "rumbo a": {
+  "nuance": "「〜に向かって」という方向を表す表現。旅行記事やニュース記事の読解でよく登場する（例：rumbo a la Ciudad de México＝メキシコシティに向かって）。ir rumbo a（〜に向かう）の形でよく使われる。",
+  "etymology": "rumbo（方角、進路）から派生した表現。",
+  "synonyms": [
+   "hacia（〜へ向かって、ほぼ同義）"
+  ],
+  "derived": [
+   "rumbo（方角、進路）"
+  ],
+  "dialogue": {
+   "es": "— Vamos rumbo al aeropuerto.\n— ¿A qué hora sale el vuelo?",
+   "ja": "「空港に向かっているところだよ」「フライトは何時に出発するの？」"
+  }
+ },
+ "afirmar": {
+  "nuance": "「断言する、述べる」の基本語。ニュース記事で「〜は述べた」という引用の導入によく使われる、フォーマルな「言う」の言い換え。",
+  "etymology": "ラテン語affirmare（確固とする）に由来。",
+  "synonyms": [
+   "decir（言う、より一般的）"
+  ],
+  "derived": [
+   "afirmación（断言）"
+  ],
+  "dialogue": {
+   "es": "— El presidente afirmó que la economía va mejorando.\n— Espero que tenga razón.",
+   "ja": "「大統領は経済が改善していると述べたんだ」「その通りだといいね」"
+  }
+ },
+ "señalar": {
+  "nuance": "「指摘する」の基本語。「指し示す」という文字通りの意味と、報道記事で「〜は指摘した」という引用の導入の両方でよく使われる。",
+  "etymology": "señal（印、合図）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "señal（印、合図）"
+  ],
+  "dialogue": {
+   "es": "— El estudio señala un aumento en el consumo.\n— Es una tendencia preocupante.",
+   "ja": "「その調査は消費の増加を指摘しているんだ」「気になる傾向だね」"
+  }
+ },
+ "destacar": {
+  "nuance": "「強調する、際立つ」の基本語。他動詞（〜を強調する）としても自動詞（際立つ）としても使われる、報道・論説文でよく使う動詞。",
+  "etymology": "des（分離）+ tacar（触れる、打つ）の組み合わせに由来するとされる。",
+  "synonyms": [],
+  "derived": [
+   "destacado（際立った）"
+  ],
+  "dialogue": {
+   "es": "— El informe destaca la importancia de la educación.\n— Estoy de acuerdo con ese enfoque.",
+   "ja": "「その報告書は教育の重要性を強調しているんだ」「そのアプローチに賛成だよ」"
+  }
+ },
+ "sostener": {
+  "nuance": "「主張する」の基本語。「支える、持ちこたえる」という文字通りの意味もある。論説文で「〜と主張する」という文脈でよく使われる。",
+  "etymology": "ラテン語sustinere（下から支える）に由来。",
+  "synonyms": [
+   "mantener（主張する、維持する）"
+  ],
+  "derived": [
+   "sostén（支え）"
+  ],
+  "dialogue": {
+   "es": "— El autor sostiene que el cambio es necesario.\n— Presenta buenos argumentos.",
+   "ja": "「著者は変化が必要だと主張しているんだ」「良い論拠を提示しているよね」"
+  }
+ },
+ "subrayar": {
+  "nuance": "「強調する」の基本語。直訳は「下に線を引く」で、比喩的に「特に重要だと強調する」という意味で使われる。",
+  "etymology": "sub（下に）+ rayar（線を引く）の組み合わせ。",
+  "synonyms": [
+   "destacar（強調する）"
+  ],
+  "derived": [
+   "raya（線）"
+  ],
+  "dialogue": {
+   "es": "— El experto subrayó la urgencia del problema.\n— Deberíamos actuar pronto entonces.",
+   "ja": "「専門家はその問題の緊急性を強調したんだ」「じゃあ早く対応した方がいいね」"
+  }
+ },
+ "revelar": {
+  "nuance": "「明らかにする」の基本語。調査結果やニュースで「〜が明らかになった」という文脈でよく使われる。",
+  "etymology": "ラテン語revelare（ベールを取り除く）に由来。",
+  "synonyms": [],
+  "derived": [
+   "revelación（暴露、啓示）"
+  ],
+  "dialogue": {
+   "es": "— La investigación reveló datos sorprendentes.\n— ¿Qué tipo de datos?",
+   "ja": "「その調査は驚くべきデータを明らかにしたんだ」「どんなデータ？」"
+  }
+ },
+ "advertir": {
+  "nuance": "「警告する」「気づく」の両方の意味を持つ動詞。文脈で判断する。報道文では「専門家は〜と警告した」という文脈でよく使われる。",
+  "etymology": "ラテン語advertere（注意を向ける）に由来。",
+  "synonyms": [],
+  "derived": [
+   "advertencia（警告）"
+  ],
+  "dialogue": {
+   "es": "— Los científicos advierten sobre el cambio climático.\n— Es un tema que no podemos ignorar.",
+   "ja": "「科学者たちは気候変動について警告しているんだ」「無視できないテーマだよね」"
+  }
+ },
+ "fenómeno": {
+  "nuance": "「現象」の基本語。自然現象から社会現象まで幅広く使われる、論説文の定番語彙。",
+  "etymology": "ギリシャ語phainomenon（現れるもの）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Este fenómeno se ha estudiado poco.\n— Sería interesante investigarlo más.",
+   "ja": "「この現象はあまり研究されていないんだ」「もっと調査したら面白そうだね」"
+  }
+ },
+ "ámbito": {
+  "nuance": "「領域、分野」の基本語。en el ámbito de（〜の分野において）はよく使う組み合わせ、論説文の定番語彙。",
+  "etymology": "ラテン語ambitus（周囲、範囲）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Trabaja en el ámbito de la salud pública.\n— Es un campo muy importante.",
+   "ja": "「彼女は公衆衛生の分野で働いているんだ」「とても重要な分野だよね」"
+  }
+ },
+ "entorno": {
+  "nuance": "「環境、周囲」の基本語。物理的な環境からビジネス環境まで幅広く使われる。",
+  "etymology": "en（〜において）+ torno（周り）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "torno（周り、回転）"
+  ],
+  "dialogue": {
+   "es": "— Necesitamos proteger nuestro entorno.\n— Cada pequeña acción cuenta.",
+   "ja": "「私たちの環境を守る必要があるね」「小さな行動一つ一つが大切だよね」"
+  }
+ },
+ "panorama": {
+  "nuance": "「全体像、見通し」の基本語。「景色」という文字通りの意味もある。論説文で「今後の見通し」を語るときによく使われる。",
+  "etymology": "ギリシャ語pan（すべて）+ horama（見えるもの）の組み合わせ。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El panorama económico es incierto.\n— Habrá que esperar y ver.",
+   "ja": "「経済の見通しは不透明だね」「様子を見るしかないね」"
+  }
+ },
+ "enfoque": {
+  "nuance": "「アプローチ、視点」の基本語。enfocar（焦点を合わせる）から派生した語。",
+  "etymology": "enfocar（焦点を合わせる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "enfocar（焦点を合わせる）"
+  ],
+  "dialogue": {
+   "es": "— Me gusta tu enfoque sobre este tema.\n— Gracias, traté de ser objetivo.",
+   "ja": "「このテーマについての君のアプローチ好きだな」「ありがとう、客観的であろうとしたんだ」"
+  }
+ },
+ "rasgo": {
+  "nuance": "「特徴」の基本語。性格・外見・現象の特徴を表すときに幅広く使われる。",
+  "etymology": "rasgar（引っかく、線を引く）から派生した語。",
+  "synonyms": [
+   "característica（特徴、より一般的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Ese es un rasgo típico de la cultura mexicana.\n— Sí, la hospitalidad es muy notable.",
+   "ja": "「それはメキシコ文化の典型的な特徴だね」「うん、おもてなしの心がとても目立つよね」"
+  }
+ },
+ "medida": {
+  "nuance": "「対策、措置」の基本語。「測定、寸法」という文字通りの意味もある。tomar medidas（対策を講じる）はよく使う組み合わせ。",
+  "etymology": "medir（測る）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "medir（測る）"
+  ],
+  "dialogue": {
+   "es": "— El gobierno anunció nuevas medidas económicas.\n— Espero que ayuden a la gente.",
+   "ja": "「政府は新しい経済対策を発表したんだ」「人々の助けになるといいね」"
+  }
+ },
+ "consecuencia": {
+  "nuance": "「結果、影響」の基本語。como consecuencia de（〜の結果として）はよく使う組み合わせ。",
+  "etymology": "ラテン語consequentia（後に続くもの）に由来。",
+  "synonyms": [],
+  "derived": [
+   "consecuente（一貫した）"
+  ],
+  "dialogue": {
+   "es": "— Esa decisión tuvo graves consecuencias.\n— Nadie esperaba ese resultado.",
+   "ja": "「その決断は深刻な結果をもたらしたんだ」「誰もそんな結果は予想していなかったよ」"
+  }
+ },
+ "factor": {
+  "nuance": "「要因」の基本語。un factor importante（重要な要因）はよく使う組み合わせ。",
+  "etymology": "ラテン語factor（作る者）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El clima fue un factor decisivo.\n— Sí, cambió todos nuestros planes.",
+   "ja": "「気候が決定的な要因だったんだ」「うん、私たちの計画を全部変えてしまったよね」"
+  }
+ },
+ "repercusión": {
+  "nuance": "「影響、反響」の基本語。tener repercusión（反響を呼ぶ）はよく使う組み合わせ。",
+  "etymology": "ラテン語repercutere（跳ね返る）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— La noticia tuvo mucha repercusión internacional.\n— Se habló de ella en todo el mundo.",
+   "ja": "「そのニュースは国際的に大きな反響を呼んだんだ」「世界中で話題になったよね」"
+  }
+ },
+ "impacto": {
+  "nuance": "「インパクト、衝撃」の基本語。物理的な衝撃と比喩的な影響力の両方で使われる。",
+  "etymology": "ラテン語impactus（打ち当てられた）に由来。",
+  "synonyms": [],
+  "derived": [
+   "impactar（衝撃を与える）"
+  ],
+  "dialogue": {
+   "es": "— Esta política tendrá un gran impacto.\n— Habrá que monitorear los resultados.",
+   "ja": "「この政策は大きな影響を与えるだろうね」「結果を注視しないとね」"
+  }
+ },
+ "contraste": {
+  "nuance": "「対比」の基本語。en contraste con（〜と対照的に）はよく使う組み合わせ。",
+  "etymology": "contrastar（対比する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "contrastar（対比する）"
+  ],
+  "dialogue": {
+   "es": "— Hay un fuerte contraste entre las dos ciudades.\n— Sí, son mundos totalmente diferentes.",
+   "ja": "「2つの街には強い対比があるんだ」「うん、まったく違う世界だよね」"
+  }
+ },
+ "hallazgo": {
+  "nuance": "「発見」の基本語。hallar（見つける）から派生した語。科学的・考古学的な発見によく使われる。",
+  "etymology": "hallar（見つける）から派生した語。",
+  "synonyms": [
+   "descubrimiento（発見、より一般的）"
+  ],
+  "derived": [
+   "hallar（見つける）"
+  ],
+  "dialogue": {
+   "es": "— Este hallazgo cambia todo lo que sabíamos.\n— Es un momento histórico para la ciencia.",
+   "ja": "「この発見は今まで知っていたことをすべて変えるんだ」「科学にとって歴史的な瞬間だね」"
+  }
+ },
+ "dato": {
+  "nuance": "「データ、情報」の基本語。複数形datosがよく使われる（一つの情報でも複数扱いになりがち）。",
+  "etymology": "ラテン語datum（与えられたもの）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Necesitamos más datos para confirmar esto.\n— Estoy de acuerdo, es muy pronto para concluir.",
+   "ja": "「これを確認するにはもっとデータが必要だね」「同感だよ、結論を出すには早すぎるよね」"
+  }
+ },
+ "cifra": {
+  "nuance": "「数字」の基本語。統計や金額を表す数字を指す、報道文の定番語彙。",
+  "etymology": "アラビア語sifr（ゼロ）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Las cifras de desempleo bajaron este mes.\n— Es una buena noticia para la economía.",
+   "ja": "「今月失業率の数字が下がったんだ」「経済にとっていいニュースだね」"
+  }
+ },
+ "porcentaje": {
+  "nuance": "「割合、パーセンテージ」の基本語。un pequeño porcentaje（小さな割合）のように使う。",
+  "etymology": "por（〜につき）+ ciento（100）の組み合わせに由来。",
+  "synonyms": [],
+  "derived": [
+   "ciento（100）"
+  ],
+  "dialogue": {
+   "es": "— ¿Qué porcentaje de estudiantes aprobó?\n— Alrededor del ochenta por ciento.",
+   "ja": "「学生の何パーセントが合格したの？」「約80パーセントだよ」"
+  }
+ },
+ "tendencia": {
+  "nuance": "「傾向」の基本語。tener tendencia a（〜する傾向がある）はよく使う組み合わせ。",
+  "etymology": "tender（傾向がある、伸ばす）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "tender（傾向がある）"
+  ],
+  "dialogue": {
+   "es": "— Hay una tendencia creciente hacia el trabajo remoto.\n— Sí, cada vez más empresas lo permiten.",
+   "ja": "「リモートワークへの傾向が高まっているんだ」「うん、それを許可する企業がどんどん増えているよね」"
+  }
+ },
+ "vínculo": {
+  "nuance": "「つながり、関連」の基本語。「（インターネットの）リンク」という意味にもなる。",
+  "etymology": "ラテン語vinculum（結びつけるもの）に由来。",
+  "synonyms": [],
+  "derived": [
+   "vincular（結びつける）"
+  ],
+  "dialogue": {
+   "es": "— Existe un vínculo entre ambos fenómenos.\n— Es un hallazgo interesante.",
+   "ja": "「両方の現象にはつながりがあるんだ」「興味深い発見だね」"
+  }
+ },
+ "llevar a cabo": {
+  "nuance": "「実行する」の基本表現。llevar（運ぶ）+ a cabo（端まで）の組み合わせ、フォーマルな文脈でよく使う。",
+  "etymology": "llevar（運ぶ）+ cabo（端）の組み合わせ。",
+  "synonyms": [
+   "realizar（実行する）"
+  ],
+  "derived": [
+   "cabo（端）"
+  ],
+  "dialogue": {
+   "es": "— Vamos a llevar a cabo el proyecto el próximo mes.\n— Estamos listos para empezar.",
+   "ja": "「来月プロジェクトを実行するつもりだよ」「始める準備はできているよ」"
+  }
+ },
+ "dar lugar a": {
+  "nuance": "「〜を引き起こす」の基本表現。dar（与える）+ lugar（場所、機会）の組み合わせ。",
+  "etymology": "dar（与える）+ lugar（場所）の組み合わせ。",
+  "synonyms": [
+   "provocar（引き起こす）"
+  ],
+  "derived": [
+   "lugar（場所）"
+  ],
+  "dialogue": {
+   "es": "— Ese comentario dio lugar a una gran polémica.\n— No esperaba esa reacción.",
+   "ja": "「その発言が大きな論争を引き起こしたんだ」「そんな反応は予想していなかったよ」"
+  }
+ },
+ "tener en cuenta": {
+  "nuance": "「考慮に入れる」の基本表現。tener（持つ）+ en cuenta（勘定に）の組み合わせ。",
+  "etymology": "cuenta（勘定）から派生した表現。",
+  "synonyms": [
+   "considerar（考慮する）"
+  ],
+  "derived": [
+   "cuenta（勘定）"
+  ],
+  "dialogue": {
+   "es": "— Hay que tener en cuenta el presupuesto.\n— Tienes razón, es un factor importante.",
+   "ja": "「予算を考慮に入れないとね」「その通りだね、重要な要素だよね」"
+  }
+ },
+ "poner de relieve": {
+  "nuance": "「際立たせる」の基本表現。relieve（浮き彫り、際立ち）から派生した、ややフォーマルな表現。",
+  "etymology": "poner（置く）+ relieve（浮き彫り）の組み合わせ。",
+  "synonyms": [
+   "destacar（強調する）"
+  ],
+  "derived": [
+   "relieve（浮き彫り）"
+  ],
+  "dialogue": {
+   "es": "— El estudio pone de relieve un problema grave.\n— Habrá que tomar medidas.",
+   "ja": "「その研究は深刻な問題を際立たせているんだ」「対策を講じないとね」"
+  }
+ },
+ "constituir": {
+  "nuance": "「〜を構成する」の基本語。ser（〜である）よりもフォーマルで、論説文でよく使われる。",
+  "etymology": "ラテン語constituere（設立する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "constitución（憲法、構成）"
+  ],
+  "dialogue": {
+   "es": "— Esto constituye un avance importante.\n— Estoy de acuerdo, es un gran paso.",
+   "ja": "「これは重要な進歩を構成しているね」「同感だよ、大きな一歩だね」"
+  }
+ },
+ "abarcar": {
+  "nuance": "「含む、網羅する」の基本語。abarcar todo（すべてを網羅する）のように使う。",
+  "etymology": "a（〜へ）+ brazo（腕）に由来するとされる（腕で抱え込むイメージ）。",
+  "synonyms": [],
+  "derived": [
+   "brazo（腕）"
+  ],
+  "dialogue": {
+   "es": "— El curso abarca varios temas.\n— Suena bastante completo.",
+   "ja": "「そのコースはいくつかのテーマを網羅しているんだ」「かなり充実してそうだね」"
+  }
+ },
+ "surgir": {
+  "nuance": "「生じる、現れる」の基本語。un problema surgió（問題が生じた）のように使う。",
+  "etymology": "ラテン語surgere（立ち上がる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "surgimiento（出現）"
+  ],
+  "dialogue": {
+   "es": "— Surgió un problema inesperado.\n— ¿Podemos resolverlo a tiempo?",
+   "ja": "「予期しない問題が生じたんだ」「時間内に解決できる？」"
+  }
+ },
+ "carecer de": {
+  "nuance": "「〜が欠けている」の基本表現。faltarとほぼ同義だが、よりフォーマルな響き。",
+  "etymology": "ラテン語carere（欠けている）に由来。",
+  "synonyms": [
+   "faltar（足りない、より一般的）"
+  ],
+  "derived": [
+   "carencia（欠如）"
+  ],
+  "dialogue": {
+   "es": "— El plan carece de detalles importantes.\n— Deberíamos pedir más información.",
+   "ja": "「その計画は重要な詳細が欠けているね」「もっと情報を求めた方がいいね」"
+  }
+ },
+ "respecto a": {
+  "nuance": "「〜に関して」の基本フレーズ。con respecto a（〜に関して）の形もよく使われる。",
+  "etymology": "respecto（尊重、関連）から派生した語。",
+  "synonyms": [
+   "en cuanto a（〜に関して）"
+  ],
+  "derived": [
+   "respetar（尊重する）"
+  ],
+  "dialogue": {
+   "es": "— Respecto a tu pregunta, no tengo una respuesta clara.\n— Está bien, tómate tu tiempo.",
+   "ja": "「君の質問に関して、明確な答えを持っていないんだ」「大丈夫、時間をかけていいよ」"
+  }
+ },
+ "de acuerdo con": {
+  "nuance": "「〜によれば」の基本フレーズ。segúnとほぼ同義だが、よりフォーマルな響き。",
+  "etymology": "acuerdo（合意）から派生した表現。",
+  "synonyms": [
+   "según（〜によると）"
+  ],
+  "derived": [
+   "acuerdo（合意）"
+  ],
+  "dialogue": {
+   "es": "— De acuerdo con el informe, la situación ha mejorado.\n— Es una buena noticia.",
+   "ja": "「報告書によれば、状況は改善しているんだ」「いいニュースだね」"
+  }
+ },
+ "según": {
+  "nuance": "「〜によると」の基本語。情報源を示すときによく使う前置詞。",
+  "etymology": "ラテン語secundum（〜に沿って）に由来。",
+  "synonyms": [
+   "de acuerdo con（〜によれば、フォーマル）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Según los expertos, la situación mejorará pronto.\n— Espero que tengan razón.",
+   "ja": "「専門家によると、状況はすぐに改善するらしいよ」「そうだといいね」"
+  }
+ },
+ "cabe señalar": {
+  "nuance": "「指摘すべきは」の基本フレーズ。caber（当てはまる）+ señalar（指摘する）の組み合わせ、論説文の定番の書き出し表現。",
+  "etymology": "caber（当てはまる）+ señalar（指摘する）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "señalar（指摘する）"
+  ],
+  "dialogue": {
+   "es": "— Cabe señalar que los resultados varían según la región.\n— Es un punto importante a considerar.",
+   "ja": "「指摘すべきは、結果が地域によって異なるということだね」「考慮すべき重要な点だね」"
+  }
+ },
+ "indicar": {
+  "nuance": "「示す」の基本語。señalar（指摘する）とほぼ同義で、データや標識、方向などを「示す」ときによく使われる。",
+  "etymology": "ラテン語indicare（示す）に由来。",
+  "synonyms": [
+   "señalar（指摘する、ほぼ同義）"
+  ],
+  "derived": [
+   "indicación（指示）",
+   "indicador（指標）"
+  ],
+  "dialogue": {
+   "es": "— La flecha indica la salida.\n— Ah, ya la veo, gracias.",
+   "ja": "「その矢印が出口を示しているよ」「ああ、見えた、ありがとう」"
+  }
+ },
+ "declarar": {
+  "nuance": "「表明する」の基本語。公式な場での発言・宣言を表す、報道文でよく使われるフォーマルな「言う」の言い換え。「（税関で）申告する」という意味にもなる。",
+  "etymology": "ラテン語declarare（明らかにする）に由来。",
+  "synonyms": [
+   "afirmar（断言する）"
+  ],
+  "derived": [
+   "declaración（宣言、申告）"
+  ],
+  "dialogue": {
+   "es": "— El ministro declaró que habrá nuevas inversiones.\n— Espero que se cumpla.",
+   "ja": "「大臣は新たな投資があると表明したんだ」「実現するといいね」"
+  }
+ },
+ "asegurar": {
+  "nuance": "「保証する、断言する」の基本語。「（保険で）保証する」という意味にもなる。報道文で「〜と断言した」という引用の導入にもよく使われる。",
+  "etymology": "seguro（確かな、安全な）から派生した語。",
+  "synonyms": [
+   "afirmar（断言する）"
+  ],
+  "derived": [
+   "seguro（確かな、保険）",
+   "seguridad（安全）"
+  ],
+  "dialogue": {
+   "es": "— Me aseguró que todo estaría listo a tiempo.\n— Espero que cumpla su palabra.",
+   "ja": "「すべて時間通りに準備できると保証してくれたんだ」「約束を守ってくれるといいね」"
+  }
+ },
+ "representar": {
+  "nuance": "「表す、代表する」の基本語。数値・概念・人を「代表する、表す」という幅広い文脈で使われる、論説文の定番語彙。",
+  "etymology": "ラテン語repraesentare（目の前に示す）に由来。",
+  "synonyms": [],
+  "derived": [
+   "representante（代表者）",
+   "representación（表現、代表）"
+  ],
+  "dialogue": {
+   "es": "— Esta cifra representa un aumento del diez por ciento.\n— Es un crecimiento significativo.",
+   "ja": "「この数字は10パーセントの増加を表しているんだ」「大きな成長だね」"
+  }
+ },
+ "cerca de": {
+  "nuance": "「〜の近くに」の基本フレーズ。lejos de（〜から遠くに）の反対語。",
+  "etymology": "cerca（近くに）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "cerca（近くに）"
+  ],
+  "dialogue": {
+   "es": "— Vivo cerca de la estación.\n— Qué conveniente para el transporte.",
+   "ja": "「駅の近くに住んでいるんだ」「交通の便がいいね」"
+  }
+ },
+ "lejos de": {
+  "nuance": "「〜から遠くに」の基本フレーズ。cerca de（〜の近くに）の反対語。",
+  "etymology": "lejos（遠くに）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "lejos（遠くに）"
+  ],
+  "dialogue": {
+   "es": "— Su casa está lejos de aquí.\n— ¿Cuánto tiempo se tarda en llegar?",
+   "ja": "「彼の家はここから遠いんだ」「着くのにどれくらいかかるの？」"
+  }
+ },
+ "al lado de": {
+  "nuance": "「〜の隣に」の基本フレーズ。junto a（〜のそばに）とほぼ同義。",
+  "etymology": "lado（側）から派生した表現。",
+  "synonyms": [
+   "junto a（〜のそばに）"
+  ],
+  "derived": [
+   "lado（側）"
+  ],
+  "dialogue": {
+   "es": "— El banco está al lado de la farmacia.\n— Perfecto, es fácil de encontrar.",
+   "ja": "「銀行は薬局の隣にあるよ」「いいね、見つけやすいね」"
+  }
+ },
+ "detrás de": {
+  "nuance": "「〜の後ろに」の基本フレーズ。delante de（〜の前に）の反対語。",
+  "etymology": "tras（後ろに）から派生した表現。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El parque está detrás del edificio.\n— Ah, ya lo veo desde aquí.",
+   "ja": "「公園はその建物の後ろにあるよ」「ああ、ここから見えるね」"
+  }
+ },
+ "delante de": {
+  "nuance": "「〜の前に」の基本フレーズ。detrás de（〜の後ろに）の反対語。",
+  "etymology": "delante（前に）から派生した表現。",
+  "synonyms": [
+   "enfrente de（〜の向かいに）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Nos vemos delante de la entrada.\n— Perfecto, ahí estaré.",
+   "ja": "「入り口の前で会おう」「わかった、そこにいるね」"
+  }
+ },
+ "alrededor de": {
+  "nuance": "「〜の周りに」の基本フレーズ。「約〜、およそ〜」という数量の意味にもなる（alrededor de cien personas＝約100人）。",
+  "etymology": "rodear（囲む）と関連する語に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Hay muchas tiendas alrededor del parque.\n— Es un buen lugar para pasear.",
+   "ja": "「その公園の周りにはたくさんの店があるんだ」「散歩するのにいい場所だね」"
+  }
+ },
+ "a través de": {
+  "nuance": "「〜を通して」の基本フレーズ。物理的な通過と、比喩的な手段（メディアを通して等）の両方で使われる。",
+  "etymology": "través（横切ること）から派生した表現。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Nos conocimos a través de un amigo en común.\n— Qué buena manera de conocerse.",
+   "ja": "「共通の友人を通して知り合ったんだ」「素敵な出会い方だね」"
+  }
+ },
+ "junto a": {
+  "nuance": "「〜のそばに」の基本フレーズ。al lado de（〜の隣に）とほぼ同義。",
+  "etymology": "junto（一緒の）から派生した表現。",
+  "synonyms": [
+   "al lado de（〜の隣に）"
+  ],
+  "derived": [
+   "juntar（合わせる）"
+  ],
+  "dialogue": {
+   "es": "— Siéntate junto a mí.\n— Con gusto.",
+   "ja": "「私のそばに座って」「喜んで」"
+  }
+ },
+ "frente a": {
+  "nuance": "「〜に面して」の基本フレーズ。enfrente deとほぼ同義だが、より比喩的な「〜に直面して」という意味でもよく使われる。",
+  "etymology": "frente（正面、額）から派生した表現。",
+  "synonyms": [
+   "enfrente de（〜の向かいに）"
+  ],
+  "derived": [
+   "frente（正面、額）"
+  ],
+  "dialogue": {
+   "es": "— El hotel está frente al mar.\n— Debe tener una vista hermosa.",
+   "ja": "「そのホテルは海に面しているんだ」「きっと美しい景色なんだろうね」"
+  }
+ },
+ "dentro de": {
+  "nuance": "「〜の中に」の基本フレーズ。物理的な内部と、時間的な「〜以内に」の両方で使われる（dentro de una hora＝1時間以内に）。",
+  "etymology": "dentro（中に）から派生した表現。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Llegaré dentro de diez minutos.\n— Te espero aquí.",
+   "ja": "「10分以内に着くよ」「ここで待ってるね」"
+  }
+ },
+ "fuera de": {
+  "nuance": "「〜の外に」の基本フレーズ。dentro de（〜の中に）の反対語。",
+  "etymology": "fuera（外に）から派生した表現。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El coche está estacionado fuera del edificio.\n— Voy a buscarlo.",
+   "ja": "「車は建物の外に停めてあるよ」「取りに行くね」"
+  }
+ },
+ "encima de": {
+  "nuance": "「〜の上に」の基本フレーズ。debajo de（〜の下に）の反対語。",
+  "etymology": "cima（頂上）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "cima（頂上）"
+  ],
+  "dialogue": {
+   "es": "— Puse las llaves encima de la mesa.\n— Ya las vi, gracias.",
+   "ja": "「鍵をテーブルの上に置いたよ」「もう見たよ、ありがとう」"
+  }
+ },
+ "debajo de": {
+  "nuance": "「〜の下に」の基本フレーズ。encima de（〜の上に）の反対語。",
+  "etymology": "bajo（下の）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "bajo（下の）"
+  ],
+  "dialogue": {
+   "es": "— El gato está debajo de la cama.\n— Siempre se esconde ahí.",
+   "ja": "「猫がベッドの下にいるよ」「いつもそこに隠れるんだよね」"
+  }
+ },
+ "hacia": {
+  "nuance": "「〜へ向かって」の基本語。方向を表す前置詞、a（到達点）よりも「その方向へ」という漠然とした動きを表す。",
+  "etymology": "ラテン語系の語faciaに由来するとされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El barco navega hacia el norte.\n— Debe hacer mucho frío allá.",
+   "ja": "「船は北に向かって航行しているんだ」「あっちはきっと寒いんだろうね」"
+  }
+ },
+ "a lo largo de": {
+  "nuance": "「〜に沿って」「〜の間ずっと」の基本フレーズ。空間的な意味と時間的な意味の両方で使われる。",
+  "etymology": "largo（長い）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "largo（長い）"
+  ],
+  "dialogue": {
+   "es": "— Caminamos a lo largo de la playa.\n— Fue una tarde muy relajante.",
+   "ja": "「ビーチに沿って歩いたんだ」「とてもリラックスできる午後だったね」"
+  }
+ },
+ "en medio de": {
+  "nuance": "「〜の真ん中に」の基本フレーズ。物理的な中心と、比喩的な「〜の最中に」の両方で使われる。",
+  "etymology": "medio（真ん中）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "medio（真ん中、半分）"
+  ],
+  "dialogue": {
+   "es": "— Nos encontramos en medio de la plaza.\n— Perfecto, es fácil de ubicar.",
+   "ja": "「広場の真ん中で会おう」「いいね、わかりやすい場所だね」"
+  }
+ },
+ "de repente": {
+  "nuance": "「突然」の基本フレーズ。予期しない出来事が起こったときによく使う。",
+  "etymology": "repente（突然の）から派生した表現。",
+  "synonyms": [
+   "repentinamente（突然に、よりフォーマル）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— De repente empezó a llover.\n— Menos mal que traje el paraguas.",
+   "ja": "「突然雨が降り始めたんだ」「傘持ってきてよかったよ」"
+  }
+ },
+ "de vez en cuando": {
+  "nuance": "「時々」の基本フレーズ。a vecesとほぼ同義。",
+  "etymology": "vez（回）+ cuando（〜のとき）の組み合わせ。",
+  "synonyms": [
+   "a veces（時々、ほぼ同義）"
+  ],
+  "derived": [
+   "vez（回）"
+  ],
+  "dialogue": {
+   "es": "— De vez en cuando salgo a correr por la mañana.\n— Qué buen hábito.",
+   "ja": "「時々朝ランニングに行くんだ」「いい習慣だね」"
+  }
+ },
+ "poco a poco": {
+  "nuance": "「少しずつ」の基本フレーズ。段階的な変化・進歩を表すときによく使う。",
+  "etymology": "poco（少し）を繰り返した表現。",
+  "synonyms": [],
+  "derived": [
+   "poco（少し）"
+  ],
+  "dialogue": {
+   "es": "— Poco a poco estoy mejorando mi español.\n— Se nota el progreso.",
+   "ja": "「少しずつスペイン語が上達しているんだ」「進歩がわかるよ」"
+  }
+ },
+ "de nuevo": {
+  "nuance": "「再び」の基本フレーズ。otra vezとほぼ同義。",
+  "etymology": "nuevo（新しい）から派生した表現。",
+  "synonyms": [
+   "otra vez（再び、ほぼ同義）"
+  ],
+  "derived": [
+   "nuevo（新しい）"
+  ],
+  "dialogue": {
+   "es": "— Intentémoslo de nuevo.\n— Sí, esta vez va a funcionar.",
+   "ja": "「もう一度試してみよう」「うん、今度はうまくいくよ」"
+  }
+ },
+ "al mismo tiempo": {
+  "nuance": "「同時に」の基本フレーズ。simultáneamente（よりフォーマル）とほぼ同義。",
+  "etymology": "mismo（同じ）+ tiempo（時間）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "mismo（同じ）",
+   "tiempo（時間）"
+  ],
+  "dialogue": {
+   "es": "— No puedo hacer dos cosas al mismo tiempo.\n— Nadie puede, tranquilo.",
+   "ja": "「2つのことを同時にはできないよ」「誰にもできないよ、落ち着いて」"
+  }
+ },
+ "de todos modos": {
+  "nuance": "「とにかく、いずれにせよ」の基本フレーズ。de todas formasとほぼ同義。",
+  "etymology": "modo（方法）から派生した表現。",
+  "synonyms": [
+   "de todas formas（いずれにせよ、ほぼ同義）"
+  ],
+  "derived": [
+   "modo（方法）"
+  ],
+  "dialogue": {
+   "es": "— No sé si va a funcionar, pero de todos modos lo voy a intentar.\n— Esa es la actitud correcta.",
+   "ja": "「うまくいくかわからないけど、とにかく試してみるよ」「その姿勢は正しいよ」"
+  }
+ },
+ "en cambio": {
+  "nuance": "「一方で」の基本フレーズ。対比を表す接続表現。",
+  "etymology": "cambio（変化）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "cambiar（変える）"
+  ],
+  "dialogue": {
+   "es": "— A mí me gusta el café; a ella, en cambio, le gusta el té.\n— Cada quien con sus gustos.",
+   "ja": "「私はコーヒーが好きなんだけど、彼女は一方で紅茶が好きなんだ」「人それぞれ好みがあるよね」"
+  }
+ },
+ "por lo general": {
+  "nuance": "「一般的に」の基本フレーズ。generalmente（よりフォーマル）とほぼ同義。",
+  "etymology": "general（一般的な）から派生した表現。",
+  "synonyms": [
+   "generalmente（一般的に）"
+  ],
+  "derived": [
+   "general（一般的な）"
+  ],
+  "dialogue": {
+   "es": "— Por lo general, llego temprano al trabajo.\n— Qué disciplina.",
+   "ja": "「一般的に、私は仕事に早く着くんだ」「なんて規律正しいんだ」"
+  }
+ },
+ "a partir de": {
+  "nuance": "「〜から(時点)」の基本フレーズ。desdeとほぼ同義だが、未来の開始時点を表すときによく使われる。",
+  "etymology": "partir（出発する）から派生した表現。",
+  "synonyms": [
+   "desde（〜から）"
+  ],
+  "derived": [
+   "partir（出発する）"
+  ],
+  "dialogue": {
+   "es": "— A partir de mañana, empiezo mi nueva dieta.\n— ¡Ánimo!",
+   "ja": "「明日から新しいダイエットを始めるよ」「頑張って！」"
+  }
+ },
+ "hasta ahora": {
+  "nuance": "「今のところ」の基本フレーズ。現在までの状況を表すときに使う。",
+  "etymology": "hasta（〜まで）+ ahora（今）の組み合わせ。",
+  "synonyms": [
+   "de momento（今のところ）"
+  ],
+  "derived": [
+   "ahora（今）"
+  ],
+  "dialogue": {
+   "es": "— Hasta ahora todo va bien.\n— Me alegra escuchar eso.",
+   "ja": "「今のところすべて順調だよ」「それを聞いて嬉しいよ」"
+  }
+ },
+ "de momento": {
+  "nuance": "「今のところ」の基本フレーズ。hasta ahoraとほぼ同義。",
+  "etymology": "momento（瞬間）から派生した表現。",
+  "synonyms": [
+   "hasta ahora（今のところ）"
+  ],
+  "derived": [
+   "momento（瞬間）"
+  ],
+  "dialogue": {
+   "es": "— De momento no tengo planes para el fin de semana.\n— Podríamos hacer algo juntos.",
+   "ja": "「今のところ週末の予定はないんだ」「一緒に何かできるかもね」"
+  }
+ },
+ "en seguida": {
+  "nuance": "「すぐに」の基本フレーズ。inmediatamente（よりフォーマル）とほぼ同義。",
+  "etymology": "seguido（続いた）から派生した表現。",
+  "synonyms": [
+   "inmediatamente（すぐに、フォーマル）"
+  ],
+  "derived": [
+   "seguir（続ける）"
+  ],
+  "dialogue": {
+   "es": "— Voy en seguida.\n— Te espero aquí.",
+   "ja": "「すぐ行くよ」「ここで待ってるね」"
+  }
+ },
+ "a lo mejor": {
+  "nuance": "「もしかしたら」の基本フレーズ。quizás/tal vezとほぼ同義の口語表現。",
+  "etymology": "mejor（より良い）から派生した表現。",
+  "synonyms": [
+   "tal vez（たぶん）",
+   "quizás（たぶん）"
+  ],
+  "derived": [
+   "mejor（より良い）"
+  ],
+  "dialogue": {
+   "es": "— A lo mejor llueve mañana.\n— Deberíamos llevar paraguas por si acaso.",
+   "ja": "「もしかしたら明日雨が降るかも」「念のため傘を持って行った方がいいね」"
+  }
+ },
+ "sobre todo": {
+  "nuance": "「とりわけ」の基本フレーズ。特に強調したい点を示すときに使う。",
+  "etymology": "sobre（〜の上に）+ todo（すべて）の組み合わせ。",
+  "synonyms": [
+   "especialmente（特に）"
+  ],
+  "derived": [
+   "todo（すべて）"
+  ],
+  "dialogue": {
+   "es": "— Me gusta la comida mexicana, sobre todo los tacos.\n— A mí también, son deliciosos.",
+   "ja": "「メキシコ料理が好きなんだ、とりわけタコスがね」「私もだよ、美味しいよね」"
+  }
+ },
+ "en particular": {
+  "nuance": "「特に」の基本フレーズ。en especial（ほぼ同義）とも言い換えられる。",
+  "etymology": "particular（個別の）から派生した表現。",
+  "synonyms": [
+   "en especial（特に）"
+  ],
+  "derived": [
+   "particular（個別の）"
+  ],
+  "dialogue": {
+   "es": "— ¿Hay algo en particular que te gustaría hacer?\n— No, cualquier plan está bien.",
+   "ja": "「何か特にやりたいことある？」「いや、どんな予定でも大丈夫だよ」"
+  }
+ },
+ "al fin y al cabo": {
+  "nuance": "「結局のところ」の基本フレーズ。a fin de cuentasとほぼ同義。",
+  "etymology": "fin（終わり）+ cabo（端）の組み合わせ。",
+  "synonyms": [
+   "a fin de cuentas（結局のところ）"
+  ],
+  "derived": [
+   "fin（終わり）"
+  ],
+  "dialogue": {
+   "es": "— Al fin y al cabo, todo salió bien.\n— Sí, no había por qué preocuparse tanto.",
+   "ja": "「結局のところ、すべてうまくいったね」「うん、そんなに心配する必要なかったね」"
+  }
+ },
+ "tarde o temprano": {
+  "nuance": "「遅かれ早かれ」の基本フレーズ。避けられない結果について話すときによく使う。",
+  "etymology": "tarde（遅く）+ temprano（早く）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "tarde（遅く）",
+   "temprano（早く）"
+  ],
+  "dialogue": {
+   "es": "— Tarde o temprano tendrás que decidir.\n— Lo sé, solo necesito más tiempo.",
+   "ja": "「遅かれ早かれ決めないといけないよ」「わかってる、もう少し時間が必要なんだ」"
+  }
+ },
+ "enfrente de": {
+  "nuance": "「〜の向かいに」の基本フレーズ。frente a（〜に面して）とほぼ同義。",
+  "etymology": "en（〜において）+ frente（正面）の組み合わせ。",
+  "synonyms": [
+   "frente a（〜に面して）"
+  ],
+  "derived": [
+   "frente（正面）"
+  ],
+  "dialogue": {
+   "es": "— El café está enfrente de la estación.\n— Perfecto, lo voy a encontrar fácilmente.",
+   "ja": "「そのカフェは駅の向かいにあるよ」「よかった、簡単に見つけられそうだね」"
+  }
+ },
+ "hacer cola": {
+  "nuance": "「列に並ぶ」の基本表現。cola（尻尾、列）から派生。メキシコではhacer filaもよく使われる（地域差）。",
+  "etymology": "cola（尻尾、列）から派生した表現。",
+  "synonyms": [
+   "hacer fila（列に並ぶ、ほぼ同義）"
+  ],
+  "derived": [
+   "cola（尻尾、列）"
+  ],
+  "dialogue": {
+   "es": "— Tuvimos que hacer cola por una hora.\n— Qué mala suerte, ¿valió la pena?",
+   "ja": "「1時間並ばないといけなかったんだ」「運が悪かったね、その価値はあった？」"
+  }
+ },
+ "estar de acuerdo": {
+  "nuance": "「賛成する」の基本表現。estar de acuerdo con（〜に賛成する）という組み合わせもよく使う。",
+  "etymology": "acuerdo（合意）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "acuerdo（合意）"
+  ],
+  "dialogue": {
+   "es": "— Estoy de acuerdo contigo.\n— Me alegra que pensemos igual.",
+   "ja": "「あなたに賛成だよ」「同じように考えていて嬉しいよ」"
+  }
+ },
+ "ponerse de pie": {
+  "nuance": "「立ち上がる」の基本表現。levantarseとほぼ同義だが、より「起立する」という動作を明確に表す。",
+  "etymology": "pie（足）から派生した表現。",
+  "synonyms": [
+   "levantarse（立ち上がる、起きる）"
+  ],
+  "derived": [
+   "pie（足）"
+  ],
+  "dialogue": {
+   "es": "— Todos se pusieron de pie para aplaudir.\n— Fue un momento muy emotivo.",
+   "ja": "「みんな拍手するために立ち上がったんだ」「とても感動的な瞬間だったね」"
+  }
+ },
+ "dar un paseo": {
+  "nuance": "「散歩する」の基本表現。pasear（散歩する、動詞）とほぼ同じ意味。",
+  "etymology": "paseo（散歩）から派生した表現。",
+  "synonyms": [
+   "pasear（散歩する）"
+  ],
+  "derived": [
+   "pasear（散歩する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Quieres dar un paseo por el parque?\n— Sí, hace un día precioso.",
+   "ja": "「公園を散歩したい？」「うん、今日はとてもいい天気だから」"
+  }
+ },
+ "hacer ejercicio": {
+  "nuance": "「運動する」の基本表現。entrenar（トレーニングする）よりも一般的な言い方。",
+  "etymology": "ejercicio（運動、練習）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "ejercicio（運動）"
+  ],
+  "dialogue": {
+   "es": "— Trato de hacer ejercicio todos los días.\n— Qué disciplina, yo debería hacer lo mismo.",
+   "ja": "「毎日運動しようとしているんだ」「規律正しいね、私も同じことをすべきだな」"
+  }
+ },
+ "tomar una decisión": {
+  "nuance": "「決断する」の基本表現。decidir（決める、動詞一語）とほぼ同じ意味だが、より明確な決断のニュアンス。",
+  "etymology": "decisión（決定）から派生した表現。",
+  "synonyms": [
+   "decidir（決める）"
+  ],
+  "derived": [
+   "decisión（決定）"
+  ],
+  "dialogue": {
+   "es": "— Tengo que tomar una decisión importante.\n— Tómate tu tiempo, no hay prisa.",
+   "ja": "「重要な決断をしないといけないんだ」「時間をかけていいよ、急がなくていいから」"
+  }
+ },
+ "pedir prestado": {
+  "nuance": "「借りる」の基本表現。pedir（頼む）+ prestado（貸された）の組み合わせ。prestar（貸す）の対義的な視点。",
+  "etymology": "prestar（貸す）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "prestar（貸す）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me puedes pedir prestado el coche?\n— Claro, cuídalo bien.",
+   "ja": "「車貸してもらえる？」「もちろん、大事に使ってね」"
+  }
+ },
+ "prestar atención": {
+  "nuance": "「注意を払う」の基本表現。prestar（貸す）+ atención（注意）の組み合わせ、直訳は「注意を貸す」。",
+  "etymology": "prestar（貸す）+ atención（注意）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "atención（注意）"
+  ],
+  "dialogue": {
+   "es": "— Presta atención, esto es importante.\n— Estoy escuchando.",
+   "ja": "「注意して聞いて、これは重要だから」「聞いているよ」"
+  }
+ },
+ "hacer caso": {
+  "nuance": "「言うことを聞く、注意を払う」の基本表現。hacer caso a（〜の言うことを聞く）という組み合わせでよく使う。",
+  "etymology": "caso（場合、事例）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "caso（場合）"
+  ],
+  "dialogue": {
+   "es": "— No me hizo caso.\n— Qué frustrante.",
+   "ja": "「彼は私の言うことを聞いてくれなかったんだ」「イライラするね」"
+  }
+ },
+ "tener suerte": {
+  "nuance": "「運がいい」の基本表現。ser afortunado（幸運である、よりフォーマル）とほぼ同義。",
+  "etymology": "suerte（運）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "suerte（運）"
+  ],
+  "dialogue": {
+   "es": "— Tuviste mucha suerte de encontrar ese trabajo.\n— Sí, estoy muy agradecido.",
+   "ja": "「その仕事を見つけられて運が良かったね」「うん、とても感謝しているよ」"
+  }
+ },
+ "tener razón": {
+  "nuance": "「正しい(人が)」の基本表現。estar equivocado（間違っている）の反対語。",
+  "etymology": "razón（理性、理由）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "razón（理由）"
+  ],
+  "dialogue": {
+   "es": "— Tienes razón, debí haberlo pensado mejor.\n— No te preocupes, todos cometemos errores.",
+   "ja": "「君の言う通りだね、もっとよく考えるべきだった」「気にしないで、誰でもミスはするから」"
+  }
+ },
+ "estar equivocado": {
+  "nuance": "「間違っている(人が)」の基本表現。tener razón（正しい）の反対語。",
+  "etymology": "equivocarse（間違える）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "equivocarse（間違える）"
+  ],
+  "dialogue": {
+   "es": "— Creo que estás equivocado sobre esto.\n— Puede ser, déjame revisarlo.",
+   "ja": "「これについては君が間違っていると思うな」「そうかもね、確認させて」"
+  }
+ },
+ "cometer un error": {
+  "nuance": "「ミスをする」の基本表現。equivocarse（間違える）とほぼ同義。",
+  "etymology": "cometer（犯す）+ error（誤り）の組み合わせ。",
+  "synonyms": [
+   "equivocarse（間違える）"
+  ],
+  "derived": [
+   "error（誤り）"
+  ],
+  "dialogue": {
+   "es": "— Cometí un error en el informe.\n— No te preocupes, lo podemos corregir.",
+   "ja": "「報告書でミスをしちゃったんだ」「心配しないで、修正できるから」"
+  }
+ },
+ "sacar fotos": {
+  "nuance": "「写真を撮る」の基本表現。tomar fotos（写真を撮る、ほぼ同義）とも言い換えられる。",
+  "etymology": "sacar（取り出す）+ foto（写真）の組み合わせ。",
+  "synonyms": [
+   "tomar fotos（写真を撮る）"
+  ],
+  "derived": [
+   "foto（写真）"
+  ],
+  "dialogue": {
+   "es": "— Vamos a sacar fotos antes de que se ponga el sol.\n— Buena idea, la luz está perfecta.",
+   "ja": "「日が沈む前に写真を撮ろう」「いい考えだね、光が完璧だから」"
+  }
+ },
+ "hacer las paces": {
+  "nuance": "「仲直りする」の基本表現。paz（平和）から派生、直訳は「平和を作る」。",
+  "etymology": "paz（平和）から派生した表現。",
+  "synonyms": [
+   "reconciliarse（仲直りする、よりフォーマル）"
+  ],
+  "derived": [
+   "paz（平和）"
+  ],
+  "dialogue": {
+   "es": "— Ya hicimos las paces después de la discusión.\n— Me alegra escuchar eso.",
+   "ja": "「口論の後、もう仲直りしたよ」「それを聞いて嬉しいよ」"
+  }
+ },
+ "cambiar de opinión": {
+  "nuance": "「考えを変える」の基本表現。cambiar（変える）+ de opinión（意見の）の組み合わせ。",
+  "etymology": "opinión（意見）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "opinión（意見）"
+  ],
+  "dialogue": {
+   "es": "— Cambié de opinión sobre el restaurante.\n— ¿Por qué? Pensé que te gustaba.",
+   "ja": "「そのレストランについて考えが変わったんだ」「どうして？気に入っていると思ってたよ」"
+  }
+ },
+ "darse prisa": {
+  "nuance": "「急ぐ」の基本表現。apurarse（急ぐ、ラテンアメリカで一般的）とほぼ同義。",
+  "etymology": "prisa（急ぎ）から派生した表現。",
+  "synonyms": [
+   "apurarse（急ぐ、ラテンアメリカで一般的）"
+  ],
+  "derived": [
+   "prisa（急ぎ）"
+  ],
+  "dialogue": {
+   "es": "— ¡Date prisa, vamos a llegar tarde!\n— Ya voy, dame un minuto.",
+   "ja": "「急いで、遅刻しちゃうよ！」「今行くよ、1分待って」"
+  }
+ },
+ "echar un vistazo": {
+  "nuance": "「ちょっと見る」の基本表現。vistazo（一瞥）から派生、echarle un ojo（口語、ほぼ同義）とも言い換えられる。",
+  "etymology": "echar（投げる）+ vistazo（一瞥）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "ver（見る）"
+  ],
+  "dialogue": {
+   "es": "— ¿Puedes echar un vistazo a este documento?\n— Claro, dame un momento.",
+   "ja": "「この書類ちょっと見てもらえる？」「もちろん、少し待ってね」"
+  }
+ },
+ "perder el tiempo": {
+  "nuance": "「時間を無駄にする」の基本表現。perder（失う）+ el tiempo（時間）の組み合わせ。",
+  "etymology": "perder（失う）+ tiempo（時間）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "perder（失う）",
+   "tiempo（時間）"
+  ],
+  "dialogue": {
+   "es": "— No quiero perder el tiempo en esto.\n— Tienes razón, sigamos adelante.",
+   "ja": "「これに時間を無駄にしたくないんだ」「その通りだね、先に進もう」"
+  }
+ },
+ "valer la pena": {
+  "nuance": "「価値がある」の基本表現。すでにpróximaで少し触れましたが、valer（価値がある）+ la pena（苦労）の組み合わせ。",
+  "etymology": "valer（価値がある）+ pena（苦労、罰）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "valer（価値がある）"
+  ],
+  "dialogue": {
+   "es": "— ¿Vale la pena ver esa serie?\n— Sí, totalmente.",
+   "ja": "「そのドラマ見る価値ある？」「うん、絶対にね」"
+  }
+ },
+ "estar harto": {
+  "nuance": "「うんざりしている」の基本表現。estar harto de（〜にうんざりしている）という組み合わせでよく使う。",
+  "etymology": "hartar（満腹にする、うんざりさせる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "hartar（うんざりさせる）"
+  ],
+  "dialogue": {
+   "es": "— Estoy harto de este clima.\n— Yo también, espero que mejore pronto.",
+   "ja": "「この天気にはうんざりしているんだ」「私もだよ、早く良くなるといいね」"
+  }
+ },
+ "ponerse nervioso": {
+  "nuance": "「緊張する」の基本表現。ponerse（〜になる）+ nervioso（緊張した）の組み合わせ。",
+  "etymology": "nervioso（神経質な）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "nervioso（緊張した）"
+  ],
+  "dialogue": {
+   "es": "— Me pongo muy nervioso antes de hablar en público.\n— Es normal, a todos nos pasa.",
+   "ja": "「人前で話す前はすごく緊張するんだ」「普通のことだよ、みんなそうだから」"
+  }
+ },
+ "quedarse dormido": {
+  "nuance": "「寝落ちする」の基本表現。dormirse（眠りに落ちる）とほぼ同義だが、「そのまま眠ってしまった」というニュアンスが強い。",
+  "etymology": "quedarse（留まる）+ dormido（眠った）の組み合わせ。",
+  "synonyms": [
+   "dormirse（眠りに落ちる）"
+  ],
+  "derived": [
+   "dormir（眠る）"
+  ],
+  "dialogue": {
+   "es": "— Me quedé dormido viendo la película.\n— Jaja, a mí me pasa seguido.",
+   "ja": "「映画を見ながら寝落ちしちゃった」「あはは、私もよくあるよ」"
+  }
+ },
+ "hacer una llamada": {
+  "nuance": "「電話をかける」の基本表現。llamar（電話する、動詞一語）とほぼ同じ意味。",
+  "etymology": "llamada（電話、呼び出し）から派生した表現。",
+  "synonyms": [
+   "llamar（電話する）"
+  ],
+  "derived": [
+   "llamar（呼ぶ、電話する）"
+  ],
+  "dialogue": {
+   "es": "— Necesito hacer una llamada rápida.\n— Claro, tómate tu tiempo.",
+   "ja": "「急いで電話をかける必要があるんだ」「もちろん、ゆっくりどうぞ」"
+  }
+ },
+ "dar las gracias": {
+  "nuance": "「感謝を伝える」の基本表現。agradecer（感謝する、動詞一語）とほぼ同じ意味。",
+  "etymology": "gracias（感謝）から派生した表現。",
+  "synonyms": [
+   "agradecer（感謝する）"
+  ],
+  "derived": [
+   "gracias（ありがとう）"
+  ],
+  "dialogue": {
+   "es": "— Quiero darte las gracias por tu ayuda.\n— No hay de qué, para eso están los amigos.",
+   "ja": "「助けてくれてありがとうと伝えたいんだ」「どういたしまして、友達ってそういうものだから」"
+  }
+ },
+ "pedir perdón": {
+  "nuance": "「許しを乞う」の基本表現。disculparse（謝る）とほぼ同義。",
+  "etymology": "perdón（許し）から派生した表現。",
+  "synonyms": [
+   "disculparse（謝る）"
+  ],
+  "derived": [
+   "perdonar（許す）"
+  ],
+  "dialogue": {
+   "es": "— Le pedí perdón por mi comportamiento.\n— Fue muy maduro de tu parte.",
+   "ja": "「自分の振る舞いについて許しを乞うたんだ」「君にしてはとても大人の対応だったね」"
+  }
+ },
+ "tener cuidado": {
+  "nuance": "「気をつける」の基本表現。tener cuidado con（〜に気をつける）という組み合わせでよく使う。",
+  "etymology": "cuidado（注意）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "cuidado（注意）",
+   "cuidar（世話をする）"
+  ],
+  "dialogue": {
+   "es": "— Ten cuidado con el escalón.\n— Gracias por avisarme.",
+   "ja": "「段差に気をつけて」「教えてくれてありがとう」"
+  }
+ },
+ "hacer trampa": {
+  "nuance": "「ズルをする」の基本表現。trampa（罠、ズル）から派生した表現。",
+  "etymology": "trampa（罠）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "trampa（罠、ズル）"
+  ],
+  "dialogue": {
+   "es": "— No hagas trampa en el juego.\n— Nunca haría eso, lo prometo.",
+   "ja": "「ゲームでズルしないでね」「絶対そんなことしないよ、約束する」"
+  }
+ },
+ "romper el hielo": {
+  "nuance": "「場を和ませる」の基本表現。romper（壊す）+ el hielo（氷）の組み合わせ、英語のbreak the iceと同じ発想。",
+  "etymology": "romper（壊す）+ hielo（氷）の組み合わせ、英語break the iceと同語源的発想。",
+  "synonyms": [],
+  "derived": [
+   "hielo（氷）"
+  ],
+  "dialogue": {
+   "es": "— Contó un chiste para romper el hielo.\n— Funcionó, todos se rieron.",
+   "ja": "「場を和ませるために冗談を言ったんだ」「効果あったね、みんな笑ってたよ」"
+  }
+ },
+ "hacer amigos": {
+  "nuance": "「友達を作る」の基本表現。hacer（作る）+ amigos（友達）の組み合わせ。",
+  "etymology": "amigo（友達）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "amigo（友達）"
+  ],
+  "dialogue": {
+   "es": "— Es fácil hacer amigos aquí.\n— Sí, la gente es muy amigable.",
+   "ja": "「ここでは友達を作りやすいんだ」「うん、みんなとても親しみやすいよね」"
   }
  }
 };
