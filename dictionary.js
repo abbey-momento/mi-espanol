@@ -21687,5 +21687,609 @@ const DICTIONARY_DATA = {
    "es": "— El respeto mutuo es la base de una buena relación.\n— Estoy totalmente de acuerdo.",
    "ja": "「相互の尊重が良い関係の基盤だよね」「まったく同感だよ」"
   }
+ },
+ "cómoda": {
+  "nuance": "「たんす」の基本語。衣類を収納する引き出し付きの家具。",
+  "etymology": "cómodo（快適な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "cómodo（快適な）"
+  ],
+  "dialogue": {
+   "es": "— Guardé la ropa en la cómoda.\n— ¿Cabe todo ahí?",
+   "ja": "「服をたんすにしまったよ」「全部入るの？」"
+  }
+ },
+ "escritorio": {
+  "nuance": "「机」の基本語。学習・仕事用の机を指す（食卓のmesaとは区別される）。",
+  "etymology": "escribir（書く）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "escribir（書く）"
+  ],
+  "dialogue": {
+   "es": "— Mi escritorio está muy desordenado.\n— El mío también, necesito organizarlo.",
+   "ja": "「私の机、すごく散らかっているんだ」「私のもだよ、整理しないと」"
+  }
+ },
+ "reproducir": {
+  "nuance": "「再生する」の基本語。動画・音楽の再生で使う。「複製する、繁殖する」という意味にもなる。",
+  "etymology": "re（再び）+ producir（作る）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "producir（作る）"
+  ],
+  "dialogue": {
+   "es": "— Haz clic aquí para reproducir el video.\n— Ya lo hice, gracias.",
+   "ja": "「動画を再生するにはここをクリックして」「もうやったよ、ありがとう」"
+  }
+ },
+ "pausar": {
+  "nuance": "「一時停止する」の基本語。pausa（休止）から派生した語。",
+  "etymology": "pausa（休止）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "pausa（休止）"
+  ],
+  "dialogue": {
+   "es": "— Pausa la película, necesito ir al baño.\n— Claro, te espero.",
+   "ja": "「映画一時停止して、トイレに行きたいんだ」「もちろん、待ってるよ」"
+  }
+ },
+ "omitir": {
+  "nuance": "「スキップする」の基本語。saltar（跳ぶ、スキップする）とほぼ同義で、動画のイントロなどをスキップするときによく使う。",
+  "etymology": "ラテン語omittere（見逃す）に由来。",
+  "synonyms": [
+   "saltar（スキップする）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Voy a omitir la introducción.\n— Yo también, ya la vi muchas veces.",
+   "ja": "「イントロをスキップするよ」「私もだよ、もう何回も見たから」"
+  }
+ },
+ "siguiente episodio": {
+  "nuance": "「次のエピソード」の基本語。動画配信サービスでよく見る表示。",
+  "etymology": "siguiente（次の）+ episodio（エピソード）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "seguir（続ける）"
+  ],
+  "dialogue": {
+   "es": "— El siguiente episodio empieza en cinco segundos.\n— ¡Justo a tiempo!",
+   "ja": "「次のエピソードは5秒後に始まるよ」「ちょうどいいタイミング！」"
+  }
+ },
+ "subtítulos": {
+  "nuance": "「字幕」の基本語。con subtítulos（字幕付きで）はよく使う表現。",
+  "etymology": "sub（下に）+ título（タイトル）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "título（タイトル）"
+  ],
+  "dialogue": {
+   "es": "— ¿Ves películas con subtítulos?\n— Sí, me ayuda a aprender el idioma.",
+   "ja": "「字幕付きで映画見る？」「うん、言語学習に役立つんだ」"
+  }
+ },
+ "doblaje": {
+  "nuance": "「吹き替え」の基本語。doblar（吹き替えする、折る）から派生した語。",
+  "etymology": "doblar（二重にする、吹き替える）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "doblar（吹き替えする）"
+  ],
+  "dialogue": {
+   "es": "— Prefiero el doblaje al idioma original.\n— Yo prefiero los subtítulos.",
+   "ja": "「オリジナル言語より吹き替えの方が好きなんだ」「私は字幕の方が好きだな」"
+  }
+ },
+ "continuar viendo": {
+  "nuance": "「視聴を続ける」の基本表現。動画配信サービスのホーム画面によく表示される。",
+  "etymology": "continuar（続ける）+ ver（見る）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "continuar（続ける）",
+   "ver（見る）"
+  ],
+  "dialogue": {
+   "es": "— Vamos a continuar viendo la serie.\n— Sí, quedamos en un momento emocionante.",
+   "ja": "「ドラマの続きを見よう」「うん、盛り上がるところで終わったもんね」"
+  }
+ },
+ "control remoto": {
+  "nuance": "「リモコン」の基本語。¿dónde está el control remoto?（リモコンどこ？）はよく使う質問。",
+  "etymology": "control（制御）+ remoto（遠隔の）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "controlar（制御する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Dónde está el control remoto?\n— Está en el sofá.",
+   "ja": "「リモコンどこ？」「ソファにあるよ」"
+  }
+ },
+ "riñón": {
+  "nuance": "「腎臓」の基本語。複数形riñones。costar un riñón（腎臓一つ分の値段がする＝とても高い）という口語表現もある。",
+  "etymology": "俗ラテン語renio（腎臓）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El riñón filtra la sangre.\n— Es un órgano muy importante.",
+   "ja": "「腎臓は血液を濾過するんだ」「とても重要な臓器だよね」"
+  }
+ },
+ "intestino": {
+  "nuance": "「腸」の基本語。intestino delgado（小腸）、intestino grueso（大腸）のように使う。",
+  "etymology": "ラテン語intestinus（内部の）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El intestino es parte del sistema digestivo.\n— Sí, tiene una función muy importante.",
+   "ja": "「腸は消化器系の一部なんだ」「うん、とても重要な機能を持っているよね」"
+  }
+ },
+ "vejiga": {
+  "nuance": "「膀胱」の基本語。",
+  "etymology": "ラテン語vesica（袋、膀胱）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Necesito ir al baño, tengo la vejiga llena.\n— Hay uno cerca de aquí.",
+   "ja": "「トイレに行く必要があるんだ、膀胱がいっぱいで」「この近くにあるよ」"
+  }
+ },
+ "gripe": {
+  "nuance": "「インフルエンザ」の基本語。resfriado（風邪、より軽い）とは区別される。",
+  "etymology": "フランス語gripper（つかむ→急に発症する）に由来するとされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Creo que tengo gripe.\n— Deberías descansar y tomar líquidos.",
+   "ja": "「インフルエンザにかかったみたい」「休んで水分を取った方がいいよ」"
+  }
+ },
+ "diarrea": {
+  "nuance": "「下痢」の基本語。tener diarrea（下痢をしている）はよく使う組み合わせ。",
+  "etymology": "ギリシャ語diarrhoia（流れ出ること）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Tengo diarrea desde ayer.\n— Deberías ver a un médico si continúa.",
+   "ja": "「昨日から下痢をしているんだ」「続くなら医者に診てもらった方がいいよ」"
+  }
+ },
+ "vómito": {
+  "nuance": "「嘔吐」の基本語。vomitar（吐く、動詞）から派生した名詞。",
+  "etymology": "vomitar（吐く）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "vomitar（吐く）"
+  ],
+  "dialogue": {
+   "es": "— Tuvo vómito toda la noche.\n— Pobre, espero que se sienta mejor pronto.",
+   "ja": "「一晩中嘔吐していたんだ」「かわいそうに、早く良くなるといいね」"
+  }
+ },
+ "infección": {
+  "nuance": "「感染症」の基本語。infección de garganta（喉の感染症）のように使う。",
+  "etymology": "ラテン語infectio（汚染）に由来。",
+  "synonyms": [],
+  "derived": [
+   "infectar（感染させる）"
+  ],
+  "dialogue": {
+   "es": "— El médico dijo que tengo una infección.\n— ¿Te recetó antibióticos?",
+   "ja": "「医者が感染症だと言ったんだ」「抗生物質を処方された？」"
+  }
+ },
+ "proteína": {
+  "nuance": "「タンパク質」の基本語。alimentos ricos en proteína（タンパク質豊富な食品）のように使う。",
+  "etymology": "ギリシャ語proteios（最も重要な）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Necesito comer más proteína.\n— El pollo y los huevos son buenas fuentes.",
+   "ja": "「もっとタンパク質を摂る必要があるんだ」「鶏肉や卵がいい摂取源だよ」"
+  }
+ },
+ "vitamina": {
+  "nuance": "「ビタミン」の基本語。vitamina C（ビタミンC）のように使う。",
+  "etymology": "vita（生命）+ amina（アミン）の組み合わせ。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Las naranjas tienen mucha vitamina C.\n— Por eso son buenas para el resfriado.",
+   "ja": "「オレンジにはビタミンCがたくさん含まれているんだ」「だから風邪にいいんだね」"
+  }
+ },
+ "carbohidrato": {
+  "nuance": "「炭水化物」の基本語。carbo（炭素）+ hidrato（水和物）の組み合わせ。",
+  "etymology": "carbono（炭素）+ hidrato（水和物）の組み合わせ。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Trato de limitar los carbohidratos por la noche.\n— Yo también sigo esa regla.",
+   "ja": "「夜は炭水化物を控えるようにしているんだ」「私もそのルールに従っているよ」"
+  }
+ },
+ "grasa": {
+  "nuance": "「脂肪」の基本語。grasa saludable（健康的な脂肪）のように使う。",
+  "etymology": "ラテン語crassus（太い）に由来。",
+  "synonyms": [],
+  "derived": [
+   "graso（脂肪の多い）"
+  ],
+  "dialogue": {
+   "es": "— El aguacate tiene grasas saludables.\n— Es un alimento muy completo.",
+   "ja": "「アボカドには健康的な脂肪が含まれているんだ」「とても栄養バランスのいい食品だよね」"
+  }
+ },
+ "fibra": {
+  "nuance": "「食物繊維」の基本語。alimentos ricos en fibra（食物繊維豊富な食品）のように使う。",
+  "etymology": "ラテン語fibra（繊維）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Necesitas comer más fibra.\n— Voy a añadir más verduras a mi dieta.",
+   "ja": "「もっと食物繊維を摂る必要があるよ」「食事にもっと野菜を加えるようにするよ」"
+  }
+ },
+ "calcio": {
+  "nuance": "「カルシウム」の基本語。骨の健康に関連してよく話題になる。",
+  "etymology": "ラテン語calx（石灰）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— La leche tiene mucho calcio.\n— Es bueno para los huesos.",
+   "ja": "「牛乳にはカルシウムがたくさん含まれているんだ」「骨にいいよね」"
+  }
+ },
+ "hierro": {
+  "nuance": "「鉄分」の基本語。「鉄（金属）」という文字通りの意味もある。falta de hierro（鉄分不足）はよく使う組み合わせ。",
+  "etymology": "ラテン語ferrum（鉄）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El médico dice que me falta hierro.\n— Deberías comer más espinacas y carne roja.",
+   "ja": "「医者が鉄分不足だと言ったんだ」「ほうれん草と赤身肉をもっと食べた方がいいよ」"
+  }
+ },
+ "pasado mañana": {
+  "nuance": "「あさって」の基本表現。pasado（過ぎた）+ mañana（明日）の組み合わせ、直訳「明日を過ぎた日」。",
+  "etymology": "pasado（過ぎた）+ mañana（明日）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "mañana（明日）"
+  ],
+  "dialogue": {
+   "es": "— Nos vemos pasado mañana.\n— Perfecto, ahí estaré.",
+   "ja": "「あさって会おうね」「わかった、そこに行くよ」"
+  }
+ },
+ "anteayer": {
+  "nuance": "「おととい」の基本表現。ante（前に）+ ayer（昨日）の組み合わせ。",
+  "etymology": "ante（前に）+ ayer（昨日）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "ayer（昨日）"
+  ],
+  "dialogue": {
+   "es": "— La vi anteayer en el supermercado.\n— ¿Cómo está?",
+   "ja": "「おとといスーパーで彼女を見かけたよ」「元気だった？」"
+  }
+ },
+ "obtener": {
+  "nuance": "「得る」の基本語。conseguir（手に入れる）とほぼ同義だが、よりフォーマルな響き。",
+  "etymology": "ラテン語obtinere（保持する）に由来。",
+  "synonyms": [
+   "conseguir（手に入れる）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Cómo puedo obtener más información?\n— Puedes visitar nuestro sitio web.",
+   "ja": "「どうすればもっと情報を得られますか？」「私たちのウェブサイトを見てみてください」"
+  }
+ },
+ "sacar": {
+  "nuance": "「取り出す」「得る」の両方の意味を持つ、日常でとても頻繁に使う動詞。sacar una foto（写真を撮る）、sacar buenas notas（いい成績を取る）のように幅広く使える。",
+  "etymology": "ゲルマン語系の語sakanに由来するとされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Voy a sacar dinero del cajero.\n— Yo también necesito sacar un poco.",
+   "ja": "「ATMでお金を下ろすよ」「私も少し下ろす必要があるんだ」"
+  }
+ },
+ "coger": {
+  "nuance": "「つかむ、取る」の基本語。スペインでは日常的な中立の動詞だが、メキシコを含む一部のラテンアメリカ諸国では性的な意味の俗語になるため、agarrarやtomarを使う方が安全。",
+  "etymology": "ラテン語colligere（集める）に由来。",
+  "synonyms": [
+   "agarrar（つかむ、ラテンアメリカで一般的）",
+   "tomar（取る）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— En España, \"coger el autobús\" es normal.\n— Pero en México es mejor decir \"tomar el autobús\".",
+   "ja": "「スペインでは『coger el autobús(バスに乗る)』は普通の言い方なんだ」「でもメキシコでは『tomar el autobús』と言う方がいいよ」"
+  }
+ },
+ "agarrar": {
+  "nuance": "「つかむ」の基本語。ラテンアメリカで一般的に使われ、coger（地域によっては卑語）の安全な代替語としてもよく使われる。",
+  "etymology": "garra（爪、かぎ爪）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "garra（爪）"
+  ],
+  "dialogue": {
+   "es": "— Agarra mi mano, hay mucha gente aquí.\n— Claro, no quiero perderte.",
+   "ja": "「私の手をつかんで、ここは人が多いから」「うん、はぐれたくないもんね」"
+  }
+ },
+ "sentirse mal": {
+  "nuance": "「具合が悪い」の基本表現。sentirse bien（気分がいい）の反対語。",
+  "etymology": "sentir（感じる）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "sentir（感じる）"
+  ],
+  "dialogue": {
+   "es": "— Me siento mal, creo que tengo fiebre.\n— Deberías acostarte y descansar.",
+   "ja": "「具合が悪いんだ、熱があると思う」「横になって休んだ方がいいよ」"
+  }
+ },
+ "tener náuseas": {
+  "nuance": "「吐き気がする」の基本表現。náusea（吐き気）から派生した表現。",
+  "etymology": "ラテン語nausea（船酔い）に由来。",
+  "synonyms": [],
+  "derived": [
+   "náusea（吐き気）"
+  ],
+  "dialogue": {
+   "es": "— Tengo náuseas desde la mañana.\n— ¿Comiste algo que te cayó mal?",
+   "ja": "「朝から吐き気がするんだ」「何か合わないもの食べた？」"
+  }
+ },
+ "marearse": {
+  "nuance": "「めまいがする」の基本語。乗り物酔いや立ちくらみなど幅広い文脈で使う。",
+  "etymology": "mareo（めまい）から派生した再帰動詞。",
+  "synonyms": [],
+  "derived": [
+   "mareo（めまい）"
+  ],
+  "dialogue": {
+   "es": "— Me mareo en los barcos.\n— Deberías tomar una pastilla antes de zarpar.",
+   "ja": "「船に乗るとめまいがするんだ」「出航前に薬を飲んだ方がいいよ」"
+  }
+ },
+ "desmayarse": {
+  "nuance": "「気を失う」の基本語。desmayo（失神、名詞）と関連。",
+  "etymology": "des（否定）+ mayo（力→古語の力を失うイメージ）に由来するとされる。",
+  "synonyms": [],
+  "derived": [
+   "desmayo（失神）"
+  ],
+  "dialogue": {
+   "es": "— Se desmayó por el calor.\n— ¡Hay que llevarlo a un lugar fresco!",
+   "ja": "「彼、暑さで気を失っちゃったんだ」「涼しい場所に連れて行かないと！」"
+  }
+ },
+ "apagar la luz": {
+  "nuance": "「電気を消す」の基本表現。寝る前や部屋を出るときによく使う。",
+  "etymology": "apagar（消す）+ luz（光）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "apagar（消す）",
+   "luz（光）"
+  ],
+  "dialogue": {
+   "es": "— Apaga la luz antes de dormir.\n— Ya la apagué.",
+   "ja": "「寝る前に電気を消してね」「もう消したよ」"
+  }
+ },
+ "encender la luz": {
+  "nuance": "「電気をつける」の基本表現。apagar la luz（電気を消す）の反対語。",
+  "etymology": "encender（つける）+ luz（光）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "encender（つける）",
+   "luz（光）"
+  ],
+  "dialogue": {
+   "es": "— Está muy oscuro, enciende la luz.\n— Ya la encendí.",
+   "ja": "「すごく暗いね、電気をつけて」「もうつけたよ」"
+  }
+ },
+ "apagar": {
+  "nuance": "「消す、オフにする」の基本語。電気・機械・火など幅広い対象に使える。",
+  "etymology": "a（〜へ）+ pagar（鎮める、古い意味）に由来するとされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Apaga el televisor, por favor.\n— Está bien, ya casi termina el programa.",
+   "ja": "「テレビ消してください」「わかった、もうすぐ番組終わるから」"
+  }
+ },
+ "encender": {
+  "nuance": "「つける、オンにする」の基本語。apagar（消す）の反対語。",
+  "etymology": "ラテン語incendere（火をつける）に由来。",
+  "synonyms": [
+   "prender（つける、口語）"
+  ],
+  "derived": [
+   "incendio（火事）"
+  ],
+  "dialogue": {
+   "es": "— Enciende la computadora, por favor.\n— Ya está encendida.",
+   "ja": "「パソコンつけてください」「もうついているよ」"
+  }
+ },
+ "toro": {
+  "nuance": "「雄牛」の基本語。vaca（雌牛）の男性形に相当。闘牛（corrida de toros）でも知られる。",
+  "etymology": "ラテン語taurus（雄牛）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Ese toro se ve muy fuerte.\n— Hay que tener cuidado con él.",
+   "ja": "「あの雄牛すごく強そうだね」「気をつけないとね」"
+  }
+ },
+ "burro": {
+  "nuance": "「ロバ」の基本語。比喩的に「頭が固い、愚かな人」という意味にもなる（口語）。",
+  "etymology": "ラテン語burricus（小さな馬）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El burro cargaba mucho peso.\n— Son animales muy resistentes.",
+   "ja": "「そのロバはたくさんの荷物を運んでいたんだ」「とても丈夫な動物だよね」"
+  }
+ },
+ "pavo real": {
+  "nuance": "「クジャク」の基本語。pavo（七面鳥）+ real（王の）の組み合わせ。比喩的に「気取った人」という意味にもなる。",
+  "etymology": "pavo（七面鳥、元々クジャクの意味）+ real（王の）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "pavo（七面鳥）"
+  ],
+  "dialogue": {
+   "es": "— El pavo real abrió su cola de plumas.\n— Es un espectáculo hermoso.",
+   "ja": "「クジャクが羽を広げたんだ」「美しい光景だよね」"
+  }
+ },
+ "espera": {
+  "nuance": "「待って」の基本表現。esperar（待つ）の命令形。",
+  "etymology": "esperar（待つ）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "esperar（待つ）"
+  ],
+  "dialogue": {
+   "es": "— Espera, se me olvidó algo.\n— Está bien, no hay prisa.",
+   "ja": "「待って、何か忘れちゃった」「大丈夫、急がなくていいよ」"
+  }
+ },
+ "ya voy": {
+  "nuance": "「今行くよ」の基本表現。呼ばれたときの返事としてよく使う。",
+  "etymology": "ya（もう）+ ir（行く）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "ir（行く）"
+  ],
+  "dialogue": {
+   "es": "— ¡La cena está lista!\n— ¡Ya voy!",
+   "ja": "「夕食できたよ！」「今行くよ！」"
+  }
+ },
+ "vale": {
+  "nuance": "「オーケー」の基本表現。スペインで非常によく使われる相槌・同意の言葉（ラテンアメリカではあまり使われない、地域差）。",
+  "etymology": "valer（価値がある）から派生した語。",
+  "synonyms": [
+   "está bien（大丈夫、より一般的）"
+  ],
+  "derived": [
+   "valer（価値がある）"
+  ],
+  "dialogue": {
+   "es": "— Nos vemos a las cinco.\n— Vale, ahí estaré.",
+   "ja": "「5時に会おうね」「オーケー、そこに行くよ」"
+  }
+ },
+ "por supuesto": {
+  "nuance": "「もちろん」の基本表現。claro que sí（もちろん）とほぼ同義。",
+  "etymology": "por（〜として）+ supuesto（想定された）の組み合わせ。",
+  "synonyms": [
+   "claro que sí（もちろん）"
+  ],
+  "derived": [
+   "suponer（想定する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me puedes ayudar?\n— Por supuesto.",
+   "ja": "「手伝ってもらえる？」「もちろんだよ」"
+  }
+ },
+ "ni idea": {
+  "nuance": "「全然わからない」の基本口語表現。no tengo ni idea（まったく見当もつかない）の短縮形としてよく使われる。",
+  "etymology": "ni（〜さえない）+ idea（考え）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "idea（考え）"
+  ],
+  "dialogue": {
+   "es": "— ¿Sabes dónde está el baño?\n— Ni idea, pregúntale al mesero.",
+   "ja": "「トイレどこか知ってる？」「全然わからない、ウェイターに聞いてみて」"
+  }
+ },
+ "no sé": {
+  "nuance": "「わからない」の基本表現。saber（知る）の否定形で、日常会話で非常によく使われる。",
+  "etymology": "no（否定）+ saber（知る）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "saber（知る）"
+  ],
+  "dialogue": {
+   "es": "— ¿A qué hora empieza la película?\n— No sé, vamos a revisar en línea.",
+   "ja": "「映画は何時に始まるの？」「わからない、オンラインで確認しよう」"
+  }
+ },
+ "ten cuidado": {
+  "nuance": "「気をつけて」の基本表現。tener cuidado（気をつける）の命令形。",
+  "etymology": "tener（持つ）+ cuidado（注意）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "cuidado（注意）"
+  ],
+  "dialogue": {
+   "es": "— Ten cuidado al cruzar la calle.\n— Siempre lo hago.",
+   "ja": "「道を渡るとき気をつけてね」「いつもそうしているよ」"
+  }
+ },
+ "buena idea": {
+  "nuance": "「いい考え」の基本表現。相手の提案に同意するときによく使う。",
+  "etymology": "bueno（良い）+ idea（考え）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "idea（考え）"
+  ],
+  "dialogue": {
+   "es": "— ¿Qué tal si pedimos pizza?\n— Buena idea.",
+   "ja": "「ピザ頼むのはどう？」「いい考えだね」"
+  }
+ },
+ "mala idea": {
+  "nuance": "「よくない考え」の基本表現。buena idea（いい考え）の反対語。",
+  "etymology": "malo（悪い）+ idea（考え）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "idea（考え）"
+  ],
+  "dialogue": {
+   "es": "— ¿Y si le decimos la verdad?\n— Creo que sería mala idea por ahora.",
+   "ja": "「本当のことを言うのはどう？」「今はよくない考えだと思うな」"
+  }
+ },
+ "vamos": {
+  "nuance": "「行こう」の基本表現。ir（行く）のnosotros命令形。励ましや促しの間投詞としてもよく使われる。",
+  "etymology": "ir（行く）のnosotros形。",
+  "synonyms": [],
+  "derived": [
+   "ir（行く）"
+  ],
+  "dialogue": {
+   "es": "— ¡Vamos, ya es hora!\n— Sí, ya voy.",
+   "ja": "「さあ、もう時間だよ！」「うん、今行くね」"
+  }
+ },
+ "ándale": {
+  "nuance": "「さあ行こう、急いで」を意味するメキシコの口語表現。andar（歩く、進む）の命令形から発展、驚き・同意・急かしなど幅広い場面で使われる万能な間投詞。",
+  "etymology": "andar（歩く、進む）の命令形から派生。",
+  "synonyms": [],
+  "derived": [
+   "andar（歩く）"
+  ],
+  "dialogue": {
+   "es": "— Ándale, se nos hace tarde.\n— Ya voy, ya voy.",
+   "ja": "「さあ急いで、遅れちゃうよ」「今行く、今行くから」"
+  }
  }
 };

@@ -10936,5 +10936,317 @@ const VOCAB_DATA = [
   "en": "Anecdote",
   "ja": "逸話",
   "cat": "General"
+ },
+ {
+  "es": "La cómoda",
+  "en": "Dresser / chest of drawers",
+  "ja": "たんす",
+  "cat": "Casa"
+ },
+ {
+  "es": "El escritorio",
+  "en": "Desk",
+  "ja": "机（学習・仕事用）",
+  "cat": "Casa"
+ },
+ {
+  "es": "Reproducir",
+  "en": "To play (video/audio)",
+  "ja": "再生する",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Pausar",
+  "en": "To pause",
+  "ja": "一時停止する",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Omitir",
+  "en": "To skip",
+  "ja": "スキップする",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El siguiente episodio",
+  "en": "Next episode",
+  "ja": "次のエピソード",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Los subtítulos",
+  "en": "Subtitles",
+  "ja": "字幕",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El doblaje",
+  "en": "Dubbing",
+  "ja": "吹き替え",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Continuar viendo",
+  "en": "Continue watching",
+  "ja": "視聴を続ける",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El control remoto",
+  "en": "Remote control",
+  "ja": "リモコン",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El riñón",
+  "en": "Kidney",
+  "ja": "腎臓",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "El intestino",
+  "en": "Intestine",
+  "ja": "腸",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La vejiga",
+  "en": "Bladder",
+  "ja": "膀胱",
+  "cat": "Cuerpo"
+ },
+ {
+  "es": "La gripe",
+  "en": "Flu",
+  "ja": "インフルエンザ",
+  "cat": "Salud"
+ },
+ {
+  "es": "La diarrea",
+  "en": "Diarrhea",
+  "ja": "下痢",
+  "cat": "Salud"
+ },
+ {
+  "es": "El vómito",
+  "en": "Vomit",
+  "ja": "嘔吐",
+  "cat": "Salud"
+ },
+ {
+  "es": "La infección",
+  "en": "Infection",
+  "ja": "感染症",
+  "cat": "Salud"
+ },
+ {
+  "es": "La proteína",
+  "en": "Protein",
+  "ja": "タンパク質",
+  "cat": "Salud"
+ },
+ {
+  "es": "La vitamina",
+  "en": "Vitamin",
+  "ja": "ビタミン",
+  "cat": "Salud"
+ },
+ {
+  "es": "El carbohidrato",
+  "en": "Carbohydrate",
+  "ja": "炭水化物",
+  "cat": "Salud"
+ },
+ {
+  "es": "La grasa",
+  "en": "Fat",
+  "ja": "脂肪",
+  "cat": "Salud"
+ },
+ {
+  "es": "La fibra",
+  "en": "Fiber",
+  "ja": "食物繊維",
+  "cat": "Salud"
+ },
+ {
+  "es": "El calcio",
+  "en": "Calcium",
+  "ja": "カルシウム",
+  "cat": "Salud"
+ },
+ {
+  "es": "El hierro",
+  "en": "Iron",
+  "ja": "鉄分",
+  "cat": "Salud"
+ },
+ {
+  "es": "Pasado mañana",
+  "en": "The day after tomorrow",
+  "ja": "あさって",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Anteayer",
+  "en": "The day before yesterday",
+  "ja": "おととい",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Obtener",
+  "en": "To obtain, get",
+  "ja": "得る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sacar",
+  "en": "To take out, get",
+  "ja": "取り出す・得る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Coger",
+  "en": "To grab, take (careful: vulgar in some countries)",
+  "ja": "つかむ・取る（地域によって卑語になるので注意）",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Agarrar",
+  "en": "To grab",
+  "ja": "つかむ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sentirse mal",
+  "en": "To feel unwell",
+  "ja": "具合が悪い",
+  "cat": "Salud"
+ },
+ {
+  "es": "Tener náuseas",
+  "en": "To feel nauseous",
+  "ja": "吐き気がする",
+  "cat": "Salud"
+ },
+ {
+  "es": "Marearse",
+  "en": "To feel dizzy",
+  "ja": "めまいがする",
+  "cat": "Salud"
+ },
+ {
+  "es": "Desmayarse",
+  "en": "To faint",
+  "ja": "気を失う",
+  "cat": "Salud"
+ },
+ {
+  "es": "Apagar la luz",
+  "en": "To turn off the light",
+  "ja": "電気を消す",
+  "cat": "Casa"
+ },
+ {
+  "es": "Encender la luz",
+  "en": "To turn on the light",
+  "ja": "電気をつける",
+  "cat": "Casa"
+ },
+ {
+  "es": "Apagar",
+  "en": "To turn off",
+  "ja": "消す・オフにする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Encender",
+  "en": "To turn on",
+  "ja": "つける・オンにする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El toro",
+  "en": "Bull",
+  "ja": "雄牛",
+  "cat": "Animales"
+ },
+ {
+  "es": "El burro",
+  "en": "Donkey",
+  "ja": "ロバ",
+  "cat": "Animales"
+ },
+ {
+  "es": "El pavo real",
+  "en": "Peacock",
+  "ja": "クジャク",
+  "cat": "Animales"
+ },
+ {
+  "es": "Espera",
+  "en": "Wait",
+  "ja": "待って",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Ya voy",
+  "en": "I'm coming",
+  "ja": "今行くよ",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Vale",
+  "en": "Okay (Spain)",
+  "ja": "オーケー（スペインの口語）",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Por supuesto",
+  "en": "Of course",
+  "ja": "もちろん",
+  "cat": "Frases"
+ },
+ {
+  "es": "Ni idea",
+  "en": "No idea",
+  "ja": "全然わからない",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "No sé",
+  "en": "I don't know",
+  "ja": "わからない",
+  "cat": "Frases"
+ },
+ {
+  "es": "Ten cuidado",
+  "en": "Be careful",
+  "ja": "気をつけて",
+  "cat": "Frases"
+ },
+ {
+  "es": "Buena idea",
+  "en": "Good idea",
+  "ja": "いい考え",
+  "cat": "Frases"
+ },
+ {
+  "es": "Mala idea",
+  "en": "Bad idea",
+  "ja": "よくない考え",
+  "cat": "Frases"
+ },
+ {
+  "es": "Vamos",
+  "en": "Let's go / Come on",
+  "ja": "行こう・さあ",
+  "cat": "Coloquial"
+ },
+ {
+  "es": "Ándale",
+  "en": "Come on / Hurry up (Mexican)",
+  "ja": "さあ行こう・急いで（メキシコの口語）",
+  "cat": "Coloquial"
  }
 ];
