@@ -900,6 +900,7 @@ function grammarTitleForItem(ex, topic){
   if(topic==="reglas_menores"){
     if(ex.answer==="también" || ex.answer==="tampoco") return "también と tampoco（〜も、〜も〜ない）";
     if(ex.label==="hay / estar") return "hay と estar の使い分け（存在 vs 所在）";
+    if(ex.label==="アクセント記号" || ex.label==="よくある書き間違い") return "アクセント記号（tilde）のルール";
     return "接続詞 y/o の変化と pero vs sino";
   }
   if(topic==="algo_alguno" && (ex.answer==="nunca" || ex.answer==="ni" || ex.answer==="Nadie" || ex.answer==="Ninguno" || (ex.answer==="nada" && ex.before==="Jamás he visto "))) return "否定文の作り方（二重否定）";

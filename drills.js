@@ -7611,6 +7611,168 @@ const EXAMPLES = [
   "label": "si構文",
   "topic": "condicional_si",
   "note": "非現実的な仮定の結果節：confiarの条件法。"
+ },
+ {
+  "before": "",
+  "answer": "Tú",
+  "after": " eres muy amable.",
+  "ja": "君はとても親切だね。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "主語代名詞「君は」はアクセントありtú。所有形容詞「君の」はアクセントなしtu。"
+ },
+ {
+  "before": "¿Dónde está ",
+  "answer": "tu",
+  "after": " mochila?",
+  "ja": "君のリュックどこにあるの？",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "「君の」は所有形容詞なのでアクセントなしtu。"
+ },
+ {
+  "before": "",
+  "answer": "Si",
+  "after": " llueve, no salgo.",
+  "ja": "もし雨が降ったら、外出しない。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "「もし〜なら」の条件を表すsiはアクセントなし。"
+ },
+ {
+  "before": "¿Quieres venir?\n— ",
+  "answer": "Sí",
+  "after": ", claro que quiero.",
+  "ja": "「来たい？」「うん、もちろん行きたいよ」",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "「はい」という返事のsíはアクセントあり。"
+ },
+ {
+  "before": "",
+  "answer": "Se",
+  "after": " levanta muy temprano todos los días.",
+  "ja": "彼は毎日とても早く起きる。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "再帰代名詞「彼自身を」のseはアクセントなし。"
+ },
+ {
+  "before": "No ",
+  "answer": "sé",
+  "after": " qué hora es.",
+  "ja": "何時かわからない。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "saber（知る）の一人称現在形séはアクセントあり。"
+ },
+ {
+  "before": "",
+  "answer": "El",
+  "after": " perro está durmiendo.",
+  "ja": "その犬は眠っている。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "定冠詞「その」のelはアクセントなし。"
+ },
+ {
+  "before": "",
+  "answer": "Él",
+  "after": " es mi mejor amigo.",
+  "ja": "彼は私の親友だ。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "主語代名詞「彼は」のélはアクセントあり。"
+ },
+ {
+  "before": "Quiero ",
+  "answer": "más",
+  "after": " café, por favor.",
+  "ja": "もっとコーヒーが欲しいです。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "「もっと」を表すmásはアクセントあり（日常会話でほぼ唯一使われる形）。"
+ },
+ {
+  "before": "Este es el libro ",
+  "answer": "de",
+  "after": " mi hermana.",
+  "ja": "これは私の姉の本だ。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "前置詞「〜の」のdeはアクセントなし。"
+ },
+ {
+  "before": "Espero que me lo ",
+  "answer": "dé",
+  "after": " mañana.",
+  "ja": "明日それを私にくれるといいな。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "dar（与える）の接続法現在déはアクセントあり。"
+ },
+ {
+  "before": "",
+  "answer": "Aún",
+  "after": " no ha llegado.",
+  "ja": "彼はまだ着いていない。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "「まだ」を表すaúnはtodavíaとほぼ同義でアクセントあり。"
+ },
+ {
+  "before": "",
+  "answer": "Aun",
+  "after": " así, decidió continuar.",
+  "ja": "それでもなお、彼は続けることにした。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "aun así（それでもなお）のaunは「〜さえ」を表しアクセントなし。"
+ },
+ {
+  "before": "¿",
+  "answer": "Por qué",
+  "after": " no viniste ayer?",
+  "ja": "なぜ昨日来なかったの？",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "「なぜ」と尋ねる疑問詞は2語でアクセントありPor qué。"
+ },
+ {
+  "before": "No vine ",
+  "answer": "porque",
+  "after": " estaba enfermo.",
+  "ja": "病気だったから来なかった。",
+  "label": "アクセント記号",
+  "topic": "reglas_menores",
+  "note": "「なぜなら」と理由を答える接続詞は1語でアクセントなしporque。"
+ },
+ {
+  "before": "",
+  "answer": "Hay",
+  "after": " mucha gente en la calle.",
+  "ja": "通りにたくさんの人がいる。",
+  "label": "よくある書き間違い",
+  "topic": "reglas_menores",
+  "note": "「〜がある」の存在を表すhaberの活用形hayはhで始まる。"
+ },
+ {
+  "before": "El libro está ",
+  "answer": "ahí",
+  "after": ", sobre la mesa.",
+  "ja": "本はそこ、テーブルの上にあるよ。",
+  "label": "よくある書き間違い",
+  "topic": "reglas_menores",
+  "note": "「そこに」を表す副詞ahíはhで始まらずaで始まる。"
+ },
+ {
+  "before": "¡",
+  "answer": "Ay",
+  "after": ", me duele mucho!",
+  "ja": "痛っ、すごく痛い！",
+  "label": "よくある書き間違い",
+  "topic": "reglas_menores",
+  "note": "痛みや驚きを表す感嘆詞ayはhもアクセントもつかない。"
  }
 ];
 
