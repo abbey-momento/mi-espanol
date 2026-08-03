@@ -189,5 +189,10 @@ const FAQ_ITEMS = [
   "q": "poder・saber・querer・deber・pensar・soler、これらの動詞の後ろに不定詞を続けるときのルールがわかりません",
   "a": "これらは「モーダル的な動詞」と呼ばれ、間に前置詞を挟まず直接不定詞を続けるのが特徴です。\n\npoder＋不定詞＝できる：Puedo ayudarte.（手伝えるよ）\nsaber＋不定詞＝（技能として）できる：Sé nadar.（泳げる）\nquerer＋不定詞＝したい：Quiero descansar.（休みたい）\ndeber＋不定詞＝すべきだ：Debes estudiar.（勉強すべきだ）\npensar＋不定詞＝するつもりだ：Pienso viajar en verano.（夏に旅行するつもりだ）\nsoler＋不定詞＝いつも〜する（習慣）：Suelo caminar por las mañanas.（いつも朝歩いている）\n\n対照的に、empezar a、dejar de、tratar deのように前置詞が必要な動詞句もあります。この「前置詞なし／前置詞あり」の区別を意識して覚えるのがポイントです。",
   "related": "よく使う動詞句（acabar de, volver a, estar a punto de など）"
+ },
+ {
+  "q": "No lo sé と No sé、目的語(lo)がいるときといらないときの違いがわかりません",
+  "a": "No sé（単独）は「（一般的に）わからない」という、漠然とした無知の状態を表します。No lo séは、直前に出てきた具体的な何かを受けて「それ（そのこと）がわからない」と言っています。\n\n■ 具体例\n— ¿A qué hora empieza la película?（映画何時から始まるの？）\n— No lo sé.（それわからないな）\n→ loは直前の質問「何時から始まるか」という情報全体を受けている\n\n— ¿Sabes algo de física?（物理について何か知ってる？）\n— No sé mucho, la verdad.（実はあんまり知らないんだ）\n→ 特定の「それ」を指すというより、知識状態を漠然と述べているのでloなしが自然\n\n■ 中性のloとの関係\nこれは「中性のlo（lo bueno, lo que）」と同じ仕組みです。特定の名詞（男性/女性）を指しているわけではなく、「話題になっている事柄全体」を指すloがつく、というイメージです。もし特定の女性名詞を受けているならloではなくlaになります（¿Sabes la respuesta? → No, no la sé.）。\n\n■ まとめ\n何かに直接答えている・受けているときはlo（またはla/los/las）をつける方が自然、漠然とした「わからない」を表明するだけならNo séだけでもOK、という使い分けです。",
+  "related": "中性のlo（lo bueno, lo que）"
  }
 ];
