@@ -11248,5 +11248,23 @@ const VOCAB_DATA = [
   "en": "Come on / Hurry up (Mexican)",
   "ja": "さあ行こう・急いで（メキシコの口語）",
   "cat": "Coloquial"
+ },
+ {
+  "es": "La carta",
+  "en": "Letter / playing card / menu",
+  "ja": "手紙・トランプのカード・メニュー",
+  "cat": "General"
+ },
+ {
+  "es": "El capital",
+  "en": "Capital (money)",
+  "ja": "資本金（お金の意味）",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La vuelta",
+  "en": "Return / change (money) / turn",
+  "ja": "帰り・おつり・一周",
+  "cat": "General"
  }
 ];

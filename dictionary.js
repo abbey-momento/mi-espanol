@@ -329,18 +329,16 @@ const DICTIONARY_DATA = {
   }
  },
  "tiempo": {
-  "nuance": "「時間」と「天気」の両方の意味を持つ単語。文脈で判断する（¿Qué tiempo hace?＝天気はどう？）。",
-  "etymology": "ラテン語tempus（時）に由来。",
-  "synonyms": [
-   "clima（気候、天気の意味で）"
-  ],
+  "nuance": "スペイン語のtiempoは、英語ならtime（時間）とweather（天気）に分かれる2つの概念を1つの単語で表す、興味深い単語。コアイメージは「流れ・移り変わっていくもの」で、それが「時の流れ」なのか「空模様の移り変わり」なのかは文脈で判断する。\n\n① 時間：No tengo tiempo.（時間がない）\n② 天気：Hace buen tiempo.（いい天気だ）\n③ 動詞の時制：tiempo verbal（時制）→ 動詞が示す「時の位置」\n④ リズム・テンポ：a tiempo（リズムに合わせて、また「時間通りに」）\n\n日本語や英語では別の単語になる概念が、スペイン語では同じ語源から生まれた1つの単語で表される、という気づきがあると覚えやすい。",
+  "etymology": "ラテン語tempus（時、季節）に由来。",
+  "synonyms": [],
   "derived": [
    "temporada（シーズン）",
-   "temporal（一時的な）"
+   "temprano（早く）"
   ],
   "dialogue": {
-   "es": "— No tengo tiempo hoy.\n— Entiendo, será para otro día.",
-   "ja": "「今日は時間がないんだ」「分かった、また今度にしよう」"
+   "es": "— ¿Qué tiempo hace hoy?\n— Hace mucho sol, perfecto para salir.",
+   "ja": "「今日の天気どう？」「とても晴れているよ、出かけるのに完璧だね」"
   }
  },
  "día": {
@@ -951,29 +949,29 @@ const DICTIONARY_DATA = {
   }
  },
  "mano": {
-  "nuance": "「手」。-oで終わるのに女性名詞という例外の代表格（la mano）。",
+  "nuance": "コアイメージは「物事を行う道具としての手」。そこから「手を使って行う一回分の動作・作業」という意味に広がっていく。\n\n① 手（文字通り）：Dame la mano.（手をつないで）\n② 塗装の一回分：una mano de pintura（ペンキ一塗り）→ 手で一回塗る作業単位\n③ カードゲームの一勝負：una mano de cartas（トランプの一勝負）→ 手で配る一回分\n④ 助け：echar una mano（手を貸す＝手伝う）\n⑤ 中古：de segunda mano（中古の）→ 「誰かの手を経由した」というイメージ\n\n「手を使ってする、ひとまとまりの行為・作業」という感覚で捉えると、意味の広がりが自然に見えてくる。",
   "etymology": "ラテン語manus（手）に由来。",
   "synonyms": [],
   "derived": [
-   "manejar（運転する、扱う）",
+   "manejar（扱う、運転する）",
    "manual（手動の、マニュアル）"
   ],
   "dialogue": {
-   "es": "— Dame la mano.\n— Aquí está, ten cuidado.",
-   "ja": "「手を貸して」「はい、気をつけてね」"
+   "es": "— ¿Me echas una mano con esto?\n— Claro, ¿qué necesitas?",
+   "ja": "「これ手伝ってもらえる？」「もちろん、何が必要？」"
   }
  },
  "cabeza": {
-  "nuance": "tener en la cabeza（頭にある、覚えている）のような慣用表現も多い。",
-  "etymology": "俗ラテン語capitia（頭部の覆い）に由来。",
+  "nuance": "コアイメージは「上に位置し、全体を導く・代表する部分」。体の部位としての「頭」から、比喩的に「先頭、リーダー、代表」という意味に広がる。\n\n① 頭（文字通り）：Me duele la cabeza.（頭が痛い）\n② 家長・リーダー：cabeza de familia（一家の大黒柱）→ 家族を導く「頭」\n③ 先頭：a la cabeza de la fila（列の先頭に）→ 物事の一番前の位置\n④ 一人当たり：por cabeza（一人当たり）→ 「頭数」で数えるイメージ\n⑤ 知性：tener buena cabeza（頭がいい）→ 頭脳としての機能\n\n「体の一番上にあって、全体を導き代表する部分」という発想が、リーダーや先頭という意味にもつながっている。",
+  "etymology": "俗ラテン語capitia（ラテン語caput「頭」から派生）に由来。",
   "synonyms": [],
   "derived": [
-   "encabezar（先頭に立つ）",
-   "cabecera（頭部、見出し）"
+   "cabecera（見出し、上座）",
+   "encabezar（率いる）"
   ],
   "dialogue": {
-   "es": "— Me duele la cabeza.\n— Deberías descansar un poco.",
-   "ja": "「頭が痛いんだ」「少し休んだ方がいいよ」"
+   "es": "— Él es la cabeza de la empresa.\n— Lleva muchos años liderándola con éxito.",
+   "ja": "「彼はその会社のトップなんだ」「長年成功を収めながら率いているんだよね」"
   }
  },
  "corazón": {
@@ -1003,18 +1001,16 @@ const DICTIONARY_DATA = {
   }
  },
  "razón": {
-  "nuance": "「理由」だけでなく、tener razón（正しい、道理にかなっている）という決まり文句も頻出。",
-  "etymology": "ラテン語ratio（計算、理性）に由来。",
-  "synonyms": [
-   "motivo（動機、理由）"
-  ],
+  "nuance": "コアイメージは「筋道立てて考える力、およびその結果」。「理性」という抽象的な能力から、「理由」「正しさ」「比率」といった具体的な意味に広がる。\n\n① 理由：la razón por la que llegué tarde（私が遅刻した理由）\n② 正しいこと：tener razón（正しい、直訳「理性を持っている」）→ 理性の側にいる＝正しい\n③ 比率：una razón matemática（数学的な比）→ 数同士の「筋道立った関係」\n④ 消息：dar razón de alguien（誰かの消息を伝える、やや古い言い方）→ 事情を筋道立てて伝える\n\n「筋道立てて物事を捉える働き」という一本の軸から、理由・正しさ・比率という一見バラバラな意味が枝分かれしていると考えると整理しやすい。",
+  "etymology": "ラテン語ratio（計算、理性）に由来。英語のreason、rationとも同語源。",
+  "synonyms": [],
   "derived": [
    "razonable（理にかなった）",
    "razonar（推論する）"
   ],
   "dialogue": {
-   "es": "— Creo que tienes razón.\n— Gracias por entenderme.",
-   "ja": "「君の言う通りだと思う」「分かってくれてありがとう」"
+   "es": "— Creo que tienes razón.\n— Gracias por escucharme.",
+   "ja": "「君が正しいと思うよ」「話を聞いてくれてありがとう」"
   }
  },
  "rojo": {
@@ -2973,16 +2969,15 @@ const DICTIONARY_DATA = {
   }
  },
  "pie": {
-  "nuance": "a pie（歩いて）、de pie（立って）のような慣用表現が多い。",
-  "etymology": "ラテン語pes/pedis（足）に由来。",
+  "nuance": "コアイメージは「物事を下から支える土台・末端の部分」。体の部位としての「足」から、比喩的に「何かの底・付け根」を指す意味に広がる。\n\n① 足（文字通り）：Me duele el pie.（足が痛い）\n② 山のふもと：al pie de la montaña（山のふもとに）→ 山を下から支える部分\n③ ページの下：pie de página（フッター、脚注）→ ページの一番下の部分\n④ 徒歩：a pie（徒歩で）→ 足を使う移動手段\n⑤ 詩の韻律：pie métrico（詩の韻脚）→ 詩のリズムを刻む最小単位\n\n「一番下にあって全体を支えている部分」というイメージが共通している。",
+  "etymology": "ラテン語pes（足）に由来。",
   "synonyms": [],
   "derived": [
-   "apie（歩いて）",
-   "pedal（ペダル）"
+   "a pie（徒歩で）"
   ],
   "dialogue": {
-   "es": "— Prefiero ir a pie.\n— Yo también, es buen ejercicio.",
-   "ja": "「歩いて行く方が好きなんだ」「私もだよ、いい運動になるし」"
+   "es": "— Prefiero ir a pie, no está lejos.\n— Yo también, así hacemos ejercicio.",
+   "ja": "「歩いて行く方がいいな、遠くないし」「私もだよ、運動にもなるしね」"
   }
  },
  "dedo": {
@@ -4433,16 +4428,16 @@ const DICTIONARY_DATA = {
   }
  },
  "banco": {
-  "nuance": "「銀行」と「ベンチ」の両方の意味を持つ単語。文脈で判断する。",
-  "etymology": "ゲルマン語系の語bank（座席、両替商の台）に由来。",
+  "nuance": "コアイメージは「（元々は）両替商が座っていた長いベンチ・作業台」。中世ヨーロッパで両替商が市場のベンチ（banco）に座って取引をしていたことから、その場所・仕組み自体を指す語に発展した。\n\n① ベンチ：Nos sentamos en el banco del parque.（公園のベンチに座った）→ 元々の意味\n② 銀行：Voy al banco.（銀行に行く）→ 両替商のベンチから発展した金融機関の意味\n③ 魚の群れ：un banco de peces（魚の群れ）→ 「まとまった集団」という発想の広がり\n\nbancarrota（破産、直訳「壊れたベンチ」）という語も、支払い不能になった両替商がベンチを壊されたという中世の慣習に由来するとされ、bancoの原義がベンチだったことを裏づけている。",
+  "etymology": "ゲルマン語系の語bank（長椅子）に由来。イタリア語banca経由でスペイン語に入った。",
   "synonyms": [],
   "derived": [
    "bancario（銀行の）",
    "bancarrota（破産）"
   ],
   "dialogue": {
-   "es": "— Voy al banco a sacar dinero.\n— Yo también necesito ir.",
-   "ja": "「お金を下ろしに銀行に行くよ」「私も行く必要があるんだ」"
+   "es": "— Voy al banco a sacar dinero.\n— Yo también necesito ir, te acompaño.",
+   "ja": "「お金を下ろしに銀行に行くよ」「私も行く必要があるんだ、一緒に行くね」"
   }
  },
  "hospital": {
@@ -7563,15 +7558,15 @@ const DICTIONARY_DATA = {
   }
  },
  "llave": {
-  "nuance": "「（水道などの）栓」「レンチ」という意味にもなる多義語。",
+  "nuance": "コアイメージは「開閉やアクセスをコントロールする装置」。物理的な鍵から、水や電気の「流れを制御するもの」全般に意味が広がる。\n\n① 鍵：la llave de la puerta（ドアの鍵）→ 最も基本的な意味\n② 蛇口（地域による）：la llave del agua（水道の蛇口、メキシコなどで一般的）→ 水の流れを「開閉する」装置\n③ レンチ：llave inglesa（モンキーレンチ）→ ボルトを「回して制御する」道具\n④ ブレーカー・スイッチ（地域による）：llave de luz → 電気の流れを「開閉する」装置\n\n「何かの流れやアクセスを、回したり動かしたりして制御する道具」という共通イメージで捉えると覚えやすい。",
   "etymology": "ラテン語clavis（鍵）に由来。",
   "synonyms": [],
   "derived": [
    "llavero（キーホルダー）"
   ],
   "dialogue": {
-   "es": "— Perdí las llaves de mi casa.\n— ¿Ya revisaste tus bolsillos?",
-   "ja": "「家の鍵をなくしちゃった」「もうポケットは確認した？」"
+   "es": "— No encuentro mis llaves.\n— ¿Revisaste en tu mochila?",
+   "ja": "「鍵が見つからないんだ」「リュックの中確認した？」"
   }
  },
  "navidad": {
@@ -9553,16 +9548,17 @@ const DICTIONARY_DATA = {
   }
  },
  "cuenta": {
-  "nuance": "「口座」「勘定」という意味にもなる。La cuenta, por favor.（お会計お願いします）は非常によく使う表現。",
-  "etymology": "contar（数える）から派生した語。",
+  "nuance": "contar（数える、語る）から派生した名詞で、コアイメージは「数えられる・語られる、ひとまとまりの記録」。ここから驚くほど多くの意味に広がる。\n\n① お会計：La cuenta, por favor.（お会計お願いします）→ 支払うべき金額を「数え上げたもの」\n② 銀行口座：cuenta bancaria → お金の出入りを「数えて記録したもの」\n③ ネックレスの珠：las cuentas de un collar → ロザリオの祈りを数えるための珠から、装飾用の珠全般を指すようになった\n④ 「〜に気づく」：darse cuenta de → 直訳「自分に説明・勘定がつく」、頭の中で事実が「数え上がる」イメージ\n⑤ 「考慮に入れる」：tener en cuenta → 「勘定の中に持っておく」\n⑥ 「結局のところ」：a fin de cuentas → 「勘定の最後には」\n\nどれも「何かを数え上げて、ひとまとまりの記録・認識にする」という核から発展していると考えると、バラバラに見える意味がつながって覚えやすくなる。",
+  "etymology": "contar（数える、ラテン語computareに由来）から派生した名詞。",
   "synonyms": [],
   "derived": [
-   "contar（数える）",
-   "contador（会計士）"
+   "contar（数える、語る）",
+   "contador（会計士）",
+   "darse cuenta de（気づく）"
   ],
   "dialogue": {
-   "es": "— La cuenta, por favor.\n— Enseguida se la traigo.",
-   "ja": "「お会計お願いします」「すぐお持ちします」"
+   "es": "— No me di cuenta de que ya era tan tarde.\n— A mí me pasa lo mismo cuando estoy concentrado.",
+   "ja": "「もうこんなに遅い時間だって気づかなかったよ」「集中しているとき、私も同じことがあるよ」"
   }
  },
  "uva": {
@@ -12046,15 +12042,16 @@ const DICTIONARY_DATA = {
   }
  },
  "punto": {
-  "nuance": "「地点、要点」という意味にもなる。en punto（ちょうど、時刻について）はよく使う表現。",
-  "etymology": "ラテン語punctum（刺されたもの、点）に由来。",
+  "nuance": "コアイメージは「空間・時間・文章の中の、これ以上分割できない一点」。そこから幅広い意味に発展する。\n\n① 句点：punto final（ピリオド）→ 文の終わりを示す一点\n② 場所：punto de encuentro（待ち合わせ場所）→ 空間上の一点\n③ 時点：a punto de（まさに〜しようとしている）、en este punto（この時点で）→ 時間軸上の一点\n④ 編み目：punto de tejido → 編み物の一目一目という単位\n⑤ 観点：punto de vista（視点）→ 「どこから見るか」という位置的な一点\n⑥ 得点：un punto en el juego → ゲームで数えられる最小単位\n\n「これ以上分けられない、特定できる一点」というイメージが全部に共通していると考えると整理しやすい。",
+  "etymology": "ラテン語punctum（刺された点）に由来。",
   "synonyms": [],
   "derived": [
-   "puntual（時間に正確な）"
+   "puntual（時間に正確な）",
+   "puntuar（点数をつける）"
   ],
   "dialogue": {
-   "es": "— La reunión es a las tres en punto.\n— Perfecto, llegaré a tiempo.",
-   "ja": "「会議は3時ちょうどからだよ」「わかった、時間通りに行くね」"
+   "es": "— Estoy a punto de salir.\n— Perfecto, te espero afuera.",
+   "ja": "「ちょうど出かけるところなんだ」「わかった、外で待ってるね」"
   }
  },
  "docena": {
@@ -22290,6 +22287,45 @@ const DICTIONARY_DATA = {
   "dialogue": {
    "es": "— Ándale, se nos hace tarde.\n— Ya voy, ya voy.",
    "ja": "「さあ急いで、遅れちゃうよ」「今行く、今行くから」"
+  }
+ },
+ "carta": {
+  "nuance": "コアイメージは「紙・カードに書き記された、正式なもの」。手紙からトランプ、メニューまで、「紙面にまとめられた情報」という一点でつながっている。\n\n① 手紙：escribir una carta（手紙を書く）\n② トランプのカード：una carta de la baraja（トランプの1枚）\n③ レストランのメニュー：la carta del restaurante（お品書き）→ 料理を書き記した紙\n④ 地図・海図：carta náutica（海図）\n⑤ 憲章：la Carta Magna（マグナ・カルタ、大憲章）→ 正式に書き記された基本法\n\n「紙に正式に書き記されたもの」という核から、手紙もトランプもメニューも同じ語で表されている、と考えると意味の広がりに納得がいく。",
+  "etymology": "ラテン語charta（パピルス紙）に由来。英語のchart、cardとも同語源。",
+  "synonyms": [],
+  "derived": [
+   "cartero（郵便配達人）",
+   "cartel（ポスター）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me trae la carta, por favor?\n— Claro, enseguida se la traigo.",
+   "ja": "「メニューを持ってきてもらえますか？」「かしこまりました、すぐお持ちします」"
+  }
+ },
+ "capital": {
+  "nuance": "非常に珍しい単語で、性別によって意味がまったく変わる。\n\n① el capital（男性形）＝「資本金、元金」（お金の意味）\n② la capital（女性形）＝「首都」（都市の意味）\n\nどちらもラテン語caput（頭）に由来し、「一番重要なもの、頭となるもの」というコアイメージを共有している。お金の世界での「一番重要な元手」がel capitalに、国の中で「一番重要な都市」がla capitalになったと考えると、性別による意味の分かれ方に納得がいく。冠詞（el/la）を聞き分けることが、意味を正しく理解する鍵になる。",
+  "etymology": "ラテン語capitalis（頭に関する、最も重要な）に由来。caput（頭）と同語源。",
+  "synonyms": [],
+  "derived": [
+   "capitalismo（資本主義）",
+   "capitán（キャプテン、隊長）"
+  ],
+  "dialogue": {
+   "es": "— Necesitamos más capital para el negocio.\n— ¿Vas a buscar inversionistas?",
+   "ja": "「事業にもっと資本金が必要だね」「投資家を探すつもり？」"
+  }
+ },
+ "vuelta": {
+  "nuance": "volver（戻る、回る）から派生した名詞で、コアイメージは「元の場所や状態に戻る、または一周する動き」。\n\n① 帰り：de vuelta a casa（家への帰り道）\n② おつり：la vuelta（お釣り、支払った額から「戻ってくる」お金）\n③ 一周・散歩：dar una vuelta（一回りする、散歩する）\n④ 思案：dar vueltas a algo（あることについて何度も考える、頭の中で「ぐるぐる回す」）\n⑤ 折り返し：la vuelta de la página（ページをめくること）\n\n「元に戻ってくる、あるいはぐるっと一周する」という一つの動きのイメージが、帰り道にもお釣りにも散歩にも共通していると考えると覚えやすい。",
+  "etymology": "volver（戻る）の過去分詞vuelto/vueltaから名詞化した語。",
+  "synonyms": [],
+  "derived": [
+   "volver（戻る）",
+   "devolver（返す）"
+  ],
+  "dialogue": {
+   "es": "— Aquí tiene su vuelta.\n— Gracias, que tenga buen día.",
+   "ja": "「はい、お釣りです」「ありがとうございます、良い一日を」"
   }
  }
 };
