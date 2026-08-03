@@ -11884,5 +11884,197 @@ const VOCAB_DATA = [
   "en": "Slightly",
   "ja": "わずかに",
   "cat": "Frecuencia"
+ },
+ {
+  "es": "El crimen",
+  "en": "Crime",
+  "ja": "犯罪",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El delito",
+  "en": "Offense / crime",
+  "ja": "犯罪行為",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El asesinato",
+  "en": "Murder",
+  "ja": "殺人",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Asesinar",
+  "en": "To murder",
+  "ja": "殺害する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El robo",
+  "en": "Theft / robbery",
+  "ja": "盗み・強盗",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El asalto",
+  "en": "Assault / mugging",
+  "ja": "襲撃",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Asaltar",
+  "en": "To assault / mug",
+  "ja": "襲う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El incendio provocado",
+  "en": "Arson",
+  "ja": "放火",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El secuestro",
+  "en": "Kidnapping",
+  "ja": "誘拐",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Secuestrar",
+  "en": "To kidnap",
+  "ja": "誘拐する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El fraude",
+  "en": "Fraud",
+  "ja": "詐欺（法的な）",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Estafar",
+  "en": "To swindle / scam",
+  "ja": "だまし取る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La estafa",
+  "en": "Scam",
+  "ja": "詐欺（手口）",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El chantaje",
+  "en": "Blackmail",
+  "ja": "恐喝",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Sobornar",
+  "en": "To bribe",
+  "ja": "賄賂を渡す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El soborno",
+  "en": "Bribe",
+  "ja": "賄賂",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La extorsión",
+  "en": "Extortion",
+  "ja": "恐喝・ゆすり",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La pandilla",
+  "en": "Gang",
+  "ja": "ギャング",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El criminal",
+  "en": "Criminal",
+  "ja": "犯罪者",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El delincuente",
+  "en": "Offender",
+  "ja": "犯罪者・非行者",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El sospechoso",
+  "en": "Suspect",
+  "ja": "容疑者",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Arrestar",
+  "en": "To arrest",
+  "ja": "逮捕する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El arresto",
+  "en": "Arrest",
+  "ja": "逮捕",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La cárcel",
+  "en": "Jail",
+  "ja": "刑務所",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Condenar",
+  "en": "To convict / sentence",
+  "ja": "有罪判決を下す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La condena",
+  "en": "Sentence (legal)",
+  "ja": "刑・判決",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El testigo",
+  "en": "Witness",
+  "ja": "証人",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La evidencia",
+  "en": "Evidence",
+  "ja": "証拠",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La denuncia",
+  "en": "Report (to police)",
+  "ja": "届け出・告発",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Denunciar",
+  "en": "To report (a crime)",
+  "ja": "届け出る・告発する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La víctima",
+  "en": "Victim",
+  "ja": "被害者",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El ladrón",
+  "en": "Thief",
+  "ja": "泥棒",
+  "cat": "Sociedad"
  }
 ];

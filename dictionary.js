@@ -23526,5 +23526,404 @@ const DICTIONARY_DATA = {
    "es": "— La receta cambió ligeramente.\n— No noté mucha diferencia.",
    "ja": "「レシピが少し変わったんだ」「あまり違いに気づかなかったよ」"
   }
+ },
+ "crimen": {
+  "nuance": "「犯罪」の基本語。delito（軽犯罪も含む広い意味）よりも、殺人など重大な犯罪を指すことが多い。",
+  "etymology": "ラテン語crimen（告発、罪）に由来。",
+  "synonyms": [
+   "delito（犯罪、より広い意味）"
+  ],
+  "derived": [
+   "criminal（犯罪者）"
+  ],
+  "dialogue": {
+   "es": "— Fue un crimen terrible.\n— Espero que atrapen al responsable pronto.",
+   "ja": "「ひどい犯罪だったね」「早く犯人を捕まえてほしいな」"
+  }
+ },
+ "delito": {
+  "nuance": "「犯罪行為」の基本語。crimen（重大犯罪）よりも法律用語として幅広い犯罪行為全般を指す。cometer un delito（罪を犯す）はよく使う組み合わせ。",
+  "etymology": "ラテン語delictum（過失、罪）に由来。",
+  "synonyms": [
+   "crimen（犯罪、より重大な意味）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Ese acto se considera un delito grave.\n— No sabía que era ilegal.",
+   "ja": "「その行為は重大な犯罪とみなされるんだ」「違法だとは知らなかったよ」"
+  }
+ },
+ "asesinato": {
+  "nuance": "「殺人」の基本語。homicidio（殺人、より法律的な用語）とほぼ同義。",
+  "etymology": "アラビア語hashshashin（暗殺者集団）に由来するとされる。",
+  "synonyms": [
+   "homicidio（殺人、より法律的）"
+  ],
+  "derived": [
+   "asesinar（殺害する）",
+   "asesino（殺人者）"
+  ],
+  "dialogue": {
+   "es": "— La policía investiga el asesinato.\n— Espero que resuelvan el caso pronto.",
+   "ja": "「警察がその殺人を捜査しているんだ」「早く事件が解決するといいね」"
+  }
+ },
+ "asesinar": {
+  "nuance": "「殺害する」の基本語。matar（殺す、より一般的）よりも計画的・意図的な殺人を指す。",
+  "etymology": "asesino（暗殺者）から派生した語。",
+  "synonyms": [
+   "matar（殺す、より一般的）"
+  ],
+  "derived": [
+   "asesinato（殺人）",
+   "asesino（殺人者）"
+  ],
+  "dialogue": {
+   "es": "— Lo acusan de haber asesinado a su socio.\n— Es una acusación muy grave.",
+   "ja": "「彼は共同経営者を殺害した容疑をかけられているんだ」「とても重大な告発だね」"
+  }
+ },
+ "robo": {
+  "nuance": "「盗み、強盗」の基本語。robar（盗む）から派生した名詞。robo a mano armada（武装強盗）のように使う。",
+  "etymology": "robar（盗む）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "robar（盗む）"
+  ],
+  "dialogue": {
+   "es": "— Hubo un robo en la tienda anoche.\n— ¿Se llevaron algo importante?",
+   "ja": "「昨夜そのお店で盗みがあったんだ」「何か重要なもの盗まれたの？」"
+  }
+ },
+ "asalto": {
+  "nuance": "「襲撃」の基本語。asaltar（襲う）から派生した名詞。通行人などへの襲撃・強盗を指す。",
+  "etymology": "asaltar（襲う）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "asaltar（襲う）"
+  ],
+  "dialogue": {
+   "es": "— Sufrió un asalto en la calle.\n— ¿Está bien? ¿Se llevaron algo?",
+   "ja": "「彼は路上で襲撃されたんだ」「大丈夫？何か盗まれた？」"
+  }
+ },
+ "asaltar": {
+  "nuance": "「襲う」の基本語。通行人・店舗などを襲って金品を奪う行為を指す。",
+  "etymology": "a（〜へ）+ saltar（跳ぶ）の組み合わせ、「飛びかかる」が原義。",
+  "synonyms": [],
+  "derived": [
+   "saltar（跳ぶ）",
+   "asalto（襲撃）"
+  ],
+  "dialogue": {
+   "es": "— Lo asaltaron cerca de su casa.\n— Qué susto debió pasar.",
+   "ja": "「彼は家の近くで襲われたんだ」「きっと怖い思いをしただろうね」"
+  }
+ },
+ "incendio provocado": {
+  "nuance": "「放火」の基本語。incendio（火事）+ provocado（引き起こされた）の組み合わせ、意図的に起こされた火事を指す。",
+  "etymology": "incendio（火事）+ provocar（引き起こす）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "incendio（火事）",
+   "provocar（引き起こす）"
+  ],
+  "dialogue": {
+   "es": "— Los investigadores confirmaron que fue un incendio provocado.\n— Qué acto tan peligroso.",
+   "ja": "「捜査官はそれが放火だったと確認したんだ」「なんて危険な行為なんだ」"
+  }
+ },
+ "secuestro": {
+  "nuance": "「誘拐」の基本語。secuestrar（誘拐する）から派生した名詞。「（飛行機の）ハイジャック」という意味にもなる。",
+  "etymology": "ラテン語sequestrare（隔離する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "secuestrar（誘拐する）"
+  ],
+  "dialogue": {
+   "es": "— El secuestro duró varios días.\n— Qué terrible experiencia para la familia.",
+   "ja": "「その誘拐事件は数日間続いたんだ」「家族にとってなんて恐ろしい経験だったんだろう」"
+  }
+ },
+ "secuestrar": {
+  "nuance": "「誘拐する」の基本語。人を無理やり連れ去って拘束する行為を指す。",
+  "etymology": "ラテン語sequestrare（隔離する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "secuestro（誘拐）"
+  ],
+  "dialogue": {
+   "es": "— Intentaron secuestrar al empresario.\n— Menos mal que la policía intervino a tiempo.",
+   "ja": "「その実業家を誘拐しようとしたんだ」「警察が間に合って介入してよかったね」"
+  }
+ },
+ "fraude": {
+  "nuance": "「詐欺（法的な）」の基本語。estafa（詐欺の手口、より具体的）よりも法律用語としてフォーマルな響き。",
+  "etymology": "ラテン語fraus（欺瞞）に由来。",
+  "synonyms": [
+   "estafa（詐欺、より口語的）"
+  ],
+  "derived": [
+   "fraudulento（不正な）"
+  ],
+  "dialogue": {
+   "es": "— Fue acusado de fraude fiscal.\n— Eso podría tener consecuencias graves.",
+   "ja": "「彼は税金詐欺の容疑をかけられたんだ」「深刻な結果になるかもしれないね」"
+  }
+ },
+ "estafar": {
+  "nuance": "「だまし取る」の基本語。詐欺的な手口でお金や物をだまし取る行為を指す。",
+  "etymology": "イタリア語staffare（あぶみを外す→足をすくう）に由来するとされる。",
+  "synonyms": [],
+  "derived": [
+   "estafa（詐欺）",
+   "estafador（詐欺師）"
+  ],
+  "dialogue": {
+   "es": "— Lo estafaron con una inversión falsa.\n— Qué triste que se aprovechen así de la gente.",
+   "ja": "「彼は偽の投資でだまし取られたんだ」「そんな風に人を利用するなんて悲しいね」"
+  }
+ },
+ "estafa": {
+  "nuance": "「詐欺（手口）」の基本語。estafar（だまし取る）から派生した名詞。fraude（詐欺、より法律用語）よりも口語的。",
+  "etymology": "estafar（だまし取る）から派生した語。",
+  "synonyms": [
+   "fraude（詐欺、よりフォーマル）"
+  ],
+  "derived": [
+   "estafar（だまし取る）"
+  ],
+  "dialogue": {
+   "es": "— Esa oferta suena a estafa.\n— Tienes razón, mejor no confiar.",
+   "ja": "「その提案、詐欺っぽく聞こえるね」「その通りだね、信用しない方がいいよ」"
+  }
+ },
+ "chantaje": {
+  "nuance": "「恐喝」の基本語。hacer chantaje（恐喝する）はよく使う組み合わせ。フランス語からの借用語。",
+  "etymology": "フランス語chantage（恐喝）に由来。",
+  "synonyms": [],
+  "derived": [
+   "chantajear（恐喝する）"
+  ],
+  "dialogue": {
+   "es": "— Lo amenazaron con hacerle chantaje.\n— Debería reportarlo a la policía.",
+   "ja": "「彼は恐喝すると脅されたんだ」「警察に報告した方がいいね」"
+  }
+ },
+ "sobornar": {
+  "nuance": "「賄賂を渡す」の基本語。soborno（賄賂、名詞）と関連。",
+  "etymology": "ラテン語subornare（密かに整える）に由来。",
+  "synonyms": [],
+  "derived": [
+   "soborno（賄賂）"
+  ],
+  "dialogue": {
+   "es": "— Intentaron sobornar al oficial.\n— Espero que no haya funcionado.",
+   "ja": "「その警官に賄賂を渡そうとしたんだ」「うまくいかなかったといいけど」"
+  }
+ },
+ "soborno": {
+  "nuance": "「賄賂」の基本語。sobornar（賄賂を渡す）から派生した名詞。",
+  "etymology": "sobornar（賄賂を渡す）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "sobornar（賄賂を渡す）"
+  ],
+  "dialogue": {
+   "es": "— Rechazó el soborno.\n— Qué integridad tan admirable.",
+   "ja": "「彼は賄賂を拒否したんだ」「なんて立派な誠実さなんだ」"
+  }
+ },
+ "extorsión": {
+  "nuance": "「恐喝、ゆすり」の基本語。脅しによって金品を要求する行為、chantaje（恐喝）と近い意味。",
+  "etymology": "ラテン語extorquere（ねじって引き出す）に由来。",
+  "synonyms": [
+   "chantaje（恐喝、ほぼ同義）"
+  ],
+  "derived": [
+   "extorsionar（恐喝する）"
+  ],
+  "dialogue": {
+   "es": "— Recibió una llamada de extorsión.\n— Qué situación tan estresante.",
+   "ja": "「彼は恐喝の電話を受けたんだ」「なんてストレスの多い状況なんだ」"
+  }
+ },
+ "pandilla": {
+  "nuance": "「ギャング」の基本語。banda（バンド、グループ）とは異なり、犯罪組織的なグループを指すことが多い。",
+  "etymology": "起源は諸説あるが、俗語として広まった。",
+  "synonyms": [],
+  "derived": [
+   "pandillero（ギャングのメンバー）"
+  ],
+  "dialogue": {
+   "es": "— Esa zona es controlada por una pandilla.\n— Hay que tener cuidado al pasar por ahí.",
+   "ja": "「その地域はギャングに支配されているんだ」「そこを通るときは気をつけないとね」"
+  }
+ },
+ "criminal": {
+  "nuance": "「犯罪者」の基本語。形容詞としても名詞としても使える（un acto criminal＝犯罪的な行為）。",
+  "etymology": "crimen（犯罪）から派生した語。",
+  "synonyms": [
+   "delincuente（犯罪者）"
+  ],
+  "derived": [
+   "crimen（犯罪）"
+  ],
+  "dialogue": {
+   "es": "— Atraparon al criminal.\n— Qué alivio para la comunidad.",
+   "ja": "「その犯罪者を捕まえたんだ」「地域にとって安心だね」"
+  }
+ },
+ "delincuente": {
+  "nuance": "「犯罪者・非行者」の基本語。delito（犯罪行為）から派生した語、criminal（犯罪者）とほぼ同義。",
+  "etymology": "delinquir（罪を犯す）から派生した語。",
+  "synonyms": [
+   "criminal（犯罪者）"
+  ],
+  "derived": [
+   "delito（犯罪行為）"
+  ],
+  "dialogue": {
+   "es": "— El delincuente fue arrestado esta mañana.\n— Buenas noticias para el vecindario.",
+   "ja": "「その犯罪者は今朝逮捕されたんだ」「近所にとっていいニュースだね」"
+  }
+ },
+ "arrestar": {
+  "nuance": "「逮捕する」の基本語。detener（止める、逮捕する）とほぼ同義でよく使われる。",
+  "etymology": "フランス語arrêter（止める）に由来。",
+  "synonyms": [
+   "detener（逮捕する）"
+  ],
+  "derived": [
+   "arresto（逮捕）"
+  ],
+  "dialogue": {
+   "es": "— Lo arrestaron por robo.\n— Espero que enfrente la justicia.",
+   "ja": "「彼は窃盗で逮捕されたんだ」「正当な裁きを受けるといいね」"
+  }
+ },
+ "arresto": {
+  "nuance": "「逮捕」の基本語。arrestar（逮捕する）から派生した名詞。orden de arresto（逮捕状）はよく使う組み合わせ。",
+  "etymology": "arrestar（逮捕する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "arrestar（逮捕する）"
+  ],
+  "dialogue": {
+   "es": "— Emitieron una orden de arresto.\n— ¿Ya lo encontraron?",
+   "ja": "「逮捕状が出されたんだ」「もう見つかった？」"
+  }
+ },
+ "cárcel": {
+  "nuance": "「刑務所」の基本語。prisión（刑務所、よりフォーマル）とほぼ同義。ir a la cárcel（刑務所に入る）はよく使う組み合わせ。",
+  "etymology": "ラテン語carcer（監獄）に由来。",
+  "synonyms": [
+   "prisión（刑務所、フォーマル）"
+  ],
+  "derived": [
+   "encarcelar（投獄する）"
+  ],
+  "dialogue": {
+   "es": "— Pasó cinco años en la cárcel.\n— Espero que haya cambiado su vida.",
+   "ja": "「彼は5年間刑務所で過ごしたんだ」「人生を変えてくれているといいね」"
+  }
+ },
+ "condenar": {
+  "nuance": "「有罪判決を下す」の基本語。condena（判決、名詞）と関連。「非難する」という意味にもなる。",
+  "etymology": "ラテン語condemnare（有罪を宣告する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "condena（判決）"
+  ],
+  "dialogue": {
+   "es": "— Lo condenaron a diez años de prisión.\n— Fue un caso muy sonado.",
+   "ja": "「彼は懲役10年の判決を受けたんだ」「すごく話題になった事件だったね」"
+  }
+ },
+ "condena": {
+  "nuance": "「刑、判決」の基本語。condenar（有罪判決を下す）から派生した名詞。cumplir la condena（服役する）はよく使う組み合わせ。",
+  "etymology": "condenar（有罪を宣告する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "condenar（有罪判決を下す）"
+  ],
+  "dialogue": {
+   "es": "— Está cumpliendo su condena.\n— ¿Cuánto tiempo le queda?",
+   "ja": "「彼は服役中なんだ」「あとどれくらい残っているの？」"
+  }
+ },
+ "testigo": {
+  "nuance": "「証人」の基本語。男女同形（el testigo/la testigo）。testigo ocular（目撃者）はよく使う組み合わせ。",
+  "etymology": "ラテン語testis（証人）に由来。",
+  "synonyms": [],
+  "derived": [
+   "testificar（証言する）"
+  ],
+  "dialogue": {
+   "es": "— Hay un testigo del incidente.\n— Espero que su testimonio ayude a resolver el caso.",
+   "ja": "「その事件の証人がいるんだ」「彼の証言が事件解決に役立つといいね」"
+  }
+ },
+ "evidencia": {
+  "nuance": "「証拠」の基本語。prueba（証拠、よりよく使われる語）とほぼ同義。",
+  "etymology": "ラテン語evidentia（明白さ）に由来。",
+  "synonyms": [
+   "prueba（証拠、より一般的）"
+  ],
+  "derived": [
+   "evidente（明白な）"
+  ],
+  "dialogue": {
+   "es": "— No hay suficiente evidencia para condenarlo.\n— Necesitan investigar más.",
+   "ja": "「彼を有罪にするのに十分な証拠がないんだ」「もっと捜査する必要があるね」"
+  }
+ },
+ "denuncia": {
+  "nuance": "「届け出、告発」の基本語。denunciar（届け出る）から派生した名詞。poner una denuncia（届け出をする）はよく使う組み合わせ。",
+  "etymology": "denunciar（告発する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "denunciar（届け出る）"
+  ],
+  "dialogue": {
+   "es": "— Puse una denuncia por el robo.\n— Hiciste bien en reportarlo.",
+   "ja": "「その盗難について届け出をしたんだ」「報告してよかったね」"
+  }
+ },
+ "denunciar": {
+  "nuance": "「届け出る、告発する」の基本語。犯罪や不正を当局に報告する行為を指す。",
+  "etymology": "ラテン語denuntiare（公に知らせる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "denuncia（届け出）"
+  ],
+  "dialogue": {
+   "es": "— Deberías denunciar lo que pasó.\n— Tienes razón, voy a ir a la estación de policía.",
+   "ja": "「起きたことを届け出るべきだよ」「その通りだね、警察署に行くよ」"
+  }
+ },
+ "víctima": {
+  "nuance": "「被害者」の基本語。文法上は常に女性名詞（男性を指すときもla víctima）。",
+  "etymology": "ラテン語victima（生贄）に由来。",
+  "synonyms": [],
+  "derived": [
+   "victimizar（犠牲にする）"
+  ],
+  "dialogue": {
+   "es": "— La víctima está recibiendo apoyo psicológico.\n— Es importante que tenga ese acompañamiento.",
+   "ja": "「その被害者は心理的サポートを受けているんだ」「そのサポートがあることが大切だよね」"
+  }
+ },
+ "ladrón": {
+  "nuance": "「泥棒」の基本語。女性形はladrona。robar（盗む）と語根を共有する。",
+  "etymology": "ラテン語latro（強盗）に由来。",
+  "synonyms": [],
+  "derived": [
+   "robar（盗む）"
+  ],
+  "dialogue": {
+   "es": "— El ladrón escapó antes de que llegara la policía.\n— Esperemos que lo atrapen pronto.",
+   "ja": "「その泥棒は警察が来る前に逃げたんだ」「早く捕まるといいね」"
+  }
  }
 };
