@@ -291,6 +291,41 @@ const SCENARIOS = [
     "es": "Quédese con el cambio.",
     "ja": "おつりは取っておいてください。",
     "note": "チップ代わりによく使う表現"
+   },
+   {
+    "es": "¿Cuánto cuesta llegar al aeropuerto?",
+    "ja": "空港まではいくらですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Puede esperar aquí unos minutos?",
+    "ja": "ここで数分待ってもらえますか？",
+    "note": ""
+   },
+   {
+    "es": "Pare aquí, por favor.",
+    "ja": "ここで止めてください。",
+    "note": ""
+   },
+   {
+    "es": "¿Acepta tarjeta o solo efectivo?",
+    "ja": "カードは使えますか、それとも現金のみですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Me puede dar un recibo?",
+    "ja": "領収書もらえますか？",
+    "note": ""
+   },
+   {
+    "es": "Voy a esta dirección.",
+    "ja": "この住所に行きます。",
+    "note": "アプリの画面などを見せながら"
+   },
+   {
+    "es": "¿Cuánto falta para llegar?",
+    "ja": "着くまでどれくらいですか？",
+    "note": ""
    }
   ]
  },
@@ -337,6 +372,96 @@ const SCENARIOS = [
     "es": "Me quedo una semana.",
     "ja": "1週間滞在します。",
     "note": "入国審査でよく聞かれる"
+   },
+   {
+    "es": "¿Tiene algo que declarar?",
+    "ja": "申告するものはありますか？",
+    "note": "税関でよく聞かれる質問"
+   },
+   {
+    "es": "No tengo nada que declarar.",
+    "ja": "申告するものは何もありません。",
+    "note": ""
+   },
+   {
+    "es": "¿Lleva algo peligroso o prohibido en su equipaje?",
+    "ja": "荷物に危険なものや禁止されているものは入っていますか？",
+    "note": "セキュリティ・税関でよく聞かれる質問"
+   },
+   {
+    "es": "No, no llevo nada peligroso.",
+    "ja": "いいえ、危険なものは何も持っていません。",
+    "note": ""
+   },
+   {
+    "es": "¿Cuál es el propósito de su viaje?",
+    "ja": "渡航の目的は何ですか？",
+    "note": "入国審査でよく聞かれる質問"
+   },
+   {
+    "es": "Estoy aquí por negocios.",
+    "ja": "仕事で来ています。",
+    "note": ""
+   },
+   {
+    "es": "¿Dónde se va a hospedar?",
+    "ja": "どこに滞在する予定ですか？",
+    "note": "入国審査でよく聞かれる質問"
+   },
+   {
+    "es": "Me hospedo en este hotel.",
+    "ja": "このホテルに滞在します。",
+    "note": ""
+   },
+   {
+    "es": "¿Puedo ver su pasaporte, por favor?",
+    "ja": "パスポートを見せていただけますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Tiene equipaje de mano?",
+    "ja": "機内持ち込み荷物はありますか？",
+    "note": ""
+   },
+   {
+    "es": "Solo tengo equipaje de mano.",
+    "ja": "機内持ち込み荷物だけです。",
+    "note": ""
+   },
+   {
+    "es": "¿Necesito quitarme los zapatos?",
+    "ja": "靴を脱ぐ必要がありますか？",
+    "note": "セキュリティチェックで"
+   },
+   {
+    "es": "Por favor, vacíe sus bolsillos.",
+    "ja": "ポケットの中を空にしてください。",
+    "note": "セキュリティチェックでよく言われる"
+   },
+   {
+    "es": "¿A qué hora es el último llamado para abordar?",
+    "ja": "搭乗の最終案内は何時ですか？",
+    "note": ""
+   },
+   {
+    "es": "Perdí mi conexión.",
+    "ja": "乗り継ぎに乗り遅れました。",
+    "note": ""
+   },
+   {
+    "es": "¿Hay otro vuelo disponible hoy?",
+    "ja": "今日他に利用できるフライトはありますか？",
+    "note": ""
+   },
+   {
+    "es": "Mi maleta no llegó.",
+    "ja": "私のスーツケースが届いていません。",
+    "note": "ロストバゲージのとき"
+   },
+   {
+    "es": "¿Dónde está la oficina de objetos perdidos?",
+    "ja": "遺失物取扱所はどこですか？",
+    "note": ""
    }
   ]
  },
@@ -423,6 +548,41 @@ const SCENARIOS = [
    {
     "es": "¿Qué autobús/línea debo tomar?",
     "ja": "どのバス/路線に乗ればいいですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Está lejos de aquí?",
+    "ja": "ここから遠いですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Se puede ir caminando?",
+    "ja": "歩いて行けますか？",
+    "note": ""
+   },
+   {
+    "es": "Siga derecho hasta el semáforo.",
+    "ja": "信号までまっすぐ進んでください。",
+    "note": "道を教えるとき"
+   },
+   {
+    "es": "Doble a la derecha en la esquina.",
+    "ja": "角を右に曲がってください。",
+    "note": "道を教えるとき"
+   },
+   {
+    "es": "Está a mano izquierda.",
+    "ja": "左手にあります。",
+    "note": "道を教えるとき"
+   },
+   {
+    "es": "Perdón, creo que estoy perdido.",
+    "ja": "すみません、道に迷ったみたいです。",
+    "note": ""
+   },
+   {
+    "es": "¿Me puede indicar en el mapa?",
+    "ja": "地図で教えてもらえますか？",
     "note": ""
    }
   ]
@@ -933,6 +1093,26 @@ const SCENARIOS = [
     "es": "¿A qué hora cierran?",
     "ja": "何時に閉まりますか？",
     "note": ""
+   },
+   {
+    "es": "¿Tienen clases de yoga?",
+    "ja": "ヨガのクラスはありますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Puedo probar una clase gratis?",
+    "ja": "無料体験クラスは受けられますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Dónde están los vestidores?",
+    "ja": "更衣室はどこですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Este aparato está ocupado?",
+    "ja": "このマシンは使用中ですか？",
+    "note": ""
    }
   ]
  },
@@ -973,6 +1153,31 @@ const SCENARIOS = [
    {
     "es": "Me encanta, muchas gracias.",
     "ja": "とても気に入りました、ありがとうございます。",
+    "note": ""
+   },
+   {
+    "es": "Solo un corte, por favor.",
+    "ja": "カットだけお願いします。",
+    "note": ""
+   },
+   {
+    "es": "No corte mucho, por favor.",
+    "ja": "あまり切らないでください。",
+    "note": ""
+   },
+   {
+    "es": "Quiero un cambio de color.",
+    "ja": "色を変えたいです。",
+    "note": ""
+   },
+   {
+    "es": "¿Cuánto tiempo toma el servicio?",
+    "ja": "施術はどれくらい時間がかかりますか？",
+    "note": ""
+   },
+   {
+    "es": "Me gustaría ver el catálogo de estilos.",
+    "ja": "スタイルのカタログを見たいです。",
     "note": ""
    }
   ]
