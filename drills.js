@@ -1,274 +1,2404 @@
 const VERBS = [
-  { v:"hablar", regular:true, ja:"話す",
-    presente:["hablo","hablas","habla","hablamos","hablan"],
-    indefinido:["hablé","hablaste","habló","hablamos","hablaron"],
-    imperfecto:["hablaba","hablabas","hablaba","hablábamos","hablaban"],
-    futuro:["hablaré","hablarás","hablará","hablaremos","hablarán"],
-    condicional:["hablaría","hablarías","hablaría","hablaríamos","hablarían"],
-    subjuntivo:["hable","hables","hable","hablemos","hablen"],
-    perfecto:["he hablado","has hablado","ha hablado","hemos hablado","han hablado"],
-    imperativo:["habla","hable","hablemos","hablen"] },
-  { v:"comer", regular:true, ja:"食べる",
-    presente:["como","comes","come","comemos","comen"],
-    indefinido:["comí","comiste","comió","comimos","comieron"],
-    imperfecto:["comía","comías","comía","comíamos","comían"],
-    futuro:["comeré","comerás","comerá","comeremos","comerán"],
-    condicional:["comería","comerías","comería","comeríamos","comerían"],
-    subjuntivo:["coma","comas","coma","comamos","coman"],
-    perfecto:["he comido","has comido","ha comido","hemos comido","han comido"],
-    imperativo:["come","coma","comamos","coman"] },
-  { v:"vivir", regular:true, ja:"住む/生きる",
-    presente:["vivo","vives","vive","vivimos","viven"],
-    indefinido:["viví","viviste","vivió","vivimos","vivieron"],
-    imperfecto:["vivía","vivías","vivía","vivíamos","vivían"],
-    futuro:["viviré","vivirás","vivirá","viviremos","vivirán"],
-    condicional:["viviría","vivirías","viviría","viviríamos","vivirían"],
-    subjuntivo:["viva","vivas","viva","vivamos","vivan"],
-    perfecto:["he vivido","has vivido","ha vivido","hemos vivido","han vivido"],
-    imperativo:["vive","viva","vivamos","vivan"] },
-  { v:"ser", regular:false, ja:"〜である",
-    presente:["soy","eres","es","somos","son"],
-    indefinido:["fui","fuiste","fue","fuimos","fueron"],
-    imperfecto:["era","eras","era","éramos","eran"],
-    futuro:["seré","serás","será","seremos","serán"],
-    condicional:["sería","serías","sería","seríamos","serían"],
-    subjuntivo:["sea","seas","sea","seamos","sean"],
-    perfecto:["he sido","has sido","ha sido","hemos sido","han sido"],
-    imperativo:["sé","sea","seamos","sean"] },
-  { v:"estar", regular:false, ja:"〜にいる",
-    presente:["estoy","estás","está","estamos","están"],
-    indefinido:["estuve","estuviste","estuvo","estuvimos","estuvieron"],
-    imperfecto:["estaba","estabas","estaba","estábamos","estaban"],
-    futuro:["estaré","estarás","estará","estaremos","estarán"],
-    condicional:["estaría","estarías","estaría","estaríamos","estarían"],
-    subjuntivo:["esté","estés","esté","estemos","estén"],
-    perfecto:["he estado","has estado","ha estado","hemos estado","han estado"],
-    imperativo:["está","esté","estemos","estén"] },
-  { v:"tener", regular:false, ja:"持つ",
-    presente:["tengo","tienes","tiene","tenemos","tienen"],
-    indefinido:["tuve","tuviste","tuvo","tuvimos","tuvieron"],
-    imperfecto:["tenía","tenías","tenía","teníamos","tenían"],
-    futuro:["tendré","tendrás","tendrá","tendremos","tendrán"],
-    condicional:["tendría","tendrías","tendría","tendríamos","tendrían"],
-    subjuntivo:["tenga","tengas","tenga","tengamos","tengan"],
-    perfecto:["he tenido","has tenido","ha tenido","hemos tenido","han tenido"],
-    imperativo:["ten","tenga","tengamos","tengan"] },
-  { v:"ir", regular:false, ja:"行く",
-    presente:["voy","vas","va","vamos","van"],
-    indefinido:["fui","fuiste","fue","fuimos","fueron"],
-    imperfecto:["iba","ibas","iba","íbamos","iban"],
-    futuro:["iré","irás","irá","iremos","irán"],
-    condicional:["iría","irías","iría","iríamos","irían"],
-    subjuntivo:["vaya","vayas","vaya","vayamos","vayan"],
-    perfecto:["he ido","has ido","ha ido","hemos ido","han ido"],
-    imperativo:["ve","vaya","vamos","vayan"] },
-  { v:"hacer", regular:false, ja:"する/作る",
-    presente:["hago","haces","hace","hacemos","hacen"],
-    indefinido:["hice","hiciste","hizo","hicimos","hicieron"],
-    imperfecto:["hacía","hacías","hacía","hacíamos","hacían"],
-    futuro:["haré","harás","hará","haremos","harán"],
-    condicional:["haría","harías","haría","haríamos","harían"],
-    subjuntivo:["haga","hagas","haga","hagamos","hagan"],
-    perfecto:["he hecho","has hecho","ha hecho","hemos hecho","han hecho"],
-    imperativo:["haz","haga","hagamos","hagan"] },
-  { v:"poder", regular:false, ja:"〜できる",
-    presente:["puedo","puedes","puede","podemos","pueden"],
-    indefinido:["pude","pudiste","pudo","pudimos","pudieron"],
-    imperfecto:["podía","podías","podía","podíamos","podían"],
-    futuro:["podré","podrás","podrá","podremos","podrán"],
-    condicional:["podría","podrías","podría","podríamos","podrían"],
-    subjuntivo:["pueda","puedas","pueda","podamos","puedan"],
-    perfecto:["he podido","has podido","ha podido","hemos podido","han podido"],
-    imperativo:["puede","pueda","podamos","puedan"] },
-  { v:"querer", regular:false, ja:"欲しい/したい",
-    presente:["quiero","quieres","quiere","queremos","quieren"],
-    indefinido:["quise","quisiste","quiso","quisimos","quisieron"],
-    imperfecto:["quería","querías","quería","queríamos","querían"],
-    futuro:["querré","querrás","querrá","querremos","querrán"],
-    condicional:["querría","querrías","querría","querríamos","querrían"],
-    subjuntivo:["quiera","quieras","quiera","queramos","quieran"],
-    perfecto:["he querido","has querido","ha querido","hemos querido","han querido"],
-    imperativo:["quiere","quiera","queramos","quieran"] },
-  { v:"decir", regular:false, ja:"言う",
-    presente:["digo","dices","dice","decimos","dicen"],
-    indefinido:["dije","dijiste","dijo","dijimos","dijeron"],
-    imperfecto:["decía","decías","decía","decíamos","decían"],
-    futuro:["diré","dirás","dirá","diremos","dirán"],
-    condicional:["diría","dirías","diría","diríamos","dirían"],
-    subjuntivo:["diga","digas","diga","digamos","digan"],
-    perfecto:["he dicho","has dicho","ha dicho","hemos dicho","han dicho"],
-    imperativo:["di","diga","digamos","digan"] },
-  { v:"poner", regular:false, ja:"置く",
-    presente:["pongo","pones","pone","ponemos","ponen"],
-    indefinido:["puse","pusiste","puso","pusimos","pusieron"],
-    imperfecto:["ponía","ponías","ponía","poníamos","ponían"],
-    futuro:["pondré","pondrás","pondrá","pondremos","pondrán"],
-    condicional:["pondría","pondrías","pondría","pondríamos","pondrían"],
-    subjuntivo:["ponga","pongas","ponga","pongamos","pongan"],
-    perfecto:["he puesto","has puesto","ha puesto","hemos puesto","han puesto"],
-    imperativo:["pon","ponga","pongamos","pongan"] },
-  { v:"salir", regular:false, ja:"出る",
-    presente:["salgo","sales","sale","salimos","salen"],
-    indefinido:["salí","saliste","salió","salimos","salieron"],
-    imperfecto:["salía","salías","salía","salíamos","salían"],
-    futuro:["saldré","saldrás","saldrá","saldremos","saldrán"],
-    condicional:["saldría","saldrías","saldría","saldríamos","saldrían"],
-    subjuntivo:["salga","salgas","salga","salgamos","salgan"],
-    perfecto:["he salido","has salido","ha salido","hemos salido","han salido"],
-    imperativo:["sal","salga","salgamos","salgan"] },
-  { v:"venir", regular:false, ja:"来る",
-    presente:["vengo","vienes","viene","venimos","vienen"],
-    indefinido:["vine","viniste","vino","vinimos","vinieron"],
-    imperfecto:["venía","venías","venía","veníamos","venían"],
-    futuro:["vendré","vendrás","vendrá","vendremos","vendrán"],
-    condicional:["vendría","vendrías","vendría","vendríamos","vendrían"],
-    subjuntivo:["venga","vengas","venga","vengamos","vengan"],
-    perfecto:["he venido","has venido","ha venido","hemos venido","han venido"],
-    imperativo:["ven","venga","vengamos","vengan"] },
-  { v:"dar", regular:false, ja:"与える",
-    presente:["doy","das","da","damos","dan"],
-    indefinido:["di","diste","dio","dimos","dieron"],
-    imperfecto:["daba","dabas","daba","dábamos","daban"],
-    futuro:["daré","darás","dará","daremos","darán"],
-    condicional:["daría","darías","daría","daríamos","darían"],
-    subjuntivo:["dé","des","dé","demos","den"],
-    perfecto:["he dado","has dado","ha dado","hemos dado","han dado"],
-    imperativo:["da","dé","demos","den"] },
-  { v:"ver", regular:false, ja:"見る",
-    presente:["veo","ves","ve","vemos","ven"],
-    indefinido:["vi","viste","vio","vimos","vieron"],
-    imperfecto:["veía","veías","veía","veíamos","veían"],
-    futuro:["veré","verás","verá","veremos","verán"],
-    condicional:["vería","verías","vería","veríamos","verían"],
-    subjuntivo:["vea","veas","vea","veamos","vean"],
-    perfecto:["he visto","has visto","ha visto","hemos visto","han visto"],
-    imperativo:["ve","vea","veamos","vean"] },
-  { v:"saber", regular:false, ja:"知っている",
-    presente:["sé","sabes","sabe","sabemos","saben"],
-    indefinido:["supe","supiste","supo","supimos","supieron"],
-    imperfecto:["sabía","sabías","sabía","sabíamos","sabían"],
-    futuro:["sabré","sabrás","sabrá","sabremos","sabrán"],
-    condicional:["sabría","sabrías","sabría","sabríamos","sabrían"],
-    subjuntivo:["sepa","sepas","sepa","sepamos","sepan"],
-    perfecto:["he sabido","has sabido","ha sabido","hemos sabido","han sabido"],
-    imperativo:["sabe","sepa","sepamos","sepan"] },
-  { v:"traer", regular:false, ja:"持ってくる",
-    presente:["traigo","traes","trae","traemos","traen"],
-    indefinido:["traje","trajiste","trajo","trajimos","trajeron"],
-    imperfecto:["traía","traías","traía","traíamos","traían"],
-    futuro:["traeré","traerás","traerá","traeremos","traerán"],
-    condicional:["traería","traerías","traería","traeríamos","traerían"],
-    subjuntivo:["traiga","traigas","traiga","traigamos","traigan"],
-    perfecto:["he traído","has traído","ha traído","hemos traído","han traído"],
-    imperativo:["trae","traiga","traigamos","traigan"] },
-  { v:"trabajar", regular:true, ja:"働く",
-    presente:["trabajo","trabajas","trabaja","trabajamos","trabajan"],
-    indefinido:["trabajé","trabajaste","trabajó","trabajamos","trabajaron"],
-    imperfecto:["trabajaba","trabajabas","trabajaba","trabajábamos","trabajaban"],
-    futuro:["trabajaré","trabajarás","trabajará","trabajaremos","trabajarán"],
-    condicional:["trabajaría","trabajarías","trabajaría","trabajaríamos","trabajarían"],
-    subjuntivo:["trabaje","trabajes","trabaje","trabajemos","trabajen"],
-    perfecto:["he trabajado","has trabajado","ha trabajado","hemos trabajado","han trabajado"],
-    imperativo:["trabaja","trabaje","trabajemos","trabajen"] },
-  { v:"estudiar", regular:true, ja:"勉強する",
-    presente:["estudio","estudias","estudia","estudiamos","estudian"],
-    indefinido:["estudié","estudiaste","estudió","estudiamos","estudiaron"],
-    imperfecto:["estudiaba","estudiabas","estudiaba","estudiábamos","estudiaban"],
-    futuro:["estudiaré","estudiarás","estudiará","estudiaremos","estudiarán"],
-    condicional:["estudiaría","estudiarías","estudiaría","estudiaríamos","estudiarían"],
-    subjuntivo:["estudie","estudies","estudie","estudiemos","estudien"],
-    perfecto:["he estudiado","has estudiado","ha estudiado","hemos estudiado","han estudiado"],
-    imperativo:["estudia","estudie","estudiemos","estudien"] },
-  { v:"comprar", regular:true, ja:"買う",
-    presente:["compro","compras","compra","compramos","compran"],
-    indefinido:["compré","compraste","compró","compramos","compraron"],
-    imperfecto:["compraba","comprabas","compraba","comprábamos","compraban"],
-    futuro:["compraré","comprarás","comprará","compraremos","comprarán"],
-    condicional:["compraría","comprarías","compraría","compraríamos","comprarían"],
-    subjuntivo:["compre","compres","compre","compremos","compren"],
-    perfecto:["he comprado","has comprado","ha comprado","hemos comprado","han comprado"],
-    imperativo:["compra","compre","compremos","compren"] },
-  { v:"aprender", regular:true, ja:"学ぶ",
-    presente:["aprendo","aprendes","aprende","aprendemos","aprenden"],
-    indefinido:["aprendí","aprendiste","aprendió","aprendimos","aprendieron"],
-    imperfecto:["aprendía","aprendías","aprendía","aprendíamos","aprendían"],
-    futuro:["aprenderé","aprenderás","aprenderá","aprenderemos","aprenderán"],
-    condicional:["aprendería","aprenderías","aprendería","aprenderíamos","aprenderían"],
-    subjuntivo:["aprenda","aprendas","aprenda","aprendamos","aprendan"],
-    perfecto:["he aprendido","has aprendido","ha aprendido","hemos aprendido","han aprendido"],
-    imperativo:["aprende","aprenda","aprendamos","aprendan"] },
-  { v:"decidir", regular:true, ja:"決める",
-    presente:["decido","decides","decide","decidimos","deciden"],
-    indefinido:["decidí","decidiste","decidió","decidimos","decidieron"],
-    imperfecto:["decidía","decidías","decidía","decidíamos","decidían"],
-    futuro:["decidiré","decidirás","decidirá","decidiremos","decidirán"],
-    condicional:["decidiría","decidirías","decidiría","decidiríamos","decidirían"],
-    subjuntivo:["decida","decidas","decida","decidamos","decidan"],
-    perfecto:["he decidido","has decidido","ha decidido","hemos decidido","han decidido"],
-    imperativo:["decide","decida","decidamos","decidan"] },
-  { v:"vender", regular:true, ja:"売る",
-    presente:["vendo","vendes","vende","vendemos","venden"],
-    indefinido:["vendí","vendiste","vendió","vendimos","vendieron"],
-    imperfecto:["vendía","vendías","vendía","vendíamos","vendían"],
-    futuro:["venderé","venderás","venderá","venderemos","venderán"],
-    condicional:["vendería","venderías","vendería","venderíamos","venderían"],
-    subjuntivo:["venda","vendas","venda","vendamos","vendan"],
-    perfecto:["he vendido","has vendido","ha vendido","hemos vendido","han vendido"],
-    imperativo:["vende","venda","vendamos","vendan"] },
-  { v:"mirar", regular:true, ja:"見る",
-    presente:["miro","miras","mira","miramos","miran"],
-    indefinido:["miré","miraste","miró","miramos","miraron"],
-    imperfecto:["miraba","mirabas","miraba","mirábamos","miraban"],
-    futuro:["miraré","mirarás","mirará","miraremos","mirarán"],
-    condicional:["miraría","mirarías","miraría","miraríamos","mirarían"],
-    subjuntivo:["mire","mires","mire","miremos","miren"],
-    perfecto:["he mirado","has mirado","ha mirado","hemos mirado","han mirado"],
-    imperativo:["mira","mire","miremos","miren"] },
-  { v:"escuchar", regular:true, ja:"聞く",
-    presente:["escucho","escuchas","escucha","escuchamos","escuchan"],
-    indefinido:["escuché","escuchaste","escuchó","escuchamos","escucharon"],
-    imperfecto:["escuchaba","escuchabas","escuchaba","escuchábamos","escuchaban"],
-    futuro:["escucharé","escucharás","escuchará","escucharemos","escucharán"],
-    condicional:["escucharía","escucharías","escucharía","escucharíamos","escucharían"],
-    subjuntivo:["escuche","escuches","escuche","escuchemos","escuchen"],
-    perfecto:["he escuchado","has escuchado","ha escuchado","hemos escuchado","han escuchado"],
-    imperativo:["escucha","escuche","escuchemos","escuchen"] },
-  { v:"necesitar", regular:true, ja:"必要とする",
-    presente:["necesito","necesitas","necesita","necesitamos","necesitan"],
-    indefinido:["necesité","necesitaste","necesitó","necesitamos","necesitaron"],
-    imperfecto:["necesitaba","necesitabas","necesitaba","necesitábamos","necesitaban"],
-    futuro:["necesitaré","necesitarás","necesitará","necesitaremos","necesitarán"],
-    condicional:["necesitaría","necesitarías","necesitaría","necesitaríamos","necesitarían"],
-    subjuntivo:["necesite","necesites","necesite","necesitemos","necesiten"],
-    perfecto:["he necesitado","has necesitado","ha necesitado","hemos necesitado","han necesitado"],
-    imperativo:["necesita","necesite","necesitemos","necesiten"] },
-  { v:"usar", regular:true, ja:"使う",
-    presente:["uso","usas","usa","usamos","usan"],
-    indefinido:["usé","usaste","usó","usamos","usaron"],
-    imperfecto:["usaba","usabas","usaba","usábamos","usaban"],
-    futuro:["usaré","usarás","usará","usaremos","usarán"],
-    condicional:["usaría","usarías","usaría","usaríamos","usarían"],
-    subjuntivo:["use","uses","use","usemos","usen"],
-    perfecto:["he usado","has usado","ha usado","hemos usado","han usado"],
-    imperativo:["usa","use","usemos","usen"] },
-  { v:"esperar", regular:true, ja:"待つ・望む",
-    presente:["espero","esperas","espera","esperamos","esperan"],
-    indefinido:["esperé","esperaste","esperó","esperamos","esperaron"],
-    imperfecto:["esperaba","esperabas","esperaba","esperábamos","esperaban"],
-    futuro:["esperaré","esperarás","esperará","esperaremos","esperarán"],
-    condicional:["esperaría","esperarías","esperaría","esperaríamos","esperarían"],
-    subjuntivo:["espere","esperes","espere","esperemos","esperen"],
-    perfecto:["he esperado","has esperado","ha esperado","hemos esperado","han esperado"],
-    imperativo:["espera","espere","esperemos","esperen"] },
-  { v:"tomar", regular:true, ja:"取る・飲む",
-    presente:["tomo","tomas","toma","tomamos","toman"],
-    indefinido:["tomé","tomaste","tomó","tomamos","tomaron"],
-    imperfecto:["tomaba","tomabas","tomaba","tomábamos","tomaban"],
-    futuro:["tomaré","tomarás","tomará","tomaremos","tomarán"],
-    condicional:["tomaría","tomarías","tomaría","tomaríamos","tomarían"],
-    subjuntivo:["tome","tomes","tome","tomemos","tomen"],
-    perfecto:["he tomado","has tomado","ha tomado","hemos tomado","han tomado"],
-    imperativo:["toma","tome","tomemos","tomen"] },
+ {
+  "v": "hablar",
+  "regular": true,
+  "ja": "話す",
+  "presente": [
+   "hablo",
+   "hablas",
+   "habla",
+   "hablamos",
+   "hablan"
+  ],
+  "indefinido": [
+   "hablé",
+   "hablaste",
+   "habló",
+   "hablamos",
+   "hablaron"
+  ],
+  "imperfecto": [
+   "hablaba",
+   "hablabas",
+   "hablaba",
+   "hablábamos",
+   "hablaban"
+  ],
+  "futuro": [
+   "hablaré",
+   "hablarás",
+   "hablará",
+   "hablaremos",
+   "hablarán"
+  ],
+  "condicional": [
+   "hablaría",
+   "hablarías",
+   "hablaría",
+   "hablaríamos",
+   "hablarían"
+  ],
+  "subjuntivo": [
+   "hable",
+   "hables",
+   "hable",
+   "hablemos",
+   "hablen"
+  ],
+  "perfecto": [
+   "he hablado",
+   "has hablado",
+   "ha hablado",
+   "hemos hablado",
+   "han hablado"
+  ],
+  "imperativo": [
+   "habla",
+   "hable",
+   "hablemos",
+   "hablen"
+  ]
+ },
+ {
+  "v": "comer",
+  "regular": true,
+  "ja": "食べる",
+  "presente": [
+   "como",
+   "comes",
+   "come",
+   "comemos",
+   "comen"
+  ],
+  "indefinido": [
+   "comí",
+   "comiste",
+   "comió",
+   "comimos",
+   "comieron"
+  ],
+  "imperfecto": [
+   "comía",
+   "comías",
+   "comía",
+   "comíamos",
+   "comían"
+  ],
+  "futuro": [
+   "comeré",
+   "comerás",
+   "comerá",
+   "comeremos",
+   "comerán"
+  ],
+  "condicional": [
+   "comería",
+   "comerías",
+   "comería",
+   "comeríamos",
+   "comerían"
+  ],
+  "subjuntivo": [
+   "coma",
+   "comas",
+   "coma",
+   "comamos",
+   "coman"
+  ],
+  "perfecto": [
+   "he comido",
+   "has comido",
+   "ha comido",
+   "hemos comido",
+   "han comido"
+  ],
+  "imperativo": [
+   "come",
+   "coma",
+   "comamos",
+   "coman"
+  ]
+ },
+ {
+  "v": "vivir",
+  "regular": true,
+  "ja": "住む/生きる",
+  "presente": [
+   "vivo",
+   "vives",
+   "vive",
+   "vivimos",
+   "viven"
+  ],
+  "indefinido": [
+   "viví",
+   "viviste",
+   "vivió",
+   "vivimos",
+   "vivieron"
+  ],
+  "imperfecto": [
+   "vivía",
+   "vivías",
+   "vivía",
+   "vivíamos",
+   "vivían"
+  ],
+  "futuro": [
+   "viviré",
+   "vivirás",
+   "vivirá",
+   "viviremos",
+   "vivirán"
+  ],
+  "condicional": [
+   "viviría",
+   "vivirías",
+   "viviría",
+   "viviríamos",
+   "vivirían"
+  ],
+  "subjuntivo": [
+   "viva",
+   "vivas",
+   "viva",
+   "vivamos",
+   "vivan"
+  ],
+  "perfecto": [
+   "he vivido",
+   "has vivido",
+   "ha vivido",
+   "hemos vivido",
+   "han vivido"
+  ],
+  "imperativo": [
+   "vive",
+   "viva",
+   "vivamos",
+   "vivan"
+  ]
+ },
+ {
+  "v": "ser",
+  "regular": false,
+  "ja": "〜である",
+  "presente": [
+   "soy",
+   "eres",
+   "es",
+   "somos",
+   "son"
+  ],
+  "indefinido": [
+   "fui",
+   "fuiste",
+   "fue",
+   "fuimos",
+   "fueron"
+  ],
+  "imperfecto": [
+   "era",
+   "eras",
+   "era",
+   "éramos",
+   "eran"
+  ],
+  "futuro": [
+   "seré",
+   "serás",
+   "será",
+   "seremos",
+   "serán"
+  ],
+  "condicional": [
+   "sería",
+   "serías",
+   "sería",
+   "seríamos",
+   "serían"
+  ],
+  "subjuntivo": [
+   "sea",
+   "seas",
+   "sea",
+   "seamos",
+   "sean"
+  ],
+  "perfecto": [
+   "he sido",
+   "has sido",
+   "ha sido",
+   "hemos sido",
+   "han sido"
+  ],
+  "imperativo": [
+   "sé",
+   "sea",
+   "seamos",
+   "sean"
+  ]
+ },
+ {
+  "v": "estar",
+  "regular": false,
+  "ja": "〜にいる",
+  "presente": [
+   "estoy",
+   "estás",
+   "está",
+   "estamos",
+   "están"
+  ],
+  "indefinido": [
+   "estuve",
+   "estuviste",
+   "estuvo",
+   "estuvimos",
+   "estuvieron"
+  ],
+  "imperfecto": [
+   "estaba",
+   "estabas",
+   "estaba",
+   "estábamos",
+   "estaban"
+  ],
+  "futuro": [
+   "estaré",
+   "estarás",
+   "estará",
+   "estaremos",
+   "estarán"
+  ],
+  "condicional": [
+   "estaría",
+   "estarías",
+   "estaría",
+   "estaríamos",
+   "estarían"
+  ],
+  "subjuntivo": [
+   "esté",
+   "estés",
+   "esté",
+   "estemos",
+   "estén"
+  ],
+  "perfecto": [
+   "he estado",
+   "has estado",
+   "ha estado",
+   "hemos estado",
+   "han estado"
+  ],
+  "imperativo": [
+   "está",
+   "esté",
+   "estemos",
+   "estén"
+  ]
+ },
+ {
+  "v": "tener",
+  "regular": false,
+  "ja": "持つ",
+  "presente": [
+   "tengo",
+   "tienes",
+   "tiene",
+   "tenemos",
+   "tienen"
+  ],
+  "indefinido": [
+   "tuve",
+   "tuviste",
+   "tuvo",
+   "tuvimos",
+   "tuvieron"
+  ],
+  "imperfecto": [
+   "tenía",
+   "tenías",
+   "tenía",
+   "teníamos",
+   "tenían"
+  ],
+  "futuro": [
+   "tendré",
+   "tendrás",
+   "tendrá",
+   "tendremos",
+   "tendrán"
+  ],
+  "condicional": [
+   "tendría",
+   "tendrías",
+   "tendría",
+   "tendríamos",
+   "tendrían"
+  ],
+  "subjuntivo": [
+   "tenga",
+   "tengas",
+   "tenga",
+   "tengamos",
+   "tengan"
+  ],
+  "perfecto": [
+   "he tenido",
+   "has tenido",
+   "ha tenido",
+   "hemos tenido",
+   "han tenido"
+  ],
+  "imperativo": [
+   "ten",
+   "tenga",
+   "tengamos",
+   "tengan"
+  ]
+ },
+ {
+  "v": "ir",
+  "regular": false,
+  "ja": "行く",
+  "presente": [
+   "voy",
+   "vas",
+   "va",
+   "vamos",
+   "van"
+  ],
+  "indefinido": [
+   "fui",
+   "fuiste",
+   "fue",
+   "fuimos",
+   "fueron"
+  ],
+  "imperfecto": [
+   "iba",
+   "ibas",
+   "iba",
+   "íbamos",
+   "iban"
+  ],
+  "futuro": [
+   "iré",
+   "irás",
+   "irá",
+   "iremos",
+   "irán"
+  ],
+  "condicional": [
+   "iría",
+   "irías",
+   "iría",
+   "iríamos",
+   "irían"
+  ],
+  "subjuntivo": [
+   "vaya",
+   "vayas",
+   "vaya",
+   "vayamos",
+   "vayan"
+  ],
+  "perfecto": [
+   "he ido",
+   "has ido",
+   "ha ido",
+   "hemos ido",
+   "han ido"
+  ],
+  "imperativo": [
+   "ve",
+   "vaya",
+   "vamos",
+   "vayan"
+  ]
+ },
+ {
+  "v": "hacer",
+  "regular": false,
+  "ja": "する/作る",
+  "presente": [
+   "hago",
+   "haces",
+   "hace",
+   "hacemos",
+   "hacen"
+  ],
+  "indefinido": [
+   "hice",
+   "hiciste",
+   "hizo",
+   "hicimos",
+   "hicieron"
+  ],
+  "imperfecto": [
+   "hacía",
+   "hacías",
+   "hacía",
+   "hacíamos",
+   "hacían"
+  ],
+  "futuro": [
+   "haré",
+   "harás",
+   "hará",
+   "haremos",
+   "harán"
+  ],
+  "condicional": [
+   "haría",
+   "harías",
+   "haría",
+   "haríamos",
+   "harían"
+  ],
+  "subjuntivo": [
+   "haga",
+   "hagas",
+   "haga",
+   "hagamos",
+   "hagan"
+  ],
+  "perfecto": [
+   "he hecho",
+   "has hecho",
+   "ha hecho",
+   "hemos hecho",
+   "han hecho"
+  ],
+  "imperativo": [
+   "haz",
+   "haga",
+   "hagamos",
+   "hagan"
+  ]
+ },
+ {
+  "v": "poder",
+  "regular": false,
+  "ja": "〜できる",
+  "presente": [
+   "puedo",
+   "puedes",
+   "puede",
+   "podemos",
+   "pueden"
+  ],
+  "indefinido": [
+   "pude",
+   "pudiste",
+   "pudo",
+   "pudimos",
+   "pudieron"
+  ],
+  "imperfecto": [
+   "podía",
+   "podías",
+   "podía",
+   "podíamos",
+   "podían"
+  ],
+  "futuro": [
+   "podré",
+   "podrás",
+   "podrá",
+   "podremos",
+   "podrán"
+  ],
+  "condicional": [
+   "podría",
+   "podrías",
+   "podría",
+   "podríamos",
+   "podrían"
+  ],
+  "subjuntivo": [
+   "pueda",
+   "puedas",
+   "pueda",
+   "podamos",
+   "puedan"
+  ],
+  "perfecto": [
+   "he podido",
+   "has podido",
+   "ha podido",
+   "hemos podido",
+   "han podido"
+  ],
+  "imperativo": [
+   "puede",
+   "pueda",
+   "podamos",
+   "puedan"
+  ]
+ },
+ {
+  "v": "querer",
+  "regular": false,
+  "ja": "欲しい/したい",
+  "presente": [
+   "quiero",
+   "quieres",
+   "quiere",
+   "queremos",
+   "quieren"
+  ],
+  "indefinido": [
+   "quise",
+   "quisiste",
+   "quiso",
+   "quisimos",
+   "quisieron"
+  ],
+  "imperfecto": [
+   "quería",
+   "querías",
+   "quería",
+   "queríamos",
+   "querían"
+  ],
+  "futuro": [
+   "querré",
+   "querrás",
+   "querrá",
+   "querremos",
+   "querrán"
+  ],
+  "condicional": [
+   "querría",
+   "querrías",
+   "querría",
+   "querríamos",
+   "querrían"
+  ],
+  "subjuntivo": [
+   "quiera",
+   "quieras",
+   "quiera",
+   "queramos",
+   "quieran"
+  ],
+  "perfecto": [
+   "he querido",
+   "has querido",
+   "ha querido",
+   "hemos querido",
+   "han querido"
+  ],
+  "imperativo": [
+   "quiere",
+   "quiera",
+   "queramos",
+   "quieran"
+  ]
+ },
+ {
+  "v": "decir",
+  "regular": false,
+  "ja": "言う",
+  "presente": [
+   "digo",
+   "dices",
+   "dice",
+   "decimos",
+   "dicen"
+  ],
+  "indefinido": [
+   "dije",
+   "dijiste",
+   "dijo",
+   "dijimos",
+   "dijeron"
+  ],
+  "imperfecto": [
+   "decía",
+   "decías",
+   "decía",
+   "decíamos",
+   "decían"
+  ],
+  "futuro": [
+   "diré",
+   "dirás",
+   "dirá",
+   "diremos",
+   "dirán"
+  ],
+  "condicional": [
+   "diría",
+   "dirías",
+   "diría",
+   "diríamos",
+   "dirían"
+  ],
+  "subjuntivo": [
+   "diga",
+   "digas",
+   "diga",
+   "digamos",
+   "digan"
+  ],
+  "perfecto": [
+   "he dicho",
+   "has dicho",
+   "ha dicho",
+   "hemos dicho",
+   "han dicho"
+  ],
+  "imperativo": [
+   "di",
+   "diga",
+   "digamos",
+   "digan"
+  ]
+ },
+ {
+  "v": "poner",
+  "regular": false,
+  "ja": "置く",
+  "presente": [
+   "pongo",
+   "pones",
+   "pone",
+   "ponemos",
+   "ponen"
+  ],
+  "indefinido": [
+   "puse",
+   "pusiste",
+   "puso",
+   "pusimos",
+   "pusieron"
+  ],
+  "imperfecto": [
+   "ponía",
+   "ponías",
+   "ponía",
+   "poníamos",
+   "ponían"
+  ],
+  "futuro": [
+   "pondré",
+   "pondrás",
+   "pondrá",
+   "pondremos",
+   "pondrán"
+  ],
+  "condicional": [
+   "pondría",
+   "pondrías",
+   "pondría",
+   "pondríamos",
+   "pondrían"
+  ],
+  "subjuntivo": [
+   "ponga",
+   "pongas",
+   "ponga",
+   "pongamos",
+   "pongan"
+  ],
+  "perfecto": [
+   "he puesto",
+   "has puesto",
+   "ha puesto",
+   "hemos puesto",
+   "han puesto"
+  ],
+  "imperativo": [
+   "pon",
+   "ponga",
+   "pongamos",
+   "pongan"
+  ]
+ },
+ {
+  "v": "salir",
+  "regular": false,
+  "ja": "出る",
+  "presente": [
+   "salgo",
+   "sales",
+   "sale",
+   "salimos",
+   "salen"
+  ],
+  "indefinido": [
+   "salí",
+   "saliste",
+   "salió",
+   "salimos",
+   "salieron"
+  ],
+  "imperfecto": [
+   "salía",
+   "salías",
+   "salía",
+   "salíamos",
+   "salían"
+  ],
+  "futuro": [
+   "saldré",
+   "saldrás",
+   "saldrá",
+   "saldremos",
+   "saldrán"
+  ],
+  "condicional": [
+   "saldría",
+   "saldrías",
+   "saldría",
+   "saldríamos",
+   "saldrían"
+  ],
+  "subjuntivo": [
+   "salga",
+   "salgas",
+   "salga",
+   "salgamos",
+   "salgan"
+  ],
+  "perfecto": [
+   "he salido",
+   "has salido",
+   "ha salido",
+   "hemos salido",
+   "han salido"
+  ],
+  "imperativo": [
+   "sal",
+   "salga",
+   "salgamos",
+   "salgan"
+  ]
+ },
+ {
+  "v": "venir",
+  "regular": false,
+  "ja": "来る",
+  "presente": [
+   "vengo",
+   "vienes",
+   "viene",
+   "venimos",
+   "vienen"
+  ],
+  "indefinido": [
+   "vine",
+   "viniste",
+   "vino",
+   "vinimos",
+   "vinieron"
+  ],
+  "imperfecto": [
+   "venía",
+   "venías",
+   "venía",
+   "veníamos",
+   "venían"
+  ],
+  "futuro": [
+   "vendré",
+   "vendrás",
+   "vendrá",
+   "vendremos",
+   "vendrán"
+  ],
+  "condicional": [
+   "vendría",
+   "vendrías",
+   "vendría",
+   "vendríamos",
+   "vendrían"
+  ],
+  "subjuntivo": [
+   "venga",
+   "vengas",
+   "venga",
+   "vengamos",
+   "vengan"
+  ],
+  "perfecto": [
+   "he venido",
+   "has venido",
+   "ha venido",
+   "hemos venido",
+   "han venido"
+  ],
+  "imperativo": [
+   "ven",
+   "venga",
+   "vengamos",
+   "vengan"
+  ]
+ },
+ {
+  "v": "dar",
+  "regular": false,
+  "ja": "与える",
+  "presente": [
+   "doy",
+   "das",
+   "da",
+   "damos",
+   "dan"
+  ],
+  "indefinido": [
+   "di",
+   "diste",
+   "dio",
+   "dimos",
+   "dieron"
+  ],
+  "imperfecto": [
+   "daba",
+   "dabas",
+   "daba",
+   "dábamos",
+   "daban"
+  ],
+  "futuro": [
+   "daré",
+   "darás",
+   "dará",
+   "daremos",
+   "darán"
+  ],
+  "condicional": [
+   "daría",
+   "darías",
+   "daría",
+   "daríamos",
+   "darían"
+  ],
+  "subjuntivo": [
+   "dé",
+   "des",
+   "dé",
+   "demos",
+   "den"
+  ],
+  "perfecto": [
+   "he dado",
+   "has dado",
+   "ha dado",
+   "hemos dado",
+   "han dado"
+  ],
+  "imperativo": [
+   "da",
+   "dé",
+   "demos",
+   "den"
+  ]
+ },
+ {
+  "v": "ver",
+  "regular": false,
+  "ja": "見る",
+  "presente": [
+   "veo",
+   "ves",
+   "ve",
+   "vemos",
+   "ven"
+  ],
+  "indefinido": [
+   "vi",
+   "viste",
+   "vio",
+   "vimos",
+   "vieron"
+  ],
+  "imperfecto": [
+   "veía",
+   "veías",
+   "veía",
+   "veíamos",
+   "veían"
+  ],
+  "futuro": [
+   "veré",
+   "verás",
+   "verá",
+   "veremos",
+   "verán"
+  ],
+  "condicional": [
+   "vería",
+   "verías",
+   "vería",
+   "veríamos",
+   "verían"
+  ],
+  "subjuntivo": [
+   "vea",
+   "veas",
+   "vea",
+   "veamos",
+   "vean"
+  ],
+  "perfecto": [
+   "he visto",
+   "has visto",
+   "ha visto",
+   "hemos visto",
+   "han visto"
+  ],
+  "imperativo": [
+   "ve",
+   "vea",
+   "veamos",
+   "vean"
+  ]
+ },
+ {
+  "v": "saber",
+  "regular": false,
+  "ja": "知っている",
+  "presente": [
+   "sé",
+   "sabes",
+   "sabe",
+   "sabemos",
+   "saben"
+  ],
+  "indefinido": [
+   "supe",
+   "supiste",
+   "supo",
+   "supimos",
+   "supieron"
+  ],
+  "imperfecto": [
+   "sabía",
+   "sabías",
+   "sabía",
+   "sabíamos",
+   "sabían"
+  ],
+  "futuro": [
+   "sabré",
+   "sabrás",
+   "sabrá",
+   "sabremos",
+   "sabrán"
+  ],
+  "condicional": [
+   "sabría",
+   "sabrías",
+   "sabría",
+   "sabríamos",
+   "sabrían"
+  ],
+  "subjuntivo": [
+   "sepa",
+   "sepas",
+   "sepa",
+   "sepamos",
+   "sepan"
+  ],
+  "perfecto": [
+   "he sabido",
+   "has sabido",
+   "ha sabido",
+   "hemos sabido",
+   "han sabido"
+  ],
+  "imperativo": [
+   "sabe",
+   "sepa",
+   "sepamos",
+   "sepan"
+  ]
+ },
+ {
+  "v": "traer",
+  "regular": false,
+  "ja": "持ってくる",
+  "presente": [
+   "traigo",
+   "traes",
+   "trae",
+   "traemos",
+   "traen"
+  ],
+  "indefinido": [
+   "traje",
+   "trajiste",
+   "trajo",
+   "trajimos",
+   "trajeron"
+  ],
+  "imperfecto": [
+   "traía",
+   "traías",
+   "traía",
+   "traíamos",
+   "traían"
+  ],
+  "futuro": [
+   "traeré",
+   "traerás",
+   "traerá",
+   "traeremos",
+   "traerán"
+  ],
+  "condicional": [
+   "traería",
+   "traerías",
+   "traería",
+   "traeríamos",
+   "traerían"
+  ],
+  "subjuntivo": [
+   "traiga",
+   "traigas",
+   "traiga",
+   "traigamos",
+   "traigan"
+  ],
+  "perfecto": [
+   "he traído",
+   "has traído",
+   "ha traído",
+   "hemos traído",
+   "han traído"
+  ],
+  "imperativo": [
+   "trae",
+   "traiga",
+   "traigamos",
+   "traigan"
+  ]
+ },
+ {
+  "v": "trabajar",
+  "regular": true,
+  "ja": "働く",
+  "presente": [
+   "trabajo",
+   "trabajas",
+   "trabaja",
+   "trabajamos",
+   "trabajan"
+  ],
+  "indefinido": [
+   "trabajé",
+   "trabajaste",
+   "trabajó",
+   "trabajamos",
+   "trabajaron"
+  ],
+  "imperfecto": [
+   "trabajaba",
+   "trabajabas",
+   "trabajaba",
+   "trabajábamos",
+   "trabajaban"
+  ],
+  "futuro": [
+   "trabajaré",
+   "trabajarás",
+   "trabajará",
+   "trabajaremos",
+   "trabajarán"
+  ],
+  "condicional": [
+   "trabajaría",
+   "trabajarías",
+   "trabajaría",
+   "trabajaríamos",
+   "trabajarían"
+  ],
+  "subjuntivo": [
+   "trabaje",
+   "trabajes",
+   "trabaje",
+   "trabajemos",
+   "trabajen"
+  ],
+  "perfecto": [
+   "he trabajado",
+   "has trabajado",
+   "ha trabajado",
+   "hemos trabajado",
+   "han trabajado"
+  ],
+  "imperativo": [
+   "trabaja",
+   "trabaje",
+   "trabajemos",
+   "trabajen"
+  ]
+ },
+ {
+  "v": "estudiar",
+  "regular": true,
+  "ja": "勉強する",
+  "presente": [
+   "estudio",
+   "estudias",
+   "estudia",
+   "estudiamos",
+   "estudian"
+  ],
+  "indefinido": [
+   "estudié",
+   "estudiaste",
+   "estudió",
+   "estudiamos",
+   "estudiaron"
+  ],
+  "imperfecto": [
+   "estudiaba",
+   "estudiabas",
+   "estudiaba",
+   "estudiábamos",
+   "estudiaban"
+  ],
+  "futuro": [
+   "estudiaré",
+   "estudiarás",
+   "estudiará",
+   "estudiaremos",
+   "estudiarán"
+  ],
+  "condicional": [
+   "estudiaría",
+   "estudiarías",
+   "estudiaría",
+   "estudiaríamos",
+   "estudiarían"
+  ],
+  "subjuntivo": [
+   "estudie",
+   "estudies",
+   "estudie",
+   "estudiemos",
+   "estudien"
+  ],
+  "perfecto": [
+   "he estudiado",
+   "has estudiado",
+   "ha estudiado",
+   "hemos estudiado",
+   "han estudiado"
+  ],
+  "imperativo": [
+   "estudia",
+   "estudie",
+   "estudiemos",
+   "estudien"
+  ]
+ },
+ {
+  "v": "comprar",
+  "regular": true,
+  "ja": "買う",
+  "presente": [
+   "compro",
+   "compras",
+   "compra",
+   "compramos",
+   "compran"
+  ],
+  "indefinido": [
+   "compré",
+   "compraste",
+   "compró",
+   "compramos",
+   "compraron"
+  ],
+  "imperfecto": [
+   "compraba",
+   "comprabas",
+   "compraba",
+   "comprábamos",
+   "compraban"
+  ],
+  "futuro": [
+   "compraré",
+   "comprarás",
+   "comprará",
+   "compraremos",
+   "comprarán"
+  ],
+  "condicional": [
+   "compraría",
+   "comprarías",
+   "compraría",
+   "compraríamos",
+   "comprarían"
+  ],
+  "subjuntivo": [
+   "compre",
+   "compres",
+   "compre",
+   "compremos",
+   "compren"
+  ],
+  "perfecto": [
+   "he comprado",
+   "has comprado",
+   "ha comprado",
+   "hemos comprado",
+   "han comprado"
+  ],
+  "imperativo": [
+   "compra",
+   "compre",
+   "compremos",
+   "compren"
+  ]
+ },
+ {
+  "v": "aprender",
+  "regular": true,
+  "ja": "学ぶ",
+  "presente": [
+   "aprendo",
+   "aprendes",
+   "aprende",
+   "aprendemos",
+   "aprenden"
+  ],
+  "indefinido": [
+   "aprendí",
+   "aprendiste",
+   "aprendió",
+   "aprendimos",
+   "aprendieron"
+  ],
+  "imperfecto": [
+   "aprendía",
+   "aprendías",
+   "aprendía",
+   "aprendíamos",
+   "aprendían"
+  ],
+  "futuro": [
+   "aprenderé",
+   "aprenderás",
+   "aprenderá",
+   "aprenderemos",
+   "aprenderán"
+  ],
+  "condicional": [
+   "aprendería",
+   "aprenderías",
+   "aprendería",
+   "aprenderíamos",
+   "aprenderían"
+  ],
+  "subjuntivo": [
+   "aprenda",
+   "aprendas",
+   "aprenda",
+   "aprendamos",
+   "aprendan"
+  ],
+  "perfecto": [
+   "he aprendido",
+   "has aprendido",
+   "ha aprendido",
+   "hemos aprendido",
+   "han aprendido"
+  ],
+  "imperativo": [
+   "aprende",
+   "aprenda",
+   "aprendamos",
+   "aprendan"
+  ]
+ },
+ {
+  "v": "decidir",
+  "regular": true,
+  "ja": "決める",
+  "presente": [
+   "decido",
+   "decides",
+   "decide",
+   "decidimos",
+   "deciden"
+  ],
+  "indefinido": [
+   "decidí",
+   "decidiste",
+   "decidió",
+   "decidimos",
+   "decidieron"
+  ],
+  "imperfecto": [
+   "decidía",
+   "decidías",
+   "decidía",
+   "decidíamos",
+   "decidían"
+  ],
+  "futuro": [
+   "decidiré",
+   "decidirás",
+   "decidirá",
+   "decidiremos",
+   "decidirán"
+  ],
+  "condicional": [
+   "decidiría",
+   "decidirías",
+   "decidiría",
+   "decidiríamos",
+   "decidirían"
+  ],
+  "subjuntivo": [
+   "decida",
+   "decidas",
+   "decida",
+   "decidamos",
+   "decidan"
+  ],
+  "perfecto": [
+   "he decidido",
+   "has decidido",
+   "ha decidido",
+   "hemos decidido",
+   "han decidido"
+  ],
+  "imperativo": [
+   "decide",
+   "decida",
+   "decidamos",
+   "decidan"
+  ]
+ },
+ {
+  "v": "vender",
+  "regular": true,
+  "ja": "売る",
+  "presente": [
+   "vendo",
+   "vendes",
+   "vende",
+   "vendemos",
+   "venden"
+  ],
+  "indefinido": [
+   "vendí",
+   "vendiste",
+   "vendió",
+   "vendimos",
+   "vendieron"
+  ],
+  "imperfecto": [
+   "vendía",
+   "vendías",
+   "vendía",
+   "vendíamos",
+   "vendían"
+  ],
+  "futuro": [
+   "venderé",
+   "venderás",
+   "venderá",
+   "venderemos",
+   "venderán"
+  ],
+  "condicional": [
+   "vendería",
+   "venderías",
+   "vendería",
+   "venderíamos",
+   "venderían"
+  ],
+  "subjuntivo": [
+   "venda",
+   "vendas",
+   "venda",
+   "vendamos",
+   "vendan"
+  ],
+  "perfecto": [
+   "he vendido",
+   "has vendido",
+   "ha vendido",
+   "hemos vendido",
+   "han vendido"
+  ],
+  "imperativo": [
+   "vende",
+   "venda",
+   "vendamos",
+   "vendan"
+  ]
+ },
+ {
+  "v": "mirar",
+  "regular": true,
+  "ja": "見る",
+  "presente": [
+   "miro",
+   "miras",
+   "mira",
+   "miramos",
+   "miran"
+  ],
+  "indefinido": [
+   "miré",
+   "miraste",
+   "miró",
+   "miramos",
+   "miraron"
+  ],
+  "imperfecto": [
+   "miraba",
+   "mirabas",
+   "miraba",
+   "mirábamos",
+   "miraban"
+  ],
+  "futuro": [
+   "miraré",
+   "mirarás",
+   "mirará",
+   "miraremos",
+   "mirarán"
+  ],
+  "condicional": [
+   "miraría",
+   "mirarías",
+   "miraría",
+   "miraríamos",
+   "mirarían"
+  ],
+  "subjuntivo": [
+   "mire",
+   "mires",
+   "mire",
+   "miremos",
+   "miren"
+  ],
+  "perfecto": [
+   "he mirado",
+   "has mirado",
+   "ha mirado",
+   "hemos mirado",
+   "han mirado"
+  ],
+  "imperativo": [
+   "mira",
+   "mire",
+   "miremos",
+   "miren"
+  ]
+ },
+ {
+  "v": "escuchar",
+  "regular": true,
+  "ja": "聞く",
+  "presente": [
+   "escucho",
+   "escuchas",
+   "escucha",
+   "escuchamos",
+   "escuchan"
+  ],
+  "indefinido": [
+   "escuché",
+   "escuchaste",
+   "escuchó",
+   "escuchamos",
+   "escucharon"
+  ],
+  "imperfecto": [
+   "escuchaba",
+   "escuchabas",
+   "escuchaba",
+   "escuchábamos",
+   "escuchaban"
+  ],
+  "futuro": [
+   "escucharé",
+   "escucharás",
+   "escuchará",
+   "escucharemos",
+   "escucharán"
+  ],
+  "condicional": [
+   "escucharía",
+   "escucharías",
+   "escucharía",
+   "escucharíamos",
+   "escucharían"
+  ],
+  "subjuntivo": [
+   "escuche",
+   "escuches",
+   "escuche",
+   "escuchemos",
+   "escuchen"
+  ],
+  "perfecto": [
+   "he escuchado",
+   "has escuchado",
+   "ha escuchado",
+   "hemos escuchado",
+   "han escuchado"
+  ],
+  "imperativo": [
+   "escucha",
+   "escuche",
+   "escuchemos",
+   "escuchen"
+  ]
+ },
+ {
+  "v": "necesitar",
+  "regular": true,
+  "ja": "必要とする",
+  "presente": [
+   "necesito",
+   "necesitas",
+   "necesita",
+   "necesitamos",
+   "necesitan"
+  ],
+  "indefinido": [
+   "necesité",
+   "necesitaste",
+   "necesitó",
+   "necesitamos",
+   "necesitaron"
+  ],
+  "imperfecto": [
+   "necesitaba",
+   "necesitabas",
+   "necesitaba",
+   "necesitábamos",
+   "necesitaban"
+  ],
+  "futuro": [
+   "necesitaré",
+   "necesitarás",
+   "necesitará",
+   "necesitaremos",
+   "necesitarán"
+  ],
+  "condicional": [
+   "necesitaría",
+   "necesitarías",
+   "necesitaría",
+   "necesitaríamos",
+   "necesitarían"
+  ],
+  "subjuntivo": [
+   "necesite",
+   "necesites",
+   "necesite",
+   "necesitemos",
+   "necesiten"
+  ],
+  "perfecto": [
+   "he necesitado",
+   "has necesitado",
+   "ha necesitado",
+   "hemos necesitado",
+   "han necesitado"
+  ],
+  "imperativo": [
+   "necesita",
+   "necesite",
+   "necesitemos",
+   "necesiten"
+  ]
+ },
+ {
+  "v": "usar",
+  "regular": true,
+  "ja": "使う",
+  "presente": [
+   "uso",
+   "usas",
+   "usa",
+   "usamos",
+   "usan"
+  ],
+  "indefinido": [
+   "usé",
+   "usaste",
+   "usó",
+   "usamos",
+   "usaron"
+  ],
+  "imperfecto": [
+   "usaba",
+   "usabas",
+   "usaba",
+   "usábamos",
+   "usaban"
+  ],
+  "futuro": [
+   "usaré",
+   "usarás",
+   "usará",
+   "usaremos",
+   "usarán"
+  ],
+  "condicional": [
+   "usaría",
+   "usarías",
+   "usaría",
+   "usaríamos",
+   "usarían"
+  ],
+  "subjuntivo": [
+   "use",
+   "uses",
+   "use",
+   "usemos",
+   "usen"
+  ],
+  "perfecto": [
+   "he usado",
+   "has usado",
+   "ha usado",
+   "hemos usado",
+   "han usado"
+  ],
+  "imperativo": [
+   "usa",
+   "use",
+   "usemos",
+   "usen"
+  ]
+ },
+ {
+  "v": "esperar",
+  "regular": true,
+  "ja": "待つ・望む",
+  "presente": [
+   "espero",
+   "esperas",
+   "espera",
+   "esperamos",
+   "esperan"
+  ],
+  "indefinido": [
+   "esperé",
+   "esperaste",
+   "esperó",
+   "esperamos",
+   "esperaron"
+  ],
+  "imperfecto": [
+   "esperaba",
+   "esperabas",
+   "esperaba",
+   "esperábamos",
+   "esperaban"
+  ],
+  "futuro": [
+   "esperaré",
+   "esperarás",
+   "esperará",
+   "esperaremos",
+   "esperarán"
+  ],
+  "condicional": [
+   "esperaría",
+   "esperarías",
+   "esperaría",
+   "esperaríamos",
+   "esperarían"
+  ],
+  "subjuntivo": [
+   "espere",
+   "esperes",
+   "espere",
+   "esperemos",
+   "esperen"
+  ],
+  "perfecto": [
+   "he esperado",
+   "has esperado",
+   "ha esperado",
+   "hemos esperado",
+   "han esperado"
+  ],
+  "imperativo": [
+   "espera",
+   "espere",
+   "esperemos",
+   "esperen"
+  ]
+ },
+ {
+  "v": "tomar",
+  "regular": true,
+  "ja": "取る・飲む",
+  "presente": [
+   "tomo",
+   "tomas",
+   "toma",
+   "tomamos",
+   "toman"
+  ],
+  "indefinido": [
+   "tomé",
+   "tomaste",
+   "tomó",
+   "tomamos",
+   "tomaron"
+  ],
+  "imperfecto": [
+   "tomaba",
+   "tomabas",
+   "tomaba",
+   "tomábamos",
+   "tomaban"
+  ],
+  "futuro": [
+   "tomaré",
+   "tomarás",
+   "tomará",
+   "tomaremos",
+   "tomarán"
+  ],
+  "condicional": [
+   "tomaría",
+   "tomarías",
+   "tomaría",
+   "tomaríamos",
+   "tomarían"
+  ],
+  "subjuntivo": [
+   "tome",
+   "tomes",
+   "tome",
+   "tomemos",
+   "tomen"
+  ],
+  "perfecto": [
+   "he tomado",
+   "has tomado",
+   "ha tomado",
+   "hemos tomado",
+   "han tomado"
+  ],
+  "imperativo": [
+   "toma",
+   "tome",
+   "tomemos",
+   "tomen"
+  ]
+ },
+ {
+  "v": "pensar",
+  "regular": false,
+  "ja": "考える",
+  "presente": [
+   "pienso",
+   "piensas",
+   "piensa",
+   "pensamos",
+   "piensan"
+  ],
+  "indefinido": [
+   "pensé",
+   "pensaste",
+   "pensó",
+   "pensamos",
+   "pensaron"
+  ],
+  "imperfecto": [
+   "pensaba",
+   "pensabas",
+   "pensaba",
+   "pensábamos",
+   "pensaban"
+  ],
+  "futuro": [
+   "pensaré",
+   "pensarás",
+   "pensará",
+   "pensaremos",
+   "pensarán"
+  ],
+  "condicional": [
+   "pensaría",
+   "pensarías",
+   "pensaría",
+   "pensaríamos",
+   "pensarían"
+  ],
+  "subjuntivo": [
+   "piense",
+   "pienses",
+   "piense",
+   "pensemos",
+   "piensen"
+  ],
+  "perfecto": [
+   "he pensado",
+   "has pensado",
+   "ha pensado",
+   "hemos pensado",
+   "han pensado"
+  ],
+  "imperativo": [
+   "piensa",
+   "piense",
+   "pensemos",
+   "piensen"
+  ]
+ },
+ {
+  "v": "volver",
+  "regular": false,
+  "ja": "戻る",
+  "presente": [
+   "vuelvo",
+   "vuelves",
+   "vuelve",
+   "volvemos",
+   "vuelven"
+  ],
+  "indefinido": [
+   "volví",
+   "volviste",
+   "volvió",
+   "volvimos",
+   "volvieron"
+  ],
+  "imperfecto": [
+   "volvía",
+   "volvías",
+   "volvía",
+   "volvíamos",
+   "volvían"
+  ],
+  "futuro": [
+   "volveré",
+   "volverás",
+   "volverá",
+   "volveremos",
+   "volverán"
+  ],
+  "condicional": [
+   "volvería",
+   "volverías",
+   "volvería",
+   "volveríamos",
+   "volverían"
+  ],
+  "subjuntivo": [
+   "vuelva",
+   "vuelvas",
+   "vuelva",
+   "volvamos",
+   "vuelvan"
+  ],
+  "perfecto": [
+   "he vuelto",
+   "has vuelto",
+   "ha vuelto",
+   "hemos vuelto",
+   "han vuelto"
+  ],
+  "imperativo": [
+   "vuelve",
+   "vuelva",
+   "volvamos",
+   "vuelvan"
+  ]
+ },
+ {
+  "v": "pedir",
+  "regular": false,
+  "ja": "頼む",
+  "presente": [
+   "pido",
+   "pides",
+   "pide",
+   "pedimos",
+   "piden"
+  ],
+  "indefinido": [
+   "pedí",
+   "pediste",
+   "pidió",
+   "pedimos",
+   "pidieron"
+  ],
+  "imperfecto": [
+   "pedía",
+   "pedías",
+   "pedía",
+   "pedíamos",
+   "pedían"
+  ],
+  "futuro": [
+   "pediré",
+   "pedirás",
+   "pedirá",
+   "pediremos",
+   "pedirán"
+  ],
+  "condicional": [
+   "pediría",
+   "pedirías",
+   "pediría",
+   "pediríamos",
+   "pedirían"
+  ],
+  "subjuntivo": [
+   "pida",
+   "pidas",
+   "pida",
+   "pidamos",
+   "pidan"
+  ],
+  "perfecto": [
+   "he pedido",
+   "has pedido",
+   "ha pedido",
+   "hemos pedido",
+   "han pedido"
+  ],
+  "imperativo": [
+   "pide",
+   "pida",
+   "pidamos",
+   "pidan"
+  ]
+ },
+ {
+  "v": "dormir",
+  "regular": false,
+  "ja": "眠る",
+  "presente": [
+   "duermo",
+   "duermes",
+   "duerme",
+   "dormimos",
+   "duermen"
+  ],
+  "indefinido": [
+   "dormí",
+   "dormiste",
+   "durmió",
+   "dormimos",
+   "durmieron"
+  ],
+  "imperfecto": [
+   "dormía",
+   "dormías",
+   "dormía",
+   "dormíamos",
+   "dormían"
+  ],
+  "futuro": [
+   "dormiré",
+   "dormirás",
+   "dormirá",
+   "dormiremos",
+   "dormirán"
+  ],
+  "condicional": [
+   "dormiría",
+   "dormirías",
+   "dormiría",
+   "dormiríamos",
+   "dormirían"
+  ],
+  "subjuntivo": [
+   "duerma",
+   "duermas",
+   "duerma",
+   "durmamos",
+   "duerman"
+  ],
+  "perfecto": [
+   "he dormido",
+   "has dormido",
+   "ha dormido",
+   "hemos dormido",
+   "han dormido"
+  ],
+  "imperativo": [
+   "duerme",
+   "duerma",
+   "durmamos",
+   "duerman"
+  ]
+ },
+ {
+  "v": "sentir",
+  "regular": false,
+  "ja": "感じる",
+  "presente": [
+   "siento",
+   "sientes",
+   "siente",
+   "sentimos",
+   "sienten"
+  ],
+  "indefinido": [
+   "sentí",
+   "sentiste",
+   "sintió",
+   "sentimos",
+   "sintieron"
+  ],
+  "imperfecto": [
+   "sentía",
+   "sentías",
+   "sentía",
+   "sentíamos",
+   "sentían"
+  ],
+  "futuro": [
+   "sentiré",
+   "sentirás",
+   "sentirá",
+   "sentiremos",
+   "sentirán"
+  ],
+  "condicional": [
+   "sentiría",
+   "sentirías",
+   "sentiría",
+   "sentiríamos",
+   "sentirían"
+  ],
+  "subjuntivo": [
+   "sienta",
+   "sientas",
+   "sienta",
+   "sintamos",
+   "sientan"
+  ],
+  "perfecto": [
+   "he sentido",
+   "has sentido",
+   "ha sentido",
+   "hemos sentido",
+   "han sentido"
+  ],
+  "imperativo": [
+   "siente",
+   "sienta",
+   "sintamos",
+   "sientan"
+  ]
+ },
+ {
+  "v": "jugar",
+  "regular": false,
+  "ja": "遊ぶ・（スポーツを）する",
+  "presente": [
+   "juego",
+   "juegas",
+   "juega",
+   "jugamos",
+   "juegan"
+  ],
+  "indefinido": [
+   "jugué",
+   "jugaste",
+   "jugó",
+   "jugamos",
+   "jugaron"
+  ],
+  "imperfecto": [
+   "jugaba",
+   "jugabas",
+   "jugaba",
+   "jugábamos",
+   "jugaban"
+  ],
+  "futuro": [
+   "jugaré",
+   "jugarás",
+   "jugará",
+   "jugaremos",
+   "jugarán"
+  ],
+  "condicional": [
+   "jugaría",
+   "jugarías",
+   "jugaría",
+   "jugaríamos",
+   "jugarían"
+  ],
+  "subjuntivo": [
+   "juegue",
+   "juegues",
+   "juegue",
+   "juguemos",
+   "jueguen"
+  ],
+  "perfecto": [
+   "he jugado",
+   "has jugado",
+   "ha jugado",
+   "hemos jugado",
+   "han jugado"
+  ],
+  "imperativo": [
+   "juega",
+   "juegue",
+   "juguemos",
+   "jueguen"
+  ]
+ },
+ {
+  "v": "conocer",
+  "regular": false,
+  "ja": "（人・場所を）知っている",
+  "presente": [
+   "conozco",
+   "conoces",
+   "conoce",
+   "conocemos",
+   "conocen"
+  ],
+  "indefinido": [
+   "conocí",
+   "conociste",
+   "conoció",
+   "conocimos",
+   "conocieron"
+  ],
+  "imperfecto": [
+   "conocía",
+   "conocías",
+   "conocía",
+   "conocíamos",
+   "conocían"
+  ],
+  "futuro": [
+   "conoceré",
+   "conocerás",
+   "conocerá",
+   "conoceremos",
+   "conocerán"
+  ],
+  "condicional": [
+   "conocería",
+   "conocerías",
+   "conocería",
+   "conoceríamos",
+   "conocerían"
+  ],
+  "subjuntivo": [
+   "conozca",
+   "conozcas",
+   "conozca",
+   "conozcamos",
+   "conozcan"
+  ],
+  "perfecto": [
+   "he conocido",
+   "has conocido",
+   "ha conocido",
+   "hemos conocido",
+   "han conocido"
+  ],
+  "imperativo": [
+   "conoce",
+   "conozca",
+   "conozcamos",
+   "conozcan"
+  ]
+ },
+ {
+  "v": "encontrar",
+  "regular": false,
+  "ja": "見つける",
+  "presente": [
+   "encuentro",
+   "encuentras",
+   "encuentra",
+   "encontramos",
+   "encuentran"
+  ],
+  "indefinido": [
+   "encontré",
+   "encontraste",
+   "encontró",
+   "encontramos",
+   "encontraron"
+  ],
+  "imperfecto": [
+   "encontraba",
+   "encontrabas",
+   "encontraba",
+   "encontrábamos",
+   "encontraban"
+  ],
+  "futuro": [
+   "encontraré",
+   "encontrarás",
+   "encontrará",
+   "encontraremos",
+   "encontrarán"
+  ],
+  "condicional": [
+   "encontraría",
+   "encontrarías",
+   "encontraría",
+   "encontraríamos",
+   "encontrarían"
+  ],
+  "subjuntivo": [
+   "encuentre",
+   "encuentres",
+   "encuentre",
+   "encontremos",
+   "encuentren"
+  ],
+  "perfecto": [
+   "he encontrado",
+   "has encontrado",
+   "ha encontrado",
+   "hemos encontrado",
+   "han encontrado"
+  ],
+  "imperativo": [
+   "encuentra",
+   "encuentre",
+   "encontremos",
+   "encuentren"
+  ]
+ },
+ {
+  "v": "seguir",
+  "regular": false,
+  "ja": "続ける・従う",
+  "presente": [
+   "sigo",
+   "sigues",
+   "sigue",
+   "seguimos",
+   "siguen"
+  ],
+  "indefinido": [
+   "seguí",
+   "seguiste",
+   "siguió",
+   "seguimos",
+   "siguieron"
+  ],
+  "imperfecto": [
+   "seguía",
+   "seguías",
+   "seguía",
+   "seguíamos",
+   "seguían"
+  ],
+  "futuro": [
+   "seguiré",
+   "seguirás",
+   "seguirá",
+   "seguiremos",
+   "seguirán"
+  ],
+  "condicional": [
+   "seguiría",
+   "seguirías",
+   "seguiría",
+   "seguiríamos",
+   "seguirían"
+  ],
+  "subjuntivo": [
+   "siga",
+   "sigas",
+   "siga",
+   "sigamos",
+   "sigan"
+  ],
+  "perfecto": [
+   "he seguido",
+   "has seguido",
+   "ha seguido",
+   "hemos seguido",
+   "han seguido"
+  ],
+  "imperativo": [
+   "sigue",
+   "siga",
+   "sigamos",
+   "sigan"
+  ]
+ },
+ {
+  "v": "oír",
+  "regular": false,
+  "ja": "聞こえる",
+  "presente": [
+   "oigo",
+   "oyes",
+   "oye",
+   "oímos",
+   "oyen"
+  ],
+  "indefinido": [
+   "oí",
+   "oíste",
+   "oyó",
+   "oímos",
+   "oyeron"
+  ],
+  "imperfecto": [
+   "oía",
+   "oías",
+   "oía",
+   "oíamos",
+   "oían"
+  ],
+  "futuro": [
+   "oiré",
+   "oirás",
+   "oirá",
+   "oiremos",
+   "oirán"
+  ],
+  "condicional": [
+   "oiría",
+   "oirías",
+   "oiría",
+   "oiríamos",
+   "oirían"
+  ],
+  "subjuntivo": [
+   "oiga",
+   "oigas",
+   "oiga",
+   "oigamos",
+   "oigan"
+  ],
+  "perfecto": [
+   "he oído",
+   "has oído",
+   "ha oído",
+   "hemos oído",
+   "han oído"
+  ],
+  "imperativo": [
+   "oye",
+   "oiga",
+   "oigamos",
+   "oigan"
+  ]
+ }
 ];
 
 const EXAMPLES = [
@@ -5346,6 +7476,141 @@ const EXAMPLES = [
   "label": "si構文",
   "topic": "condicional_si",
   "note": "現実的な条件：結果節に未来形（再帰動詞）。"
+ },
+ {
+  "before": "Es raro que él ",
+  "answer": "piense",
+  "after": " así.",
+  "ja": "彼がそう考えるなんて珍しい。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "es raro queは評価のトリガー。pensarの語根母音変化（e→ie）。"
+ },
+ {
+  "before": "Espero que ustedes ",
+  "answer": "vuelvan",
+  "after": " pronto.",
+  "ja": "皆さんがすぐに戻ってきますように。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "esperar queのトリガー。volverの語根母音変化（o→ue）。"
+ },
+ {
+  "before": "Quiero que tú me ",
+  "answer": "pidas",
+  "after": " ayuda si la necesitas.",
+  "ja": "必要なら助けを求めてほしい。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "querer queのトリガー。pedirの語根母音変化（e→i）。"
+ },
+ {
+  "before": "Ojalá que los niños ",
+  "answer": "duerman",
+  "after": " bien esta noche.",
+  "ja": "子供たちが今夜よく眠れますように。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "ojaláのトリガー。dormirの語根母音変化（o→ue）。"
+ },
+ {
+  "before": "No creo que ellos ",
+  "answer": "conozcan",
+  "after": " este lugar.",
+  "ja": "彼らがこの場所を知っているとは思えない。",
+  "label": "接続法",
+  "topic": "subjuntivo",
+  "note": "no creer queのトリガー。conocerの不規則接続法（zco型）。"
+ },
+ {
+  "before": "¡",
+  "answer": "Piensa",
+  "after": " bien antes de decidir!",
+  "ja": "決める前によく考えて！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "tú肯定命令、pensarの語根母音変化（e→ie）。"
+ },
+ {
+  "before": "¡No ",
+  "answer": "vuelvas",
+  "after": " tarde otra vez!",
+  "ja": "また遅くに帰ってこないで！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "tú否定命令は接続法の形。volverの語根母音変化。"
+ },
+ {
+  "before": "¡",
+  "answer": "Duerme",
+  "after": " bien esta noche!",
+  "ja": "今夜はよく眠ってね！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "tú肯定命令、dormirの語根母音変化（o→ue）。"
+ },
+ {
+  "before": "¡",
+  "answer": "Sigan",
+  "after": " derecho hasta el semáforo!",
+  "ja": "信号までまっすぐ進んでください！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "ustedes肯定命令、seguirの不規則接続法（i、g→j型）。"
+ },
+ {
+  "before": "¡No lo ",
+  "answer": "pidas",
+  "after": " así, sé más amable!",
+  "ja": "そんな風に頼まないで、もっと優しくして！",
+  "label": "命令形",
+  "topic": "imperativo",
+  "note": "tú否定命令は接続法の形。pedirの語根母音変化（e→i）。"
+ },
+ {
+  "before": "Si ",
+  "answer": "encuentro",
+  "after": " mis llaves, te llamo.",
+  "ja": "鍵が見つかったら、電話するね。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "現実的な条件：encontrarの現在形。"
+ },
+ {
+  "before": "Si jugáramos mejor en equipo, ",
+  "answer": "ganaríamos",
+  "after": " más partidos.",
+  "ja": "もっとチームプレーが上手なら、もっと試合に勝つだろう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "非現実的な仮定：ganarの条件法。"
+ },
+ {
+  "before": "Si ",
+  "answer": "sigues",
+  "after": " este camino, llegarás al centro.",
+  "ja": "この道を進み続ければ、中心街に着くよ。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "現実的な条件：seguirの現在形。"
+ },
+ {
+  "before": "Si él ",
+  "answer": "durmiera",
+  "after": " más, tendría más energía.",
+  "ja": "彼がもっと眠れば、もっと元気があるだろう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "非現実的な仮定：dormirの接続法過去（語根母音変化）。"
+ },
+ {
+  "before": "Si no lo conocieras, no ",
+  "answer": "confiarías",
+  "after": " tanto en él.",
+  "ja": "彼を知らなければ、そんなに彼を信頼しないだろう。",
+  "label": "si構文",
+  "topic": "condicional_si",
+  "note": "非現実的な仮定の結果節：confiarの条件法。"
  }
 ];
 
