@@ -10354,5 +10354,587 @@ const VOCAB_DATA = [
   "en": "To be mistaken",
   "ja": "間違える",
   "cat": "Verbos"
+ },
+ {
+  "es": "La aerolínea",
+  "en": "Airline",
+  "ja": "航空会社",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El abordaje",
+  "en": "Boarding",
+  "ja": "搭乗",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La almendra",
+  "en": "Almond",
+  "ja": "アーモンド",
+  "cat": "Comida"
+ },
+ {
+  "es": "Amueblado",
+  "en": "Furnished",
+  "ja": "家具付きの",
+  "cat": "Casa"
+ },
+ {
+  "es": "Apurarse",
+  "en": "To hurry",
+  "ja": "急ぐ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Alérgico",
+  "en": "Allergic",
+  "ja": "アレルギーがある",
+  "cat": "Salud"
+ },
+ {
+  "es": "Bancario",
+  "en": "Banking (adj.)",
+  "ja": "銀行の",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El bolsillo",
+  "en": "Pocket",
+  "ja": "ポケット",
+  "cat": "Ropa"
+ },
+ {
+  "es": "El cacahuate",
+  "en": "Peanut",
+  "ja": "ピーナッツ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El cajero",
+  "en": "Cashier / ATM",
+  "ja": "レジ係・ATM",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El catálogo",
+  "en": "Catalog",
+  "ja": "カタログ",
+  "cat": "Compras"
+ },
+ {
+  "es": "La comisión",
+  "en": "Commission / fee",
+  "ja": "手数料",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "La cuadra",
+  "en": "City block",
+  "ja": "街区（道の1ブロック）",
+  "cat": "Lugares"
+ },
+ {
+  "es": "Deslactosado",
+  "en": "Lactose-free",
+  "ja": "乳糖不使用の",
+  "cat": "Comida"
+ },
+ {
+  "es": "El departamento",
+  "en": "Apartment",
+  "ja": "アパート",
+  "cat": "Casa"
+ },
+ {
+  "es": "El depósito",
+  "en": "Deposit",
+  "ja": "保証金・預金",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "Despejado",
+  "en": "Clear (sky)",
+  "ja": "快晴の",
+  "cat": "Clima"
+ },
+ {
+  "es": "Disponible",
+  "en": "Available",
+  "ja": "利用可能な",
+  "cat": "General"
+ },
+ {
+  "es": "El dólar",
+  "en": "Dollar",
+  "ja": "ドル",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "Las emergencias",
+  "en": "Emergencies",
+  "ja": "緊急事態",
+  "cat": "Salud"
+ },
+ {
+  "es": "Entero",
+  "en": "Whole",
+  "ja": "丸ごとの",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "La esquina",
+  "en": "Corner",
+  "ja": "角",
+  "cat": "Lugares"
+ },
+ {
+  "es": "El estilo",
+  "en": "Style",
+  "ja": "スタイル",
+  "cat": "General"
+ },
+ {
+  "es": "Facturar",
+  "en": "To check in (luggage)",
+  "ja": "（荷物を）預ける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El granizo",
+  "en": "Hail",
+  "ja": "雹",
+  "cat": "Clima"
+ },
+ {
+  "es": "Gratis",
+  "en": "Free (of charge)",
+  "ja": "無料の",
+  "cat": "Compras"
+ },
+ {
+  "es": "Horrible",
+  "en": "Horrible",
+  "ja": "ひどい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Incluido",
+  "en": "Included",
+  "ja": "含まれている",
+  "cat": "General"
+ },
+ {
+  "es": "Inscribirse",
+  "en": "To enroll",
+  "ja": "登録する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Lácteo",
+  "en": "Dairy",
+  "ja": "乳製品の",
+  "cat": "Comida"
+ },
+ {
+  "es": "El límite",
+  "en": "Limit",
+  "ja": "限度",
+  "cat": "General"
+ },
+ {
+  "es": "La llamada",
+  "en": "Phone call",
+  "ja": "電話",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La máquina",
+  "en": "Machine",
+  "ja": "機械",
+  "cat": "General"
+ },
+ {
+  "es": "La mascota",
+  "en": "Pet",
+  "ja": "ペット",
+  "cat": "Animales"
+ },
+ {
+  "es": "La membresía",
+  "en": "Membership",
+  "ja": "会員権",
+  "cat": "General"
+ },
+ {
+  "es": "Mensual",
+  "en": "Monthly",
+  "ja": "月々の",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "Mudarse",
+  "en": "To move (residence)",
+  "ja": "引っ越す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La nuez",
+  "en": "Walnut / nut",
+  "ja": "クルミ",
+  "cat": "Comida"
+ },
+ {
+  "es": "El objeto",
+  "en": "Object",
+  "ja": "物",
+  "cat": "General"
+ },
+ {
+  "es": "La opción",
+  "en": "Option",
+  "ja": "選択肢",
+  "cat": "General"
+ },
+ {
+  "es": "El peso",
+  "en": "Peso (currency) / weight",
+  "ja": "ペソ（通貨）・重さ",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El platillo",
+  "en": "Dish (food)",
+  "ja": "料理",
+  "cat": "Comida"
+ },
+ {
+  "es": "Prohibido",
+  "en": "Prohibited",
+  "ja": "禁止されている",
+  "cat": "General"
+ },
+ {
+  "es": "Pronosticar",
+  "en": "To forecast",
+  "ja": "予報する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Propio",
+  "en": "One's own",
+  "ja": "自分自身の",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "El propósito",
+  "en": "Purpose",
+  "ja": "目的",
+  "cat": "General"
+ },
+ {
+  "es": "Reagendar",
+  "en": "To reschedule",
+  "ja": "予定を変更する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Refrescar",
+  "en": "To cool down",
+  "ja": "涼しくなる",
+  "cat": "Clima"
+ },
+ {
+  "es": "La renta",
+  "en": "Rent",
+  "ja": "家賃",
+  "cat": "Casa"
+ },
+ {
+  "es": "Reportar",
+  "en": "To report",
+  "ja": "報告する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La reservación",
+  "en": "Reservation",
+  "ja": "予約",
+  "cat": "Viajes"
+ },
+ {
+  "es": "El retiro",
+  "en": "Withdrawal",
+  "ja": "引き出し",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "Robar",
+  "en": "To steal",
+  "ja": "盗む",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La señal",
+  "en": "Signal",
+  "ja": "電波・信号",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "El tamaño",
+  "en": "Size",
+  "ja": "大きさ",
+  "cat": "General"
+ },
+ {
+  "es": "La temperatura",
+  "en": "Temperature",
+  "ja": "気温",
+  "cat": "Clima"
+ },
+ {
+  "es": "Teñir",
+  "en": "To dye",
+  "ja": "染める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Urgentemente",
+  "en": "Urgently",
+  "ja": "緊急に",
+  "cat": "General"
+ },
+ {
+  "es": "Vaciar",
+  "en": "To empty",
+  "ja": "空にする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Vegetariano",
+  "en": "Vegetarian",
+  "ja": "ベジタリアンの",
+  "cat": "Comida"
+ },
+ {
+  "es": "Vegano",
+  "en": "Vegan",
+  "ja": "ビーガンの",
+  "cat": "Comida"
+ },
+ {
+  "es": "La verdura",
+  "en": "Vegetable",
+  "ja": "野菜",
+  "cat": "Comida"
+ },
+ {
+  "es": "El vestidor",
+  "en": "Fitting room",
+  "ja": "試着室",
+  "cat": "Compras"
+ },
+ {
+  "es": "El vuelo",
+  "en": "Flight",
+  "ja": "フライト",
+  "cat": "Viajes"
+ },
+ {
+  "es": "La nostalgia",
+  "en": "Nostalgia",
+  "ja": "郷愁",
+  "cat": "Emociones"
+ },
+ {
+  "es": "El orgullo",
+  "en": "Pride",
+  "ja": "誇り",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La vergüenza",
+  "en": "Shame / embarrassment",
+  "ja": "恥ずかしさ",
+  "cat": "Emociones"
+ },
+ {
+  "es": "El alivio",
+  "en": "Relief",
+  "ja": "安堵",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La envidia",
+  "en": "Envy",
+  "ja": "嫉妬・羨望",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La culpa",
+  "en": "Guilt",
+  "ja": "罪悪感",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La ansiedad",
+  "en": "Anxiety",
+  "ja": "不安",
+  "cat": "Emociones"
+ },
+ {
+  "es": "El estrés",
+  "en": "Stress",
+  "ja": "ストレス",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La motivación",
+  "en": "Motivation",
+  "ja": "モチベーション",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La autoestima",
+  "en": "Self-esteem",
+  "ja": "自尊心",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La empatía",
+  "en": "Empathy",
+  "ja": "共感",
+  "cat": "Emociones"
+ },
+ {
+  "es": "Asar",
+  "en": "To roast / grill",
+  "ja": "焼く（直火・オーブンで）",
+  "cat": "Cocina"
+ },
+ {
+  "es": "Picar",
+  "en": "To chop / mince",
+  "ja": "細かく刻む",
+  "cat": "Cocina"
+ },
+ {
+  "es": "Marinar",
+  "en": "To marinate",
+  "ja": "漬け込む",
+  "cat": "Cocina"
+ },
+ {
+  "es": "Sazonar",
+  "en": "To season",
+  "ja": "味付けする",
+  "cat": "Cocina"
+ },
+ {
+  "es": "La libertad",
+  "en": "Freedom",
+  "ja": "自由",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La justicia",
+  "en": "Justice",
+  "ja": "正義",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El respeto",
+  "en": "Respect",
+  "ja": "尊重",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La confianza",
+  "en": "Trust",
+  "ja": "信頼",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La honestidad",
+  "en": "Honesty",
+  "ja": "誠実さ",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El relámpago",
+  "en": "Lightning",
+  "ja": "稲妻",
+  "cat": "Clima"
+ },
+ {
+  "es": "El trueno",
+  "en": "Thunder",
+  "ja": "雷鳴",
+  "cat": "Clima"
+ },
+ {
+  "es": "La neblina",
+  "en": "Mist / light fog",
+  "ja": "霧",
+  "cat": "Clima"
+ },
+ {
+  "es": "El rocío",
+  "en": "Dew",
+  "ja": "露",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El karma",
+  "en": "Karma",
+  "ja": "カルマ",
+  "cat": "General"
+ },
+ {
+  "es": "La suerte",
+  "en": "Luck",
+  "ja": "運",
+  "cat": "General"
+ },
+ {
+  "es": "La coincidencia",
+  "en": "Coincidence",
+  "ja": "偶然の一致",
+  "cat": "General"
+ },
+ {
+  "es": "El instinto",
+  "en": "Instinct",
+  "ja": "本能",
+  "cat": "General"
+ },
+ {
+  "es": "El sarcasmo",
+  "en": "Sarcasm",
+  "ja": "皮肉",
+  "cat": "General"
+ },
+ {
+  "es": "La ironía",
+  "en": "Irony",
+  "ja": "皮肉・アイロニー",
+  "cat": "General"
+ },
+ {
+  "es": "El humor",
+  "en": "Humor",
+  "ja": "ユーモア",
+  "cat": "General"
+ },
+ {
+  "es": "La broma",
+  "en": "Joke",
+  "ja": "冗談",
+  "cat": "General"
+ },
+ {
+  "es": "La anécdota",
+  "en": "Anecdote",
+  "ja": "逸話",
+  "cat": "General"
  }
 ];
