@@ -21745,18 +21745,6 @@ const DICTIONARY_DATA = {
    "ja": "「イントロをスキップするよ」「私もだよ、もう何回も見たから」"
   }
  },
- "siguiente episodio": {
-  "nuance": "「次のエピソード」の基本語。動画配信サービスでよく見る表示。",
-  "etymology": "siguiente（次の）+ episodio（エピソード）の組み合わせ。",
-  "synonyms": [],
-  "derived": [
-   "seguir（続ける）"
-  ],
-  "dialogue": {
-   "es": "— El siguiente episodio empieza en cinco segundos.\n— ¡Justo a tiempo!",
-   "ja": "「次のエピソードは5秒後に始まるよ」「ちょうどいいタイミング！」"
-  }
- },
  "subtítulos": {
   "nuance": "「字幕」の基本語。con subtítulos（字幕付きで）はよく使う表現。",
   "etymology": "sub（下に）+ título（タイトル）の組み合わせ。",
@@ -21779,19 +21767,6 @@ const DICTIONARY_DATA = {
   "dialogue": {
    "es": "— Prefiero el doblaje al idioma original.\n— Yo prefiero los subtítulos.",
    "ja": "「オリジナル言語より吹き替えの方が好きなんだ」「私は字幕の方が好きだな」"
-  }
- },
- "continuar viendo": {
-  "nuance": "「視聴を続ける」の基本表現。動画配信サービスのホーム画面によく表示される。",
-  "etymology": "continuar（続ける）+ ver（見る）の組み合わせ。",
-  "synonyms": [],
-  "derived": [
-   "continuar（続ける）",
-   "ver（見る）"
-  ],
-  "dialogue": {
-   "es": "— Vamos a continuar viendo la serie.\n— Sí, quedamos en un momento emocionante.",
-   "ja": "「ドラマの続きを見よう」「うん、盛り上がるところで終わったもんね」"
   }
  },
  "control remoto": {
@@ -22153,18 +22128,6 @@ const DICTIONARY_DATA = {
    "ja": "「クジャクが羽を広げたんだ」「美しい光景だよね」"
   }
  },
- "espera": {
-  "nuance": "「待って」の基本表現。esperar（待つ）の命令形。",
-  "etymology": "esperar（待つ）から派生した語。",
-  "synonyms": [],
-  "derived": [
-   "esperar（待つ）"
-  ],
-  "dialogue": {
-   "es": "— Espera, se me olvidó algo.\n— Está bien, no hay prisa.",
-   "ja": "「待って、何か忘れちゃった」「大丈夫、急がなくていいよ」"
-  }
- },
  "ya voy": {
   "nuance": "「今行くよ」の基本表現。呼ばれたときの返事としてよく使う。",
   "etymology": "ya（もう）+ ir（行く）の組み合わせ。",
@@ -22326,6 +22289,461 @@ const DICTIONARY_DATA = {
   "dialogue": {
    "es": "— Aquí tiene su vuelta.\n— Gracias, que tenga buen día.",
    "ja": "「はい、お釣りです」「ありがとうございます、良い一日を」"
+  }
+ },
+ "trapo": {
+  "nuance": "「雑巾」の基本語。掃除や拭き掃除に使う布切れを指す。",
+  "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Pásame un trapo para limpiar esto.\n— Aquí tienes.",
+   "ja": "「これを拭く雑巾取って」「はい、どうぞ」"
+  }
+ },
+ "fregar": {
+  "nuance": "「ゴシゴシ洗う」の基本語。fregar los platos（皿を洗う）はよく使う組み合わせ。",
+  "etymology": "ラテン語fricare（こする）に由来。",
+  "synonyms": [],
+  "derived": [
+   "fregadero（流し台）"
+  ],
+  "dialogue": {
+   "es": "— ¿Puedes fregar los platos?\n— Claro, ahora los hago.",
+   "ja": "「お皿洗ってくれる？」「もちろん、今やるね」"
+  }
+ },
+ "trapear": {
+  "nuance": "「モップがけする」の基本語。trapo（雑巾）から派生した語、ラテンアメリカでよく使われる。",
+  "etymology": "trapo（雑巾）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "trapo（雑巾）"
+  ],
+  "dialogue": {
+   "es": "— Voy a trapear la cocina.\n— Yo barro mientras tanto.",
+   "ja": "「台所にモップがけするよ」「その間私は掃くね」"
+  }
+ },
+ "tender la ropa": {
+  "nuance": "「洗濯物を干す」の基本表現。tender（広げる、張る）から派生した表現。",
+  "etymology": "tender（広げる）+ ropa（服）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "ropa（服）"
+  ],
+  "dialogue": {
+   "es": "— Voy a tender la ropa antes de que llueva.\n— Buena idea, se ve nublado.",
+   "ja": "「雨が降る前に洗濯物を干すよ」「いい考えだね、曇っているし」"
+  }
+ },
+ "doblar la ropa": {
+  "nuance": "「洗濯物をたたむ」の基本表現。doblar（折る、曲げる）から派生した表現。",
+  "etymology": "doblar（折る）+ ropa（服）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "ropa（服）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me ayudas a doblar la ropa?\n— Claro, ahora te ayudo.",
+   "ja": "「洗濯物たたむの手伝ってくれる？」「もちろん、今手伝うよ」"
+  }
+ },
+ "goma": {
+  "nuance": "「消しゴム」の基本語。ラテンアメリカで一般的（borradorとも呼ばれる、地域による）。「ゴム、樹脂」という文字通りの意味もある。",
+  "etymology": "ギリシャ語kommi（樹脂）に由来。",
+  "synonyms": [
+   "borrador（消しゴム、地域による）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Me prestas tu goma?\n— Claro, aquí tienes.",
+   "ja": "「消しゴム貸してくれる？」「もちろん、はいどうぞ」"
+  }
+ },
+ "sacapuntas": {
+  "nuance": "「鉛筆削り」の基本語。sacar（取り出す）+ puntas（先端）の組み合わせ、単数複数同形。",
+  "etymology": "sacar（取り出す）+ punta（先端）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "punta（先端）"
+  ],
+  "dialogue": {
+   "es": "— Mi lápiz está romo, necesito el sacapuntas.\n— Está en el cajón.",
+   "ja": "「鉛筆の先が丸くなっちゃった、鉛筆削りが必要なんだ」「引き出しにあるよ」"
+  }
+ },
+ "tijera": {
+  "nuance": "「ハサミ」の基本語。単数形でも複数形（tijeras）でもよく使われる（対になった刃を持つ道具の慣習）。",
+  "etymology": "ラテン語tonsoria（切るための）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Dónde están las tijeras?\n— En el cajón de la cocina.",
+   "ja": "「ハサミどこにある？」「台所の引き出しにあるよ」"
+  }
+ },
+ "oler": {
+  "nuance": "「匂いがする」「匂いを嗅ぐ」の両方の意味を持つ動詞。o→hueの不規則な語根母音変化に注意（huelo, hueles...）。",
+  "etymology": "ラテン語olere（匂いを放つ）に由来。",
+  "synonyms": [],
+  "derived": [
+   "olor（匂い）"
+  ],
+  "dialogue": {
+   "es": "— Esto huele delicioso.\n— Es el pan que acabo de hornear.",
+   "ja": "「これいい匂いがするね」「今焼いたばかりのパンだよ」"
+  }
+ },
+ "tocar": {
+  "nuance": "「触る」「(楽器を)弾く」の両方の意味を持つ基本動詞。「（順番が）当たる」という意味にもなる（te toca a ti＝君の番だ）。",
+  "etymology": "俗ラテン語toccare（触れる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "toque（タッチ）"
+  ],
+  "dialogue": {
+   "es": "— ¿Tocas algún instrumento?\n— Sí, toco la guitarra.",
+   "ja": "「何か楽器弾く？」「うん、ギターを弾くよ」"
+  }
+ },
+ "saborear": {
+  "nuance": "「味わう」の基本語。sabor（味）から派生した語、比喩的に「じっくり楽しむ」という意味にもなる。",
+  "etymology": "sabor（味）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "sabor（味）"
+  ],
+  "dialogue": {
+   "es": "— Vamos a saborear cada bocado.\n— Sí, esta comida es especial.",
+   "ja": "「一口一口味わおう」「うん、この料理は特別だから」"
+  }
+ },
+ "percibir": {
+  "nuance": "「知覚する」の基本語。五感を通じて感じ取ることを表す、ややフォーマルな動詞。",
+  "etymology": "ラテン語percipere（完全に捉える）に由来。",
+  "synonyms": [],
+  "derived": [
+   "percepción（知覚）"
+  ],
+  "dialogue": {
+   "es": "— Percibo un cambio en tu actitud.\n— Tienes razón, he estado pensando mucho.",
+   "ja": "「君の態度に変化を感じるな」「その通りだね、いろいろ考えていたんだ」"
+  }
+ },
+ "galaxia": {
+  "nuance": "「銀河」の基本語。la Vía Láctea（天の川銀河）はよく使う組み合わせ。",
+  "etymology": "ギリシャ語galaxias（乳白色の輪）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Nuestra galaxia se llama Vía Láctea.\n— Es fascinante pensar en su tamaño.",
+   "ja": "「私たちの銀河は天の川と呼ばれているんだ」「その大きさを考えると魅力的だよね」"
+  }
+ },
+ "cometa": {
+  "nuance": "「彗星」の基本語。男性名詞。「凧」という意味では女性名詞（la cometa）になる、珍しい性変化語。",
+  "etymology": "ギリシャ語kometes（長い髪を持つ星）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Vimos un cometa anoche.\n— Qué suerte, no es común verlos.",
+   "ja": "「昨夜彗星を見たんだ」「幸運だね、見かけることはあまりないから」"
+  }
+ },
+ "turno": {
+  "nuance": "「シフト」の基本語。turno de noche（夜勤）、turno de día（日勤）のように使う。「順番」という意味にもなる。",
+  "etymology": "ラテン語tornus（回転）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Cuál es tu turno esta semana?\n— El turno de la mañana.",
+   "ja": "「今週のシフトは何？」「朝のシフトだよ」"
+  }
+ },
+ "vacante": {
+  "nuance": "「求人」の基本語。puesto vacante（空いているポスト）から派生。",
+  "etymology": "ラテン語vacans（空いている）に由来。",
+  "synonyms": [],
+  "derived": [
+   "vacío（空の）"
+  ],
+  "dialogue": {
+   "es": "— Vi una vacante interesante en esa empresa.\n— ¿Vas a aplicar?",
+   "ja": "「あの会社に面白い求人を見たんだ」「応募するの？」"
+  }
+ },
+ "bisabuelo": {
+  "nuance": "「曽祖父」の基本語。女性形はbisabuela。bis（2度目の）+ abuelo（祖父）の組み合わせ。",
+  "etymology": "bis（2度）+ abuelo（祖父）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "abuelo（祖父）"
+  ],
+  "dialogue": {
+   "es": "— Mi bisabuelo llegó a México desde España.\n— Qué interesante historia familiar.",
+   "ja": "「私の曽祖父はスペインからメキシコに来たんだ」「面白い家族の歴史だね」"
+  }
+ },
+ "padrastro": {
+  "nuance": "「継父」の基本語。「（爪の）ささくれ」という意味にもなる。",
+  "etymology": "padre（父）+ 軽蔑的接尾辞-astroの組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "padre（父）"
+  ],
+  "dialogue": {
+   "es": "— Mi padrastro me llevó a pescar el fin de semana.\n— Suena divertido.",
+   "ja": "「継父が週末釣りに連れて行ってくれたんだ」「楽しそうだね」"
+  }
+ },
+ "madrastra": {
+  "nuance": "「継母」の基本語。童話「シンデレラ」などで「意地悪な継母」のイメージが強いが、実際の用法では中立的な語。",
+  "etymology": "madre（母）+ 軽蔑的接尾辞-astraの組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "madre（母）"
+  ],
+  "dialogue": {
+   "es": "— Mi madrastra es muy cariñosa conmigo.\n— Qué bueno tener una buena relación.",
+   "ja": "「継母は私にとても愛情深いんだ」「いい関係を持てているのはいいことだね」"
+  }
+ },
+ "hermanastro": {
+  "nuance": "「異父・異母兄弟」の基本語。女性形はhermanastra。再婚などで生じる血のつながらない兄弟姉妹を指す。",
+  "etymology": "hermano（兄弟）+ 軽蔑的接尾辞-astroの組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "hermano（兄弟）"
+  ],
+  "dialogue": {
+   "es": "— Me llevo muy bien con mi hermanastro.\n— Qué bueno que se lleven bien.",
+   "ja": "「異母兄弟とはとても仲がいいんだ」「仲良くやれているのはいいことだね」"
+  }
+ },
+ "yerno": {
+  "nuance": "「娘婿」の基本語。suegro/suegra（義父/義母）から見た「娘の夫」を指す。",
+  "etymology": "ラテン語gener（娘婿）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Mi yerno es muy trabajador.\n— Se nota que lo aprecias mucho.",
+   "ja": "「私の娘婿はとても働き者なんだ」「とても気に入っているのがわかるよ」"
+  }
+ },
+ "nuera": {
+  "nuance": "「息子の嫁」の基本語。suegro/suegra（義父/義母）から見た「息子の妻」を指す。",
+  "etymology": "ラテン語nurus（息子の妻）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Mi nuera cocina muy bien.\n— Qué suerte tienen en las comidas familiares.",
+   "ja": "「私の息子の嫁はとても料理が上手なんだ」「家族の食事で幸運だね」"
+  }
+ },
+ "temblar": {
+  "nuance": "「震える」の基本語。寒さ・恐怖・地震など幅広い文脈で使われる。temblor（地震、揺れ）と関連。",
+  "etymology": "ラテン語tremulare（震える）に由来。",
+  "synonyms": [],
+  "derived": [
+   "temblor（揺れ、地震）"
+  ],
+  "dialogue": {
+   "es": "— Está temblando de frío.\n— Dale mi chaqueta.",
+   "ja": "「彼、寒さで震えているよ」「私のジャケットあげて」"
+  }
+ },
+ "sudar": {
+  "nuance": "「汗をかく」の基本語。sudor（汗、名詞）と関連。",
+  "etymology": "ラテン語sudare（汗をかく）に由来。",
+  "synonyms": [],
+  "derived": [
+   "sudor（汗）"
+  ],
+  "dialogue": {
+   "es": "— Estoy sudando mucho con este calor.\n— Yo también, necesito agua.",
+   "ja": "「この暑さですごく汗をかいているよ」「私もだよ、水が必要だな」"
+  }
+ },
+ "sonrojarse": {
+  "nuance": "「赤面する」の基本語。rojo（赤い）から派生した再帰動詞。ruborizarse（ほぼ同義）とも言い換えられる。",
+  "etymology": "rojo（赤い）から派生した語。",
+  "synonyms": [
+   "ruborizarse（赤面する、ほぼ同義）"
+  ],
+  "derived": [
+   "rojo（赤い）"
+  ],
+  "dialogue": {
+   "es": "— Se sonrojó cuando le dije eso.\n— Qué tierno.",
+   "ja": "「それを言ったら彼、赤面したんだ」「なんて可愛いんだ」"
+  }
+ },
+ "llorar": {
+  "nuance": "「泣く」の基本語。reír（笑う）の対義語。llorar de alegría（嬉し泣きする）のようにも使う。",
+  "etymology": "ラテン語plorare（泣き叫ぶ）に由来。",
+  "synonyms": [],
+  "derived": [
+   "llanto（泣くこと）"
+  ],
+  "dialogue": {
+   "es": "— Lloré mucho durante la película.\n— A mí también me hizo llorar.",
+   "ja": "「映画の間すごく泣いちゃったよ」「私も泣かされちゃった」"
+  }
+ },
+ "reír": {
+  "nuance": "「笑う」の基本語。llorar（泣く）の対義語。reírse（再帰形、ほぼ同じ意味）もよく使われる。",
+  "etymology": "ラテン語ridere（笑う）に由来。",
+  "synonyms": [],
+  "derived": [
+   "risa（笑い）"
+  ],
+  "dialogue": {
+   "es": "— No pude dejar de reír.\n— Fue muy gracioso.",
+   "ja": "「笑いが止まらなかったよ」「すごく面白かったもんね」"
+  }
+ },
+ "suspirar": {
+  "nuance": "「ため息をつく」の基本語。suspiro（ため息、名詞）と関連。",
+  "etymology": "ラテン語suspirare（深く息をつく）に由来。",
+  "synonyms": [],
+  "derived": [
+   "suspiro（ため息）"
+  ],
+  "dialogue": {
+   "es": "— Suspiró profundamente antes de hablar.\n— Debía estar muy nervioso.",
+   "ja": "「話す前に彼は深くため息をついたんだ」「きっとすごく緊張していたんだろうね」"
+  }
+ },
+ "regatear": {
+  "nuance": "「値切る」の基本語。市場などで値段交渉をするときに使う、メキシコの市場（mercado, tianguis）でよく行われる習慣。",
+  "etymology": "起源は諸説あるが、古い商業用語とされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Se puede regatear aquí?\n— Sí, inténtalo, a veces funciona.",
+   "ja": "「ここは値切れますか？」「はい、試してみてください、時々うまくいきますよ」"
+  }
+ },
+ "precio fijo": {
+  "nuance": "「定価」の基本語。regatear（値切る）ができない、決まった価格を指す。",
+  "etymology": "precio（値段）+ fijo（固定された）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "precio（値段）",
+   "fijo（固定された）"
+  ],
+  "dialogue": {
+   "es": "— En este supermercado el precio es fijo.\n— A diferencia del mercado, aquí no se regatea.",
+   "ja": "「このスーパーは定価なんだ」「市場と違って、ここは値切れないんだね」"
+  }
+ },
+ "al contado": {
+  "nuance": "「一括払いで」の基本語。a plazos（分割払いで）の対義語。",
+  "etymology": "contar（数える）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "contar（数える）"
+  ],
+  "dialogue": {
+   "es": "— ¿Va a pagar al contado o a plazos?\n— Al contado, por favor.",
+   "ja": "「一括払いですか、分割払いですか？」「一括払いでお願いします」"
+  }
+ },
+ "a plazos": {
+  "nuance": "「分割払いで」の基本語。al contado（一括払いで）の対義語。plazo（期限）から派生。",
+  "etymology": "plazo（期限）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "plazo（期限）"
+  ],
+  "dialogue": {
+   "es": "— Puedes pagar el celular a plazos.\n— ¿Cuántos meses son?",
+   "ja": "「その携帯は分割払いで買えますよ」「何ヶ月払いですか？」"
+  }
+ },
+ "publicar": {
+  "nuance": "「投稿する」の基本語。SNSで写真や文章を公開するときによく使われる。「出版する」という意味にもなる。",
+  "etymology": "ラテン語publicare（公にする）に由来。",
+  "synonyms": [],
+  "derived": [
+   "público（公の）"
+  ],
+  "dialogue": {
+   "es": "— Voy a publicar esta foto.\n— Se ve genial, publícala.",
+   "ja": "「この写真投稿するよ」「すごくいいね、投稿しちゃって」"
+  }
+ },
+ "comentar": {
+  "nuance": "「コメントする」の基本語。SNS投稿へのコメントや、一般的な「論評する」という意味でも使われる。",
+  "etymology": "ラテン語commentari（説明する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "comentario（コメント）"
+  ],
+  "dialogue": {
+   "es": "— Alguien comentó en tu publicación.\n— Voy a ver qué dijo.",
+   "ja": "「君の投稿に誰かがコメントしたよ」「何て言ったか見てみるね」"
+  }
+ },
+ "bloquear": {
+  "nuance": "「ブロックする」の基本語。SNSでの遮断だけでなく、道路の封鎖などにも使われる。",
+  "etymology": "bloque（ブロック、塊）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "bloque（ブロック）"
+  ],
+  "dialogue": {
+   "es": "— Tuve que bloquear a esa cuenta.\n— ¿Qué pasó?",
+   "ja": "「そのアカウントをブロックしないといけなかったんだ」「何があったの？」"
+  }
+ },
+ "esperar": {
+  "nuance": "「待つ」「望む」の両方の意味を持つ基本動詞。esperar a alguien（誰かを待つ）、esperar que+接続法（〜であることを望む）のように使う。",
+  "etymology": "ラテン語sperare（望む）に由来。",
+  "synonyms": [],
+  "derived": [
+   "espera（待つこと）",
+   "esperanza（希望）"
+  ],
+  "dialogue": {
+   "es": "— Espérame, ya casi llego.\n— Está bien, aquí te espero.",
+   "ja": "「待ってて、もうすぐ着くから」「わかった、ここで待ってるね」"
+  }
+ },
+ "decir": {
+  "nuance": "「言う」の基本動詞。不規則活用（digo, dices, dice...）で、命令形もdi（不規則）になる。querer decir（〜という意味だ）、es decir（つまり）のような重要な熟語の元にもなる。",
+  "etymology": "ラテン語dicere（言う）に由来。",
+  "synonyms": [],
+  "derived": [
+   "dicho（諺、格言）",
+   "decidir（決める、同語源）"
+  ],
+  "dialogue": {
+   "es": "— ¿Qué quieres decir con eso?\n— Solo digo que deberíamos tener más cuidado.",
+   "ja": "「それどういう意味？」「もっと気をつけるべきだって言っているだけだよ」"
+  }
+ },
+ "siguiente": {
+  "nuance": "「次の」の基本語。el siguiente（次の人・もの）、la semana siguiente（翌週）のように、様々な名詞の前後で使える。",
+  "etymology": "seguir（続く）の現在分詞から形容詞化した語。",
+  "synonyms": [],
+  "derived": [
+   "seguir（続く）"
+  ],
+  "dialogue": {
+   "es": "— ¿Quién es el siguiente?\n— Yo, gracias.",
+   "ja": "「次の方はどなたですか？」「私です、ありがとうございます」"
+  }
+ },
+ "episodio": {
+  "nuance": "「エピソード」の基本語。テレビドラマの1話や、人生の一場面を指すときにも使う。",
+  "etymology": "ギリシャ語epeisodion（挿入されたもの）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Ya viste el último episodio?\n— No, no me lo cuentes.",
+   "ja": "「もう最新話見た？」「いや、ネタバレしないでね」"
   }
  }
 };

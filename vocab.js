@@ -10968,12 +10968,6 @@ const VOCAB_DATA = [
   "cat": "Tecnología"
  },
  {
-  "es": "El siguiente episodio",
-  "en": "Next episode",
-  "ja": "次のエピソード",
-  "cat": "Tecnología"
- },
- {
   "es": "Los subtítulos",
   "en": "Subtitles",
   "ja": "字幕",
@@ -10983,12 +10977,6 @@ const VOCAB_DATA = [
   "es": "El doblaje",
   "en": "Dubbing",
   "ja": "吹き替え",
-  "cat": "Tecnología"
- },
- {
-  "es": "Continuar viendo",
-  "en": "Continue watching",
-  "ja": "視聴を続ける",
   "cat": "Tecnología"
  },
  {
@@ -11184,12 +11172,6 @@ const VOCAB_DATA = [
   "cat": "Animales"
  },
  {
-  "es": "Espera",
-  "en": "Wait",
-  "ja": "待って",
-  "cat": "Coloquial"
- },
- {
   "es": "Ya voy",
   "en": "I'm coming",
   "ja": "今行くよ",
@@ -11266,5 +11248,239 @@ const VOCAB_DATA = [
   "en": "Return / change (money) / turn",
   "ja": "帰り・おつり・一周",
   "cat": "General"
+ },
+ {
+  "es": "El trapo",
+  "en": "Rag / cloth",
+  "ja": "雑巾",
+  "cat": "Casa"
+ },
+ {
+  "es": "Fregar",
+  "en": "To scrub",
+  "ja": "ゴシゴシ洗う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Trapear",
+  "en": "To mop",
+  "ja": "モップがけする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tender la ropa",
+  "en": "To hang laundry to dry",
+  "ja": "洗濯物を干す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Doblar la ropa",
+  "en": "To fold laundry",
+  "ja": "洗濯物をたたむ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La goma",
+  "en": "Eraser",
+  "ja": "消しゴム",
+  "cat": "Educación"
+ },
+ {
+  "es": "El sacapuntas",
+  "en": "Pencil sharpener",
+  "ja": "鉛筆削り",
+  "cat": "Educación"
+ },
+ {
+  "es": "La tijera",
+  "en": "Scissors",
+  "ja": "ハサミ",
+  "cat": "Educación"
+ },
+ {
+  "es": "Oler",
+  "en": "To smell",
+  "ja": "匂いがする・匂いを嗅ぐ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tocar",
+  "en": "To touch / to play (instrument)",
+  "ja": "触る・（楽器を）弾く",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Saborear",
+  "en": "To savor",
+  "ja": "味わう",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Percibir",
+  "en": "To perceive",
+  "ja": "知覚する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La galaxia",
+  "en": "Galaxy",
+  "ja": "銀河",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "El cometa",
+  "en": "Comet",
+  "ja": "彗星",
+  "cat": "Ciencia"
+ },
+ {
+  "es": "El turno",
+  "en": "Shift",
+  "ja": "シフト",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La vacante",
+  "en": "Job opening",
+  "ja": "求人",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El bisabuelo",
+  "en": "Great-grandfather",
+  "ja": "曽祖父",
+  "cat": "Familia"
+ },
+ {
+  "es": "El padrastro",
+  "en": "Stepfather",
+  "ja": "継父",
+  "cat": "Familia"
+ },
+ {
+  "es": "La madrastra",
+  "en": "Stepmother",
+  "ja": "継母",
+  "cat": "Familia"
+ },
+ {
+  "es": "El hermanastro",
+  "en": "Stepbrother",
+  "ja": "異父・異母兄弟",
+  "cat": "Familia"
+ },
+ {
+  "es": "El yerno",
+  "en": "Son-in-law",
+  "ja": "娘婿",
+  "cat": "Familia"
+ },
+ {
+  "es": "La nuera",
+  "en": "Daughter-in-law",
+  "ja": "息子の嫁",
+  "cat": "Familia"
+ },
+ {
+  "es": "Temblar",
+  "en": "To tremble",
+  "ja": "震える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sudar",
+  "en": "To sweat",
+  "ja": "汗をかく",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sonrojarse",
+  "en": "To blush",
+  "ja": "赤面する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Llorar",
+  "en": "To cry",
+  "ja": "泣く",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Reír",
+  "en": "To laugh",
+  "ja": "笑う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Suspirar",
+  "en": "To sigh",
+  "ja": "ため息をつく",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Regatear",
+  "en": "To haggle",
+  "ja": "値切る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El precio fijo",
+  "en": "Fixed price",
+  "ja": "定価",
+  "cat": "Compras"
+ },
+ {
+  "es": "Al contado",
+  "en": "In cash / lump sum",
+  "ja": "一括払いで",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "A plazos",
+  "en": "In installments",
+  "ja": "分割払いで",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "Publicar",
+  "en": "To post",
+  "ja": "投稿する",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Comentar",
+  "en": "To comment",
+  "ja": "コメントする",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Bloquear",
+  "en": "To block",
+  "ja": "ブロックする",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "Esperar",
+  "en": "To wait / to hope",
+  "ja": "待つ・望む",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Decir",
+  "en": "To say / to tell",
+  "ja": "言う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Siguiente",
+  "en": "Next",
+  "ja": "次の",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "El episodio",
+  "en": "Episode",
+  "ja": "エピソード",
+  "cat": "Tecnología"
  }
 ];
