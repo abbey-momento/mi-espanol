@@ -389,112 +389,126 @@ const EXAMPLES = [
   "answer": "para",
   "after": " ti.",
   "ja": "このプレゼントは君のためのものだ。",
-  "label": "por / para",
-  "note": "para+人は「〜のために」という受益者・目的を表す。"
+  "label": "前置詞",
+  "note": "para+人は「〜のために」という受益者・目的を表す。",
+  "topic": "preposicion"
  },
  {
   "before": "Caminamos ",
   "answer": "por",
   "after": " el parque de camino a casa.",
   "ja": "私たちは家に帰る途中、公園を通って歩いた。",
-  "label": "por / para",
-  "note": "por は「〜を通って」という経路を表す。「〜に向かって」ならparaになるところだが、ここでは家までの経路上を通っている。"
+  "label": "前置詞",
+  "note": "por は「〜を通って」という経路を表す。「〜に向かって」ならparaになるところだが、ここでは家までの経路上を通っている。",
+  "topic": "preposicion"
  },
  {
   "before": "Trabajo ",
   "answer": "para",
   "after": " ganar dinero.",
   "ja": "お金を稼ぐために働く。",
-  "label": "por / para",
-  "note": "para+動詞の原形は「〜するために」という目的を表す。"
+  "label": "前置詞",
+  "note": "para+動詞の原形は「〜するために」という目的を表す。",
+  "topic": "preposicion"
  },
  {
   "before": "Gracias ",
   "answer": "por",
   "after": " tu ayuda.",
   "ja": "助けてくれてありがとう。",
-  "label": "por / para",
-  "note": "por は理由・原因（〜のおかげで、〜に対して）を表す。"
+  "label": "前置詞",
+  "note": "por は理由・原因（〜のおかげで、〜に対して）を表す。",
+  "topic": "preposicion"
  },
  {
   "before": "Necesito el informe ",
   "answer": "para",
   "after": " el lunes.",
   "ja": "月曜日までにその報告書が必要だ。",
-  "label": "por / para",
-  "note": "para+期限は「〜までに」という締め切りを表す。"
+  "label": "前置詞",
+  "note": "para+期限は「〜までに」という締め切りを表す。",
+  "topic": "preposicion"
  },
  {
   "before": "Pasamos ",
   "answer": "por",
   "after": " tu casa camino al trabajo.",
   "ja": "仕事に行く途中、君の家のそばを通った。",
-  "label": "por / para",
-  "note": "por は「〜のそばを」という通過点を表す。目的地ではなく途中で通過した場所を表している。"
+  "label": "前置詞",
+  "note": "por は「〜のそばを」という通過点を表す。目的地ではなく途中で通過した場所を表している。",
+  "topic": "preposicion"
  },
  {
   "before": "Voy ",
   "answer": "a",
   "after": " la escuela todos los días.",
   "ja": "毎日学校に行く。",
-  "label": "en / a",
-  "note": "行き先を表すときは a を使う（ir a + 場所）。"
+  "label": "前置詞",
+  "note": "行き先を表すときは a を使う（ir a + 場所）。",
+  "topic": "preposicion"
  },
  {
   "before": "Vivo ",
   "answer": "en",
   "after": " México.",
   "ja": "メキシコに住んでいる。",
-  "label": "en / a",
-  "note": "「〜の中に」という所在を表すときは en を使う。"
+  "label": "前置詞",
+  "note": "「〜の中に」という所在を表すときは en を使う。",
+  "topic": "preposicion"
  },
  {
   "before": "Llegamos ",
   "answer": "a",
   "after": " la fiesta a las nueve.",
   "ja": "9時にパーティーに着いた。",
-  "label": "en / a",
-  "note": "到着点を表すときは a を使う（llegar a）。"
+  "label": "前置詞",
+  "note": "到着点を表すときは a を使う（llegar a）。",
+  "topic": "preposicion"
  },
  {
   "before": "El libro está ",
   "answer": "en",
   "after": " la mesa.",
   "ja": "本はテーブルの上にある。",
-  "label": "en / a",
-  "note": "物の所在を表すときは en を使う。"
+  "label": "前置詞",
+  "note": "物の所在を表すときは en を使う。",
+  "topic": "preposicion"
  },
  {
   "before": "Entramos ",
   "answer": "a",
   "after": " la casa por la puerta principal.",
   "ja": "正面玄関から家に入った。",
-  "label": "en / a",
-  "note": "「〜の中へ」という動きの方向を表すときは a を使うことが多い（entrar a）。"
+  "label": "前置詞",
+  "note": "「〜の中へ」という動きの方向を表すときは a を使うことが多い（entrar a）。",
+  "topic": "preposicion"
  },
  {
   "before": "Trabajo ",
   "answer": "en",
   "after": " una empresa de tecnología.",
   "ja": "テクノロジー企業で働いている。",
-  "label": "en / a",
-  "note": "活動の場所を表すときは en を使う（trabajar en）。"
+  "label": "前置詞",
+  "note": "活動の場所を表すときは en を使う（trabajar en）。",
+  "topic": "preposicion"
  },
  {
   "before": "Subimos ",
   "answer": "al",
   "after": " tercer piso.",
   "ja": "3階に上がった。",
-  "label": "en / a",
-  "note": "a+elはalに縮約される。到着点を表すaを使う。"
+  "label": "前置詞",
+  "note": "a+elはalに縮約される。到着点を表すaを使う。",
+  "topic": "preposicion"
  },
  {
   "before": "Nos vemos ",
   "answer": "en",
   "after": " la entrada del cine.",
   "ja": "映画館の入り口で会おう。",
-  "label": "en / a",
-  "note": "待ち合わせ場所を表すときは en を使う。"
+  "label": "前置詞",
+  "note": "待ち合わせ場所を表すときは en を使う。",
+  "topic": "preposicion"
  },
  {
   "before": "El perro juega ",
@@ -818,7 +832,7 @@ const EXAMPLES = [
   "answer": "en",
   "after": " ti.",
   "ja": "私は君を信頼している。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "confiar en（〜を信頼する）は決まった組み合わせ。"
  },
@@ -827,7 +841,7 @@ const EXAMPLES = [
   "answer": "de",
   "after": " la historia de México.",
   "ja": "その本はメキシコの歴史についてだ。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "tratar de（〜について扱う）は決まった組み合わせ。"
  },
@@ -1106,7 +1120,7 @@ const EXAMPLES = [
   "answer": "en",
   "after": " el examen.",
   "ja": "試験のことを考えている。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "pensar en（〜について考える）は決まった組み合わせ。"
  },
@@ -1115,7 +1129,7 @@ const EXAMPLES = [
   "answer": "de",
   "after": " tu éxito.",
   "ja": "君の成功を嬉しく思う。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "alegrarse de（〜を喜ぶ）は決まった組み合わせ。"
  },
@@ -1133,7 +1147,7 @@ const EXAMPLES = [
   "answer": "de",
   "after": " todos nosotros.",
   "ja": "このプレゼントは私たち全員からです。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "de parte de（〜からの、〜を代表して）は決まった言い回し。"
  },
@@ -1142,7 +1156,7 @@ const EXAMPLES = [
   "answer": "del",
   "after": " clima.",
   "ja": "天気による。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "depender de（〜による）は決まった組み合わせ。de+elはdelに縮約される。"
  },
@@ -1160,7 +1174,7 @@ const EXAMPLES = [
   "answer": "de",
   "after": " este ruido.",
   "ja": "この騒音にはうんざりだ。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "harto de（〜にうんざりして）は決まった言い回し。"
  },
@@ -1169,7 +1183,7 @@ const EXAMPLES = [
   "answer": "de",
   "after": " compras esta tarde.",
   "ja": "今日の午後、買い物に行こう。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "ir de compras（買い物に行く）は決まった言い回し。"
  },
@@ -1529,7 +1543,7 @@ const EXAMPLES = [
   "answer": "en",
   "after": " que vengas conmigo.",
   "ja": "君に一緒に来てほしいと言い張っている。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "insistir en（〜を主張する）は決まった組み合わせ。"
  },
@@ -1538,7 +1552,7 @@ const EXAMPLES = [
   "answer": "de",
   "after": " la noticia por la radio.",
   "ja": "彼はラジオでその知らせを知った。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "enterarse de（〜を知る）は決まった組み合わせ。"
  },
@@ -1547,7 +1561,7 @@ const EXAMPLES = [
   "answer": "de",
   "after": " ti.",
   "ja": "私たちは君を誇りに思っている。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "orgulloso de（〜を誇りに思う）は決まった組み合わせ。"
  },
@@ -1565,7 +1579,7 @@ const EXAMPLES = [
   "answer": "en",
   "after": " organizar archivos.",
   "ja": "この仕事はファイルを整理することから成り立っている。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "consistir en（〜から成る）は決まった組み合わせ。"
  },
@@ -1574,7 +1588,7 @@ const EXAMPLES = [
   "answer": "de",
   "after": " esa película.",
   "ja": "私たちはその映画をとても笑った。",
-  "label": "前置詞（en/de）",
+  "label": "前置詞",
   "topic": "preposicion",
   "note": "reírse de（〜を笑う）は決まった組み合わせ。"
  },
@@ -2374,13 +2388,12 @@ const EXAMPLES = [
   "note": "se+動詞は主語（libros、複数）に一致して複数形se vendenになる。"
  },
  {
-  "before": "El puente ",
-  "answer": "fue construido",
+  "before": "La biblioteca ",
+  "answer": "fue inaugurada",
   "after": " hace veinte años.",
-  "ja": "その橋は20年前に建設された。",
-  "label": "受け身",
+  "ja": "その図書館は20年前に開館した。",
   "topic": "pasiva",
-  "note": "ser+過去分詞（construido、男性単数）の受け身。"
+  "note": "受け身、女性単数主語bibliotecaに一致してinaugurada。"
  },
  {
   "before": "Las cartas ",
@@ -3051,11 +3064,11 @@ const EXAMPLES = [
  {
   "before": "Vamos a ver ",
   "answer": "una",
-  "after": " película esta noche.",
-  "ja": "今夜映画を見に行こう。",
+  "after": " película esta noche, todavía no sé cuál.",
+  "ja": "今夜映画を見よう、まだどれにするか決めていないけど。",
   "label": "冠詞",
   "topic": "articulos",
-  "note": "不特定の一本の映画なのでuna。"
+  "note": "「まだどれか決めていない」と明示されているので不特定の一本の映画を表すuna。"
  },
  {
   "before": "",
@@ -4066,13 +4079,13 @@ const EXAMPLES = [
   "note": "不特定の一頭のゾウなのでun。"
  },
  {
-  "before": "Prefiero ",
+  "before": "En general, prefiero ",
   "answer": "el",
   "after": " café sin azúcar.",
-  "ja": "コーヒーは砂糖なしの方が好きだ。",
+  "ja": "一般的に、私はコーヒーは砂糖なしの方が好きだ。",
   "label": "冠詞",
   "topic": "articulos",
-  "note": "「コーヒーというもの全般」を表すときは定冠詞を使う。"
+  "note": "「en general」がついているので「コーヒーというもの全般」を表す定冠詞el。"
  },
  {
   "before": "",
@@ -5255,12 +5268,12 @@ const EXAMPLES = [
  },
  {
   "before": "Si hace buen tiempo el sábado, ",
-  "answer": "vamos",
+  "answer": "iremos",
   "after": " a la playa.",
   "ja": "土曜日にいい天気なら、ビーチに行こう。",
   "label": "si構文",
   "topic": "condicional_si",
-  "note": "現実的な条件：結果節に現在形（近接未来的に）を使うのも自然。"
+  "note": "現実的な条件：結果節に未来形（vamosも口語的に可能だが、他の未来形の問題との一貫性のためiremosを採用）。"
  },
  {
   "before": "Si no llueve mañana, ",
