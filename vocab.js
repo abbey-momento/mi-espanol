@@ -11482,5 +11482,407 @@ const VOCAB_DATA = [
   "en": "Episode",
   "ja": "エピソード",
   "cat": "Tecnología"
+ },
+ {
+  "es": "Guardar",
+  "en": "To put away / to save",
+  "ja": "しまう・保存する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Colgar",
+  "en": "To hang",
+  "ja": "掛ける",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Desconectar",
+  "en": "To disconnect / unplug",
+  "ja": "電源を抜く・切断する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Conectar",
+  "en": "To connect",
+  "ja": "接続する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El pronóstico",
+  "en": "Forecast",
+  "ja": "予報",
+  "cat": "Clima"
+ },
+ {
+  "es": "La ola de calor",
+  "en": "Heat wave",
+  "ja": "熱波",
+  "cat": "Clima"
+ },
+ {
+  "es": "El frente frío",
+  "en": "Cold front",
+  "ja": "寒冷前線",
+  "cat": "Clima"
+ },
+ {
+  "es": "La humedad",
+  "en": "Humidity",
+  "ja": "湿度",
+  "cat": "Clima"
+ },
+ {
+  "es": "La herida",
+  "en": "Wound",
+  "ja": "傷",
+  "cat": "Salud"
+ },
+ {
+  "es": "El moretón",
+  "en": "Bruise",
+  "ja": "あざ",
+  "cat": "Salud"
+ },
+ {
+  "es": "La quemadura",
+  "en": "Burn",
+  "ja": "火傷",
+  "cat": "Salud"
+ },
+ {
+  "es": "La torcedura",
+  "en": "Sprain",
+  "ja": "捻挫",
+  "cat": "Salud"
+ },
+ {
+  "es": "Las muletas",
+  "en": "Crutches",
+  "ja": "松葉杖",
+  "cat": "Salud"
+ },
+ {
+  "es": "El andén",
+  "en": "Platform (train)",
+  "ja": "（駅の）ホーム",
+  "cat": "Transporte"
+ },
+ {
+  "es": "La parada",
+  "en": "Bus stop",
+  "ja": "バス停",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El boleto",
+  "en": "Ticket",
+  "ja": "切符",
+  "cat": "Transporte"
+ },
+ {
+  "es": "El pasaje",
+  "en": "Fare / ticket",
+  "ja": "運賃・乗車券",
+  "cat": "Transporte"
+ },
+ {
+  "es": "Descender",
+  "en": "To get off / descend",
+  "ja": "降りる・下る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El menú del día",
+  "en": "Today's set menu",
+  "ja": "本日の定食",
+  "cat": "Comida"
+ },
+ {
+  "es": "Para llevar",
+  "en": "To go (takeout)",
+  "ja": "テイクアウトで",
+  "cat": "Compras"
+ },
+ {
+  "es": "Para comer aquí",
+  "en": "For here (dine-in)",
+  "ja": "ここで食べる（イートイン）",
+  "cat": "Compras"
+ },
+ {
+  "es": "Compartir la cuenta",
+  "en": "To split the bill",
+  "ja": "割り勘にする",
+  "cat": "Compras"
+ },
+ {
+  "es": "La indiferencia",
+  "en": "Indifference",
+  "ja": "無関心",
+  "cat": "Emociones"
+ },
+ {
+  "es": "El entusiasmo",
+  "en": "Enthusiasm",
+  "ja": "熱意",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La frustración",
+  "en": "Frustration",
+  "ja": "苛立ち・欲求不満",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La incomodidad",
+  "en": "Discomfort",
+  "ja": "居心地の悪さ",
+  "cat": "Emociones"
+ },
+ {
+  "es": "La calificación",
+  "en": "Grade",
+  "ja": "成績",
+  "cat": "Educación"
+ },
+ {
+  "es": "Aprobar",
+  "en": "To pass (an exam)",
+  "ja": "合格する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Reprobar",
+  "en": "To fail (an exam)",
+  "ja": "不合格になる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Graduarse",
+  "en": "To graduate",
+  "ja": "卒業する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La junta",
+  "en": "Meeting (Mexican term)",
+  "ja": "会議（メキシコの言い方）",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Renunciar",
+  "en": "To resign",
+  "ja": "辞職する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Contratar",
+  "en": "To hire",
+  "ja": "雇う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Despedir",
+  "en": "To fire / dismiss",
+  "ja": "解雇する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sacudir",
+  "en": "To dust / shake off",
+  "ja": "ほこりを払う",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Barrer",
+  "en": "To sweep",
+  "ja": "掃く",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Tender la cama",
+  "en": "To make the bed",
+  "ja": "ベッドを整える",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Sacar la basura",
+  "en": "To take out the trash",
+  "ja": "ゴミを出す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La tostadora",
+  "en": "Toaster",
+  "ja": "トースター",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El exprimidor",
+  "en": "Juicer / squeezer",
+  "ja": "絞り器",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El molde",
+  "en": "Baking mold / pan",
+  "ja": "型（お菓子・料理用）",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El sartén",
+  "en": "Frying pan",
+  "ja": "フライパン",
+  "cat": "Cocina"
+ },
+ {
+  "es": "El traje de baño",
+  "en": "Swimsuit",
+  "ja": "水着",
+  "cat": "Ropa"
+ },
+ {
+  "es": "Las chanclas",
+  "en": "Flip-flops / sandals",
+  "ja": "ビーチサンダル",
+  "cat": "Ropa"
+ },
+ {
+  "es": "La ropa interior",
+  "en": "Underwear",
+  "ja": "下着",
+  "cat": "Ropa"
+ },
+ {
+  "es": "Liso",
+  "en": "Smooth / straight (hair)",
+  "ja": "つるつるの・（髪が）ストレートの",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Pegajoso",
+  "en": "Sticky",
+  "ja": "べたべたする",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Resbaloso",
+  "en": "Slippery",
+  "ja": "滑りやすい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Terco",
+  "en": "Stubborn",
+  "ja": "頑固な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Impulsivo",
+  "en": "Impulsive",
+  "ja": "衝動的な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Reservado",
+  "en": "Reserved",
+  "ja": "控えめな",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Extrovertido",
+  "en": "Extroverted",
+  "ja": "外向的な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Introvertido",
+  "en": "Introverted",
+  "ja": "内向的な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Nacer",
+  "en": "To be born",
+  "ja": "生まれる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Crecer",
+  "en": "To grow up",
+  "ja": "成長する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Envejecer",
+  "en": "To age / grow old",
+  "ja": "年を取る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Fallecer",
+  "en": "To pass away",
+  "ja": "亡くなる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El nacimiento",
+  "en": "Birth",
+  "ja": "誕生",
+  "cat": "General"
+ },
+ {
+  "es": "El archivo adjunto",
+  "en": "Attached file",
+  "ja": "添付ファイル",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Saludos",
+  "en": "Regards",
+  "ja": "よろしくお願いします（結びの挨拶）",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Atentamente",
+  "en": "Sincerely",
+  "ja": "敬具",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Estimado",
+  "en": "Dear (formal letter)",
+  "ja": "拝啓・様（フォーマルな手紙の宛名）",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Apenas",
+  "en": "Barely / just",
+  "ja": "かろうじて・〜したばかり",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Casi",
+  "en": "Almost",
+  "ja": "ほとんど",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Bastante",
+  "en": "Quite / enough",
+  "ja": "かなり・十分に",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Demasiado",
+  "en": "Too much",
+  "ja": "多すぎる",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Ligeramente",
+  "en": "Slightly",
+  "ja": "わずかに",
+  "cat": "Frecuencia"
  }
 ];

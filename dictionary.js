@@ -22745,5 +22745,786 @@ const DICTIONARY_DATA = {
    "es": "— ¿Ya viste el último episodio?\n— No, no me lo cuentes.",
    "ja": "「もう最新話見た？」「いや、ネタバレしないでね」"
   }
+ },
+ "guardar": {
+  "nuance": "「しまう」「保存する」の両方の意味を持つ基本語。物理的な片付けと、データの保存の両方に使える。",
+  "etymology": "ゲルマン語系の語wardonに由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Guardaste el documento?\n— Sí, ya lo guardé.",
+   "ja": "「その書類保存した？」「うん、もう保存したよ」"
+  }
+ },
+ "colgar": {
+  "nuance": "「掛ける」の基本語。colgar el teléfono（電話を切る）はよく使う組み合わせ。o→ueの語根母音変化動詞。",
+  "etymology": "ラテン語collocare（配置する）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Cuelga el abrigo en el perchero.\n— Ya lo hice.",
+   "ja": "「コートをハンガーにかけて」「もうやったよ」"
+  }
+ },
+ "desconectar": {
+  "nuance": "「電源を抜く、切断する」の基本語。des（否定）+ conectar（接続する）の組み合わせ。",
+  "etymology": "des（否定）+ conectar（接続する）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "conectar（接続する）"
+  ],
+  "dialogue": {
+   "es": "— Desconecta la plancha antes de salir.\n— Ya lo hice, no te preocupes.",
+   "ja": "「出る前にアイロンのコンセント抜いて」「もうやったよ、心配しないで」"
+  }
+ },
+ "conectar": {
+  "nuance": "「接続する」の基本語。物理的な接続からインターネット接続まで幅広く使える。",
+  "etymology": "ラテン語connectere（結びつける）に由来。",
+  "synonyms": [],
+  "derived": [
+   "conexión（接続）"
+  ],
+  "dialogue": {
+   "es": "— No puedo conectar mi teléfono al wifi.\n— Prueba reiniciar el router.",
+   "ja": "「携帯をWi-Fiに接続できないんだ」「ルーターを再起動してみて」"
+  }
+ },
+ "pronóstico": {
+  "nuance": "「予報」の基本語。pronóstico del tiempo（天気予報）はよく使う組み合わせ。",
+  "etymology": "ギリシャ語prognostikos（前もって知ること）に由来。",
+  "synonyms": [],
+  "derived": [
+   "pronosticar（予報する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Viste el pronóstico para mañana?\n— Sí, dicen que va a llover.",
+   "ja": "「明日の予報見た？」「うん、雨が降るって言ってたよ」"
+  }
+ },
+ "ola de calor": {
+  "nuance": "「熱波」の基本語。ola（波）+ de calor（暑さの）の組み合わせ、比喩的な「波」の使い方。",
+  "etymology": "ola（波）+ calor（暑さ）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "ola（波）",
+   "calor（暑さ）"
+  ],
+  "dialogue": {
+   "es": "— Estamos en plena ola de calor.\n— Hay que tomar mucha agua.",
+   "ja": "「今まさに熱波の真っ只中だね」「たくさん水を飲まないとね」"
+  }
+ },
+ "frente frío": {
+  "nuance": "「寒冷前線」の基本語。天気予報でよく使われる気象用語。",
+  "etymology": "frente（前線）+ frío（寒い）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "frío（寒い）"
+  ],
+  "dialogue": {
+   "es": "— Viene un frente frío este fin de semana.\n— Voy a sacar mi abrigo.",
+   "ja": "「今週末寒冷前線が来るんだって」「コートを出しておくね」"
+  }
+ },
+ "humedad": {
+  "nuance": "「湿度」の基本語。alta humedad（高い湿度）のように使う。",
+  "etymology": "húmedo（湿った）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "húmedo（湿った）"
+  ],
+  "dialogue": {
+   "es": "— La humedad hoy está muy alta.\n— Se siente pesado el aire.",
+   "ja": "「今日は湿度がとても高いね」「空気が重く感じるよね」"
+  }
+ },
+ "herida": {
+  "nuance": "「傷」の基本語。herir（傷つける）から派生した名詞。",
+  "etymology": "herir（傷つける）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "herir（傷つける）"
+  ],
+  "dialogue": {
+   "es": "— Tiene una herida en el brazo.\n— Deberíamos desinfectarla.",
+   "ja": "「腕に傷があるね」「消毒した方がいいね」"
+  }
+ },
+ "moretón": {
+  "nuance": "「あざ」の基本語。morado（紫色の）から派生、口語でよく使われる語。",
+  "etymology": "morado（紫色の）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "morado（紫色の）"
+  ],
+  "dialogue": {
+   "es": "— Me hice un moretón al caerme.\n— ¿Te duele mucho?",
+   "ja": "「転んであざができちゃった」「すごく痛い？」"
+  }
+ },
+ "quemadura": {
+  "nuance": "「火傷」の基本語。quemar（燃やす、焼く）から派生した名詞。",
+  "etymology": "quemar（焼く）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "quemar（焼く）"
+  ],
+  "dialogue": {
+   "es": "— Tengo una quemadura en la mano.\n— Ponte un poco de agua fría.",
+   "ja": "「手に火傷があるんだ」「少し冷たい水をかけて」"
+  }
+ },
+ "torcedura": {
+  "nuance": "「捻挫」の基本語。torcer（ねじる）から派生した名詞。",
+  "etymology": "torcer（ねじる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "torcer（ねじる）"
+  ],
+  "dialogue": {
+   "es": "— Tiene una torcedura de tobillo.\n— Debería descansar el pie.",
+   "ja": "「足首を捻挫しちゃったんだ」「足を休めた方がいいね」"
+  }
+ },
+ "muletas": {
+  "nuance": "「松葉杖」の基本語。複数形でよく使われる（両脇で支えるため）。",
+  "etymology": "ラテン語muleta（雌ラバ→支える棒に転じた）に由来するとされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Va a necesitar muletas por unas semanas.\n— Espero que se recupere pronto.",
+   "ja": "「数週間松葉杖が必要になりそうだね」「早く回復するといいね」"
+  }
+ },
+ "andén": {
+  "nuance": "「（駅の）ホーム」の基本語。地下鉄や電車の駅で使われる。",
+  "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El tren llega al andén dos.\n— Vamos para allá.",
+   "ja": "「電車は2番ホームに来るよ」「そっちに行こう」"
+  }
+ },
+ "parada": {
+  "nuance": "「バス停」の基本語。parar（止まる）から派生した名詞。",
+  "etymology": "parar（止まる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "parar（止まる）"
+  ],
+  "dialogue": {
+   "es": "— La parada está a dos cuadras.\n— Vamos caminando.",
+   "ja": "「バス停は2ブロック先だよ」「歩いて行こう」"
+  }
+ },
+ "boleto": {
+  "nuance": "「切符」の基本語。ラテンアメリカで一般的（スペインではbilleteが一般的、地域差）。",
+  "etymology": "フランス語billet（切符）に由来。",
+  "synonyms": [
+   "billete（切符、スペインで一般的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Ya compraste el boleto?\n— Sí, para las tres de la tarde.",
+   "ja": "「もう切符買った？」「うん、午後3時のをね」"
+  }
+ },
+ "pasaje": {
+  "nuance": "「運賃、乗車券」の基本語。boleto（切符）とほぼ同義だが、より「乗車料金」というニュアンスが強い。",
+  "etymology": "pasar（通る）から派生した語。",
+  "synonyms": [
+   "boleto（切符）"
+  ],
+  "derived": [
+   "pasar（通る）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cuánto cuesta el pasaje?\n— Diez pesos.",
+   "ja": "「運賃はいくらですか？」「10ペソです」"
+  }
+ },
+ "descender": {
+  "nuance": "「降りる、下る」の基本語。bajar（降りる、より一般的）よりもフォーマルな響き。",
+  "etymology": "ラテン語descendere（下に降りる）に由来。",
+  "synonyms": [
+   "bajar（降りる、より一般的）"
+  ],
+  "derived": [
+   "descenso（下降）"
+  ],
+  "dialogue": {
+   "es": "— Vamos a descender en la próxima estación.\n— Prepara tus cosas.",
+   "ja": "「次の駅で降りるよ」「荷物準備して」"
+  }
+ },
+ "menú del día": {
+  "nuance": "「本日の定食」の基本語。レストランで日替わりで提供される定食メニューを指す。",
+  "etymology": "menú（メニュー）+ del día（その日の）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "día（日）"
+  ],
+  "dialogue": {
+   "es": "— ¿Qué incluye el menú del día?\n— Sopa, plato fuerte y postre.",
+   "ja": "「本日の定食には何が含まれますか？」「スープ、メイン、デザートです」"
+  }
+ },
+ "para llevar": {
+  "nuance": "「テイクアウトで」の基本表現。llevar（持っていく）から派生した表現。",
+  "etymology": "para（〜のために）+ llevar（持っていく）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "llevar（持っていく）"
+  ],
+  "dialogue": {
+   "es": "— ¿Es para aquí o para llevar?\n— Para llevar, por favor.",
+   "ja": "「店内でお召し上がりですか、それともお持ち帰りですか？」「お持ち帰りでお願いします」"
+  }
+ },
+ "para comer aquí": {
+  "nuance": "「ここで食べる（イートイン）」の基本表現。para llevar（テイクアウトで）の対義語。",
+  "etymology": "para（〜のために）+ comer（食べる）+ aquí（ここで）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "comer（食べる）"
+  ],
+  "dialogue": {
+   "es": "— Es para comer aquí, gracias.\n— Perfecto, en un momento le traigo su orden.",
+   "ja": "「ここで食べます、ありがとうございます」「かしこまりました、すぐにご注文をお持ちします」"
+  }
+ },
+ "compartir la cuenta": {
+  "nuance": "「割り勘にする」の基本表現。compartir（分け合う）+ la cuenta（お会計）の組み合わせ。",
+  "etymology": "compartir（分け合う）+ cuenta（勘定）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "compartir（分け合う）",
+   "cuenta（勘定）"
+  ],
+  "dialogue": {
+   "es": "— ¿Compartimos la cuenta?\n— Claro, mitad y mitad.",
+   "ja": "「お会計割り勘にする？」「もちろん、半分ずつね」"
+  }
+ },
+ "indiferencia": {
+  "nuance": "「無関心」の基本語。con indiferencia（無関心に）はよく使う表現。",
+  "etymology": "in（否定）+ diferencia（違い→区別しない）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "diferencia（違い）"
+  ],
+  "dialogue": {
+   "es": "— Reaccionó con total indiferencia.\n— Qué frustrante debió ser eso.",
+   "ja": "「彼は完全に無関心な反応だったんだ」「それはさぞかしイライラしただろうね」"
+  }
+ },
+ "entusiasmo": {
+  "nuance": "「熱意」の基本語。con entusiasmo（熱意を持って）はよく使う表現。",
+  "etymology": "ギリシャ語enthousiasmos（神に取り憑かれた状態）に由来。",
+  "synonyms": [],
+  "derived": [
+   "entusiasmado（熱意がある）"
+  ],
+  "dialogue": {
+   "es": "— Habla de su proyecto con mucho entusiasmo.\n— Se nota que le apasiona.",
+   "ja": "「彼はプロジェクトについてとても熱意を持って話すんだ」「情熱を持っているのがわかるよね」"
+  }
+ },
+ "frustración": {
+  "nuance": "「苛立ち、欲求不満」の基本語。sentir frustración（苛立ちを感じる）はよく使う組み合わせ。",
+  "etymology": "frustrar（挫折させる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "frustrar（挫折させる）"
+  ],
+  "dialogue": {
+   "es": "— Sentí mucha frustración con ese problema.\n— Es normal, era muy complicado.",
+   "ja": "「その問題にすごく苛立ちを感じたんだ」「普通のことだよ、すごく複雑だったから」"
+  }
+ },
+ "incomodidad": {
+  "nuance": "「居心地の悪さ」の基本語。incómodo（不快な、居心地悪い）から派生した名詞。",
+  "etymology": "incómodo（不快な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "incómodo（不快な）"
+  ],
+  "dialogue": {
+   "es": "— Sentí mucha incomodidad en esa reunión.\n— A mí también me pareció tensa.",
+   "ja": "「あの会議、すごく居心地が悪かったんだ」「私も緊張した雰囲気だと思ったよ」"
+  }
+ },
+ "calificación": {
+  "nuance": "「成績」の基本語。calificar（採点する）から派生した名詞。nota（成績、より一般的）とほぼ同義。",
+  "etymology": "calificar（評価する）から派生した語。",
+  "synonyms": [
+   "nota（成績、より一般的）"
+  ],
+  "derived": [
+   "calificar（採点する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cuál fue tu calificación en el examen?\n— Saqué una buena nota.",
+   "ja": "「試験の成績はどうだった？」「いい成績を取ったよ」"
+  }
+ },
+ "aprobar": {
+  "nuance": "「合格する」の基本語。o→ueの語根母音変化動詞。「承認する」という意味にもなる。",
+  "etymology": "ラテン語approbare（承認する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "aprobación（承認）"
+  ],
+  "dialogue": {
+   "es": "— ¿Aprobaste el examen?\n— Sí, por poco pero lo logré.",
+   "ja": "「試験合格した？」「うん、ギリギリだったけど受かったよ」"
+  }
+ },
+ "reprobar": {
+  "nuance": "「不合格になる」の基本語。aprobar（合格する）の反対語。suspender（不合格になる、スペインで一般的）とほぼ同義。",
+  "etymology": "re（否定的強調）+ probar（試す）の組み合わせ。",
+  "synonyms": [
+   "suspender（不合格になる、スペイン）"
+  ],
+  "derived": [
+   "probar（試す）"
+  ],
+  "dialogue": {
+   "es": "— Reprobé el examen de matemáticas.\n— No te preocupes, puedes presentarlo de nuevo.",
+   "ja": "「数学の試験不合格だったんだ」「心配しないで、また受けられるから」"
+  }
+ },
+ "graduarse": {
+  "nuance": "「卒業する」の基本語。graduarse de（〜を卒業する）という組み合わせでよく使う。",
+  "etymology": "grado（学位、段階）から派生した再帰動詞。",
+  "synonyms": [],
+  "derived": [
+   "grado（学位）"
+  ],
+  "dialogue": {
+   "es": "— Me gradúo el próximo año.\n— ¡Qué emocionante!",
+   "ja": "「来年卒業するんだ」「わくわくするね！」"
+  }
+ },
+ "junta": {
+  "nuance": "「会議」の基本語。メキシコで一般的な言い方（reuniónとほぼ同義）。juntar（集める）から派生した語。",
+  "etymology": "juntar（集める）から派生した語。",
+  "synonyms": [
+   "reunión（会議、より一般的）"
+  ],
+  "derived": [
+   "juntar（集める）"
+  ],
+  "dialogue": {
+   "es": "— Tenemos junta a las diez.\n— Voy a preparar la presentación.",
+   "ja": "「10時に会議があるんだ」「プレゼンの準備をするね」"
+  }
+ },
+ "renunciar": {
+  "nuance": "「辞職する」の基本語。renunciar a（〜を辞める）という組み合わせでよく使う。",
+  "etymology": "ラテン語renuntiare（放棄を宣言する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "renuncia（辞職）"
+  ],
+  "dialogue": {
+   "es": "— Decidí renunciar a mi trabajo.\n— ¿Qué vas a hacer ahora?",
+   "ja": "「仕事を辞めることにしたんだ」「これから何するつもり？」"
+  }
+ },
+ "contratar": {
+  "nuance": "「雇う」の基本語。contrato（契約）から派生した語。",
+  "etymology": "contrato（契約）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "contrato（契約）"
+  ],
+  "dialogue": {
+   "es": "— Van a contratar a más personal.\n— Qué bueno, necesitábamos ayuda.",
+   "ja": "「もっと人材を雇うつもりなんだ」「よかった、助けが必要だったから」"
+  }
+ },
+ "despedir": {
+  "nuance": "「解雇する」の基本語。despedirse（再帰形、別れを告げる）とは意味が異なるので注意。",
+  "etymology": "ラテン語expedire（足かせを解く）に由来。",
+  "synonyms": [],
+  "derived": [
+   "despedirse（別れを告げる）",
+   "despido（解雇）"
+  ],
+  "dialogue": {
+   "es": "— Tuvieron que despedir a varios empleados.\n— Qué difícil momento para la empresa.",
+   "ja": "「何人かの従業員を解雇しないといけなかったんだ」「会社にとって大変な時期だね」"
+  }
+ },
+ "sacudir": {
+  "nuance": "「ほこりを払う」の基本語。sacudir los muebles（家具のほこりを払う）のように使う。「揺さぶる」という意味にもなる。",
+  "etymology": "ラテン語succutere（下から揺する）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Voy a sacudir los muebles.\n— Yo aspiro mientras tanto.",
+   "ja": "「家具のほこりを払うね」「その間私は掃除機かけるよ」"
+  }
+ },
+ "barrer": {
+  "nuance": "「掃く」の基本語。escoba（ほうき）を使う掃除を指す。",
+  "etymology": "ラテン語verrere（掃く）に由来。",
+  "synonyms": [],
+  "derived": [
+   "escoba（ほうき）"
+  ],
+  "dialogue": {
+   "es": "— ¿Ya barriste la cocina?\n— Sí, ya terminé.",
+   "ja": "「もう台所掃いた？」「うん、もう終わったよ」"
+  }
+ },
+ "tender la cama": {
+  "nuance": "「ベッドを整える」の基本表現。tender（広げる）から派生した表現。",
+  "etymology": "tender（広げる）+ cama（ベッド）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "cama（ベッド）"
+  ],
+  "dialogue": {
+   "es": "— Tiende tu cama antes de salir.\n— Ya la tendí.",
+   "ja": "「出かける前にベッドを整えてね」「もう整えたよ」"
+  }
+ },
+ "sacar la basura": {
+  "nuance": "「ゴミを出す」の基本表現。sacar（取り出す）+ la basura（ゴミ）の組み合わせ。",
+  "etymology": "sacar（取り出す）+ basura（ゴミ）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "basura（ゴミ）"
+  ],
+  "dialogue": {
+   "es": "— ¿Sacaste la basura?\n— Sí, ya la puse afuera.",
+   "ja": "「ゴミ出した？」「うん、もう外に出したよ」"
+  }
+ },
+ "tostadora": {
+  "nuance": "「トースター」の基本語。tostar（焼く、トーストする）から派生した語。",
+  "etymology": "tostar（トーストする）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "tostar（トーストする）"
+  ],
+  "dialogue": {
+   "es": "— La tostadora no funciona.\n— Voy a revisarla.",
+   "ja": "「トースターが動かないんだ」「確認するね」"
+  }
+ },
+ "exprimidor": {
+  "nuance": "「絞り器」の基本語。exprimir（絞る）から派生した語。柑橘類のジュースを絞る道具。",
+  "etymology": "exprimir（絞る）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "exprimir（絞る）"
+  ],
+  "dialogue": {
+   "es": "— ¿Tienes un exprimidor de naranjas?\n— Sí, está en ese cajón.",
+   "ja": "「オレンジ絞り器持ってる？」「うん、その引き出しにあるよ」"
+  }
+ },
+ "molde": {
+  "nuance": "「型」の基本語。molde para pastel（ケーキ型）のように使う。",
+  "etymology": "ラテン語modulus（尺度）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Necesito un molde para hacer el pastel.\n— Te presto el mío.",
+   "ja": "「ケーキを作る型が必要なんだ」「私のを貸すよ」"
+  }
+ },
+ "traje de baño": {
+  "nuance": "「水着」の基本語。traje（衣装）+ de baño（水浴びの）の組み合わせ。",
+  "etymology": "traje（衣装）+ baño（入浴）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "baño（風呂、入浴）"
+  ],
+  "dialogue": {
+   "es": "— ¿Trajiste tu traje de baño?\n— Sí, está en mi mochila.",
+   "ja": "「水着持ってきた？」「うん、リュックに入っているよ」"
+  }
+ },
+ "chanclas": {
+  "nuance": "「ビーチサンダル」の基本語。ビーチや家の中で履くカジュアルなサンダル。",
+  "etymology": "起源は諸説あるが、俗語として広まった。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Me traje las chanclas para la playa.\n— Buena idea, la arena está caliente.",
+   "ja": "「ビーチ用にサンダル持ってきたよ」「いい考えだね、砂が熱いから」"
+  }
+ },
+ "ropa interior": {
+  "nuance": "「下着」の基本語。ropa（服）+ interior（内側の）の組み合わせ。",
+  "etymology": "ropa（服）+ interior（内側の）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "ropa（服）"
+  ],
+  "dialogue": {
+   "es": "— Necesito comprar ropa interior nueva.\n— Hay una tienda cerca de aquí.",
+   "ja": "「新しい下着を買う必要があるんだ」「この近くにお店があるよ」"
+  }
+ },
+ "liso": {
+  "nuance": "「つるつるの」「（髪が）ストレートの」の基本語。pelo liso（ストレートヘア）はよく使う組み合わせ。",
+  "etymology": "ラテン語lisus（滑らかな）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Tienes el pelo muy liso.\n— Gracias, uso una plancha.",
+   "ja": "「とてもストレートな髪だね」「ありがとう、アイロンを使っているんだ」"
+  }
+ },
+ "pegajoso": {
+  "nuance": "「べたべたする」の基本語。pegar（くっつける）から派生した語。",
+  "etymology": "pegar（くっつける）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "pegar（くっつける）"
+  ],
+  "dialogue": {
+   "es": "— Mis manos están pegajosas.\n— Lávatelas con agua y jabón.",
+   "ja": "「手がべたべたするんだ」「石鹸で洗ってね」"
+  }
+ },
+ "resbaloso": {
+  "nuance": "「滑りやすい」の基本語。resbalar（滑る）から派生した語。",
+  "etymology": "resbalar（滑る）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "resbalar（滑る）"
+  ],
+  "dialogue": {
+   "es": "— Ten cuidado, el piso está resbaloso.\n— Gracias por avisarme.",
+   "ja": "「気をつけて、床が滑りやすいよ」「教えてくれてありがとう」"
+  }
+ },
+ "terco": {
+  "nuance": "「頑固な」の基本語。testarudo（頑固な、ほぼ同義）とも言い換えられる。",
+  "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
+  "synonyms": [
+   "testarudo（頑固な、ほぼ同義）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Es muy terco, nunca cambia de opinión.\n— A veces eso también es una fortaleza.",
+   "ja": "「彼はすごく頑固で、決して意見を変えないんだ」「時にはそれも強みになるけどね」"
+  }
+ },
+ "impulsivo": {
+  "nuance": "「衝動的な」の基本語。impulso（衝動）から派生した語。",
+  "etymology": "impulso（衝動）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "impulso（衝動）"
+  ],
+  "dialogue": {
+   "es": "— Eres muy impulsivo a veces.\n— Lo sé, trato de pensarlo más.",
+   "ja": "「時々すごく衝動的だよね」「わかってる、もっとよく考えるようにしているんだ」"
+  }
+ },
+ "reservado": {
+  "nuance": "「控えめな」の基本語。「予約された」という文字通りの意味もある。",
+  "etymology": "reservar（予約する、控える）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "reservar（予約する）"
+  ],
+  "dialogue": {
+   "es": "— Es un poco reservado al principio.\n— Pero es muy buena persona una vez que lo conoces.",
+   "ja": "「最初はちょっと控えめなんだ」「でも知り合うととてもいい人だよ」"
+  }
+ },
+ "extrovertido": {
+  "nuance": "「外向的な」の基本語。introvertido（内向的な）の反対語。",
+  "etymology": "extra（外に）+ vertere（向く）の組み合わせ。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Es muy extrovertido, hace amigos fácilmente.\n— Qué envidia, yo soy más tímido.",
+   "ja": "「彼はとても外向的で、簡単に友達を作るんだ」「羨ましいな、私はもっと内気なんだ」"
+  }
+ },
+ "introvertido": {
+  "nuance": "「内向的な」の基本語。extrovertido（外向的な）の反対語。",
+  "etymology": "intro（内に）+ vertere（向く）の組み合わせ。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Soy bastante introvertido.\n— Yo también, prefiero grupos pequeños.",
+   "ja": "「私はかなり内向的なんだ」「私もだよ、小さいグループの方が好きなんだ」"
+  }
+ },
+ "nacer": {
+  "nuance": "「生まれる」の基本語。¿Cuándo naciste?（いつ生まれたの？）はよく使う質問。",
+  "etymology": "ラテン語nasci（生まれる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "nacimiento（誕生）"
+  ],
+  "dialogue": {
+   "es": "— ¿Dónde naciste?\n— Nací en Guadalajara.",
+   "ja": "「どこで生まれたの？」「グアダラハラで生まれたよ」"
+  }
+ },
+ "crecer": {
+  "nuance": "「成長する」の基本語。crecer en（〜で育つ）という組み合わせでよく使う。",
+  "etymology": "ラテン語crescere（成長する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "crecimiento（成長）"
+  ],
+  "dialogue": {
+   "es": "— Crecí en un pueblo pequeño.\n— Debe haber sido tranquilo.",
+   "ja": "「小さな町で育ったんだ」「きっと静かだったんだろうね」"
+  }
+ },
+ "envejecer": {
+  "nuance": "「年を取る」の基本語。viejo（年をとった）から派生した動詞。",
+  "etymology": "viejo（年をとった）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "viejo（年をとった）"
+  ],
+  "dialogue": {
+   "es": "— Todos envejecemos algún día.\n— Es parte natural de la vida.",
+   "ja": "「私たちはいつか皆年を取るんだよね」「人生の自然な一部だよね」"
+  }
+ },
+ "fallecer": {
+  "nuance": "「亡くなる」の基本語。morir（死ぬ）よりもフォーマルで丁寧な響き。",
+  "etymology": "fallir（欠ける、失敗する、古語）から派生した語。",
+  "synonyms": [
+   "morir（死ぬ、より直接的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Su abuelo falleció el año pasado.\n— Lo siento mucho.",
+   "ja": "「彼の祖父は去年亡くなったんだ」「お悔やみ申し上げます」"
+  }
+ },
+ "nacimiento": {
+  "nuance": "「誕生」の基本語。nacer（生まれる）から派生した名詞。fecha de nacimiento（生年月日）はよく使う組み合わせ。",
+  "etymology": "nacer（生まれる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "nacer（生まれる）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cuál es tu fecha de nacimiento?\n— El doce de marzo.",
+   "ja": "「生年月日はいつですか？」「3月12日です」"
+  }
+ },
+ "archivo adjunto": {
+  "nuance": "「添付ファイル」の基本語。メールでファイルを送るときによく使う表現。",
+  "etymology": "archivo（ファイル）+ adjunto（添付された）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "archivo（ファイル）"
+  ],
+  "dialogue": {
+   "es": "— Revisa el archivo adjunto, por favor.\n— Ya lo vi, gracias.",
+   "ja": "「添付ファイルを確認してください」「もう見ました、ありがとうございます」"
+  }
+ },
+ "saludos": {
+  "nuance": "「よろしくお願いします」の基本語。メールの結びの挨拶としてカジュアルによく使われる。saludo（挨拶）の複数形。",
+  "etymology": "saludar（挨拶する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "saludar（挨拶する）"
+  ],
+  "dialogue": {
+   "es": "— Termina el correo con \"Saludos\".\n— Perfecto, así lo haré.",
+   "ja": "「メールを『よろしくお願いします』で締めくくって」「わかった、そうするね」"
+  }
+ },
+ "atentamente": {
+  "nuance": "「敬具」の基本語。フォーマルな手紙・メールの結びの言葉。atento（丁寧な）から派生した副詞。",
+  "etymology": "atento（丁寧な、注意深い）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "atento（丁寧な）"
+  ],
+  "dialogue": {
+   "es": "— Es mejor terminar la carta formal con \"Atentamente\".\n— Gracias por el consejo.",
+   "ja": "「フォーマルな手紙は『敬具』で締めくくった方がいいよ」「アドバイスありがとう」"
+  }
+ },
+ "estimado": {
+  "nuance": "「拝啓、様」の基本語。フォーマルな手紙・メールの宛名の前につける敬称。女性形はestimada。",
+  "etymology": "estimar（尊重する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "estimar（尊重する）"
+  ],
+  "dialogue": {
+   "es": "— Empieza el correo con \"Estimado señor García\".\n— Anotado, gracias.",
+   "ja": "「メールは『拝啓 ガルシア様』で始めてね」「わかりました、ありがとうございます」"
+  }
+ },
+ "apenas": {
+  "nuance": "「かろうじて」「〜したばかり」の両方の意味を持つ副詞。casi（ほとんど）と対照的に使われることもある。",
+  "etymology": "a（〜へ）+ penas（苦しみ）の組み合わせに由来するとされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Apenas llegué a tiempo.\n— Qué alivio.",
+   "ja": "「かろうじて時間通りに着いたよ」「よかったね」"
+  }
+ },
+ "casi": {
+  "nuance": "「ほとんど」の基本副詞。casi nunca（めったに〜ない）、casi siempre（ほとんどいつも）のように頻度表現でもよく使う。",
+  "etymology": "ラテン語quasi（あたかも）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Casi se me olvida tu cumpleaños.\n— Menos mal que te acordaste.",
+   "ja": "「もう少しで君の誕生日忘れるところだったよ」「思い出してくれてよかった」"
+  }
+ },
+ "bastante": {
+  "nuance": "「かなり」「十分に」の両方の意味を持つ副詞・形容詞。名詞の前でも形容詞・副詞の前でも使える便利な語。",
+  "etymology": "bastar（十分である）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "bastar（十分である）"
+  ],
+  "dialogue": {
+   "es": "— Tengo bastante trabajo esta semana.\n— Espero que puedas con todo.",
+   "ja": "「今週かなり仕事があるんだ」「全部こなせるといいね」"
+  }
+ },
+ "demasiado": {
+  "nuance": "「多すぎる」の基本語。mucho（たくさん）よりも「過剰である」というニュアンスが強い。",
+  "etymology": "de（〜から）+ más（もっと）の組み合わせに由来。",
+  "synonyms": [],
+  "derived": [
+   "más（もっと）"
+  ],
+  "dialogue": {
+   "es": "— Comí demasiado en la cena.\n— Yo también, todo estaba delicioso.",
+   "ja": "「夕食で食べすぎちゃった」「私もだよ、全部美味しかったから」"
+  }
+ },
+ "ligeramente": {
+  "nuance": "「わずかに」の基本副詞。ligero（軽い）から派生した語。",
+  "etymology": "ligero（軽い）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "ligero（軽い）"
+  ],
+  "dialogue": {
+   "es": "— La receta cambió ligeramente.\n— No noté mucha diferencia.",
+   "ja": "「レシピが少し変わったんだ」「あまり違いに気づかなかったよ」"
+  }
  }
 };
