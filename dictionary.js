@@ -23925,5 +23925,581 @@ const DICTIONARY_DATA = {
    "es": "— El ladrón escapó antes de que llegara la policía.\n— Esperemos que lo atrapen pronto.",
    "ja": "「その泥棒は警察が来る前に逃げたんだ」「早く捕まるといいね」"
   }
+ },
+ "bien comunicado": {
+  "nuance": "「交通の便がいい」の基本表現。不動産探しや旅行の話でよく使われる。反対はmal comunicado。",
+  "etymology": "bien（良く）+ comunicado（接続された）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "comunicar（つなぐ）"
+  ],
+  "dialogue": {
+   "es": "— Este barrio está muy bien comunicado.\n— Sí, el metro está a dos cuadras.",
+   "ja": "「この地区はとても交通の便がいいね」「うん、地下鉄が2ブロック先にあるから」"
+  }
+ },
+ "mal comunicado": {
+  "nuance": "「交通の便が悪い」の基本表現。bien comunicado（交通の便がいい）の反対語。",
+  "etymology": "mal（悪く）+ comunicado（接続された）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "comunicar（つなぐ）"
+  ],
+  "dialogue": {
+   "es": "— Esa zona está mal comunicada.\n— Necesitarías un coche para vivir ahí.",
+   "ja": "「あの地域は交通の便が悪いんだ」「そこに住むなら車が必要そうだね」"
+  }
+ },
+ "sintético": {
+  "nuance": "「合成の」の基本語。natural（天然の）の反対語。piel sintética（合成皮革）のように使う。",
+  "etymology": "ギリシャ語synthetikos（組み合わせられた）に由来。",
+  "synonyms": [],
+  "derived": [
+   "síntesis（合成）"
+  ],
+  "dialogue": {
+   "es": "— Esta chaqueta es de material sintético.\n— Es más económica que el cuero real.",
+   "ja": "「このジャケットは合成素材なんだ」「本革より経済的だよね」"
+  }
+ },
+ "pasado de moda": {
+  "nuance": "「流行遅れの」の基本表現。de moda（流行の）に対してpasado（過ぎ去った）がついた形。",
+  "etymology": "pasado（過ぎた）+ de moda（流行の）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "moda（流行）"
+  ],
+  "dialogue": {
+   "es": "— Ese estilo está un poco pasado de moda.\n— A mí todavía me gusta.",
+   "ja": "「そのスタイルはちょっと流行遅れだね」「私はまだ好きだけどな」"
+  }
+ },
+ "de cuadros": {
+  "nuance": "「チェック柄の」の基本表現。cuadro（四角、マス目）から派生。camisa de cuadros（チェック柄のシャツ）のように使う。",
+  "etymology": "cuadro（四角形）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "cuadro（四角形、絵画）"
+  ],
+  "dialogue": {
+   "es": "— Me gusta tu camisa de cuadros.\n— Gracias, la compré la semana pasada.",
+   "ja": "「君のチェック柄のシャツ好きだな」「ありがとう、先週買ったんだ」"
+  }
+ },
+ "de lunares": {
+  "nuance": "「水玉模様の」の基本表現。lunar（ほくろ、水玉）から派生。",
+  "etymology": "lunar（ほくろ、丸い斑点）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "lunar（ほくろ）"
+  ],
+  "dialogue": {
+   "es": "— Ese vestido de lunares es muy bonito.\n— Es mi favorito de la temporada.",
+   "ja": "「その水玉模様のワンピース、とても素敵だね」「今シーズンのお気に入りなんだ」"
+  }
+ },
+ "de rayas": {
+  "nuance": "「ストライプの」の基本表現。raya（線）から派生。",
+  "etymology": "raya（線）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "raya（線）"
+  ],
+  "dialogue": {
+   "es": "— Prefiero las camisetas de rayas.\n— Yo también, se ven clásicas.",
+   "ja": "「ストライプのTシャツの方が好きなんだ」「私もだよ、クラシックな感じがするよね」"
+  }
+ },
+ "afortunadamente": {
+  "nuance": "「幸いにも」の基本副詞。afortunado（幸運な）から派生。desgraciadamente（残念ながら）の反対語。",
+  "etymology": "afortunado（幸運な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "afortunado（幸運な）"
+  ],
+  "dialogue": {
+   "es": "— Afortunadamente, no pasó nada grave.\n— Qué alivio.",
+   "ja": "「幸いにも、深刻なことは何も起きなかったよ」「安心したよ」"
+  }
+ },
+ "desgraciadamente": {
+  "nuance": "「残念ながら」の基本副詞。afortunadamente（幸いにも）の反対語。desafortunadamente（ほぼ同義）とも言い換えられる。",
+  "etymology": "desgracia（不運）から派生した語。",
+  "synonyms": [
+   "desafortunadamente（ほぼ同義）"
+  ],
+  "derived": [
+   "desgracia（不運）"
+  ],
+  "dialogue": {
+   "es": "— Desgraciadamente, no pude llegar a tiempo.\n— No te preocupes, entendemos.",
+   "ja": "「残念ながら、時間通りに着けなかったんだ」「気にしないで、わかっているから」"
+  }
+ },
+ "precisamente": {
+  "nuance": "「まさに」の基本副詞。preciso（正確な）から派生。会話で相手に同意するときにもよく使う（Precisamente.＝まさにその通り）。",
+  "etymology": "preciso（正確な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "preciso（正確な）"
+  ],
+  "dialogue": {
+   "es": "— Eso es precisamente lo que quería decir.\n— Estamos totalmente de acuerdo.",
+   "ja": "「それがまさに私が言いたかったことなんだ」「まったく同感だよ」"
+  }
+ },
+ "anteriormente": {
+  "nuance": "「以前に」の基本副詞。anterior（以前の）から派生。フォーマルな文章でよく使われる。",
+  "etymology": "anterior（以前の）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "anterior（以前の）"
+  ],
+  "dialogue": {
+   "es": "— Como mencioné anteriormente, el proyecto se retrasó.\n— Sí, lo recuerdo.",
+   "ja": "「以前お伝えした通り、プロジェクトが遅れているんだ」「うん、覚えているよ」"
+  }
+ },
+ "justamente": {
+  "nuance": "「ちょうど」「公正に」の両方の意味を持つ副詞。justo（正しい、ちょうどの）から派生。",
+  "etymology": "justo（正しい、ちょうどの）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "justo（公正な）"
+  ],
+  "dialogue": {
+   "es": "— Justamente estaba pensando en ti.\n— Qué casualidad.",
+   "ja": "「ちょうど君のこと考えていたんだ」「なんて偶然なんだ」"
+  }
+ },
+ "particularmente": {
+  "nuance": "「特に」の基本副詞。particular（特別な、個人的な）から派生。",
+  "etymology": "particular（個別の）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "particular（個別の）"
+  ],
+  "dialogue": {
+   "es": "— Me gusta particularmente este color.\n— A mí también, es muy elegante.",
+   "ja": "「私はこの色が特に好きなんだ」「私もだよ、とてもエレガントだよね」"
+  }
+ },
+ "verdaderamente": {
+  "nuance": "「本当に」の基本副詞。verdadero（本当の）から派生。realmente（本当に）とほぼ同義。",
+  "etymology": "verdadero（本当の）から派生した語。",
+  "synonyms": [
+   "realmente（本当に、ほぼ同義）"
+  ],
+  "derived": [
+   "verdad（真実）"
+  ],
+  "dialogue": {
+   "es": "— Fue verdaderamente una experiencia increíble.\n— Me alegra que la hayas disfrutado.",
+   "ja": "「本当に信じられない経験だったよ」「楽しんでもらえてよかったよ」"
+  }
+ },
+ "especialmente": {
+  "nuance": "「特別に」の基本副詞。especial（特別な）から派生。particularmente（特に）とほぼ同義。",
+  "etymology": "especial（特別な）から派生した語。",
+  "synonyms": [
+   "particularmente（特に、ほぼ同義）"
+  ],
+  "derived": [
+   "especial（特別な）"
+  ],
+  "dialogue": {
+   "es": "— Me gusta la comida mexicana, especialmente los tacos.\n— A mí también, son deliciosos.",
+   "ja": "「メキシコ料理が好きなんだ、特にタコスがね」「私もだよ、美味しいよね」"
+  }
+ },
+ "inmediatamente": {
+  "nuance": "「直ちに」の基本副詞。inmediato（即座の）から派生。",
+  "etymology": "inmediato（即座の）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "inmediato（即座の）"
+  ],
+  "dialogue": {
+   "es": "— Llámame inmediatamente si pasa algo.\n— Claro, te aviso enseguida.",
+   "ja": "「何かあったらすぐに電話して」「もちろん、すぐに知らせるよ」"
+  }
+ },
+ "continuamente": {
+  "nuance": "「絶えず」の基本副詞。continuo（絶え間ない）から派生。",
+  "etymology": "continuo（絶え間ない）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "continuar（続ける）"
+  ],
+  "dialogue": {
+   "es": "— Está lloviendo continuamente desde ayer.\n— Espero que pare pronto.",
+   "ja": "「昨日から絶えず雨が降っているんだ」「早くやむといいね」"
+  }
+ },
+ "instantáneamente": {
+  "nuance": "「瞬時に」の基本副詞。instantáneo（瞬間的な）から派生。",
+  "etymology": "instantáneo（瞬間的な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "instante（瞬間）"
+  ],
+  "dialogue": {
+   "es": "— El mensaje se envía instantáneamente.\n— Qué tecnología tan rápida.",
+   "ja": "「メッセージは瞬時に送信されるんだ」「なんて速い技術なんだろう」"
+  }
+ },
+ "repetidamente": {
+  "nuance": "「繰り返し」の基本副詞。repetido（繰り返された）から派生。",
+  "etymology": "repetir（繰り返す）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "repetir（繰り返す）"
+  ],
+  "dialogue": {
+   "es": "— Se lo expliqué repetidamente.\n— A veces hay que repetir las cosas varias veces.",
+   "ja": "「彼に繰り返し説明したんだ」「時々何度も繰り返さないといけないことがあるよね」"
+  }
+ },
+ "repentinamente": {
+  "nuance": "「突然」の基本副詞。repentino（突然の）から派生。de repente（突然）とほぼ同義。",
+  "etymology": "repentino（突然の）から派生した語。",
+  "synonyms": [
+   "de repente（突然、より口語的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— El clima cambió repentinamente.\n— Sí, no esperábamos esta lluvia.",
+   "ja": "「天気が突然変わったんだ」「うん、この雨は予想していなかったよね」"
+  }
+ },
+ "admirablemente": {
+  "nuance": "「見事に」の基本副詞。admirable（称賛に値する）から派生。",
+  "etymology": "admirable（称賛に値する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "admirar（称賛する）"
+  ],
+  "dialogue": {
+   "es": "— Manejó la situación admirablemente.\n— Estoy muy impresionado.",
+   "ja": "「彼はその状況を見事に対処したんだ」「とても感心したよ」"
+  }
+ },
+ "perfectamente": {
+  "nuance": "「完璧に」の基本副詞。perfecto（完璧な）から派生。",
+  "etymology": "perfecto（完璧な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "perfecto（完璧な）"
+  ],
+  "dialogue": {
+   "es": "— Entiendo perfectamente lo que dices.\n— Me alegra que estemos en la misma página.",
+   "ja": "「君の言っていることは完璧に理解しているよ」「同じ考えでいられて嬉しいよ」"
+  }
+ },
+ "desesperadamente": {
+  "nuance": "「必死に」の基本副詞。desesperado（絶望的な、必死な）から派生。",
+  "etymology": "desesperado（絶望的な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "desesperar（絶望する）"
+  ],
+  "dialogue": {
+   "es": "— Buscó desesperadamente sus llaves.\n— ¿Las encontró al final?",
+   "ja": "「彼は必死に鍵を探したんだ」「最終的に見つかった？」"
+  }
+ },
+ "severamente": {
+  "nuance": "「厳しく」の基本副詞。severo（厳しい）から派生。",
+  "etymology": "severo（厳しい）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "severo（厳しい）"
+  ],
+  "dialogue": {
+   "es": "— Fue castigado severamente.\n— Espero que haya aprendido la lección.",
+   "ja": "「彼は厳しく罰せられたんだ」「教訓を学んでいるといいね」"
+  }
+ },
+ "probablemente": {
+  "nuance": "「おそらく」の基本副詞。probable（ありそうな）から派生。posiblemente（もしかすると）よりも確信度が高い。",
+  "etymology": "probable（ありそうな）から派生した語。",
+  "synonyms": [
+   "posiblemente（もしかすると、より確信度が低い）"
+  ],
+  "derived": [
+   "probable（ありそうな）"
+  ],
+  "dialogue": {
+   "es": "— Probablemente llueva mañana.\n— Deberíamos llevar paraguas.",
+   "ja": "「おそらく明日雨が降るよ」「傘を持って行った方がいいね」"
+  }
+ },
+ "posiblemente": {
+  "nuance": "「ひょっとすると」の基本副詞。posible（可能な）から派生。probablemente（おそらく）よりも確信度が低い。",
+  "etymology": "posible（可能な）から派生した語。",
+  "synonyms": [
+   "probablemente（おそらく、より確信度が高い）"
+  ],
+  "derived": [
+   "posible（可能な）"
+  ],
+  "dialogue": {
+   "es": "— Posiblemente llegue tarde hoy.\n— Está bien, avísame cuando sepas más.",
+   "ja": "「今日ひょっとすると遅れるかもしれない」「大丈夫、わかったら教えてね」"
+  }
+ },
+ "indudablemente": {
+  "nuance": "「間違いなく」の基本副詞。in（否定）+ dudar（疑う）の組み合わせ、「疑いようがなく」が原義。",
+  "etymology": "indudable（疑いようのない）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "dudar（疑う）"
+  ],
+  "dialogue": {
+   "es": "— Indudablemente, fue la mejor decisión.\n— Estoy completamente de acuerdo.",
+   "ja": "「間違いなく、それが最善の決断だったよ」「まったく同感だよ」"
+  }
+ },
+ "absolutamente": {
+  "nuance": "「絶対に」の基本副詞。absoluto（絶対的な）から派生。強い同意・否定を表すときによく使う。",
+  "etymology": "absoluto（絶対的な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "absoluto（絶対的な）"
+  ],
+  "dialogue": {
+   "es": "— ¿Estás de acuerdo?\n— Absolutamente.",
+   "ja": "「賛成？」「絶対にそうだよ」"
+  }
+ },
+ "realmente": {
+  "nuance": "「本当に」の基本副詞。real（本当の、現実の）から派生。verdaderamente（本当に）とほぼ同義。",
+  "etymology": "real（本当の）から派生した語。",
+  "synonyms": [
+   "verdaderamente（本当に、ほぼ同義）"
+  ],
+  "derived": [
+   "real（本当の）"
+  ],
+  "dialogue": {
+   "es": "— Realmente disfruté la película.\n— Me alegra escuchar eso.",
+   "ja": "「本当にその映画を楽しんだよ」「それを聞いて嬉しいよ」"
+  }
+ },
+ "sinceramente": {
+  "nuance": "「心から」の基本副詞。sincero（誠実な）から派生。フォーマルな手紙の結びとしても使われる。",
+  "etymology": "sincero（誠実な）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "sincero（誠実な）"
+  ],
+  "dialogue": {
+   "es": "— Sinceramente, creo que deberías descansar.\n— Tienes razón, estoy muy cansado.",
+   "ja": "「正直に言うと、休んだ方がいいと思うよ」「その通りだね、すごく疲れているんだ」"
+  }
+ },
+ "tratar de": {
+  "nuance": "「〜しようと試みる」の基本表現。intentar（試みる）とほぼ同義。tratar de+不定詞の形でよく使う。",
+  "etymology": "tratar（扱う、試みる）+ de（〜について）の組み合わせ。",
+  "synonyms": [
+   "intentar（試みる、ほぼ同義）"
+  ],
+  "derived": [
+   "tratar（扱う）"
+  ],
+  "dialogue": {
+   "es": "— Voy a tratar de terminar esto hoy.\n— Buena suerte, no es fácil.",
+   "ja": "「今日これを終わらせようと試みるよ」「頑張って、簡単じゃないから」"
+  }
+ },
+ "referirse a": {
+  "nuance": "「〜について言及する」の基本表現。referir（伝える、言及する）の再帰形。",
+  "etymology": "referir（伝える）から派生した再帰動詞。",
+  "synonyms": [],
+  "derived": [
+   "referencia（言及、参照）"
+  ],
+  "dialogue": {
+   "es": "— ¿A qué te refieres exactamente?\n— Me refiero al problema de ayer.",
+   "ja": "「具体的に何を言っているの？」「昨日の問題のことを言っているんだ」"
+  }
+ },
+ "dar a luz": {
+  "nuance": "「出産する」の基本表現。dar（与える）+ a luz（光へ）の組み合わせ、「命を世に出す」というイメージ。",
+  "etymology": "dar（与える）+ a luz（光へ）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "luz（光）"
+  ],
+  "dialogue": {
+   "es": "— Dio a luz el mes pasado.\n— ¡Felicidades! ¿Niño o niña?",
+   "ja": "「彼女先月出産したんだ」「おめでとう！男の子？女の子？」"
+  }
+ },
+ "salirle bien": {
+  "nuance": "「うまくいく」の基本表現。gustar型の構文で使われ、間接目的語で「誰にとって」うまくいったかを表す。",
+  "etymology": "salir（出る、結果として〜になる）+ bien（良く）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "salir（出る）"
+  ],
+  "dialogue": {
+   "es": "— ¿Cómo te salió el examen?\n— Me salió muy bien, gracias.",
+   "ja": "「試験どうだった？」「とてもうまくいったよ、ありがとう」"
+  }
+ },
+ "volver a": {
+  "nuance": "「再び〜する」の基本表現。volver a+不定詞の形で、同じ動作をもう一度行うことを表す。",
+  "etymology": "volver（戻る）+ a（〜へ）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "volver（戻る）"
+  ],
+  "dialogue": {
+   "es": "— Voy a volver a intentarlo.\n— Esta vez te va a salir mejor.",
+   "ja": "「もう一度試してみるよ」「今度はもっとうまくいくよ」"
+  }
+ },
+ "dejar de": {
+  "nuance": "「〜するのをやめる」の基本表現。dejar de+不定詞の形で、それまで続けていた動作をやめることを表す。",
+  "etymology": "dejar（やめる、残す）+ de（〜について）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "dejar（やめる）"
+  ],
+  "dialogue": {
+   "es": "— Dejé de fumar hace un año.\n— ¡Felicidades! Eso no es fácil.",
+   "ja": "「1年前に禁煙したんだ」「おめでとう！簡単なことじゃないよ」"
+  }
+ },
+ "ponerse a": {
+  "nuance": "「〜し始める」の基本表現。ponerse a+不定詞の形で、突然・積極的に何かを始めることを表す。empezar a（始める）よりも急な始まりのニュアンス。",
+  "etymology": "ponerse（〜になる）+ a（〜へ）の組み合わせ。",
+  "synonyms": [
+   "empezar a（始める）"
+  ],
+  "derived": [
+   "poner（置く）"
+  ],
+  "dialogue": {
+   "es": "— Se puso a llorar de repente.\n— ¿Qué le pasó?",
+   "ja": "「彼女突然泣き始めたんだ」「何があったの？」"
+  }
+ },
+ "estar a punto de": {
+  "nuance": "「今にも〜するところだ」の基本表現。punto（点）から派生、「〜する寸前の一点にいる」というイメージ。",
+  "etymology": "estar（いる）+ a punto de（〜の一点に）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "punto（点）"
+  ],
+  "dialogue": {
+   "es": "— Estoy a punto de salir.\n— Perfecto, te espero aquí.",
+   "ja": "「今にも出かけるところなんだ」「わかった、ここで待ってるね」"
+  }
+ },
+ "puesto que": {
+  "nuance": "「〜だから」の基本表現。理由を導く接続詞で、ya que（〜だから）とほぼ同義。直説法を伴う。",
+  "etymology": "poner（置く）の過去分詞puestoから派生した接続詞。",
+  "synonyms": [
+   "ya que（〜だから、ほぼ同義）"
+  ],
+  "derived": [
+   "poner（置く）"
+  ],
+  "dialogue": {
+   "es": "— Puesto que ya terminamos, podemos irnos.\n— Perfecto, vámonos.",
+   "ja": "「もう終わったんだから、帰っていいよ」「よし、行こう」"
+  }
+ },
+ "ya que": {
+  "nuance": "「〜であるからには」の基本表現。puesto que（〜だから）とほぼ同義の理由を導く接続詞。",
+  "etymology": "ya（もう）+ que（〜ということ）の組み合わせ。",
+  "synonyms": [
+   "puesto que（〜だから、ほぼ同義）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Ya que estás aquí, ayúdame con esto.\n— Claro, con gusto.",
+   "ja": "「せっかくここにいるんだから、これ手伝って」「もちろん、喜んで」"
+  }
+ },
+ "debido a": {
+  "nuance": "「〜のせいで」の基本表現。deber（〜のせいである、古い意味）から派生。",
+  "etymology": "deber（〜に起因する）の過去分詞debidoから派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "deber（〜すべきである）"
+  ],
+  "dialogue": {
+   "es": "— El vuelo se retrasó debido al mal clima.\n— Qué mala suerte.",
+   "ja": "「悪天候のせいでフライトが遅延したんだ」「運が悪かったね」"
+  }
+ },
+ "en un principio": {
+  "nuance": "「最初は」の基本表現。principio（始まり）から派生。後で状況が変わったことを暗示するときによく使う。",
+  "etymology": "principio（始まり）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "principio（始まり）"
+  ],
+  "dialogue": {
+   "es": "— En un principio no me gustaba, pero ahora sí.\n— Así pasa con muchas cosas.",
+   "ja": "「最初は好きじゃなかったけど、今は好きなんだ」「多くのことでそういうことがあるよね」"
+  }
+ },
+ "en principio": {
+  "nuance": "「原則として」の基本表現。en un principio（最初は）と混同しやすいが意味が異なる、「一般論としては」というニュアンス。",
+  "etymology": "principio（原則）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "principio（原則）"
+  ],
+  "dialogue": {
+   "es": "— En principio, estoy de acuerdo con el plan.\n— Pero tienes alguna duda, ¿verdad?",
+   "ja": "「原則として、その計画に賛成だよ」「でも何か懸念があるんでしょ？」"
+  }
+ },
+ "de todas maneras": {
+  "nuance": "「いずれにしても」の基本表現。de todos modos（ほぼ同義）とも言い換えられる。",
+  "etymology": "todas（すべての）+ maneras（方法）の組み合わせ。",
+  "synonyms": [
+   "de todos modos（いずれにしても、ほぼ同義）"
+  ],
+  "derived": [
+   "manera（方法）"
+  ],
+  "dialogue": {
+   "es": "— De todas maneras, quiero intentarlo.\n— Te apoyo en tu decisión.",
+   "ja": "「いずれにしても、試してみたいんだ」「君の決断を応援するよ」"
+  }
+ },
+ "o sea": {
+  "nuance": "「すなわち」の基本表現。es decir（つまり）とほぼ同義で、より口語的。言い換えるときによく使う。",
+  "etymology": "o（または）+ sea（serの接続法）の組み合わせ。",
+  "synonyms": [
+   "es decir（つまり、より一般的）"
+  ],
+  "derived": [
+   "ser（〜である）"
+  ],
+  "dialogue": {
+   "es": "— Llego en una hora, o sea, a las tres.\n— Perfecto, ahí te espero.",
+   "ja": "「1時間後に着くよ、つまり3時にね」「わかった、そこで待ってるね」"
+  }
+ },
+ "asimismo": {
+  "nuance": "「同様に」の基本副詞。también（〜も）よりもフォーマルな響き。así（そのように）+ mismo（同じ）の組み合わせ。",
+  "etymology": "así（そのように）+ mismo（同じ）の組み合わせ。",
+  "synonyms": [
+   "también（〜も、より一般的）"
+  ],
+  "derived": [
+   "mismo（同じ）"
+  ],
+  "dialogue": {
+   "es": "— El informe destaca varios problemas. Asimismo, propone soluciones.\n— Suena como un análisis completo.",
+   "ja": "「その報告書はいくつかの問題を指摘しているんだ。同様に、解決策も提案しているよ」「包括的な分析みたいだね」"
+  }
  }
 };

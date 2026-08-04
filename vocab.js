@@ -12076,5 +12076,281 @@ const VOCAB_DATA = [
   "en": "Thief",
   "ja": "泥棒",
   "cat": "Sociedad"
+ },
+ {
+  "es": "Bien comunicado",
+  "en": "Well-connected (transit)",
+  "ja": "交通の便がいい",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Mal comunicado",
+  "en": "Poorly connected (transit)",
+  "ja": "交通の便が悪い",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Sintético",
+  "en": "Synthetic",
+  "ja": "合成の",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Pasado de moda",
+  "en": "Out of style",
+  "ja": "流行遅れの",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "De cuadros",
+  "en": "Checkered / plaid",
+  "ja": "チェック柄の",
+  "cat": "Ropa"
+ },
+ {
+  "es": "De lunares",
+  "en": "Polka-dotted",
+  "ja": "水玉模様の",
+  "cat": "Ropa"
+ },
+ {
+  "es": "De rayas",
+  "en": "Striped",
+  "ja": "ストライプの",
+  "cat": "Ropa"
+ },
+ {
+  "es": "Afortunadamente",
+  "en": "Fortunately",
+  "ja": "幸いにも",
+  "cat": "Frases"
+ },
+ {
+  "es": "Desgraciadamente",
+  "en": "Unfortunately",
+  "ja": "残念ながら",
+  "cat": "Frases"
+ },
+ {
+  "es": "Precisamente",
+  "en": "Precisely",
+  "ja": "まさに",
+  "cat": "Frases"
+ },
+ {
+  "es": "Anteriormente",
+  "en": "Previously",
+  "ja": "以前に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Justamente",
+  "en": "Exactly / fairly",
+  "ja": "ちょうど・公正に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Particularmente",
+  "en": "Particularly",
+  "ja": "特に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Verdaderamente",
+  "en": "Truly",
+  "ja": "本当に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Especialmente",
+  "en": "Especially",
+  "ja": "特別に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Inmediatamente",
+  "en": "Immediately",
+  "ja": "直ちに",
+  "cat": "Frases"
+ },
+ {
+  "es": "Continuamente",
+  "en": "Continuously",
+  "ja": "絶えず",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Instantáneamente",
+  "en": "Instantly",
+  "ja": "瞬時に",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Repetidamente",
+  "en": "Repeatedly",
+  "ja": "繰り返し",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Repentinamente",
+  "en": "Suddenly",
+  "ja": "突然",
+  "cat": "Frecuencia"
+ },
+ {
+  "es": "Admirablemente",
+  "en": "Admirably",
+  "ja": "見事に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Perfectamente",
+  "en": "Perfectly",
+  "ja": "完璧に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Desesperadamente",
+  "en": "Desperately",
+  "ja": "必死に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Severamente",
+  "en": "Severely",
+  "ja": "厳しく",
+  "cat": "Frases"
+ },
+ {
+  "es": "Probablemente",
+  "en": "Probably",
+  "ja": "おそらく",
+  "cat": "Frases"
+ },
+ {
+  "es": "Posiblemente",
+  "en": "Possibly",
+  "ja": "ひょっとすると",
+  "cat": "Frases"
+ },
+ {
+  "es": "Indudablemente",
+  "en": "Undoubtedly",
+  "ja": "間違いなく",
+  "cat": "Frases"
+ },
+ {
+  "es": "Absolutamente",
+  "en": "Absolutely",
+  "ja": "絶対に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Realmente",
+  "en": "Really",
+  "ja": "本当に・現実に",
+  "cat": "Frases"
+ },
+ {
+  "es": "Sinceramente",
+  "en": "Sincerely",
+  "ja": "心から",
+  "cat": "Frases"
+ },
+ {
+  "es": "Tratar de",
+  "en": "To try to",
+  "ja": "〜しようと試みる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Referirse a",
+  "en": "To refer to",
+  "ja": "〜について言及する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dar a luz",
+  "en": "To give birth",
+  "ja": "出産する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Salirle bien",
+  "en": "To turn out well",
+  "ja": "うまくいく",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Volver a",
+  "en": "To do again",
+  "ja": "再び〜する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Dejar de",
+  "en": "To stop doing",
+  "ja": "〜するのをやめる",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Ponerse a",
+  "en": "To start doing",
+  "ja": "〜し始める",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Estar a punto de",
+  "en": "To be about to",
+  "ja": "今にも〜するところだ",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Puesto que",
+  "en": "Given that / since",
+  "ja": "〜だから",
+  "cat": "Frases"
+ },
+ {
+  "es": "Ya que",
+  "en": "Since / given that",
+  "ja": "〜であるからには",
+  "cat": "Frases"
+ },
+ {
+  "es": "Debido a",
+  "en": "Due to",
+  "ja": "〜のせいで",
+  "cat": "Frases"
+ },
+ {
+  "es": "En un principio",
+  "en": "At first",
+  "ja": "最初は",
+  "cat": "Frases"
+ },
+ {
+  "es": "En principio",
+  "en": "In principle",
+  "ja": "原則として",
+  "cat": "Frases"
+ },
+ {
+  "es": "De todas maneras",
+  "en": "Anyway",
+  "ja": "いずれにしても",
+  "cat": "Frases"
+ },
+ {
+  "es": "O sea",
+  "en": "That is to say",
+  "ja": "すなわち",
+  "cat": "Frases"
+ },
+ {
+  "es": "Asimismo",
+  "en": "Likewise",
+  "ja": "同様に",
+  "cat": "Frases"
  }
 ];

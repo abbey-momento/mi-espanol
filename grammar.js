@@ -2074,5 +2074,127 @@ const GRAMMAR_ARTICLES = [
   "title": "アクセント記号（tilde）のルール",
   "body": "スペイン語の単語は、決まったルールで自然に強勢（アクセント）の位置が決まり、そのルールから外れる場合だけアクセント記号（tilde）をつけます。\n\n① 母音（a,e,i,o,u）またはn,sで終わる単語 → 後ろから2番目の音節に強勢：casa, hablan, libros\n② それ以外の子音で終わる単語 → 最後の音節に強勢：hablar, ciudad, reloj\n③ このルールに当てはまらない単語には、強勢のある母音にtildeをつける：café, canción, árbol\n\nまた、qué/cuál/cómoのような疑問詞は、疑問の意味のときだけtildeがつきます（que＝関係代名詞「〜する」、qué＝疑問詞「何」）。\n\n■ 1音節語の書き分け（tilde diacrítica）\n1音節の単語は本来アクセント記号がつかないはずですが、同じ綴りで意味・品詞が異なる単語を区別するためだけに、例外的にtildeをつけることがあります。\n\ntu（君の、所有形容詞）／ tú（君は、主語代名詞）\nsi（もし〜なら、接続詞）／ sí（はい／それ自身、returnとsíの再帰代名詞用法）\nel（その、定冠詞）／ él（彼は、主語代名詞）\nse（再帰代名詞）／ sé（saberの一人称現在形「知っている」、serの命令形「〜であれ」）\nmas（しかし、文語的）／ más（もっと、比較・程度）\nde（〜の、前置詞）／ dé（darの接続法現在形）\naun（〜さえ、aun asíなど）／ aún（まだ、todavíaとほぼ同義）\n\nいずれも「意味の重要な方、より内容語らしい方」にtildeがつく、という緩やかな傾向がありますが、基本的には一つ一つのペアを覚えるしかありません。",
   "cat": "文の組み立て・その他"
+ },
+ {
+  "title": "よく使う接頭辞（pre-, co-, in-, re- など）",
+  "cat": "文の組み立て・その他",
+  "body": "接頭辞（prefijo）は単語の頭につくパーツで、意味を規則的に変化させます。知っていると初めて見る単語でも意味を推測しやすくなります。\n\n■ pre-（前に、あらかじめ）\npredecir（予言する＝decir前に言う）、prever（予見する）、preocupar（心配させる＝occupare前に心を占める）\n\n■ co- / con-（一緒に）\ncoexistir（共存する）、colaborar（協力する）、convivir（共に生きる）、compartir（分け合う）\n\n■ in- / im-（否定：〜でない）\ninútil（無用な）、increíble（信じられない）、imposible（不可能な）、b/p/mの前ではim-になる（in+posible→imposible）\n\n■ des-（否定・反対の動作：〜しない、逆に〜する）\ndeshacer（元に戻す）、desconectar（切断する）、desaparecer（消える←aparecer現れる）\n\n■ re-（再び、強調）\nrehacer（作り直す）、releer（読み直す）、rebuscar（念入りに探す、強調）\n\n■ sobre-（上に、過剰に）\nsobrevivir（生き延びる）、sobrepasar（超える）、sobrecargar（過積載する）\n\n■ sub-（下に）\nsubterráneo（地下の）、submarino（潜水艦、海の下）、subestimar（過小評価する）\n\n■ anti-（反対の、対抗する）\nantisocial（反社会的な）、antivirus（アンチウイルス）\n\n■ inter-（〜の間の）\ninternacional（国際的な）、intercambiar（交換する）\n\n■ ex-（元〜、外に）\nexpresidente（元大統領）、exportar（輸出する、外へ運ぶ）\n\nこれらは英語の接頭辞（pre-, co-, in-, re-など）とほぼ共通しているものが多く、英語を知っていると推測しやすいのもポイントです。",
+  "table": {
+   "cols": [
+    "接頭辞",
+    "意味",
+    "例"
+   ],
+   "rows": [
+    [
+     "pre-",
+     "前に、あらかじめ",
+     "predecir（予言する）"
+    ],
+    [
+     "co- / con-",
+     "一緒に",
+     "colaborar（協力する）"
+    ],
+    [
+     "in- / im-",
+     "否定",
+     "imposible（不可能な）"
+    ],
+    [
+     "des-",
+     "否定・逆の動作",
+     "deshacer（元に戻す）"
+    ],
+    [
+     "re-",
+     "再び、強調",
+     "rehacer（作り直す）"
+    ],
+    [
+     "sobre-",
+     "上に、過剰に",
+     "sobrevivir（生き延びる）"
+    ]
+   ]
+  }
+ },
+ {
+  "title": "形容詞・名詞を作る接尾辞（-oso, -ción, -dad など）",
+  "cat": "文の組み立て・その他",
+  "body": "接尾辞（sufijo）は単語の語末につくパーツで、品詞そのものを変化させます。パターンを知っておくと、名詞から形容詞を作ったり、動詞から名詞を作ったりする力がつきます。\n\n■ 名詞 → 形容詞\n-oso / -osa（〜に満ちた）：peligro（危険）→peligroso（危険な）、fama（名声）→famoso（有名な）\n-al（〜に関する）：nación（国）→nacional（国の）、cultura（文化）→cultural（文化的な）\n-able / -ible（〜できる）：comer（食べる）→comestible（食べられる）、lavar（洗う）→lavable（洗濯可能な）\n\n■ 動詞 → 名詞（抽象概念）\n-ción / -sión（動作・結果）：informar（知らせる）→información（情報）、decidir（決める）→decisión（決断）\n-miento（動作・結果）：pensar（考える）→pensamiento（思考）、conocer（知る）→conocimiento（知識）\n\n■ 形容詞 → 名詞（性質）\n-dad / -tad（〜さ、性質）：libre（自由な）→libertad（自由）、real（現実の）→realidad（現実）\n-eza（〜さ、性質）：triste（悲しい）→tristeza（悲しみ）、pobre（貧しい）→pobreza（貧しさ）\n-ura（〜さ、性質）：dulce（甘い）→dulzura（甘さ）、blanco（白い）→blancura（白さ）\n\nこの3系統（名詞→形容詞、動詞→名詞、形容詞→名詞）を覚えておくと、単語を見たときに「あ、これは名詞に-ciónがついているから、元は動詞のはずだ」というように、知らない単語でも品詞と大まかな意味を推測できるようになります。",
+  "table": {
+   "cols": [
+    "接尾辞",
+    "変化",
+    "例"
+   ],
+   "rows": [
+    [
+     "-oso/-osa",
+     "名詞→形容詞",
+     "peligroso（危険な）"
+    ],
+    [
+     "-able/-ible",
+     "動詞→形容詞",
+     "lavable（洗える）"
+    ],
+    [
+     "-ción/-sión",
+     "動詞→名詞",
+     "información（情報）"
+    ],
+    [
+     "-miento",
+     "動詞→名詞",
+     "pensamiento（思考）"
+    ],
+    [
+     "-dad/-tad",
+     "形容詞→名詞",
+     "libertad（自由）"
+    ],
+    [
+     "-eza",
+     "形容詞→名詞",
+     "tristeza（悲しみ）"
+    ]
+   ]
+  }
+ },
+ {
+  "title": "職業・人を表す接尾辞（-ista, -ero, -or など）",
+  "cat": "文の組み立て・その他",
+  "body": "スペイン語には「〜する人」「〜に関わる人」を表す接尾辞がいくつかあり、職業名や役割を表す単語の多くがこのパターンに従っています。\n\n■ -ista（〜に従事する人、男女同形）\ndentista（歯医者）、artista（芸術家）、periodista（ジャーナリスト）、taxista（タクシー運転手）\n特徴：男性形・女性形が同じ（el dentista / la dentista）。\n\n■ -ero / -era（〜を扱う人、職人）\npanadero（パン屋）、zapatero（靴屋）、carpintero（大工）、cartero（郵便配達人）\n特徴：扱う物・場所（pan, zapato, carta）に-ero/-eraをつけることが多い。\n\n■ -or / -ora（〜する人、動作主）\nprofesor（教師←profesar教える）、director（監督←dirigir指揮する）、actor（俳優←actuar演じる）\n特徴：動詞から派生し、「その動作を行う人」を表す。\n\n■ -ante / -ente（〜する人、現在分詞由来）\ncantante（歌手←cantar歌う）、estudiante（学生←estudiar勉強する）、cliente（客←現在は独立した語）\n特徴：動詞の現在分詞（-ando/-iendo）に近い形から生まれた語で、多くが男女同形。\n\nどの接尾辞を使うかは単語ごとに決まっているため一つ一つ覚える必要がありますが、「知らない職業名を見たときに、語尾がisita/ero/or/anteのどれかを見れば、それが人を表す語だとすぐに気づける」という点で、推測力が大きく上がります。",
+  "table": {
+   "cols": [
+    "接尾辞",
+    "タイプ",
+    "例"
+   ],
+   "rows": [
+    [
+     "-ista",
+     "従事者（男女同形）",
+     "dentista（歯医者）"
+    ],
+    [
+     "-ero/-era",
+     "職人・扱う人",
+     "panadero（パン屋）"
+    ],
+    [
+     "-or/-ora",
+     "動作主",
+     "director（監督）"
+    ],
+    [
+     "-ante/-ente",
+     "動作主（男女同形が多い）",
+     "cantante（歌手）"
+    ]
+   ]
+  }
  }
 ];
