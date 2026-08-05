@@ -194,8 +194,10 @@
   .dict-pending { text-align:center; color:#9C8FC2; font-size:13px; padding:20px 0; }
   .dict-chip-row { display:flex; gap:6px; flex-wrap:wrap; }
   .dict-tag { background: rgba(255,255,255,0.08); border-radius:999px; padding:6px 12px; font-size:12px; color:#EFE7FA; }
-  .dict-cat-badge { display:inline-block; background: rgba(255,60,172,0.14); border:1px solid rgba(255,60,172,0.3); color:var(--accent3);
-    border-radius:999px; padding:3px 11px; font-size:11px; font-weight:700; margin-top:6px; letter-spacing:0.02em; }
+  .dict-cat-badge { display:inline-block; background: rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.16); color:#B9AAD9;
+    border-radius:999px; padding:3px 11px; font-size:11px; font-weight:600; margin-top:6px; margin-right:6px; letter-spacing:0.02em; cursor:pointer; }
+  .dict-cat-badge:active { background: rgba(255,255,255,0.14); }
+  .dict-cat-badge.pos-badge { color:#8FB3D9; border-color:rgba(143,179,217,0.25); }
   .dict-dialogue { background: rgba(255,255,255,0.05); border-radius:14px; padding:14px 16px; white-space:pre-wrap; font-size:13.5px; line-height:1.7; color:#EFE7FA; }
   .dict-dialogue-ja { font-size:12.5px; color:#9C8FC2; margin-top:8px; }
   .dict-nav-float { position:fixed; bottom:24px; display:flex; flex-direction:column; gap:10px; z-index:60; }
@@ -601,7 +603,7 @@ function labelFor(ex, topic){
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:[], dictColloquialOnly:false, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, phraseCardMode:"list", phraseCardLangFirst:"es", grammarRoadmapOpen:false, columnMode:"cards" };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:[], dictColloquialOnly:false, dictTagFilter:null, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, phraseCardMode:"list", phraseCardLangFirst:"es", grammarRoadmapOpen:false, columnMode:"cards" };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -1007,6 +1009,15 @@ function renderDictionary(){
   search.value = state.dictSearch;
   search.oninput = (e)=>{ state.dictSearch = e.target.value; state.dictListLimit=60; renderDictList(); };
   app.appendChild(search);
+  if(state.dictTagFilter){
+    const tagBanner = el("div"); tagBanner.style.display="flex"; tagBanner.style.alignItems="center"; tagBanner.style.gap="8px"; tagBanner.style.margin="10px 0";
+    const tagLabel = el("div"); tagLabel.style.fontSize="13px"; tagLabel.style.color="#B9AAD9";
+    tagLabel.textContent = `タグ「${state.dictTagFilter}」で絞り込み中`;
+    const clearBtn = el("button","chip", "✕ 解除");
+    clearBtn.onclick = ()=>{ playTap(); state.dictTagFilter=null; state.dictListLimit=60; render(); };
+    tagBanner.appendChild(tagLabel); tagBanner.appendChild(clearBtn);
+    app.appendChild(tagBanner);
+  }
   const chipRow = el("div","chip-row");
   [["all","すべて"],["flagged","⭐ フラグのみ"],["hidden","🙈 非表示リスト"]].forEach(([mode,label])=>{
     const chip = el("button","chip"+(state.dictFilterMode===mode?" active":""), label);
@@ -1066,6 +1077,7 @@ function getDictList(keepId){
   else if(state.dictFilterMode==="hidden") list = list.filter(w => (progress.hidden||{})[w.id] || w.id===keepId);
   else list = list.filter(w => !(progress.hidden||{})[w.id] || w.id===keepId);
   if(state.dictColloquialOnly) list = list.filter(w=>w.cat==="Coloquial" || w.id===keepId);
+  if(state.dictTagFilter) list = list.filter(w=>(w.cat===state.dictTagFilter || w.pos===state.dictTagFilter) || w.id===keepId);
   if(state.dictLevelFilter && state.dictLevelFilter.length>0) list = list.filter(w=>state.dictLevelFilter.includes(w.cefr) || w.id===keepId);
   if(q){
     list = list.filter(w => normDictKey(w.es).includes(q) || normDictKey(w.ja).includes(q) || normDictKey(w.en).includes(q) || w.id===keepId);
@@ -1156,9 +1168,22 @@ function renderDictDetail(){
   if(backBtn) app.appendChild(backBtn);
   const header = el("div","dict-detail-header");
   header.innerHTML = `<div class="dict-detail-es">${vocabWord ? vocabWord.es : key}</div>
-    <div class="dict-detail-en-ja">${vocabWord ? vocabWord.en+" ／ "+vocabWord.ja : ""}</div>
-    ${vocabWord && vocabWord.cat ? `<div class="dict-cat-badge">${vocabWord.cat}</div>` : ""}`;
+    <div class="dict-detail-en-ja">${vocabWord ? vocabWord.en+" ／ "+vocabWord.ja : ""}</div>`;
   app.appendChild(header);
+  if(vocabWord && (vocabWord.pos || vocabWord.cat)){
+    const tagRow = el("div"); tagRow.style.textAlign="center";
+    if(vocabWord.pos){
+      const posTag = el("button","dict-cat-badge pos-badge", vocabWord.pos);
+      posTag.onclick = ()=>{ playTap(); state.dictTagFilter=vocabWord.pos; state.dictDetailWord=null; state.dictListLimit=60; render(); window.scrollTo(0,0); };
+      tagRow.appendChild(posTag);
+    }
+    if(vocabWord.cat){
+      const catTag = el("button","dict-cat-badge", vocabWord.cat);
+      catTag.onclick = ()=>{ playTap(); state.dictTagFilter=vocabWord.cat; state.dictDetailWord=null; state.dictListLimit=60; render(); window.scrollTo(0,0); };
+      tagRow.appendChild(catTag);
+    }
+    app.appendChild(tagRow);
+  }
   if(vocabWord){
     if(lastSpokenDictKey !== key){
       lastSpokenDictKey = key;
