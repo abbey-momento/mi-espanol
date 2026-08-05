@@ -62,6 +62,9 @@
   .legend-label { font-size:11px; color:#8A7AAE; font-weight:600; }
   .section-label { font-size:12px; font-weight:700; color:#D9CCEF; letter-spacing:0.06em; margin-bottom:9px; }
   .chip-row { display:flex; gap:7px; flex-wrap:wrap; margin-bottom:20px; }
+  .chip-mini-toggle { width:30px; height:30px; border-radius:999px; border:1px solid rgba(255,255,255,0.18);
+    background:rgba(255,255,255,0.05); color:#B9AAD9; font-size:11px; cursor:pointer; font-family:inherit;
+    display:flex; align-items:center; justify-content:center; padding:0; align-self:center; }
   .chip { padding:7px 13px; border-radius:999px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.07);
     color:#E4D9F7; font-size:12px; font-weight:600; cursor:pointer; font-family:inherit; }
   .chip.active { background: linear-gradient(135deg, var(--accent), var(--violet)); color:#fff; border:1px solid transparent; }
@@ -1421,31 +1424,32 @@ function buildConjQuestion(tenseFilter){
 }
 function renderConjDrill(){
   app.appendChild(backToMenuBtn());
-  app.appendChild(el("div","section-label","動詞のタイプ"));
-  const verbTypeRow = el("div","chip-row");
-  [["all","すべて"],["regular","規則動詞のみ"],["irregular","不規則動詞のみ"]].forEach(([key,label])=>{
-    const chip = el("button","chip"+(state.conjVerbType===key?" active":""), label);
-    chip.onclick = ()=>{ playTap(); state.conjVerbType=key; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; render(); };
-    verbTypeRow.appendChild(chip);
+  app.appendChild(el("div","section-label","モード"));
+  const modeRow = el("div","chip-row");
+  [["input","✍️ 入力で答える"],["flashcard","🗂️ カードでパラパラ確認"]].forEach(([key,label])=>{
+    const chip = el("button","chip"+((state.conjDrillMode||"input")===key?" active":""), label);
+    chip.onclick = ()=>{ playTap(); state.conjDrillMode=key; conjQuestion=null; conjFlashFlipped=false; render(); };
+    modeRow.appendChild(chip);
   });
-  app.appendChild(verbTypeRow);
+  app.appendChild(modeRow);
   app.appendChild(el("div","section-label","時制を選ぶ"));
+  const TENSE_LABELS_SHORT = Object.assign({}, TENSE_LABELS, { imperativo_mix:"命令形" });
   const COMMON_TENSES = ["presente","indefinido","imperfecto","futuro","perfecto","imperativo_mix","subjuntivo"];
   const MORE_TENSES = TENSE_KEYS.filter(t=>!COMMON_TENSES.includes(t) && t!=="imperativo" && t!=="imperativo_neg").concat(["imperativo","imperativo_neg"]);
   const chipRow = el("div","chip-row");
   ["Todos", ...COMMON_TENSES].forEach(t=>{
-    const label = t==="Todos" ? "Todos" : TENSE_LABELS[t];
+    const label = t==="Todos" ? "Todos" : TENSE_LABELS_SHORT[t];
     const chip = el("button","chip"+(state.conjTense===t?" active":""), label);
     chip.onclick = ()=>{ playTap(); state.conjTense=t; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; render(); };
     chipRow.appendChild(chip);
   });
-  app.appendChild(chipRow);
   const moreSelected = MORE_TENSES.includes(state.conjTense);
   const isMoreOpen = state.conjShowMoreTenses || moreSelected;
-  const moreToggle = el("button","ghost-btn", isMoreOpen ? "▲ 閉じる" : "▼ もっと見る（接続法・完了形など）");
-  moreToggle.style.marginBottom="10px";
+  const moreToggle = el("button","chip-mini-toggle", isMoreOpen ? "▲" : "▼");
+  moreToggle.title = isMoreOpen ? "閉じる" : "もっと見る（接続法・完了形など）";
   moreToggle.onclick = ()=>{ playTap(); state.conjShowMoreTenses = !state.conjShowMoreTenses; render(); };
-  app.appendChild(moreToggle);
+  chipRow.appendChild(moreToggle);
+  app.appendChild(chipRow);
   if(isMoreOpen){
     const moreRow = el("div","chip-row");
     MORE_TENSES.forEach(t=>{
@@ -1455,14 +1459,14 @@ function renderConjDrill(){
     });
     app.appendChild(moreRow);
   }
-  app.appendChild(el("div","section-label","モード"));
-  const modeRow = el("div","chip-row");
-  [["input","✍️ 入力で答える"],["flashcard","🗂️ カードでパラパラ確認"]].forEach(([key,label])=>{
-    const chip = el("button","chip"+((state.conjDrillMode||"input")===key?" active":""), label);
-    chip.onclick = ()=>{ playTap(); state.conjDrillMode=key; conjQuestion=null; conjFlashFlipped=false; render(); };
-    modeRow.appendChild(chip);
+  app.appendChild(el("div","section-label","動詞のタイプ"));
+  const verbTypeRow = el("div","chip-row");
+  [["all","すべて"],["regular","規則動詞のみ"],["irregular","不規則動詞のみ"]].forEach(([key,label])=>{
+    const chip = el("button","chip"+(state.conjVerbType===key?" active":""), label);
+    chip.onclick = ()=>{ playTap(); state.conjVerbType=key; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; render(); };
+    verbTypeRow.appendChild(chip);
   });
-  app.appendChild(modeRow);
+  app.appendChild(verbTypeRow);
   if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; conjFlashFlipped=false; }
   if((state.conjDrillMode||"input")==="flashcard"){ renderConjFlashcard(); return; }
   if(conjIdx>=conjTotal){ if(!conjFanfarePlayed){ conjFanfarePlayed=true; playFanfare(); } doneScreenConj(); return; }
