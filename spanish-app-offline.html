@@ -88,6 +88,8 @@
     backface-visibility:hidden; padding:20px; text-align:center; }
   .flash-front { background:var(--card); color:var(--ink); border:1px solid var(--paper-line); }
   .flash-back { background: linear-gradient(135deg, var(--accent3), var(--accent)); color:var(--ink); transform:rotateY(180deg); }
+  .conj-flashcard .flash-front { border:1.5px solid rgba(120,170,255,0.4); }
+  .conj-flash-back { background: linear-gradient(135deg, #4F7FE0, #7B5FD9); }
   .flash-word { font-family: Georgia, serif; font-size:26px; font-weight:700; }
   .flash-ja { font-size:14px; margin-top:6px; opacity:0.8; font-weight:600; }
   .tap-hint { font-size:11.5px; margin-top:9px; opacity:.65; font-weight:600; }
@@ -1407,6 +1409,7 @@ function renderConjTab(){
 }
 
 let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjLog=[], lastSpokenConjKey=null, conjFanfarePlayed=false, conjFlashFlipped=false;
+let conjFlashHistory=[], conjFlashHistoryIdx=-1;
 function buildConjQuestion(tenseFilter){
   if(tenseFilter==="imperativo_mix") tenseFilter = Math.random()<0.5 ? "imperativo" : "imperativo_neg";
   const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
@@ -1435,7 +1438,7 @@ function renderConjDrill(){
   app.appendChild(el("div","section-label","時制を選ぶ"));
   const TENSE_LABELS_SHORT = Object.assign({}, TENSE_LABELS, { imperativo_mix:"命令形" });
   const COMMON_TENSES = ["presente","indefinido","imperfecto","futuro","perfecto","imperativo_mix","subjuntivo"];
-  const MORE_TENSES = TENSE_KEYS.filter(t=>!COMMON_TENSES.includes(t) && t!=="imperativo" && t!=="imperativo_neg").concat(["imperativo","imperativo_neg"]);
+  const MORE_TENSES = TENSE_KEYS.filter(t=>!COMMON_TENSES.includes(t) && t!=="imperativo" && t!=="imperativo_neg");
   const chipRow = el("div","chip-row");
   ["Todos", ...COMMON_TENSES].forEach(t=>{
     const label = t==="Todos" ? "Todos" : TENSE_LABELS_SHORT[t];
@@ -1467,7 +1470,7 @@ function renderConjDrill(){
     verbTypeRow.appendChild(chip);
   });
   app.appendChild(verbTypeRow);
-  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; conjFlashFlipped=false; }
+  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; conjFlashFlipped=false; conjFlashHistory=[conjQuestion]; conjFlashHistoryIdx=0; }
   if((state.conjDrillMode||"input")==="flashcard"){ renderConjFlashcard(); return; }
   if(conjIdx>=conjTotal){ if(!conjFanfarePlayed){ conjFanfarePlayed=true; playFanfare(); } doneScreenConj(); return; }
   const conjKey = conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
@@ -1539,35 +1542,59 @@ function doneScreenConj(){
   app.appendChild(rl);
 }
 
+function conjFlashGoNext(){
+  if(conjFlashHistoryIdx < conjFlashHistory.length-1){
+    conjFlashHistoryIdx++;
+  } else {
+    const q = buildConjQuestion(state.conjTense);
+    conjFlashHistory.push(q);
+    conjFlashHistoryIdx++;
+    if(conjFlashHistory.length>50) { conjFlashHistory.shift(); conjFlashHistoryIdx--; }
+  }
+  conjQuestion = conjFlashHistory[conjFlashHistoryIdx];
+  conjFlashFlipped = false;
+}
+function conjFlashGoPrev(){
+  if(conjFlashHistoryIdx<=0) return;
+  conjFlashHistoryIdx--;
+  conjQuestion = conjFlashHistory[conjFlashHistoryIdx];
+  conjFlashFlipped = false;
+}
 function renderConjFlashcard(){
   const conjKey = conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
   if(lastSpokenConjKey !== conjKey){ lastSpokenConjKey = conjKey; if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(conjQuestion.verb.v), 150); }
   const cardArea = el("div","card-area");
-  const fcEl = el("div","flashcard"+(conjFlashFlipped?" flipped":""));
+  const fcEl = el("div","flashcard conj-flashcard"+(conjFlashFlipped?" flipped":""));
   const front = el("div","flash-face flash-front");
   front.innerHTML = `<div style="font-size:12px;color:#9C8FC2;font-weight:700;margin-bottom:6px;">${TENSE_LABELS[conjQuestion.tense]}</div>
     <div class="flash-word">${conjQuestion.verb.v}</div>
     <div style="font-size:13px;color:#8A7CB0;margin-top:4px;">（${conjQuestion.verb.ja}）</div>
     <div style="font-size:15px;font-weight:700;margin-top:10px;">${conjQuestion.personLabel}</div>
     <div class="tap-hint">タップして答えを見る</div>`;
-  const back = el("div","flash-face flash-back");
+  const back = el("div","flash-face flash-back conj-flash-back");
   back.innerHTML = `<div class="flash-word">${conjQuestion.answer}</div>
     <div class="tap-hint">${conjQuestion.verb.v}（${conjQuestion.personLabel}）</div>
     <div class="tap-hint">タップして次のカードへ</div>`;
   fcEl.appendChild(front); fcEl.appendChild(back);
   fcEl.onclick = ()=>{
     if(!conjFlashFlipped){ playFlip(); conjFlashFlipped=true; render(); }
-    else{ playTap(); conjQuestion = buildConjQuestion(state.conjTense); conjFlashFlipped=false; render(); }
+    else{ playTap(); conjFlashGoNext(); render(); }
   };
   cardArea.appendChild(fcEl);
   app.appendChild(cardArea);
-  const speakRowEl = el("div"); speakRowEl.style.textAlign="center"; speakRowEl.style.marginTop="10px";
+  const posLabel = el("div"); posLabel.style.textAlign="center"; posLabel.style.fontSize="12px"; posLabel.style.color="#8A7CB0"; posLabel.style.marginTop="8px";
+  posLabel.textContent = `${conjFlashHistoryIdx+1}枚目`;
+  app.appendChild(posLabel);
+  const speakRowEl = el("div"); speakRowEl.style.textAlign="center"; speakRowEl.style.marginTop="6px";
   const speakBtn = el("button","speak-btn","🔊");
   speakBtn.onclick = (e)=>{ e.stopPropagation(); speak(conjQuestion.verb.v); };
   speakRowEl.appendChild(speakBtn);
   app.appendChild(speakRowEl);
-  const hint = el("div","footer-hint","スコアは記録されません。カードをタップするたびに「めくる→次へ」を繰り返せます。");
+  const hint = el("div","footer-hint","スコアは記録されません。カードをタップするたびに「めくる→次へ」を繰り返せます。右側のボタンで前のカードにも戻れます。");
   app.appendChild(hint);
+  const onPrev = conjFlashHistoryIdx>0 ? ()=>{ playTap(); conjFlashGoPrev(); render(); } : null;
+  const onNext = ()=>{ playTap(); conjFlashGoNext(); render(); };
+  app.appendChild(buildFloatingNav("← 前のカード", "次のカード →", onPrev, onNext));
 }
 
 /* ---------- Example sentence fill-in-the-blank ---------- */
