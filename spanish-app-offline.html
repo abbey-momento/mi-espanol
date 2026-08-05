@@ -172,6 +172,13 @@
   .grammar-table-hint { font-size:11px; color:#9C8FC2; margin-top:6px; text-align:right; }
   .grammar-list-item { background: rgba(255,255,255,0.06); border-radius:16px; padding:16px 18px; margin-bottom:12px; border:1px solid rgba(255,255,255,0.13); cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
   .grammar-list-title { font-family: Georgia, serif; font-size:15px; font-weight:700; color:var(--card); }
+  .faq-bubble-row { display:flex; align-items:flex-end; gap:8px; margin-bottom:16px; cursor:pointer; }
+  .faq-avatar { flex-shrink:0; width:34px; height:34px; border-radius:999px; background:linear-gradient(135deg, var(--accent3), var(--accent));
+    display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:800; color:#2A1245; }
+  .faq-bubble { position:relative; background: rgba(255,255,255,0.09); border:1px solid rgba(255,255,255,0.15); border-radius:18px 18px 18px 4px;
+    padding:12px 16px; font-size:14px; line-height:1.55; color:var(--card); flex:1; transition:background .15s; }
+  .faq-bubble-row:active .faq-bubble { background: rgba(255,60,172,0.16); border-color: rgba(255,60,172,0.35); }
+  .faq-bubble-num { font-size:10.5px; color:#9C8FC2; font-weight:700; margin-bottom:3px; letter-spacing:0.03em; }
   .grammar-chevron { color:#C9BBE8; font-size:16px; }
   .dict-search { width:100%; padding:12px 16px; border-radius:14px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.08);
     color:var(--card); font-size:15px; font-family:inherit; margin-bottom:16px; }
@@ -187,6 +194,8 @@
   .dict-pending { text-align:center; color:#9C8FC2; font-size:13px; padding:20px 0; }
   .dict-chip-row { display:flex; gap:6px; flex-wrap:wrap; }
   .dict-tag { background: rgba(255,255,255,0.08); border-radius:999px; padding:6px 12px; font-size:12px; color:#EFE7FA; }
+  .dict-cat-badge { display:inline-block; background: rgba(255,60,172,0.14); border:1px solid rgba(255,60,172,0.3); color:var(--accent3);
+    border-radius:999px; padding:3px 11px; font-size:11px; font-weight:700; margin-top:6px; letter-spacing:0.02em; }
   .dict-dialogue { background: rgba(255,255,255,0.05); border-radius:14px; padding:14px 16px; white-space:pre-wrap; font-size:13.5px; line-height:1.7; color:#EFE7FA; }
   .dict-dialogue-ja { font-size:12.5px; color:#9C8FC2; margin-top:8px; }
   .dict-nav-float { position:fixed; bottom:24px; display:flex; flex-direction:column; gap:10px; z-index:60; }
@@ -263,7 +272,7 @@ function tone(freq, dur, type){
   }catch(e){}
 }
 function playCorrect(){ tone(880,0.12,"sine"); setTimeout(()=>tone(1180,0.15,"sine"),90); }
-function playWrong(){ tone(180,0.25,"sawtooth"); }
+function playWrong(){ tone(330,0.11,"sine"); setTimeout(()=>tone(260,0.16,"sine"),100); }
 function playFanfare(){
   const notes = [523,659,784,1047];
   notes.forEach((f,i)=> setTimeout(()=>tone(f,0.22,"triangle"), i*110));
@@ -592,7 +601,7 @@ function labelFor(ex, topic){
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:[], dictColloquialOnly:false, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, grammarRoadmapOpen:false, columnMode:"cards" };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:[], dictColloquialOnly:false, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, phraseCardMode:"list", phraseCardLangFirst:"es", grammarRoadmapOpen:false, columnMode:"cards" };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -671,7 +680,7 @@ function render(){
     renderFaq();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; stopDictAutoPlay(); columnDeck=[]; faqDetailIdx=null; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; phraseFlashStates=[]; phraseFlashStateIdx=-1; phraseFlashSceneIdx=null; stopDictAutoPlay(); columnDeck=[]; faqDetailIdx=null; }
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","ドリル"],["phrases","フレーズ"],["dict","辞書"],["grammar","文法"],["more","その他"]].forEach(([key,label])=>{
@@ -815,6 +824,7 @@ function goToDictionary(word, returnContext){
   state.tab = "dict";
   state.dictDetailWord = normDictKey(word);
   render();
+  window.scrollTo(0,0);
 }
 /* ---------- 辞書の自動再生（詳細ページを見ながら聞き流す） ---------- */
 let dictAutoList = [], dictAutoIdx = 0, dictAutoGen = 0;
@@ -1146,7 +1156,8 @@ function renderDictDetail(){
   if(backBtn) app.appendChild(backBtn);
   const header = el("div","dict-detail-header");
   header.innerHTML = `<div class="dict-detail-es">${vocabWord ? vocabWord.es : key}</div>
-    <div class="dict-detail-en-ja">${vocabWord ? vocabWord.en+" ／ "+vocabWord.ja : ""}</div>`;
+    <div class="dict-detail-en-ja">${vocabWord ? vocabWord.en+" ／ "+vocabWord.ja : ""}</div>
+    ${vocabWord && vocabWord.cat ? `<div class="dict-cat-badge">${vocabWord.cat}</div>` : ""}`;
   app.appendChild(header);
   if(vocabWord){
     if(lastSpokenDictKey !== key){
@@ -1173,7 +1184,7 @@ function renderDictDetail(){
     app.appendChild(el("div","dict-pending","詳しい解説（ニュアンス・語源・類語など）は準備中です 🚧\n基本の意味は上に表示されている通りです。"));
   } else {
     if(detail.nuance){
-      app.appendChild(el("div","dict-section-title","ニュアンス"));
+      app.appendChild(el("div","dict-section-title","解説"));
       app.appendChild(el("div","article-body", detail.nuance));
     }
     if(detail.etymology){
@@ -1415,6 +1426,7 @@ function renderConjTab(){
 
 let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjLog=[], lastSpokenConjKey=null, conjFanfarePlayed=false, conjFlashFlipped=false;
 let conjFlashStates=[], conjFlashStateIdx=-1;
+let phraseFlashStates=[], phraseFlashStateIdx=-1, phraseFlashSceneIdx=null, lastSpokenPhraseKey=null;
 function buildConjQuestion(tenseFilter){
   if(tenseFilter==="imperativo_mix") tenseFilter = Math.random()<0.5 ? "imperativo" : "imperativo_neg";
   const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
@@ -1497,11 +1509,12 @@ function renderConjDrill(){
   const fb = el("div","conj-feedback");
   app.appendChild(fb);
   let submitted = false;
+  let goNext = null;
   function submitAnswer(){
     if(submitted) return;
-    const val = input.value; if(!val) return;
+    const val = input.value;
     submitted = true;
-    const ok = norm(val) === norm(conjQuestion.answer);
+    const ok = val!=="" && norm(val) === norm(conjQuestion.answer);
     if(ok){ conjScore++; playCorrect(); fb.textContent = "¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent = `正解: ${conjQuestion.answer}`; fb.className="conj-feedback no"; conjMissed.push({...conjQuestion}); }
     conjLog.push({ q:{...conjQuestion}, correct:ok, userAnswer:val });
@@ -1509,18 +1522,19 @@ function renderConjDrill(){
     submit.disabled = true;
     const nextBtn = el("button","primary-btn", conjIdx+1>=conjTotal ? "結果を見る" : "次の問題へ →");
     nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
-    nextBtn.onclick = ()=>{
+    goNext = ()=>{
       playTap();
       conjIdx++;
       if(conjIdx<conjTotal){ conjQuestion = buildConjQuestion(state.conjTense); }
       render();
     };
+    nextBtn.onclick = goNext;
     app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
   submit.addEventListener("mousedown", (e)=>e.preventDefault());
   submit.addEventListener("touchstart", (e)=>{ e.preventDefault(); submitAnswer(); }, {passive:false});
-  input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
+  input.onkeydown = (e)=>{ if(e.key==="Enter"){ if(submitted){ if(goNext) goNext(); } else submitAnswer(); } };
   if(conjIdx>0) input.focus();
 }
 function doneScreenConj(){
@@ -1693,12 +1707,13 @@ function renderExamples(){
   const jaLine = el("div","sentence-ja");
   app.appendChild(jaLine);
   let submitted = false;
+  let goNext = null;
   function submitAnswer(){
     if(submitted) return;
-    const val = input.value; if(!val) return;
+    const val = input.value;
     submitted = true;
     const answer = answerFor(ex);
-    const ok = norm(val) === norm(answer);
+    const ok = val!=="" && norm(val) === norm(answer);
     document.getElementById("exblank").textContent = answer;
     const roleTag = (topic==="pronombre"||topic==="pronombre_doble") ? classifyPronounRole(answer) : null;
     const roleHtml = roleTag ? ` <span style="font-size:11px;color:var(--accent3);">（${roleTag}）</span>` : "";
@@ -1711,13 +1726,14 @@ function renderExamples(){
     submit.disabled=true;
     const nextBtn = el("button","primary-btn", exIdx+1>=exDeck.length ? "結果を見る" : "次の問題へ →");
     nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
-    nextBtn.onclick = ()=>{ playTap(); exIdx++; render(); };
+    goNext = ()=>{ playTap(); exIdx++; render(); };
+    nextBtn.onclick = goNext;
     app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
   submit.addEventListener("mousedown", (e)=>e.preventDefault());
   submit.addEventListener("touchstart", (e)=>{ e.preventDefault(); submitAnswer(); }, {passive:false});
-  input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
+  input.onkeydown = (e)=>{ if(e.key==="Enter"){ if(submitted){ if(goNext) goNext(); } else submitAnswer(); } };
   if(exIdx>0) input.focus();
 }
 
@@ -1778,30 +1794,32 @@ function renderNumbersDrill(){
   const fb = el("div","conj-feedback");
   app.appendChild(fb);
   let submitted = false;
+  let goNext = null;
   function submitAnswer(){
     if(submitted) return;
-    const val = input.value; if(!val) return;
+    const val = input.value;
     submitted = true;
     const acceptable = numQuestion.acceptable || [numQuestion.answer];
-    const ok = acceptable.some(a => norm(val) === norm(a));
+    const ok = val!=="" && acceptable.some(a => norm(val) === norm(a));
     if(ok){ numScore++; playCorrect(); fb.textContent="¡Correcto! ✓"; fb.className="conj-feedback ok"; }
     else{ playWrong(); fb.textContent=`正解: ${numQuestion.answer}`; fb.className="conj-feedback no"; numMissed.push(numQuestion); }
     numLog.push({ q:numQuestion, correct:ok, userAnswer:val });
     submit.disabled=true;
     const nextBtn = el("button","primary-btn", numIdx+1>=numTotal ? "結果を見る" : "次の問題へ →");
     nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
-    nextBtn.onclick = ()=>{
+    goNext = ()=>{
       playTap();
       numIdx++;
       if(numIdx<numTotal){ numQuestion = buildNumQuestion(); }
       render();
     };
+    nextBtn.onclick = goNext;
     app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
   submit.addEventListener("mousedown", (e)=>e.preventDefault());
   submit.addEventListener("touchstart", (e)=>{ e.preventDefault(); submitAnswer(); }, {passive:false});
-  input.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
+  input.onkeydown = (e)=>{ if(e.key==="Enter"){ if(submitted){ if(goNext) goNext(); } else submitAnswer(); } };
   if(numIdx>0) input.focus();
 }
 
@@ -1867,13 +1885,13 @@ function renderListeningDrill(){
   const jaLine = el("div","sentence-ja");
   app.appendChild(jaLine);
   let submitted = false;
+  let goNext = null;
   function submitAnswer(){
     if(submitted) return;
     const v1 = input1.value, v2 = input2.value;
-    if(!v1 && !v2) return;
     submitted = true;
-    const ok1 = norm(v1) === norm(item.answers[0]);
-    const ok2 = norm(v2) === norm(item.answers[1]);
+    const ok1 = v1!=="" && norm(v1) === norm(item.answers[0]);
+    const ok2 = v2!=="" && norm(v2) === norm(item.answers[1]);
     const correctCount = (ok1?1:0)+(ok2?1:0);
     listenScore += correctCount;
     if(correctCount===2){ playCorrect(); fb.textContent="¡Perfecto! ✓ ✓"; fb.className="conj-feedback ok"; }
@@ -1884,14 +1902,15 @@ function renderListeningDrill(){
     submit.disabled=true;
     const nextBtn = el("button","primary-btn", listenIdx+1>=listenDeck.length ? "結果を見る" : "次の問題へ →");
     nextBtn.style.display="block"; nextBtn.style.margin="16px auto 0";
-    nextBtn.onclick = ()=>{ playTap(); listenIdx++; render(); };
+    goNext = ()=>{ playTap(); listenIdx++; render(); };
+    nextBtn.onclick = goNext;
     app.appendChild(nextBtn);
   }
   submit.onclick = submitAnswer;
   submit.addEventListener("mousedown", (e)=>e.preventDefault());
   submit.addEventListener("touchstart", (e)=>{ e.preventDefault(); submitAnswer(); }, {passive:false});
-  input1.onkeydown = (e)=>{ if(e.key==="Enter") input2.focus(); };
-  input2.onkeydown = (e)=>{ if(e.key==="Enter") submitAnswer(); };
+  input1.onkeydown = (e)=>{ if(e.key==="Enter"){ if(submitted){ if(goNext) goNext(); } else input2.focus(); } };
+  input2.onkeydown = (e)=>{ if(e.key==="Enter"){ if(submitted){ if(goNext) goNext(); } else submitAnswer(); } };
   if(listenIdx>0) input1.focus();
 }
 
@@ -1989,8 +2008,8 @@ function renderGrammar(){
   const gIdx = gList.findIndex(x => x.title===a.title);
   if(gIdx!==-1){ app.appendChild(el("div","footer-hint", `${gIdx+1} / ${gList.length}`)); }
   app.appendChild(el("div","dict-nav-spacer"));
-  const onPrev = gIdx>0 ? ()=>{ playTap(); grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===gList[gIdx-1].title); render(); } : null;
-  const onNext = (gIdx!==-1 && gIdx<gList.length-1) ? ()=>{ playTap(); grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===gList[gIdx+1].title); render(); } : null;
+  const onPrev = gIdx>0 ? ()=>{ playTap(); grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===gList[gIdx-1].title); render(); window.scrollTo(0,0); } : null;
+  const onNext = (gIdx!==-1 && gIdx<gList.length-1) ? ()=>{ playTap(); grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===gList[gIdx+1].title); render(); window.scrollTo(0,0); } : null;
   app.appendChild(buildFloatingNav("← 前のトピック", "次のトピック →", onPrev, onNext));
 }
 function renderGrammarRoadmap(){
@@ -2085,6 +2104,24 @@ function renderPhrases(){
   const scene = SCENARIOS[state.phraseSceneIdx];
   app.appendChild(topBar(scene.title, "", ()=>{ state.phraseSceneIdx=null; render(); }));
   app.appendChild(el("h1","title", scene.icon+" "+scene.title));
+  const modeRow = el("div","chip-row");
+  [["list","📋 リスト"],["flashcard","🗂️ カードでパラパラ"]].forEach(([key,label])=>{
+    const chip = el("button","chip"+(state.phraseCardMode===key?" active":""), label);
+    chip.onclick = ()=>{ playTap(); state.phraseCardMode=key; render(); };
+    modeRow.appendChild(chip);
+  });
+  app.appendChild(modeRow);
+  if(state.phraseCardMode==="flashcard"){
+    const langRow = el("div","chip-row");
+    [["es","🇪🇸 スペイン語を先に"],["ja","🇯🇵 日本語を先に"]].forEach(([key,label])=>{
+      const chip = el("button","chip"+(state.phraseCardLangFirst===key?" active":""), label);
+      chip.onclick = ()=>{ playTap(); state.phraseCardLangFirst=key; phraseFlashStates=[]; render(); };
+      langRow.appendChild(chip);
+    });
+    app.appendChild(langRow);
+    renderPhraseFlashcard(scene);
+    return;
+  }
   app.appendChild(el("div","footer-hint","点線の単語をタップすると辞書の詳細が見られます（B1/B2レベルの単語）"));
   const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
   scene.items.forEach(item=>{
@@ -2102,9 +2139,85 @@ function renderPhrases(){
     app.appendChild(box);
   });
   const sceneIdx = state.phraseSceneIdx;
-  const onPrev = sceneIdx>0 ? ()=>{ playTap(); state.phraseSceneIdx=sceneIdx-1; render(); } : null;
-  const onNext = sceneIdx<SCENARIOS.length-1 ? ()=>{ playTap(); state.phraseSceneIdx=sceneIdx+1; render(); } : null;
+  const onPrev = sceneIdx>0 ? ()=>{ playTap(); state.phraseSceneIdx=sceneIdx-1; render(); window.scrollTo(0,0); } : null;
+  const onNext = sceneIdx<SCENARIOS.length-1 ? ()=>{ playTap(); state.phraseSceneIdx=sceneIdx+1; render(); window.scrollTo(0,0); } : null;
   app.appendChild(buildFloatingNav("← 前のシーン", "次のシーン →", onPrev, onNext));
+}
+function phraseFlashStep(scene){
+  const cur = phraseFlashStates[phraseFlashStateIdx];
+  let next;
+  if(!cur.flipped){
+    next = { item: cur.item, flipped: true };
+  } else if(phraseFlashStateIdx < phraseFlashStates.length-1){
+    next = phraseFlashStates[phraseFlashStateIdx+1];
+  } else {
+    const pool = scene.items;
+    const item = pool[Math.floor(Math.random()*pool.length)];
+    next = { item, flipped: false };
+  }
+  if(phraseFlashStateIdx === phraseFlashStates.length-1) phraseFlashStates.push(next);
+  phraseFlashStateIdx++;
+  if(phraseFlashStates.length>80){ phraseFlashStates.shift(); phraseFlashStateIdx--; }
+}
+function phraseFlashStepBack(){
+  if(phraseFlashStateIdx<=0) return;
+  phraseFlashStateIdx--;
+}
+function renderPhraseFlashcard(scene){
+  if(phraseFlashStates.length===0 || phraseFlashSceneIdx!==state.phraseSceneIdx){
+    const first = scene.items[Math.floor(Math.random()*scene.items.length)];
+    phraseFlashStates = [{item:first, flipped:false}];
+    phraseFlashStateIdx = 0;
+    phraseFlashSceneIdx = state.phraseSceneIdx;
+  }
+  const cur = phraseFlashStates[phraseFlashStateIdx];
+  const item = cur.item, flipped = cur.flipped;
+  const langFirst = state.phraseCardLangFirst||"es";
+  const showEsFirst = langFirst==="es";
+  const frontText = showEsFirst ? item.es : item.ja;
+  const backText = showEsFirst ? item.ja : item.es;
+  const speakKey = (flipped?"back|":"front|")+item.es;
+  if(lastSpokenPhraseKey !== speakKey){
+    lastSpokenPhraseKey = speakKey;
+    const spokenSide = flipped ? backText : frontText;
+    const spokenLang = (flipped ? !showEsFirst : showEsFirst) ? "es" : "ja";
+    setTimeout(()=> speakSeq(spokenSide, spokenLang, null), 150);
+  }
+  const cardArea = el("div","card-area");
+  cardArea.style.marginBottom = "10px";
+  cardArea.style.alignItems = "flex-start";
+  cardArea.style.flex = "0 0 auto";
+  const fcEl = el("div","flashcard conj-flashcard"+(flipped?" flipped":""));
+  const front = el("div","flash-face flash-front");
+  const frontSpeak = el("button","mini-speak-btn","🔊");
+  frontSpeak.onclick = (e)=>{ e.stopPropagation(); speak(frontText); };
+  front.appendChild(frontSpeak);
+  const frontBody = el("div");
+  frontBody.innerHTML = `<div style="font-size:12px;color:#9C8FC2;font-weight:700;margin-bottom:8px;">${showEsFirst?"🇪🇸":"🇯🇵"}</div>
+    <div class="flash-word" style="font-size:20px;">${frontText}</div>
+    <div class="tap-hint">タップして答えを見る</div>`;
+  front.appendChild(frontBody);
+  const back = el("div","flash-face flash-back conj-flash-back");
+  const backSpeak = el("button","mini-speak-btn","🔊");
+  backSpeak.onclick = (e)=>{ e.stopPropagation(); speak(backText); };
+  back.appendChild(backSpeak);
+  const backBody = el("div");
+  backBody.innerHTML = `<div style="font-size:12px;color:#E4DAF8;font-weight:700;margin-bottom:8px;">${showEsFirst?"🇯🇵":"🇪🇸"}</div>
+    <div class="flash-word" style="font-size:20px;">${backText}</div>
+    <div class="tap-hint">タップして次のカードへ</div>`;
+  back.appendChild(backBody);
+  fcEl.appendChild(front); fcEl.appendChild(back);
+  fcEl.onclick = ()=>{ if(!flipped) playFlip(); else playTap(); phraseFlashStep(scene); render(); };
+  cardArea.appendChild(fcEl);
+  app.appendChild(cardArea);
+  const rewindRow = el("div"); rewindRow.style.textAlign="center"; rewindRow.style.marginTop="0px";
+  const rewindBtn = el("button","speak-btn","⏪");
+  rewindBtn.title = "1つ前に戻る";
+  rewindBtn.disabled = phraseFlashStateIdx<=0;
+  if(rewindBtn.disabled) rewindBtn.style.opacity="0.35";
+  rewindBtn.onclick = (e)=>{ e.stopPropagation(); if(phraseFlashStateIdx>0){ playTap(); phraseFlashStepBack(); render(); } };
+  rewindRow.appendChild(rewindBtn);
+  app.appendChild(rewindRow);
 }
 function getColumnWeight(title){
   progress.columnPref = progress.columnPref || {};
@@ -2126,51 +2239,6 @@ function weightedColumnSample(pool){
   return withKeys.map(x=>x.a);
 }
 let columnDeck = [], columnIdx = 0;
-function buildSwipeCard(article, onSwipe){
-  const card = el("div","swipe-card");
-  const titleBar = el("div","swipe-card-title", article.title);
-  const bodyBox = el("div","swipe-card-body"); bodyBox.textContent = article.body;
-  card.appendChild(titleBar); card.appendChild(bodyBox);
-  let startX=0, startY=0, curX=0, dragging=false, decided=false, isHorizontal=false;
-  function onDown(x,y){ dragging=true; decided=false; isHorizontal=false; startX=x; startY=y; curX=0; card.style.transition="none"; }
-  function onMove(x,y,e){
-    if(!dragging) return;
-    const dx = x-startX, dy = y-startY;
-    if(!decided){
-      if(Math.abs(dx)<10 && Math.abs(dy)<10) return;
-      decided = true;
-      isHorizontal = Math.abs(dx) > Math.abs(dy);
-    }
-    if(!isHorizontal) return;
-    if(e && e.cancelable) e.preventDefault();
-    curX = dx;
-    card.style.transform = `translateX(${curX}px) rotate(${curX/20}deg)`;
-  }
-  function onUp(){
-    if(!dragging) return;
-    dragging=false;
-    if(isHorizontal){
-      card.style.transition = "transform 0.3s ease";
-      if(curX > 90){
-        card.style.transform = `translateX(700px) rotate(25deg)`;
-        setTimeout(()=> onSwipe(true), 220);
-      } else if(curX < -90){
-        card.style.transform = `translateX(-700px) rotate(-25deg)`;
-        setTimeout(()=> onSwipe(false), 220);
-      } else {
-        card.style.transform = "translateX(0) rotate(0)";
-      }
-    }
-    curX=0; decided=false; isHorizontal=false;
-  }
-  [titleBar, bodyBox].forEach(area=>{
-    area.addEventListener("pointerdown", (e)=>{ onDown(e.clientX, e.clientY); try{ area.setPointerCapture(e.pointerId); }catch(err){} });
-    area.addEventListener("pointermove", (e)=> onMove(e.clientX, e.clientY, e));
-    area.addEventListener("pointerup", onUp);
-    area.addEventListener("pointercancel", onUp);
-  });
-  return card;
-}
 function renderColumn(){
   if(state.columnMode==="list"){ renderColumnList(); return; }
   const header = el("div");
@@ -2186,19 +2254,21 @@ function renderColumn(){
   app.appendChild(chipRow);
   const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
   if(columnDeck.length===0){ columnDeck = weightedColumnSample(COLUMN_ARTICLES); columnIdx = 0; }
-  if(columnIdx >= columnDeck.length){ columnDeck = weightedColumnSample(COLUMN_ARTICLES); columnIdx = 0; }
   const article = columnDeck[columnIdx];
   app.appendChild(el("div","footer-hint", `${columnIdx+1} / ${columnDeck.length}`));
-  const advance = (liked)=>{ rateColumn(article.title, liked); columnIdx++; render(); };
-  app.appendChild(buildSwipeCard(article, advance));
-  const btnRow = el("div","swipe-btn-row");
-  const dislikeBtn = el("button","swipe-btn dislike","👎 いまいち");
-  dislikeBtn.onclick = ()=>{ playTap(); advance(false); };
-  const likeBtn = el("button","swipe-btn like","👍 面白い！");
-  likeBtn.onclick = ()=>{ playTap(); advance(true); };
-  btnRow.appendChild(dislikeBtn); btnRow.appendChild(likeBtn);
-  app.appendChild(btnRow);
-  app.appendChild(el("div","footer-hint","「面白い」を選んだ記事ほど、これから出てきやすくなります。"));
+  const card = el("div","swipe-card");
+  const titleBar = el("div","swipe-card-title", article.title);
+  const bodyBox = el("div","swipe-card-body"); bodyBox.textContent = article.body;
+  card.appendChild(titleBar); card.appendChild(bodyBox);
+  app.appendChild(card);
+  const onPrev = columnIdx>0 ? ()=>{ playTap(); columnIdx--; render(); window.scrollTo(0,0); } : null;
+  const onNext = ()=>{
+    playTap();
+    columnIdx++;
+    if(columnIdx>=columnDeck.length){ columnDeck = weightedColumnSample(COLUMN_ARTICLES); columnIdx = 0; }
+    render(); window.scrollTo(0,0);
+  };
+  app.appendChild(buildFloatingNav("← 前の記事", "次の記事 →", onPrev, onNext));
 }
 function renderColumnList(){
   const header = el("div");
@@ -2223,15 +2293,21 @@ function renderFaq(){
   if(faqDetailIdx!==null){
     const item = FAQ_ITEMS[faqDetailIdx];
     app.appendChild(topBar("質問箱", "", ()=>{ faqDetailIdx=null; render(); }));
-    const header = el("div");
-    header.appendChild(el("div","eyebrow","Q&A"));
-    header.appendChild(el("h1","title", item.q));
-    app.appendChild(header);
-    const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
-    const box = el("div","article");
-    box.style.whiteSpace = "pre-wrap"; box.style.lineHeight = "1.8"; box.style.fontSize = "14.5px";
-    box.textContent = item.a;
-    app.appendChild(box);
+    const spacer0 = el("div"); spacer0.style.height="10px"; app.appendChild(spacer0);
+    const qRow = el("div","faq-bubble-row");
+    const qAvatar = el("div","faq-avatar","Q");
+    const qBubble = el("div","faq-bubble");
+    qBubble.style.fontSize="15.5px"; qBubble.style.fontWeight="700";
+    qBubble.textContent = item.q;
+    qRow.appendChild(qAvatar); qRow.appendChild(qBubble);
+    app.appendChild(qRow);
+    const aRow = el("div"); aRow.style.display="flex"; aRow.style.alignItems="flex-end"; aRow.style.gap="8px"; aRow.style.flexDirection="row-reverse";
+    const aAvatar = el("div","faq-avatar","A"); aAvatar.style.background="linear-gradient(135deg, var(--accent2), var(--accent3))";
+    const aBubble = el("div","faq-bubble"); aBubble.style.borderRadius="18px 18px 4px 18px"; aBubble.style.background="rgba(255,255,255,0.05)";
+    aBubble.style.whiteSpace="pre-wrap"; aBubble.style.lineHeight="1.8"; aBubble.style.fontSize="14.5px";
+    aBubble.textContent = item.a;
+    aRow.appendChild(aAvatar); aRow.appendChild(aBubble);
+    app.appendChild(aRow);
     if(item.related){
       const linkWrap = el("div"); linkWrap.style.marginTop="16px";
       linkWrap.appendChild(grammarLinkBtn(item.related, {tab:"faq", faqDetailIdx:faqDetailIdx}));
@@ -2239,8 +2315,8 @@ function renderFaq(){
     }
     const idx = faqDetailIdx;
     const nav = el("div"); nav.style.marginTop="20px";
-    const onPrev = idx>0 ? ()=>{ playTap(); faqDetailIdx=idx-1; render(); } : null;
-    const onNext = idx<FAQ_ITEMS.length-1 ? ()=>{ playTap(); faqDetailIdx=idx+1; render(); } : null;
+    const onPrev = idx>0 ? ()=>{ playTap(); faqDetailIdx=idx-1; render(); window.scrollTo(0,0); } : null;
+    const onNext = idx<FAQ_ITEMS.length-1 ? ()=>{ playTap(); faqDetailIdx=idx+1; render(); window.scrollTo(0,0); } : null;
     app.appendChild(buildFloatingNav("← 前の質問", "次の質問 →", onPrev, onNext));
     return;
   }
@@ -2251,8 +2327,11 @@ function renderFaq(){
   app.appendChild(el("div","footer-hint","スペイン語学習でよく混乱するポイントをQ&A形式でまとめました。気になる質問をタップしてください。"));
   const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
   FAQ_ITEMS.forEach((item,i)=>{
-    const row = el("div","grammar-list-item");
-    row.innerHTML = `<div class="grammar-list-title">${item.q}</div>`;
+    const row = el("div","faq-bubble-row");
+    const avatar = el("div","faq-avatar","Q");
+    const bubble = el("div","faq-bubble");
+    bubble.innerHTML = `<div class="faq-bubble-num">質問 ${i+1}</div>${item.q}`;
+    row.appendChild(avatar); row.appendChild(bubble);
     row.onclick = ()=>{ playTap(); faqDetailIdx=i; render(); };
     app.appendChild(row);
   });
