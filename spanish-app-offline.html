@@ -17,10 +17,10 @@
     --violet: #7B2FF7; --brick: #FF4D6D; --muted: #B6A6DE; --paper-line: #EFE2C6;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  html { min-height:100%;
+  html { min-height:100%; min-height:100vh; min-height:100dvh;
     background: radial-gradient(1400px 1000px at 50% -8%, var(--bg-b), var(--bg-a) 70%);
     background-size: cover; }
-  body { margin:0; padding:0; min-height:100%;
+  body { margin:0; padding:0; min-height:100%; min-height:100vh; min-height:100dvh;
     background: radial-gradient(1400px 1000px at 50% -8%, var(--bg-b), var(--bg-a) 70%);
     background-size: cover;
     font-family: -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif; color: var(--card); }
@@ -1409,7 +1409,7 @@ function renderConjTab(){
 }
 
 let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjLog=[], lastSpokenConjKey=null, conjFanfarePlayed=false, conjFlashFlipped=false;
-let conjFlashHistory=[], conjFlashHistoryIdx=-1;
+let conjFlashHistory=[], conjFlashHistoryIdx=-1, conjFlashSeenCount=0;
 function buildConjQuestion(tenseFilter){
   if(tenseFilter==="imperativo_mix") tenseFilter = Math.random()<0.5 ? "imperativo" : "imperativo_neg";
   const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
@@ -1470,7 +1470,7 @@ function renderConjDrill(){
     verbTypeRow.appendChild(chip);
   });
   app.appendChild(verbTypeRow);
-  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; conjFlashFlipped=false; conjFlashHistory=[conjQuestion]; conjFlashHistoryIdx=0; }
+  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; conjFlashFlipped=false; conjFlashHistory=[conjQuestion]; conjFlashHistoryIdx=0; conjFlashSeenCount=1; }
   if((state.conjDrillMode||"input")==="flashcard"){ renderConjFlashcard(); return; }
   if(conjIdx>=conjTotal){ if(!conjFanfarePlayed){ conjFanfarePlayed=true; playFanfare(); } doneScreenConj(); return; }
   const conjKey = conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
@@ -1551,12 +1551,14 @@ function conjFlashGoNext(){
     conjFlashHistoryIdx++;
     if(conjFlashHistory.length>50) { conjFlashHistory.shift(); conjFlashHistoryIdx--; }
   }
+  conjFlashSeenCount++;
   conjQuestion = conjFlashHistory[conjFlashHistoryIdx];
   conjFlashFlipped = false;
 }
 function conjFlashGoPrev(){
   if(conjFlashHistoryIdx<=0) return;
   conjFlashHistoryIdx--;
+  conjFlashSeenCount--;
   conjQuestion = conjFlashHistory[conjFlashHistoryIdx];
   conjFlashFlipped = false;
 }
@@ -1583,18 +1585,20 @@ function renderConjFlashcard(){
   cardArea.appendChild(fcEl);
   app.appendChild(cardArea);
   const posLabel = el("div"); posLabel.style.textAlign="center"; posLabel.style.fontSize="12px"; posLabel.style.color="#8A7CB0"; posLabel.style.marginTop="8px";
-  posLabel.textContent = `${conjFlashHistoryIdx+1}枚目`;
+  posLabel.textContent = `${conjFlashSeenCount}枚目`;
   app.appendChild(posLabel);
-  const speakRowEl = el("div"); speakRowEl.style.textAlign="center"; speakRowEl.style.marginTop="6px";
+  const btnRow = el("div"); btnRow.style.display="flex"; btnRow.style.justifyContent="center"; btnRow.style.gap="14px"; btnRow.style.marginTop="6px";
+  const rewindBtn = el("button","speak-btn","⏪");
+  rewindBtn.title = "前のカードに戻る";
+  rewindBtn.disabled = conjFlashHistoryIdx<=0;
+  if(rewindBtn.disabled) rewindBtn.style.opacity="0.35";
+  rewindBtn.onclick = (e)=>{ e.stopPropagation(); if(conjFlashHistoryIdx>0){ playTap(); conjFlashGoPrev(); render(); } };
   const speakBtn = el("button","speak-btn","🔊");
-  speakBtn.onclick = (e)=>{ e.stopPropagation(); speak(conjQuestion.verb.v); };
-  speakRowEl.appendChild(speakBtn);
-  app.appendChild(speakRowEl);
-  const hint = el("div","footer-hint","スコアは記録されません。カードをタップするたびに「めくる→次へ」を繰り返せます。右側のボタンで前のカードにも戻れます。");
+  speakBtn.onclick = (e)=>{ e.stopPropagation(); speakSeq(conjQuestion.verb.v, "es", ()=>{ setTimeout(()=> speakSeq(conjQuestion.answer, "es", null), 250); }); };
+  btnRow.appendChild(rewindBtn); btnRow.appendChild(speakBtn);
+  app.appendChild(btnRow);
+  const hint = el("div","footer-hint","スコアは記録されません。カードをタップするたびに「めくる→次へ」を繰り返せます。⏪で1枚ずつ戻れます。");
   app.appendChild(hint);
-  const onPrev = conjFlashHistoryIdx>0 ? ()=>{ playTap(); conjFlashGoPrev(); render(); } : null;
-  const onNext = ()=>{ playTap(); conjFlashGoNext(); render(); };
-  app.appendChild(buildFloatingNav("← 前のカード", "次のカード →", onPrev, onNext));
 }
 
 /* ---------- Example sentence fill-in-the-blank ---------- */
