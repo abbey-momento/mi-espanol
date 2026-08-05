@@ -62,12 +62,6 @@
   .legend-label { font-size:11px; color:#8A7AAE; font-weight:600; }
   .section-label { font-size:12px; font-weight:700; color:#D9CCEF; letter-spacing:0.06em; margin-bottom:9px; }
   .chip-row { display:flex; gap:7px; flex-wrap:wrap; margin-bottom:20px; }
-  .accordion-wrap { margin-bottom:14px; }
-  .accordion-head { width:100%; display:flex; justify-content:space-between; align-items:center; padding:12px 14px; border-radius:14px;
-    border:1px solid rgba(255,255,255,0.16); background:rgba(255,255,255,0.05); color:#EFE7FA; font-size:14px; font-weight:700;
-    cursor:pointer; font-family:inherit; margin-bottom:6px; }
-  .accordion-head.has-selection { border-color: var(--accent3); background: rgba(255,60,172,0.1); }
-  .accordion-selected-label { font-size:12px; font-weight:700; color:var(--accent3); }
   .chip { padding:7px 13px; border-radius:999px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.07);
     color:#E4D9F7; font-size:12px; font-weight:600; cursor:pointer; font-family:inherit; }
   .chip.active { background: linear-gradient(135deg, var(--accent), var(--violet)); color:#fff; border:1px solid transparent; }
@@ -586,7 +580,7 @@ function labelFor(ex, topic){
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjTenseCat:"basic", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:[], dictColloquialOnly:false, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, grammarRoadmapOpen:false, columnMode:"cards" };
+let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:[], dictColloquialOnly:false, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, grammarRoadmapOpen:false, columnMode:"cards" };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -1432,38 +1426,14 @@ function renderConjDrill(){
   });
   app.appendChild(verbTypeRow);
   app.appendChild(el("div","section-label","時制を選ぶ"));
-  const TENSE_CATEGORIES = [
-    { key:"basic", label:"基本時制", tenses:["presente","indefinido","imperfecto","futuro","condicional"] },
-    { key:"subj", label:"接続法", tenses:["subjuntivo","subjuntivo_imperfecto","subjuntivo_perfecto"] },
-    { key:"perf", label:"完了形", tenses:["perfecto","pluscuamperfecto","futuro_perfecto","condicional_perfecto"] },
-    { key:"imp", label:"命令形", tenses:["imperativo","imperativo_neg"] },
-    { key:"prog", label:"進行形", tenses:["progresivo"] },
-  ];
-  const currentCat = TENSE_CATEGORIES.find(c=>c.tenses.includes(state.conjTense));
-  if(!state.conjTenseCat) state.conjTenseCat = currentCat ? currentCat.key : "basic";
-  const allChip = el("button","chip"+(state.conjTense==="Todos"?" active":""), "🔀 Todos（全時制ミックス）");
-  allChip.style.marginBottom="8px"; allChip.style.width="100%";
-  allChip.onclick = ()=>{ playTap(); state.conjTense="Todos"; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; render(); };
-  app.appendChild(allChip);
-  const accordion = el("div","accordion-wrap");
-  TENSE_CATEGORIES.forEach(cat=>{
-    const isOpen = state.conjTenseCat===cat.key;
-    const selectedInCat = cat.tenses.includes(state.conjTense);
-    const head = el("button","accordion-head"+(selectedInCat?" has-selection":""));
-    head.innerHTML = `<span>${isOpen?"▾":"▸"} ${cat.label}</span>${selectedInCat?`<span class="accordion-selected-label">${TENSE_LABELS[state.conjTense]}</span>`:""}`;
-    head.onclick = ()=>{ playTap(); state.conjTenseCat = isOpen ? null : cat.key; render(); };
-    accordion.appendChild(head);
-    if(isOpen){
-      const body = el("div","chip-row"); body.style.marginTop="6px"; body.style.marginBottom="10px";
-      cat.tenses.forEach(t=>{
-        const chip = el("button","chip"+(state.conjTense===t?" active":""), TENSE_LABELS[t]);
-        chip.onclick = ()=>{ playTap(); state.conjTense=t; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; render(); };
-        body.appendChild(chip);
-      });
-      accordion.appendChild(body);
-    }
+  const chipRow = el("div","chip-row");
+  ["Todos", ...TENSE_KEYS].forEach(t=>{
+    const label = t==="Todos" ? "Todos" : TENSE_LABELS[t];
+    const chip = el("button","chip"+(state.conjTense===t?" active":""), label);
+    chip.onclick = ()=>{ playTap(); state.conjTense=t; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; render(); };
+    chipRow.appendChild(chip);
   });
-  app.appendChild(accordion);
+  app.appendChild(chipRow);
   app.appendChild(el("div","section-label","モード"));
   const modeRow = el("div","chip-row");
   [["input","✍️ 入力で答える"],["flashcard","🗂️ カードでパラパラ確認"]].forEach(([key,label])=>{
