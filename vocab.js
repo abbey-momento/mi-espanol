@@ -111,7 +111,7 @@ const VOCAB_DATA = [
   "es": "Tal vez",
   "en": "Maybe",
   "ja": "たぶん",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "El aeropuerto",
@@ -389,19 +389,19 @@ const VOCAB_DATA = [
   "es": "Sin embargo",
   "en": "However",
   "ja": "しかしながら",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Además",
   "en": "Besides / Also",
   "ja": "さらに",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Aunque",
   "en": "Although",
   "ja": "〜だけれども",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Me encantaría",
@@ -2090,35 +2090,35 @@ const VOCAB_DATA = [
   "es": "Sin duda",
   "en": "Without a doubt",
   "ja": "間違いなく",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "Por lo tanto",
   "en": "Therefore",
   "ja": "したがって",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "En cuanto a",
   "en": "As for / regarding",
   "ja": "〜に関しては",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "A pesar de",
   "en": "Despite",
   "ja": "〜にもかかわらず",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "De hecho",
   "en": "In fact",
   "ja": "実は",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
@@ -2139,7 +2139,7 @@ const VOCAB_DATA = [
   "es": "Hoy en día",
   "en": "Nowadays",
   "ja": "最近は",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
@@ -4346,125 +4346,125 @@ const VOCAB_DATA = [
   "es": "¡Qué padre!",
   "en": "How cool! (Mexican)",
   "ja": "かっこいい！（メキシコ表現）",
-  "cat": "Frases",
+  "cat": "Interjecciones",
   "nivel": "avanzado"
  },
  {
   "es": "¡Ay!",
   "en": "Ouch! / Oh!",
   "ja": "痛っ！/あら",
-  "cat": "Frases"
+  "cat": "Interjecciones"
  },
  {
   "es": "¡Uf!",
   "en": "Ugh! / Phew!",
   "ja": "うわ〜/ふう",
-  "cat": "Frases"
+  "cat": "Interjecciones"
  },
  {
   "es": "¡Vaya!",
   "en": "Wow! / Well!",
   "ja": "おやおや",
-  "cat": "Frases"
+  "cat": "Interjecciones"
  },
  {
   "es": "¡Ojalá!",
   "en": "I hope so!",
   "ja": "そうだといいな！",
-  "cat": "Frases"
+  "cat": "Interjecciones"
  },
  {
   "es": "¡Ánimo!",
   "en": "Cheer up! / You can do it!",
   "ja": "頑張れ！",
-  "cat": "Frases"
+  "cat": "Interjecciones"
  },
  {
   "es": "¡Cuidado!",
   "en": "Careful!",
   "ja": "気をつけて！",
-  "cat": "Frases"
+  "cat": "Interjecciones"
  },
  {
   "es": "¡Salud!",
   "en": "Cheers! / Bless you!",
   "ja": "乾杯！/お大事に",
-  "cat": "Frases"
+  "cat": "Interjecciones"
  },
  {
   "es": "¡Auxilio!",
   "en": "Help!",
   "ja": "助けて！",
-  "cat": "Frases"
+  "cat": "Interjecciones"
  },
  {
   "es": "Primero",
   "en": "First",
   "ja": "まず",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "fácil"
  },
  {
   "es": "Luego",
   "en": "Then",
   "ja": "それから",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "fácil"
  },
  {
   "es": "Finalmente",
   "en": "Finally",
   "ja": "最後に",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "fácil"
  },
  {
   "es": "Por otro lado",
   "en": "On the other hand",
   "ja": "一方で",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "En resumen",
   "en": "In summary",
   "ja": "要約すると",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "Por ejemplo",
   "en": "For example",
   "ja": "例えば",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "fácil"
  },
  {
   "es": "Es decir",
   "en": "That is to say",
   "ja": "つまり",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "Al contrario",
   "en": "On the contrary",
   "ja": "逆に",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "Mientras tanto",
   "en": "Meanwhile",
   "ja": "その間に",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "En conclusión",
   "en": "In conclusion",
   "ja": "結論として",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
@@ -6213,7 +6213,7 @@ const VOCAB_DATA = [
   "es": "El amor",
   "en": "Love",
   "ja": "愛",
-  "cat": "Frases"
+  "cat": "General"
  },
  {
   "es": "Bueno",
@@ -6240,7 +6240,7 @@ const VOCAB_DATA = [
   "es": "El amigo",
   "en": "Friend",
   "ja": "友達",
-  "cat": "Frases"
+  "cat": "General"
  },
  {
   "es": "El tiempo",
@@ -6398,105 +6398,105 @@ const VOCAB_DATA = [
   "es": "No obstante",
   "en": "Nevertheless",
   "ja": "それにもかかわらず",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "Por consiguiente",
   "en": "Consequently",
   "ja": "したがって",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "Cabe destacar que",
   "en": "It is worth noting that",
   "ja": "特筆すべきは",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "A grandes rasgos",
   "en": "Broadly speaking",
   "ja": "大まかに言うと",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "En términos generales",
   "en": "Generally speaking",
   "ja": "一般的に言えば",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "Dicho de otro modo",
   "en": "In other words",
   "ja": "言い換えると",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "A fin de cuentas",
   "en": "At the end of the day / all things considered",
   "ja": "結局のところ",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "Huelga decir que",
   "en": "It goes without saying that",
   "ja": "言うまでもなく",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "Ni que decir tiene",
   "en": "Needless to say",
   "ja": "言うまでもなく",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "A raíz de",
   "en": "As a result of / stemming from",
   "ja": "〜がきっかけで",
-  "cat": "Frases",
+  "cat": "Preposiciones",
   "nivel": "avanzado"
  },
  {
   "es": "En vísperas de",
   "en": "On the eve of",
   "ja": "〜の直前に",
-  "cat": "Frases",
+  "cat": "Preposiciones",
   "nivel": "avanzado"
  },
  {
   "es": "De ahora en adelante",
   "en": "From now on",
   "ja": "これからは",
-  "cat": "Frases",
+  "cat": "Conectores",
   "nivel": "avanzado"
  },
  {
   "es": "A todas luces",
   "en": "Clearly / evidently",
   "ja": "明らかに",
-  "cat": "Frases",
+  "cat": "Preposiciones",
   "nivel": "avanzado"
  },
  {
   "es": "Bajo ningún concepto",
   "en": "Under no circumstances",
   "ja": "いかなる場合も〜ない",
-  "cat": "Frases",
+  "cat": "Preposiciones",
   "nivel": "avanzado"
  },
  {
   "es": "Con creces",
   "en": "By far / more than enough",
   "ja": "十分すぎるほど",
-  "cat": "Frases",
+  "cat": "Preposiciones",
   "nivel": "avanzado"
  },
  {
@@ -7817,13 +7817,13 @@ const VOCAB_DATA = [
   "es": "Quizás",
   "en": "Maybe / perhaps",
   "ja": "たぶん",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Entonces",
   "en": "Then / so",
   "ja": "それなら・その時",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "El libro",
@@ -7835,37 +7835,37 @@ const VOCAB_DATA = [
   "es": "Qué",
   "en": "What",
   "ja": "何",
-  "cat": "Frases"
+  "cat": "Interrogativos"
  },
  {
   "es": "Quién",
   "en": "Who",
   "ja": "誰",
-  "cat": "Frases"
+  "cat": "Interrogativos"
  },
  {
   "es": "Cómo",
   "en": "How",
   "ja": "どのように",
-  "cat": "Frases"
+  "cat": "Interrogativos"
  },
  {
   "es": "Cuándo",
   "en": "When",
   "ja": "いつ",
-  "cat": "Frases"
+  "cat": "Interrogativos"
  },
  {
   "es": "Dónde",
   "en": "Where",
   "ja": "どこ",
-  "cat": "Frases"
+  "cat": "Interrogativos"
  },
  {
   "es": "Por qué",
   "en": "Why",
   "ja": "なぜ",
-  "cat": "Frases"
+  "cat": "Interrogativos"
  },
  {
   "es": "Sentirse solo",
@@ -9327,127 +9327,127 @@ const VOCAB_DATA = [
   "es": "Respecto a",
   "en": "Regarding",
   "ja": "〜に関して",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "De acuerdo con",
   "en": "According to",
   "ja": "〜によれば",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Según",
   "en": "According to",
   "ja": "〜によると",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Cabe señalar",
   "en": "It should be noted",
   "ja": "指摘すべきは",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Cerca de",
   "en": "Near",
   "ja": "〜の近くに",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Lejos de",
   "en": "Far from",
   "ja": "〜から遠くに",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Al lado de",
   "en": "Next to",
   "ja": "〜の隣に",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Enfrente de",
   "en": "In front of, facing",
   "ja": "〜の向かいに",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Detrás de",
   "en": "Behind",
   "ja": "〜の後ろに",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Delante de",
   "en": "In front of",
   "ja": "〜の前に",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Alrededor de",
   "en": "Around",
   "ja": "〜の周りに",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "A través de",
   "en": "Through",
   "ja": "〜を通して",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Junto a",
   "en": "Next to, together with",
   "ja": "〜のそばに",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Frente a",
   "en": "Facing, opposite",
   "ja": "〜に面して",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Dentro de",
   "en": "Inside, within",
   "ja": "〜の中に",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Fuera de",
   "en": "Outside of",
   "ja": "〜の外に",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Encima de",
   "en": "On top of",
   "ja": "〜の上に",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Debajo de",
   "en": "Under, beneath",
   "ja": "〜の下に",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Hacia",
   "en": "Toward",
   "ja": "〜へ向かって",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "A lo largo de",
   "en": "Along, throughout",
   "ja": "〜に沿って、〜の間ずっと",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "En medio de",
   "en": "In the middle of",
   "ja": "〜の真ん中に",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "De repente",
@@ -9483,25 +9483,25 @@ const VOCAB_DATA = [
   "es": "De todos modos",
   "en": "Anyway, regardless",
   "ja": "とにかく、いずれにせよ",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "En cambio",
   "en": "On the other hand",
   "ja": "一方で",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Por lo general",
   "en": "Generally",
   "ja": "一般的に",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "A partir de",
   "en": "Starting from",
   "ja": "〜から（時点）",
-  "cat": "Frases"
+  "cat": "Preposiciones"
  },
  {
   "es": "Hasta ahora",
@@ -9525,31 +9525,31 @@ const VOCAB_DATA = [
   "es": "A lo mejor",
   "en": "Maybe, perhaps",
   "ja": "もしかしたら",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Sobre todo",
   "en": "Above all, especially",
   "ja": "とりわけ",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "En particular",
   "en": "In particular",
   "ja": "特に",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Al fin y al cabo",
   "en": "After all, in the end",
   "ja": "結局のところ",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Tarde o temprano",
   "en": "Sooner or later",
   "ja": "遅かれ早かれ",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Hacer cola",
@@ -11187,7 +11187,7 @@ const VOCAB_DATA = [
   "es": "Por supuesto",
   "en": "Of course",
   "ja": "もちろん",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Ni idea",
@@ -12123,55 +12123,55 @@ const VOCAB_DATA = [
   "es": "Afortunadamente",
   "en": "Fortunately",
   "ja": "幸いにも",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Desgraciadamente",
   "en": "Unfortunately",
   "ja": "残念ながら",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Precisamente",
   "en": "Precisely",
   "ja": "まさに",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Anteriormente",
   "en": "Previously",
   "ja": "以前に",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Justamente",
   "en": "Exactly / fairly",
   "ja": "ちょうど・公正に",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Particularmente",
   "en": "Particularly",
   "ja": "特に",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Verdaderamente",
   "en": "Truly",
   "ja": "本当に",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Especialmente",
   "en": "Especially",
   "ja": "特別に",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Inmediatamente",
   "en": "Immediately",
   "ja": "直ちに",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Continuamente",
@@ -12201,61 +12201,61 @@ const VOCAB_DATA = [
   "es": "Admirablemente",
   "en": "Admirably",
   "ja": "見事に",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Perfectamente",
   "en": "Perfectly",
   "ja": "完璧に",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Desesperadamente",
   "en": "Desperately",
   "ja": "必死に",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Severamente",
   "en": "Severely",
   "ja": "厳しく",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Probablemente",
   "en": "Probably",
   "ja": "おそらく",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Posiblemente",
   "en": "Possibly",
   "ja": "ひょっとすると",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Indudablemente",
   "en": "Undoubtedly",
   "ja": "間違いなく",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Absolutamente",
   "en": "Absolutely",
   "ja": "絶対に",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Realmente",
   "en": "Really",
   "ja": "本当に・現実に",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Sinceramente",
   "en": "Sincerely",
   "ja": "心から",
-  "cat": "Frases"
+  "cat": "Adverbios"
  },
  {
   "es": "Tratar de",
@@ -12309,49 +12309,49 @@ const VOCAB_DATA = [
   "es": "Puesto que",
   "en": "Given that / since",
   "ja": "〜だから",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Ya que",
   "en": "Since / given that",
   "ja": "〜であるからには",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Debido a",
   "en": "Due to",
   "ja": "〜のせいで",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "En un principio",
   "en": "At first",
   "ja": "最初は",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "En principio",
   "en": "In principle",
   "ja": "原則として",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "De todas maneras",
   "en": "Anyway",
   "ja": "いずれにしても",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "O sea",
   "en": "That is to say",
   "ja": "すなわち",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "Asimismo",
   "en": "Likewise",
   "ja": "同様に",
-  "cat": "Frases"
+  "cat": "Conectores"
  },
  {
   "es": "El escultor",
