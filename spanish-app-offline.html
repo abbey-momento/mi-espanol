@@ -18,10 +18,12 @@
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   html { min-height:100%; min-height:100vh; min-height:100dvh;
-    background: radial-gradient(1400px 1000px at 50% -8%, var(--bg-b), var(--bg-a) 70%);
+    background-color: var(--bg-a);
+    background-image: radial-gradient(1400px 1000px at 50% -8%, var(--bg-b), var(--bg-a) 70%);
     background-size: cover; }
   body { margin:0; padding:0; min-height:100%; min-height:100vh; min-height:100dvh;
-    background: radial-gradient(1400px 1000px at 50% -8%, var(--bg-b), var(--bg-a) 70%);
+    background-color: var(--bg-a);
+    background-image: radial-gradient(1400px 1000px at 50% -8%, var(--bg-b), var(--bg-a) 70%);
     background-size: cover;
     font-family: -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif; color: var(--card); }
   #app { max-width: 440px; margin: 0 auto; min-height: 100dvh; padding: 16px 18px 22px; display:flex; flex-direction:column; }
@@ -90,6 +92,8 @@
   .flash-back { background: linear-gradient(135deg, var(--accent3), var(--accent)); color:var(--ink); transform:rotateY(180deg); }
   .conj-flashcard .flash-front { border:1.5px solid rgba(120,170,255,0.4); }
   .conj-flash-back { background: linear-gradient(135deg, #4F7FE0, #7B5FD9); }
+  .mini-speak-btn { position:absolute; top:12px; right:12px; width:32px; height:32px; border-radius:999px; border:none;
+    background:rgba(0,0,0,0.12); color:inherit; font-size:14px; cursor:pointer; display:flex; align-items:center; justify-content:center; padding:0; }
   .flash-word { font-family: Georgia, serif; font-size:26px; font-weight:700; }
   .flash-ja { font-size:14px; margin-top:6px; opacity:0.8; font-weight:600; }
   .tap-hint { font-size:11.5px; margin-top:9px; opacity:.65; font-weight:600; }
@@ -1409,7 +1413,7 @@ function renderConjTab(){
 }
 
 let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjLog=[], lastSpokenConjKey=null, conjFanfarePlayed=false, conjFlashFlipped=false;
-let conjFlashHistory=[], conjFlashHistoryIdx=-1, conjFlashSeenCount=0;
+let conjFlashStates=[], conjFlashStateIdx=-1;
 function buildConjQuestion(tenseFilter){
   if(tenseFilter==="imperativo_mix") tenseFilter = Math.random()<0.5 ? "imperativo" : "imperativo_neg";
   const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
@@ -1470,7 +1474,7 @@ function renderConjDrill(){
     verbTypeRow.appendChild(chip);
   });
   app.appendChild(verbTypeRow);
-  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; conjFlashFlipped=false; conjFlashHistory=[conjQuestion]; conjFlashHistoryIdx=0; conjFlashSeenCount=1; }
+  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; conjFlashFlipped=false; conjFlashStates=[{q:conjQuestion, flipped:false}]; conjFlashStateIdx=0; }
   if((state.conjDrillMode||"input")==="flashcard"){ renderConjFlashcard(); return; }
   if(conjIdx>=conjTotal){ if(!conjFanfarePlayed){ conjFanfarePlayed=true; playFanfare(); } doneScreenConj(); return; }
   const conjKey = conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
@@ -1542,62 +1546,68 @@ function doneScreenConj(){
   app.appendChild(rl);
 }
 
-function conjFlashGoNext(){
-  if(conjFlashHistoryIdx < conjFlashHistory.length-1){
-    conjFlashHistoryIdx++;
+function conjFlashStep(){
+  const cur = conjFlashStates[conjFlashStateIdx];
+  let next;
+  if(!cur.flipped){
+    next = { q: cur.q, flipped: true };
+  } else if(conjFlashStateIdx < conjFlashStates.length-1){
+    next = conjFlashStates[conjFlashStateIdx+1];
   } else {
     const q = buildConjQuestion(state.conjTense);
-    conjFlashHistory.push(q);
-    conjFlashHistoryIdx++;
-    if(conjFlashHistory.length>50) { conjFlashHistory.shift(); conjFlashHistoryIdx--; }
+    next = { q, flipped: false };
   }
-  conjFlashSeenCount++;
-  conjQuestion = conjFlashHistory[conjFlashHistoryIdx];
-  conjFlashFlipped = false;
+  if(conjFlashStateIdx === conjFlashStates.length-1) conjFlashStates.push(next);
+  conjFlashStateIdx++;
+  if(conjFlashStates.length>80){ conjFlashStates.shift(); conjFlashStateIdx--; }
+  conjQuestion = next.q; conjFlashFlipped = next.flipped;
 }
-function conjFlashGoPrev(){
-  if(conjFlashHistoryIdx<=0) return;
-  conjFlashHistoryIdx--;
-  conjFlashSeenCount--;
-  conjQuestion = conjFlashHistory[conjFlashHistoryIdx];
-  conjFlashFlipped = false;
+function conjFlashStepBack(){
+  if(conjFlashStateIdx<=0) return;
+  conjFlashStateIdx--;
+  const cur = conjFlashStates[conjFlashStateIdx];
+  conjQuestion = cur.q; conjFlashFlipped = cur.flipped;
 }
 function renderConjFlashcard(){
-  const conjKey = conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
-  if(lastSpokenConjKey !== conjKey){ lastSpokenConjKey = conjKey; if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(conjQuestion.verb.v), 150); }
+  if(conjFlashFlipped){
+    const conjKey = "ans|"+conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
+    if(lastSpokenConjKey !== conjKey){ lastSpokenConjKey = conjKey; setTimeout(()=> speakSeq(conjQuestion.answer, "es", null), 150); }
+  }
   const cardArea = el("div","card-area");
   const fcEl = el("div","flashcard conj-flashcard"+(conjFlashFlipped?" flipped":""));
   const front = el("div","flash-face flash-front");
-  front.innerHTML = `<div style="font-size:12px;color:#9C8FC2;font-weight:700;margin-bottom:6px;">${TENSE_LABELS[conjQuestion.tense]}</div>
+  const frontSpeak = el("button","mini-speak-btn","🔊");
+  frontSpeak.onclick = (e)=>{ e.stopPropagation(); speak(conjQuestion.verb.v); };
+  front.appendChild(frontSpeak);
+  const frontBody = el("div");
+  frontBody.innerHTML = `<div style="font-size:12px;color:#9C8FC2;font-weight:700;margin-bottom:6px;">${TENSE_LABELS[conjQuestion.tense]}</div>
     <div class="flash-word">${conjQuestion.verb.v}</div>
     <div style="font-size:13px;color:#8A7CB0;margin-top:4px;">（${conjQuestion.verb.ja}）</div>
     <div style="font-size:15px;font-weight:700;margin-top:10px;">${conjQuestion.personLabel}</div>
     <div class="tap-hint">タップして答えを見る</div>`;
+  front.appendChild(frontBody);
   const back = el("div","flash-face flash-back conj-flash-back");
-  back.innerHTML = `<div class="flash-word">${conjQuestion.answer}</div>
+  const backSpeak = el("button","mini-speak-btn","🔊");
+  backSpeak.onclick = (e)=>{ e.stopPropagation(); speakSeq(conjQuestion.answer, "es", null); };
+  back.appendChild(backSpeak);
+  const backBody = el("div");
+  backBody.innerHTML = `<div class="flash-word">${conjQuestion.answer}</div>
     <div class="tap-hint">${conjQuestion.verb.v}（${conjQuestion.personLabel}）</div>
     <div class="tap-hint">タップして次のカードへ</div>`;
+  back.appendChild(backBody);
   fcEl.appendChild(front); fcEl.appendChild(back);
-  fcEl.onclick = ()=>{
-    if(!conjFlashFlipped){ playFlip(); conjFlashFlipped=true; render(); }
-    else{ playTap(); conjFlashGoNext(); render(); }
-  };
+  fcEl.onclick = ()=>{ if(!conjFlashFlipped) playFlip(); else playTap(); conjFlashStep(); render(); };
   cardArea.appendChild(fcEl);
   app.appendChild(cardArea);
-  const posLabel = el("div"); posLabel.style.textAlign="center"; posLabel.style.fontSize="12px"; posLabel.style.color="#8A7CB0"; posLabel.style.marginTop="8px";
-  posLabel.textContent = `${conjFlashSeenCount}枚目`;
-  app.appendChild(posLabel);
-  const btnRow = el("div"); btnRow.style.display="flex"; btnRow.style.justifyContent="center"; btnRow.style.gap="14px"; btnRow.style.marginTop="6px";
+  const rewindRow = el("div"); rewindRow.style.textAlign="center"; rewindRow.style.marginTop="10px";
   const rewindBtn = el("button","speak-btn","⏪");
-  rewindBtn.title = "前のカードに戻る";
-  rewindBtn.disabled = conjFlashHistoryIdx<=0;
+  rewindBtn.title = "1つ前に戻る";
+  rewindBtn.disabled = conjFlashStateIdx<=0;
   if(rewindBtn.disabled) rewindBtn.style.opacity="0.35";
-  rewindBtn.onclick = (e)=>{ e.stopPropagation(); if(conjFlashHistoryIdx>0){ playTap(); conjFlashGoPrev(); render(); } };
-  const speakBtn = el("button","speak-btn","🔊");
-  speakBtn.onclick = (e)=>{ e.stopPropagation(); speakSeq(conjQuestion.verb.v, "es", ()=>{ setTimeout(()=> speakSeq(conjQuestion.answer, "es", null), 250); }); };
-  btnRow.appendChild(rewindBtn); btnRow.appendChild(speakBtn);
-  app.appendChild(btnRow);
-  const hint = el("div","footer-hint","スコアは記録されません。カードをタップするたびに「めくる→次へ」を繰り返せます。⏪で1枚ずつ戻れます。");
+  rewindBtn.onclick = (e)=>{ e.stopPropagation(); if(conjFlashStateIdx>0){ playTap(); conjFlashStepBack(); render(); } };
+  rewindRow.appendChild(rewindBtn);
+  app.appendChild(rewindRow);
+  const hint = el("div","footer-hint","スコアは記録されません。カードをタップするたびに「めくる→次へ」を繰り返せます。⏪で1ステップずつ戻れます。");
   app.appendChild(hint);
 }
 
