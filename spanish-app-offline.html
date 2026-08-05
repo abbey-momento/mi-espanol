@@ -1569,11 +1569,14 @@ function conjFlashStepBack(){
   conjQuestion = cur.q; conjFlashFlipped = cur.flipped;
 }
 function renderConjFlashcard(){
-  if(conjFlashFlipped){
-    const conjKey = "ans|"+conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
-    if(lastSpokenConjKey !== conjKey){ lastSpokenConjKey = conjKey; setTimeout(()=> speakSeq(conjQuestion.answer, "es", null), 150); }
+  const conjKey = (conjFlashFlipped?"ans|":"inf|")+conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
+  if(lastSpokenConjKey !== conjKey){
+    lastSpokenConjKey = conjKey;
+    const textToSpeak = conjFlashFlipped ? conjQuestion.answer : conjQuestion.verb.v;
+    setTimeout(()=> speakSeq(textToSpeak, "es", null), 150);
   }
   const cardArea = el("div","card-area");
+  cardArea.style.marginBottom = "4px";
   const fcEl = el("div","flashcard conj-flashcard"+(conjFlashFlipped?" flipped":""));
   const front = el("div","flash-face flash-front");
   const frontSpeak = el("button","mini-speak-btn","🔊");
@@ -1599,7 +1602,7 @@ function renderConjFlashcard(){
   fcEl.onclick = ()=>{ if(!conjFlashFlipped) playFlip(); else playTap(); conjFlashStep(); render(); };
   cardArea.appendChild(fcEl);
   app.appendChild(cardArea);
-  const rewindRow = el("div"); rewindRow.style.textAlign="center"; rewindRow.style.marginTop="10px";
+  const rewindRow = el("div"); rewindRow.style.textAlign="center"; rewindRow.style.marginTop="2px";
   const rewindBtn = el("button","speak-btn","⏪");
   rewindBtn.title = "1つ前に戻る";
   rewindBtn.disabled = conjFlashStateIdx<=0;
@@ -1607,8 +1610,6 @@ function renderConjFlashcard(){
   rewindBtn.onclick = (e)=>{ e.stopPropagation(); if(conjFlashStateIdx>0){ playTap(); conjFlashStepBack(); render(); } };
   rewindRow.appendChild(rewindBtn);
   app.appendChild(rewindRow);
-  const hint = el("div","footer-hint","スコアは記録されません。カードをタップするたびに「めくる→次へ」を繰り返せます。⏪で1ステップずつ戻れます。");
-  app.appendChild(hint);
 }
 
 /* ---------- Example sentence fill-in-the-blank ---------- */
