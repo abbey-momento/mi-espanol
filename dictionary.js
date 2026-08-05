@@ -3242,7 +3242,7 @@ const DICTIONARY_DATA = {
   }
  },
  "garaje": {
-  "nuance": "フランス語からの借用語。",
+  "nuance": "「車庫」の基本語。estacionar en el garaje（車庫に駐車する）のように使う。",
   "etymology": "フランス語garage（保管場所）に由来。",
   "synonyms": [],
   "derived": [],
@@ -4276,7 +4276,7 @@ const DICTIONARY_DATA = {
   }
  },
  "abogado": {
-  "nuance": "女性形はabogada。",
+  "nuance": "「弁護士」の基本語。女性形はabogada。contratar a un abogado（弁護士を雇う）はよく使う組み合わせ。",
   "etymology": "ラテン語advocatus（呼び寄せられた者→弁護人）に由来。",
   "synonyms": [],
   "derived": [
@@ -4376,7 +4376,7 @@ const DICTIONARY_DATA = {
   }
  },
  "científico": {
-  "nuance": "女性形はcientífica。",
+  "nuance": "「科学者」の基本語。女性形はcientífica。investigación científica（科学研究）のように形容詞としても使う。",
   "etymology": "ciencia（科学）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4389,7 +4389,7 @@ const DICTIONARY_DATA = {
   }
  },
  "escritor": {
-  "nuance": "女性形はescritora。",
+  "nuance": "「作家」の基本語。女性形はescritora。escritor famoso（有名な作家）のように使う。",
   "etymology": "escribir（書く）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -4402,7 +4402,7 @@ const DICTIONARY_DATA = {
   }
  },
  "actor": {
-  "nuance": "女性形はactriz。",
+  "nuance": "「俳優」の基本語。女性形はactriz。actor principal（主演俳優）、actor de reparto（脇役俳優）のように使う。",
   "etymology": "ラテン語actor（行為者）に由来。",
   "synonyms": [],
   "derived": [
@@ -6348,7 +6348,7 @@ const DICTIONARY_DATA = {
   }
  },
  "pintura": {
-  "nuance": "「ペンキ」という意味にもなる。",
+  "nuance": "「絵、絵画」の基本語。「ペンキ」という意味にもなる。pintura al óleo（油絵）はよく使う組み合わせ。",
   "etymology": "pintar（描く）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -6386,7 +6386,7 @@ const DICTIONARY_DATA = {
   }
  },
  "autor": {
-  "nuance": "女性形はautora。",
+  "nuance": "「著者」の基本語。女性形はautora。autor del libro（本の著者）、derechos de autor（著作権）のように使う。",
   "etymology": "ラテン語auctor（創始者、著者）に由来。",
   "synonyms": [],
   "derived": [
@@ -6938,7 +6938,7 @@ const DICTIONARY_DATA = {
   }
  },
  "presidente": {
-  "nuance": "女性形はpresidenta。",
+  "nuance": "「大統領」の基本語。女性形はpresidenta。elegir al presidente（大統領を選ぶ）のように使う。会社の「社長」という意味にもなる。",
   "etymology": "ラテン語praesidens（前に座る者）に由来。",
   "synonyms": [],
   "derived": [
@@ -6990,7 +6990,7 @@ const DICTIONARY_DATA = {
   }
  },
  "elección": {
-  "nuance": "elegir（選ぶ）の名詞形。",
+  "nuance": "「選挙」の基本語。複数形eleccionesでよく使われる。ganar las elecciones（選挙に勝つ）はよく使う組み合わせ。",
   "etymology": "elegir（選ぶ）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -7053,7 +7053,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vecino": {
-  "nuance": "女性形はvecina。",
+  "nuance": "「隣人」の基本語。女性形はvecina。buen vecino（良き隣人）、vecino de al lado（隣の人）のように使う。",
   "etymology": "ラテン語vicinus（近くの）に由来。",
   "synonyms": [],
   "derived": [
@@ -7350,7 +7350,7 @@ const DICTIONARY_DATA = {
   }
  },
  "colombia": {
-  "nuance": "コロンブスの名前に由来する。",
+  "nuance": "南米の国。首都はBogotá（ボゴタ）。コーヒーの産地としても有名。",
   "etymology": "クリストファー・コロンブス（Cristóbal Colón）の名前に由来。",
   "synonyms": [],
   "derived": [
@@ -7746,7 +7746,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hotel": {
-  "nuance": "世界共通の借用語。",
+  "nuance": "「ホテル」の基本語。reservar un hotel（ホテルを予約する）、hotel de cinco estrellas（5つ星ホテル）のように使う。",
   "etymology": "フランス語hôtel（宿泊施設）に由来。",
   "synonyms": [],
   "derived": [
@@ -8053,7 +8053,7 @@ const DICTIONARY_DATA = {
   }
  },
  "violín": {
-  "nuance": "マリアッチの重要な楽器の一つ。",
+  "nuance": "「バイオリン」の基本語。tocar el violín（バイオリンを弾く）のように使う。",
   "etymology": "イタリア語violino（小さなヴィオラ）に由来。",
   "synonyms": [],
   "derived": [
@@ -8077,7 +8077,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tambor": {
-  "nuance": "パーカッションの基本的な楽器。",
+  "nuance": "「太鼓」の基本語。tocar el tambor（太鼓を叩く）のように使う。",
   "etymology": "アラビア語ṭunbūr（弦楽器）に由来するとされる。",
   "synonyms": [],
   "derived": [
@@ -8698,7 +8698,7 @@ const DICTIONARY_DATA = {
   }
  },
  "hervir": {
-  "nuance": "e→ieの語根母音変化動詞。",
+  "nuance": "「沸騰させる、茹でる」の基本語。hervir agua（お湯を沸かす）、hervir pasta（パスタを茹でる）のように使う。",
   "etymology": "ラテン語fervere（沸く）に由来。",
   "synonyms": [],
   "derived": [
@@ -9127,7 +9127,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ancho": {
-  "nuance": "基本的なサイズの形容詞。",
+  "nuance": "「幅広い」の基本語。反対語はestrecho（狭い）。ancho de banda（帯域幅、通信用語）という組み合わせもある。",
   "etymology": "ラテン語amplus（広い）に由来。",
   "synonyms": [],
   "derived": [
@@ -9380,7 +9380,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tigre": {
-  "nuance": "女性形はtigresa。",
+  "nuance": "「トラ」の基本語。fuerte como un tigre（トラのように強い）のような比喩表現でも使われる。",
   "etymology": "ギリシャ語tigris（虎）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9660,7 +9660,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ajo": {
-  "nuance": "多くの料理の基本食材。",
+  "nuance": "「にんにく」の基本語。diente de ajo（にんにく一片）はよく使う組み合わせ。メキシコ料理に欠かせない食材。",
   "etymology": "ラテン語allium（にんにく）に由来。",
   "synonyms": [],
   "derived": [
@@ -9702,7 +9702,7 @@ const DICTIONARY_DATA = {
   }
  },
  "brócoli": {
-  "nuance": "イタリア語からの借用語。",
+  "nuance": "「ブロッコリー」の基本語。健康志向の食事でよく登場する野菜。",
   "etymology": "イタリア語broccolo（キャベツの芽）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9782,7 +9782,7 @@ const DICTIONARY_DATA = {
   }
  },
  "almohada": {
-  "nuance": "アラビア語由来。",
+  "nuance": "「枕」の基本語。consultar con la almohada（一晩考える、直訳「枕に相談する」）という面白い慣用表現もある。",
   "etymology": "アラビア語al-mikhadda（頬のためのもの）に由来。",
   "synonyms": [],
   "derived": [
@@ -9830,7 +9830,7 @@ const DICTIONARY_DATA = {
   }
  },
  "alfombra": {
-  "nuance": "アラビア語由来。",
+  "nuance": "「絨毯」の基本語。alfombra roja（レッドカーペット）は授賞式などでよく使われる表現。",
   "etymology": "アラビア語al-khumra（マット）に由来。",
   "synonyms": [],
   "derived": [],
@@ -9930,7 +9930,7 @@ const DICTIONARY_DATA = {
   }
  },
  "teatro": {
-  "nuance": "「演劇」という意味にもなる。",
+  "nuance": "「劇場」の基本語。ir al teatro（劇場に行く）、obra de teatro（演劇作品）のように使う。",
   "etymology": "ギリシャ語theatron（見る場所）に由来。",
   "synonyms": [],
   "derived": [
@@ -10192,7 +10192,7 @@ const DICTIONARY_DATA = {
   }
  },
  "caja": {
-  "nuance": "「箱」という意味にもなる。",
+  "nuance": "「箱、レジ」の両方の意味を持つ基本語。pagar en la caja（レジで支払う）、caja de cartón（段ボール箱）のように使う。",
   "etymology": "ラテン語capsa（箱）に由来。",
   "synonyms": [],
   "derived": [
@@ -10755,7 +10755,7 @@ const DICTIONARY_DATA = {
   }
  },
  "postre": {
-  "nuance": "食後に出されるものを指す。",
+  "nuance": "「デザート」の基本語。de postre（デザートに）はメニューでよく見る表現。¿Qué hay de postre?（デザートは何がありますか？）もよく使う質問。",
   "etymology": "post（後の）から派生した語。",
   "synonyms": [],
   "derived": [],
@@ -10889,7 +10889,7 @@ const DICTIONARY_DATA = {
   }
  },
  "impaciente": {
-  "nuance": "pacienteの反対語。",
+  "nuance": "「せっかちな」の基本語。反対語はpaciente（忍耐強い）。ponerse impaciente（イライラする）はよく使う組み合わせ。",
   "etymology": "in（否定）+ paciente（忍耐強い）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -11518,7 +11518,7 @@ const DICTIONARY_DATA = {
   }
  },
  "aceptar": {
-  "nuance": "rechazarの反対語。",
+  "nuance": "「受け入れる」の基本語。aceptar una oferta（申し出を受け入れる）、no aceptar tarjetas（カードを受け付けない）のように幅広く使える。",
   "etymology": "ラテン語acceptare（受け取る）に由来。",
   "synonyms": [],
   "derived": [
@@ -11704,7 +11704,7 @@ const DICTIONARY_DATA = {
   }
  },
  "mochila": {
-  "nuance": "ケチュア語由来。",
+  "nuance": "「リュックサック」の基本語。llevar la mochila（リュックを背負う）、mochila escolar（通学用リュック）のように使う。",
   "etymology": "ケチュア語muchila（袋）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11762,7 +11762,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sandalias": {
-  "nuance": "夏によく履かれる履物。",
+  "nuance": "「サンダル」の基本語。複数形でよく使われる（対になった履物の慣習）。夏の定番の履物。",
   "etymology": "ギリシャ語sandalon（サンダル）に由来。",
   "synonyms": [],
   "derived": [],
@@ -11814,7 +11814,7 @@ const DICTIONARY_DATA = {
   }
  },
  "tela": {
-  "nuance": "テキスタイル全般を指す。",
+  "nuance": "「布」の基本語。tela de algodón（綿の布）のように素材を表す組み合わせでよく使う。",
   "etymology": "ラテン語tela（織物、機織り）に由来。",
   "synonyms": [],
   "derived": [
@@ -11994,7 +11994,7 @@ const DICTIONARY_DATA = {
   }
  },
  "círculo": {
-  "nuance": "基本的な幾何図形。",
+  "nuance": "「円」の基本語。círculo vicioso（悪循環）、en círculo（輪になって）のような比喩表現もよく使われる。",
   "etymology": "ラテン語circulus（小さな輪）に由来。",
   "synonyms": [],
   "derived": [
@@ -12640,7 +12640,7 @@ const DICTIONARY_DATA = {
   }
  },
  "té": {
-  "nuance": "中国語由来の国際的な単語。",
+  "nuance": "「お茶」の基本語。té de manzanilla（カモミールティー）、té helado（アイスティー）のように種類を表す組み合わせでよく使う。",
   "etymology": "中国語（福建語）te（茶）に由来。",
   "synonyms": [],
   "derived": [
@@ -14085,7 +14085,7 @@ const DICTIONARY_DATA = {
   }
  },
  "ciervo": {
-  "nuance": "女性形はcierva。",
+  "nuance": "「鹿」の基本語。cuernos de ciervo（鹿の角）のように使う。",
   "etymology": "ラテン語cervus（シカ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -14140,7 +14140,7 @@ const DICTIONARY_DATA = {
   }
  },
  "linterna": {
-  "nuance": "ギリシャ語ランタン由来。",
+  "nuance": "「懐中電灯」の基本語。停電やキャンプのときによく使われる、緊急時の必需品。",
   "etymology": "ラテン語lanterna（ランプ）に由来。",
   "synonyms": [],
   "derived": [],
@@ -14786,7 +14786,7 @@ const DICTIONARY_DATA = {
   }
  },
  "actriz": {
-  "nuance": "actor（俳優）の女性形。",
+  "nuance": "「女優」の基本語。actor（俳優）の女性形。actriz principal（主演女優）のように使う。",
   "etymology": "actor（俳優）の女性形。",
   "synonyms": [],
   "derived": [
@@ -14893,7 +14893,7 @@ const DICTIONARY_DATA = {
   }
  },
  "litro": {
-  "nuance": "容量の基本単位。",
+  "nuance": "「リットル」の基本語。un litro de leche（牛乳1リットル）、medio litro（500ミリリットル）のように分量表現でよく使う。",
   "etymology": "フランス語litre（容量単位）に由来。",
   "synonyms": [],
   "derived": [],
@@ -16610,7 +16610,7 @@ const DICTIONARY_DATA = {
   }
  },
  "sucursal": {
-  "nuance": "会社・銀行の支店を指す。",
+  "nuance": "「支店」の基本語。sucursal más cercana（最寄りの支店）はよく使う組み合わせ。",
   "etymology": "ラテン語sub（下に）から派生した語。",
   "synonyms": [],
   "derived": [],
@@ -24500,6 +24500,554 @@ const DICTIONARY_DATA = {
   "dialogue": {
    "es": "— El informe destaca varios problemas. Asimismo, propone soluciones.\n— Suena como un análisis completo.",
    "ja": "「その報告書はいくつかの問題を指摘しているんだ。同様に、解決策も提案しているよ」「包括的な分析みたいだね」"
+  }
+ },
+ "escultor": {
+  "nuance": "「彫刻家」の基本語。escultura（彫刻）から派生した語。",
+  "etymology": "esculpir（彫刻する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "esculpir（彫刻する）",
+   "escultura（彫刻）"
+  ],
+  "dialogue": {
+   "es": "— Ese escultor es muy reconocido en México.\n— He visto algunas de sus obras en el museo.",
+   "ja": "「あの彫刻家はメキシコでとても有名なんだ」「美術館で作品をいくつか見たことあるよ」"
+  }
+ },
+ "misa": {
+  "nuance": "「ミサ」の基本語。カトリックの礼拝儀式を指す。ir a misa（ミサに行く）はよく使う組み合わせ。",
+  "etymology": "ラテン語missa（送り出されるもの、ミサの終わりの言葉に由来）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Vamos a misa los domingos.\n— Es una linda tradición familiar.",
+   "ja": "「日曜日はミサに行くんだ」「素敵な家族の伝統だね」"
+  }
+ },
+ "sacerdote": {
+  "nuance": "「司祭」の基本語。cura（神父、より口語的）とほぼ同義。",
+  "etymology": "ラテン語sacerdos（聖職者）に由来。",
+  "synonyms": [
+   "cura（神父、より口語的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— El sacerdote dio un sermón muy conmovedor.\n— Se notaba que era importante para él.",
+   "ja": "「その司祭はとても感動的な説教をしたんだ」「彼にとって大切なことだったのがわかったよ」"
+  }
+ },
+ "fe": {
+  "nuance": "「信仰」の基本語。tener fe（信仰を持つ、または「信じる」という比喩的な意味）はよく使う組み合わせ。",
+  "etymology": "ラテン語fides（信頼）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Tiene mucha fe en que las cosas mejorarán.\n— Esa actitud positiva ayuda mucho.",
+   "ja": "「彼は物事が良くなると強く信じているんだ」「その前向きな姿勢はとても助けになるよね」"
+  }
+ },
+ "rezar": {
+  "nuance": "「祈る」の基本語。orar（祈る、よりフォーマル）とほぼ同義。",
+  "etymology": "ラテン語recitare（読み上げる）に由来。",
+  "synonyms": [
+   "orar（祈る、よりフォーマル）"
+  ],
+  "derived": [
+   "rezo（祈り、口語）"
+  ],
+  "dialogue": {
+   "es": "— Reza todas las noches antes de dormir.\n— Es una costumbre que aprendió de su abuela.",
+   "ja": "「彼女は毎晩寝る前にお祈りするんだ」「おばあちゃんから受け継いだ習慣なんだよね」"
+  }
+ },
+ "oración": {
+  "nuance": "「祈り」の基本語。文法用語「文」という意味にもなる（文脈で判断）。",
+  "etymology": "ラテン語oratio（話すこと、祈り）に由来。",
+  "synonyms": [],
+  "derived": [
+   "orar（祈る）"
+  ],
+  "dialogue": {
+   "es": "— Dijo una oración antes de comer.\n— Es un lindo momento de agradecimiento.",
+   "ja": "「食事の前にお祈りを唱えたんだ」「感謝を表す素敵な瞬間だよね」"
+  }
+ },
+ "bautizar": {
+  "nuance": "「洗礼を施す」の基本語。bautizo（洗礼式、名詞）と関連。",
+  "etymology": "ギリシャ語baptizein（浸す）に由来。",
+  "synonyms": [],
+  "derived": [
+   "bautizo（洗礼式）"
+  ],
+  "dialogue": {
+   "es": "— Van a bautizar a su hija el próximo mes.\n— ¡Qué emocionante! ¿Ya eligieron padrinos?",
+   "ja": "「来月娘さんの洗礼式をするんだって」「わくわくするね！もう代父母は決まった？」"
+  }
+ },
+ "bautizo": {
+  "nuance": "「洗礼式」の基本語。カトリックの家庭で子供が生まれて間もなく行われる儀式。",
+  "etymology": "bautizar（洗礼を施す）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "bautizar（洗礼を施す）"
+  ],
+  "dialogue": {
+   "es": "— El bautizo es este sábado.\n— ¿A qué hora empieza?",
+   "ja": "「洗礼式は今週土曜日なんだ」「何時から始まるの？」"
+  }
+ },
+ "casarse": {
+  "nuance": "「結婚する」の基本語。casarse con（〜と結婚する）という組み合わせでよく使う。",
+  "etymology": "casa（家）から派生した再帰動詞、「家庭を持つ」が原義。",
+  "synonyms": [],
+  "derived": [
+   "casa（家）",
+   "boda（結婚式）"
+  ],
+  "dialogue": {
+   "es": "— Se van a casar el próximo año.\n— ¡Qué buena noticia!",
+   "ja": "「彼らは来年結婚するんだって」「なんていいニュースなんだ！」"
+  }
+ },
+ "divorciarse": {
+  "nuance": "「離婚する」の基本語。divorciarse de（〜と離婚する）という組み合わせでよく使う。",
+  "etymology": "divorcio（離婚）から派生した再帰動詞。",
+  "synonyms": [],
+  "derived": [
+   "divorcio（離婚）"
+  ],
+  "dialogue": {
+   "es": "— Se divorciaron después de diez años.\n— Espero que ambos estén bien.",
+   "ja": "「彼らは10年後に離婚したんだ」「二人とも元気だといいね」"
+  }
+ },
+ "divorcio": {
+  "nuance": "「離婚」の基本語。divorciarse（離婚する）から派生した名詞。",
+  "etymology": "ラテン語divortium（分かれ道、離婚）に由来。",
+  "synonyms": [],
+  "derived": [
+   "divorciarse（離婚する）"
+  ],
+  "dialogue": {
+   "es": "— El divorcio fue un proceso difícil para toda la familia.\n— Ese tipo de cambios siempre son complicados.",
+   "ja": "「その離婚は家族全員にとって大変な過程だったんだ」「そういう変化はいつも複雑だよね」"
+  }
+ },
+ "creyente": {
+  "nuance": "「信者」の基本語。creer（信じる）から派生した語。男女同形。",
+  "etymology": "creer（信じる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "creer（信じる）"
+  ],
+  "dialogue": {
+   "es": "— Es una creyente muy devota.\n— Su fe se nota en todo lo que hace.",
+   "ja": "「彼女はとても敬虔な信者なんだ」「彼女がすることすべてに信仰心が表れているよね」"
+  }
+ },
+ "sagrado": {
+  "nuance": "「神聖な」の基本語。lugar sagrado（聖地）のように使う。比喩的に「絶対に譲れない」という意味でも使われる。",
+  "etymology": "ラテン語sacratus（聖別された）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Este lugar es sagrado para la comunidad.\n— Hay que tratarlo con respeto.",
+   "ja": "「この場所はその共同体にとって神聖な場所なんだ」「敬意を持って接しないとね」"
+  }
+ },
+ "arrendador": {
+  "nuance": "「貸主」の基本語。arrendar（賃貸する）から派生。arrendatario（借主）の対義語。propietario（所有者）とほぼ同義で使われることも多い。",
+  "etymology": "arrendar（賃貸する）から派生した語。",
+  "synonyms": [
+   "propietario（所有者、ほぼ同義）"
+  ],
+  "derived": [
+   "arrendar（賃貸する）"
+  ],
+  "dialogue": {
+   "es": "— Tengo que hablar con el arrendador sobre la reparación.\n— ¿Ya le mandaste un mensaje?",
+   "ja": "「修理について貸主と話す必要があるんだ」「もうメッセージ送った？」"
+  }
+ },
+ "arrendatario": {
+  "nuance": "「借主」の基本語。arrendador（貸主）の対義語。inquilino（賃借人）とほぼ同義。",
+  "etymology": "arrendar（賃貸する）から派生した語。",
+  "synonyms": [
+   "inquilino（賃借人、より口語的）"
+  ],
+  "derived": [
+   "arrendar（賃貸する）"
+  ],
+  "dialogue": {
+   "es": "— Como arrendatario, tienes ciertos derechos.\n— Es bueno conocerlos bien.",
+   "ja": "「借主として、一定の権利があるんだよ」「それをよく知っておくのはいいことだね」"
+  }
+ },
+ "tarifa": {
+  "nuance": "「料金」の基本語。precio（値段、より一般的）よりも、公式に決められた料金体系を指すことが多い。",
+  "etymology": "アラビア語ta'rifa（通知、料金表）に由来。",
+  "synonyms": [
+   "precio（値段、より一般的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Cuál es la tarifa por hora?\n— Doscientos pesos.",
+   "ja": "「時間あたりの料金はいくらですか？」「200ペソです」"
+  }
+ },
+ "tipo de interés": {
+  "nuance": "「金利」の基本語。銀行のローンや貯金で使われる専門用語。tasa de interés（金利、ほぼ同義）とも言う。",
+  "etymology": "tipo（率、種類）+ interés（利子）の組み合わせ。",
+  "synonyms": [
+   "tasa de interés（金利、ほぼ同義）"
+  ],
+  "derived": [
+   "interés（利子）"
+  ],
+  "dialogue": {
+   "es": "— El tipo de interés subió este mes.\n— Deberíamos revisar nuestros ahorros.",
+   "ja": "「今月金利が上がったんだ」「貯金を見直した方がいいね」"
+  }
+ },
+ "prestar": {
+  "nuance": "「貸す」の基本語。pedir prestado（借りる）の対義的な視点。prestar atención（注意を払う）という熟語もよく使う。",
+  "etymology": "ラテン語praestare（提供する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "préstamo（融資）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me prestas tu bolígrafo?\n— Claro, aquí tienes.",
+   "ja": "「ペン貸してくれる？」「もちろん、はいどうぞ」"
+  }
+ },
+ "balcón": {
+  "nuance": "「バルコニー」の基本語。salir al balcón（バルコニーに出る）はよく使う組み合わせ。",
+  "etymology": "フランス語balcon、さらにゲルマン語系balkoに由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Tiene un balcón con vista a la calle.\n— Debe ser agradable tomar café ahí.",
+   "ja": "「通りが見えるバルコニーがあるんだ」「そこでコーヒー飲むの気持ちよさそうだね」"
+  }
+ },
+ "terraza": {
+  "nuance": "「テラス」の基本語。balcón（バルコニー、小さい）よりも広いスペースを指すことが多い。屋上のテラスも指す。",
+  "etymology": "イタリア語terrazza（土の台）に由来。",
+  "synonyms": [],
+  "derived": [
+   "tierra（土）"
+  ],
+  "dialogue": {
+   "es": "— El restaurante tiene una terraza muy bonita.\n— Vamos a sentarnos ahí.",
+   "ja": "「そのレストランはとても素敵なテラスがあるんだ」「そこに座ろう」"
+  }
+ },
+ "ascensor": {
+  "nuance": "「エレベーター」の基本語。elevador（エレベーター、メキシコなど一部地域で一般的）とほぼ同義、地域差。",
+  "etymology": "ラテン語ascensor（上る者）に由来。",
+  "synonyms": [
+   "elevador（エレベーター、メキシコで一般的）"
+  ],
+  "derived": [
+   "ascender（上る）"
+  ],
+  "dialogue": {
+   "es": "— El ascensor está descompuesto.\n— Vamos a tener que usar las escaleras.",
+   "ja": "「エレベーターが故障しているんだ」「階段を使わないといけないね」"
+  }
+ },
+ "sótano": {
+  "nuance": "「地下室」の基本語。estacionamiento en el sótano（地下駐車場）のように使う。",
+  "etymology": "起源は諸説あるが、俗ラテン語系の語とされる。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Guardamos las cajas en el sótano.\n— Ahí hay más espacio.",
+   "ja": "「箱は地下室に保管しているんだ」「そこの方がスペースがあるからね」"
+  }
+ },
+ "fachada": {
+  "nuance": "「建物の正面」の基本語。比喩的に「見せかけ、うわべ」という意味でも使われる。",
+  "etymology": "イタリア語facciata（顔の部分）に由来。",
+  "synonyms": [],
+  "derived": [
+   "cara（顔）と関連する語源"
+  ],
+  "dialogue": {
+   "es": "— La fachada del edificio es muy antigua.\n— Se nota que tiene mucha historia.",
+   "ja": "「その建物の正面はとても古いんだ」「たくさんの歴史があるのがわかるよね」"
+  }
+ },
+ "reciclar": {
+  "nuance": "「リサイクルする」の基本語。reciclaje（リサイクル、名詞）から派生した動詞。",
+  "etymology": "re（再び）+ ciclo（サイクル）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "reciclaje（リサイクル）",
+   "ciclo（サイクル）"
+  ],
+  "dialogue": {
+   "es": "— ¿Reciclas el vidrio y el plástico?\n— Sí, tenemos contenedores separados.",
+   "ja": "「ガラスとプラスチックはリサイクルしてる？」「うん、別々の容器があるんだ」"
+  }
+ },
+ "energía renovable": {
+  "nuance": "「再生可能エネルギー」の基本語。energía solar（太陽光）、energía eólica（風力）などを含む総称。",
+  "etymology": "energía（エネルギー）+ renovable（再生可能な）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "renovar（更新する）"
+  ],
+  "dialogue": {
+   "es": "— Este país invierte mucho en energía renovable.\n— Es un buen paso hacia el futuro.",
+   "ja": "「この国は再生可能エネルギーにたくさん投資しているんだ」「未来に向けたいい一歩だよね」"
+  }
+ },
+ "plástico": {
+  "nuance": "「プラスチック」の基本語。bolsa de plástico（ビニール袋）のように使う。",
+  "etymology": "ギリシャ語plastikos（形作られる）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Trato de evitar el plástico de un solo uso.\n— Es una buena meta para el medio ambiente.",
+   "ja": "「使い捨てプラスチックを避けようとしているんだ」「環境にとっていい目標だね」"
+  }
+ },
+ "sostenible": {
+  "nuance": "「持続可能な」の基本語。desarrollo sostenible（持続可能な発展）はよく使う組み合わせ。",
+  "etymology": "sostener（支える）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "sostener（支える）"
+  ],
+  "dialogue": {
+   "es": "— Buscamos opciones más sostenibles.\n— Es importante pensar en el futuro.",
+   "ja": "「もっと持続可能な選択肢を探しているんだ」「未来を考えることは大切だよね」"
+  }
+ },
+ "votar": {
+  "nuance": "「投票する」の基本語。votar por（〜に投票する）という組み合わせでよく使う。",
+  "etymology": "voto（投票）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "voto（投票）"
+  ],
+  "dialogue": {
+   "es": "— ¿Ya votaste en las elecciones?\n— Sí, voté esta mañana.",
+   "ja": "「もう選挙で投票した？」「うん、今朝投票したよ」"
+  }
+ },
+ "legal": {
+  "nuance": "「合法の」の基本語。ilegal（違法の）の反対語。",
+  "etymology": "ラテン語legalis（法律の）に由来。",
+  "synonyms": [],
+  "derived": [
+   "ley（法律）"
+  ],
+  "dialogue": {
+   "es": "— ¿Es legal hacer eso aquí?\n— Sí, no hay ningún problema.",
+   "ja": "「ここでそれをするのは合法ですか？」「はい、何の問題もありません」"
+  }
+ },
+ "ilegal": {
+  "nuance": "「違法の」の基本語。legal（合法の）の反対語。",
+  "etymology": "in（否定）+ legal（合法の）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "legal（合法の）"
+  ],
+  "dialogue": {
+   "es": "— Estacionarse aquí es ilegal.\n— No lo sabía, gracias por decirme.",
+   "ja": "「ここに駐車するのは違法だよ」「知らなかったよ、教えてくれてありがとう」"
+  }
+ },
+ "libertad de expresión": {
+  "nuance": "「表現の自由」の基本語。libertad（自由）+ de expresión（表現の）の組み合わせ。",
+  "etymology": "libertad（自由）+ expresión（表現）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "libertad（自由）",
+   "expresar（表現する）"
+  ],
+  "dialogue": {
+   "es": "— La libertad de expresión es un derecho fundamental.\n— Estoy totalmente de acuerdo.",
+   "ja": "「表現の自由は基本的な権利だよね」「まったく同感だよ」"
+  }
+ },
+ "algoritmo": {
+  "nuance": "「アルゴリズム」の基本語。プログラミングやSNSのおすすめ機能の文脈でよく使われる。",
+  "etymology": "9世紀のペルシャの数学者al-Khwarizmiの名前に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El algoritmo de esta app es muy preciso.\n— Siempre me recomienda cosas que me gustan.",
+   "ja": "「このアプリのアルゴリズムはとても精密だね」「いつも好きなものをおすすめしてくれるよ」"
+  }
+ },
+ "negociación": {
+  "nuance": "「交渉」の基本語。negociar（交渉する）から派生した名詞。",
+  "etymology": "negociar（交渉する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "negociar（交渉する）"
+  ],
+  "dialogue": {
+   "es": "— La negociación duró varias horas.\n— ¿Llegaron a un acuerdo?",
+   "ja": "「交渉は何時間も続いたんだ」「合意には至った？」"
+  }
+ },
+ "socio": {
+  "nuance": "「共同経営者」の基本語。女性形はsocia。「会員」という意味にもなる（socio del club＝クラブの会員）。",
+  "etymology": "ラテン語socius（仲間）に由来。",
+  "synonyms": [],
+  "derived": [
+   "sociedad（会社、社会）"
+  ],
+  "dialogue": {
+   "es": "— Mi socio se encarga de las finanzas.\n— Es bueno tener a alguien de confianza.",
+   "ja": "「私の共同経営者が財務を担当しているんだ」「信頼できる人がいるのはいいことだよね」"
+  }
+ },
+ "sociedad": {
+  "nuance": "「会社」「社会」の両方の意味を持つ語。ビジネス文脈ではsociedad anónima（株式会社）のように使う。",
+  "etymology": "ラテン語societas（仲間関係）に由来。",
+  "synonyms": [],
+  "derived": [
+   "socio（共同経営者）"
+  ],
+  "dialogue": {
+   "es": "— Fundaron una sociedad hace cinco años.\n— Ha crecido mucho desde entonces.",
+   "ja": "「5年前に会社を設立したんだ」「それからすごく成長したよね」"
+  }
+ },
+ "fusionar": {
+  "nuance": "「合併する」の基本語。fusión（合併、名詞）から派生した動詞。",
+  "etymology": "fusión（融合、合併）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "fusión（合併）"
+  ],
+  "dialogue": {
+   "es": "— Las dos empresas decidieron fusionarse.\n— Va a ser una compañía muy grande.",
+   "ja": "「その2つの会社は合併することにしたんだ」「とても大きな会社になりそうだね」"
+  }
+ },
+ "fusión": {
+  "nuance": "「合併」の基本語。ビジネスの合併から、音楽ジャンルの融合（fusión de estilos）まで幅広く使える。",
+  "etymology": "ラテン語fusio（溶かすこと）に由来。",
+  "synonyms": [],
+  "derived": [
+   "fusionar（合併する）"
+  ],
+  "dialogue": {
+   "es": "— La fusión se anunció ayer.\n— ¿Cómo va a afectar a los empleados?",
+   "ja": "「その合併は昨日発表されたんだ」「従業員にはどう影響するんだろう？」"
+  }
+ },
+ "lanzar": {
+  "nuance": "「投げる」の基本語。「（製品を）発売する」という意味にもなる（lanzar un producto）。",
+  "etymology": "俗ラテン語lanceare（槍を投げる）に由来。",
+  "synonyms": [],
+  "derived": [
+   "lanzamiento（発射、発売）"
+  ],
+  "dialogue": {
+   "es": "— Lanzó la pelota muy fuerte.\n— Casi no la pude atrapar.",
+   "ja": "「彼はボールをすごく強く投げたんだ」「ほとんど捕まえられなかったよ」"
+  }
+ },
+ "atrapar": {
+  "nuance": "「捕まえる」の基本語。agarrar（つかむ）とほぼ同義だが、より「捕獲する」というニュアンス。",
+  "etymology": "trampa（罠）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "trampa（罠）"
+  ],
+  "dialogue": {
+   "es": "— Atrapó la pelota justo a tiempo.\n— Fue una jugada increíble.",
+   "ja": "「彼はちょうど間に合ってボールを捕まえたんだ」「すごいプレーだったね」"
+  }
+ },
+ "patear": {
+  "nuance": "「蹴る」の基本語。pata（動物の脚、俗語で人の足）から派生した語。",
+  "etymology": "pata（脚）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "pata（脚）"
+  ],
+  "dialogue": {
+   "es": "— Pateó el balón con mucha fuerza.\n— Casi llega a la portería.",
+   "ja": "「彼はすごい力でボールを蹴ったんだ」「もう少しでゴールに届くところだったよ」"
+  }
+ },
+ "anotar": {
+  "nuance": "「得点する」の基本語。「（メモを）書き留める」という意味にもなる。",
+  "etymology": "ラテン語annotare（印をつける）に由来。",
+  "synonyms": [],
+  "derived": [
+   "nota（メモ、点数）"
+  ],
+  "dialogue": {
+   "es": "— Anotó dos goles en el partido.\n— ¡Qué gran jugador!",
+   "ja": "「彼は試合で2ゴール決めたんだ」「なんてすごい選手なんだ！」"
+  }
+ },
+ "gol": {
+  "nuance": "「ゴール(得点)」の基本語。英語goalからの借用語。meter un gol（ゴールを決める）はよく使う組み合わせ。",
+  "etymology": "英語goalから派生した語。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¡Qué golazo!\n— Fue el mejor gol del partido.",
+   "ja": "「なんてすごいゴールなんだ！」「試合最高のゴールだったね」"
+  }
+ },
+ "enchufe": {
+  "nuance": "「コンセント、プラグ」の基本語。enchufar（差し込む、電源を入れる）から派生。",
+  "etymology": "enchufar（差し込む）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "enchufar（差し込む）"
+  ],
+  "dialogue": {
+   "es": "— ¿Dónde está el enchufe más cercano?\n— Ahí, junto a la ventana.",
+   "ja": "「一番近いコンセントはどこですか？」「そこ、窓のそばだよ」"
+  }
+ },
+ "interruptor": {
+  "nuance": "「スイッチ」の基本語。interruptor de luz（電気のスイッチ）のように使う。",
+  "etymology": "interrumpir（中断する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "interrumpir（中断する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Dónde está el interruptor de la luz?\n— Justo a la entrada.",
+   "ja": "「電気のスイッチはどこにありますか？」「ちょうど入り口のところだよ」"
+  }
+ },
+ "cerradura": {
+  "nuance": "「錠前」の基本語。cerrar（閉める）から派生した名詞。llave（鍵）と対で使われる。",
+  "etymology": "cerrar（閉める）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "cerrar（閉める）"
+  ],
+  "dialogue": {
+   "es": "— La cerradura está atascada.\n— Vamos a llamar a un cerrajero.",
+   "ja": "「錠前が引っかかっているんだ」「鍵屋さんを呼ぼう」"
+  }
+ },
+ "timbre": {
+  "nuance": "「呼び鈴」の基本語。tocar el timbre（呼び鈴を鳴らす）はよく使う組み合わせ。",
+  "etymology": "フランス語timbre（鐘、音色）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Alguien tocó el timbre.\n— Voy a ver quién es.",
+   "ja": "「誰かが呼び鈴を鳴らしたよ」「誰か見てくるね」"
   }
  }
 };

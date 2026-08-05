@@ -17,10 +17,12 @@
     --violet: #7B2FF7; --brick: #FF4D6D; --muted: #B6A6DE; --paper-line: #EFE2C6;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  html { min-height:100%; }
+  html { min-height:100%;
+    background: radial-gradient(1400px 1000px at 50% -8%, var(--bg-b), var(--bg-a) 70%);
+    background-size: cover; }
   body { margin:0; padding:0; min-height:100%;
     background: radial-gradient(1400px 1000px at 50% -8%, var(--bg-b), var(--bg-a) 70%);
-    background-attachment: fixed; background-size: cover;
+    background-size: cover;
     font-family: -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif; color: var(--card); }
   #app { max-width: 440px; margin: 0 auto; min-height: 100dvh; padding: 16px 18px 22px; display:flex; flex-direction:column; }
   .nav-row { display:flex; gap:6px; margin-bottom:20px; background: rgba(255,255,255,0.06); padding:5px; border-radius:16px; }
@@ -475,7 +477,12 @@ const TENSE_NOTES = {
 const SUBJ_IDX_FOR_IMP = [1,2,3,4]; // PERSONS_IMP(tú,usted,nosotros,ustedes) -> subjuntivo配列のインデックス
 const GERUNDIO = { hablar:"hablando", comer:"comiendo", vivir:"viviendo", ser:"siendo", estar:"estando", tener:"teniendo",
   ir:"yendo", hacer:"haciendo", poder:"pudiendo", querer:"queriendo", decir:"diciendo", poner:"poniendo",
-  salir:"saliendo", venir:"viniendo", dar:"dando", ver:"viendo", saber:"sabiendo", traer:"trayendo" };
+  salir:"saliendo", venir:"viniendo", dar:"dando", ver:"viendo", saber:"sabiendo", traer:"trayendo",
+  trabajar:"trabajando", estudiar:"estudiando", comprar:"comprando", aprender:"aprendiendo", decidir:"decidiendo",
+  vender:"vendiendo", mirar:"mirando", escuchar:"escuchando", necesitar:"necesitando", usar:"usando",
+  esperar:"esperando", tomar:"tomando", pensar:"pensando", volver:"volviendo", pedir:"pidiendo",
+  dormir:"durmiendo", sentir:"sintiendo", jugar:"jugando", conocer:"conociendo", encontrar:"encontrando",
+  seguir:"siguiendo", oír:"oyendo" };
 const HABER = {
   imperfecto:["había","habías","había","habíamos","habían"],
   futuro:["habré","habrás","habrá","habremos","habrán"],
@@ -1286,6 +1293,7 @@ function renderQuiz(){
       rl.appendChild(item);
     });
     app.appendChild(rl);
+    quizQuestion = null;
     return;
   }
   if(lastSpokenQuizId !== quizQuestion.word.id){ lastSpokenQuizId = quizQuestion.word.id; if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(quizQuestion.word.es), 150); }
@@ -1392,7 +1400,7 @@ function renderConjTab(){
   else if(state.conjSubTab==="listening") renderListeningDrill();
 }
 
-let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjLog=[], lastSpokenConjKey=null, conjFanfarePlayed=false;
+let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjLog=[], lastSpokenConjKey=null, conjFanfarePlayed=false, conjFlashFlipped=false;
 function buildConjQuestion(tenseFilter){
   const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
   const verbType = state.conjVerbType || "all";
@@ -1426,7 +1434,16 @@ function renderConjDrill(){
     chipRow.appendChild(chip);
   });
   app.appendChild(chipRow);
-  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; }
+  app.appendChild(el("div","section-label","モード"));
+  const modeRow = el("div","chip-row");
+  [["input","✍️ 入力で答える"],["flashcard","🗂️ カードでパラパラ確認"]].forEach(([key,label])=>{
+    const chip = el("button","chip"+((state.conjDrillMode||"input")===key?" active":""), label);
+    chip.onclick = ()=>{ playTap(); state.conjDrillMode=key; conjQuestion=null; conjFlashFlipped=false; render(); };
+    modeRow.appendChild(chip);
+  });
+  app.appendChild(modeRow);
+  if(!conjQuestion){ conjQuestion = buildConjQuestion(state.conjTense); conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; conjFlashFlipped=false; }
+  if((state.conjDrillMode||"input")==="flashcard"){ renderConjFlashcard(); return; }
   if(conjIdx>=conjTotal){ if(!conjFanfarePlayed){ conjFanfarePlayed=true; playFanfare(); } doneScreenConj(); return; }
   const conjKey = conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
   if(lastSpokenConjKey !== conjKey){ lastSpokenConjKey = conjKey; if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(conjQuestion.verb.v), 150); }
@@ -1495,6 +1512,38 @@ function doneScreenConj(){
     rl.appendChild(item);
   });
   app.appendChild(rl);
+}
+
+function renderConjFlashcard(){
+  const conjKey = conjQuestion.verb.v+"|"+conjQuestion.tense+"|"+conjQuestion.personIdx;
+  if(lastSpokenConjKey !== conjKey){ lastSpokenConjKey = conjKey; if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(conjQuestion.verb.v), 150); }
+  const cardArea = el("div","card-area");
+  const fcEl = el("div","flashcard"+(conjFlashFlipped?" flipped":""));
+  const front = el("div","flash-face flash-front");
+  front.innerHTML = `<div style="font-size:12px;color:#9C8FC2;font-weight:700;margin-bottom:6px;">${TENSE_LABELS[conjQuestion.tense]}</div>
+    <div class="flash-word">${conjQuestion.verb.v}</div>
+    <div style="font-size:13px;color:#8A7CB0;margin-top:4px;">（${conjQuestion.verb.ja}）</div>
+    <div style="font-size:15px;font-weight:700;margin-top:10px;">${conjQuestion.personLabel}</div>
+    <div class="tap-hint">タップして答えを見る</div>`;
+  const back = el("div","flash-face flash-back");
+  back.innerHTML = `<div class="flash-word">${conjQuestion.answer}</div>
+    <div class="tap-hint">${conjQuestion.verb.v}（${conjQuestion.personLabel}）</div>`;
+  fcEl.appendChild(front); fcEl.appendChild(back);
+  fcEl.onclick = ()=>{ playFlip(); conjFlashFlipped=!conjFlashFlipped; render(); };
+  cardArea.appendChild(fcEl);
+  app.appendChild(cardArea);
+  const speakRowEl = el("div"); speakRowEl.style.textAlign="center"; speakRowEl.style.marginTop="10px";
+  const speakBtn = el("button","speak-btn","🔊");
+  speakBtn.onclick = ()=> speak(conjQuestion.verb.v);
+  speakRowEl.appendChild(speakBtn);
+  app.appendChild(speakRowEl);
+  const navRow = el("div"); navRow.style.display="flex"; navRow.style.justifyContent="center"; navRow.style.gap="12px"; navRow.style.marginTop="18px";
+  const nextBtn = el("button","primary-btn","次のカード →");
+  nextBtn.onclick = ()=>{ playTap(); conjQuestion = buildConjQuestion(state.conjTense); conjFlashFlipped=false; render(); };
+  navRow.appendChild(nextBtn);
+  app.appendChild(navRow);
+  const hint = el("div","footer-hint","スコアは記録されません。気楽にパラパラめくって確認できるモードです。");
+  app.appendChild(hint);
 }
 
 /* ---------- Example sentence fill-in-the-blank ---------- */
@@ -1983,6 +2032,10 @@ function renderPhrases(){
     if(item.note){ box.appendChild(el("div","review-note", item.note)); }
     app.appendChild(box);
   });
+  const sceneIdx = state.phraseSceneIdx;
+  const onPrev = sceneIdx>0 ? ()=>{ playTap(); state.phraseSceneIdx=sceneIdx-1; render(); } : null;
+  const onNext = sceneIdx<SCENARIOS.length-1 ? ()=>{ playTap(); state.phraseSceneIdx=sceneIdx+1; render(); } : null;
+  app.appendChild(buildFloatingNav("← 前のシーン", "次のシーン →", onPrev, onNext));
 }
 function getColumnWeight(title){
   progress.columnPref = progress.columnPref || {};

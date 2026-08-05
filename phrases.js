@@ -52,6 +52,31 @@ const SCENARIOS = [
     "es": "Sin azúcar, gracias.",
     "ja": "砂糖なしでお願いします。",
     "note": ""
+   },
+   {
+    "es": "¿Tiene leche de almendra?",
+    "ja": "アーモンドミルクはありますか？",
+    "note": ""
+   },
+   {
+    "es": "Sin azúcar, por favor.",
+    "ja": "砂糖なしでお願いします。",
+    "note": ""
+   },
+   {
+    "es": "¿Cuál es su especialidad de la casa?",
+    "ja": "このお店のおすすめは何ですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Tienen wifi?",
+    "ja": "Wi-Fiはありますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Me puede recalentar esto?",
+    "ja": "これ温め直してもらえますか？",
+    "note": ""
    }
   ]
  },
@@ -204,6 +229,36 @@ const SCENARIOS = [
     "es": "¿Me da un recibo, por favor?",
     "ja": "レシートをいただけますか？",
     "note": ""
+   },
+   {
+    "es": "¿Dónde están las bolsas para la fruta?",
+    "ja": "果物用の袋はどこにありますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Tienen productos sin gluten?",
+    "ja": "グルテンフリーの商品はありますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Está en oferta esto?",
+    "ja": "これはセール中ですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Aceptan puntos de la tarjeta de lealtad?",
+    "ja": "ポイントカードは使えますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Me puede dar una bolsa más grande?",
+    "ja": "もっと大きい袋もらえますか？",
+    "note": ""
+   },
+   {
+    "es": "Se me olvidó mi bolsa reutilizable.",
+    "ja": "マイバッグを忘れちゃいました。",
+    "note": ""
    }
   ]
  },
@@ -249,6 +304,36 @@ const SCENARIOS = [
    {
     "es": "¿Me pueden llamar un taxi?",
     "ja": "タクシーを呼んでもらえますか？",
+    "note": ""
+   },
+   {
+    "es": "¿A qué hora es el check-out?",
+    "ja": "チェックアウトは何時ですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Puedo dejar mi equipaje después del check-out?",
+    "ja": "チェックアウト後も荷物を預けられますか？",
+    "note": ""
+   },
+   {
+    "es": "No funciona el aire acondicionado.",
+    "ja": "エアコンが動きません。",
+    "note": ""
+   },
+   {
+    "es": "¿El desayuno está incluido?",
+    "ja": "朝食は含まれていますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Tienen servicio de lavandería?",
+    "ja": "ランドリーサービスはありますか？",
+    "note": ""
+   },
+   {
+    "es": "Quisiera una habitación con vista al mar.",
+    "ja": "海が見える部屋がいいのですが。",
     "note": ""
    }
   ]
@@ -508,6 +593,36 @@ const SCENARIOS = [
     "es": "No me siento bien.",
     "ja": "体調が良くないです。",
     "note": ""
+   },
+   {
+    "es": "¿Necesito receta para esto?",
+    "ja": "これには処方箋が必要ですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Cada cuánto debo tomarlo?",
+    "ja": "どれくらいの間隔で飲めばいいですか？",
+    "note": ""
+   },
+   {
+    "es": "Soy alérgico a la penicilina.",
+    "ja": "ペニシリンアレルギーがあります。",
+    "note": ""
+   },
+   {
+    "es": "¿Tiene algo para el dolor de cabeza?",
+    "ja": "頭痛に効くもの何かありますか？",
+    "note": ""
+   },
+   {
+    "es": "Necesito hacer una cita con el doctor.",
+    "ja": "医者の予約を取る必要があります。",
+    "note": ""
+   },
+   {
+    "es": "¿Cuánto tiempo tengo que esperar?",
+    "ja": "どれくらい待たないといけませんか？",
+    "note": ""
    }
   ]
  },
@@ -731,6 +846,31 @@ const SCENARIOS = [
     "es": "Se me acabó la batería.",
     "ja": "バッテリーが切れちゃった。",
     "note": ""
+   },
+   {
+    "es": "Se cortó la llamada.",
+    "ja": "電話が切れちゃった。",
+    "note": ""
+   },
+   {
+    "es": "No te escucho bien.",
+    "ja": "よく聞こえないよ。",
+    "note": ""
+   },
+   {
+    "es": "Te mando un mensaje después.",
+    "ja": "後でメッセージ送るね。",
+    "note": ""
+   },
+   {
+    "es": "¿Me puedes mandar tu ubicación?",
+    "ja": "位置情報送ってもらえる？",
+    "note": ""
+   },
+   {
+    "es": "Se me acabó la batería.",
+    "ja": "バッテリーが切れちゃった。",
+    "note": ""
    }
   ]
  },
@@ -777,6 +917,31 @@ const SCENARIOS = [
     "es": "Que te vaya bien.",
     "ja": "うまくいきますように。",
     "note": "別れ際によく使う一言"
+   },
+   {
+    "es": "¿A qué te dedicas?",
+    "ja": "お仕事は何をされていますか？",
+    "note": ""
+   },
+   {
+    "es": "¿De dónde eres originalmente?",
+    "ja": "出身はどちらですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Cuánto tiempo llevas viviendo aquí?",
+    "ja": "ここに住んでどれくらいになりますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Qué planes tienes para el fin de semana?",
+    "ja": "週末は何か予定ある？",
+    "note": ""
+   },
+   {
+    "es": "El tráfico estuvo terrible hoy.",
+    "ja": "今日は渋滞がひどかったよ。",
+    "note": ""
    }
   ]
  },
@@ -823,6 +988,31 @@ const SCENARIOS = [
     "es": "El departamento está amueblado.",
     "ja": "その部屋は家具付きです。",
     "note": ""
+   },
+   {
+    "es": "¿Cuánto es el depósito?",
+    "ja": "保証金はいくらですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Se permiten mascotas?",
+    "ja": "ペット可ですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Los servicios están incluidos en la renta?",
+    "ja": "光熱費は家賃に含まれていますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Cuándo puedo mudarme?",
+    "ja": "いつ引っ越せますか？",
+    "note": ""
+   },
+   {
+    "es": "¿El contrato es por un año?",
+    "ja": "契約は1年間ですか？",
+    "note": ""
    }
   ]
  },
@@ -868,6 +1058,46 @@ const SCENARIOS = [
    {
     "es": "Hubo un accidente.",
     "ja": "事故がありました。",
+    "note": ""
+   },
+   {
+    "es": "¡Se está quemando algo!",
+    "ja": "何か燃えています！",
+    "note": ""
+   },
+   {
+    "es": "Alguien se desmayó.",
+    "ja": "誰かが気を失いました。",
+    "note": ""
+   },
+   {
+    "es": "Necesito el número de mi seguro.",
+    "ja": "保険番号が必要です。",
+    "note": ""
+   },
+   {
+    "es": "¿Dónde está el hospital más cercano?",
+    "ja": "一番近い病院はどこですか？",
+    "note": ""
+   },
+   {
+    "es": "¡Llamen a una ambulancia!",
+    "ja": "救急車を呼んでください！",
+    "note": ""
+   },
+   {
+    "es": "No puede respirar bien.",
+    "ja": "うまく呼吸ができていません。",
+    "note": ""
+   },
+   {
+    "es": "¿Dónde está la salida de emergencia?",
+    "ja": "非常口はどこですか？",
+    "note": ""
+   },
+   {
+    "es": "Hay un incendio en el edificio.",
+    "ja": "建物で火事が起きています。",
     "note": ""
    }
   ]
@@ -1006,6 +1236,26 @@ const SCENARIOS = [
     "es": "Gracias por tu ayuda con el proyecto.",
     "ja": "プロジェクトを手伝ってくれてありがとう。",
     "note": ""
+   },
+   {
+    "es": "¿Tienes un momento para revisar esto?",
+    "ja": "これ確認する時間ある？",
+    "note": ""
+   },
+   {
+    "es": "Voy a estar fuera de la oficina mañana.",
+    "ja": "明日はオフィスにいません。",
+    "note": ""
+   },
+   {
+    "es": "¿Podemos reagendar la junta?",
+    "ja": "会議の予定変更できますか？",
+    "note": ""
+   },
+   {
+    "es": "Le doy seguimiento y le aviso.",
+    "ja": "確認して連絡しますね。",
+    "note": ""
    }
   ]
  },
@@ -1051,6 +1301,46 @@ const SCENARIOS = [
    {
     "es": "¿Hay un cajero automático cerca?",
     "ja": "近くにATMはありますか？",
+    "note": ""
+   },
+   {
+    "es": "Quiero abrir una cuenta.",
+    "ja": "口座を開設したいです。",
+    "note": ""
+   },
+   {
+    "es": "¿Cuál es el tipo de cambio hoy?",
+    "ja": "今日の為替レートはいくらですか？",
+    "note": ""
+   },
+   {
+    "es": "Perdí mi tarjeta, ¿qué hago?",
+    "ja": "カードをなくしました、どうすればいいですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Cuánto tarda la transferencia?",
+    "ja": "振込にはどれくらいかかりますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Puedo hacer un depósito aquí?",
+    "ja": "ここで預け入れできますか？",
+    "note": ""
+   },
+   {
+    "es": "Necesito un estado de cuenta.",
+    "ja": "明細書が必要です。",
+    "note": ""
+   },
+   {
+    "es": "¿Hay algún cajero cerca?",
+    "ja": "この近くにATMはありますか？",
+    "note": ""
+   },
+   {
+    "es": "Mi tarjeta fue rechazada.",
+    "ja": "カードが拒否されました。",
     "note": ""
    }
   ]
@@ -1112,6 +1402,21 @@ const SCENARIOS = [
    {
     "es": "¿Este aparato está ocupado?",
     "ja": "このマシンは使用中ですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Cuántas repeticiones debo hacer?",
+    "ja": "何回やればいいですか？",
+    "note": ""
+   },
+   {
+    "es": "Necesito estirar antes de empezar.",
+    "ja": "始める前にストレッチが必要です。",
+    "note": ""
+   },
+   {
+    "es": "¿Me puede corregir mi postura?",
+    "ja": "姿勢を直してもらえますか？",
     "note": ""
    }
   ]
@@ -1179,6 +1484,21 @@ const SCENARIOS = [
     "es": "Me gustaría ver el catálogo de estilos.",
     "ja": "スタイルのカタログを見たいです。",
     "note": ""
+   },
+   {
+    "es": "Quiero un cambio de look.",
+    "ja": "イメチェンしたいです。",
+    "note": ""
+   },
+   {
+    "es": "¿Me puede hacer un peinado para una boda?",
+    "ja": "結婚式用のヘアセットをお願いできますか？",
+    "note": ""
+   },
+   {
+    "es": "No me gustan los productos con mucho olor.",
+    "ja": "香りの強い製品は苦手です。",
+    "note": ""
    }
   ]
  },
@@ -1224,6 +1544,46 @@ const SCENARIOS = [
    {
     "es": "Prefiero no opinar sobre eso.",
     "ja": "それについては意見を控えたいです。",
+    "note": ""
+   },
+   {
+    "es": "Depende de cómo lo veas.",
+    "ja": "見方によるね。",
+    "note": ""
+   },
+   {
+    "es": "No lo había pensado de esa manera.",
+    "ja": "そんな風には考えていなかったな。",
+    "note": ""
+   },
+   {
+    "es": "Hasta cierto punto, tienes razón.",
+    "ja": "ある程度は君の言う通りだね。",
+    "note": ""
+   },
+   {
+    "es": "Prefiero no opinar sobre eso.",
+    "ja": "それについては意見を控えておくよ。",
+    "note": ""
+   },
+   {
+    "es": "Eso tiene sentido.",
+    "ja": "それは筋が通っているね。",
+    "note": ""
+   },
+   {
+    "es": "No estoy tan seguro de eso.",
+    "ja": "それについてはあまり確信が持てないな。",
+    "note": ""
+   },
+   {
+    "es": "Veo tu punto, pero...",
+    "ja": "君の言い分はわかるけど…",
+    "note": ""
+   },
+   {
+    "es": "Coincido contigo en eso.",
+    "ja": "それについては同感だよ。",
     "note": ""
    }
   ]
@@ -1330,6 +1690,92 @@ const SCENARIOS = [
    {
     "es": "El clima ha estado muy raro últimamente.",
     "ja": "最近天気がすごく変だね。",
+    "note": ""
+   }
+  ]
+ },
+ {
+  "icon": "👶",
+  "title": "子育て・家族の会話",
+  "items": [
+   {
+    "es": "¿Cuántos años tiene tu hijo?",
+    "ja": "お子さんは何歳ですか？",
+    "note": ""
+   },
+   {
+    "es": "Ya está gateando.",
+    "ja": "もうハイハイしているんです。",
+    "note": ""
+   },
+   {
+    "es": "Se despierta varias veces en la noche.",
+    "ja": "夜に何度も起きるんです。",
+    "note": ""
+   },
+   {
+    "es": "¿A qué escuela va?",
+    "ja": "どの学校に通っていますか？",
+    "note": ""
+   },
+   {
+    "es": "Está en la etapa de los berrinches.",
+    "ja": "今かんしゃくの時期なんです。",
+    "note": "berrinche＝かんしゃく"
+   },
+   {
+    "es": "Le tocan las vacunas este mes.",
+    "ja": "今月予防接種の番なんです。",
+    "note": ""
+   },
+   {
+    "es": "¿Le puedo dar esto de comer?",
+    "ja": "これ食べさせてもいいですか？",
+    "note": ""
+   },
+   {
+    "es": "Se porta muy bien en la escuela.",
+    "ja": "学校ではとてもいい子にしているんです。",
+    "note": ""
+   },
+   {
+    "es": "Está aprendiendo a caminar.",
+    "ja": "今歩く練習をしているんです。",
+    "note": ""
+   },
+   {
+    "es": "¿Me puedes ayudar a cuidarlo un rato?",
+    "ja": "少しの間見ていてもらえる？",
+    "note": ""
+   },
+   {
+    "es": "¿Ya duerme toda la noche?",
+    "ja": "もう夜通し寝る？",
+    "note": ""
+   },
+   {
+    "es": "Está resfriado desde ayer.",
+    "ja": "昨日から風邪を引いているんです。",
+    "note": ""
+   },
+   {
+    "es": "Le encanta jugar afuera.",
+    "ja": "外で遊ぶのが大好きなんです。",
+    "note": ""
+   },
+   {
+    "es": "¿Cómo le fue en la escuela hoy?",
+    "ja": "今日学校どうだった？",
+    "note": ""
+   },
+   {
+    "es": "Necesito recogerlo a las tres.",
+    "ja": "3時に迎えに行かないといけないんです。",
+    "note": ""
+   },
+   {
+    "es": "Es un poco tímido con gente nueva.",
+    "ja": "初対面の人にはちょっと人見知りするんです。",
     "note": ""
    }
   ]

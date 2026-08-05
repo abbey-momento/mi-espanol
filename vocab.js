@@ -12352,5 +12352,281 @@ const VOCAB_DATA = [
   "en": "Likewise",
   "ja": "同様に",
   "cat": "Frases"
+ },
+ {
+  "es": "El escultor",
+  "en": "Sculptor",
+  "ja": "彫刻家",
+  "cat": "Arte"
+ },
+ {
+  "es": "La misa",
+  "en": "Mass (Catholic service)",
+  "ja": "ミサ",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El sacerdote",
+  "en": "Priest",
+  "ja": "司祭",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "La fe",
+  "en": "Faith",
+  "ja": "信仰",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Rezar",
+  "en": "To pray",
+  "ja": "祈る",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La oración",
+  "en": "Prayer",
+  "ja": "祈り",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Bautizar",
+  "en": "To baptize",
+  "ja": "洗礼を施す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El bautizo",
+  "en": "Baptism",
+  "ja": "洗礼式",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Casarse",
+  "en": "To get married",
+  "ja": "結婚する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "Divorciarse",
+  "en": "To get divorced",
+  "ja": "離婚する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El divorcio",
+  "en": "Divorce",
+  "ja": "離婚",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Creyente",
+  "en": "Believer",
+  "ja": "信者",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Sagrado",
+  "en": "Sacred",
+  "ja": "神聖な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "El arrendador",
+  "en": "Landlord",
+  "ja": "貸主",
+  "cat": "Casa"
+ },
+ {
+  "es": "El arrendatario",
+  "en": "Tenant",
+  "ja": "借主",
+  "cat": "Casa"
+ },
+ {
+  "es": "La tarifa",
+  "en": "Rate / fee",
+  "ja": "料金",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "El tipo de interés",
+  "en": "Interest rate",
+  "ja": "金利",
+  "cat": "Finanzas"
+ },
+ {
+  "es": "Prestar",
+  "en": "To lend",
+  "ja": "貸す",
+  "cat": "Verbos"
+ },
+ {
+  "es": "El balcón",
+  "en": "Balcony",
+  "ja": "バルコニー",
+  "cat": "Casa"
+ },
+ {
+  "es": "La terraza",
+  "en": "Terrace",
+  "ja": "テラス",
+  "cat": "Casa"
+ },
+ {
+  "es": "El ascensor",
+  "en": "Elevator",
+  "ja": "エレベーター",
+  "cat": "Casa"
+ },
+ {
+  "es": "El sótano",
+  "en": "Basement",
+  "ja": "地下室",
+  "cat": "Casa"
+ },
+ {
+  "es": "La fachada",
+  "en": "Facade",
+  "ja": "建物の正面",
+  "cat": "Casa"
+ },
+ {
+  "es": "Reciclar",
+  "en": "To recycle",
+  "ja": "リサイクルする",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La energía renovable",
+  "en": "Renewable energy",
+  "ja": "再生可能エネルギー",
+  "cat": "Naturaleza"
+ },
+ {
+  "es": "El plástico",
+  "en": "Plastic",
+  "ja": "プラスチック",
+  "cat": "General"
+ },
+ {
+  "es": "Sostenible",
+  "en": "Sustainable",
+  "ja": "持続可能な",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Votar",
+  "en": "To vote",
+  "ja": "投票する",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "Legal",
+  "en": "Legal",
+  "ja": "合法の",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "Ilegal",
+  "en": "Illegal",
+  "ja": "違法の",
+  "cat": "Adjetivos"
+ },
+ {
+  "es": "La libertad de expresión",
+  "en": "Freedom of speech",
+  "ja": "表現の自由",
+  "cat": "Sociedad"
+ },
+ {
+  "es": "El algoritmo",
+  "en": "Algorithm",
+  "ja": "アルゴリズム",
+  "cat": "Tecnología"
+ },
+ {
+  "es": "La negociación",
+  "en": "Negotiation",
+  "ja": "交渉",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "El socio",
+  "en": "Business partner",
+  "ja": "共同経営者",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "La sociedad",
+  "en": "Company / society",
+  "ja": "会社・社会",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Fusionar",
+  "en": "To merge",
+  "ja": "合併する",
+  "cat": "Verbos"
+ },
+ {
+  "es": "La fusión",
+  "en": "Merger",
+  "ja": "合併",
+  "cat": "Trabajo"
+ },
+ {
+  "es": "Lanzar",
+  "en": "To throw",
+  "ja": "投げる",
+  "cat": "Deportes"
+ },
+ {
+  "es": "Atrapar",
+  "en": "To catch",
+  "ja": "捕まえる",
+  "cat": "Deportes"
+ },
+ {
+  "es": "Patear",
+  "en": "To kick",
+  "ja": "蹴る",
+  "cat": "Deportes"
+ },
+ {
+  "es": "Anotar",
+  "en": "To score",
+  "ja": "得点する",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El gol",
+  "en": "Goal (score)",
+  "ja": "ゴール（得点）",
+  "cat": "Deportes"
+ },
+ {
+  "es": "El enchufe",
+  "en": "Electrical outlet / plug",
+  "ja": "コンセント・プラグ",
+  "cat": "Casa"
+ },
+ {
+  "es": "El interruptor",
+  "en": "Switch",
+  "ja": "スイッチ",
+  "cat": "Casa"
+ },
+ {
+  "es": "La cerradura",
+  "en": "Lock",
+  "ja": "錠前",
+  "cat": "Casa"
+ },
+ {
+  "es": "El timbre",
+  "en": "Doorbell",
+  "ja": "呼び鈴",
+  "cat": "Casa"
  }
 ];
