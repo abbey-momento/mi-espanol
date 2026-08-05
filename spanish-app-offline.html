@@ -1426,14 +1426,31 @@ function renderConjDrill(){
   });
   app.appendChild(verbTypeRow);
   app.appendChild(el("div","section-label","時制を選ぶ"));
+  const COMMON_TENSES = ["presente","indefinido","imperfecto","futuro","perfecto","imperativo","subjuntivo"];
+  const MORE_TENSES = TENSE_KEYS.filter(t=>!COMMON_TENSES.includes(t));
   const chipRow = el("div","chip-row");
-  ["Todos", ...TENSE_KEYS].forEach(t=>{
+  ["Todos", ...COMMON_TENSES].forEach(t=>{
     const label = t==="Todos" ? "Todos" : TENSE_LABELS[t];
     const chip = el("button","chip"+(state.conjTense===t?" active":""), label);
     chip.onclick = ()=>{ playTap(); state.conjTense=t; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; render(); };
     chipRow.appendChild(chip);
   });
   app.appendChild(chipRow);
+  const moreSelected = MORE_TENSES.includes(state.conjTense);
+  const isMoreOpen = state.conjShowMoreTenses || moreSelected;
+  const moreToggle = el("button","ghost-btn", isMoreOpen ? "▲ 閉じる" : "▼ もっと見る（接続法・完了形など）");
+  moreToggle.style.marginBottom="10px";
+  moreToggle.onclick = ()=>{ playTap(); state.conjShowMoreTenses = !state.conjShowMoreTenses; render(); };
+  app.appendChild(moreToggle);
+  if(isMoreOpen){
+    const moreRow = el("div","chip-row");
+    MORE_TENSES.forEach(t=>{
+      const chip = el("button","chip"+(state.conjTense===t?" active":""), TENSE_LABELS[t]);
+      chip.onclick = ()=>{ playTap(); state.conjTense=t; conjQuestion=null; conjIdx=0; conjScore=0; conjMissed=[]; conjLog=[]; lastSpokenConjKey=null; conjFanfarePlayed=false; render(); };
+      moreRow.appendChild(chip);
+    });
+    app.appendChild(moreRow);
+  }
   app.appendChild(el("div","section-label","モード"));
   const modeRow = el("div","chip-row");
   [["input","✍️ 入力で答える"],["flashcard","🗂️ カードでパラパラ確認"]].forEach(([key,label])=>{
