@@ -329,6 +329,7 @@ function speakSeq(text, lang, onEnd){
     }
     u.onend = ()=>{ if(onEnd) onEnd(); };
     u.onerror = ()=>{ if(onEnd) onEnd(); };
+    window.speechSynthesis.cancel();
     window.speechSynthesis.speak(u);
   }catch(e){ if(onEnd) onEnd(); }
 }
@@ -1576,7 +1577,9 @@ function renderConjFlashcard(){
     setTimeout(()=> speakSeq(textToSpeak, "es", null), 150);
   }
   const cardArea = el("div","card-area");
-  cardArea.style.marginBottom = "4px";
+  cardArea.style.marginBottom = "0px";
+  cardArea.style.alignItems = "flex-start";
+  cardArea.style.flex = "0 0 auto";
   const fcEl = el("div","flashcard conj-flashcard"+(conjFlashFlipped?" flipped":""));
   const front = el("div","flash-face flash-front");
   const frontSpeak = el("button","mini-speak-btn","🔊");
@@ -1602,7 +1605,7 @@ function renderConjFlashcard(){
   fcEl.onclick = ()=>{ if(!conjFlashFlipped) playFlip(); else playTap(); conjFlashStep(); render(); };
   cardArea.appendChild(fcEl);
   app.appendChild(cardArea);
-  const rewindRow = el("div"); rewindRow.style.textAlign="center"; rewindRow.style.marginTop="2px";
+  const rewindRow = el("div"); rewindRow.style.textAlign="center"; rewindRow.style.marginTop="0px";
   const rewindBtn = el("button","speak-btn","⏪");
   rewindBtn.title = "1つ前に戻る";
   rewindBtn.disabled = conjFlashStateIdx<=0;
