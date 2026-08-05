@@ -454,7 +454,8 @@ const PERSONS5 = ["yo","tú","él/ella/usted","nosotros","ellos/ellas/ustedes"];
 const PERSONS_IMP = ["tú","usted","nosotros","ustedes"];
 const TENSE_KEYS = ["presente","indefinido","imperfecto","futuro","condicional","subjuntivo","perfecto","imperativo","imperativo_neg","progresivo","pluscuamperfecto","futuro_perfecto","condicional_perfecto","subjuntivo_imperfecto","subjuntivo_perfecto"];
 const TENSE_LABELS = { presente:"現在形", indefinido:"点過去", imperfecto:"線過去", futuro:"未来形",
-  condicional:"過去未来形(条件法)", subjuntivo:"接続法現在", perfecto:"現在完了形", imperativo:"命令形（肯定）", imperativo_neg:"命令形（否定）",
+  condicional:"過去未来形(条件法)", subjuntivo:"接続法現在", perfecto:"現在完了形", imperativo:"命令形（肯定のみ）", imperativo_neg:"命令形（否定のみ）",
+  imperativo_mix:"命令形（肯定+否定）",
   progresivo:"現在進行形", pluscuamperfecto:"過去完了形", futuro_perfecto:"未来完了形", condicional_perfecto:"条件法完了形",
   subjuntivo_imperfecto:"接続法過去形", subjuntivo_perfecto:"接続法現在完了形" };
 const TENSE_NOTES = {
@@ -467,6 +468,7 @@ const TENSE_NOTES = {
   perfecto:"「〜したことがある」「（今までに）〜した」という経験や完了を表す複合時制。haber+過去分詞で作る。",
   imperativo:"命令・依頼を表す命令形（肯定）。",
   imperativo_neg:"「〜しないで」という否定の命令。tú以外も含め、全人称で接続法現在と同じ形にno を付けて作る。",
+  imperativo_mix:"肯定命令と否定命令をランダムに混ぜて出題。肯定はtú特有の不規則形、否定は接続法現在を借りる、という切り替えそのものを練習できる。",
   progresivo:"「今まさに〜しているところだ」を表す現在進行形。estarの現在形＋現在分詞（gerundio）で作る。",
   pluscuamperfecto:"「（過去のある時点より）さらに前に〜していた」を表す過去完了形。haberの線過去＋過去分詞で作る。",
   futuro_perfecto:"「（未来のある時点までに）〜してしまっているだろう」を表す未来完了形。haberの未来形＋過去分詞で作る。",
@@ -935,6 +937,7 @@ const TENSE_TO_GRAMMAR = {
   perfecto: "現在完了形（〜したことがある）の作り方",
   imperativo: "命令形の作り方（規則・不規則）",
   imperativo_neg: "命令形の使い方（肯定・否定・代名詞の位置）",
+  imperativo_mix: "命令形の使い方（肯定・否定・代名詞の位置）",
   progresivo: "進行形（estar + 現在分詞）",
   pluscuamperfecto: "過去完了形（había hablado）の作り方",
   futuro_perfecto: "未来完了形・条件法完了形の作り方",
@@ -1402,6 +1405,7 @@ function renderConjTab(){
 
 let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjLog=[], lastSpokenConjKey=null, conjFanfarePlayed=false, conjFlashFlipped=false;
 function buildConjQuestion(tenseFilter){
+  if(tenseFilter==="imperativo_mix") tenseFilter = Math.random()<0.5 ? "imperativo" : "imperativo_neg";
   const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
   const verbType = state.conjVerbType || "all";
   const verbPool = verbType==="regular" ? VERBS.filter(v=>v.regular) : verbType==="irregular" ? VERBS.filter(v=>!v.regular) : VERBS;
@@ -1426,8 +1430,8 @@ function renderConjDrill(){
   });
   app.appendChild(verbTypeRow);
   app.appendChild(el("div","section-label","時制を選ぶ"));
-  const COMMON_TENSES = ["presente","indefinido","imperfecto","futuro","perfecto","imperativo","subjuntivo"];
-  const MORE_TENSES = TENSE_KEYS.filter(t=>!COMMON_TENSES.includes(t));
+  const COMMON_TENSES = ["presente","indefinido","imperfecto","futuro","perfecto","imperativo_mix","subjuntivo"];
+  const MORE_TENSES = TENSE_KEYS.filter(t=>!COMMON_TENSES.includes(t) && t!=="imperativo" && t!=="imperativo_neg").concat(["imperativo","imperativo_neg"]);
   const chipRow = el("div","chip-row");
   ["Todos", ...COMMON_TENSES].forEach(t=>{
     const label = t==="Todos" ? "Todos" : TENSE_LABELS[t];
