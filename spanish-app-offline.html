@@ -11,7 +11,7 @@
 <meta name="theme-color" content="#1B0E33">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg-a: #1B0E33; --bg-b: #4B1770;
@@ -20,6 +20,7 @@
     --violet: #7B2FF7; --brick: #FF4D6D; --muted: #B6A6DE; --paper-line: #EFE2C6;
     --font-body: -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
     --font-round: "Zen Maru Gothic", -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
+    --font-headword: "Zen Kaku Gothic New", -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   html { min-height:100%; min-height:100vh; min-height:100dvh;
@@ -40,7 +41,7 @@
   .subnav-btn { flex:1; padding:9px 4px; border-radius:11px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:#D9CCEF; font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; }
   .subnav-btn.active { background: rgba(255,255,255,0.16); color:#fff; border-color: rgba(255,255,255,0.4); }
   .eyebrow { font-size:11px; letter-spacing:0.16em; color: var(--accent3); font-weight:700; margin-bottom:6px; }
-  h1.title { font-family: Georgia, "Times New Roman", serif; font-size:30px; font-weight:700; margin:0; }
+  h1.title { font-family: var(--font-headword); font-size:30px; font-weight:700; margin:0; }
   .streak-row { display:flex; align-items:center; gap:6px; margin-top:8px; cursor:pointer; width:fit-content; }
   .streak-text { font-size:14px; color:#E4D9F7; font-weight:600; }
   .streak-hint { font-size:11px; color:#9C8FC2; margin-left:2px; }
@@ -52,13 +53,13 @@
   .cal-day.today { border:2px solid var(--accent3); }
   .cal-stats-row { display:flex; gap:12px; margin-top:18px; }
   .cal-stat { flex:1; background: var(--card); border-radius:16px; padding:14px; text-align:center; color:var(--ink); }
-  .cal-stat-num { font-family: Georgia, serif; font-size:24px; font-weight:700; }
+  .cal-stat-num { font-family: var(--font-headword); font-size:24px; font-weight:700; }
   .cal-stat-label { font-size:11px; color:#8A7AAE; font-weight:700; margin-top:2px; }
   .passport { background: var(--card); border-radius:20px; padding:20px; color:var(--ink);
     box-shadow: 0 12px 32px rgba(0,0,0,0.35); margin:16px 0 20px; border:1px solid var(--paper-line); }
   .passport-top { display:flex; justify-content:space-between; align-items:flex-start; }
   .passport-label { font-size:12px; color:#8A7AAE; font-weight:700; letter-spacing:0.04em; }
-  .passport-num { font-family: Georgia, serif; font-size:28px; font-weight:700; margin-top:2px; }
+  .passport-num { font-family: var(--font-headword); font-size:28px; font-weight:700; margin-top:2px; }
   .passport-of { font-size:15px; color:#8A7AAE; font-weight:600; }
   .stamp-circle { width:50px; height:50px; border-radius:50%; border:2.5px dashed var(--accent); color: var(--accent);
     display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12px; transform:rotate(-8deg); }
@@ -80,7 +81,7 @@
   .mode-card { background: rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.16); border-radius:16px;
     padding:18px 13px; text-align:left; cursor:pointer; color:var(--card); font-family:inherit; }
   .mode-icon { font-size:24px; margin-bottom:7px; }
-  .mode-name { font-family: Georgia, serif; font-size:17px; font-weight:700; }
+  .mode-name { font-family: var(--font-headword); font-size:17px; font-weight:700; }
   .mode-desc { font-size:11.5px; color:#C9BBE8; margin-top:3px; }
   .footer-hint { text-align:center; font-size:11.5px; color:#9C8FC2; margin-top:22px; font-family: var(--font-body); }
   .top-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
@@ -100,7 +101,7 @@
   .conj-flash-back { background: linear-gradient(135deg, #4F7FE0, #7B5FD9); }
   .mini-speak-btn { position:absolute; top:12px; right:12px; width:32px; height:32px; border-radius:999px; border:none;
     background:rgba(0,0,0,0.12); color:inherit; font-size:14px; cursor:pointer; display:flex; align-items:center; justify-content:center; padding:0; }
-  .flash-word { font-family: Georgia, serif; font-size:26px; font-weight:700; }
+  .flash-word { font-family: var(--font-headword); font-size:26px; font-weight:700; }
   .flash-ja { font-size:14px; margin-top:6px; opacity:0.8; font-weight:600; }
   .tap-hint { font-size:11.5px; margin-top:9px; opacity:.65; font-weight:600; }
   .tap-prompt { text-align:center; font-size:11.5px; color:#9C8FC2; font-weight:700; letter-spacing:.04em; }
@@ -110,7 +111,7 @@
   .judge-yes { background: var(--accent2); color:#0B0518; }
   .quiz-prompt { text-align:center; margin-bottom:20px; }
   .quiz-label { font-size:13px; color:#C9BBE8; font-weight:600; margin-bottom:6px; }
-  .quiz-word { font-family: Georgia, serif; font-size:28px; font-weight:700; }
+  .quiz-word { font-family: var(--font-headword); font-size:28px; font-weight:700; }
   .options-grid { display:flex; flex-direction:column; gap:9px; }
   .option-btn { padding:15px 17px; border-radius:14px; border:1px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.07);
     color:var(--card); font-size:15px; font-weight:600; text-align:left; cursor:pointer; font-family:inherit; }
@@ -122,7 +123,7 @@
   .done-wrap { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:9px; }
   .done-stamp { width:68px; height:68px; border-radius:50%; border:3px dashed var(--accent3); color:var(--accent3);
     display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; margin-bottom:6px; }
-  .done-title { font-family: Georgia, serif; font-size:21px; font-weight:700; }
+  .done-title { font-family: var(--font-headword); font-size:21px; font-weight:700; }
   .done-score { font-size:15px; color:#E4D9F7; font-weight:700; }
   .done-sub { font-size:12.5px; color:#C9BBE8; font-family: var(--font-body); }
   .primary-btn { margin-top:12px; padding:12px 26px; border-radius:999px; border:none; background: linear-gradient(135deg, var(--accent), var(--violet));
@@ -136,7 +137,7 @@
   .review-note { font-size:12.5px; color:#C9BBE8; margin-top:5px; line-height:1.5; font-family: var(--font-body); }
   .conj-prompt { text-align:center; margin-bottom:14px; }
   .conj-tense { font-size:12px; color:var(--accent3); font-weight:700; letter-spacing:.04em; }
-  .conj-verb { font-family: Georgia, serif; font-size:24px; font-weight:700; margin-top:4px; }
+  .conj-verb { font-family: var(--font-headword); font-size:24px; font-weight:700; margin-top:4px; }
   .conj-person { font-size:16px; color:#E4D9F7; margin-top:4px; }
   .conj-input-row { display:flex; gap:8px; margin-top:18px; }
   .conj-input { flex:1; padding:14px 16px; border-radius:14px; border:2px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.08);
@@ -153,7 +154,7 @@
   .article { background: rgba(255,255,255,0.06); border-radius:18px; padding:18px; margin-bottom:14px; border:1px solid rgba(255,255,255,0.13); }
   .swipe-card { background: linear-gradient(160deg, rgba(255,255,255,0.09), rgba(255,255,255,0.04)); border-radius:24px; padding:0;
     border:1px solid rgba(255,255,255,0.16); box-shadow:0 10px 30px rgba(0,0,0,0.35); overflow:hidden; touch-action:pan-y; user-select:none; -webkit-user-select:none; }
-  .swipe-card-title { font-family:Georgia,serif; font-size:19px; font-weight:700; padding:20px 20px 14px; cursor:grab;
+  .swipe-card-title { font-family: var(--font-headword); font-size:19px; font-weight:700; padding:20px 20px 14px; cursor:grab;
     background: rgba(255,255,255,0.06); border-bottom:1px solid rgba(255,255,255,0.1); }
   .swipe-card-title:active { cursor:grabbing; }
   .swipe-card-body { padding:18px 20px; font-size:14.5px; line-height:1.8; white-space:pre-wrap; max-height:46vh; overflow-y:auto; -webkit-overflow-scrolling:touch; touch-action:pan-y; font-family: var(--font-body); }
@@ -161,7 +162,7 @@
   .swipe-btn { flex:1; max-width:150px; padding:16px 10px; border-radius:18px; border:none; font-size:15px; font-weight:700; cursor:pointer; font-family:inherit; }
   .swipe-btn.dislike { background:rgba(255,60,60,0.12); color:#FF8C8C; border:1px solid rgba(255,60,60,0.25); }
   .swipe-btn.like { background:rgba(5,255,161,0.12); color:var(--accent2); border:1px solid rgba(5,255,161,0.3); }
-  .article-title { font-family: Georgia, serif; font-size:16.5px; font-weight:700; color:var(--accent3); margin-bottom:8px; }
+  .article-title { font-family: var(--font-headword); font-size:16.5px; font-weight:700; color:var(--accent3); margin-bottom:8px; }
   .article-body { font-size:14px; line-height:1.75; color:#EFE7FA; white-space:pre-wrap; font-family: var(--font-body); }
   .news-badge { font-size:11px; background: rgba(255,60,172,0.18); color:var(--accent); padding:6px 10px; border-radius:10px; margin-bottom:16px; line-height:1.6; }
   .explain-btn { margin-top:10px; padding:8px 14px; border-radius:999px; border:1px solid rgba(255,255,255,0.3); background:rgba(255,255,255,0.08);
@@ -177,7 +178,7 @@
   .grammar-table td { color:#EFE7FA; }
   .grammar-table-hint { font-size:11px; color:#9C8FC2; margin-top:6px; text-align:right; font-family: var(--font-body); }
   .grammar-list-item { background: rgba(255,255,255,0.06); border-radius:16px; padding:16px 18px; margin-bottom:12px; border:1px solid rgba(255,255,255,0.13); cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
-  .grammar-list-title { font-family: Georgia, serif; font-size:15px; font-weight:700; color:var(--card); }
+  .grammar-list-title { font-family: var(--font-headword); font-size:15px; font-weight:700; color:var(--card); }
   .faq-bubble-row { display:flex; align-items:flex-end; gap:8px; margin-bottom:16px; cursor:pointer; }
   .faq-avatar { flex-shrink:0; width:34px; height:34px; border-radius:999px; background:linear-gradient(135deg, var(--accent3), var(--accent));
     display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:800; color:#2A1245; }
@@ -191,10 +192,10 @@
   .dict-search::placeholder { color:#9C8FC2; }
   .dict-item { background: rgba(255,255,255,0.06); border-radius:14px; padding:13px 16px; margin-bottom:8px; border:1px solid rgba(255,255,255,0.12);
     cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
-  .dict-item-es { font-family: Georgia, serif; font-weight:700; font-size:15px; }
+  .dict-item-es { font-family: var(--font-headword); font-weight:700; font-size:15px; }
   .dict-item-ja { font-size:12px; color:#C9BBE8; margin-top:2px; }
   .dict-detail-header { text-align:center; margin-bottom:8px; }
-  .dict-detail-es { font-family: Georgia, serif; font-size:30px; font-weight:700; }
+  .dict-detail-es { font-family: var(--font-headword); font-size:30px; font-weight:700; }
   .dict-detail-en-ja { font-size:14px; color:#C9BBE8; margin-top:4px; }
   .dict-section-title { font-size:11.5px; font-weight:700; color:var(--accent3); letter-spacing:0.04em; margin:16px 0 6px; }
   .dict-pending { text-align:center; color:#9C8FC2; font-size:13px; padding:20px 0; }
@@ -1808,11 +1809,11 @@ function renderNumbersDrill(){
   app.appendChild(pr);
   const box = el("div","sentence-box");
   if(numQuestion.isTime){
-    box.innerHTML = `<div style="font-size:44px;font-weight:700;font-family:Georgia,serif;">🕐 ${numQuestion.display}</div>
+    box.innerHTML = `<div style="font-size:44px;font-weight:700;font-family: var(--font-headword);">🕐 ${numQuestion.display}</div>
       <div style="font-size:12px;color:#C9BBE8;margin-top:8px;">この時刻をスペイン語で書いてください（例: son las tres y cuarto）</div>`;
   } else {
     const hint = numQuestion.isYear ? "この年号をスペイン語のつづりで入力してください（年もふつうの数として読みます）" : "この数字をスペイン語のつづりで入力してください";
-    box.innerHTML = `<div style="font-size:${numQuestion.n>=1000000?30:44}px;font-weight:700;font-family:Georgia,serif;">${numQuestion.isYear?"Año: ":""}${numQuestion.n.toLocaleString("en-US")}</div>
+    box.innerHTML = `<div style="font-size:${numQuestion.n>=1000000?30:44}px;font-weight:700;font-family: var(--font-headword);">${numQuestion.isYear?"Año: ":""}${numQuestion.n.toLocaleString("en-US")}</div>
       <div style="font-size:12px;color:#C9BBE8;margin-top:8px;">${hint}</div>`;
   }
   app.appendChild(box);
@@ -2062,7 +2063,7 @@ function renderGrammarRoadmap(){
   const overallPct = Math.round(totalCorrect/totalAttempts*100);
   const overallBox = el("div","article"); overallBox.style.marginBottom="18px";
   overallBox.innerHTML = `<div class="dict-section-title">全体（測定できている${measured.length}項目）</div>
-    <div style="font-size:28px;font-weight:700;font-family:Georgia,serif;">${overallPct}%</div>
+    <div style="font-size:28px;font-weight:700;font-family: var(--font-headword);">${overallPct}%</div>
     <div class="bar-track" style="margin-top:8px;"><div class="bar-fill" style="width:${overallPct}%;"></div></div>
     <div style="font-size:12px;color:#C9BBE8;margin-top:6px;">直近${totalAttempts}問中${totalCorrect}問正解</div>`;
   app.appendChild(overallBox);
@@ -2093,7 +2094,7 @@ function getGrammarList(){
 /* ---------- Situational phrases ---------- */
 function buildLinkedPhraseLine(text, sceneIdx){
   const wrap = el("div");
-  wrap.style.fontFamily="Georgia,serif"; wrap.style.fontSize="15.5px"; wrap.style.fontWeight="700"; wrap.style.lineHeight="1.5";
+  wrap.style.fontFamily="var(--font-headword)"; wrap.style.fontSize="15.5px"; wrap.style.fontWeight="700"; wrap.style.lineHeight="1.5";
   const tokens = text.split(/(\s+|[.,;:!?¿¡()"/])/).filter(t=>t!=="");
   tokens.forEach(tok=>{
     const cleanWord = tok.toLowerCase().replace(/[^a-záéíóúñü]/gi,"");
