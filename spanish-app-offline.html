@@ -189,7 +189,6 @@
   .faq-bubble { position:relative; background: rgba(255,255,255,0.09); border:1px solid rgba(255,255,255,0.15); border-radius:18px 18px 18px 4px;
     padding:12px 16px; font-size:14px; line-height:1.55; color:var(--card); flex:1; transition:background .15s; }
   .faq-bubble-row:active .faq-bubble { background: rgba(255,60,172,0.16); border-color: rgba(255,60,172,0.35); }
-  .faq-bubble-num { font-size:10.5px; color:#9C8FC2; font-weight:700; margin-bottom:3px; letter-spacing:0.03em; }
   .grammar-chevron { color:#C9BBE8; font-size:16px; }
   .dict-search { width:100%; padding:12px 16px; border-radius:14px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.08);
     color:var(--card); font-size:15px; font-family:inherit; margin-bottom:16px; }
@@ -2330,16 +2329,16 @@ function renderFaq(){
     const item = FAQ_ITEMS[faqDetailIdx];
     app.appendChild(topBar("質問箱", "", ()=>{ faqDetailIdx=null; render(); }));
     const spacer0 = el("div"); spacer0.style.height="10px"; app.appendChild(spacer0);
-    const qRow = el("div","faq-bubble-row");
+    const qRow = el("div"); qRow.style.display="flex"; qRow.style.alignItems="flex-end"; qRow.style.gap="8px"; qRow.style.flexDirection="row-reverse"; qRow.style.marginBottom="16px";
     const qAvatar = el("div","faq-avatar","Q");
-    const qBubble = el("div","faq-bubble");
+    const qBubble = el("div","faq-bubble"); qBubble.style.borderRadius="18px 18px 4px 18px";
     qBubble.style.fontSize="15.5px"; qBubble.style.fontWeight="700";
     qBubble.textContent = item.q;
     qRow.appendChild(qAvatar); qRow.appendChild(qBubble);
     app.appendChild(qRow);
-    const aRow = el("div"); aRow.style.display="flex"; aRow.style.alignItems="flex-end"; aRow.style.gap="8px"; aRow.style.flexDirection="row-reverse";
+    const aRow = el("div"); aRow.style.display="flex"; aRow.style.alignItems="flex-end"; aRow.style.gap="8px";
     const aAvatar = el("div","faq-avatar","A"); aAvatar.style.background="linear-gradient(135deg, var(--accent2), var(--accent3))";
-    const aBubble = el("div","faq-bubble"); aBubble.style.borderRadius="18px 18px 4px 18px"; aBubble.style.background="rgba(255,255,255,0.05)";
+    const aBubble = el("div","faq-bubble"); aBubble.style.borderRadius="18px 18px 18px 4px"; aBubble.style.background="rgba(255,255,255,0.05)";
     aBubble.style.whiteSpace="pre-wrap"; aBubble.style.lineHeight="1.8"; aBubble.style.fontSize="14.5px"; aBubble.style.fontFamily="var(--font-body)";
     aBubble.textContent = item.a;
     aRow.appendChild(aAvatar); aRow.appendChild(aBubble);
@@ -2363,10 +2362,10 @@ function renderFaq(){
   app.appendChild(el("div","footer-hint","スペイン語学習でよく混乱するポイントをQ&A形式でまとめました。気になる質問をタップしてください。"));
   const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
   FAQ_ITEMS.forEach((item,i)=>{
-    const row = el("div","faq-bubble-row");
+    const row = el("div","faq-bubble-row"); row.style.flexDirection="row-reverse";
     const avatar = el("div","faq-avatar","Q");
-    const bubble = el("div","faq-bubble");
-    bubble.innerHTML = `<div class="faq-bubble-num">質問 ${i+1}</div>${item.q}`;
+    const bubble = el("div","faq-bubble"); bubble.style.borderRadius="18px 18px 4px 18px";
+    bubble.textContent = item.q;
     row.appendChild(avatar); row.appendChild(bubble);
     row.onclick = ()=>{ playTap(); faqDetailIdx=i; render(); };
     app.appendChild(row);
