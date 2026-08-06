@@ -11,7 +11,7 @@
 <meta name="theme-color" content="#1B0E33">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg-a: #1B0E33; --bg-b: #4B1770;
@@ -20,7 +20,8 @@
     --violet: #7B2FF7; --brick: #FF4D6D; --muted: #B6A6DE; --paper-line: #EFE2C6;
     --font-body: -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
     --font-round: "Zen Maru Gothic", -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
-    --font-headword: "Zen Kaku Gothic New", -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
+    --font-headword: "Sora", "Zen Kaku Gothic New", -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
+    --font-numeric: "Space Grotesk", "Zen Kaku Gothic New", -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   html { min-height:100%; min-height:100vh; min-height:100dvh;
@@ -53,13 +54,13 @@
   .cal-day.today { border:2px solid var(--accent3); }
   .cal-stats-row { display:flex; gap:12px; margin-top:18px; }
   .cal-stat { flex:1; background: var(--card); border-radius:16px; padding:14px; text-align:center; color:var(--ink); }
-  .cal-stat-num { font-family: var(--font-headword); font-size:24px; font-weight:700; }
+  .cal-stat-num { font-family: var(--font-numeric); font-size:24px; font-weight:700; }
   .cal-stat-label { font-size:11px; color:#8A7AAE; font-weight:700; margin-top:2px; }
   .passport { background: var(--card); border-radius:20px; padding:20px; color:var(--ink);
     box-shadow: 0 12px 32px rgba(0,0,0,0.35); margin:16px 0 20px; border:1px solid var(--paper-line); }
   .passport-top { display:flex; justify-content:space-between; align-items:flex-start; }
   .passport-label { font-size:12px; color:#8A7AAE; font-weight:700; letter-spacing:0.04em; }
-  .passport-num { font-family: var(--font-headword); font-size:28px; font-weight:700; margin-top:2px; }
+  .passport-num { font-family: var(--font-numeric); font-size:28px; font-weight:700; margin-top:2px; }
   .passport-of { font-size:15px; color:#8A7AAE; font-weight:600; }
   .stamp-circle { width:50px; height:50px; border-radius:50%; border:2.5px dashed var(--accent); color: var(--accent);
     display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12px; transform:rotate(-8deg); }
@@ -1809,11 +1810,11 @@ function renderNumbersDrill(){
   app.appendChild(pr);
   const box = el("div","sentence-box");
   if(numQuestion.isTime){
-    box.innerHTML = `<div style="font-size:44px;font-weight:700;font-family: var(--font-headword);">🕐 ${numQuestion.display}</div>
+    box.innerHTML = `<div style="font-size:44px;font-weight:700;font-family: var(--font-numeric);">🕐 ${numQuestion.display}</div>
       <div style="font-size:12px;color:#C9BBE8;margin-top:8px;">この時刻をスペイン語で書いてください（例: son las tres y cuarto）</div>`;
   } else {
     const hint = numQuestion.isYear ? "この年号をスペイン語のつづりで入力してください（年もふつうの数として読みます）" : "この数字をスペイン語のつづりで入力してください";
-    box.innerHTML = `<div style="font-size:${numQuestion.n>=1000000?30:44}px;font-weight:700;font-family: var(--font-headword);">${numQuestion.isYear?"Año: ":""}${numQuestion.n.toLocaleString("en-US")}</div>
+    box.innerHTML = `<div style="font-size:${numQuestion.n>=1000000?30:44}px;font-weight:700;font-family: var(--font-numeric);">${numQuestion.isYear?"Año: ":""}${numQuestion.n.toLocaleString("en-US")}</div>
       <div style="font-size:12px;color:#C9BBE8;margin-top:8px;">${hint}</div>`;
   }
   app.appendChild(box);
@@ -2063,7 +2064,7 @@ function renderGrammarRoadmap(){
   const overallPct = Math.round(totalCorrect/totalAttempts*100);
   const overallBox = el("div","article"); overallBox.style.marginBottom="18px";
   overallBox.innerHTML = `<div class="dict-section-title">全体（測定できている${measured.length}項目）</div>
-    <div style="font-size:28px;font-weight:700;font-family: var(--font-headword);">${overallPct}%</div>
+    <div style="font-size:28px;font-weight:700;font-family: var(--font-numeric);">${overallPct}%</div>
     <div class="bar-track" style="margin-top:8px;"><div class="bar-fill" style="width:${overallPct}%;"></div></div>
     <div style="font-size:12px;color:#C9BBE8;margin-top:6px;">直近${totalAttempts}問中${totalCorrect}問正解</div>`;
   app.appendChild(overallBox);
