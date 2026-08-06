@@ -617,7 +617,7 @@ function labelFor(ex, topic){
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"vocab", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:[], dictColloquialOnly:false, dictTagFilter:null, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, phraseCardMode:"list", phraseCardLangFirst:"es", grammarRoadmapOpen:false, columnMode:"cards" };
+let state = { tab:"home", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:[], dictColloquialOnly:false, dictTagFilter:null, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, phraseDetailIdx:null, phraseCardMode:"list", phraseCardLangFirst:"es", grammarRoadmapOpen:false, columnMode:"cards", faqMode:"list" };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -665,6 +665,10 @@ function render(){
     || (state.tab==="faq" && faqDetailIdx!==null)
     || (state.tab==="phrases" && state.phraseSceneIdx!==null && state.phraseSceneIdx!==undefined);
   if(!hideNav) app.appendChild(navBar());
+  if(state.tab==="home"){
+    renderHomeTab();
+    return;
+  }
   if(state.tab==="vocab"){
     if(state.mode==="home") renderVocabHome();
     else if(state.mode==="flash") renderFlash();
@@ -696,19 +700,21 @@ function render(){
     renderFaq();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; phraseFlashStates=[]; phraseFlashStateIdx=-1; phraseFlashSceneIdx=null; stopDictAutoPlay(); columnDeck=[]; faqDetailIdx=null; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; state.phraseDetailIdx=null; phraseFlashStates=[]; phraseFlashStateIdx=-1; phraseFlashSceneIdx=null; stopDictAutoPlay(); columnDeck=[]; faqDetailIdx=null; faqFlashStates=[]; faqFlashStateIdx=-1; }
 const NAV_ICONS = {
+  home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/><path d="M10 19v-5h4v5"/></svg>',
   vocab: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5c-.8 0-1.5-.7-1.5-1.5V5.5z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5c.8 0 1.5-.7 1.5-1.5V5.5z"/></svg>',
-  conj: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 4.5l4 4-11 11H4.5v-4l11-11z"/><path d="M13 7l4 4"/></svg>',
-  phrases: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10.5H9l-4 3.5v-3.5H4V5.5z"/></svg>',
-  dict: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"/><path d="M19.5 19.5l-4.8-4.8"/></svg>',
   grammar: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5V4z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg>',
+  phrases: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10.5H9l-4 3.5v-3.5H4V5.5z"/></svg>',
   more: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>',
 };
 function navBar(){
   const row = el("div","nav-row");
-  [["vocab","単語"],["conj","ドリル"],["phrases","フレーズ"],["dict","辞書"],["grammar","文法"],["more","その他"]].forEach(([key,label])=>{
-    const isActive = state.tab===key || (key==="more" && (state.tab==="column"||state.tab==="news"||state.tab==="faq"));
+  [["home","ホーム"],["vocab","単語"],["grammar","文法"],["phrases","フレーズ"],["more","その他"]].forEach(([key,label])=>{
+    const isActive = state.tab===key
+      || (key==="vocab" && state.tab==="dict")
+      || (key==="grammar" && state.tab==="conj")
+      || (key==="more" && (state.tab==="column"||state.tab==="news"||state.tab==="faq"));
     const b = el("button","nav-btn"+(isActive?" active":""));
     b.innerHTML = `<div class="nav-btn-icon">${NAV_ICONS[key]}</div><div class="nav-btn-label">${label}</div>`;
     b.onclick = ()=>{ playTap(); state.tab=key; state.mode="home"; resetSessions(); render(); };
@@ -733,6 +739,53 @@ function renderMoreMenu(){
 }
 
 /* ---------- Vocab Home ---------- */
+function renderHomeTab(){
+  const stats = computeStats();
+  const header = el("div");
+  header.appendChild(el("div","eyebrow","INICIO"));
+  header.appendChild(el("h1","title","ホーム"));
+  app.appendChild(header);
+  progress.settings = progress.settings || {};
+  const sr = el("div","streak-row");
+  sr.innerHTML = `<span>🔥</span><span class="streak-text">${progress.streak} ${progress.streak===1?"día":"días"} seguidos</span><span class="streak-hint">›</span>`;
+  sr.onclick = ()=>{ playTap(); state.tab="vocab"; state.mode="home"; state.calendarOpen=true; render(); };
+  app.appendChild(sr);
+  const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
+
+  // 単語の進捗カード
+  const vocabCard = el("div","article"); vocabCard.style.cursor="pointer"; vocabCard.style.marginBottom="14px";
+  vocabCard.innerHTML = `<div class="dict-section-title">📖 単語</div>
+    <div style="font-family:var(--font-numeric);font-size:26px;font-weight:500;margin-top:4px;">${stats.known}<span style="font-size:15px;color:#B9AAD9;"> / ${stats.total}</span></div>
+    <div class="bar-track" style="margin-top:8px;"><div class="bar-fill" style="width:${stats.barPct}%;"></div></div>
+    <div style="font-size:12px;color:#C9BBE8;margin-top:8px;">覚えた単語の数 ・ タップして単語・辞書・クイズへ</div>`;
+  vocabCard.onclick = ()=>{ playTap(); state.tab="vocab"; state.mode="home"; render(); };
+  app.appendChild(vocabCard);
+
+  // 文法の進捗カード
+  const gStats = computeGrammarOverall();
+  const grammarCard = el("div","article"); grammarCard.style.cursor="pointer"; grammarCard.style.marginBottom="14px";
+  if(gStats){
+    grammarCard.innerHTML = `<div class="dict-section-title">📐 文法</div>
+      <div style="font-family:var(--font-numeric);font-size:26px;font-weight:500;margin-top:4px;">${gStats.pct}%</div>
+      <div class="bar-track" style="margin-top:8px;"><div class="bar-fill" style="width:${gStats.pct}%;"></div></div>
+      <div style="font-size:12px;color:#C9BBE8;margin-top:8px;">ドリル正答率（測定できている${gStats.measured}項目）・タップして文法・ドリルへ</div>`;
+  } else {
+    grammarCard.innerHTML = `<div class="dict-section-title">📐 文法</div>
+      <div style="font-size:13px;color:#C9BBE8;margin-top:8px;">ドリルを解くと、ここに正答率が表示されます。タップして文法・ドリルへ</div>`;
+  }
+  grammarCard.onclick = ()=>{ playTap(); state.tab="grammar"; render(); };
+  app.appendChild(grammarCard);
+
+  app.appendChild(el("div","section-label","ショートカット"));
+  const modeGrid = el("div","mode-grid");
+  const pc = el("button","mode-card"); pc.innerHTML = `<div class="mode-icon">💬</div><div class="mode-name">フレーズ</div><div class="mode-desc">場面ごとに練習</div>`;
+  pc.onclick = ()=>{ playTap(); state.tab="phrases"; render(); };
+  const mc = el("button","mode-card"); mc.innerHTML = `<div class="mode-icon">☰</div><div class="mode-name">その他</div><div class="mode-desc">コラム・ニュース・質問箱</div>`;
+  mc.onclick = ()=>{ playTap(); state.tab="more"; render(); };
+  modeGrid.appendChild(pc); modeGrid.appendChild(mc);
+  app.appendChild(modeGrid);
+  app.appendChild(el("div","footer-hint","Unos minutos libres · practica y sigue tu viaje"));
+}
 function renderVocabHome(){
   if(state.calendarOpen){ renderCalendar(); return; }
   const stats = computeStats();
@@ -785,6 +838,11 @@ function renderVocabHome(){
   qc.onclick = ()=>{ playTap(); state.mode="quiz"; render(); };
   modeGrid.appendChild(fc); modeGrid.appendChild(qc);
   app.appendChild(modeGrid);
+  const dictCard = el("button","mode-card"); dictCard.style.width="100%"; dictCard.style.marginTop="11px";
+  dictCard.innerHTML = `<div class="mode-icon">🔍</div><div class="mode-name">辞書で調べる</div><div class="mode-desc">単語を検索・詳しく見る</div>`;
+  dictCard.onclick = ()=>{ playTap(); state.tab="dict"; render(); };
+  const dictWrap = el("div"); dictWrap.style.marginBottom="10px"; dictWrap.appendChild(dictCard);
+  app.appendChild(dictWrap);
   const reviewPool = getReviewPool();
   const rc = el("button","mode-card"); rc.style.width="100%"; rc.style.marginTop="11px";
   rc.innerHTML = `<div class="mode-icon">🔁</div><div class="mode-name">苦手だけ復習</div><div class="mode-desc">間違えたことがある単語（${reviewPool.length}個）</div>`;
@@ -1978,6 +2036,10 @@ function renderGrammar(){
     header.appendChild(el("h1","title","文法リファレンス"));
     app.appendChild(header);
     const spacer = el("div"); spacer.style.height="16px"; app.appendChild(spacer);
+    const drillBtn = el("button","primary-btn","✍️ ドリルで練習する");
+    drillBtn.style.display="block"; drillBtn.style.width="100%"; drillBtn.style.marginBottom="10px";
+    drillBtn.onclick = ()=>{ playTap(); state.tab="conj"; state.conjSubTab=null; render(); };
+    app.appendChild(drillBtn);
     const roadmapBtn = el("button","primary-btn","📊 ドリル正答率で進捗を見る");
     roadmapBtn.style.display="block"; roadmapBtn.style.width="100%"; roadmapBtn.style.marginBottom="14px";
     roadmapBtn.onclick = ()=>{ playTap(); state.grammarRoadmapOpen=true; render(); };
@@ -2059,6 +2121,15 @@ function renderGrammar(){
   const onPrev = gIdx>0 ? ()=>{ playTap(); grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===gList[gIdx-1].title); render(); window.scrollTo(0,0); } : null;
   const onNext = (gIdx!==-1 && gIdx<gList.length-1) ? ()=>{ playTap(); grammarDetailIdx = GRAMMAR_ARTICLES.findIndex(x=>x.title===gList[gIdx+1].title); render(); window.scrollTo(0,0); } : null;
   app.appendChild(buildFloatingNav("← 前のトピック", "次のトピック →", onPrev, onNext));
+}
+function computeGrammarOverall(){
+  progress.grammarStats = progress.grammarStats || {};
+  if(typeof GRAMMAR_ARTICLES === "undefined") return null;
+  const measured = GRAMMAR_ARTICLES.filter(a => progress.grammarStats[a.title] && progress.grammarStats[a.title].recent && progress.grammarStats[a.title].recent.length>0);
+  if(measured.length===0) return null;
+  let totalCorrect=0, totalAttempts=0;
+  measured.forEach(a=>{ const r=progress.grammarStats[a.title].recent; totalCorrect+=r.filter(x=>x).length; totalAttempts+=r.length; });
+  return { pct: Math.round(totalCorrect/totalAttempts*100), measured: measured.length, totalAttempts };
 }
 function renderGrammarRoadmap(){
   app.appendChild(topBar("文法", "", ()=>{ state.grammarRoadmapOpen=false; render(); }));
@@ -2150,6 +2221,7 @@ function renderPhrases(){
     return;
   }
   const scene = SCENARIOS[state.phraseSceneIdx];
+  if(state.phraseDetailIdx!==null && state.phraseDetailIdx!==undefined){ renderPhraseDetail(scene); return; }
   app.appendChild(topBar(scene.title, "", ()=>{ state.phraseSceneIdx=null; render(); }));
   app.appendChild(el("h1","title", scene.icon+" "+scene.title));
   const modeRow = el("div","chip-row");
@@ -2170,26 +2242,75 @@ function renderPhrases(){
     renderPhraseFlashcard(scene);
     return;
   }
-  app.appendChild(el("div","footer-hint","点線の単語をタップすると辞書の詳細が見られます（B1/B2レベルの単語）"));
+  app.appendChild(el("div","footer-hint","フレーズをタップすると詳しい解説が見られます。点線の単語をタップすると辞書の詳細も見られます。"));
   const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
-  scene.items.forEach(item=>{
-    const box = el("div","article"); box.style.marginBottom="10px";
+  scene.items.forEach((item,i)=>{
+    const box = el("div","article"); box.style.marginBottom="10px"; box.style.cursor="pointer";
     const row = el("div"); row.style.display="flex"; row.style.justifyContent="space-between"; row.style.alignItems="flex-start"; row.style.gap="10px";
     const textWrap = el("div");
     textWrap.appendChild(buildLinkedPhraseLine(item.es, state.phraseSceneIdx));
     const jaLine = el("div"); jaLine.style.fontSize="13px"; jaLine.style.color="#C9BBE8"; jaLine.style.marginTop="4px"; jaLine.textContent = item.ja;
     textWrap.appendChild(jaLine);
+    textWrap.style.flex="1";
+    textWrap.onclick = ()=>{ playTap(); state.phraseDetailIdx=i; render(); window.scrollTo(0,0); };
     const speakBtn = el("button","speak-btn","🔊"); speakBtn.style.flexShrink="0";
-    speakBtn.onclick = ()=> speak(item.es);
+    speakBtn.onclick = (e)=>{ e.stopPropagation(); speak(item.es); };
     row.appendChild(textWrap); row.appendChild(speakBtn);
     box.appendChild(row);
     if(item.note){ box.appendChild(el("div","review-note", item.note)); }
+    if(item.grammar || item.nuance || (item.similar && item.similar.length)){
+      const moreHint = el("div"); moreHint.style.fontSize="11.5px"; moreHint.style.color="#9C8FC2"; moreHint.style.marginTop="6px"; moreHint.style.fontWeight="700";
+      moreHint.textContent = "詳しい解説あり →";
+      box.appendChild(moreHint);
+    }
+    box.onclick = (e)=>{ if(e.target===speakBtn) return; playTap(); state.phraseDetailIdx=i; render(); window.scrollTo(0,0); };
     app.appendChild(box);
   });
   const sceneIdx = state.phraseSceneIdx;
-  const onPrev = sceneIdx>0 ? ()=>{ playTap(); state.phraseSceneIdx=sceneIdx-1; render(); window.scrollTo(0,0); } : null;
-  const onNext = sceneIdx<SCENARIOS.length-1 ? ()=>{ playTap(); state.phraseSceneIdx=sceneIdx+1; render(); window.scrollTo(0,0); } : null;
+  const onPrev = sceneIdx>0 ? ()=>{ playTap(); state.phraseSceneIdx=sceneIdx-1; state.phraseDetailIdx=null; render(); window.scrollTo(0,0); } : null;
+  const onNext = sceneIdx<SCENARIOS.length-1 ? ()=>{ playTap(); state.phraseSceneIdx=sceneIdx+1; state.phraseDetailIdx=null; render(); window.scrollTo(0,0); } : null;
   app.appendChild(buildFloatingNav("← 前のシーン", "次のシーン →", onPrev, onNext));
+}
+function renderPhraseDetail(scene){
+  const idx = state.phraseDetailIdx;
+  const item = scene.items[idx];
+  app.appendChild(topBar(scene.title, "", ()=>{ state.phraseDetailIdx=null; render(); }));
+  const header = el("div","dict-detail-header");
+  header.innerHTML = `<div class="dict-detail-es" style="font-size:22px;">${item.es}</div>
+    <div class="dict-detail-en-ja">${item.ja}</div>`;
+  app.appendChild(header);
+  const speakRow = el("div"); speakRow.style.textAlign="center"; speakRow.style.margin="10px 0 4px";
+  const speakBtn = el("button","speak-btn","🔊");
+  speakBtn.onclick = ()=> speak(item.es);
+  speakRow.appendChild(speakBtn);
+  app.appendChild(speakRow);
+  const spacer = el("div"); spacer.style.height="10px"; app.appendChild(spacer);
+  if(item.note){
+    app.appendChild(el("div","dict-section-title","ひとことポイント"));
+    app.appendChild(el("div","article-body", item.note));
+  }
+  if(item.grammar){
+    app.appendChild(el("div","dict-section-title","文法解説"));
+    app.appendChild(el("div","article-body", item.grammar));
+  }
+  if(item.nuance){
+    app.appendChild(el("div","dict-section-title","ニュアンス"));
+    app.appendChild(el("div","article-body", item.nuance));
+  }
+  if(item.similar && item.similar.length){
+    app.appendChild(el("div","dict-section-title","似た表現"));
+    item.similar.forEach(s=>{
+      const simBox = el("div","review-item");
+      simBox.innerHTML = `<div class="review-q" style="color:var(--card);">${s.es}</div><div class="review-a">${s.ja}</div>`;
+      app.appendChild(simBox);
+    });
+  }
+  if(!item.note && !item.grammar && !item.nuance && !(item.similar && item.similar.length)){
+    app.appendChild(el("div","dict-pending","詳しい解説はまだ準備中です 🚧"));
+  }
+  const onPrev = idx>0 ? ()=>{ playTap(); state.phraseDetailIdx=idx-1; render(); window.scrollTo(0,0); } : null;
+  const onNext = idx<scene.items.length-1 ? ()=>{ playTap(); state.phraseDetailIdx=idx+1; render(); window.scrollTo(0,0); } : null;
+  app.appendChild(buildFloatingNav("← 前のフレーズ", "次のフレーズ →", onPrev, onNext));
 }
 function phraseFlashStep(scene){
   const cur = phraseFlashStates[phraseFlashStateIdx];
@@ -2372,6 +2493,14 @@ function renderFaq(){
   header.appendChild(el("div","eyebrow","Q&A"));
   header.appendChild(el("h1","title","質問箱"));
   app.appendChild(header);
+  const modeRow = el("div","chip-row");
+  [["list","📋 リスト"],["card","🗂️ カードでパラパラ"]].forEach(([key,label])=>{
+    const chip = el("button","chip"+(state.faqMode===key?" active":""), label);
+    chip.onclick = ()=>{ playTap(); state.faqMode=key; render(); };
+    modeRow.appendChild(chip);
+  });
+  app.appendChild(modeRow);
+  if(state.faqMode==="card"){ renderFaqFlashcard(); return; }
   app.appendChild(el("div","footer-hint","スペイン語学習でよく混乱するポイントをQ&A形式でまとめました。気になる質問をタップしてください。"));
   const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
   FAQ_ITEMS.forEach((item,i)=>{
@@ -2383,6 +2512,60 @@ function renderFaq(){
     row.onclick = ()=>{ playTap(); faqDetailIdx=i; render(); };
     app.appendChild(row);
   });
+}
+let faqFlashStates=[], faqFlashStateIdx=-1;
+function faqFlashStep(){
+  const cur = faqFlashStates[faqFlashStateIdx];
+  let next;
+  if(!cur.flipped){
+    next = { item: cur.item, flipped: true };
+  } else if(faqFlashStateIdx < faqFlashStates.length-1){
+    next = faqFlashStates[faqFlashStateIdx+1];
+  } else {
+    const item = FAQ_ITEMS[Math.floor(Math.random()*FAQ_ITEMS.length)];
+    next = { item, flipped: false };
+  }
+  if(faqFlashStateIdx === faqFlashStates.length-1) faqFlashStates.push(next);
+  faqFlashStateIdx++;
+  if(faqFlashStates.length>80){ faqFlashStates.shift(); faqFlashStateIdx--; }
+}
+function faqFlashStepBack(){
+  if(faqFlashStateIdx<=0) return;
+  faqFlashStateIdx--;
+}
+function renderFaqFlashcard(){
+  if(faqFlashStates.length===0){
+    const first = FAQ_ITEMS[Math.floor(Math.random()*FAQ_ITEMS.length)];
+    faqFlashStates = [{item:first, flipped:false}];
+    faqFlashStateIdx = 0;
+  }
+  const cur = faqFlashStates[faqFlashStateIdx];
+  const item = cur.item, flipped = cur.flipped;
+  const cardArea = el("div","card-area");
+  cardArea.style.marginBottom = "10px";
+  cardArea.style.alignItems = "flex-start";
+  cardArea.style.flex = "0 0 auto";
+  const fcEl = el("div","flashcard conj-flashcard"+(flipped?" flipped":""));
+  const front = el("div","flash-face flash-front");
+  front.innerHTML = `<div style="font-size:12px;color:#9C8FC2;font-weight:700;margin-bottom:8px;">Q</div>
+    <div class="flash-word" style="font-size:17px;line-height:1.5;">${item.q}</div>
+    <div class="tap-hint">タップして答えを見る</div>`;
+  const back = el("div","flash-face flash-back conj-flash-back");
+  back.innerHTML = `<div style="font-size:12px;color:#E4DAF8;font-weight:700;margin-bottom:8px;">A</div>
+    <div style="font-size:14px;line-height:1.7;white-space:pre-wrap;max-height:100%;overflow-y:auto;font-family:var(--font-body);">${item.a}</div>
+    <div class="tap-hint">タップして次のカードへ</div>`;
+  fcEl.appendChild(front); fcEl.appendChild(back);
+  fcEl.onclick = ()=>{ if(!flipped) playFlip(); else playTap(); faqFlashStep(); render(); };
+  cardArea.appendChild(fcEl);
+  app.appendChild(cardArea);
+  const rewindRow = el("div"); rewindRow.style.textAlign="center"; rewindRow.style.marginTop="0px";
+  const rewindBtn = el("button","speak-btn","⏪");
+  rewindBtn.title = "1つ前に戻る";
+  rewindBtn.disabled = faqFlashStateIdx<=0;
+  if(rewindBtn.disabled) rewindBtn.style.opacity="0.35";
+  rewindBtn.onclick = (e)=>{ e.stopPropagation(); if(faqFlashStateIdx>0){ playTap(); faqFlashStepBack(); render(); } };
+  rewindRow.appendChild(rewindBtn);
+  app.appendChild(rewindRow);
 }
 
 /* ---------- News snapshot (Spanish + toggle explanation) ---------- */
