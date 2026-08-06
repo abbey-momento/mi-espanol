@@ -9,12 +9,17 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Tu español">
 <meta name="theme-color" content="#1B0E33">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg-a: #1B0E33; --bg-b: #4B1770;
     --card: #FFF7E8; --ink: #1B0E33;
     --accent: #FF3CAC; --accent2: #05FFA1; --accent3: #FFD23F;
     --violet: #7B2FF7; --brick: #FF4D6D; --muted: #B6A6DE; --paper-line: #EFE2C6;
+    --font-body: -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
+    --font-round: "M PLUS Rounded 1c", -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   html { min-height:100%; min-height:100vh; min-height:100dvh;
@@ -25,7 +30,8 @@
     background-color: var(--bg-a);
     background-image: radial-gradient(1400px 1000px at 50% -8%, var(--bg-b), var(--bg-a) 70%);
     background-size: cover;
-    font-family: -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif; color: var(--card); }
+    font-family: var(--font-round); color: var(--card); }
+  button, input, select, textarea { font-family: inherit; }
   #app { max-width: 440px; margin: 0 auto; min-height: 100dvh; padding: 16px 18px 22px; display:flex; flex-direction:column; }
   .nav-row { display:flex; gap:6px; margin-bottom:20px; background: rgba(255,255,255,0.06); padding:5px; border-radius:16px; }
   .nav-btn { flex:1; padding:8px 1px; border-radius:10px; border:none; background:transparent; color:#D9CCEF; font-size:9.5px; font-weight:700; cursor:pointer; font-family:inherit; }
@@ -76,7 +82,7 @@
   .mode-icon { font-size:24px; margin-bottom:7px; }
   .mode-name { font-family: Georgia, serif; font-size:17px; font-weight:700; }
   .mode-desc { font-size:11.5px; color:#C9BBE8; margin-top:3px; }
-  .footer-hint { text-align:center; font-size:11.5px; color:#9C8FC2; margin-top:22px; }
+  .footer-hint { text-align:center; font-size:11.5px; color:#9C8FC2; margin-top:22px; font-family: var(--font-body); }
   .top-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
   .exit-btn { background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.18); color:#FFFFFF; font-size:14px; font-weight:700; cursor:pointer; padding:7px 12px; border-radius:12px; font-family:inherit; white-space:nowrap; }
   .top-bar-center { text-align:center; }
@@ -118,7 +124,7 @@
     display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; margin-bottom:6px; }
   .done-title { font-family: Georgia, serif; font-size:21px; font-weight:700; }
   .done-score { font-size:15px; color:#E4D9F7; font-weight:700; }
-  .done-sub { font-size:12.5px; color:#C9BBE8; }
+  .done-sub { font-size:12.5px; color:#C9BBE8; font-family: var(--font-body); }
   .primary-btn { margin-top:12px; padding:12px 26px; border-radius:999px; border:none; background: linear-gradient(135deg, var(--accent), var(--violet));
     color:#fff; font-weight:700; font-size:14px; cursor:pointer; font-family:inherit; }
   .ghost-btn { margin-top:8px; padding:10px 22px; border-radius:999px; border:1px solid rgba(255,255,255,0.3); background:transparent;
@@ -127,7 +133,7 @@
   .review-item { background: rgba(255,255,255,0.07); border-radius:14px; padding:13px 15px; margin-bottom:9px; border:1px solid rgba(255,255,255,0.14); }
   .review-q { font-weight:700; font-size:14px; color:var(--accent3); }
   .review-a { font-size:14px; margin-top:3px; }
-  .review-note { font-size:12.5px; color:#C9BBE8; margin-top:5px; line-height:1.5; }
+  .review-note { font-size:12.5px; color:#C9BBE8; margin-top:5px; line-height:1.5; font-family: var(--font-body); }
   .conj-prompt { text-align:center; margin-bottom:14px; }
   .conj-tense { font-size:12px; color:var(--accent3); font-weight:700; letter-spacing:.04em; }
   .conj-verb { font-family: Georgia, serif; font-size:24px; font-weight:700; margin-top:4px; }
@@ -143,20 +149,20 @@
   .conj-feedback.no { color: var(--brick); }
   .sentence-box { background: rgba(255,255,255,0.07); border-radius:16px; padding:18px; text-align:center; font-size:17px; line-height:1.7; border:1px solid rgba(255,255,255,0.14); }
   .sentence-blank { display:inline-block; min-width:70px; border-bottom:2px solid var(--accent3); color:var(--accent3); font-weight:700; }
-  .sentence-ja { text-align:center; font-size:13px; color:#C9BBE8; margin-top:10px; }
+  .sentence-ja { text-align:center; font-size:13px; color:#C9BBE8; margin-top:10px; font-family: var(--font-body); }
   .article { background: rgba(255,255,255,0.06); border-radius:18px; padding:18px; margin-bottom:14px; border:1px solid rgba(255,255,255,0.13); }
   .swipe-card { background: linear-gradient(160deg, rgba(255,255,255,0.09), rgba(255,255,255,0.04)); border-radius:24px; padding:0;
     border:1px solid rgba(255,255,255,0.16); box-shadow:0 10px 30px rgba(0,0,0,0.35); overflow:hidden; touch-action:pan-y; user-select:none; -webkit-user-select:none; }
   .swipe-card-title { font-family:Georgia,serif; font-size:19px; font-weight:700; padding:20px 20px 14px; cursor:grab;
     background: rgba(255,255,255,0.06); border-bottom:1px solid rgba(255,255,255,0.1); }
   .swipe-card-title:active { cursor:grabbing; }
-  .swipe-card-body { padding:18px 20px; font-size:14.5px; line-height:1.8; white-space:pre-wrap; max-height:46vh; overflow-y:auto; -webkit-overflow-scrolling:touch; touch-action:pan-y; }
+  .swipe-card-body { padding:18px 20px; font-size:14.5px; line-height:1.8; white-space:pre-wrap; max-height:46vh; overflow-y:auto; -webkit-overflow-scrolling:touch; touch-action:pan-y; font-family: var(--font-body); }
   .swipe-btn-row { display:flex; gap:14px; justify-content:center; margin-top:22px; }
   .swipe-btn { flex:1; max-width:150px; padding:16px 10px; border-radius:18px; border:none; font-size:15px; font-weight:700; cursor:pointer; font-family:inherit; }
   .swipe-btn.dislike { background:rgba(255,60,60,0.12); color:#FF8C8C; border:1px solid rgba(255,60,60,0.25); }
   .swipe-btn.like { background:rgba(5,255,161,0.12); color:var(--accent2); border:1px solid rgba(5,255,161,0.3); }
   .article-title { font-family: Georgia, serif; font-size:16.5px; font-weight:700; color:var(--accent3); margin-bottom:8px; }
-  .article-body { font-size:14px; line-height:1.75; color:#EFE7FA; white-space:pre-wrap; }
+  .article-body { font-size:14px; line-height:1.75; color:#EFE7FA; white-space:pre-wrap; font-family: var(--font-body); }
   .news-badge { font-size:11px; background: rgba(255,60,172,0.18); color:var(--accent); padding:6px 10px; border-radius:10px; margin-bottom:16px; line-height:1.6; }
   .explain-btn { margin-top:10px; padding:8px 14px; border-radius:999px; border:1px solid rgba(255,255,255,0.3); background:rgba(255,255,255,0.08);
     color:var(--card); font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; }
@@ -169,7 +175,7 @@
   .grammar-table th, .grammar-table td { padding:9px 14px; text-align:left; border-bottom:1px solid rgba(255,255,255,0.14); }
   .grammar-table th { color: var(--accent3); font-weight:700; font-size:11.5px; letter-spacing:0.03em; }
   .grammar-table td { color:#EFE7FA; }
-  .grammar-table-hint { font-size:11px; color:#9C8FC2; margin-top:6px; text-align:right; }
+  .grammar-table-hint { font-size:11px; color:#9C8FC2; margin-top:6px; text-align:right; font-family: var(--font-body); }
   .grammar-list-item { background: rgba(255,255,255,0.06); border-radius:16px; padding:16px 18px; margin-bottom:12px; border:1px solid rgba(255,255,255,0.13); cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
   .grammar-list-title { font-family: Georgia, serif; font-size:15px; font-weight:700; color:var(--card); }
   .faq-bubble-row { display:flex; align-items:flex-end; gap:8px; margin-bottom:16px; cursor:pointer; }
@@ -2329,7 +2335,7 @@ function renderFaq(){
     const aRow = el("div"); aRow.style.display="flex"; aRow.style.alignItems="flex-end"; aRow.style.gap="8px"; aRow.style.flexDirection="row-reverse";
     const aAvatar = el("div","faq-avatar","A"); aAvatar.style.background="linear-gradient(135deg, var(--accent2), var(--accent3))";
     const aBubble = el("div","faq-bubble"); aBubble.style.borderRadius="18px 18px 4px 18px"; aBubble.style.background="rgba(255,255,255,0.05)";
-    aBubble.style.whiteSpace="pre-wrap"; aBubble.style.lineHeight="1.8"; aBubble.style.fontSize="14.5px";
+    aBubble.style.whiteSpace="pre-wrap"; aBubble.style.lineHeight="1.8"; aBubble.style.fontSize="14.5px"; aBubble.style.fontFamily="var(--font-body)";
     aBubble.textContent = item.a;
     aRow.appendChild(aAvatar); aRow.appendChild(aBubble);
     app.appendChild(aRow);
