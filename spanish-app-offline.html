@@ -39,7 +39,11 @@
   .nav-row { display:flex; gap:6px; background: rgba(46,26,71,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
     padding:8px; padding-bottom: calc(8px + env(safe-area-inset-bottom)); border-radius:0; position:fixed; left:0; right:0; bottom:0;
     z-index:80; border-top:1px solid rgba(255,255,255,0.12); max-width:440px; margin:0 auto; }
-  .nav-btn { flex:1; padding:8px 1px; border-radius:10px; border:none; background:transparent; color:#D9CCEF; font-size:9.5px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .nav-btn { flex:1; padding:7px 1px 6px; border-radius:12px; border:none; background:transparent; color:#D9CCEF; font-size:9.5px; font-weight:700; cursor:pointer; font-family:inherit;
+    display:flex; flex-direction:column; align-items:center; gap:2px; }
+  .nav-btn-icon { width:20px; height:20px; }
+  .nav-btn-icon svg { width:100%; height:100%; display:block; }
+  .nav-btn-label { font-size:9.5px; line-height:1; }
   .nav-btn.active { background: linear-gradient(135deg, var(--accent), var(--violet)); color:#fff; }
   .subnav-row { display:flex; gap:7px; margin-bottom:16px; }
   .subnav-btn { flex:1; padding:9px 4px; border-radius:11px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:#D9CCEF; font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; }
@@ -693,11 +697,20 @@ function render(){
   }
 }
 function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; phraseFlashStates=[]; phraseFlashStateIdx=-1; phraseFlashSceneIdx=null; stopDictAutoPlay(); columnDeck=[]; faqDetailIdx=null; }
+const NAV_ICONS = {
+  vocab: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5c-.8 0-1.5-.7-1.5-1.5V5.5z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5c.8 0 1.5-.7 1.5-1.5V5.5z"/></svg>',
+  conj: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 4.5l4 4-11 11H4.5v-4l11-11z"/><path d="M13 7l4 4"/></svg>',
+  phrases: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10.5H9l-4 3.5v-3.5H4V5.5z"/></svg>',
+  dict: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"/><path d="M19.5 19.5l-4.8-4.8"/></svg>',
+  grammar: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5V4z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg>',
+  more: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>',
+};
 function navBar(){
   const row = el("div","nav-row");
   [["vocab","単語"],["conj","ドリル"],["phrases","フレーズ"],["dict","辞書"],["grammar","文法"],["more","その他"]].forEach(([key,label])=>{
     const isActive = state.tab===key || (key==="more" && (state.tab==="column"||state.tab==="news"||state.tab==="faq"));
-    const b = el("button","nav-btn"+(isActive?" active":""), label);
+    const b = el("button","nav-btn"+(isActive?" active":""));
+    b.innerHTML = `<div class="nav-btn-icon">${NAV_ICONS[key]}</div><div class="nav-btn-label">${label}</div>`;
     b.onclick = ()=>{ playTap(); state.tab=key; state.mode="home"; resetSessions(); render(); };
     row.appendChild(b);
   });
