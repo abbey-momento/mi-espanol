@@ -56,7 +56,15 @@ const SCENARIOS = [
    {
     "es": "¿Tiene leche de almendra?",
     "ja": "アーモンドミルクはありますか？",
-    "note": ""
+    "note": "",
+    "grammar": "tener（持つ）のusted形tiene。「お店に〜はありますか？」と尋ねるときの定番の型です。",
+    "nuance": "直訳は「あなたは持っていますか？」ですが、お店に対して「在庫がありますか」と尋ねる自然な言い方です。¿Hay...?（〜はありますか）で聞くこともできます。",
+    "similar": [
+     {
+      "es": "¿Hay leche de almendra?",
+      "ja": "アーモンドミルクありますか？（より一般的な聞き方）"
+     }
+    ]
    },
    {
     "es": "Sin azúcar, por favor.",
@@ -178,6 +186,22 @@ const SCENARIOS = [
     "es": "Estuvo muy rico, gracias.",
     "ja": "とても美味しかったです、ありがとうございます。",
     "note": "会計時のちょっとした一言"
+   },
+   {
+    "es": "¿Me puede traer la cuenta, por favor?",
+    "ja": "お会計を持ってきてもらえますか？",
+    "grammar": "poder（できる）の現在形puedeを使った丁寧な依頼表現。「¿Me puede + 不定詞?」の形は「〜していただけますか？」という、店員などに対するフォーマルな依頼でよく使う型です。",
+    "nuance": "usted（あなた）に対する丁寧な言い方なので、レストランやお店で店員に話しかけるときにぴったりです。友人同士ならもっとカジュアルに「¿Me traes la cuenta?」でも通じます。",
+    "similar": [
+     {
+      "es": "¿Nos trae la cuenta, por favor?",
+      "ja": "（複数人で）お会計持ってきてもらえますか？"
+     },
+     {
+      "es": "La cuenta, por favor.",
+      "ja": "お会計お願いします（より簡潔）"
+     }
+    ]
    }
   ]
  },
@@ -309,7 +333,15 @@ const SCENARIOS = [
    {
     "es": "¿A qué hora es el check-out?",
     "ja": "チェックアウトは何時ですか？",
-    "note": ""
+    "note": "",
+    "grammar": "¿A qué hora es...?（〜は何時ですか？）は、時刻を尋ねる基本の型です。serを使って「その出来事がいつか」を尋ねます。",
+    "nuance": "check-inやcheck-outは英語からの借用語で、ホテル業界ではスペイン語話者の間でもそのまま使われることが多いです。",
+    "similar": [
+     {
+      "es": "¿Hasta qué hora puedo quedarme?",
+      "ja": "何時まで滞在できますか？"
+     }
+    ]
    },
    {
     "es": "¿Puedo dejar mi equipaje después del check-out?",
@@ -411,6 +443,18 @@ const SCENARIOS = [
     "es": "¿Cuánto falta para llegar?",
     "ja": "着くまでどれくらいですか？",
     "note": ""
+   },
+   {
+    "es": "¿Cuánto tarda en llegar?",
+    "ja": "着くのにどれくらいかかりますか？",
+    "grammar": "tardar en + 不定詞（〜するのに時間がかかる）という重要な熟語。¿Cuánto tarda...?で「どれくらい時間がかかりますか」と尋ねられます。",
+    "nuance": "tardarは「遅れる」という意味もありますが、この形では「所要時間」を尋ねる中立的な表現です。",
+    "similar": [
+     {
+      "es": "¿Cuánto tiempo toma?",
+      "ja": "どれくらい時間がかかりますか？（ラテンアメリカでも使われる言い方）"
+     }
+    ]
    }
   ]
  },
@@ -871,6 +915,22 @@ const SCENARIOS = [
     "es": "Se me acabó la batería.",
     "ja": "バッテリーが切れちゃった。",
     "note": ""
+   },
+   {
+    "es": "Estoy a punto de salir.",
+    "ja": "今にも出るところです。",
+    "grammar": "estar a punto de + 不定詞（今にも〜するところだ）という重要な構文。punto（点）から来ていて、「〜する一点にいる」というイメージです。",
+    "nuance": "「もうすぐ出る」という差し迫った感じを表すので、電話やメッセージで「今行くところだよ」と伝えるときによく使われます。",
+    "similar": [
+     {
+      "es": "Ya casi salgo.",
+      "ja": "もうすぐ出るよ（より口語的）"
+     },
+     {
+      "es": "Voy saliendo.",
+      "ja": "今出るところだよ"
+     }
+    ]
    }
   ]
  },
@@ -881,7 +941,19 @@ const SCENARIOS = [
    {
     "es": "¿A qué te dedicas?",
     "ja": "お仕事は何をされていますか？",
-    "note": "初対面でよく聞かれる質問"
+    "note": "初対面でよく聞かれる質問",
+    "grammar": "dedicarse a（〜に従事する）という再帰動詞の熟語。¿A qué te dedicas?は直訳すると「あなたは何に自分を捧げていますか？」です。",
+    "nuance": "「お仕事は何をされていますか？」と尋ねる、とても自然でよく使われる聞き方です。¿Qué haces?（何してるの？）よりも職業を尋ねるニュアンスが明確です。",
+    "similar": [
+     {
+      "es": "¿En qué trabajas?",
+      "ja": "どんな仕事をしていますか？"
+     },
+     {
+      "es": "¿Cuál es tu profesión?",
+      "ja": "あなたの職業は何ですか？（ややフォーマル）"
+     }
+    ]
    },
    {
     "es": "¿De dónde eres?",
@@ -891,7 +963,15 @@ const SCENARIOS = [
    {
     "es": "¿Cuánto tiempo llevas viviendo aquí?",
     "ja": "ここに住んでどれくらいですか？",
-    "note": ""
+    "note": "",
+    "grammar": "llevar + 期間 + 現在分詞（〜し続けている）という、継続期間を表す重要な構文です。以前の「ドリル」でも扱った型です。",
+    "nuance": "「いつからここに住んでいますか？」ではなく「どれくらいの期間住んでいますか？」と、継続している期間そのものを尋ねる自然な聞き方です。",
+    "similar": [
+     {
+      "es": "¿Desde cuándo vives aquí?",
+      "ja": "いつからここに住んでいますか？"
+     }
+    ]
    },
    {
     "es": "¡Qué calor/frío hace hoy!",
@@ -921,7 +1001,19 @@ const SCENARIOS = [
    {
     "es": "¿A qué te dedicas?",
     "ja": "お仕事は何をされていますか？",
-    "note": ""
+    "note": "",
+    "grammar": "dedicarse a（〜に従事する）という再帰動詞の熟語。¿A qué te dedicas?は直訳すると「あなたは何に自分を捧げていますか？」です。",
+    "nuance": "「お仕事は何をされていますか？」と尋ねる、とても自然でよく使われる聞き方です。¿Qué haces?（何してるの？）よりも職業を尋ねるニュアンスが明確です。",
+    "similar": [
+     {
+      "es": "¿En qué trabajas?",
+      "ja": "どんな仕事をしていますか？"
+     },
+     {
+      "es": "¿Cuál es tu profesión?",
+      "ja": "あなたの職業は何ですか？（ややフォーマル）"
+     }
+    ]
    },
    {
     "es": "¿De dónde eres originalmente?",
@@ -931,7 +1023,15 @@ const SCENARIOS = [
    {
     "es": "¿Cuánto tiempo llevas viviendo aquí?",
     "ja": "ここに住んでどれくらいになりますか？",
-    "note": ""
+    "note": "",
+    "grammar": "llevar + 期間 + 現在分詞（〜し続けている）という、継続期間を表す重要な構文です。以前の「ドリル」でも扱った型です。",
+    "nuance": "「いつからここに住んでいますか？」ではなく「どれくらいの期間住んでいますか？」と、継続している期間そのものを尋ねる自然な聞き方です。",
+    "similar": [
+     {
+      "es": "¿Desde cuándo vives aquí?",
+      "ja": "いつからここに住んでいますか？"
+     }
+    ]
    },
    {
     "es": "¿Qué planes tienes para el fin de semana?",
@@ -942,6 +1042,43 @@ const SCENARIOS = [
     "es": "El tráfico estuvo terrible hoy.",
     "ja": "今日は渋滞がひどかったよ。",
     "note": ""
+   },
+   {
+    "es": "¿Viste el partido ayer?",
+    "ja": "昨日の試合見た？",
+    "note": ""
+   },
+   {
+    "es": "Qué calor hace hoy, ¿no?",
+    "ja": "今日暑いよね？",
+    "note": ""
+   },
+   {
+    "es": "¿Cómo va todo por tu casa?",
+    "ja": "家族はみんな元気？",
+    "note": ""
+   },
+   {
+    "es": "Hace tiempo que no nos vemos.",
+    "ja": "久しぶりだね。",
+    "note": ""
+   },
+   {
+    "es": "¿Qué tal el fin de semana?",
+    "ja": "週末どうだった？",
+    "note": ""
+   },
+   {
+    "es": "Se me hizo tarde.",
+    "ja": "遅刻しちゃったんだ。",
+    "grammar": "hacerse（〜になる）を使った無意識のse構文。直訳は「私にとって遅くなった」で、自分の意志と関係なく起きたことを表す典型的な型です。",
+    "nuance": "「遅刻しちゃった」という、自分のせいというより状況的にそうなった、というニュアンスが出せる便利な表現です。",
+    "similar": [
+     {
+      "es": "Llegué tarde.",
+      "ja": "遅刻した（より直接的な言い方）"
+     }
+    ]
    }
   ]
  },
@@ -972,7 +1109,15 @@ const SCENARIOS = [
    {
     "es": "¿Se permiten mascotas?",
     "ja": "ペットは飼えますか？",
-    "note": ""
+    "note": "",
+    "grammar": "permitir（許可する）を使った受け身的なse構文（se pasiva）。「ペットは許可されていますか？」という意味です。",
+    "nuance": "無人称のseを使うことで、「誰が許可するか」をぼかして、規則やルールとして自然に尋ねる形になります。",
+    "similar": [
+     {
+      "es": "¿Aceptan mascotas?",
+      "ja": "ペットを受け入れていますか？"
+     }
+    ]
    },
    {
     "es": "¿Cuándo puedo mudarme?",
@@ -997,7 +1142,15 @@ const SCENARIOS = [
    {
     "es": "¿Se permiten mascotas?",
     "ja": "ペット可ですか？",
-    "note": ""
+    "note": "",
+    "grammar": "permitir（許可する）を使った受け身的なse構文（se pasiva）。「ペットは許可されていますか？」という意味です。",
+    "nuance": "無人称のseを使うことで、「誰が許可するか」をぼかして、規則やルールとして自然に尋ねる形になります。",
+    "similar": [
+     {
+      "es": "¿Aceptan mascotas?",
+      "ja": "ペットを受け入れていますか？"
+     }
+    ]
    },
    {
     "es": "¿Los servicios están incluidos en la renta?",
@@ -1012,6 +1165,31 @@ const SCENARIOS = [
    {
     "es": "¿El contrato es por un año?",
     "ja": "契約は1年間ですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Cuántos metros cuadrados tiene?",
+    "ja": "何平米ですか？",
+    "note": ""
+   },
+   {
+    "es": "¿Se puede pintar las paredes?",
+    "ja": "壁のペンキ塗り替えはできますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Hay estacionamiento incluido?",
+    "ja": "駐車場は含まれていますか？",
+    "note": ""
+   },
+   {
+    "es": "¿Cuánto tiempo dura el contrato?",
+    "ja": "契約期間はどれくらいですか？",
+    "note": ""
+   },
+   {
+    "es": "Quisiera ver el departamento primero.",
+    "ja": "先に部屋を見せてもらいたいのですが。",
     "note": ""
    }
   ]
@@ -1099,6 +1277,18 @@ const SCENARIOS = [
     "es": "Hay un incendio en el edificio.",
     "ja": "建物で火事が起きています。",
     "note": ""
+   },
+   {
+    "es": "Ten cuidado con el escalón.",
+    "ja": "段差に気をつけてください。",
+    "grammar": "tener（持つ）のtú肯定命令形ten（不規則形）。tener cuidado con（〜に気をつける）という熟語を命令形にした形です。",
+    "nuance": "友人や親しい間柄で「気をつけて」と注意を促すときの、日常的でとても頻繁に使われる表現です。",
+    "similar": [
+     {
+      "es": "Cuidado con el escalón.",
+      "ja": "段差に気をつけて（命令形を省略したカジュアルな言い方）"
+     }
+    ]
    }
   ]
  },
@@ -1256,6 +1446,26 @@ const SCENARIOS = [
     "es": "Le doy seguimiento y le aviso.",
     "ja": "確認して連絡しますね。",
     "note": ""
+   },
+   {
+    "es": "¿Me puedes cubrir un momento?",
+    "ja": "ちょっとの間代わってもらえる？",
+    "note": ""
+   },
+   {
+    "es": "Voy a tomar mi descanso.",
+    "ja": "休憩を取りますね。",
+    "note": ""
+   },
+   {
+    "es": "¿A qué hora es la junta?",
+    "ja": "会議は何時からですか？",
+    "note": ""
+   },
+   {
+    "es": "Se me pasó el plazo de entrega.",
+    "ja": "締め切りを過ぎてしまいました。",
+    "note": ""
    }
   ]
  },
@@ -1326,7 +1536,15 @@ const SCENARIOS = [
    {
     "es": "¿Puedo hacer un depósito aquí?",
     "ja": "ここで預け入れできますか？",
-    "note": ""
+    "note": "",
+    "grammar": "poder（できる）の1人称現在形puedo。「¿Puedo + 不定詞?」で「〜してもいいですか？」という許可を求める表現です。",
+    "nuance": "自分がその行為をしてよいか尋ねる形なので、窓口やレジなど、相手の許可・案内が必要な場面で自然に使えます。",
+    "similar": [
+     {
+      "es": "¿Se puede hacer un depósito aquí?",
+      "ja": "ここで入金できますか？（無人称のse、より一般的な聞き方）"
+     }
+    ]
    },
    {
     "es": "Necesito un estado de cuenta.",
@@ -1585,6 +1803,22 @@ const SCENARIOS = [
     "es": "Coincido contigo en eso.",
     "ja": "それについては同感だよ。",
     "note": ""
+   },
+   {
+    "es": "No te preocupes por eso.",
+    "ja": "それについて心配しないでね。",
+    "grammar": "preocuparse（心配する）のtú否定命令形。否定命令は接続法現在の形（te preocupes）にnoをつけて作ります。",
+    "nuance": "相手を安心させたいときの定番フレーズ。肯定命令のPreocúpate（心配して）とは代名詞の位置が変わる点（否定は前、肯定は後ろ）にも注目です。",
+    "similar": [
+     {
+      "es": "No pasa nada.",
+      "ja": "大丈夫だよ、なんでもないよ"
+     },
+     {
+      "es": "Tranquilo/Tranquila.",
+      "ja": "落ち着いて、大丈夫"
+     }
+    ]
    }
   ]
  },

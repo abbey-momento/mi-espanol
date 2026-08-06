@@ -14687,5 +14687,180 @@ const VOCAB_DATA = [
   "ja": "呼び鈴",
   "cat": "Casa",
   "pos": "名詞（男性）"
+ },
+ {
+  "es": "Quejarse",
+  "en": "To complain",
+  "ja": "不満を言う",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "Reclamar",
+  "en": "To claim, demand",
+  "ja": "苦情を言う・要求する",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "Perdonar",
+  "en": "To forgive",
+  "ja": "許す",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "La disculpa",
+  "en": "Apology",
+  "ja": "謝罪",
+  "cat": "Emociones",
+  "pos": "名詞（女性）"
+ },
+ {
+  "es": "El compromiso",
+  "en": "Commitment",
+  "ja": "約束・コミットメント",
+  "cat": "General",
+  "pos": "名詞（男性）"
+ },
+ {
+  "es": "Comprometerse",
+  "en": "To commit oneself",
+  "ja": "約束する",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "La promesa",
+  "en": "Promise",
+  "ja": "約束",
+  "cat": "General",
+  "pos": "名詞（女性）"
+ },
+ {
+  "es": "Prometer",
+  "en": "To promise",
+  "ja": "約束する",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "Cumplir",
+  "en": "To fulfill, keep (a promise)",
+  "ja": "（約束を）守る・果たす",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "Incumplir",
+  "en": "To fail to fulfill",
+  "ja": "（約束を）破る",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "La sorpresa",
+  "en": "Surprise",
+  "ja": "驚き",
+  "cat": "Emociones",
+  "pos": "名詞（女性）"
+ },
+ {
+  "es": "Sorprenderse",
+  "en": "To be surprised",
+  "ja": "驚く",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "La certeza",
+  "en": "Certainty",
+  "ja": "確信",
+  "cat": "General",
+  "pos": "名詞（女性）"
+ },
+ {
+  "es": "Estar seguro",
+  "en": "To be sure",
+  "ja": "確信している",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "El consejo",
+  "en": "Advice",
+  "ja": "アドバイス",
+  "cat": "General",
+  "pos": "名詞（男性）"
+ },
+ {
+  "es": "Aconsejar",
+  "en": "To advise",
+  "ja": "助言する",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "La sugerencia",
+  "en": "Suggestion",
+  "ja": "提案",
+  "cat": "General",
+  "pos": "名詞（女性）"
+ },
+ {
+  "es": "El hábito",
+  "en": "Habit",
+  "ja": "習慣",
+  "cat": "General",
+  "pos": "名詞（男性）"
+ },
+ {
+  "es": "Acostumbrarse",
+  "en": "To get used to",
+  "ja": "慣れる",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "Soler",
+  "en": "To usually do",
+  "ja": "いつも〜する",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "La meta",
+  "en": "Goal",
+  "ja": "目標",
+  "cat": "General",
+  "pos": "名詞（女性）"
+ },
+ {
+  "es": "El objetivo",
+  "en": "Objective",
+  "ja": "目的",
+  "cat": "General",
+  "pos": "名詞（男性）"
+ },
+ {
+  "es": "Alcanzar",
+  "en": "To reach, achieve",
+  "ja": "達成する",
+  "cat": "Verbos",
+  "pos": "動詞"
+ },
+ {
+  "es": "El logro",
+  "en": "Achievement",
+  "ja": "達成・成果",
+  "cat": "General",
+  "pos": "名詞（男性）"
+ },
+ {
+  "es": "El fracaso",
+  "en": "Failure",
+  "ja": "失敗",
+  "cat": "General",
+  "pos": "名詞（男性）"
  }
 ];

@@ -25049,5 +25049,306 @@ const DICTIONARY_DATA = {
    "es": "— Alguien tocó el timbre.\n— Voy a ver quién es.",
    "ja": "「誰かが呼び鈴を鳴らしたよ」「誰か見てくるね」"
   }
+ },
+ "quejarse": {
+  "nuance": "「不満を言う」の基本語。quejarse de（〜について不満を言う）という組み合わせでよく使う。",
+  "etymology": "queja（不満）から派生した再帰動詞。",
+  "synonyms": [],
+  "derived": [
+   "queja（不満）"
+  ],
+  "dialogue": {
+   "es": "— Siempre se queja del clima.\n— A mí también me molesta a veces.",
+   "ja": "「彼はいつも天気について不満を言うんだ」「私も時々気になるけどね」"
+  }
+ },
+ "reclamar": {
+  "nuance": "「苦情を言う、要求する」の基本語。お店や公的機関に対して正式に異議を申し立てるときに使う。",
+  "etymology": "ラテン語reclamare（叫び返す）に由来。",
+  "synonyms": [],
+  "derived": [
+   "reclamo（苦情、クレーム）"
+  ],
+  "dialogue": {
+   "es": "— Voy a reclamar por el mal servicio.\n— Buena idea, deberían saberlo.",
+   "ja": "「サービスが悪かったことについて苦情を言うよ」「いい考えだね、知っておくべきだから」"
+  }
+ },
+ "perdonar": {
+  "nuance": "「許す」の基本語。Perdón（すみません、名詞）と関連。",
+  "etymology": "per（完全に）+ donar（与える）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "perdón（許し）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me perdonas?\n— Claro, ya lo olvidé.",
+   "ja": "「許してくれる？」「もちろん、もう忘れたよ」"
+  }
+ },
+ "disculpa": {
+  "nuance": "「謝罪」の基本語。pedir disculpas（謝る）はよく使う組み合わせ。",
+  "etymology": "disculpar（許す、謝る）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "disculpar（許す）",
+   "disculparse（謝る）"
+  ],
+  "dialogue": {
+   "es": "— Te debo una disculpa.\n— No te preocupes, está bien.",
+   "ja": "「君に謝らないといけないな」「気にしないで、大丈夫だから」"
+  }
+ },
+ "compromiso": {
+  "nuance": "「約束、コミットメント」の基本語。「（人間関係の）真剣な約束、婚約」という意味にもなる。tener un compromiso（先約がある）のようにも使う。",
+  "etymology": "comprometer（約束する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "comprometerse（約束する）"
+  ],
+  "dialogue": {
+   "es": "— Tengo un compromiso esta noche.\n— Entonces nos vemos otro día.",
+   "ja": "「今夜先約があるんだ」「じゃあ別の日に会おうね」"
+  }
+ },
+ "comprometerse": {
+  "nuance": "「約束する」の基本語。comprometerse a（〜することを約束する）という組み合わせでよく使う。",
+  "etymology": "con（一緒に）+ prometer（約束する）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "prometer（約束する）"
+  ],
+  "dialogue": {
+   "es": "— Me comprometo a terminarlo mañana.\n— Confío en ti.",
+   "ja": "「明日までに終わらせることを約束するよ」「君を信頼しているよ」"
+  }
+ },
+ "promesa": {
+  "nuance": "「約束」の基本語。cumplir una promesa（約束を守る）、romper una promesa（約束を破る）はよく使う組み合わせ。",
+  "etymology": "prometer（約束する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "prometer（約束する）"
+  ],
+  "dialogue": {
+   "es": "— Es una promesa.\n— No la voy a olvidar.",
+   "ja": "「約束だよ」「忘れないよ」"
+  }
+ },
+ "prometer": {
+  "nuance": "「約束する」の基本語。te lo prometo（約束するよ）はよく使う表現。",
+  "etymology": "ラテン語promittere（前もって送る、約束する）に由来。",
+  "synonyms": [],
+  "derived": [
+   "promesa（約束）"
+  ],
+  "dialogue": {
+   "es": "— Te prometo que voy a cambiar.\n— Espero que así sea.",
+   "ja": "「変わることを約束するよ」「そうなるといいね」"
+  }
+ },
+ "cumplir": {
+  "nuance": "「(約束を)守る、果たす」の基本語。cumplir años(誕生日を迎える)という組み合わせでもよく使う。",
+  "etymology": "ラテン語complere(満たす)に由来。",
+  "synonyms": [],
+  "derived": [
+   "cumplimiento（履行）"
+  ],
+  "dialogue": {
+   "es": "— Siempre cumple lo que promete.\n— Es una cualidad admirable.",
+   "ja": "「彼はいつも約束したことを守るんだ」「立派な資質だよね」"
+  }
+ },
+ "incumplir": {
+  "nuance": "「(約束を)破る」の基本語。cumplir（守る）の反対語。",
+  "etymology": "in（否定）+ cumplir（守る）の組み合わせ。",
+  "synonyms": [],
+  "derived": [
+   "cumplir（守る）"
+  ],
+  "dialogue": {
+   "es": "— Incumplió su promesa otra vez.\n— Qué decepción.",
+   "ja": "「彼はまた約束を破ったんだ」「なんてがっかりなんだ」"
+  }
+ },
+ "sorpresa": {
+  "nuance": "「驚き」の基本語。de sorpresa（不意に、サプライズで）、¡Qué sorpresa!（なんて驚きなんだ！）はよく使う表現。",
+  "etymology": "sorprender（驚かせる）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "sorprender（驚かせる）"
+  ],
+  "dialogue": {
+   "es": "— Le organizamos una fiesta sorpresa.\n— Le va a encantar.",
+   "ja": "「彼にサプライズパーティーを企画したんだ」「きっと喜ぶよ」"
+  }
+ },
+ "sorprenderse": {
+  "nuance": "「驚く」の基本語。sorprenderse de（〜に驚く）という組み合わせでよく使う。",
+  "etymology": "sorprender（驚かせる）から派生した再帰動詞。",
+  "synonyms": [],
+  "derived": [
+   "sorprender（驚かせる）"
+  ],
+  "dialogue": {
+   "es": "— Me sorprendí mucho con la noticia.\n— Yo también, no lo esperaba.",
+   "ja": "「そのニュースにすごく驚いたよ」「私もだよ、予想していなかったから」"
+  }
+ },
+ "certeza": {
+  "nuance": "「確信」の基本語。con certeza（確かに）、tener la certeza de（〜を確信している）はよく使う組み合わせ。",
+  "etymology": "cierto（確かな）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "cierto（確かな）"
+  ],
+  "dialogue": {
+   "es": "— No tengo la certeza de que funcione.\n— Vamos a intentarlo de todas formas.",
+   "ja": "「うまくいくという確信はないんだ」「とにかく試してみよう」"
+  }
+ },
+ "estar seguro": {
+  "nuance": "「確信している」の基本表現。estar seguro de（〜について確信している）という組み合わせでよく使う。",
+  "etymology": "seguro（確かな、安全な）から派生した表現。",
+  "synonyms": [],
+  "derived": [
+   "seguro（確かな）"
+  ],
+  "dialogue": {
+   "es": "— ¿Estás seguro de esto?\n— Sí, completamente.",
+   "ja": "「これについて確信ある？」「うん、完全にね」"
+  }
+ },
+ "consejo": {
+  "nuance": "「アドバイス」の基本語。dar un consejo（アドバイスする）、pedir consejo（アドバイスを求める）はよく使う組み合わせ。",
+  "etymology": "aconsejar（助言する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "aconsejar（助言する）"
+  ],
+  "dialogue": {
+   "es": "— ¿Me puedes dar un consejo?\n— Claro, cuéntame qué pasa.",
+   "ja": "「アドバイスもらえる？」「もちろん、何があったか教えて」"
+  }
+ },
+ "aconsejar": {
+  "nuance": "「助言する」の基本語。aconsejar que+接続法（〜するよう助言する）の形を取る。",
+  "etymology": "consejo（助言）から派生した語。",
+  "synonyms": [
+   "recomendar（推薦する）"
+  ],
+  "derived": [
+   "consejo（助言）"
+  ],
+  "dialogue": {
+   "es": "— Te aconsejo que descanses.\n— Tienes razón, estoy muy cansado.",
+   "ja": "「休むことを助言するよ」「その通りだね、すごく疲れているんだ」"
+  }
+ },
+ "sugerencia": {
+  "nuance": "「提案」の基本語。sugerir（提案する）から派生した名詞。buzón de sugerencias（意見箱）のように使う。",
+  "etymology": "sugerir（提案する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "sugerir（提案する）"
+  ],
+  "dialogue": {
+   "es": "— Tengo una sugerencia para el proyecto.\n— Te escucho.",
+   "ja": "「プロジェクトについて提案があるんだ」「聞くよ」"
+  }
+ },
+ "hábito": {
+  "nuance": "「習慣」の基本語。costumbre（習慣、より一般的）とほぼ同義。tener el hábito de（〜する習慣がある）のように使う。",
+  "etymology": "ラテン語habitus（持っている状態）に由来。",
+  "synonyms": [
+   "costumbre（習慣、より一般的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Tiene el hábito de leer antes de dormir.\n— Es un buen hábito.",
+   "ja": "「彼は寝る前に読書する習慣があるんだ」「いい習慣だよね」"
+  }
+ },
+ "acostumbrarse": {
+  "nuance": "「慣れる」の基本語。acostumbrarse a（〜に慣れる）という組み合わせでよく使う。",
+  "etymology": "costumbre（習慣）から派生した再帰動詞。",
+  "synonyms": [],
+  "derived": [
+   "costumbre（習慣）"
+  ],
+  "dialogue": {
+   "es": "— Ya me acostumbré al clima de aquí.\n— Al principio era difícil, ¿no?",
+   "ja": "「もうここの気候に慣れたよ」「最初は大変だったよね？」"
+  }
+ },
+ "soler": {
+  "nuance": "「いつも〜する」の基本語。soler+不定詞（習慣的に〜する）の形で使う、習慣を表す独特な動詞。o→ueの語根母音変化。",
+  "etymology": "ラテン語solere（慣れている）に由来。",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Suelo levantarme temprano.\n— Yo también, me gusta aprovechar el día.",
+   "ja": "「いつも早起きするんだ」「私もだよ、一日を有効に使うのが好きなんだ」"
+  }
+ },
+ "meta": {
+  "nuance": "「目標」の基本語。objetivo（目的、よりフォーマル）とほぼ同義。alcanzar una meta（目標を達成する）はよく使う組み合わせ。",
+  "etymology": "ラテン語meta（円錐、競技場の折り返し点）に由来。",
+  "synonyms": [
+   "objetivo（目的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Mi meta es aprender español en un año.\n— Es un objetivo ambicioso pero posible.",
+   "ja": "「私の目標は1年でスペイン語を習得することなんだ」「野心的だけど可能な目標だね」"
+  }
+ },
+ "objetivo": {
+  "nuance": "「目的」の基本語。meta（目標、より一般的）とほぼ同義、ビジネス文脈でもよく使われる。",
+  "etymology": "ラテン語objectivus（目の前に置かれた）に由来。",
+  "synonyms": [
+   "meta（目標）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Cuál es el objetivo de esta reunión?\n— Revisar el progreso del proyecto.",
+   "ja": "「この会議の目的は何ですか？」「プロジェクトの進捗を確認することです」"
+  }
+ },
+ "alcanzar": {
+  "nuance": "「達成する」の基本語。「(手が)届く」という文字通りの意味もある。alcanzar una meta（目標を達成する）はよく使う組み合わせ。",
+  "etymology": "俗ラテン語incalciare（追いつく）に由来。",
+  "synonyms": [
+   "lograr（達成する）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Por fin alcanzamos nuestra meta.\n— ¡Felicidades a todo el equipo!",
+   "ja": "「ついに目標を達成したよ」「チーム全員おめでとう！」"
+  }
+ },
+ "logro": {
+  "nuance": "「達成、成果」の基本語。lograr（達成する）から派生した名詞。",
+  "etymology": "lograr（達成する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "lograr（達成する）"
+  ],
+  "dialogue": {
+   "es": "— Este es un gran logro para la empresa.\n— Todos trabajaron muy duro.",
+   "ja": "「これは会社にとって大きな成果だね」「みんなすごく頑張ったよね」"
+  }
+ },
+ "fracaso": {
+  "nuance": "「失敗」の基本語。fracasar（失敗する）から派生した名詞。éxito（成功）の反対語。",
+  "etymology": "fracasar（失敗する）から派生した語。",
+  "synonyms": [],
+  "derived": [
+   "fracasar（失敗する）"
+  ],
+  "dialogue": {
+   "es": "— El proyecto terminó en fracaso.\n— Al menos aprendimos algo de la experiencia.",
+   "ja": "「そのプロジェクトは失敗に終わったんだ」「少なくとも経験から何か学べたよね」"
+  }
  }
 };
