@@ -22,6 +22,7 @@
     --font-round: "Inter", "Zen Maru Gothic", -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
     --font-headword: "Zen Old Mincho", "Zen Kaku Gothic New", -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
     --font-numeric: "Zen Old Mincho", "Zen Kaku Gothic New", -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
+    --font-drill: "Inter", "Zen Kaku Gothic New", -apple-system, "Hiragino Sans", "Segoe UI", system-ui, sans-serif;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   html { min-height:100%; min-height:100vh; min-height:100dvh;
@@ -42,7 +43,7 @@
   .subnav-btn { flex:1; padding:9px 4px; border-radius:11px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:#D9CCEF; font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; }
   .subnav-btn.active { background: rgba(255,255,255,0.16); color:#fff; border-color: rgba(255,255,255,0.4); }
   .eyebrow { font-size:11px; letter-spacing:0.16em; color: var(--accent3); font-weight:700; margin-bottom:6px; }
-  h1.title { font-family: var(--font-headword); font-size:30px; font-weight:500; margin:0; }
+  h1.title { font-family: var(--font-headword); font-size:30px; font-weight:600; margin:0; }
   .streak-row { display:flex; align-items:center; gap:6px; margin-top:8px; cursor:pointer; width:fit-content; }
   .streak-text { font-size:14px; color:#E4D9F7; font-weight:600; }
   .streak-hint { font-size:11px; color:#9C8FC2; margin-left:2px; }
@@ -82,7 +83,7 @@
   .mode-card { background: rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.16); border-radius:16px;
     padding:18px 13px; text-align:left; cursor:pointer; color:var(--card); font-family:inherit; }
   .mode-icon { font-size:24px; margin-bottom:7px; }
-  .mode-name { font-family: var(--font-headword); font-size:17px; font-weight:500; }
+  .mode-name { font-family: var(--font-headword); font-size:17px; font-weight:600; }
   .mode-desc { font-size:11.5px; color:#C9BBE8; margin-top:3px; }
   .footer-hint { text-align:center; font-size:11.5px; color:#9C8FC2; margin-top:22px; font-family: var(--font-body); }
   .top-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
@@ -102,7 +103,7 @@
   .conj-flash-back { background: linear-gradient(135deg, #4F7FE0, #7B5FD9); }
   .mini-speak-btn { position:absolute; top:12px; right:12px; width:32px; height:32px; border-radius:999px; border:none;
     background:rgba(0,0,0,0.12); color:inherit; font-size:14px; cursor:pointer; display:flex; align-items:center; justify-content:center; padding:0; }
-  .flash-word { font-family: var(--font-headword); font-size:26px; font-weight:500; }
+  .flash-word { font-family: var(--font-drill); font-size:26px; font-weight:700; }
   .flash-ja { font-size:14px; margin-top:6px; opacity:0.8; font-weight:600; }
   .tap-hint { font-size:11.5px; margin-top:9px; opacity:.65; font-weight:600; }
   .tap-prompt { text-align:center; font-size:11.5px; color:#9C8FC2; font-weight:700; letter-spacing:.04em; }
@@ -112,7 +113,7 @@
   .judge-yes { background: var(--accent2); color:#0B0518; }
   .quiz-prompt { text-align:center; margin-bottom:20px; }
   .quiz-label { font-size:13px; color:#C9BBE8; font-weight:600; margin-bottom:6px; }
-  .quiz-word { font-family: var(--font-headword); font-size:28px; font-weight:500; }
+  .quiz-word { font-family: var(--font-drill); font-size:28px; font-weight:700; }
   .options-grid { display:flex; flex-direction:column; gap:9px; }
   .option-btn { padding:15px 17px; border-radius:14px; border:1px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.07);
     color:var(--card); font-size:15px; font-weight:600; text-align:left; cursor:pointer; font-family:inherit; }
@@ -124,7 +125,7 @@
   .done-wrap { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:9px; }
   .done-stamp { width:68px; height:68px; border-radius:50%; border:3px dashed var(--accent3); color:var(--accent3);
     display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; margin-bottom:6px; }
-  .done-title { font-family: var(--font-headword); font-size:21px; font-weight:500; }
+  .done-title { font-family: var(--font-headword); font-size:21px; font-weight:600; }
   .done-score { font-size:15px; color:#E4D9F7; font-weight:700; }
   .done-sub { font-size:12.5px; color:#C9BBE8; font-family: var(--font-body); }
   .primary-btn { margin-top:12px; padding:12px 26px; border-radius:999px; border:none; background: linear-gradient(135deg, var(--accent), var(--violet));
@@ -138,7 +139,7 @@
   .review-note { font-size:12.5px; color:#C9BBE8; margin-top:5px; line-height:1.5; font-family: var(--font-body); }
   .conj-prompt { text-align:center; margin-bottom:14px; }
   .conj-tense { font-size:12px; color:var(--accent3); font-weight:700; letter-spacing:.04em; }
-  .conj-verb { font-family: var(--font-headword); font-size:24px; font-weight:500; margin-top:4px; }
+  .conj-verb { font-family: var(--font-drill); font-size:24px; font-weight:700; margin-top:4px; }
   .conj-person { font-size:16px; color:#E4D9F7; margin-top:4px; }
   .conj-input-row { display:flex; gap:8px; margin-top:18px; }
   .conj-input { flex:1; padding:14px 16px; border-radius:14px; border:2px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.08);
@@ -196,7 +197,7 @@
   .dict-item-es { font-family: var(--font-headword); font-weight:600; font-size:15px; }
   .dict-item-ja { font-size:12px; color:#C9BBE8; margin-top:2px; }
   .dict-detail-header { text-align:center; margin-bottom:8px; }
-  .dict-detail-es { font-family: var(--font-headword); font-size:30px; font-weight:500; }
+  .dict-detail-es { font-family: var(--font-headword); font-size:30px; font-weight:600; }
   .dict-detail-en-ja { font-size:14px; color:#C9BBE8; margin-top:4px; }
   .dict-section-title { font-size:11.5px; font-weight:700; color:var(--accent3); letter-spacing:0.04em; margin:16px 0 6px; }
   .dict-pending { text-align:center; color:#9C8FC2; font-size:13px; padding:20px 0; }
@@ -1810,11 +1811,11 @@ function renderNumbersDrill(){
   app.appendChild(pr);
   const box = el("div","sentence-box");
   if(numQuestion.isTime){
-    box.innerHTML = `<div style="font-size:44px;font-weight:500;font-family: var(--font-numeric);">🕐 ${numQuestion.display}</div>
+    box.innerHTML = `<div style="font-size:44px;font-weight:700;font-family: var(--font-drill);">🕐 ${numQuestion.display}</div>
       <div style="font-size:12px;color:#C9BBE8;margin-top:8px;">この時刻をスペイン語で書いてください（例: son las tres y cuarto）</div>`;
   } else {
     const hint = numQuestion.isYear ? "この年号をスペイン語のつづりで入力してください（年もふつうの数として読みます）" : "この数字をスペイン語のつづりで入力してください";
-    box.innerHTML = `<div style="font-size:${numQuestion.n>=1000000?30:44}px;font-weight:500;font-family: var(--font-numeric);">${numQuestion.isYear?"Año: ":""}${numQuestion.n.toLocaleString("en-US")}</div>
+    box.innerHTML = `<div style="font-size:${numQuestion.n>=1000000?30:44}px;font-weight:700;font-family: var(--font-drill);">${numQuestion.isYear?"Año: ":""}${numQuestion.n.toLocaleString("en-US")}</div>
       <div style="font-size:12px;color:#C9BBE8;margin-top:8px;">${hint}</div>`;
   }
   app.appendChild(box);
