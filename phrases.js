@@ -18,7 +18,8 @@ const SCENARIOS = [
       "es": "¿Qué va a pedir?",
       "ja": "何をご注文されますか？"
      }
-    ]
+    ],
+    "en": "What will you have?"
    },
    {
     "es": "Un café americano, por favor.",
@@ -35,7 +36,8 @@ const SCENARIOS = [
       "es": "Me da un café americano.",
       "ja": "アメリカーノをください。（カジュアル）"
      }
-    ]
+    ],
+    "en": "An Americano, please."
    },
    {
     "es": "¿Con leche entera, deslactosada o de almendra?",
@@ -52,7 +54,8 @@ const SCENARIOS = [
       "es": "¿Con qué leche lo quiere?",
       "ja": "どの牛乳になさいますか？"
      }
-    ]
+    ],
+    "en": "With whole milk, lactose-free, or almond milk?"
    },
    {
     "es": "Con leche entera está bien.",
@@ -69,7 +72,8 @@ const SCENARIOS = [
       "es": "Cualquiera está bien.",
       "ja": "どれでも大丈夫です。"
      }
-    ]
+    ],
+    "en": "Whole milk is fine."
    },
    {
     "es": "¿Para tomar aquí o para llevar?",
@@ -86,7 +90,8 @@ const SCENARIOS = [
       "es": "¿Lo va a tomar aquí?",
       "ja": "こちらでお召し上がりになりますか？"
      }
-    ]
+    ],
+    "en": "For here or to go?"
    },
    {
     "es": "Para llevar, por favor.",
@@ -103,7 +108,8 @@ const SCENARIOS = [
       "es": "Para llevar, gracias.",
       "ja": "持ち帰りでお願いします。"
      }
-    ]
+    ],
+    "en": "To go, please."
    },
    {
     "es": "¿De qué tamaño lo quiere?",
@@ -120,7 +126,8 @@ const SCENARIOS = [
       "es": "¿Chico, mediano o grande?",
       "ja": "小、中、大のどれにしますか？"
      }
-    ]
+    ],
+    "en": "What size would you like?"
    },
    {
     "es": "El chico/mediano/grande, por favor.",
@@ -137,7 +144,8 @@ const SCENARIOS = [
       "es": "Grande, gracias.",
       "ja": "大でお願いします。"
      }
-    ]
+    ],
+    "en": "Small/medium/large, please."
    },
    {
     "es": "¿Le pongo azúcar?",
@@ -154,7 +162,8 @@ const SCENARIOS = [
       "es": "¿Le agrego azúcar?",
       "ja": "砂糖を加えましょうか？"
      }
-    ]
+    ],
+    "en": "Should I add sugar?"
    },
    {
     "es": "Sin azúcar, gracias.",
@@ -171,7 +180,8 @@ const SCENARIOS = [
       "es": "No le pongo azúcar, gracias.",
       "ja": "砂糖は入れなくて大丈夫です。"
      }
-    ]
+    ],
+    "en": "No sugar, thanks."
    },
    {
     "es": "¿Tiene leche de almendra?",
@@ -184,7 +194,8 @@ const SCENARIOS = [
       "es": "¿Hay leche de almendra?",
       "ja": "アーモンドミルクありますか？（より一般的な聞き方）"
      }
-    ]
+    ],
+    "en": "Do you have almond milk?"
    },
    {
     "es": "Sin azúcar, por favor.",
@@ -201,7 +212,8 @@ const SCENARIOS = [
       "es": "No le ponga azúcar, por favor.",
       "ja": "砂糖を入れないでください。"
      }
-    ]
+    ],
+    "en": "No sugar, please."
    },
    {
     "es": "¿Cuál es su especialidad de la casa?",
@@ -218,7 +230,8 @@ const SCENARIOS = [
       "es": "¿Cuál es su plato estrella?",
       "ja": "一番人気のメニューは何ですか？"
      }
-    ]
+    ],
+    "en": "What's your house specialty?"
    },
    {
     "es": "¿Tienen wifi?",
@@ -235,7 +248,8 @@ const SCENARIOS = [
       "es": "¿Cuál es la contraseña del wifi?",
       "ja": "Wi-Fiのパスワードは何ですか？"
      }
-    ]
+    ],
+    "en": "Do you have wifi?"
    },
    {
     "es": "¿Me puede recalentar esto?",
@@ -252,7 +266,8 @@ const SCENARIOS = [
       "es": "¿Podría recalentarlo, por favor?",
       "ja": "温め直していただけますか？（より丁寧）"
      }
-    ]
+    ],
+    "en": "Could you reheat this for me?"
    }
   ]
  },
@@ -275,7 +290,8 @@ const SCENARIOS = [
       "es": "Somos dos personas.",
       "ja": "2人です。"
      }
-    ]
+    ],
+    "en": "A table for two, please."
    },
    {
     "es": "¿Ya sabe qué va a ordenar?",
@@ -292,7 +308,8 @@ const SCENARIOS = [
       "es": "¿Está listo/a para ordenar?",
       "ja": "ご注文の準備はよろしいですか？"
      }
-    ]
+    ],
+    "en": "Do you know what you'd like to order?"
    },
    {
     "es": "¿Me puede traer la carta/el menú?",
@@ -309,7 +326,8 @@ const SCENARIOS = [
       "es": "¿Podría ver la carta?",
       "ja": "メニューを見せていただけますか？"
      }
-    ]
+    ],
+    "en": "Could you bring me the menu?"
    },
    {
     "es": "¿Qué me recomienda?",
@@ -326,7 +344,8 @@ const SCENARIOS = [
       "es": "¿Qué me sugiere?",
       "ja": "何かおすすめはありますか？"
      }
-    ]
+    ],
+    "en": "What do you recommend?"
    },
    {
     "es": "Para mí, este.",
@@ -343,7 +362,8 @@ const SCENARIOS = [
       "es": "Para mí, lo mismo.",
       "ja": "私も同じもので。"
      }
-    ]
+    ],
+    "en": "I'll have this."
    },
    {
     "es": "¿Está picante este platillo?",
@@ -360,7 +380,8 @@ const SCENARIOS = [
       "es": "¿Tiene mucho chile?",
       "ja": "唐辛子はたくさん入っていますか？"
      }
-    ]
+    ],
+    "en": "Is this dish spicy?"
    },
    {
     "es": "Sin cilantro, por favor.",
@@ -377,7 +398,8 @@ const SCENARIOS = [
       "es": "¿Le pueden quitar el cilantro?",
       "ja": "パクチーを抜いてもらえますか？"
      }
-    ]
+    ],
+    "en": "No cilantro, please."
    },
    {
     "es": "La cuenta, por favor.",
@@ -394,7 +416,8 @@ const SCENARIOS = [
       "es": "La cuenta, cuando pueda.",
       "ja": "手が空いたらお会計をお願いします。"
      }
-    ]
+    ],
+    "en": "The check, please."
    },
    {
     "es": "¿La cuenta junta o por separado?",
@@ -411,7 +434,8 @@ const SCENARIOS = [
       "es": "¿Cada quién paga lo suyo?",
       "ja": "それぞれ自分の分を払いますか？"
      }
-    ]
+    ],
+    "en": "The check together or separate?"
    },
    {
     "es": "Por separado, por favor.",
@@ -428,7 +452,8 @@ const SCENARIOS = [
       "es": "Sepárela, por favor.",
       "ja": "別にしてください。"
      }
-    ]
+    ],
+    "en": "Separate, please."
    },
    {
     "es": "¿Aceptan tarjeta?",
@@ -445,7 +470,8 @@ const SCENARIOS = [
       "es": "¿Solo aceptan efectivo?",
       "ja": "現金のみですか？"
      }
-    ]
+    ],
+    "en": "Do you accept cards?"
    },
    {
     "es": "Soy alérgico/a a los cacahuates.",
@@ -462,7 +488,8 @@ const SCENARIOS = [
       "es": "No puedo comer gluten.",
       "ja": "グルテンを食べられません。"
      }
-    ]
+    ],
+    "en": "I'm allergic to peanuts."
    },
    {
     "es": "¿Este platillo tiene nueces o lácteos?",
@@ -479,7 +506,8 @@ const SCENARIOS = [
       "es": "¿Contiene lácteos?",
       "ja": "乳製品は含まれていますか？"
      }
-    ]
+    ],
+    "en": "Does this dish have nuts or dairy?"
    },
    {
     "es": "¿Tienen opciones vegetarianas/veganas?",
@@ -496,7 +524,8 @@ const SCENARIOS = [
       "es": "¿Tienen platillos veganos?",
       "ja": "ヴィーガン料理はありますか？"
      }
-    ]
+    ],
+    "en": "Do you have vegetarian/vegan options?"
    },
    {
     "es": "¿La propina está incluida?",
@@ -513,7 +542,8 @@ const SCENARIOS = [
       "es": "¿Tengo que dejar propina aparte?",
       "ja": "チップは別に置く必要がありますか？"
      }
-    ]
+    ],
+    "en": "Is the tip included?"
    },
    {
     "es": "¿El servicio ya está incluido en la cuenta?",
@@ -530,7 +560,8 @@ const SCENARIOS = [
       "es": "¿Cobran cargo por servicio?",
       "ja": "サービス料は取られますか？"
      }
-    ]
+    ],
+    "en": "Is the service charge already included in the bill?"
    },
    {
     "es": "¿Cuánto se deja de propina normalmente?",
@@ -547,7 +578,8 @@ const SCENARIOS = [
       "es": "¿Qué porcentaje se acostumbra dejar?",
       "ja": "だいたい何パーセント渡すのが普通ですか？"
      }
-    ]
+    ],
+    "en": "How much do people usually tip?"
    },
    {
     "es": "Le voy a dejar la propina en efectivo.",
@@ -564,7 +596,8 @@ const SCENARIOS = [
       "es": "¿Puedo dejar la propina aparte, en efectivo?",
       "ja": "チップだけ現金で別にしてもいいですか？"
      }
-    ]
+    ],
+    "en": "I'll leave the tip in cash."
    },
    {
     "es": "Estuvo muy rico, gracias.",
@@ -581,7 +614,8 @@ const SCENARIOS = [
       "es": "Nos encantó la comida.",
       "ja": "料理がとても気に入りました。"
      }
-    ]
+    ],
+    "en": "It was delicious, thank you."
    },
    {
     "es": "¿Me puede traer la cuenta, por favor?",
@@ -598,7 +632,8 @@ const SCENARIOS = [
       "ja": "お会計お願いします（より簡潔）"
      }
     ],
-    "note": "会計を持ってきてもらう丁寧な依頼表現"
+    "note": "会計を持ってきてもらう丁寧な依頼表現",
+    "en": "Could you bring me the check, please?"
    }
   ]
  },
@@ -621,7 +656,8 @@ const SCENARIOS = [
       "es": "¿Dónde puedo encontrar las verduras?",
       "ja": "野菜はどこで見つけられますか？"
      }
-    ]
+    ],
+    "en": "Where are the vegetables?"
    },
    {
     "es": "¿Tiene esto en otro color/talla?",
@@ -638,7 +674,8 @@ const SCENARIOS = [
       "es": "¿Hay otros colores disponibles?",
       "ja": "他に使える色はありますか？"
      }
-    ]
+    ],
+    "en": "Do you have this in another color/size?"
    },
    {
     "es": "¿Me lo puedo probar?",
@@ -655,7 +692,8 @@ const SCENARIOS = [
       "es": "¿Dónde están los probadores?",
       "ja": "試着室はどこですか？"
      }
-    ]
+    ],
+    "en": "Can I try it on?"
    },
    {
     "es": "¿Necesita bolsa?",
@@ -672,7 +710,8 @@ const SCENARIOS = [
       "es": "¿Le doy bolsa?",
       "ja": "袋をお付けしましょうか？"
      }
-    ]
+    ],
+    "en": "Do you need a bag?"
    },
    {
     "es": "No, gracias, traigo mi propia bolsa.",
@@ -689,7 +728,8 @@ const SCENARIOS = [
       "es": "No hace falta, traje la mía.",
       "ja": "大丈夫です、自分のを持ってきました。"
      }
-    ]
+    ],
+    "en": "No thanks, I brought my own bag."
    },
    {
     "es": "¿Cuánto cuesta esto?",
@@ -706,7 +746,8 @@ const SCENARIOS = [
       "es": "¿Qué precio tiene esto?",
       "ja": "これの値段はいくらですか？"
      }
-    ]
+    ],
+    "en": "How much is this?"
    },
    {
     "es": "¿Tiene algo más barato?",
@@ -723,7 +764,8 @@ const SCENARIOS = [
       "es": "¿Hay una opción más barata?",
       "ja": "もっと安い選択肢はありますか？"
      }
-    ]
+    ],
+    "en": "Do you have something cheaper?"
    },
    {
     "es": "¿Puedo pagar con tarjeta?",
@@ -740,7 +782,8 @@ const SCENARIOS = [
       "es": "¿Se puede pagar con tarjeta?",
       "ja": "カードで支払いできますか？"
      }
-    ]
+    ],
+    "en": "Can I pay by card?"
    },
    {
     "es": "¿Me da un recibo, por favor?",
@@ -757,7 +800,8 @@ const SCENARIOS = [
       "es": "¿Tiene recibo?",
       "ja": "領収書はありますか？"
      }
-    ]
+    ],
+    "en": "Could I have a receipt, please?"
    },
    {
     "es": "¿Dónde están las bolsas para la fruta?",
@@ -774,7 +818,8 @@ const SCENARIOS = [
       "es": "¿Dónde puedo conseguir una bolsa para esto?",
       "ja": "これ用の袋はどこでもらえますか？"
      }
-    ]
+    ],
+    "en": "Where are the bags for fruit?"
    },
    {
     "es": "¿Tienen productos sin gluten?",
@@ -791,7 +836,8 @@ const SCENARIOS = [
       "es": "¿Tienen alguna sección libre de gluten?",
       "ja": "グルテンフリーのコーナーはありますか？"
      }
-    ]
+    ],
+    "en": "Do you have gluten-free products?"
    },
    {
     "es": "¿Está en oferta esto?",
@@ -808,7 +854,8 @@ const SCENARIOS = [
       "es": "¿Está de rebaja?",
       "ja": "値引き中ですか？"
      }
-    ]
+    ],
+    "en": "Is this on sale?"
    },
    {
     "es": "¿Aceptan puntos de la tarjeta de lealtad?",
@@ -825,7 +872,8 @@ const SCENARIOS = [
       "es": "¿Puedo usar mis puntos aquí?",
       "ja": "ここでポイントは使えますか？"
      }
-    ]
+    ],
+    "en": "Do you accept loyalty card points?"
    },
    {
     "es": "¿Me puede dar una bolsa más grande?",
@@ -842,7 +890,8 @@ const SCENARIOS = [
       "es": "Necesito una bolsa más grande, por favor.",
       "ja": "もっと大きい袋が必要です。"
      }
-    ]
+    ],
+    "en": "Could you give me a bigger bag?"
    },
    {
     "es": "Se me olvidó mi bolsa reutilizable.",
@@ -859,7 +908,8 @@ const SCENARIOS = [
       "es": "No traje bolsa esta vez.",
       "ja": "今回は袋を持ってきませんでした。"
      }
-    ]
+    ],
+    "en": "I forgot my reusable bag."
    }
   ]
  },
@@ -882,7 +932,8 @@ const SCENARIOS = [
       "es": "Hice una reservación en línea.",
       "ja": "オンラインで予約しました。"
      }
-    ]
+    ],
+    "en": "I have a reservation under the name..."
    },
    {
     "es": "¿A qué hora es el check-in/check-out?",
@@ -899,7 +950,8 @@ const SCENARIOS = [
       "es": "¿A partir de qué hora puedo entrar a mi habitación?",
       "ja": "何時から部屋に入れますか？"
      }
-    ]
+    ],
+    "en": "What time is check-in/check-out?"
    },
    {
     "es": "¿El desayuno está incluido?",
@@ -916,7 +968,8 @@ const SCENARIOS = [
       "es": "¿Tengo que pagar el desayuno aparte?",
       "ja": "朝食は別料金ですか？"
      }
-    ]
+    ],
+    "en": "Is breakfast included?"
    },
    {
     "es": "¿Tienen wifi? ¿Cuál es la contraseña?",
@@ -933,7 +986,8 @@ const SCENARIOS = [
       "es": "¿Hay internet en la habitación?",
       "ja": "部屋にインターネットはありますか？"
      }
-    ]
+    ],
+    "en": "Do you have wifi? What's the password?"
    },
    {
     "es": "¿Me pueden dar otra almohada/toalla?",
@@ -950,7 +1004,8 @@ const SCENARIOS = [
       "es": "Necesito otra almohada, por favor.",
       "ja": "枕がもう一枚必要です。"
      }
-    ]
+    ],
+    "en": "Could I get another pillow/towel?"
    },
    {
     "es": "El aire acondicionado no funciona.",
@@ -967,7 +1022,8 @@ const SCENARIOS = [
       "es": "Algo anda mal con el aire acondicionado.",
       "ja": "エアコンの調子がおかしいです。"
      }
-    ]
+    ],
+    "en": "The air conditioning isn't working."
    },
    {
     "es": "¿Pueden guardar mi equipaje después del check-out?",
@@ -984,7 +1040,8 @@ const SCENARIOS = [
       "es": "¿Tienen un lugar para guardar equipaje?",
       "ja": "荷物を預ける場所はありますか？"
      }
-    ]
+    ],
+    "en": "Can you keep my luggage after check-out?"
    },
    {
     "es": "¿Me pueden llamar un taxi?",
@@ -1001,7 +1058,8 @@ const SCENARIOS = [
       "es": "¿Podrían conseguirme un taxi?",
       "ja": "タクシーを手配していただけますか？"
      }
-    ]
+    ],
+    "en": "Could you call me a taxi?"
    },
    {
     "es": "¿A qué hora es el check-out?",
@@ -1014,7 +1072,8 @@ const SCENARIOS = [
       "es": "¿Hasta qué hora puedo quedarme?",
       "ja": "何時まで滞在できますか？"
      }
-    ]
+    ],
+    "en": "What time is check-out?"
    },
    {
     "es": "¿Puedo dejar mi equipaje después del check-out?",
@@ -1031,7 +1090,8 @@ const SCENARIOS = [
       "es": "¿Hay servicio de guardaequipaje?",
       "ja": "荷物預かりサービスはありますか？"
      }
-    ]
+    ],
+    "en": "Can I leave my luggage after check-out?"
    },
    {
     "es": "No funciona el aire acondicionado.",
@@ -1048,7 +1108,8 @@ const SCENARIOS = [
       "es": "Hay un problema con el aire acondicionado.",
       "ja": "エアコンに問題があります。"
      }
-    ]
+    ],
+    "en": "The air conditioning doesn't work."
    },
    {
     "es": "¿El desayuno está incluido?",
@@ -1065,7 +1126,8 @@ const SCENARIOS = [
       "es": "¿A qué hora es el desayuno?",
       "ja": "朝食は何時からですか？"
      }
-    ]
+    ],
+    "en": "Is breakfast included?"
    },
    {
     "es": "¿Tienen servicio de lavandería?",
@@ -1082,7 +1144,8 @@ const SCENARIOS = [
       "es": "¿Puedo lavar mi ropa aquí?",
       "ja": "ここで洗濯できますか？"
      }
-    ]
+    ],
+    "en": "Do you have laundry service?"
    },
    {
     "es": "Quisiera una habitación con vista al mar.",
@@ -1099,7 +1162,8 @@ const SCENARIOS = [
       "es": "Prefiero una habitación con buena vista.",
       "ja": "眺めのいい部屋がいいです。"
      }
-    ]
+    ],
+    "en": "I'd like a room with an ocean view."
    }
   ]
  },
@@ -1122,7 +1186,8 @@ const SCENARIOS = [
       "es": "¿Más o menos cuánto es a...?",
       "ja": "〜までだいたいいくらですか？"
      }
-    ]
+    ],
+    "en": "About how much would it be to...?"
    },
    {
     "es": "Lléveme a esta dirección, por favor.",
@@ -1139,7 +1204,8 @@ const SCENARIOS = [
       "es": "¿Me puede llevar aquí?",
       "ja": "ここまで連れて行ってもらえますか？"
      }
-    ]
+    ],
+    "en": "Take me to this address, please."
    },
    {
     "es": "¿Cuánto tiempo se hace hasta ahí?",
@@ -1156,7 +1222,8 @@ const SCENARIOS = [
       "es": "¿Está lejos de aquí?",
       "ja": "ここから遠いですか？"
      }
-    ]
+    ],
+    "en": "How long does it take to get there?"
    },
    {
     "es": "¿Puede parar aquí, por favor?",
@@ -1173,7 +1240,8 @@ const SCENARIOS = [
       "es": "Deténgase aquí, por favor.",
       "ja": "ここで止まってください。"
      }
-    ]
+    ],
+    "en": "Could you stop here, please?"
    },
    {
     "es": "¿Me puede esperar unos minutos?",
@@ -1190,7 +1258,8 @@ const SCENARIOS = [
       "es": "Vuelvo en cinco minutos, ¿me espera?",
       "ja": "5分で戻ります、待っていてもらえますか？"
      }
-    ]
+    ],
+    "en": "Could you wait a few minutes for me?"
    },
    {
     "es": "¿Cuánto es?",
@@ -1207,7 +1276,8 @@ const SCENARIOS = [
       "es": "¿Qué le debo?",
       "ja": "いくらですか？"
      }
-    ]
+    ],
+    "en": "How much is it?"
    },
    {
     "es": "Quédese con el cambio.",
@@ -1224,7 +1294,8 @@ const SCENARIOS = [
       "es": "No necesito el cambio.",
       "ja": "おつりはいりません。"
      }
-    ]
+    ],
+    "en": "Keep the change."
    },
    {
     "es": "¿Cuánto cuesta llegar al aeropuerto?",
@@ -1241,7 +1312,8 @@ const SCENARIOS = [
       "es": "¿Hay tarifa fija al aeropuerto?",
       "ja": "空港までは定額料金がありますか？"
      }
-    ]
+    ],
+    "en": "How much does it cost to get to the airport?"
    },
    {
     "es": "¿Puede esperar aquí unos minutos?",
@@ -1258,7 +1330,8 @@ const SCENARIOS = [
       "es": "No se vaya, ya vuelvo.",
       "ja": "行かないで、すぐ戻ります。"
      }
-    ]
+    ],
+    "en": "Could you wait here a few minutes?"
    },
    {
     "es": "Pare aquí, por favor.",
@@ -1275,7 +1348,8 @@ const SCENARIOS = [
       "es": "Aquí está bien, gracias.",
       "ja": "ここで大丈夫です、ありがとう。"
      }
-    ]
+    ],
+    "en": "Stop here, please."
    },
    {
     "es": "¿Acepta tarjeta o solo efectivo?",
@@ -1292,7 +1366,8 @@ const SCENARIOS = [
       "es": "¿Solo efectivo?",
       "ja": "現金のみですか？"
      }
-    ]
+    ],
+    "en": "Do you take cards, or cash only?"
    },
    {
     "es": "¿Me puede dar un recibo?",
@@ -1309,7 +1384,8 @@ const SCENARIOS = [
       "es": "¿Tiene recibo?",
       "ja": "レシートはありますか？"
      }
-    ]
+    ],
+    "en": "Could I get a receipt?"
    },
    {
     "es": "Voy a esta dirección.",
@@ -1326,7 +1402,8 @@ const SCENARIOS = [
       "es": "Es aquí a donde voy.",
       "ja": "ここに行きたいです。"
      }
-    ]
+    ],
+    "en": "I'm going to this address."
    },
    {
     "es": "¿Cuánto falta para llegar?",
@@ -1343,7 +1420,8 @@ const SCENARIOS = [
       "es": "¿Cuánto nos falta?",
       "ja": "あとどれくらいですか？"
      }
-    ]
+    ],
+    "en": "How much longer until we arrive?"
    },
    {
     "es": "¿Cuánto tarda en llegar?",
@@ -1356,7 +1434,8 @@ const SCENARIOS = [
       "ja": "どれくらい時間がかかりますか？（ラテンアメリカでも使われる言い方）"
      }
     ],
-    "note": "所要時間を尋ねる表現"
+    "note": "所要時間を尋ねる表現",
+    "en": "How long does it take to arrive?"
    }
   ]
  },
@@ -1379,7 +1458,8 @@ const SCENARIOS = [
       "es": "¿Dónde está el counter de...?",
       "ja": "〜のカウンターはどこですか？"
      }
-    ]
+    ],
+    "en": "Where is the ... airline counter?"
    },
    {
     "es": "Quiero facturar mi equipaje.",
@@ -1396,7 +1476,8 @@ const SCENARIOS = [
       "es": "¿Dónde facturo mi equipaje?",
       "ja": "荷物はどこで預ければいいですか？"
      }
-    ]
+    ],
+    "en": "I'd like to check my luggage."
    },
    {
     "es": "¿Cuál es mi puerta de embarque?",
@@ -1413,7 +1494,8 @@ const SCENARIOS = [
       "es": "¿Dónde está la puerta 12?",
       "ja": "12番ゲートはどこですか？"
      }
-    ]
+    ],
+    "en": "What's my boarding gate?"
    },
    {
     "es": "¿A qué hora empieza el abordaje?",
@@ -1430,7 +1512,8 @@ const SCENARIOS = [
       "es": "¿A qué hora abren la puerta?",
       "ja": "ゲートは何時に開きますか？"
      }
-    ]
+    ],
+    "en": "What time does boarding start?"
    },
    {
     "es": "Mi vuelo se retrasó.",
@@ -1447,7 +1530,8 @@ const SCENARIOS = [
       "es": "Hay un retraso en mi vuelo.",
       "ja": "私のフライトに遅延があります。"
      }
-    ]
+    ],
+    "en": "My flight was delayed."
    },
    {
     "es": "¿Dónde recojo mi equipaje?",
@@ -1464,7 +1548,8 @@ const SCENARIOS = [
       "es": "¿Dónde se recoge el equipaje del vuelo 123?",
       "ja": "123便の荷物はどこで受け取れますか？"
      }
-    ]
+    ],
+    "en": "Where do I pick up my luggage?"
    },
    {
     "es": "Vengo de vacaciones.",
@@ -1481,7 +1566,8 @@ const SCENARIOS = [
       "es": "Vengo por turismo.",
       "ja": "観光目的で来ました。"
      }
-    ]
+    ],
+    "en": "I'm here on vacation."
    },
    {
     "es": "Me quedo una semana.",
@@ -1498,7 +1584,8 @@ const SCENARIOS = [
       "es": "Mi estancia es de siete días.",
       "ja": "滞在は7日間です。"
      }
-    ]
+    ],
+    "en": "I'm staying one week."
    },
    {
     "es": "¿Tiene algo que declarar?",
@@ -1515,7 +1602,8 @@ const SCENARIOS = [
       "es": "¿Algo para declarar?",
       "ja": "申告するものは？"
      }
-    ]
+    ],
+    "en": "Do you have anything to declare?"
    },
    {
     "es": "No tengo nada que declarar.",
@@ -1532,7 +1620,8 @@ const SCENARIOS = [
       "es": "Nada que declarar.",
       "ja": "申告するものはありません。"
      }
-    ]
+    ],
+    "en": "I have nothing to declare."
    },
    {
     "es": "¿Lleva algo peligroso o prohibido en su equipaje?",
@@ -1549,7 +1638,8 @@ const SCENARIOS = [
       "es": "¿Tiene algo restringido en su maleta?",
       "ja": "スーツケースに制限品はありますか？"
      }
-    ]
+    ],
+    "en": "Are you carrying anything dangerous or prohibited in your luggage?"
    },
    {
     "es": "No, no llevo nada peligroso.",
@@ -1566,7 +1656,8 @@ const SCENARIOS = [
       "es": "No llevo nada prohibido.",
       "ja": "禁止されているものは何も持っていません。"
      }
-    ]
+    ],
+    "en": "No, I'm not carrying anything dangerous."
    },
    {
     "es": "¿Cuál es el propósito de su viaje?",
@@ -1583,7 +1674,8 @@ const SCENARIOS = [
       "es": "¿Cuál es el motivo de su visita?",
       "ja": "訪問の理由は何ですか？"
      }
-    ]
+    ],
+    "en": "What's the purpose of your trip?"
    },
    {
     "es": "Estoy aquí por negocios.",
@@ -1600,7 +1692,8 @@ const SCENARIOS = [
       "es": "Es un viaje de negocios.",
       "ja": "出張です。"
      }
-    ]
+    ],
+    "en": "I'm here on business."
    },
    {
     "es": "¿Dónde se va a hospedar?",
@@ -1617,7 +1710,8 @@ const SCENARIOS = [
       "es": "¿Cuál es su dirección aquí?",
       "ja": "こちらでの滞在先住所は何ですか？"
      }
-    ]
+    ],
+    "en": "Where will you be staying?"
    },
    {
     "es": "Me hospedo en este hotel.",
@@ -1634,7 +1728,8 @@ const SCENARIOS = [
       "es": "Esta es mi dirección de hospedaje.",
       "ja": "これが私の滞在先住所です。"
      }
-    ]
+    ],
+    "en": "I'm staying at this hotel."
    },
    {
     "es": "¿Puedo ver su pasaporte, por favor?",
@@ -1651,7 +1746,8 @@ const SCENARIOS = [
       "es": "¿Me permite su pasaporte?",
       "ja": "パスポートを見せていただけますか？"
      }
-    ]
+    ],
+    "en": "May I see your passport, please?"
    },
    {
     "es": "¿Tiene equipaje de mano?",
@@ -1668,7 +1764,8 @@ const SCENARIOS = [
       "es": "¿Cuántas piezas de equipaje de mano lleva?",
       "ja": "機内持ち込み荷物はいくつありますか？"
      }
-    ]
+    ],
+    "en": "Do you have carry-on luggage?"
    },
    {
     "es": "Solo tengo equipaje de mano.",
@@ -1685,7 +1782,8 @@ const SCENARIOS = [
       "es": "Viajo solo con equipaje de mano.",
       "ja": "機内持ち込み荷物だけで移動しています。"
      }
-    ]
+    ],
+    "en": "I only have carry-on luggage."
    },
    {
     "es": "¿Necesito quitarme los zapatos?",
@@ -1702,7 +1800,8 @@ const SCENARIOS = [
       "es": "¿Debo quitarme la chaqueta?",
       "ja": "上着を脱ぐ必要がありますか？"
      }
-    ]
+    ],
+    "en": "Do I need to take off my shoes?"
    },
    {
     "es": "Por favor, vacíe sus bolsillos.",
@@ -1719,7 +1818,8 @@ const SCENARIOS = [
       "es": "Retire objetos metálicos, por favor.",
       "ja": "金属製のものを外してください。"
      }
-    ]
+    ],
+    "en": "Please empty your pockets."
    },
    {
     "es": "¿A qué hora es el último llamado para abordar?",
@@ -1736,7 +1836,8 @@ const SCENARIOS = [
       "es": "¿Cuándo cierran la puerta?",
       "ja": "ゲートはいつ閉まりますか？"
      }
-    ]
+    ],
+    "en": "What time is the final boarding call?"
    },
    {
     "es": "Perdí mi conexión.",
@@ -1753,7 +1854,8 @@ const SCENARIOS = [
       "es": "No alcancé mi siguiente vuelo.",
       "ja": "次のフライトに間に合いませんでした。"
      }
-    ]
+    ],
+    "en": "I missed my connecting flight."
    },
    {
     "es": "¿Hay otro vuelo disponible hoy?",
@@ -1770,7 +1872,8 @@ const SCENARIOS = [
       "es": "¿Cuál es el próximo vuelo disponible?",
       "ja": "次に利用できる便はいつですか？"
      }
-    ]
+    ],
+    "en": "Is there another flight available today?"
    },
    {
     "es": "Mi maleta no llegó.",
@@ -1787,7 +1890,8 @@ const SCENARIOS = [
       "es": "Mi maleta se perdió.",
       "ja": "荷物が紛失しました。"
      }
-    ]
+    ],
+    "en": "My suitcase didn't arrive."
    },
    {
     "es": "¿Dónde está la oficina de objetos perdidos?",
@@ -1804,7 +1908,8 @@ const SCENARIOS = [
       "es": "¿Dónde está el mostrador de reclamos?",
       "ja": "クレーム窓口はどこですか？"
      }
-    ]
+    ],
+    "en": "Where is the lost and found office?"
    }
   ]
  },
@@ -1827,7 +1932,8 @@ const SCENARIOS = [
       "es": "¿Tiene un analgésico?",
       "ja": "鎮痛剤はありますか？"
      }
-    ]
+    ],
+    "en": "Do you have something for a headache?"
    },
    {
     "es": "Me duele la garganta.",
@@ -1844,7 +1950,8 @@ const SCENARIOS = [
       "es": "Me arde la garganta.",
       "ja": "喉がヒリヒリします。"
      }
-    ]
+    ],
+    "en": "My throat hurts."
    },
    {
     "es": "¿Necesito receta para esto?",
@@ -1861,7 +1968,8 @@ const SCENARIOS = [
       "es": "¿Es de venta libre?",
       "ja": "市販薬ですか？"
      }
-    ]
+    ],
+    "en": "Do I need a prescription for this?"
    },
    {
     "es": "¿Cómo debo tomar esto?",
@@ -1878,7 +1986,8 @@ const SCENARIOS = [
       "es": "¿Con o sin alimentos?",
       "ja": "食事と一緒に飲みますか、それとも空腹時ですか？"
      }
-    ]
+    ],
+    "en": "How should I take this?"
    },
    {
     "es": "Soy alérgico/a a...",
@@ -1895,7 +2004,8 @@ const SCENARIOS = [
       "es": "No puedo tomar...",
       "ja": "〜は服用できません。"
      }
-    ]
+    ],
+    "en": "I'm allergic to..."
    },
    {
     "es": "Necesito ver a un médico.",
@@ -1912,7 +2022,8 @@ const SCENARIOS = [
       "es": "¿Hay algún médico aquí?",
       "ja": "ここに医者はいますか？"
      }
-    ]
+    ],
+    "en": "I need to see a doctor."
    },
    {
     "es": "¿Dónde está la sala de emergencias?",
@@ -1929,7 +2040,8 @@ const SCENARIOS = [
       "es": "Necesito ir a emergencias.",
       "ja": "救急外来に行く必要があります。"
      }
-    ]
+    ],
+    "en": "Where is the emergency room?"
    },
    {
     "es": "No me siento bien.",
@@ -1946,7 +2058,8 @@ const SCENARIOS = [
       "es": "No ando bien de salud.",
       "ja": "体調があまり良くないです。"
      }
-    ]
+    ],
+    "en": "I don't feel well."
    },
    {
     "es": "¿Necesito receta para esto?",
@@ -1963,7 +2076,8 @@ const SCENARIOS = [
       "es": "¿Puedo comprarlo sin receta?",
       "ja": "処方箋なしで買えますか？"
      }
-    ]
+    ],
+    "en": "Do I need a prescription for this?"
    },
    {
     "es": "¿Cada cuánto debo tomarlo?",
@@ -1980,7 +2094,8 @@ const SCENARIOS = [
       "es": "¿Cada cuántas horas?",
       "ja": "何時間おきですか？"
      }
-    ]
+    ],
+    "en": "How often should I take it?"
    },
    {
     "es": "Soy alérgico a la penicilina.",
@@ -1997,7 +2112,8 @@ const SCENARIOS = [
       "es": "No puedo tomar antibióticos con penicilina.",
       "ja": "ペニシリン系の抗生物質は飲めません。"
      }
-    ]
+    ],
+    "en": "I'm allergic to penicillin."
    },
    {
     "es": "¿Tiene algo para el dolor de cabeza?",
@@ -2014,7 +2130,8 @@ const SCENARIOS = [
       "es": "¿Me recomienda algo para esto?",
       "ja": "これに何かおすすめはありますか？"
      }
-    ]
+    ],
+    "en": "Do you have anything for a headache?"
    },
    {
     "es": "Necesito hacer una cita con el doctor.",
@@ -2031,7 +2148,8 @@ const SCENARIOS = [
       "es": "¿Puedo hacer una cita para hoy?",
       "ja": "今日の予約は取れますか？"
      }
-    ]
+    ],
+    "en": "I need to make an appointment with the doctor."
    },
    {
     "es": "¿Cuánto tiempo tengo que esperar?",
@@ -2048,7 +2166,8 @@ const SCENARIOS = [
       "es": "¿Falta mucho para que me atiendan?",
       "ja": "診てもらえるまでまだかかりますか？"
      }
-    ]
+    ],
+    "en": "How long do I have to wait?"
    }
   ]
  },
@@ -2071,7 +2190,8 @@ const SCENARIOS = [
       "es": "¿Cuál es el camino a...?",
       "ja": "〜への道はどれですか？"
      }
-    ]
+    ],
+    "en": "How do I get to...?"
    },
    {
     "es": "¿Está lejos de aquí?",
@@ -2088,7 +2208,8 @@ const SCENARIOS = [
       "es": "¿Queda cerca de aquí?",
       "ja": "ここから近いですか？"
      }
-    ]
+    ],
+    "en": "Is it far from here?"
    },
    {
     "es": "Está a dos cuadras de aquí.",
@@ -2105,7 +2226,8 @@ const SCENARIOS = [
       "es": "Está muy cerca, a unos minutos caminando.",
       "ja": "とても近く、歩いて数分です。"
      }
-    ]
+    ],
+    "en": "It's two blocks from here."
    },
    {
     "es": "Siga derecho y luego dé vuelta a la izquierda.",
@@ -2122,7 +2244,8 @@ const SCENARIOS = [
       "es": "Vaya recto y después gire a la izquierda.",
       "ja": "まっすぐ行って、それから左に曲がってください。"
      }
-    ]
+    ],
+    "en": "Go straight and then turn left."
    },
    {
     "es": "¿Se puede ir caminando?",
@@ -2139,7 +2262,8 @@ const SCENARIOS = [
       "es": "¿Está a distancia de caminar?",
       "ja": "歩ける距離にありますか？"
      }
-    ]
+    ],
+    "en": "Can you get there on foot?"
    },
    {
     "es": "Perdón, ¿me puede ayudar? Estoy perdido/a.",
@@ -2156,7 +2280,8 @@ const SCENARIOS = [
       "es": "¿Me podría ayudar? No sé dónde estoy.",
       "ja": "手伝ってもらえますか？自分がどこにいるか分からないんです。"
      }
-    ]
+    ],
+    "en": "Excuse me, could you help me? I'm lost."
    },
    {
     "es": "¿Qué autobús/línea debo tomar?",
@@ -2173,7 +2298,8 @@ const SCENARIOS = [
       "es": "¿Cuál camión me lleva a...?",
       "ja": "どのバスが〜まで連れて行ってくれますか？"
      }
-    ]
+    ],
+    "en": "Which bus/line should I take?"
    },
    {
     "es": "¿Está lejos de aquí?",
@@ -2190,7 +2316,8 @@ const SCENARIOS = [
       "es": "¿Se puede llegar rápido?",
       "ja": "すぐ着けますか？"
      }
-    ]
+    ],
+    "en": "Is it far from here?"
    },
    {
     "es": "¿Se puede ir caminando?",
@@ -2207,7 +2334,8 @@ const SCENARIOS = [
       "es": "¿No hace falta transporte?",
       "ja": "交通機関は必要ないですか？"
      }
-    ]
+    ],
+    "en": "Can you walk there?"
    },
    {
     "es": "Siga derecho hasta el semáforo.",
@@ -2224,7 +2352,8 @@ const SCENARIOS = [
       "es": "Camine derecho hasta llegar al semáforo.",
       "ja": "信号に着くまでまっすぐ歩いてください。"
      }
-    ]
+    ],
+    "en": "Go straight until the traffic light."
    },
    {
     "es": "Doble a la derecha en la esquina.",
@@ -2241,7 +2370,8 @@ const SCENARIOS = [
       "es": "Voltee a la derecha ahí.",
       "ja": "そこで右に曲がってください。"
      }
-    ]
+    ],
+    "en": "Turn right at the corner."
    },
    {
     "es": "Está a mano izquierda.",
@@ -2258,7 +2388,8 @@ const SCENARIOS = [
       "es": "Queda del lado izquierdo.",
       "ja": "左側にあります。"
      }
-    ]
+    ],
+    "en": "It's on the left."
    },
    {
     "es": "Perdón, creo que estoy perdido.",
@@ -2275,7 +2406,8 @@ const SCENARIOS = [
       "es": "No sé muy bien dónde estoy.",
       "ja": "自分がどこにいるかよく分からないんです。"
      }
-    ]
+    ],
+    "en": "Excuse me, I think I'm lost."
    },
    {
     "es": "¿Me puede indicar en el mapa?",
@@ -2292,7 +2424,8 @@ const SCENARIOS = [
       "es": "¿Me lo puede mostrar en el mapa?",
       "ja": "地図で見せてもらえますか？"
      }
-    ]
+    ],
+    "en": "Could you show me on the map?"
    }
   ]
  },
@@ -2315,7 +2448,8 @@ const SCENARIOS = [
       "es": "Ven acá.",
       "ja": "こっちに来て。"
      }
-    ]
+    ],
+    "en": "Come here."
    },
    {
     "es": "Espera / Espere un momento.",
@@ -2332,7 +2466,8 @@ const SCENARIOS = [
       "es": "Dame un segundo.",
       "ja": "少し時間ちょうだい。"
      }
-    ]
+    ],
+    "en": "Wait a moment."
    },
    {
     "es": "Mira / Mire esto.",
@@ -2349,7 +2484,8 @@ const SCENARIOS = [
       "es": "Échale un ojo a esto.",
       "ja": "これちょっと見てみて。"
      }
-    ]
+    ],
+    "en": "Look at this."
    },
    {
     "es": "Escucha / Escuche.",
@@ -2366,7 +2502,8 @@ const SCENARIOS = [
       "es": "Presta atención.",
       "ja": "注意して聞いて。"
      }
-    ]
+    ],
+    "en": "Listen."
    },
    {
     "es": "¡Cuidado!",
@@ -2383,7 +2520,8 @@ const SCENARIOS = [
       "es": "¡Ten cuidado!",
       "ja": "気をつけて！"
      }
-    ]
+    ],
+    "en": "Watch out!"
    },
    {
     "es": "Ayúdame, por favor.",
@@ -2400,7 +2538,8 @@ const SCENARIOS = [
       "es": "Necesito tu ayuda.",
       "ja": "あなたの助けが必要です。"
      }
-    ]
+    ],
+    "en": "Help me, please."
    },
    {
     "es": "Siéntate / Siéntese, por favor.",
@@ -2417,7 +2556,8 @@ const SCENARIOS = [
       "es": "Puedes sentarte aquí.",
       "ja": "ここに座っていいよ。"
      }
-    ]
+    ],
+    "en": "Have a seat, please."
    },
    {
     "es": "Cállate.",
@@ -2434,7 +2574,8 @@ const SCENARIOS = [
       "es": "Ya, cállate.",
       "ja": "もう、黙って（強い口調）。"
      }
-    ]
+    ],
+    "en": "Be quiet."
    },
    {
     "es": "Apúrate / Apúrese, por favor.",
@@ -2451,7 +2592,8 @@ const SCENARIOS = [
       "es": "Rápido, por favor.",
       "ja": "早くお願い。"
      }
-    ]
+    ],
+    "en": "Hurry up, please."
    },
    {
     "es": "Dame eso, por favor.",
@@ -2468,7 +2610,8 @@ const SCENARIOS = [
       "es": "¿Me das eso?",
       "ja": "それちょうだえる？"
      }
-    ]
+    ],
+    "en": "Give me that, please."
    },
    {
     "es": "Ten cuidado.",
@@ -2485,7 +2628,8 @@ const SCENARIOS = [
       "es": "Ve con cuidado.",
       "ja": "気をつけて行ってね。"
      }
-    ]
+    ],
+    "en": "Be careful."
    },
    {
     "es": "Quédate / Quédese aquí.",
@@ -2502,7 +2646,8 @@ const SCENARIOS = [
       "es": "Espera aquí.",
       "ja": "ここで待ってて。"
      }
-    ]
+    ],
+    "en": "Stay here."
    },
    {
     "es": "Sígueme / Sígame, por favor.",
@@ -2519,7 +2664,8 @@ const SCENARIOS = [
       "es": "Por aquí, sígame.",
       "ja": "こちらです、ついてきてください。"
      }
-    ]
+    ],
+    "en": "Follow me, please."
    },
    {
     "es": "No te preocupes / No se preocupe.",
@@ -2536,7 +2682,8 @@ const SCENARIOS = [
       "es": "No pasa nada.",
       "ja": "何も問題ないよ。"
      }
-    ]
+    ],
+    "en": "Don't worry."
    },
    {
     "es": "No te vayas.",
@@ -2553,7 +2700,8 @@ const SCENARIOS = [
       "es": "No me dejes solo/a.",
       "ja": "一人にしないで。"
      }
-    ]
+    ],
+    "en": "Don't leave."
    },
    {
     "es": "Pásame la sal, por favor.",
@@ -2570,7 +2718,8 @@ const SCENARIOS = [
       "es": "Alcánzame la sal.",
       "ja": "塩を取って（届かせて）。"
      }
-    ]
+    ],
+    "en": "Pass me the salt, please."
    },
    {
     "es": "Repite, por favor.",
@@ -2587,7 +2736,8 @@ const SCENARIOS = [
       "es": "¿Cómo dijiste?",
       "ja": "何て言ったの？"
      }
-    ]
+    ],
+    "en": "Say it again, please."
    },
    {
     "es": "Vamos.",
@@ -2604,7 +2754,8 @@ const SCENARIOS = [
       "es": "¿Nos vamos?",
       "ja": "行く？（疑問形での誘い）"
      }
-    ]
+    ],
+    "en": "Let's go."
    }
   ]
  },
@@ -2627,7 +2778,8 @@ const SCENARIOS = [
       "es": "¿Aló?",
       "ja": "もしもし？（多くの中南米諸国での言い方）"
      }
-    ]
+    ],
+    "en": "Hello?"
    },
    {
     "es": "¿Con quién hablo?",
@@ -2644,7 +2796,8 @@ const SCENARIOS = [
       "es": "¿Me puede decir su nombre?",
       "ja": "お名前を伺えますか？"
      }
-    ]
+    ],
+    "en": "Who am I speaking with?"
    },
    {
     "es": "¿Está Juan, por favor?",
@@ -2661,7 +2814,8 @@ const SCENARIOS = [
       "es": "¿Me comunica con Juan?",
       "ja": "フアンさんにつないでもらえますか？"
      }
-    ]
+    ],
+    "en": "Is Juan there, please?"
    },
    {
     "es": "Un momento, por favor, ahora le paso.",
@@ -2678,7 +2832,8 @@ const SCENARIOS = [
       "es": "En un momento le paso la llamada.",
       "ja": "すぐにお電話をおつなぎします。"
      }
-    ]
+    ],
+    "en": "One moment, please, I'll put you through now."
    },
    {
     "es": "Se cortó la llamada.",
@@ -2695,7 +2850,8 @@ const SCENARIOS = [
       "es": "Perdí la señal.",
       "ja": "電波が切れました。"
      }
-    ]
+    ],
+    "en": "The call got cut off."
    },
    {
     "es": "Te mando un mensaje después.",
@@ -2712,7 +2868,8 @@ const SCENARIOS = [
       "es": "Ahorita te mando algo.",
       "ja": "今すぐメッセージ送るね。"
      }
-    ]
+    ],
+    "en": "I'll send you a message later."
    },
    {
     "es": "¿Me puedes llamar cuando puedas?",
@@ -2729,7 +2886,8 @@ const SCENARIOS = [
       "es": "Avísame cuando estés libre.",
       "ja": "手が空いたら教えて。"
      }
-    ]
+    ],
+    "en": "Can you call me when you get a chance?"
    },
    {
     "es": "No tengo señal aquí.",
@@ -2746,7 +2904,8 @@ const SCENARIOS = [
       "es": "Tengo mala señal.",
       "ja": "電波が悪いです。"
      }
-    ]
+    ],
+    "en": "I don't have signal here."
    },
    {
     "es": "Se me acabó la batería.",
@@ -2763,7 +2922,8 @@ const SCENARIOS = [
       "es": "Ya no tengo batería.",
       "ja": "もうバッテリーがありません。"
      }
-    ]
+    ],
+    "en": "My battery died."
    },
    {
     "es": "Se cortó la llamada.",
@@ -2780,7 +2940,8 @@ const SCENARIOS = [
       "es": "Nos cortaron.",
       "ja": "通話が切られました。"
      }
-    ]
+    ],
+    "en": "The call got cut off."
    },
    {
     "es": "No te escucho bien.",
@@ -2797,7 +2958,8 @@ const SCENARIOS = [
       "es": "¿Me escuchas?",
       "ja": "聞こえてる？"
      }
-    ]
+    ],
+    "en": "I can't hear you well."
    },
    {
     "es": "Te mando un mensaje después.",
@@ -2814,7 +2976,8 @@ const SCENARIOS = [
       "es": "Hablamos por WhatsApp.",
       "ja": "WhatsAppで話そう。"
      }
-    ]
+    ],
+    "en": "I'll send you a message later."
    },
    {
     "es": "¿Me puedes mandar tu ubicación?",
@@ -2831,7 +2994,8 @@ const SCENARIOS = [
       "es": "¿Dónde estás? Compárteme el mapa.",
       "ja": "今どこ？地図共有して。"
      }
-    ]
+    ],
+    "en": "Can you send me your location?"
    },
    {
     "es": "Se me acabó la batería.",
@@ -2848,7 +3012,8 @@ const SCENARIOS = [
       "es": "Me quedo sin batería, te llamo luego.",
       "ja": "バッテリーがなくなりそう、後で電話するね。"
      }
-    ]
+    ],
+    "en": "My battery died."
    },
    {
     "es": "Estoy a punto de salir.",
@@ -2865,7 +3030,8 @@ const SCENARIOS = [
       "ja": "今出るところだよ"
      }
     ],
-    "note": "今から出るところだと伝える表現"
+    "note": "今から出るところだと伝える表現",
+    "en": "I'm about to leave."
    }
   ]
  },
@@ -2888,7 +3054,8 @@ const SCENARIOS = [
       "es": "¿Cuál es tu profesión?",
       "ja": "あなたの職業は何ですか？（ややフォーマル）"
      }
-    ]
+    ],
+    "en": "What do you do for a living?"
    },
    {
     "es": "¿De dónde eres?",
@@ -2905,7 +3072,8 @@ const SCENARIOS = [
       "es": "¿Eres de aquí?",
       "ja": "ここの出身ですか？"
      }
-    ]
+    ],
+    "en": "Where are you from?"
    },
    {
     "es": "¿Cuánto tiempo llevas viviendo aquí?",
@@ -2918,7 +3086,8 @@ const SCENARIOS = [
       "es": "¿Desde cuándo vives aquí?",
       "ja": "いつからここに住んでいますか？"
      }
-    ]
+    ],
+    "en": "How long have you been living here?"
    },
    {
     "es": "¡Qué calor/frío hace hoy!",
@@ -2935,7 +3104,8 @@ const SCENARIOS = [
       "es": "¡Qué clima tan agradable!",
       "ja": "なんて気持ちのいい天気なんだろう！"
      }
-    ]
+    ],
+    "en": "It's so hot/cold today!"
    },
    {
     "es": "¿Tienes planes para el fin de semana?",
@@ -2952,7 +3122,8 @@ const SCENARIOS = [
       "es": "¿Tienes algo planeado?",
       "ja": "何か予定入ってる？"
      }
-    ]
+    ],
+    "en": "Do you have plans for the weekend?"
    },
    {
     "es": "¡Cuánto tiempo sin verte!",
@@ -2969,7 +3140,8 @@ const SCENARIOS = [
       "es": "¡Qué gusto verte de nuevo!",
       "ja": "また会えて嬉しい！"
      }
-    ]
+    ],
+    "en": "It's been so long since I've seen you!"
    },
    {
     "es": "Nos vemos pronto, ¿va?",
@@ -2986,7 +3158,8 @@ const SCENARIOS = [
       "es": "Hay que vernos más seguido.",
       "ja": "もっと頻繁に会おうね。"
      }
-    ]
+    ],
+    "en": "See you soon, okay?"
    },
    {
     "es": "Que te vaya bien.",
@@ -3003,7 +3176,8 @@ const SCENARIOS = [
       "es": "Que tengas un buen día.",
       "ja": "良い一日を。"
      }
-    ]
+    ],
+    "en": "Take care."
    },
    {
     "es": "¿A qué te dedicas?",
@@ -3020,7 +3194,8 @@ const SCENARIOS = [
       "es": "¿Cuál es tu profesión?",
       "ja": "あなたの職業は何ですか？（ややフォーマル）"
      }
-    ]
+    ],
+    "en": "What do you do for a living?"
    },
    {
     "es": "¿De dónde eres originalmente?",
@@ -3037,7 +3212,8 @@ const SCENARIOS = [
       "es": "¿Cuál es tu país de origen?",
       "ja": "出身国はどちらですか？"
      }
-    ]
+    ],
+    "en": "Where are you originally from?"
    },
    {
     "es": "¿Cuánto tiempo llevas viviendo aquí?",
@@ -3050,7 +3226,8 @@ const SCENARIOS = [
       "es": "¿Desde cuándo vives aquí?",
       "ja": "いつからここに住んでいますか？"
      }
-    ]
+    ],
+    "en": "How long have you been living here?"
    },
    {
     "es": "¿Qué planes tienes para el fin de semana?",
@@ -3067,7 +3244,8 @@ const SCENARIOS = [
       "es": "¿Cómo vas a pasar el fin de semana?",
       "ja": "週末どう過ごす予定？"
      }
-    ]
+    ],
+    "en": "What plans do you have for the weekend?"
    },
    {
     "es": "El tráfico estuvo terrible hoy.",
@@ -3084,7 +3262,8 @@ const SCENARIOS = [
       "es": "Me tardé el doble por el tráfico.",
       "ja": "渋滞で普段の倍の時間がかかった。"
      }
-    ]
+    ],
+    "en": "Traffic was terrible today."
    },
    {
     "es": "¿Viste el partido ayer?",
@@ -3101,7 +3280,8 @@ const SCENARIOS = [
       "es": "¿Ganó tu equipo?",
       "ja": "あなたのチーム勝った？"
      }
-    ]
+    ],
+    "en": "Did you watch the game yesterday?"
    },
    {
     "es": "Qué calor hace hoy, ¿no?",
@@ -3118,7 +3298,8 @@ const SCENARIOS = [
       "es": "Está haciendo un calor terrible.",
       "ja": "ひどい暑さだね。"
      }
-    ]
+    ],
+    "en": "It's hot today, isn't it?"
    },
    {
     "es": "¿Cómo va todo por tu casa?",
@@ -3135,7 +3316,8 @@ const SCENARIOS = [
       "es": "¿Todo bien por tu casa?",
       "ja": "家族はみんな元気にしてる？"
      }
-    ]
+    ],
+    "en": "How's everything at home?"
    },
    {
     "es": "Hace tiempo que no nos vemos.",
@@ -3152,7 +3334,8 @@ const SCENARIOS = [
       "es": "Hace mucho que no coincidimos.",
       "ja": "最近全然会えていないね。"
      }
-    ]
+    ],
+    "en": "It's been a while since we've seen each other."
    },
    {
     "es": "¿Qué tal el fin de semana?",
@@ -3169,7 +3352,8 @@ const SCENARIOS = [
       "es": "¿Hiciste algo divertido el fin de semana?",
       "ja": "週末何か楽しいことした？"
      }
-    ]
+    ],
+    "en": "How was the weekend?"
    },
    {
     "es": "Se me hizo tarde.",
@@ -3182,7 +3366,8 @@ const SCENARIOS = [
       "ja": "遅刻した（より直接的な言い方）"
      }
     ],
-    "note": "遅刻したと伝えるカジュアルな表現"
+    "note": "遅刻したと伝えるカジュアルな表現",
+    "en": "I ran late."
    }
   ]
  },
@@ -3205,7 +3390,8 @@ const SCENARIOS = [
       "es": "¿Tiene departamentos disponibles?",
       "ja": "空いている部屋はありますか？"
      }
-    ]
+    ],
+    "en": "I'm looking for an apartment to rent."
    },
    {
     "es": "¿Cuánto es la renta mensual?",
@@ -3222,7 +3408,8 @@ const SCENARIOS = [
       "es": "¿Cuál es el precio de la renta?",
       "ja": "家賃はいくらですか？"
      }
-    ]
+    ],
+    "en": "How much is the monthly rent?"
    },
    {
     "es": "¿Los servicios están incluidos?",
@@ -3239,7 +3426,8 @@ const SCENARIOS = [
       "es": "¿Tengo que pagar los servicios aparte?",
       "ja": "光熱費は別払いですか？"
      }
-    ]
+    ],
+    "en": "Are utilities included?"
    },
    {
     "es": "¿Se necesita depósito?",
@@ -3256,7 +3444,8 @@ const SCENARIOS = [
       "es": "¿Cuánto es el depósito requerido?",
       "ja": "必要な敷金はいくらですか？"
      }
-    ]
+    ],
+    "en": "Is a deposit required?"
    },
    {
     "es": "¿Se permiten mascotas?",
@@ -3269,7 +3458,8 @@ const SCENARIOS = [
       "es": "¿Aceptan mascotas?",
       "ja": "ペットを受け入れていますか？"
      }
-    ]
+    ],
+    "en": "Are pets allowed?"
    },
    {
     "es": "¿Cuándo puedo mudarme?",
@@ -3286,7 +3476,8 @@ const SCENARIOS = [
       "es": "¿Cuál es la fecha de mudanza?",
       "ja": "引っ越し可能日はいつですか？"
      }
-    ]
+    ],
+    "en": "When can I move in?"
    },
    {
     "es": "¿Cuánto tiempo dura el contrato?",
@@ -3303,7 +3494,8 @@ const SCENARIOS = [
       "es": "¿Es un contrato anual?",
       "ja": "1年契約ですか？"
      }
-    ]
+    ],
+    "en": "How long is the lease?"
    },
    {
     "es": "El departamento está amueblado.",
@@ -3320,7 +3512,8 @@ const SCENARIOS = [
       "es": "¿Está amueblado o vacío?",
       "ja": "家具付きですか、それとも空室ですか？"
      }
-    ]
+    ],
+    "en": "The apartment is furnished."
    },
    {
     "es": "¿Cuánto es el depósito?",
@@ -3337,7 +3530,8 @@ const SCENARIOS = [
       "es": "¿El depósito equivale a un mes de renta?",
       "ja": "敷金は家賃1ヶ月分ですか？"
      }
-    ]
+    ],
+    "en": "How much is the deposit?"
    },
    {
     "es": "¿Se permiten mascotas?",
@@ -3350,7 +3544,8 @@ const SCENARIOS = [
       "es": "¿Aceptan mascotas?",
       "ja": "ペットを受け入れていますか？"
      }
-    ]
+    ],
+    "en": "Are pets allowed?"
    },
    {
     "es": "¿Los servicios están incluidos en la renta?",
@@ -3367,7 +3562,8 @@ const SCENARIOS = [
       "es": "¿Qué servicios cubre la renta?",
       "ja": "家賃にはどのサービスが含まれますか？"
      }
-    ]
+    ],
+    "en": "Are utilities included in the rent?"
    },
    {
     "es": "¿Cuándo puedo mudarme?",
@@ -3384,7 +3580,8 @@ const SCENARIOS = [
       "es": "¿Cuándo queda libre el departamento?",
       "ja": "いつ部屋が空きますか？"
      }
-    ]
+    ],
+    "en": "When can I move in?"
    },
    {
     "es": "¿El contrato es por un año?",
@@ -3401,7 +3598,8 @@ const SCENARIOS = [
       "es": "¿Se puede rentar por seis meses?",
       "ja": "6ヶ月で借りることはできますか？"
      }
-    ]
+    ],
+    "en": "Is the lease for one year?"
    },
    {
     "es": "¿Cuántos metros cuadrados tiene?",
@@ -3418,7 +3616,8 @@ const SCENARIOS = [
       "es": "¿Cuántas recámaras tiene?",
       "ja": "寝室はいくつありますか？"
      }
-    ]
+    ],
+    "en": "How many square meters is it?"
    },
    {
     "es": "¿Se puede pintar las paredes?",
@@ -3435,7 +3634,8 @@ const SCENARIOS = [
       "es": "¿Está permitido hacer modificaciones?",
       "ja": "改装は許可されていますか？"
      }
-    ]
+    ],
+    "en": "Can I paint the walls?"
    },
    {
     "es": "¿Hay estacionamiento incluido?",
@@ -3452,7 +3652,8 @@ const SCENARIOS = [
       "es": "¿El estacionamiento tiene costo extra?",
       "ja": "駐車場は追加料金がかかりますか？"
      }
-    ]
+    ],
+    "en": "Is parking included?"
    },
    {
     "es": "¿Cuánto tiempo dura el contrato?",
@@ -3469,7 +3670,8 @@ const SCENARIOS = [
       "es": "¿Se puede renovar el contrato?",
       "ja": "契約更新はできますか？"
      }
-    ]
+    ],
+    "en": "How long is the lease?"
    },
    {
     "es": "Quisiera ver el departamento primero.",
@@ -3486,7 +3688,8 @@ const SCENARIOS = [
       "es": "Me gustaría hacer una visita primero.",
       "ja": "まず内見をさせてもらいたいです。"
      }
-    ]
+    ],
+    "en": "I'd like to see the apartment first."
    }
   ]
  },
@@ -3509,7 +3712,8 @@ const SCENARIOS = [
       "es": "¡Auxilio!",
       "ja": "助けて！（フォーマルな緊急語）"
      }
-    ]
+    ],
+    "en": "Help!"
    },
    {
     "es": "Llame a la policía, por favor.",
@@ -3526,7 +3730,8 @@ const SCENARIOS = [
       "es": "¿Puede reportar esto a la policía?",
       "ja": "これを警察に報告してもらえますか？"
      }
-    ]
+    ],
+    "en": "Call the police, please."
    },
    {
     "es": "Necesito un médico urgentemente.",
@@ -3543,7 +3748,8 @@ const SCENARIOS = [
       "es": "Necesito atención médica inmediata.",
       "ja": "すぐに医療処置が必要です。"
      }
-    ]
+    ],
+    "en": "I need a doctor urgently."
    },
    {
     "es": "Me robaron mi cartera.",
@@ -3560,7 +3766,8 @@ const SCENARIOS = [
       "es": "Alguien me robó la cartera.",
       "ja": "誰かに財布を盗まれました。"
      }
-    ]
+    ],
+    "en": "My wallet was stolen."
    },
    {
     "es": "Perdí mi pasaporte.",
@@ -3577,7 +3784,8 @@ const SCENARIOS = [
       "es": "No encuentro mi pasaporte.",
       "ja": "パスポートが見つかりません。"
      }
-    ]
+    ],
+    "en": "I lost my passport."
    },
    {
     "es": "¿Dónde está la embajada japonesa?",
@@ -3594,7 +3802,8 @@ const SCENARIOS = [
       "es": "Necesito contactar a mi embajada.",
       "ja": "大使館に連絡する必要があります。"
      }
-    ]
+    ],
+    "en": "Where is the Japanese embassy?"
    },
    {
     "es": "No me siento bien, necesito ayuda.",
@@ -3611,7 +3820,8 @@ const SCENARIOS = [
       "es": "Creo que necesito ir al hospital.",
       "ja": "病院に行く必要があると思います。"
      }
-    ]
+    ],
+    "en": "I don't feel well, I need help."
    },
    {
     "es": "Hubo un accidente.",
@@ -3628,7 +3838,8 @@ const SCENARIOS = [
       "es": "Hubo un choque.",
       "ja": "衝突事故がありました。"
      }
-    ]
+    ],
+    "en": "There was an accident."
    },
    {
     "es": "¡Se está quemando algo!",
@@ -3645,7 +3856,8 @@ const SCENARIOS = [
       "es": "¡Hay humo!",
       "ja": "煙が出ている！"
      }
-    ]
+    ],
+    "en": "Something is burning!"
    },
    {
     "es": "Alguien se desmayó.",
@@ -3662,7 +3874,8 @@ const SCENARIOS = [
       "es": "Alguien perdió el conocimiento.",
       "ja": "誰かが意識を失いました。"
      }
-    ]
+    ],
+    "en": "Someone fainted."
    },
    {
     "es": "Necesito el número de mi seguro.",
@@ -3679,7 +3892,8 @@ const SCENARIOS = [
       "es": "Necesito mi tarjeta de seguro médico.",
       "ja": "健康保険証が必要です。"
      }
-    ]
+    ],
+    "en": "I need my insurance number."
    },
    {
     "es": "¿Dónde está el hospital más cercano?",
@@ -3696,7 +3910,8 @@ const SCENARIOS = [
       "es": "¿Hay un hospital cerca de aquí?",
       "ja": "この近くに病院はありますか？"
      }
-    ]
+    ],
+    "en": "Where is the nearest hospital?"
    },
    {
     "es": "¡Llamen a una ambulancia!",
@@ -3713,7 +3928,8 @@ const SCENARIOS = [
       "es": "¡Necesitamos una ambulancia, rápido!",
       "ja": "救急車が必要です、急いで！"
      }
-    ]
+    ],
+    "en": "Call an ambulance!"
    },
    {
     "es": "No puede respirar bien.",
@@ -3730,7 +3946,8 @@ const SCENARIOS = [
       "es": "Se está ahogando.",
       "ja": "息ができなくなっています。"
      }
-    ]
+    ],
+    "en": "He/She can't breathe well."
    },
    {
     "es": "¿Dónde está la salida de emergencia?",
@@ -3747,7 +3964,8 @@ const SCENARIOS = [
       "es": "¿Dónde están las escaleras de emergencia?",
       "ja": "非常階段はどこですか？"
      }
-    ]
+    ],
+    "en": "Where is the emergency exit?"
    },
    {
     "es": "Hay un incendio en el edificio.",
@@ -3764,7 +3982,8 @@ const SCENARIOS = [
       "es": "Hay fuego en el piso de arriba.",
       "ja": "上の階で火が出ています。"
      }
-    ]
+    ],
+    "en": "There's a fire in the building."
    },
    {
     "es": "Ten cuidado con el escalón.",
@@ -3777,7 +3996,8 @@ const SCENARIOS = [
       "ja": "段差に気をつけて（命令形を省略したカジュアルな言い方）"
      }
     ],
-    "note": "段差に注意を促す表現"
+    "note": "段差に注意を促す表現",
+    "en": "Watch out for the step."
    }
   ]
  },
@@ -3800,7 +4020,8 @@ const SCENARIOS = [
       "es": "Sí, sí.",
       "ja": "うんうん、そうそう。"
      }
-    ]
+    ],
+    "en": "Uh-huh."
    },
    {
     "es": "Claro.",
@@ -3817,7 +4038,8 @@ const SCENARIOS = [
       "es": "Claro que sí.",
       "ja": "もちろんそうです。"
      }
-    ]
+    ],
+    "en": "Sure."
    },
    {
     "es": "Sí, sí.",
@@ -3834,7 +4056,8 @@ const SCENARIOS = [
       "es": "Totalmente.",
       "ja": "全くその通り。"
      }
-    ]
+    ],
+    "en": "Yes, yes."
    },
    {
     "es": "Ya veo.",
@@ -3851,7 +4074,8 @@ const SCENARIOS = [
       "es": "Ah, ya entendí.",
       "ja": "ああ、分かりました。"
      }
-    ]
+    ],
+    "en": "I see."
    },
    {
     "es": "¿En serio?",
@@ -3868,7 +4092,8 @@ const SCENARIOS = [
       "es": "¿No me digas?",
       "ja": "まさか！（直訳「私に言わないで」）"
      }
-    ]
+    ],
+    "en": "Really?"
    },
    {
     "es": "No puede ser.",
@@ -3885,7 +4110,8 @@ const SCENARIOS = [
       "es": "¡No manches!",
       "ja": "うそでしょ！（メキシコ口語）"
      }
-    ]
+    ],
+    "en": "No way."
    },
    {
     "es": "Este... / Esto...",
@@ -3902,7 +4128,8 @@ const SCENARIOS = [
       "es": "Cómo te digo...",
       "ja": "何と言えばいいかな…"
      }
-    ]
+    ],
+    "en": "Um..."
    },
    {
     "es": "O sea...",
@@ -3919,7 +4146,8 @@ const SCENARIOS = [
       "es": "Digamos que...",
       "ja": "言うなれば…"
      }
-    ]
+    ],
+    "en": "I mean..."
    },
    {
     "es": "Bueno...",
@@ -3936,7 +4164,8 @@ const SCENARIOS = [
       "es": "Bueno, como sea...",
       "ja": "まあ、とにかく…"
      }
-    ]
+    ],
+    "en": "Well..."
    },
    {
     "es": "Pues...",
@@ -3953,7 +4182,8 @@ const SCENARIOS = [
       "es": "Este, pues...",
       "ja": "えーと、うーん…"
      }
-    ]
+    ],
+    "en": "Well..."
    },
    {
     "es": "A ver...",
@@ -3970,7 +4200,8 @@ const SCENARIOS = [
       "es": "Vamos a ver...",
       "ja": "ええと、見てみようか…"
      }
-    ]
+    ],
+    "en": "Let's see..."
    },
    {
     "es": "Digo...",
@@ -3987,7 +4218,8 @@ const SCENARIOS = [
       "es": "Mejor dicho...",
       "ja": "より正確に言うと…"
      }
-    ]
+    ],
+    "en": "I mean... (correcting myself)"
    },
    {
     "es": "¿Me explico?",
@@ -4004,7 +4236,8 @@ const SCENARIOS = [
       "es": "¿Queda claro?",
       "ja": "はっきりしましたか？"
      }
-    ]
+    ],
+    "en": "Does that make sense?"
    },
    {
     "es": "¿Sabes?",
@@ -4021,7 +4254,8 @@ const SCENARIOS = [
       "es": "¿Verdad?",
       "ja": "でしょ？"
      }
-    ]
+    ],
+    "en": "You know?"
    },
    {
     "es": "Fíjate que...",
@@ -4038,7 +4272,8 @@ const SCENARIOS = [
       "es": "Resulta que...",
       "ja": "実はね…"
      }
-    ]
+    ],
+    "en": "So get this..."
    },
    {
     "es": "No sé, ¿tú qué crees?",
@@ -4055,7 +4290,8 @@ const SCENARIOS = [
       "es": "No estoy seguro, ¿y tú?",
       "ja": "よく分からないな、あなたは？"
      }
-    ]
+    ],
+    "en": "I don't know, what do you think?"
    }
   ]
  },
@@ -4078,7 +4314,8 @@ const SCENARIOS = [
       "es": "Empecemos, por favor.",
       "ja": "始めましょう。"
      }
-    ]
+    ],
+    "en": "Good morning everyone, let's start the meeting."
    },
    {
     "es": "¿Me puedes enviar el archivo por correo?",
@@ -4095,7 +4332,8 @@ const SCENARIOS = [
       "es": "¿Puedes compartirme el documento?",
       "ja": "その資料を共有してもらえる？"
      }
-    ]
+    ],
+    "en": "Can you send me the file by email?"
    },
    {
     "es": "Voy a estar fuera de la oficina mañana.",
@@ -4112,7 +4350,8 @@ const SCENARIOS = [
       "es": "No voy a estar en la oficina mañana.",
       "ja": "明日はオフィスにいません。"
      }
-    ]
+    ],
+    "en": "I'll be out of the office tomorrow."
    },
    {
     "es": "¿Tienes un momento para revisar esto?",
@@ -4129,7 +4368,8 @@ const SCENARIOS = [
       "es": "¿Tienes chance de revisarlo hoy?",
       "ja": "今日中に確認する時間ある？"
      }
-    ]
+    ],
+    "en": "Do you have a moment to review this?"
    },
    {
     "es": "Necesito pedir un día libre la próxima semana.",
@@ -4146,7 +4386,8 @@ const SCENARIOS = [
       "es": "¿Podría ausentarme un día la próxima semana?",
       "ja": "来週一日休ませていただけますか？"
      }
-    ]
+    ],
+    "en": "I need to request a day off next week."
    },
    {
     "es": "¿Cuándo es la fecha límite?",
@@ -4163,7 +4404,8 @@ const SCENARIOS = [
       "es": "¿Cuál es el plazo de entrega?",
       "ja": "納期はいつですか？"
      }
-    ]
+    ],
+    "en": "When is the deadline?"
    },
    {
     "es": "Voy a llegar un poco tarde a la oficina.",
@@ -4180,7 +4422,8 @@ const SCENARIOS = [
       "es": "Se me hizo tarde, ya voy en camino.",
       "ja": "遅くなってしまいました、今向かっています。"
      }
-    ]
+    ],
+    "en": "I'll get to the office a bit late."
    },
    {
     "es": "¿Podemos reagendar la junta?",
@@ -4197,7 +4440,8 @@ const SCENARIOS = [
       "es": "¿Se puede cambiar la hora de la reunión?",
       "ja": "会議の時間を変更できますか？"
      }
-    ]
+    ],
+    "en": "Can we reschedule the meeting?"
    },
    {
     "es": "Gracias por tu ayuda con el proyecto.",
@@ -4214,7 +4458,8 @@ const SCENARIOS = [
       "es": "Gracias por echarme la mano.",
       "ja": "手伝ってくれてありがとう。"
      }
-    ]
+    ],
+    "en": "Thanks for your help with the project."
    },
    {
     "es": "¿Tienes un momento para revisar esto?",
@@ -4231,7 +4476,8 @@ const SCENARIOS = [
       "es": "¿Me ayudas a revisar algo rápido?",
       "ja": "すぐに確認するの手伝ってくれる？"
      }
-    ]
+    ],
+    "en": "Do you have a moment to check this?"
    },
    {
     "es": "Voy a estar fuera de la oficina mañana.",
@@ -4248,7 +4494,8 @@ const SCENARIOS = [
       "es": "Estaré ausente mañana.",
       "ja": "明日は不在にします。"
      }
-    ]
+    ],
+    "en": "I'll be out of the office tomorrow."
    },
    {
     "es": "¿Podemos reagendar la junta?",
@@ -4265,7 +4512,8 @@ const SCENARIOS = [
       "es": "¿Podríamos posponerla?",
       "ja": "延期できますか？"
      }
-    ]
+    ],
+    "en": "Can we reschedule the meeting?"
    },
    {
     "es": "Le doy seguimiento y le aviso.",
@@ -4282,7 +4530,8 @@ const SCENARIOS = [
       "es": "Te mantengo al tanto.",
       "ja": "進捗を随時伝えますね。"
      }
-    ]
+    ],
+    "en": "I'll follow up and let you know."
    },
    {
     "es": "¿Me puedes cubrir un momento?",
@@ -4299,7 +4548,8 @@ const SCENARIOS = [
       "es": "¿Puedes cubrirme cinco minutos?",
       "ja": "5分だけ代わってもらえる？"
      }
-    ]
+    ],
+    "en": "Can you cover for me for a moment?"
    },
    {
     "es": "Voy a tomar mi descanso.",
@@ -4316,7 +4566,8 @@ const SCENARIOS = [
       "es": "Regreso en quince minutos, voy a mi break.",
       "ja": "15分で戻ります、休憩に行ってきます。"
      }
-    ]
+    ],
+    "en": "I'm going to take my break."
    },
    {
     "es": "¿A qué hora es la junta?",
@@ -4333,7 +4584,8 @@ const SCENARIOS = [
       "es": "¿A qué hora es la llamada?",
       "ja": "通話は何時からですか？"
      }
-    ]
+    ],
+    "en": "What time is the meeting?"
    },
    {
     "es": "Se me pasó el plazo de entrega.",
@@ -4350,7 +4602,8 @@ const SCENARIOS = [
       "es": "Se me fue la fecha límite.",
       "ja": "締め切りを見落としてしまいました。"
      }
-    ]
+    ],
+    "en": "I missed the deadline."
    }
   ]
  },
@@ -4373,7 +4626,8 @@ const SCENARIOS = [
       "es": "¿Qué necesito para abrir una cuenta?",
       "ja": "口座を開くには何が必要ですか？"
      }
-    ]
+    ],
+    "en": "I'd like to open a bank account."
    },
    {
     "es": "¿Dónde puedo cambiar dólares a pesos?",
@@ -4390,7 +4644,8 @@ const SCENARIOS = [
       "es": "¿Aquí puedo cambiar moneda?",
       "ja": "ここで両替できますか？"
      }
-    ]
+    ],
+    "en": "Where can I exchange dollars for pesos?"
    },
    {
     "es": "¿Cuál es el tipo de cambio hoy?",
@@ -4407,7 +4662,8 @@ const SCENARIOS = [
       "es": "¿Cuánto está el cambio?",
       "ja": "レートはいくらですか？"
      }
-    ]
+    ],
+    "en": "What's today's exchange rate?"
    },
    {
     "es": "Quiero hacer un retiro, por favor.",
@@ -4424,7 +4680,8 @@ const SCENARIOS = [
       "es": "¿Puedo hacer un retiro aquí?",
       "ja": "ここで引き出しできますか？"
      }
-    ]
+    ],
+    "en": "I'd like to make a withdrawal, please."
    },
    {
     "es": "Mi tarjeta no funciona.",
@@ -4441,7 +4698,8 @@ const SCENARIOS = [
       "es": "No puedo usar mi tarjeta.",
       "ja": "カードが使えません。"
      }
-    ]
+    ],
+    "en": "My card isn't working."
    },
    {
     "es": "¿Cuánto cobran de comisión?",
@@ -4458,7 +4716,8 @@ const SCENARIOS = [
       "es": "¿Cuál es la comisión por transferencia?",
       "ja": "振込手数料はいくらですか？"
      }
-    ]
+    ],
+    "en": "How much commission do you charge?"
    },
    {
     "es": "Perdí mi tarjeta, necesito reportarla.",
@@ -4475,7 +4734,8 @@ const SCENARIOS = [
       "es": "Quiero reportar el extravío de mi tarjeta.",
       "ja": "カードの紛失を届け出たいです。"
      }
-    ]
+    ],
+    "en": "I lost my card, I need to report it."
    },
    {
     "es": "¿Hay un cajero automático cerca?",
@@ -4492,7 +4752,8 @@ const SCENARIOS = [
       "es": "¿Hay algún banco cerca con cajero?",
       "ja": "ATMのある銀行が近くにありますか？"
      }
-    ]
+    ],
+    "en": "Is there an ATM nearby?"
    },
    {
     "es": "Quiero abrir una cuenta.",
@@ -4509,7 +4770,8 @@ const SCENARIOS = [
       "es": "¿Puedo abrir una cuenta de ahorros?",
       "ja": "普通預金口座を開けますか？"
      }
-    ]
+    ],
+    "en": "I'd like to open an account."
    },
    {
     "es": "¿Cuál es el tipo de cambio hoy?",
@@ -4526,7 +4788,8 @@ const SCENARIOS = [
       "es": "¿Subió o bajó el tipo de cambio?",
       "ja": "為替レートは上がりましたか、下がりましたか？"
      }
-    ]
+    ],
+    "en": "What's today's exchange rate?"
    },
    {
     "es": "Perdí mi tarjeta, ¿qué hago?",
@@ -4543,7 +4806,8 @@ const SCENARIOS = [
       "es": "¿Cómo cancelo mi tarjeta perdida?",
       "ja": "紛失したカードはどうやって無効にしますか？"
      }
-    ]
+    ],
+    "en": "I lost my card, what should I do?"
    },
    {
     "es": "¿Cuánto tarda la transferencia?",
@@ -4560,7 +4824,8 @@ const SCENARIOS = [
       "es": "¿Es inmediata la transferencia?",
       "ja": "振込は即時ですか？"
      }
-    ]
+    ],
+    "en": "How long does the transfer take?"
    },
    {
     "es": "¿Puedo hacer un depósito aquí?",
@@ -4573,7 +4838,8 @@ const SCENARIOS = [
       "es": "¿Se puede hacer un depósito aquí?",
       "ja": "ここで入金できますか？（無人称のse、より一般的な聞き方）"
      }
-    ]
+    ],
+    "en": "Can I make a deposit here?"
    },
    {
     "es": "Necesito un estado de cuenta.",
@@ -4590,7 +4856,8 @@ const SCENARIOS = [
       "es": "Quiero revisar mis movimientos.",
       "ja": "取引履歴を確認したいです。"
      }
-    ]
+    ],
+    "en": "I need a bank statement."
    },
    {
     "es": "¿Hay algún cajero cerca?",
@@ -4607,7 +4874,8 @@ const SCENARIOS = [
       "es": "¿Este banco tiene cajero?",
       "ja": "この銀行にATMはありますか？"
      }
-    ]
+    ],
+    "en": "Is there an ATM around here?"
    },
    {
     "es": "Mi tarjeta fue rechazada.",
@@ -4624,7 +4892,8 @@ const SCENARIOS = [
       "es": "Salió un error con mi tarjeta.",
       "ja": "カードでエラーが出ました。"
      }
-    ]
+    ],
+    "en": "My card was declined."
    }
   ]
  },
@@ -4647,7 +4916,8 @@ const SCENARIOS = [
       "es": "¿A qué hora es la clase de yoga?",
       "ja": "ヨガクラスは何時からですか？"
      }
-    ]
+    ],
+    "en": "Do you have morning yoga classes?"
    },
    {
     "es": "¿Cómo me inscribo en el gimnasio?",
@@ -4664,7 +4934,8 @@ const SCENARIOS = [
       "es": "¿Puedo inscribirme hoy mismo?",
       "ja": "今日すぐに入会できますか？"
      }
-    ]
+    ],
+    "en": "How do I sign up at the gym?"
    },
    {
     "es": "¿Puedo probar una clase gratis?",
@@ -4681,7 +4952,8 @@ const SCENARIOS = [
       "es": "¿Ofrecen una sesión gratuita?",
       "ja": "無料セッションはありますか？"
      }
-    ]
+    ],
+    "en": "Can I try a free class?"
    },
    {
     "es": "¿Dónde están los vestidores?",
@@ -4698,7 +4970,8 @@ const SCENARIOS = [
       "es": "¿Hay lockers en el vestidor?",
       "ja": "更衣室にロッカーはありますか？"
      }
-    ]
+    ],
+    "en": "Where are the changing rooms?"
    },
    {
     "es": "¿Me puede explicar cómo usar esta máquina?",
@@ -4715,7 +4988,8 @@ const SCENARIOS = [
       "es": "¿Me puede enseñar cómo funciona esto?",
       "ja": "これの使い方を教えてもらえますか？"
      }
-    ]
+    ],
+    "en": "Could you explain how to use this machine?"
    },
    {
     "es": "Quiero cancelar mi membresía.",
@@ -4732,7 +5006,8 @@ const SCENARIOS = [
       "es": "¿Cómo cancelo mi suscripción?",
       "ja": "サブスクリプションはどうやって解約しますか？"
      }
-    ]
+    ],
+    "en": "I'd like to cancel my membership."
    },
    {
     "es": "¿A qué hora cierran?",
@@ -4749,7 +5024,8 @@ const SCENARIOS = [
       "es": "¿A qué hora abren y cierran?",
       "ja": "開店・閉店時間は何時ですか？"
      }
-    ]
+    ],
+    "en": "What time do you close?"
    },
    {
     "es": "¿Tienen clases de yoga?",
@@ -4766,7 +5042,8 @@ const SCENARIOS = [
       "es": "¿Cuándo son las clases de yoga?",
       "ja": "ヨガクラスはいつありますか？"
      }
-    ]
+    ],
+    "en": "Do you have yoga classes?"
    },
    {
     "es": "¿Puedo probar una clase gratis?",
@@ -4783,7 +5060,8 @@ const SCENARIOS = [
       "es": "¿Puedo entrar a una clase sin pagar primero?",
       "ja": "先に支払わずにクラスに参加できますか？"
      }
-    ]
+    ],
+    "en": "Can I try a free class?"
    },
    {
     "es": "¿Dónde están los vestidores?",
@@ -4800,7 +5078,8 @@ const SCENARIOS = [
       "es": "¿Hay regaderas en el vestidor?",
       "ja": "更衣室にシャワーはありますか？"
      }
-    ]
+    ],
+    "en": "Where are the changing rooms?"
    },
    {
     "es": "¿Este aparato está ocupado?",
@@ -4817,7 +5096,8 @@ const SCENARIOS = [
       "es": "¿Ya casi terminas con esta máquina?",
       "ja": "このマシンもうすぐ終わりますか？"
      }
-    ]
+    ],
+    "en": "Is this machine in use?"
    },
    {
     "es": "¿Cuántas repeticiones debo hacer?",
@@ -4834,7 +5114,8 @@ const SCENARIOS = [
       "es": "¿Cuántas veces repito esto?",
       "ja": "これは何回繰り返せばいいですか？"
      }
-    ]
+    ],
+    "en": "How many reps should I do?"
    },
    {
     "es": "Necesito estirar antes de empezar.",
@@ -4851,7 +5132,8 @@ const SCENARIOS = [
       "es": "Necesito hacer un poco de estiramiento.",
       "ja": "少しストレッチが必要です。"
      }
-    ]
+    ],
+    "en": "I need to stretch before starting."
    },
    {
     "es": "¿Me puede corregir mi postura?",
@@ -4868,7 +5150,8 @@ const SCENARIOS = [
       "es": "¿Me puede revisar la técnica?",
       "ja": "フォームを確認してもらえますか？"
      }
-    ]
+    ],
+    "en": "Could you correct my posture?"
    }
   ]
  },
@@ -4891,7 +5174,8 @@ const SCENARIOS = [
       "es": "¿Me puede cortar el cabello?",
       "ja": "髪を切ってもらえますか？"
      }
-    ]
+    ],
+    "en": "I'd like a haircut, please."
    },
    {
     "es": "Solo las puntas, por favor.",
@@ -4908,7 +5192,8 @@ const SCENARIOS = [
       "es": "Nada más las puntas.",
       "ja": "毛先だけでお願いします。"
      }
-    ]
+    ],
+    "en": "Just the ends, please."
    },
    {
     "es": "No mucho, solo un poco más corto.",
@@ -4925,7 +5210,8 @@ const SCENARIOS = [
       "es": "No me lo corte demasiado.",
       "ja": "切りすぎないでください。"
      }
-    ]
+    ],
+    "en": "Not too much, just a little shorter."
    },
    {
     "es": "¿Me puede hacer un lavado también?",
@@ -4942,7 +5228,8 @@ const SCENARIOS = [
       "es": "Quiero que me laven el cabello también.",
       "ja": "髪も洗ってもらいたいです。"
      }
-    ]
+    ],
+    "en": "Could you also wash my hair?"
    },
    {
     "es": "Quiero teñirme el cabello.",
@@ -4959,7 +5246,8 @@ const SCENARIOS = [
       "es": "¿Me pueden teñir el cabello hoy?",
       "ja": "今日、髪を染めてもらえますか？"
      }
-    ]
+    ],
+    "en": "I'd like to dye my hair."
    },
    {
     "es": "¿Cuánto tiempo va a tomar?",
@@ -4976,7 +5264,8 @@ const SCENARIOS = [
       "es": "¿Cuánto dura el servicio?",
       "ja": "施術はどれくらいの長さですか？"
      }
-    ]
+    ],
+    "en": "How long will it take?"
    },
    {
     "es": "Me encanta, muchas gracias.",
@@ -4993,7 +5282,8 @@ const SCENARIOS = [
       "es": "Me fascina el resultado.",
       "ja": "仕上がりにとても満足しています。"
      }
-    ]
+    ],
+    "en": "I love it, thank you so much."
    },
    {
     "es": "Solo un corte, por favor.",
@@ -5010,7 +5300,8 @@ const SCENARIOS = [
       "es": "Nada más quiero un corte.",
       "ja": "カットだけが欲しいです。"
      }
-    ]
+    ],
+    "en": "Just a haircut, please."
    },
    {
     "es": "No corte mucho, por favor.",
@@ -5027,7 +5318,8 @@ const SCENARIOS = [
       "es": "Con cuidado, por favor.",
       "ja": "慎重にお願いします。"
      }
-    ]
+    ],
+    "en": "Please don't cut too much."
    },
    {
     "es": "Quiero un cambio de color.",
@@ -5044,7 +5336,8 @@ const SCENARIOS = [
       "es": "¿Qué colores me recomienda?",
       "ja": "どんな色がおすすめですか？"
      }
-    ]
+    ],
+    "en": "I'd like a color change."
    },
    {
     "es": "¿Cuánto tiempo toma el servicio?",
@@ -5061,7 +5354,8 @@ const SCENARIOS = [
       "es": "¿Es un servicio largo?",
       "ja": "時間のかかる施術ですか？"
      }
-    ]
+    ],
+    "en": "How long does the service take?"
    },
    {
     "es": "Me gustaría ver el catálogo de estilos.",
@@ -5078,7 +5372,8 @@ const SCENARIOS = [
       "es": "¿Me puede mostrar algunos ejemplos?",
       "ja": "いくつか例を見せてもらえますか？"
      }
-    ]
+    ],
+    "en": "I'd like to see the style catalog."
    },
    {
     "es": "Quiero un cambio de look.",
@@ -5095,7 +5390,8 @@ const SCENARIOS = [
       "es": "¿Qué me recomienda para renovar mi imagen?",
       "ja": "イメージを一新するのに何がおすすめですか？"
      }
-    ]
+    ],
+    "en": "I'd like a new look."
    },
    {
     "es": "¿Me puede hacer un peinado para una boda?",
@@ -5112,7 +5408,8 @@ const SCENARIOS = [
       "es": "¿Hacen peinados para ocasiones especiales?",
       "ja": "特別な場のヘアセットはできますか？"
      }
-    ]
+    ],
+    "en": "Could you do a hairstyle for a wedding?"
    },
    {
     "es": "No me gustan los productos con mucho olor.",
@@ -5129,7 +5426,8 @@ const SCENARIOS = [
       "es": "¿Tiene productos sin fragancia?",
       "ja": "無香料の製品はありますか？"
      }
-    ]
+    ],
+    "en": "I don't like strongly scented products."
    }
   ]
  },
@@ -5152,7 +5450,8 @@ const SCENARIOS = [
       "es": "Pienso lo mismo.",
       "ja": "私も同じ考えです。"
      }
-    ]
+    ],
+    "en": "I agree with you."
    },
    {
     "es": "No estoy muy de acuerdo, la verdad.",
@@ -5169,7 +5468,8 @@ const SCENARIOS = [
       "es": "Tengo mis dudas al respecto.",
       "ja": "それについては疑問があります。"
      }
-    ]
+    ],
+    "en": "Honestly, I don't quite agree."
    },
    {
     "es": "Tienes razón.",
@@ -5186,7 +5486,8 @@ const SCENARIOS = [
       "es": "Así es.",
       "ja": "その通りです。"
      }
-    ]
+    ],
+    "en": "You're right."
    },
    {
     "es": "Creo que no es tan sencillo.",
@@ -5203,7 +5504,8 @@ const SCENARIOS = [
       "es": "Hay más factores a considerar.",
       "ja": "考慮すべき要素が他にもあると思う。"
      }
-    ]
+    ],
+    "en": "I think it's not that simple."
    },
    {
     "es": "En mi opinión, deberíamos esperar.",
@@ -5220,7 +5522,8 @@ const SCENARIOS = [
       "es": "Personalmente, prefiero esperar.",
       "ja": "個人的には、待つ方がいいと思います。"
      }
-    ]
+    ],
+    "en": "In my opinion, we should wait."
    },
    {
     "es": "Depende de cómo lo veas.",
@@ -5237,7 +5540,8 @@ const SCENARIOS = [
       "es": "Es cuestión de perspectiva.",
       "ja": "それは視点の問題だね。"
      }
-    ]
+    ],
+    "en": "It depends on how you look at it."
    },
    {
     "es": "Buen punto, no lo había pensado así.",
@@ -5254,7 +5558,8 @@ const SCENARIOS = [
       "es": "Tienes un buen argumento.",
       "ja": "いい論点だね。"
      }
-    ]
+    ],
+    "en": "Good point, I hadn't thought of it that way."
    },
    {
     "es": "Prefiero no opinar sobre eso.",
@@ -5271,7 +5576,8 @@ const SCENARIOS = [
       "es": "No tengo una opinión formada sobre eso.",
       "ja": "それについてはまだ意見がまとまっていません。"
      }
-    ]
+    ],
+    "en": "I'd rather not share my opinion on that."
    },
    {
     "es": "Depende de cómo lo veas.",
@@ -5288,7 +5594,8 @@ const SCENARIOS = [
       "es": "Eso ya es más subjetivo.",
       "ja": "それはもっと主観的なことだね。"
      }
-    ]
+    ],
+    "en": "It depends on how you look at it."
    },
    {
     "es": "No lo había pensado de esa manera.",
@@ -5305,7 +5612,8 @@ const SCENARIOS = [
       "es": "Me diste una nueva perspectiva.",
       "ja": "新しい視点をくれたね。"
      }
-    ]
+    ],
+    "en": "I hadn't thought of it that way."
    },
    {
     "es": "Hasta cierto punto, tienes razón.",
@@ -5322,7 +5630,8 @@ const SCENARIOS = [
       "es": "Estoy de acuerdo, pero no del todo.",
       "ja": "賛成だけど、完全にではないかな。"
      }
-    ]
+    ],
+    "en": "Up to a point, you're right."
    },
    {
     "es": "Prefiero no opinar sobre eso.",
@@ -5339,7 +5648,8 @@ const SCENARIOS = [
       "es": "No quiero tomar partido.",
       "ja": "どちらの肩も持ちたくないな。"
      }
-    ]
+    ],
+    "en": "I'd rather not comment on that."
    },
    {
     "es": "Eso tiene sentido.",
@@ -5356,7 +5666,8 @@ const SCENARIOS = [
       "es": "Ahora entiendo tu punto.",
       "ja": "今、あなたの言いたいことが分かった。"
      }
-    ]
+    ],
+    "en": "That makes sense."
    },
    {
     "es": "No estoy tan seguro de eso.",
@@ -5373,7 +5684,8 @@ const SCENARIOS = [
       "es": "No sé si eso es del todo cierto.",
       "ja": "それが完全に正しいかは分からないな。"
      }
-    ]
+    ],
+    "en": "I'm not so sure about that."
    },
    {
     "es": "Veo tu punto, pero...",
@@ -5390,7 +5702,8 @@ const SCENARIOS = [
       "es": "Tienes razón en parte, pero...",
       "ja": "部分的にはその通りだけど…"
      }
-    ]
+    ],
+    "en": "I see your point, but..."
    },
    {
     "es": "Coincido contigo en eso.",
@@ -5407,7 +5720,8 @@ const SCENARIOS = [
       "es": "Pienso exactamente igual.",
       "ja": "全く同じように考えています。"
      }
-    ]
+    ],
+    "en": "I agree with you on that."
    },
    {
     "es": "No te preocupes por eso.",
@@ -5424,7 +5738,8 @@ const SCENARIOS = [
       "ja": "落ち着いて、大丈夫"
      }
     ],
-    "note": "相手を気遣う表現"
+    "note": "相手を気遣う表現",
+    "en": "Don't worry about that."
    }
   ]
  },
@@ -5447,7 +5762,8 @@ const SCENARIOS = [
       "es": "¿Qué tal el clima?",
       "ja": "天気はどんな感じ？"
      }
-    ]
+    ],
+    "en": "What's the weather like today?"
    },
    {
     "es": "Hace mucho calor hoy.",
@@ -5464,7 +5780,8 @@ const SCENARIOS = [
       "es": "Qué calor hace hoy.",
       "ja": "今日は暑いね。"
      }
-    ]
+    ],
+    "en": "It's very hot today."
    },
    {
     "es": "Hace un frío horrible.",
@@ -5481,7 +5798,8 @@ const SCENARIOS = [
       "es": "Está haciendo muchísimo frío.",
       "ja": "ものすごく寒いね。"
      }
-    ]
+    ],
+    "en": "It's terribly cold."
    },
    {
     "es": "Está nublado.",
@@ -5498,7 +5816,8 @@ const SCENARIOS = [
       "es": "Parece que va a llover.",
       "ja": "雨が降りそうだね。"
      }
-    ]
+    ],
+    "en": "It's cloudy."
    },
    {
     "es": "Está despejado.",
@@ -5515,7 +5834,8 @@ const SCENARIOS = [
       "es": "El cielo está muy claro hoy.",
       "ja": "今日は空がとても澄んでいるね。"
      }
-    ]
+    ],
+    "en": "It's clear."
    },
    {
     "es": "Va a llover más tarde.",
@@ -5532,7 +5852,8 @@ const SCENARIOS = [
       "es": "Creo que lloverá esta tarde.",
       "ja": "今日の午後は雨が降ると思うよ。"
      }
-    ]
+    ],
+    "en": "It's going to rain later."
    },
    {
     "es": "Está lloviendo a cántaros.",
@@ -5549,7 +5870,8 @@ const SCENARIOS = [
       "es": "Está cayendo un aguacero.",
       "ja": "猛烈な雨が降っているよ。"
      }
-    ]
+    ],
+    "en": "It's raining cats and dogs."
    },
    {
     "es": "Parece que va a haber tormenta.",
@@ -5566,7 +5888,8 @@ const SCENARIOS = [
       "es": "El cielo se está poniendo feo.",
       "ja": "空模様が悪くなってきているね。"
      }
-    ]
+    ],
+    "en": "It looks like there's going to be a storm."
    },
    {
     "es": "Hay mucho viento hoy.",
@@ -5583,7 +5906,8 @@ const SCENARIOS = [
       "es": "El viento está muy fuerte.",
       "ja": "風がとても強いね。"
      }
-    ]
+    ],
+    "en": "It's very windy today."
    },
    {
     "es": "Se siente húmedo hoy.",
@@ -5600,7 +5924,8 @@ const SCENARIOS = [
       "es": "El ambiente está pesado.",
       "ja": "空気が重たいね。"
      }
-    ]
+    ],
+    "en": "It feels humid today."
    },
    {
     "es": "Hace un día precioso.",
@@ -5617,7 +5942,8 @@ const SCENARIOS = [
       "es": "El clima está buenísimo hoy.",
       "ja": "今日は天気が最高だね。"
      }
-    ]
+    ],
+    "en": "It's a beautiful day."
    },
    {
     "es": "Se pronostica lluvia para mañana.",
@@ -5634,7 +5960,8 @@ const SCENARIOS = [
       "es": "El pronóstico dice lluvia para mañana.",
       "ja": "天気予報では明日雨だって。"
      }
-    ]
+    ],
+    "en": "Rain is forecast for tomorrow."
    },
    {
     "es": "¿Llevaste paraguas?",
@@ -5651,7 +5978,8 @@ const SCENARIOS = [
       "es": "¿No se te olvidó el paraguas?",
       "ja": "傘忘れなかった？"
      }
-    ]
+    ],
+    "en": "Did you bring an umbrella?"
    },
    {
     "es": "No olvides el suéter, va a refrescar por la noche.",
@@ -5668,7 +5996,8 @@ const SCENARIOS = [
       "es": "Por la noche baja la temperatura.",
       "ja": "夜は気温が下がるよ。"
      }
-    ]
+    ],
+    "en": "Don't forget your sweater, it'll get cooler tonight."
    },
    {
     "es": "Con este calor, mejor quedémonos en casa.",
@@ -5685,7 +6014,8 @@ const SCENARIOS = [
       "es": "Mejor no salgamos con este calor.",
       "ja": "この暑さでは出かけない方がいいね。"
      }
-    ]
+    ],
+    "en": "With this heat, we'd better stay home."
    },
    {
     "es": "¿A cuánto está la temperatura?",
@@ -5702,7 +6032,8 @@ const SCENARIOS = [
       "es": "¿Cuántos grados hay?",
       "ja": "何度ある？"
      }
-    ]
+    ],
+    "en": "What's the temperature?"
    },
    {
     "es": "Estamos a treinta grados.",
@@ -5719,7 +6050,8 @@ const SCENARIOS = [
       "es": "La temperatura está en treinta grados.",
       "ja": "気温は30度だよ。"
      }
-    ]
+    ],
+    "en": "It's thirty degrees."
    },
    {
     "es": "En temporada de lluvias, siempre llueve por la tarde.",
@@ -5736,7 +6068,8 @@ const SCENARIOS = [
       "es": "Por las tardes suele llover en esta temporada.",
       "ja": "この時期は午後によく雨が降るんだ。"
      }
-    ]
+    ],
+    "en": "During the rainy season, it always rains in the afternoon."
    },
    {
     "es": "Cayó granizo esta mañana.",
@@ -5753,7 +6086,8 @@ const SCENARIOS = [
       "es": "Nunca había visto granizo así.",
       "ja": "こんな雹は見たことなかったよ。"
      }
-    ]
+    ],
+    "en": "It hailed this morning."
    },
    {
     "es": "El clima ha estado muy raro últimamente.",
@@ -5770,7 +6104,8 @@ const SCENARIOS = [
       "es": "Ya no hay estaciones tan definidas.",
       "ja": "もうはっきりした季節がなくなってきたね。"
      }
-    ]
+    ],
+    "en": "The weather has been really strange lately."
    }
   ]
  },
@@ -5793,7 +6128,8 @@ const SCENARIOS = [
       "es": "¿Cuántos años cumplió tu hijo?",
       "ja": "お子さんは何歳になりましたか？"
      }
-    ]
+    ],
+    "en": "How old is your son?"
    },
    {
     "es": "Ya está gateando.",
@@ -5810,7 +6146,8 @@ const SCENARIOS = [
       "es": "Se mueve por todos lados.",
       "ja": "あちこち動き回るんです。"
      }
-    ]
+    ],
+    "en": "He's already crawling."
    },
    {
     "es": "Se despierta varias veces en la noche.",
@@ -5827,7 +6164,8 @@ const SCENARIOS = [
       "es": "Se levanta cada dos horas.",
       "ja": "2時間おきに起きるんです。"
      }
-    ]
+    ],
+    "en": "He wakes up several times at night."
    },
    {
     "es": "¿A qué escuela va?",
@@ -5844,7 +6182,8 @@ const SCENARIOS = [
       "es": "¿Dónde estudia tu hijo?",
       "ja": "お子さんはどこで勉強していますか？"
      }
-    ]
+    ],
+    "en": "Which school does he go to?"
    },
    {
     "es": "Está en la etapa de los berrinches.",
@@ -5861,7 +6200,8 @@ const SCENARIOS = [
       "es": "Le dan muchos berrinches últimamente.",
       "ja": "最近よくかんしゃくを起こすんです。"
      }
-    ]
+    ],
+    "en": "He's going through the tantrum phase."
    },
    {
     "es": "Le tocan las vacunas este mes.",
@@ -5878,7 +6218,8 @@ const SCENARIOS = [
       "es": "Ya le tocan las vacunas de los seis meses.",
       "ja": "もう6ヶ月の予防接種の時期です。"
      }
-    ]
+    ],
+    "en": "He's due for vaccines this month."
    },
    {
     "es": "¿Le puedo dar esto de comer?",
@@ -5895,7 +6236,8 @@ const SCENARIOS = [
       "es": "¿Tiene alguna alergia alimentaria?",
       "ja": "食物アレルギーはありますか？"
      }
-    ]
+    ],
+    "en": "Can I give him/her this to eat?"
    },
    {
     "es": "Se porta muy bien en la escuela.",
@@ -5912,7 +6254,8 @@ const SCENARIOS = [
       "es": "La maestra dice que se porta bien.",
       "ja": "先生がいい子にしていると言っていました。"
      }
-    ]
+    ],
+    "en": "He behaves very well at school."
    },
    {
     "es": "Está aprendiendo a caminar.",
@@ -5929,7 +6272,8 @@ const SCENARIOS = [
       "es": "Se para solo, pero aún no camina.",
       "ja": "一人で立てるけど、まだ歩けないんです。"
      }
-    ]
+    ],
+    "en": "He's learning to walk."
    },
    {
     "es": "¿Me puedes ayudar a cuidarlo un rato?",
@@ -5946,7 +6290,8 @@ const SCENARIOS = [
       "es": "¿Puedes echarme la mano con los niños?",
       "ja": "子どものことで手伝ってもらえる？"
      }
-    ]
+    ],
+    "en": "Can you help me watch him for a bit?"
    },
    {
     "es": "¿Ya duerme toda la noche?",
@@ -5963,7 +6308,8 @@ const SCENARIOS = [
       "es": "¿Cómo van sus noches?",
       "ja": "夜はどんな感じですか？"
      }
-    ]
+    ],
+    "en": "Does he sleep through the night yet?"
    },
    {
     "es": "Está resfriado desde ayer.",
@@ -5980,7 +6326,8 @@ const SCENARIOS = [
       "es": "Amaneció con fiebre.",
       "ja": "朝から熱があります。"
      }
-    ]
+    ],
+    "en": "He's had a cold since yesterday."
    },
    {
     "es": "Le encanta jugar afuera.",
@@ -5997,7 +6344,8 @@ const SCENARIOS = [
       "es": "Es muy activo/a.",
       "ja": "とても活発なんです。"
      }
-    ]
+    ],
+    "en": "He loves playing outside."
    },
    {
     "es": "¿Cómo le fue en la escuela hoy?",
@@ -6014,7 +6362,8 @@ const SCENARIOS = [
       "es": "¿Aprendiste algo nuevo hoy?",
       "ja": "今日何か新しいこと学んだ？"
      }
-    ]
+    ],
+    "en": "How was school today?"
    },
    {
     "es": "Necesito recogerlo a las tres.",
@@ -6031,7 +6380,8 @@ const SCENARIOS = [
       "es": "La escuela sale a las tres.",
       "ja": "学校は3時に終わります。"
      }
-    ]
+    ],
+    "en": "I need to pick him up at three."
    },
    {
     "es": "Es un poco tímido con gente nueva.",
@@ -6048,7 +6398,8 @@ const SCENARIOS = [
       "es": "Es un poco reservado al principio.",
       "ja": "最初は少し人見知りするんです。"
      }
-    ]
+    ],
+    "en": "He's a bit shy with new people."
    }
   ]
  }

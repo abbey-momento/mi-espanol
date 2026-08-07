@@ -2390,12 +2390,6 @@ function renderPhrases(){
     speakBtn.onclick = (e)=>{ e.stopPropagation(); speak(item.es); };
     row.appendChild(textWrap); row.appendChild(speakBtn);
     box.appendChild(row);
-    if(item.note){ box.appendChild(el("div","review-note", item.note)); }
-    if(item.grammar || item.nuance || (item.similar && item.similar.length)){
-      const moreHint = el("div"); moreHint.style.fontSize="11.5px"; moreHint.style.color="#9C8FC2"; moreHint.style.marginTop="6px"; moreHint.style.fontWeight="700";
-      moreHint.textContent = "詳しい解説あり →";
-      box.appendChild(moreHint);
-    }
     box.onclick = (e)=>{ if(e.target===speakBtn) return; playTap(); state.phraseDetailIdx=i; render(); window.scrollTo(0,0); };
     app.appendChild(box);
   });
@@ -2410,7 +2404,7 @@ function renderPhraseDetail(scene){
   app.appendChild(topBar(scene.title, "", ()=>{ state.phraseDetailIdx=null; render(); }));
   const header = el("div","dict-detail-header");
   header.innerHTML = `<div class="dict-detail-es" style="font-size:22px;">${item.es}</div>
-    <div class="dict-detail-en-ja">${item.ja}</div>`;
+    <div class="dict-detail-en-ja">${item.en ? item.en+" ／ "+item.ja : item.ja}</div>`;
   app.appendChild(header);
   const speakRow = el("div"); speakRow.style.textAlign="center"; speakRow.style.margin="10px 0 4px";
   const speakBtn = el("button","speak-btn","🔊");
