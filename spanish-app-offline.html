@@ -78,8 +78,8 @@
     display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12px; transform:rotate(-8deg); }
   .bar-track { margin-top:14px; height:8px; border-radius:8px; background:#F0E6D2; overflow:hidden; }
   .bar-fill { height:100%; background: linear-gradient(90deg, var(--violet), var(--accent)); border-radius:8px; width:0%; transition:width .4s; }
-  .bar-track-thin { height:8px; margin-top:10px; }
-  .bar-fill-thin { opacity:0.72; }
+  .bar-track-thin { height:8px; margin-top:10px; border-radius:999px; overflow:visible; position:relative; }
+  .bar-fill-thin { border-radius:999px; position:relative; }
   .legend-row { display:flex; gap:14px; margin-top:10px; flex-wrap:wrap; }
   .legend-item { display:flex; align-items:center; gap:6px; }
   .legend-dot { width:8px; height:8px; border-radius:50%; }
@@ -290,6 +290,7 @@ function ensureAudioCtx(){
 }
 function tone(freq, dur, type){
   try{
+    if(typeof progress!=="undefined" && progress && progress.settings && progress.settings.autoplay===false) return;
     const ctx = ensureAudioCtx();
     if(!ctx) return;
     const o = ctx.createOscillator(); const g = ctx.createGain();
@@ -823,25 +824,26 @@ function renderMoreMenu(){
 /* ---------- Home time rings (live, loops every 10min / 60min; swipeable by day) ---------- */
 let timeRingInterval = null;
 let ringDateOffset = 0; // 0 = today, negative = past days
+const RING_MONTHS_ES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
 function formatRingDateLabel(offset){
-  if(offset===0) return "今日の学習時間";
+  if(offset===0) return "Hoy";
   const d = new Date(); d.setDate(d.getDate()+offset);
-  return `${d.getMonth()+1}月${d.getDate()}日の学習時間`;
+  return `${d.getDate()} de ${RING_MONTHS_ES[d.getMonth()]}`;
 }
 function buildTimeRings(){
   const size = 270, cx = size/2, cy = size/2;
   const rOuter = 116, rInner = 84;
   const cOuter = 2*Math.PI*rOuter, cInner = 2*Math.PI*rInner;
   const outerWrap = el("div"); outerWrap.style.textAlign="center";
-  const wrap = el("div"); wrap.style.position="relative"; wrap.style.width=size+"px"; wrap.style.height=size+"px"; wrap.style.margin="10px auto 4px"; wrap.style.touchAction="pan-y";
+  const wrap = el("div"); wrap.style.position="relative"; wrap.style.width=size+"px"; wrap.style.height=size+"px"; wrap.style.margin="10px auto 4px"; wrap.style.touchAction="pan-y"; wrap.style.overflow="hidden";
   wrap.innerHTML = `
     <svg viewBox="0 0 ${size} ${size}" width="${size}" height="${size}" style="transform:rotate(-90deg);">
       <circle cx="${cx}" cy="${cy}" r="${rOuter}" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="17"/>
       <circle cx="${cx}" cy="${cy}" r="${rInner}" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="17"/>
       <circle id="ringOuter" cx="${cx}" cy="${cy}" r="${rOuter}" fill="none" stroke="url(#ringGradHour)" stroke-width="17" stroke-linecap="round"
-        stroke-dasharray="${cOuter}" stroke-dashoffset="${cOuter}"/>
+        stroke-dasharray="${cOuter}" stroke-dashoffset="${cOuter}" style="transition:stroke-dashoffset .3s ease;"/>
       <circle id="ringInner" cx="${cx}" cy="${cy}" r="${rInner}" fill="none" stroke="url(#ringGradTen)" stroke-width="17" stroke-linecap="round"
-        stroke-dasharray="${cInner}" stroke-dashoffset="${cInner}"/>
+        stroke-dasharray="${cInner}" stroke-dashoffset="${cInner}" style="transition:stroke-dashoffset .3s ease;"/>
       <defs>
         <linearGradient id="ringGradHour" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stop-color="#FF3CAC"/><stop offset="100%" stop-color="#FFD23F"/>
@@ -851,10 +853,12 @@ function buildTimeRings(){
         </linearGradient>
       </defs>
     </svg>
-    <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <div id="ringMinuteLabel" style="font-family:var(--font-numeric); font-size:36px; font-weight:500; color:#F5EEFF;">0分</div>
-      <div id="ringDateLabel" style="font-size:11.5px; color:#9C8FC2; font-weight:700; margin-top:4px; letter-spacing:0.03em;">今日の学習時間</div>
+    <div id="ringContent" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; transition:transform .22s ease, opacity .22s ease;">
+      <div id="ringMinuteLabel" style="font-family:var(--font-numeric); font-size:36px; font-weight:500; line-height:1;
+        background:linear-gradient(135deg, #FF3CAC, #FFD23F); -webkit-background-clip:text; background-clip:text; color:transparent;">0分</div>
+      <div id="ringDateLabel" style="font-size:12px; color:#9C8FC2; font-weight:700; margin-top:5px; letter-spacing:0.03em;">Hoy</div>
     </div>`;
+  const content = wrap.querySelector("#ringContent");
   const outerCircle = wrap.querySelector("#ringOuter");
   const innerCircle = wrap.querySelector("#ringInner");
   const label = wrap.querySelector("#ringMinuteLabel");
@@ -869,44 +873,83 @@ function buildTimeRings(){
     label.textContent = h>0 ? `${h}時間${m}分` : `${m}分`;
     dateLabel.textContent = formatRingDateLabel(ringDateOffset);
   };
-  const guardedUpdate = ()=>{
-    if(!document.body.contains(outerCircle)){ if(timeRingInterval){ clearInterval(timeRingInterval); timeRingInterval=null; } return; }
-    renderValue(usageMinutesTodayLive);
+  const startLiveTicking = ()=>{
+    if(timeRingInterval) clearInterval(timeRingInterval);
+    timeRingInterval = setInterval(()=>{
+      if(!document.body.contains(outerCircle)){ clearInterval(timeRingInterval); timeRingInterval=null; return; }
+      renderValue(usageMinutesTodayLive);
+    }, 1000);
   };
   if(ringDateOffset===0){
     renderValue(usageMinutesTodayLive);
-    timeRingInterval = setInterval(guardedUpdate, 1000);
+    startLiveTicking();
   } else {
     renderValue(getDayUsageMinutes(dateKeyOffset(ringDateOffset)));
   }
-  let touchStartX = null;
-  wrap.addEventListener("touchstart", (e)=>{ touchStartX = e.touches[0].clientX; }, {passive:true});
+  const hint = el("div"); hint.style.fontSize="10.5px"; hint.style.color="#7C6DA0"; hint.style.fontWeight="600"; hint.style.marginBottom="4px";
+  const refreshHint = ()=>{
+    hint.textContent = ringDateOffset===0 ? "スワイプで過去の記録を見る" : (ringDateOffset<=-30 ? "今日へ戻る" : "過去の記録（タップで今日へ）");
+    hint.style.cursor = ringDateOffset!==0 ? "pointer" : "default";
+  };
+  refreshHint();
+  hint.onclick = ()=>{ if(ringDateOffset===0) return; playTap(); ringDateOffset=0; if(timeRingInterval){ clearInterval(timeRingInterval); timeRingInterval=null; } renderValue(usageMinutesTodayLive); startLiveTicking(); refreshHint(); };
+
+  let touchStartX = null, dragging = false;
+  wrap.addEventListener("touchstart", (e)=>{ touchStartX = e.touches[0].clientX; dragging = true; content.style.transition = "none"; }, {passive:true});
+  wrap.addEventListener("touchmove", (e)=>{
+    if(!dragging || touchStartX===null) return;
+    const dx = e.touches[0].clientX - touchStartX;
+    const clamped = Math.max(-80, Math.min(80, dx*0.65));
+    content.style.transform = `translateX(${clamped}px)`;
+  }, {passive:true});
   wrap.addEventListener("touchend", (e)=>{
     if(touchStartX===null) return;
     const dx = e.changedTouches[0].clientX - touchStartX;
-    touchStartX = null;
-    if(Math.abs(dx) < 40) return;
+    touchStartX = null; dragging = false;
+    content.style.transition = "transform .22s ease, opacity .22s ease";
+    if(Math.abs(dx) < 40){ content.style.transform = "translateX(0)"; return; }
+    const canMove = dx < 0 ? ringDateOffset < 0 : ringDateOffset > -30;
+    if(!canMove){ content.style.transform = "translateX(0)"; return; }
     playTap();
-    if(dx < 0){ ringDateOffset = Math.min(ringDateOffset+1, 0); }
-    else { ringDateOffset = Math.max(ringDateOffset-1, -30); }
-    render();
+    if(dx < 0){ ringDateOffset = Math.min(ringDateOffset+1, 0); } else { ringDateOffset = Math.max(ringDateOffset-1, -30); }
+    const exitX = dx < 0 ? -90 : 90;
+    content.style.transform = `translateX(${exitX}px)`;
+    content.style.opacity = "0";
+    setTimeout(()=>{
+      if(ringDateOffset===0){ renderValue(usageMinutesTodayLive); startLiveTicking(); }
+      else { if(timeRingInterval){ clearInterval(timeRingInterval); timeRingInterval=null; } renderValue(getDayUsageMinutes(dateKeyOffset(ringDateOffset))); }
+      content.style.transition = "none";
+      content.style.transform = `translateX(${-exitX}px)`;
+      requestAnimationFrame(()=>{
+        content.style.transition = "transform .22s ease, opacity .22s ease";
+        content.style.transform = "translateX(0)";
+        content.style.opacity = "1";
+      });
+      refreshHint();
+    }, 220);
   }, {passive:true});
+
   outerWrap.appendChild(wrap);
-  const hint = el("div"); hint.style.fontSize="10.5px"; hint.style.color="#7C6DA0"; hint.style.fontWeight="600"; hint.style.marginBottom="4px";
-  hint.textContent = ringDateOffset===0 ? "スワイプで過去の記録を見る" : (ringDateOffset<=-30 ? "今日へ戻る" : "過去の記録（タップで今日へ）");
-  if(ringDateOffset!==0){ hint.style.cursor="pointer"; hint.onclick = ()=>{ playTap(); ringDateOffset=0; render(); }; }
   outerWrap.appendChild(hint);
   return outerWrap;
 }
-function buildHomeProgressCard(icon, label, pct, valueText, subLabel, onClick){
+function buildHomeProgressCard(icon, label, pct, valueText, subLabel, gradient, onClick){
   const box = el("div","passport"); box.style.cursor="pointer"; box.style.marginBottom="12px"; box.style.padding="16px 18px";
+  const safePct = Math.max(0, Math.min(100, pct));
   box.innerHTML = `
     <div class="passport-top">
-      <div><div class="passport-label">${icon} ${label}</div>
-      <div class="passport-num" style="font-size:22px;">${valueText}</div></div>
+      <div style="display:flex; align-items:center; gap:11px;">
+        <div style="width:36px; height:36px; border-radius:12px; background:linear-gradient(135deg, ${gradient}); display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0; box-shadow:0 3px 10px rgba(0,0,0,0.25);">${icon}</div>
+        <div><div class="passport-label" style="margin-bottom:1px;">${label}</div>
+        <div class="passport-num" style="font-size:22px;">${valueText}</div></div>
+      </div>
     </div>
-    <div class="bar-track bar-track-thin"><div class="bar-fill bar-fill-thin" style="width:${pct}%"></div></div>
-    <div style="font-size:11px;color:#8A7AAE;margin-top:7px;font-weight:600;">${subLabel}</div>`;
+    <div class="bar-track bar-track-thin">
+      <div class="bar-fill bar-fill-thin" style="width:${safePct}%; background:linear-gradient(90deg, ${gradient}); box-shadow:0 0 9px 0 rgba(0,0,0,0.15);"></div>
+      <div style="position:absolute; top:50%; left:${safePct}%; transform:translate(-50%,-50%); width:13px; height:13px; border-radius:999px; background:#fff;
+        box-shadow:0 0 0 3px rgba(255,255,255,0.3), 0 1px 5px rgba(0,0,0,0.35);"></div>
+    </div>
+    <div style="font-size:11px;color:#8A7AAE;margin-top:9px;font-weight:600;">${subLabel}</div>`;
   box.onclick = onClick;
   return box;
 }
@@ -940,16 +983,16 @@ function renderHomeTab(){
   app.appendChild(buildTimeRings());
 
   const vocabSub = `${stats.known} / ${stats.total} 語を習得`;
-  app.appendChild(buildHomeProgressCard("📖","Vocabulario", stats.barPct, `${stats.barPct}%`, vocabSub,
+  app.appendChild(buildHomeProgressCard("📖","Vocabulario", stats.barPct, `${stats.barPct}%`, vocabSub, "#FF3CAC, #FFD23F",
     ()=>{ playTap(); state.tab="vocab"; state.mode="home"; render(); }));
 
   if(gStats){
     app.appendChild(buildHomeProgressCard("📐","Gramática", gStats.pct, `${gStats.pct}%`,
-      `測定${gStats.measured}項目のドリル正答率`,
+      `測定${gStats.measured}項目のドリル正答率`, "#05FFA1, #3CC8FF",
       ()=>{ playTap(); state.tab="conj"; render(); }));
   } else {
     app.appendChild(buildHomeProgressCard("📐","Gramática", 0, "―",
-      "ドリルで正答率が測定されます",
+      "ドリルで正答率が測定されます", "#05FFA1, #3CC8FF",
       ()=>{ playTap(); state.tab="conj"; render(); }));
   }
 
@@ -1360,6 +1403,7 @@ function renderDictList(){
   }
 }
 let lastSpokenDictKey = null;
+let lastSpokenPhraseDetailKey = null;
 let dictShuffleOrder = null;
 function renderDictDetail(){
   const key = state.dictDetailWord;
@@ -2411,6 +2455,11 @@ function renderPhraseDetail(scene){
   header.innerHTML = `<div class="dict-detail-es" style="font-size:22px;">${item.es}</div>
     <div class="dict-detail-en-ja">${item.en ? item.en+" ／ "+item.ja : item.ja}</div>`;
   app.appendChild(header);
+  const phraseKey = state.phraseSceneIdx+"|"+idx;
+  if(lastSpokenPhraseDetailKey !== phraseKey){
+    lastSpokenPhraseDetailKey = phraseKey;
+    if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(item.es), 150);
+  }
   const speakRow = el("div"); speakRow.style.textAlign="center"; speakRow.style.margin="10px 0 4px";
   const speakBtn = el("button","speak-btn","🔊");
   speakBtn.onclick = ()=> speak(item.es);

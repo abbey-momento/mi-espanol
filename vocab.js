@@ -617,13 +617,6 @@ const VOCAB_DATA = [
   "pos": "形容詞"
  },
  {
-  "es": "Naranja",
-  "en": "Orange",
-  "ja": "オレンジ",
-  "cat": "Colores",
-  "pos": "形容詞"
- },
- {
   "es": "Marrón",
   "en": "Brown",
   "ja": "茶色",
@@ -2784,23 +2777,9 @@ const VOCAB_DATA = [
   "pos": "名詞（男性）"
  },
  {
-  "es": "La naranja",
-  "en": "Orange (fruit)",
-  "ja": "オレンジ(果物)",
-  "cat": "Comida",
-  "pos": "名詞（女性）"
- },
- {
   "es": "La uva",
   "en": "Grape",
   "ja": "ぶどう",
-  "cat": "Comida",
-  "pos": "名詞（女性）"
- },
- {
-  "es": "La fresa",
-  "en": "Strawberry",
-  "ja": "いちご",
   "cat": "Comida",
   "pos": "名詞（女性）"
  },
@@ -2976,13 +2955,6 @@ const VOCAB_DATA = [
   "es": "Perú",
   "en": "Peru",
   "ja": "ペルー",
-  "cat": "Geografía",
-  "pos": "形容詞"
- },
- {
-  "es": "Chile",
-  "en": "Chile",
-  "ja": "チリ",
   "cat": "Geografía",
   "pos": "形容詞"
  },
@@ -6008,13 +5980,6 @@ const VOCAB_DATA = [
   "pos": "名詞（男性）"
  },
  {
-  "es": "La lana",
-  "en": "Wool",
-  "ja": "ウール",
-  "cat": "Ropa",
-  "pos": "名詞（女性）"
- },
- {
   "es": "La seda",
   "en": "Silk",
   "ja": "絹",
@@ -6389,13 +6354,6 @@ const VOCAB_DATA = [
   "es": "La olla",
   "en": "Pot",
   "ja": "鍋",
-  "cat": "Cocina",
-  "pos": "名詞（女性）"
- },
- {
-  "es": "La sartén",
-  "en": "Frying pan",
-  "ja": "フライパン",
   "cat": "Cocina",
   "pos": "名詞（女性）"
  },
@@ -7071,13 +7029,6 @@ const VOCAB_DATA = [
   "ja": "サルサ",
   "cat": "Comida",
   "pos": "名詞（女性）"
- },
- {
-  "es": "El chile",
-  "en": "Chili pepper",
-  "ja": "唐辛子",
-  "cat": "Comida",
-  "pos": "名詞（男性）"
  },
  {
   "es": "La selva",
@@ -9465,14 +9416,6 @@ const VOCAB_DATA = [
   "pos": "表現"
  },
  {
-  "es": "Lana",
-  "en": "Money (colloquial)",
-  "ja": "お金（口語）",
-  "cat": "Coloquial",
-  "nivel": "avanzado",
-  "pos": "俗語"
- },
- {
   "es": "Feria",
   "en": "Money / change (Mexican colloquial)",
   "ja": "お金・小銭（メキシコの口語）",
@@ -9495,14 +9438,6 @@ const VOCAB_DATA = [
   "cat": "Coloquial",
   "nivel": "avanzado",
   "pos": "表現"
- },
- {
-  "es": "Fresa",
-  "en": "Snobbish / preppy (Mexican colloquial)",
-  "ja": "気取った・お坊ちゃん風の（メキシコの口語）",
-  "cat": "Coloquial",
-  "nivel": "avanzado",
-  "pos": "俗語"
  },
  {
   "es": "Órale",
@@ -9589,13 +9524,6 @@ const VOCAB_DATA = [
   "es": "Religioso",
   "en": "Religious",
   "ja": "信心深い",
-  "cat": "Adjetivos",
-  "pos": "形容詞"
- },
- {
-  "es": "Sospechoso",
-  "en": "Suspicious",
-  "ja": "怪しい、疑わしい",
   "cat": "Adjetivos",
   "pos": "形容詞"
  },
@@ -11462,13 +11390,6 @@ const VOCAB_DATA = [
   "pos": "表現"
  },
  {
-  "es": "Apagar el teléfono",
-  "en": "To turn off the phone",
-  "ja": "携帯の電源を切る",
-  "cat": "Tecnología",
-  "pos": "表現"
- },
- {
   "es": "Quedarse sin batería",
   "en": "To run out of battery",
   "ja": "バッテリーが切れる",
@@ -11479,13 +11400,6 @@ const VOCAB_DATA = [
   "es": "Tener señal",
   "en": "To have signal/reception",
   "ja": "電波がある",
-  "cat": "Tecnología",
-  "pos": "表現"
- },
- {
-  "es": "Estar conectado",
-  "en": "To be connected",
-  "ja": "接続されている",
   "cat": "Tecnología",
   "pos": "表現"
  },
@@ -12939,20 +12853,6 @@ const VOCAB_DATA = [
   "pos": "形容詞"
  },
  {
-  "es": "Apagar la luz",
-  "en": "To turn off the light",
-  "ja": "電気を消す",
-  "cat": "Casa",
-  "pos": "表現"
- },
- {
-  "es": "Encender la luz",
-  "en": "To turn on the light",
-  "ja": "電気をつける",
-  "cat": "Casa",
-  "pos": "表現"
- },
- {
   "es": "Apagar",
   "en": "To turn off",
   "ja": "消す・オフにする",
@@ -13639,13 +13539,6 @@ const VOCAB_DATA = [
   "pos": "名詞（男性）"
  },
  {
-  "es": "El sartén",
-  "en": "Frying pan",
-  "ja": "フライパン",
-  "cat": "Cocina",
-  "pos": "名詞（男性）"
- },
- {
   "es": "El traje de baño",
   "en": "Swimsuit",
   "ja": "水着",
@@ -13957,13 +13850,6 @@ const VOCAB_DATA = [
   "es": "El delincuente",
   "en": "Offender",
   "ja": "犯罪者・非行者",
-  "cat": "Sociedad",
-  "pos": "名詞（男性）"
- },
- {
-  "es": "El sospechoso",
-  "en": "Suspect",
-  "ja": "容疑者",
   "cat": "Sociedad",
   "pos": "名詞（男性）"
  },
@@ -14862,5 +14748,1999 @@ const VOCAB_DATA = [
   "ja": "失敗",
   "cat": "General",
   "pos": "名詞（男性）"
+ },
+ {
+  "es": "La naranja",
+  "en": "Orange (fruit)",
+  "ja": "オレンジ(果物)",
+  "cat": "Comida",
+  "pos": "名詞（女性）／形容詞"
+ },
+ {
+  "es": "La fresa",
+  "en": "Strawberry",
+  "ja": "いちご",
+  "cat": "Comida",
+  "pos": "名詞（女性）／俗語"
+ },
+ {
+  "es": "El chile",
+  "en": "Chili pepper",
+  "ja": "唐辛子",
+  "cat": "Comida",
+  "pos": "名詞（男性）"
+ },
+ {
+  "es": "La lana",
+  "en": "Wool",
+  "ja": "ウール",
+  "cat": "Ropa",
+  "pos": "名詞（女性）／俗語"
+ },
+ {
+  "es": "La sartén",
+  "en": "Frying pan",
+  "ja": "フライパン",
+  "cat": "Cocina",
+  "pos": "名詞（女性/男性）"
+ },
+ {
+  "es": "Sospechoso",
+  "en": "Suspicious",
+  "ja": "怪しい、疑わしい",
+  "cat": "Adjetivos",
+  "pos": "形容詞／名詞（男性）"
+ },
+ {
+  "es": "Ahorita",
+  "en": "Right now / in a bit (ambiguous timing, colloquial)",
+  "ja": "今すぐ／ちょっと後で（文脈次第、口語）",
+  "cat": "Coloquial",
+  "pos": "副詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Onda",
+  "en": "Vibe / thing (colloquial)",
+  "ja": "雰囲気・感じ・こと（口語）",
+  "cat": "Coloquial",
+  "pos": "名詞（女性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Mande",
+  "en": "Pardon? / Yes? (polite response)",
+  "ja": "はい？／もう一度言っていただけますか（丁寧な返事・聞き返し）",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Antojo",
+  "en": "Craving",
+  "ja": "（食べ物などへの）欲求・食べたい気持ち",
+  "cat": "Comida",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Tocayo",
+  "en": "Namesake (person who shares your name)",
+  "ja": "同名の人",
+  "cat": "Sociedad",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Compadre",
+  "en": "Godfather-in-law relationship; close friend (colloquial)",
+  "ja": "代父同士の関係、または親しい友人（口語）",
+  "cat": "Sociedad",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Chilango",
+  "en": "Person from Mexico City (colloquial)",
+  "ja": "メキシコシティ出身の人（口語、時にからかい混じり）",
+  "cat": "Sociedad",
+  "pos": "名詞・形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Tantito",
+  "en": "A little bit (colloquial diminutive)",
+  "ja": "ちょっとだけ（口語的な指小形）",
+  "cat": "Coloquial",
+  "pos": "副詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Cuate",
+  "en": "Buddy / friend (Mexican colloquial)",
+  "ja": "友達・相棒（メキシコの口語）",
+  "cat": "Coloquial",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Aguas",
+  "en": "Watch out! (Mexican colloquial warning)",
+  "ja": "危ない！気をつけて！（メキシコの口語）",
+  "cat": "Coloquial",
+  "pos": "感嘆詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Checar",
+  "en": "To check (colloquial)",
+  "ja": "確認する・チェックする（口語）",
+  "cat": "Coloquial",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Rentar",
+  "en": "To rent",
+  "ja": "賃借りする・賃貸する",
+  "cat": "Casa",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Ratito",
+  "en": "A little while (colloquial diminutive)",
+  "ja": "ちょっとの間（口語的な指小形）",
+  "cat": "Coloquial",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Chamaco",
+  "en": "Kid / child (Mexican colloquial)",
+  "ja": "子ども・ガキ（メキシコの口語）",
+  "cat": "Coloquial",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Al rato",
+  "en": "In a bit / see you later",
+  "ja": "また後で・ちょっとしたら",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Súper",
+  "en": "Super- (intensifier prefix, colloquial)",
+  "ja": "超〜（強調の接頭辞、口語）",
+  "cat": "Coloquial",
+  "pos": "副詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Fiesta",
+  "en": "Party",
+  "ja": "パーティー、祭り",
+  "cat": "Social",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Platicar",
+  "en": "To chat / to talk (Mexican colloquial)",
+  "ja": "おしゃべりする・話す（メキシコでよく使う）",
+  "cat": "Coloquial",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Chiste",
+  "en": "Joke",
+  "ja": "冗談、ジョーク",
+  "cat": "Social",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Regalar",
+  "en": "To give (as a gift)",
+  "ja": "プレゼントする、贈る",
+  "cat": "Social",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Extrañar",
+  "en": "To miss (someone/something)",
+  "ja": "（人・物を）恋しく思う、寂しく思う",
+  "cat": "Emociones",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Convivir",
+  "en": "To spend time together / socialize",
+  "ja": "共に過ごす、交流する",
+  "cat": "Social",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Taquería",
+  "en": "Taco stand / taco shop",
+  "ja": "タコス屋",
+  "cat": "Comida",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Madrugar",
+  "en": "To wake up early",
+  "ja": "早起きする",
+  "cat": "Rutina",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Saludar",
+  "en": "To greet",
+  "ja": "挨拶する",
+  "cat": "Social",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Despedirse",
+  "en": "To say goodbye",
+  "ja": "別れの挨拶をする",
+  "cat": "Social",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Abrazar",
+  "en": "To hug",
+  "ja": "抱きしめる、ハグする",
+  "cat": "Social",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Sonreír",
+  "en": "To smile",
+  "ja": "微笑む",
+  "cat": "Emociones",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Agradecer",
+  "en": "To thank",
+  "ja": "感謝する",
+  "cat": "Social",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Felicitar",
+  "en": "To congratulate",
+  "ja": "祝う、お祝いの言葉をかける",
+  "cat": "Social",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Pena",
+  "en": "Shame / sorrow / pity (context-dependent)",
+  "ja": "恥ずかしさ、悲しみ、気の毒（文脈による）",
+  "cat": "Emociones",
+  "pos": "名詞（女性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Presumir",
+  "en": "To show off / to boast",
+  "ja": "自慢する、見せびらかす",
+  "cat": "Social",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Mientras",
+  "en": "While",
+  "ja": "〜する間、〜している間に",
+  "cat": "Conectores",
+  "pos": "接続詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Tampoco",
+  "en": "Neither / either (in negative sentences)",
+  "ja": "〜も〜ない",
+  "cat": "Conectores",
+  "pos": "副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Ojalá",
+  "en": "I hope so / if only",
+  "ja": "〜だといいな、〜でありますように",
+  "cat": "Emociones",
+  "pos": "感嘆詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Corregir",
+  "en": "To correct",
+  "ja": "訂正する、直す",
+  "cat": "Educación",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Descargar",
+  "en": "To download",
+  "ja": "ダウンロードする",
+  "cat": "Tecnología",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Pelar",
+  "en": "To peel",
+  "ja": "皮をむく",
+  "cat": "Cocina",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Cocer",
+  "en": "To boil / to cook (in water)",
+  "ja": "（水で）茹でる、煮る",
+  "cat": "Cocina",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Suscribirse",
+  "en": "To subscribe",
+  "ja": "登録する、購読する",
+  "cat": "Tecnología",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Pareja",
+  "en": "Partner / couple",
+  "ja": "パートナー、恋人、カップル",
+  "cat": "Familia",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Novio",
+  "en": "Boyfriend (also 'groom')",
+  "ja": "恋人（彼氏）、または花婿",
+  "cat": "Familia",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Soltero",
+  "en": "Single (unmarried)",
+  "ja": "独身の",
+  "cat": "Familia",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Casado",
+  "en": "Married",
+  "ja": "結婚している",
+  "cat": "Familia",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Bebé",
+  "en": "Baby",
+  "ja": "赤ちゃん",
+  "cat": "Familia",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Embarazada",
+  "en": "Pregnant",
+  "ja": "妊娠している",
+  "cat": "Familia",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Adolescente",
+  "en": "Teenager / adolescent",
+  "ja": "十代の若者、思春期の子",
+  "cat": "Familia",
+  "pos": "名詞・形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Anciano",
+  "en": "Elderly person",
+  "ja": "高齢者、お年寄り",
+  "cat": "Familia",
+  "pos": "名詞・形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Enfrentar",
+  "en": "To face / confront",
+  "ja": "直面する、立ち向かう",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Aprovechar",
+  "en": "To take advantage of / make the most of",
+  "ja": "活用する、機会を生かす",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Involucrar",
+  "en": "To involve",
+  "ja": "関わらせる、巻き込む",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Carecer",
+  "en": "To lack",
+  "ja": "欠いている、不足している",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Fomentar",
+  "en": "To foster / promote",
+  "ja": "促進する、育成する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Impulsar",
+  "en": "To drive / boost",
+  "ja": "後押しする、推進する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Fortalecer",
+  "en": "To strengthen",
+  "ja": "強化する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Debilitar",
+  "en": "To weaken",
+  "ja": "弱める",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Arriesgar",
+  "en": "To risk",
+  "ja": "危険にさらす、賭ける",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Tolerar",
+  "en": "To tolerate",
+  "ja": "許容する、我慢する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Vacilar",
+  "en": "To hesitate; to joke around (Mexican colloquial)",
+  "ja": "ためらう；からかう・冗談を言う（メキシコの口語）",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ponderar",
+  "en": "To weigh / consider carefully",
+  "ja": "熟考する、慎重に検討する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Útil",
+  "en": "Useful",
+  "ja": "役に立つ",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Cómodo",
+  "en": "Comfortable",
+  "ja": "快適な、心地よい",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Incómodo",
+  "en": "Uncomfortable",
+  "ja": "不快な、気まずい",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Sencillo",
+  "en": "Simple",
+  "ja": "簡単な、シンプルな",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Complicado",
+  "en": "Complicated",
+  "ja": "複雑な、ややこしい",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Urgente",
+  "en": "Urgent",
+  "ja": "緊急の、急を要する",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Pendiente",
+  "en": "Pending",
+  "ja": "未処理の、保留中の",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Ocupado",
+  "en": "Busy / occupied",
+  "ja": "忙しい、使用中の",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Suficiente",
+  "en": "Enough / sufficient",
+  "ja": "十分な",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Adecuado",
+  "en": "Appropriate / suitable",
+  "ja": "適切な、ふさわしい",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Innecesario",
+  "en": "Unnecessary",
+  "ja": "不必要な",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Aproximadamente",
+  "en": "Approximately",
+  "ja": "おおよそ、約",
+  "cat": "Adverbios",
+  "pos": "副詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Exactamente",
+  "en": "Exactly",
+  "ja": "正確に、まさに",
+  "cat": "Adverbios",
+  "pos": "副詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Definitivamente",
+  "en": "Definitely",
+  "ja": "間違いなく、絶対に",
+  "cat": "Adverbios",
+  "pos": "副詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Normalmente",
+  "en": "Normally / usually",
+  "ja": "普段は、通常",
+  "cat": "Adverbios",
+  "pos": "副詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Generalmente",
+  "en": "Generally",
+  "ja": "一般的に、たいてい",
+  "cat": "Adverbios",
+  "pos": "副詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Actualmente",
+  "en": "Currently (false friend: NOT 'actually')",
+  "ja": "現在は、今のところ（英語のactuallyとは意味が違う要注意単語）",
+  "cat": "Adverbios",
+  "pos": "副詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Recientemente",
+  "en": "Recently",
+  "ja": "最近、近頃",
+  "cat": "Adverbios",
+  "pos": "副詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Constantemente",
+  "en": "Constantly",
+  "ja": "絶えず、常に",
+  "cat": "Adverbios",
+  "pos": "副詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Diferente",
+  "en": "Different",
+  "ja": "違う、異なる",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Similar",
+  "en": "Similar",
+  "ja": "似ている",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Parecido",
+  "en": "Similar / alike",
+  "ja": "似ている",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Igual",
+  "en": "Equal / same",
+  "ja": "同じ、等しい",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Mismo",
+  "en": "Same",
+  "ja": "同じ、まさにその",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Último",
+  "en": "Last (final)",
+  "ja": "最後の",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Anterior",
+  "en": "Previous",
+  "ja": "以前の、前の",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Contrario",
+  "en": "Contrary / opposite",
+  "ja": "反対の、逆の",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Distinto",
+  "en": "Distinct / different",
+  "ja": "異なる、別の",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Cantidad",
+  "en": "Quantity / amount",
+  "ja": "量、数量",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Calidad",
+  "en": "Quality",
+  "ja": "質、品質",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Forma",
+  "en": "Shape / form / way",
+  "ja": "形、形式、やり方",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Color",
+  "en": "Color",
+  "ja": "色",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Distancia",
+  "en": "Distance",
+  "ja": "距離",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Velocidad",
+  "en": "Speed",
+  "ja": "速度、スピード",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Posición",
+  "en": "Position",
+  "ja": "位置、姿勢、立場",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Espacio",
+  "en": "Space",
+  "ja": "空間、スペース、宇宙",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Proceso",
+  "en": "Process",
+  "ja": "過程、プロセス",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Resultado",
+  "en": "Result",
+  "ja": "結果",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Causa",
+  "en": "Cause",
+  "ja": "原因",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Efecto",
+  "en": "Effect",
+  "ja": "効果、影響",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Dirección",
+  "en": "Direction; also 'address'",
+  "ja": "方向；住所",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Altura",
+  "en": "Height",
+  "ja": "高さ、身長",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Desarrollar",
+  "en": "To develop",
+  "ja": "発展させる、開発する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Aumentar",
+  "en": "To increase",
+  "ja": "増やす、増加する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Disminuir",
+  "en": "To decrease",
+  "ja": "減らす、減少する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Reducir",
+  "en": "To reduce",
+  "ja": "削減する、減らす",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Transformar",
+  "en": "To transform",
+  "ja": "変える、変容させる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Convertir",
+  "en": "To convert / turn into",
+  "ja": "変える、〜に変わる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Modificar",
+  "en": "To modify",
+  "ja": "修正する、変更する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Adaptar",
+  "en": "To adapt",
+  "ja": "適応させる、順応する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Determinar",
+  "en": "To determine",
+  "ja": "決定する、突き止める",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Identificar",
+  "en": "To identify",
+  "ja": "特定する、識別する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Unir",
+  "en": "To unite / join",
+  "ja": "結びつける、つなげる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Romper",
+  "en": "To break",
+  "ja": "壊す、割る",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Dividir",
+  "en": "To divide",
+  "ja": "分ける、割る",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Ajustar",
+  "en": "To adjust",
+  "ja": "調整する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Pagar",
+  "en": "To pay",
+  "ja": "支払う",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Cobrar",
+  "en": "To charge (money) / to collect payment",
+  "ja": "請求する、代金を受け取る",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Deber",
+  "en": "To owe; also 'should/must'",
+  "ja": "借りがある；〜すべきだ（義務）",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Ingreso",
+  "en": "Income",
+  "ja": "収入",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Económico",
+  "en": "Economical / cheap; also 'economic'",
+  "ja": "経済的な、割安な",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Lujo",
+  "en": "Luxury",
+  "ja": "贅沢、豪華さ",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Respirar",
+  "en": "To breathe",
+  "ja": "呼吸する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Toser",
+  "en": "To cough",
+  "ja": "咳をする",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Estornudar",
+  "en": "To sneeze",
+  "ja": "くしゃみをする",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Curar",
+  "en": "To cure / heal",
+  "ja": "治す、治療する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Recuperarse",
+  "en": "To recover",
+  "ja": "回復する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Riqueza",
+  "en": "Wealth",
+  "ja": "富、豊かさ",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Pobreza",
+  "en": "Poverty",
+  "ja": "貧困",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Sangrar",
+  "en": "To bleed",
+  "ja": "出血する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Frustrado",
+  "en": "Frustrated",
+  "ja": "イライラした、欲求不満の",
+  "cat": "Emociones",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Frustrar",
+  "en": "To frustrate",
+  "ja": "挫折させる、失望させる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Agotado",
+  "en": "Exhausted",
+  "ja": "疲れ果てた、へとへとの",
+  "cat": "Emociones",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Abrumado",
+  "en": "Overwhelmed",
+  "ja": "圧倒された、手一杯の",
+  "cat": "Emociones",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Estresado",
+  "en": "Stressed",
+  "ja": "ストレスを感じている",
+  "cat": "Emociones",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Emocionar",
+  "en": "To excite / move emotionally",
+  "ja": "感動させる、興奮させる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Satisfacer",
+  "en": "To satisfy",
+  "ja": "満足させる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Curiosidad",
+  "en": "Curiosity",
+  "ja": "好奇心",
+  "cat": "Emociones",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Tranquilidad",
+  "en": "Calmness / peace of mind",
+  "ja": "落ち着き、平穏",
+  "cat": "Emociones",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Dispositivo",
+  "en": "Device",
+  "ja": "デバイス、機器",
+  "cat": "Tecnología",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Perfil",
+  "en": "Profile",
+  "ja": "プロフィール、横顔",
+  "cat": "Tecnología",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Aliviar",
+  "en": "To relieve",
+  "ja": "和らげる、軽減する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Decepcionar",
+  "en": "To disappoint",
+  "ja": "失望させる、がっかりさせる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ansioso",
+  "en": "Anxious",
+  "ja": "不安な、そわそわした",
+  "cat": "Emociones",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Ser",
+  "en": "To be (permanent/essential quality)",
+  "ja": "〜である（本質的・恒常的な性質）",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Estar",
+  "en": "To be (temporary state/location)",
+  "ja": "〜である（一時的な状態・場所）",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Mecánico",
+  "en": "Mechanic",
+  "ja": "整備士、修理工",
+  "cat": "Profesiones",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Vendedor",
+  "en": "Salesperson",
+  "ja": "販売員、営業",
+  "cat": "Profesiones",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Gerente",
+  "en": "Manager",
+  "ja": "マネージャー、支配人",
+  "cat": "Profesiones",
+  "pos": "名詞（男性/女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Conductor",
+  "en": "Driver",
+  "ja": "運転手",
+  "cat": "Profesiones",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Apoyar",
+  "en": "To support",
+  "ja": "支援する、支持する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Recibir",
+  "en": "To receive",
+  "ja": "受け取る",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Enviar",
+  "en": "To send",
+  "ja": "送る",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Requerir",
+  "en": "To require",
+  "ja": "必要とする、要求する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Facilitar",
+  "en": "To facilitate",
+  "ja": "容易にする、円滑にする",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Beneficiar",
+  "en": "To benefit",
+  "ja": "利益をもたらす、恩恵を与える",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Oponerse",
+  "en": "To oppose",
+  "ja": "反対する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Exigir",
+  "en": "To demand",
+  "ja": "要求する、強く求める",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Obligar",
+  "en": "To oblige / force",
+  "ja": "義務付ける、強制する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Favorecer",
+  "en": "To favor",
+  "ja": "有利に働く、似合う",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Toalla",
+  "en": "Towel",
+  "ja": "タオル",
+  "cat": "Casa",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Jabón",
+  "en": "Soap",
+  "ja": "石鹸",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Champú",
+  "en": "Shampoo",
+  "ja": "シャンプー",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Pasta de dientes",
+  "en": "Toothpaste",
+  "ja": "歯磨き粉",
+  "cat": "Casa",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Basura",
+  "en": "Trash / garbage",
+  "ja": "ゴミ",
+  "cat": "Casa",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Sábana",
+  "en": "Bedsheet",
+  "ja": "シーツ",
+  "cat": "Casa",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Colchón",
+  "en": "Mattress",
+  "ja": "マットレス",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Cobija",
+  "en": "Blanket (Mexican Spanish)",
+  "ja": "毛布（メキシコでよく使う言い方）",
+  "cat": "Casa",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Cortina",
+  "en": "Curtain",
+  "ja": "カーテン",
+  "cat": "Casa",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Cajón",
+  "en": "Drawer",
+  "ja": "引き出し",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Trapeador",
+  "en": "Mop",
+  "ja": "モップ",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Foco",
+  "en": "Lightbulb",
+  "ja": "電球",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Tijeras",
+  "en": "Scissors",
+  "ja": "はさみ",
+  "cat": "Casa",
+  "pos": "名詞（女性・複数）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Cepillo",
+  "en": "Brush",
+  "ja": "ブラシ",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Carne",
+  "en": "Meat",
+  "ja": "肉",
+  "cat": "Comida",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Pollo",
+  "en": "Chicken",
+  "ja": "鶏肉、ニワトリ",
+  "cat": "Comida",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Pescado",
+  "en": "Fish (as food)",
+  "ja": "魚（食材として）",
+  "cat": "Comida",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Harina",
+  "en": "Flour",
+  "ja": "小麦粉",
+  "cat": "Comida",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Pecho",
+  "en": "Chest",
+  "ja": "胸",
+  "cat": "Cuerpo",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Carro",
+  "en": "Car (Mexican/Latin American Spanish)",
+  "ja": "車（メキシコ・中南米での言い方）",
+  "cat": "Transporte",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Almuerzo",
+  "en": "Lunch",
+  "ja": "昼食",
+  "cat": "Comida",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Servilleta",
+  "en": "Napkin",
+  "ja": "ナプキン",
+  "cat": "Comida",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Mantel",
+  "en": "Tablecloth",
+  "ja": "テーブルクロス",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Jamón",
+  "en": "Ham",
+  "ja": "ハム",
+  "cat": "Comida",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Tocino",
+  "en": "Bacon",
+  "ja": "ベーコン",
+  "cat": "Comida",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Camarón",
+  "en": "Shrimp",
+  "ja": "エビ",
+  "cat": "Comida",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Atún",
+  "en": "Tuna",
+  "ja": "マグロ、ツナ",
+  "cat": "Comida",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Res",
+  "en": "Beef / cattle",
+  "ja": "牛（食肉としての牛）",
+  "cat": "Comida",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Durar",
+  "en": "To last",
+  "ja": "続く、持続する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Tardar",
+  "en": "To take time",
+  "ja": "時間がかかる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Retrasarse",
+  "en": "To be delayed",
+  "ja": "遅れる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Moverse",
+  "en": "To move (oneself)",
+  "ja": "動く",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Mover",
+  "en": "To move (something)",
+  "ja": "〜を動かす",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Caerse",
+  "en": "To fall down",
+  "ja": "転ぶ、落ちる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Caer",
+  "en": "To fall",
+  "ja": "落ちる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Levantarse",
+  "en": "To get up",
+  "ja": "起きる、立ち上がる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Quedar",
+  "en": "To arrange to meet / to have left",
+  "ja": "待ち合わせる、残っている",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Acostarse",
+  "en": "To go to bed",
+  "ja": "寝る、横になる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Bañarse",
+  "en": "To bathe",
+  "ja": "お風呂に入る、水浴びする",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Ducharse",
+  "en": "To shower",
+  "ja": "シャワーを浴びる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Partir",
+  "en": "To depart / to split",
+  "ja": "出発する、分ける",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Apresurarse",
+  "en": "To hurry",
+  "ja": "急ぐ",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Precio",
+  "en": "Price",
+  "ja": "値段、価格",
+  "cat": "Finanzas",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Costo",
+  "en": "Cost",
+  "ja": "コスト、費用",
+  "cat": "Finanzas",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Gasto",
+  "en": "Expense",
+  "ja": "出費、経費",
+  "cat": "Finanzas",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Ganancia",
+  "en": "Profit",
+  "ja": "利益、儲け",
+  "cat": "Finanzas",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Pérdida",
+  "en": "Loss",
+  "ja": "損失",
+  "cat": "Finanzas",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Salario",
+  "en": "Salary",
+  "ja": "給料",
+  "cat": "Finanzas",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Océano",
+  "en": "Ocean",
+  "ja": "大洋、海洋",
+  "cat": "Naturaleza",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Tierra",
+  "en": "Earth / land / soil",
+  "ja": "地球、土地、土",
+  "cat": "Naturaleza",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Naturaleza",
+  "en": "Nature",
+  "ja": "自然",
+  "cat": "Naturaleza",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Planta",
+  "en": "Plant; also 'floor' of a building",
+  "ja": "植物；建物の階（多義語）",
+  "cat": "Naturaleza",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Hoja",
+  "en": "Leaf; also 'sheet' of paper",
+  "ja": "葉っぱ；紙（多義語）",
+  "cat": "Naturaleza",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Raíz",
+  "en": "Root",
+  "ja": "根",
+  "cat": "Naturaleza",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Ambiente",
+  "en": "Atmosphere / environment / vibe",
+  "ja": "雰囲気、環境",
+  "cat": "Naturaleza",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Medio ambiente",
+  "en": "Environment (ecological)",
+  "ja": "環境（自然環境）",
+  "cat": "Naturaleza",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Profesor",
+  "en": "Professor / teacher",
+  "ja": "教授、先生",
+  "cat": "Educación",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Estudiante",
+  "en": "Student",
+  "ja": "学生",
+  "cat": "Educación",
+  "pos": "名詞（男性/女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Clase",
+  "en": "Class",
+  "ja": "授業、クラス",
+  "cat": "Educación",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Materia",
+  "en": "Subject (school)",
+  "ja": "科目",
+  "cat": "Educación",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Historia",
+  "en": "History; also 'story'",
+  "ja": "歴史；物語（多義語）",
+  "cat": "Educación",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Ciencia",
+  "en": "Science",
+  "ja": "科学",
+  "cat": "Educación",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Literatura",
+  "en": "Literature",
+  "ja": "文学",
+  "cat": "Educación",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Pluma",
+  "en": "Pen",
+  "ja": "ペン",
+  "cat": "Educación",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Borrador",
+  "en": "Eraser; also 'draft' (of a document)",
+  "ja": "消しゴム；下書き（多義語）",
+  "cat": "Educación",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Primaria",
+  "en": "Elementary school",
+  "ja": "小学校",
+  "cat": "Educación",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Secundaria",
+  "en": "Middle school / secondary school",
+  "ja": "中学校",
+  "cat": "Educación",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Preparatoria",
+  "en": "High school (Mexican education system)",
+  "ja": "高校（メキシコの教育制度）",
+  "cat": "Educación",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Licenciatura",
+  "en": "Bachelor's degree",
+  "ja": "学士号",
+  "cat": "Educación",
+  "pos": "名詞（女性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Curso",
+  "en": "Course",
+  "ja": "コース、講座",
+  "cat": "Educación",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Simpático",
+  "en": "Nice / likeable",
+  "ja": "感じがいい、感じの良い",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Antipático",
+  "en": "Unpleasant / unlikeable",
+  "ja": "感じの悪い",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Listo",
+  "en": "Clever; also 'ready' (with estar)",
+  "ja": "賢い（serの場合）；準備ができた（estarの場合）",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Flojo",
+  "en": "Lazy (Mexican colloquial)",
+  "ja": "怠け者の（メキシコの口語）",
+  "cat": "Coloquial",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Tonto",
+  "en": "Silly / dumb",
+  "ja": "馬鹿な、間抜けな",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Duro",
+  "en": "Hard",
+  "ja": "硬い",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Blando",
+  "en": "Soft",
+  "ja": "柔らかい",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Largo",
+  "en": "Long",
+  "ja": "長い",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Corto",
+  "en": "Short",
+  "ja": "短い",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Delgado",
+  "en": "Thin / slim",
+  "ja": "細い、痩せている",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Grueso",
+  "en": "Thick",
+  "ja": "太い、厚い",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Irresponsable",
+  "en": "Irresponsible",
+  "ja": "無責任な",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Inmaduro",
+  "en": "Immature",
+  "ja": "未熟な、子供っぽい",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Superficial",
+  "en": "Superficial",
+  "ja": "表面的な、浅はかな",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
  }
 ];
