@@ -686,10 +686,10 @@ function render(){
     || (state.tab==="phrases" && state.phraseSceneIdx!==null && state.phraseSceneIdx!==undefined);
   if(!hideNav) app.appendChild(navBar());
   if(!hideNav && (state.tab==="vocab" || state.tab==="dict")){
-    app.appendChild(renderPairToggle([["vocab","単語"],["dict","辞書"]]));
+    app.appendChild(renderPairToggle([["vocab","クイズ"],["dict","辞書"]]));
   }
   if(!hideNav && (state.tab==="grammar" || state.tab==="conj")){
-    app.appendChild(renderPairToggle([["grammar","文法"],["conj","ドリル"]]));
+    app.appendChild(renderPairToggle([["conj","ドリル"],["grammar","リファレンス"]]));
   }
   if(state.tab==="home"){
     renderHomeTab();
@@ -731,15 +731,16 @@ const NAV_ICONS = {
   home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/><path d="M10 19v-5h4v5"/></svg>',
   vocab: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5c-.8 0-1.5-.7-1.5-1.5V5.5z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5c.8 0 1.5-.7 1.5-1.5V5.5z"/></svg>',
   grammar: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5V4z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg>',
+  conj: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5V4z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg>',
   phrases: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10.5H9l-4 3.5v-3.5H4V5.5z"/></svg>',
   more: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>',
 };
 function navBar(){
   const row = el("div","nav-row");
-  [["home","ホーム"],["vocab","単語"],["grammar","文法"],["phrases","フレーズ"],["more","その他"]].forEach(([key,label])=>{
+  [["home","ホーム"],["vocab","単語"],["conj","文法"],["phrases","フレーズ"],["more","その他"]].forEach(([key,label])=>{
     const isActive = state.tab===key
       || (key==="vocab" && state.tab==="dict")
-      || (key==="grammar" && state.tab==="conj")
+      || (key==="conj" && state.tab==="grammar")
       || (key==="more" && (state.tab==="column"||state.tab==="news"||state.tab==="faq"));
     const b = el("button","nav-btn"+(isActive?" active":""));
     b.innerHTML = `<div class="nav-btn-icon">${NAV_ICONS[key]}</div><div class="nav-btn-label">${label}</div>`;
@@ -872,7 +873,7 @@ function renderHomeTab(){
     grammarCard.innerHTML = `<div class="dict-section-title">📐 文法</div>
       <div style="font-size:13px;color:#C9BBE8;margin-top:8px;">ドリルを解くと、ここに正答率が表示されます。タップして文法・ドリルへ</div>`;
   }
-  grammarCard.onclick = ()=>{ playTap(); state.tab="grammar"; render(); };
+  grammarCard.onclick = ()=>{ playTap(); state.tab="conj"; render(); };
   app.appendChild(grammarCard);
 
   app.appendChild(el("div","section-label","ショートカット"));
@@ -887,26 +888,11 @@ function renderHomeTab(){
 }
 function renderVocabHome(){
   if(state.calendarOpen){ renderCalendar(); return; }
-  const stats = computeStats();
-  const pct = stats.barPct;
   const header = el("div");
-  header.appendChild(el("div","eyebrow","VOCABULARIO"));
-  header.appendChild(el("h1","title","単語"));
+  header.appendChild(el("div","eyebrow","QUIZ"));
+  header.appendChild(el("h1","title","クイズ"));
   app.appendChild(header);
   const spacer = el("div"); spacer.style.height="14px"; app.appendChild(spacer);
-  const passport = el("div","passport");
-  passport.innerHTML = `
-    <div class="passport-top">
-      <div><div class="passport-label">Sellos coleccionados</div>
-      <div class="passport-num">${stats.known}<span class="passport-of"> / ${stats.total}</span></div></div>
-      <div class="stamp-circle">${pct}%</div>
-    </div>
-    <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
-    <div class="legend-row">
-      <div class="legend-item"><span class="legend-dot" style="background:var(--accent)"></span><span class="legend-label">Aprendiendo ${stats.learning}</span></div>
-      <div class="legend-item"><span class="legend-dot" style="background:var(--muted)"></span><span class="legend-label">Por ver ${stats.unseen}</span></div>
-    </div>`;
-  app.appendChild(passport);
   app.appendChild(el("div","section-label","レベル（CEFR基準の目安）"));
   const levelRow = el("div","chip-row");
   [["Todos","全レベル"],["A1","A1"],["A2","A2"],["B1","B1"],["B2","B2"]].forEach(([lv,label])=>{
@@ -2112,7 +2098,7 @@ function renderGrammar(){
   if(grammarDetailIdx===null){
     const header = el("div");
     header.appendChild(el("div","eyebrow","GRAMÁTICA"));
-    header.appendChild(el("h1","title","文法リファレンス"));
+    header.appendChild(el("h1","title","リファレンス"));
     app.appendChild(header);
     const spacer = el("div"); spacer.style.height="16px"; app.appendChild(spacer);
     const roadmapBtn = el("button","primary-btn","📊 ドリル正答率で進捗を見る");
