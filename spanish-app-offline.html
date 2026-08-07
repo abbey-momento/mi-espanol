@@ -51,9 +51,13 @@
   .subnav-btn.active { background: rgba(255,255,255,0.16); color:#fff; border-color: rgba(255,255,255,0.4); }
   .eyebrow { font-size:11px; letter-spacing:0.16em; color: var(--accent3); font-weight:700; margin-bottom:6px; }
   h1.title { font-family: var(--font-headword); font-size:30px; font-weight:500; margin:0; }
-  .streak-row { display:flex; align-items:center; gap:6px; margin-top:8px; cursor:pointer; width:fit-content; }
-  .streak-text { font-size:14px; color:#E4D9F7; font-weight:600; }
-  .streak-hint { font-size:11px; color:#9C8FC2; margin-left:2px; }
+  .streak-row { display:flex; align-items:center; gap:10px; margin-top:8px; cursor:pointer; width:fit-content;
+    background: linear-gradient(135deg, rgba(255,60,172,0.16), rgba(123,47,247,0.2));
+    border:1.5px solid rgba(255,210,63,0.4); border-radius:999px; padding:9px 18px 9px 14px; }
+  .streak-flame { font-size:24px; line-height:1; filter: drop-shadow(0 0 7px rgba(255,140,40,0.55)); }
+  .streak-text { font-size:15.5px; color:#FFF3E0; font-weight:700; }
+  .streak-num { font-family: var(--font-numeric); font-size:19px; color:#FFD23F; font-weight:500; }
+  .streak-hint { font-size:13px; color:#FFD23F; margin-left:2px; font-weight:700; }
   .cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:6px; margin-top:14px; }
   .cal-dow { text-align:center; font-size:10.5px; color:#9C8FC2; font-weight:700; }
   .cal-day { aspect-ratio:1; display:flex; align-items:center; justify-content:center; border-radius:10px; font-size:12.5px; color:#D9CCEF; background:rgba(255,255,255,0.05); }
@@ -74,6 +78,8 @@
     display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12px; transform:rotate(-8deg); }
   .bar-track { margin-top:14px; height:8px; border-radius:8px; background:#F0E6D2; overflow:hidden; }
   .bar-fill { height:100%; background: linear-gradient(90deg, var(--violet), var(--accent)); border-radius:8px; width:0%; transition:width .4s; }
+  .bar-track-thin { height:4px; margin-top:10px; }
+  .bar-fill-thin { opacity:0.72; }
   .legend-row { display:flex; gap:14px; margin-top:10px; flex-wrap:wrap; }
   .legend-item { display:flex; align-items:center; gap:6px; }
   .legend-dot { width:8px; height:8px; border-radius:50%; }
@@ -463,25 +469,44 @@ function getMonthUsageMinutes(){
   progress.usageMinutes = progress.usageMinutes || {};
   return progress.usageMinutes[currentMonthKey()] || 0;
 }
+function isActivelyStudying(){
+  if(state.tab==="vocab" && (state.mode==="flash"||state.mode==="quiz"||state.mode==="review"||state.mode==="flagged")) return true;
+  if(state.tab==="conj" && !!state.conjSubTab) return true;
+  if(state.tab==="dict" && !!state.dictDetailWord) return true;
+  if(state.tab==="grammar" && typeof grammarDetailIdx!=="undefined" && grammarDetailIdx!==null) return true;
+  if(state.tab==="faq" && typeof faqDetailIdx!=="undefined" && faqDetailIdx!==null) return true;
+  if(state.tab==="phrases" && state.phraseSceneIdx!==null && state.phraseSceneIdx!==undefined) return true;
+  if(state.tab==="column" || state.tab==="news") return true;
+  return false;
+}
+function dateKeyOffset(offsetDays){
+  const d = new Date(); d.setDate(d.getDate()+offsetDays);
+  return d.toISOString().slice(0,10);
+}
+function getDayUsageMinutes(dateKey){
+  progress.dailyUsage = progress.dailyUsage || {};
+  return progress.dailyUsage[dateKey] || 0;
+}
 function tickUsageTime(){
   if(typeof document!=="undefined" && document.visibilityState==="hidden") return;
+  if(!isActivelyStudying()) return;
   progress.usageMinutes = progress.usageMinutes || {};
   const key = currentMonthKey();
   progress.usageMinutes[key] = (progress.usageMinutes[key]||0) + 0.5;
-  ensureTodayUsage();
-  progress.todayUsage.minutes += 0.5;
+  progress.dailyUsage = progress.dailyUsage || {};
+  const dKey = todayStr();
+  progress.dailyUsage[dKey] = (progress.dailyUsage[dKey]||0) + 0.5;
   saveProgress(progress);
-}
-function ensureTodayUsage(){
-  progress.todayUsage = progress.todayUsage || {date: todayStr(), minutes:0};
-  if(progress.todayUsage.date !== todayStr()){ progress.todayUsage = {date: todayStr(), minutes:0}; }
 }
 if(typeof window!=="undefined"){ setInterval(tickUsageTime, 30000); }
 let progress = loadProgress();
-ensureTodayUsage();
-let usageMinutesTodayLive = progress.todayUsage.minutes;
+let usageMinutesTodayLive = getDayUsageMinutes(todayStr());
 if(typeof window!=="undefined"){
-  setInterval(()=>{ ensureTodayUsage(); usageMinutesTodayLive = Math.max(usageMinutesTodayLive, progress.todayUsage.minutes) + 1/60; }, 1000);
+  setInterval(()=>{
+    if(!isActivelyStudying()) return;
+    const stored = getDayUsageMinutes(todayStr());
+    usageMinutesTodayLive = Math.max(usageMinutesTodayLive, stored) + 1/60;
+  }, 1000);
 }
 function markResult(id, correct){
   const cur = progress.counts[id]||0;
@@ -795,20 +820,27 @@ function renderMoreMenu(){
   app.appendChild(grid);
 }
 
-/* ---------- Home time rings (live, loops every 10min / 60min) ---------- */
+/* ---------- Home time rings (live, loops every 10min / 60min; swipeable by day) ---------- */
 let timeRingInterval = null;
+let ringDateOffset = 0; // 0 = today, negative = past days
+function formatRingDateLabel(offset){
+  if(offset===0) return "今日の学習時間";
+  const d = new Date(); d.setDate(d.getDate()+offset);
+  return `${d.getMonth()+1}月${d.getDate()}日の学習時間`;
+}
 function buildTimeRings(){
-  const size = 200, cx = size/2, cy = size/2;
-  const rOuter = 86, rInner = 62;
+  const size = 270, cx = size/2, cy = size/2;
+  const rOuter = 116, rInner = 84;
   const cOuter = 2*Math.PI*rOuter, cInner = 2*Math.PI*rInner;
-  const wrap = el("div"); wrap.style.position="relative"; wrap.style.width=size+"px"; wrap.style.height=size+"px"; wrap.style.margin="8px auto 6px";
+  const outerWrap = el("div"); outerWrap.style.textAlign="center";
+  const wrap = el("div"); wrap.style.position="relative"; wrap.style.width=size+"px"; wrap.style.height=size+"px"; wrap.style.margin="10px auto 4px"; wrap.style.touchAction="pan-y";
   wrap.innerHTML = `
     <svg viewBox="0 0 ${size} ${size}" width="${size}" height="${size}" style="transform:rotate(-90deg);">
-      <circle cx="${cx}" cy="${cy}" r="${rOuter}" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="14"/>
-      <circle cx="${cx}" cy="${cy}" r="${rInner}" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="14"/>
-      <circle id="ringOuter" cx="${cx}" cy="${cy}" r="${rOuter}" fill="none" stroke="url(#ringGradHour)" stroke-width="14" stroke-linecap="round"
+      <circle cx="${cx}" cy="${cy}" r="${rOuter}" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="17"/>
+      <circle cx="${cx}" cy="${cy}" r="${rInner}" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="17"/>
+      <circle id="ringOuter" cx="${cx}" cy="${cy}" r="${rOuter}" fill="none" stroke="url(#ringGradHour)" stroke-width="17" stroke-linecap="round"
         stroke-dasharray="${cOuter}" stroke-dashoffset="${cOuter}"/>
-      <circle id="ringInner" cx="${cx}" cy="${cy}" r="${rInner}" fill="none" stroke="url(#ringGradTen)" stroke-width="14" stroke-linecap="round"
+      <circle id="ringInner" cx="${cx}" cy="${cy}" r="${rInner}" fill="none" stroke="url(#ringGradTen)" stroke-width="17" stroke-linecap="round"
         stroke-dasharray="${cInner}" stroke-dashoffset="${cInner}"/>
       <defs>
         <linearGradient id="ringGradHour" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -820,36 +852,61 @@ function buildTimeRings(){
       </defs>
     </svg>
     <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <div id="ringMinuteLabel" style="font-family:var(--font-numeric); font-size:25px; font-weight:500; color:#F5EEFF;">0分</div>
-      <div style="font-size:10.5px; color:#9C8FC2; font-weight:700; margin-top:3px; letter-spacing:0.03em;">今日の学習時間</div>
+      <div id="ringMinuteLabel" style="font-family:var(--font-numeric); font-size:36px; font-weight:500; color:#F5EEFF;">0分</div>
+      <div id="ringDateLabel" style="font-size:11.5px; color:#9C8FC2; font-weight:700; margin-top:4px; letter-spacing:0.03em;">今日の学習時間</div>
     </div>`;
   const outerCircle = wrap.querySelector("#ringOuter");
   const innerCircle = wrap.querySelector("#ringInner");
   const label = wrap.querySelector("#ringMinuteLabel");
+  const dateLabel = wrap.querySelector("#ringDateLabel");
   if(timeRingInterval){ clearInterval(timeRingInterval); timeRingInterval=null; }
-  const update = ()=>{
-    if(!document.body.contains(outerCircle)){ if(timeRingInterval){ clearInterval(timeRingInterval); timeRingInterval=null; } return; }
-    const mins = usageMinutesTodayLive;
+  const renderValue = (mins)=>{
     const outerPct = (mins % 60) / 60;
     const innerPct = (mins % 10) / 10;
     outerCircle.setAttribute("stroke-dashoffset", String(cOuter * (1 - outerPct)));
     innerCircle.setAttribute("stroke-dashoffset", String(cInner * (1 - innerPct)));
     const h = Math.floor(mins/60), m = Math.floor(mins%60);
     label.textContent = h>0 ? `${h}時間${m}分` : `${m}分`;
+    dateLabel.textContent = formatRingDateLabel(ringDateOffset);
   };
-  update();
-  timeRingInterval = setInterval(update, 1000);
-  return wrap;
+  const update = ()=>{
+    if(!document.body.contains(outerCircle)){ if(timeRingInterval){ clearInterval(timeRingInterval); timeRingInterval=null; } return; }
+    renderValue(usageMinutesTodayLive);
+  };
+  if(ringDateOffset===0){
+    update();
+    timeRingInterval = setInterval(update, 1000);
+  } else {
+    renderValue(getDayUsageMinutes(dateKeyOffset(ringDateOffset)));
+  }
+  let touchStartX = null;
+  wrap.addEventListener("touchstart", (e)=>{ touchStartX = e.touches[0].clientX; }, {passive:true});
+  wrap.addEventListener("touchend", (e)=>{
+    if(touchStartX===null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    touchStartX = null;
+    if(Math.abs(dx) < 40) return;
+    playTap();
+    if(dx < 0){ ringDateOffset = Math.max(ringDateOffset-1, -30); }
+    else { ringDateOffset = Math.min(ringDateOffset+1, 0); }
+    render();
+  }, {passive:true});
+  outerWrap.appendChild(wrap);
+  const hint = el("div"); hint.style.fontSize="10.5px"; hint.style.color="#7C6DA0"; hint.style.fontWeight="600"; hint.style.marginBottom="4px";
+  hint.textContent = ringDateOffset===0 ? "‹ スワイプで過去の記録へ" : (ringDateOffset<=-30 ? "今日へ戻る ›" : "‹ ›  スワイプで日付を移動");
+  if(ringDateOffset!==0){ hint.style.cursor="pointer"; hint.onclick = ()=>{ playTap(); ringDateOffset=0; render(); }; }
+  outerWrap.appendChild(hint);
+  return outerWrap;
 }
 function buildHomeProgressCard(icon, label, pct, valueText, subLabel, onClick){
-  const box = el("div","passport"); box.style.cursor="pointer"; box.style.marginBottom="12px";
+  const box = el("div","passport"); box.style.cursor="pointer"; box.style.marginBottom="12px"; box.style.padding="16px 18px";
   box.innerHTML = `
     <div class="passport-top">
       <div><div class="passport-label">${icon} ${label}</div>
-      <div class="passport-num">${valueText}</div></div>
+      <div class="passport-num" style="font-size:22px;">${valueText}</div></div>
     </div>
-    <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
-    <div style="font-size:11.5px;color:#8A7AAE;margin-top:8px;font-weight:600;">${subLabel}</div>`;
+    <div class="bar-track bar-track-thin"><div class="bar-fill bar-fill-thin" style="width:${pct}%"></div></div>
+    <div style="font-size:11px;color:#8A7AAE;margin-top:7px;font-weight:600;">${subLabel}</div>`;
   box.onclick = onClick;
   return box;
 }
@@ -870,8 +927,8 @@ function renderHomeTab(){
     <div style="font-size:13px; color:#C9BBE8; font-weight:600; margin-top:6px;">メキシコのスペイン語を、すこしずつ楽しく。</div>`;
   app.appendChild(logoWrap);
 
-  const sr = el("div","streak-row"); sr.style.marginTop="16px";
-  sr.innerHTML = `<span>🔥</span><span class="streak-text">${progress.streak} ${progress.streak===1?"día":"días"} seguidos</span><span class="streak-hint">›</span>`;
+  const sr = el("div","streak-row"); sr.style.marginTop="16px"; sr.style.marginLeft="auto"; sr.style.marginRight="auto";
+  sr.innerHTML = `<span class="streak-flame">🔥</span><span class="streak-num">${progress.streak}</span><span class="streak-text">${progress.streak===1?"día seguido":"días seguidos"}</span><span class="streak-hint">›</span>`;
   sr.onclick = ()=>{ playTap(); state.tab="vocab"; state.mode="home"; state.calendarOpen=true; render(); };
   app.appendChild(sr);
 
