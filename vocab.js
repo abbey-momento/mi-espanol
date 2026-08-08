@@ -16742,5 +16742,1229 @@ const VOCAB_DATA = [
   "cat": "Adjetivos",
   "pos": "形容詞",
   "nivel": "avanzado"
+ },
+ {
+  "es": "Piso",
+  "en": "Floor (of a building/room)",
+  "ja": "床、階",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Elevador",
+  "en": "Elevator",
+  "ja": "エレベーター",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Recámara",
+  "en": "Bedroom (Mexican Spanish)",
+  "ja": "寝室（メキシコでの言い方）",
+  "cat": "Casa",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Patio",
+  "en": "Patio / yard",
+  "ja": "中庭、裏庭",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Clóset",
+  "en": "Closet",
+  "ja": "クローゼット",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Sillón",
+  "en": "Armchair",
+  "ja": "肘掛け椅子、アームチェア",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Regadera",
+  "en": "Shower (Mexican Spanish)",
+  "ja": "シャワー（メキシコでの言い方）",
+  "cat": "Casa",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Inodoro",
+  "en": "Toilet",
+  "ja": "便器、トイレ",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Fregadero",
+  "en": "Kitchen sink",
+  "ja": "台所の流し",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Ventilador",
+  "en": "Fan",
+  "ja": "扇風機",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Aire acondicionado",
+  "en": "Air conditioner",
+  "ja": "エアコン",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Tapete",
+  "en": "Rug / mat",
+  "ja": "敷物、ラグ",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Portón",
+  "en": "Large gate / door",
+  "ja": "大きな門、正門",
+  "cat": "Casa",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Calefacción",
+  "en": "Heating",
+  "ja": "暖房",
+  "cat": "Casa",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Contar",
+  "en": "To tell (a story); also 'to count'",
+  "ja": "話す、語る；数える（多義語）",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Mencionar",
+  "en": "To mention",
+  "ja": "言及する、触れる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Discutir",
+  "en": "To argue (usually) / to discuss",
+  "ja": "口論する（多くの場合）／議論する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Convencer",
+  "en": "To convince",
+  "ja": "納得させる、説得する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Criticar",
+  "en": "To criticize",
+  "ja": "批判する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Mentir",
+  "en": "To lie",
+  "ja": "嘘をつく",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Gritar",
+  "en": "To shout",
+  "ja": "叫ぶ、大声を出す",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Susurrar",
+  "en": "To whisper",
+  "ja": "ささやく",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Burlarse",
+  "en": "To make fun of",
+  "ja": "からかう、馬鹿にする",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Confesar",
+  "en": "To confess",
+  "ja": "告白する、白状する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Jurar",
+  "en": "To swear",
+  "ja": "誓う",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Elogiar",
+  "en": "To praise",
+  "ja": "褒める",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Persuadir",
+  "en": "To persuade",
+  "ja": "説得する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Debatir",
+  "en": "To debate",
+  "ja": "討論する、議論する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Dentro",
+  "en": "Inside",
+  "ja": "中に、内部に",
+  "cat": "Preposiciones",
+  "pos": "副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Fuera",
+  "en": "Outside",
+  "ja": "外に",
+  "cat": "Preposiciones",
+  "pos": "副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Encima",
+  "en": "On top / above",
+  "ja": "上に",
+  "cat": "Preposiciones",
+  "pos": "副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Debajo",
+  "en": "Underneath",
+  "ja": "下に",
+  "cat": "Preposiciones",
+  "pos": "副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Delante",
+  "en": "In front",
+  "ja": "前に",
+  "cat": "Preposiciones",
+  "pos": "副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Detrás",
+  "en": "Behind",
+  "ja": "後ろに",
+  "cat": "Preposiciones",
+  "pos": "副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Cerca",
+  "en": "Near",
+  "ja": "近くに",
+  "cat": "Preposiciones",
+  "pos": "副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Lejos",
+  "en": "Far",
+  "ja": "遠くに",
+  "cat": "Preposiciones",
+  "pos": "副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Entre",
+  "en": "Between / among",
+  "ja": "〜の間に",
+  "cat": "Preposiciones",
+  "pos": "前置詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Desde",
+  "en": "From / since",
+  "ja": "〜から",
+  "cat": "Preposiciones",
+  "pos": "前置詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Hasta",
+  "en": "Until / up to",
+  "ja": "〜まで",
+  "cat": "Preposiciones",
+  "pos": "前置詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Durante",
+  "en": "During",
+  "ja": "〜の間",
+  "cat": "Preposiciones",
+  "pos": "前置詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Contra",
+  "en": "Against",
+  "ja": "〜に対して、〜に反して",
+  "cat": "Preposiciones",
+  "pos": "前置詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Alrededor",
+  "en": "Around",
+  "ja": "周りに、およそ",
+  "cat": "Preposiciones",
+  "pos": "副詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Todo",
+  "en": "All / everything",
+  "ja": "すべて、全部",
+  "cat": "Gramática",
+  "pos": "代名詞・形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Nada",
+  "en": "Nothing",
+  "ja": "何も〜ない",
+  "cat": "Gramática",
+  "pos": "代名詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Algo",
+  "en": "Something",
+  "ja": "何か",
+  "cat": "Gramática",
+  "pos": "代名詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Alguien",
+  "en": "Someone",
+  "ja": "誰か",
+  "cat": "Gramática",
+  "pos": "代名詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Nadie",
+  "en": "No one",
+  "ja": "誰も〜ない",
+  "cat": "Gramática",
+  "pos": "代名詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Cada",
+  "en": "Each / every",
+  "ja": "それぞれの、〜ごとに",
+  "cat": "Gramática",
+  "pos": "形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Mucho",
+  "en": "Much / a lot",
+  "ja": "たくさんの、とても",
+  "cat": "Gramática",
+  "pos": "形容詞・副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Poco",
+  "en": "Little / few",
+  "ja": "少しの、少ない",
+  "cat": "Gramática",
+  "pos": "形容詞・副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Otro",
+  "en": "Other / another",
+  "ja": "別の、もう一つの",
+  "cat": "Gramática",
+  "pos": "形容詞・代名詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Solo",
+  "en": "Alone; also 'only' (as adverb)",
+  "ja": "一人で；〜だけ（副詞のとき）",
+  "cat": "Gramática",
+  "pos": "形容詞・副詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Varios",
+  "en": "Several",
+  "ja": "いくつかの、数個の",
+  "cat": "Gramática",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Ambos",
+  "en": "Both",
+  "ja": "両方の",
+  "cat": "Gramática",
+  "pos": "形容詞・代名詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Ninguno",
+  "en": "None / neither",
+  "ja": "どれも〜ない",
+  "cat": "Gramática",
+  "pos": "代名詞・形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Cualquiera",
+  "en": "Anyone / whichever",
+  "ja": "誰でも、どれでも",
+  "cat": "Gramática",
+  "pos": "代名詞・形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Mi",
+  "en": "My",
+  "ja": "私の",
+  "cat": "Gramática",
+  "pos": "所有形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Tu",
+  "en": "Your (informal)",
+  "ja": "君の、あなたの（túに対応）",
+  "cat": "Gramática",
+  "pos": "所有形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Su",
+  "en": "His / her / your (formal) / their",
+  "ja": "彼の、彼女の、あなたの（丁寧形）、彼らの",
+  "cat": "Gramática",
+  "pos": "所有形容詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Este",
+  "en": "This",
+  "ja": "この、これ",
+  "cat": "Gramática",
+  "pos": "指示形容詞・代名詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Ese",
+  "en": "That",
+  "ja": "その、それ",
+  "cat": "Gramática",
+  "pos": "指示形容詞・代名詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Esto",
+  "en": "This (neuter, for ideas/unspecified things)",
+  "ja": "これ（中性形、特定できないものや事柄に使う）",
+  "cat": "Gramática",
+  "pos": "指示代名詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Eso",
+  "en": "That (neuter)",
+  "ja": "それ（中性形）",
+  "cat": "Gramática",
+  "pos": "指示代名詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Y",
+  "en": "And",
+  "ja": "そして、〜と",
+  "cat": "Conectores",
+  "pos": "接続詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "O",
+  "en": "Or",
+  "ja": "または、それとも",
+  "cat": "Conectores",
+  "pos": "接続詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Pero",
+  "en": "But",
+  "ja": "しかし、でも",
+  "cat": "Conectores",
+  "pos": "接続詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Porque",
+  "en": "Because",
+  "ja": "なぜなら、〜だから",
+  "cat": "Conectores",
+  "pos": "接続詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Si",
+  "en": "If",
+  "ja": "もし〜なら",
+  "cat": "Conectores",
+  "pos": "接続詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Cuál",
+  "en": "Which / what",
+  "ja": "どれ、どちら",
+  "cat": "Gramática",
+  "pos": "疑問詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Cuánto",
+  "en": "How much / how many",
+  "ja": "どれくらい、いくつ",
+  "cat": "Gramática",
+  "pos": "疑問詞",
+  "nivel": "básico"
+ },
+ {
+  "es": "Ambiguo",
+  "en": "Ambiguous",
+  "ja": "曖昧な、多義的な",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Coherente",
+  "en": "Coherent",
+  "ja": "筋の通った、一貫性のある",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Pertinente",
+  "en": "Relevant / pertinent",
+  "ja": "適切な、的を射た",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Trivial",
+  "en": "Trivial",
+  "ja": "些細な、取るに足らない",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Riguroso",
+  "en": "Rigorous",
+  "ja": "厳格な、厳密な",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Meticuloso",
+  "en": "Meticulous",
+  "ja": "几帳面な、細部まで注意深い",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Conciso",
+  "en": "Concise",
+  "ja": "簡潔な",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Sutil",
+  "en": "Subtle",
+  "ja": "微妙な、繊細な",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Implícito",
+  "en": "Implicit",
+  "ja": "暗黙の、言外の",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Explícito",
+  "en": "Explicit",
+  "ja": "明示的な、はっきりした",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Arbitrario",
+  "en": "Arbitrary",
+  "ja": "恣意的な、根拠のない",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Subjetivo",
+  "en": "Subjective",
+  "ja": "主観的な",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Imparcial",
+  "en": "Impartial",
+  "ja": "公平な、偏りのない",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Sesgado",
+  "en": "Biased",
+  "ja": "偏った、バイアスのかかった",
+  "cat": "Adjetivos",
+  "pos": "形容詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Anticipar",
+  "en": "To anticipate",
+  "ja": "予測する、先取りする",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Prever",
+  "en": "To foresee",
+  "ja": "予見する、見越す",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Vincular",
+  "en": "To link",
+  "ja": "結びつける、関連付ける",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Consolidar",
+  "en": "To consolidate",
+  "ja": "強化する、統合する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Erradicar",
+  "en": "To eradicate",
+  "ja": "根絶する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Mitigar",
+  "en": "To mitigate",
+  "ja": "緩和する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Optimizar",
+  "en": "To optimize",
+  "ja": "最適化する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Maximizar",
+  "en": "To maximize",
+  "ja": "最大化する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Minimizar",
+  "en": "To minimize",
+  "ja": "最小化する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Concebir",
+  "en": "To conceive",
+  "ja": "思い描く、着想する；妊娠する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Discernir",
+  "en": "To discern",
+  "ja": "見分ける、識別する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Obstaculizar",
+  "en": "To hinder",
+  "ja": "妨げる、阻害する",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Propiciar",
+  "en": "To foster / bring about",
+  "ja": "促す、もたらす",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Vislumbrar",
+  "en": "To glimpse / discern (something emerging)",
+  "ja": "垣間見る、うっすらと見えてくる",
+  "cat": "Verbos",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Contexto",
+  "en": "Context",
+  "ja": "文脈、状況",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Base",
+  "en": "Base / basis",
+  "ja": "土台、基盤、根拠",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Criterio",
+  "en": "Criteria / judgment",
+  "ja": "基準、判断力",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Prueba",
+  "en": "Proof / test / evidence",
+  "ja": "証拠、テスト、試験（多義語）",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Premisa",
+  "en": "Premise",
+  "ja": "前提",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Postura",
+  "en": "Stance / position; also physical 'posture'",
+  "ja": "立場、姿勢（多義語）",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Patrón",
+  "en": "Pattern; also 'boss' or 'patron saint'",
+  "ja": "パターン、模様；上司、守護聖人（多義語）",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Fundamento",
+  "en": "Foundation / basis",
+  "ja": "根拠、基礎",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Paradigma",
+  "en": "Paradigm",
+  "ja": "パラダイム、範例",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Indicio",
+  "en": "Indication / clue",
+  "ja": "手がかり、兆候",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Marco",
+  "en": "Frame / framework",
+  "ja": "枠組み、額縁",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Planteamiento",
+  "en": "Approach / proposal",
+  "ja": "提起の仕方、アプローチ",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Implicación",
+  "en": "Implication",
+  "ja": "影響、含意",
+  "cat": "Sustantivos",
+  "pos": "名詞（女性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Desenlace",
+  "en": "Outcome / ending",
+  "ja": "結末、成り行き",
+  "cat": "Sustantivos",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Por ende",
+  "en": "Therefore / thus",
+  "ja": "したがって、それゆえに",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En consecuencia",
+  "en": "Consequently",
+  "ja": "その結果として",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En efecto",
+  "en": "Indeed",
+  "ja": "実際に、その通り",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Cabe destacar",
+  "en": "It's worth noting / highlighting",
+  "ja": "特筆すべきは、注目すべきは",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En torno a",
+  "en": "Around / regarding",
+  "ja": "〜をめぐって、〜に関して",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En virtud de",
+  "en": "By virtue of",
+  "ja": "〜に基づいて、〜のおかげで",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "De antemano",
+  "en": "Beforehand",
+  "ja": "あらかじめ、前もって",
+  "cat": "Conectores",
+  "pos": "副詞句",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En última instancia",
+  "en": "Ultimately / as a last resort",
+  "ja": "最終的には、いざとなれば",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En definitiva",
+  "en": "In short / definitively",
+  "ja": "要するに、結局のところ",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Con miras a",
+  "en": "With a view to",
+  "ja": "〜を目指して、〜を見据えて",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En rigor",
+  "en": "Strictly speaking",
+  "ja": "厳密に言えば",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Dicho esto",
+  "en": "That said",
+  "ja": "そうは言っても、とはいえ",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En lo que respecta a",
+  "en": "With regard to",
+  "ja": "〜に関して言えば",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "De ahí que",
+  "en": "Hence / which is why",
+  "ja": "だからこそ、そういうわけで",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Dar una vuelta",
+  "en": "To go for a walk / stroll",
+  "ja": "散歩する、ひとまわりする",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Poner atención",
+  "en": "To pay attention",
+  "ja": "注意を払う、集中する",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Llamar la atención",
+  "en": "To catch attention / stand out",
+  "ja": "注目を集める、目立つ",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Darse cuenta",
+  "en": "To realize",
+  "ja": "気づく",
+  "cat": "Coloquial",
+  "pos": "動詞句",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Venir bien",
+  "en": "To suit / work out well",
+  "ja": "都合がいい、ちょうどいい",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Sentar bien",
+  "en": "To agree with / suit well",
+  "ja": "（体に）合う、似合う",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Sentar mal",
+  "en": "To disagree with / not suit",
+  "ja": "（体に）合わない、体調を崩す",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Costar trabajo",
+  "en": "To be hard to do",
+  "ja": "苦労する、骨が折れる",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Tener ganas",
+  "en": "To feel like (doing something)",
+  "ja": "〜したい気分だ",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Echarle ganas",
+  "en": "To put in effort (Mexican colloquial)",
+  "ja": "頑張る、気合を入れる（メキシコの口語）",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Dar lata",
+  "en": "To be a nuisance / bother (Mexican colloquial)",
+  "ja": "面倒をかける、うるさく困らせる（メキシコの口語）",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Hacer ilusión",
+  "en": "To be excited about something",
+  "ja": "楽しみにする、心が躍る",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Aprovechar el tiempo",
+  "en": "To make good use of time",
+  "ja": "時間を有効に使う",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Dar pena",
+  "en": "To feel embarrassed / to feel pity (Mexican usage)",
+  "ja": "恥ずかしい、気の毒に思う（メキシコでの使い方）",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "En cuanto",
+  "en": "As soon as",
+  "ja": "〜するとすぐに",
+  "cat": "Conectores",
+  "pos": "接続表現",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Otra vez",
+  "en": "Again",
+  "ja": "もう一度、再び",
+  "cat": "Coloquial",
+  "pos": "副詞句",
+  "nivel": "básico"
+ },
+ {
+  "es": "Al principio",
+  "en": "At first",
+  "ja": "最初は",
+  "cat": "Conectores",
+  "pos": "副詞句",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Al final",
+  "en": "In the end",
+  "ja": "最後には、結局",
+  "cat": "Conectores",
+  "pos": "副詞句",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Por fin",
+  "en": "Finally",
+  "ja": "ついに、やっと",
+  "cat": "Coloquial",
+  "pos": "副詞句",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Al menos",
+  "en": "At least",
+  "ja": "少なくとも",
+  "cat": "Coloquial",
+  "pos": "副詞句",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Pase lo que pase",
+  "en": "No matter what happens",
+  "ja": "何が起ころうと",
+  "cat": "Coloquial",
+  "pos": "表現",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "A propósito",
+  "en": "On purpose; also 'by the way'",
+  "ja": "わざと；ところで（多義語）",
+  "cat": "Coloquial",
+  "pos": "副詞句",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Por cierto",
+  "en": "By the way",
+  "ja": "ところで、そういえば",
+  "cat": "Coloquial",
+  "pos": "副詞句",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Sin querer",
+  "en": "Unintentionally / without meaning to",
+  "ja": "うっかり、わざとではなく",
+  "cat": "Coloquial",
+  "pos": "副詞句",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "En realidad",
+  "en": "Actually / in reality",
+  "ja": "実は、実際には",
+  "cat": "Coloquial",
+  "pos": "副詞句",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Por suerte",
+  "en": "Luckily",
+  "ja": "幸運にも、運良く",
+  "cat": "Coloquial",
+  "pos": "副詞句",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Por desgracia",
+  "en": "Unfortunately",
+  "ja": "不運にも、残念ながら",
+  "cat": "Coloquial",
+  "pos": "副詞句",
+  "nivel": "intermedio"
  }
 ];

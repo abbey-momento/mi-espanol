@@ -2398,6 +2398,606 @@ const VERBS = [
    "oigamos",
    "oigan"
   ]
+ },
+ {
+  "v": "llegar",
+  "regular": true,
+  "ja": "到着する",
+  "presente": [
+   "llego",
+   "llegas",
+   "llega",
+   "llegamos",
+   "llegan"
+  ],
+  "indefinido": [
+   "llegué",
+   "llegaste",
+   "llegó",
+   "llegamos",
+   "llegaron"
+  ],
+  "imperfecto": [
+   "llegaba",
+   "llegabas",
+   "llegaba",
+   "llegábamos",
+   "llegaban"
+  ],
+  "futuro": [
+   "llegaré",
+   "llegarás",
+   "llegará",
+   "llegaremos",
+   "llegarán"
+  ],
+  "condicional": [
+   "llegaría",
+   "llegarías",
+   "llegaría",
+   "llegaríamos",
+   "llegarían"
+  ],
+  "subjuntivo": [
+   "llegue",
+   "llegues",
+   "llegue",
+   "lleguemos",
+   "lleguen"
+  ],
+  "perfecto": [
+   "he llegado",
+   "has llegado",
+   "ha llegado",
+   "hemos llegado",
+   "han llegado"
+  ],
+  "imperativo": [
+   "llega",
+   "llegue",
+   "lleguemos",
+   "lleguen"
+  ]
+ },
+ {
+  "v": "llevar",
+  "regular": true,
+  "ja": "持って行く・着る",
+  "presente": [
+   "llevo",
+   "llevas",
+   "lleva",
+   "llevamos",
+   "llevan"
+  ],
+  "indefinido": [
+   "llevé",
+   "llevaste",
+   "llevó",
+   "llevamos",
+   "llevaron"
+  ],
+  "imperfecto": [
+   "llevaba",
+   "llevabas",
+   "llevaba",
+   "llevábamos",
+   "llevaban"
+  ],
+  "futuro": [
+   "llevaré",
+   "llevarás",
+   "llevará",
+   "llevaremos",
+   "llevarán"
+  ],
+  "condicional": [
+   "llevaría",
+   "llevarías",
+   "llevaría",
+   "llevaríamos",
+   "llevarían"
+  ],
+  "subjuntivo": [
+   "lleve",
+   "lleves",
+   "lleve",
+   "llevemos",
+   "lleven"
+  ],
+  "perfecto": [
+   "he llevado",
+   "has llevado",
+   "ha llevado",
+   "hemos llevado",
+   "han llevado"
+  ],
+  "imperativo": [
+   "lleva",
+   "lleve",
+   "llevemos",
+   "lleven"
+  ]
+ },
+ {
+  "v": "dejar",
+  "regular": true,
+  "ja": "置いていく・させる",
+  "presente": [
+   "dejo",
+   "dejas",
+   "deja",
+   "dejamos",
+   "dejan"
+  ],
+  "indefinido": [
+   "dejé",
+   "dejaste",
+   "dejó",
+   "dejamos",
+   "dejaron"
+  ],
+  "imperfecto": [
+   "dejaba",
+   "dejabas",
+   "dejaba",
+   "dejábamos",
+   "dejaban"
+  ],
+  "futuro": [
+   "dejaré",
+   "dejarás",
+   "dejará",
+   "dejaremos",
+   "dejarán"
+  ],
+  "condicional": [
+   "dejaría",
+   "dejarías",
+   "dejaría",
+   "dejaríamos",
+   "dejarían"
+  ],
+  "subjuntivo": [
+   "deje",
+   "dejes",
+   "deje",
+   "dejemos",
+   "dejen"
+  ],
+  "perfecto": [
+   "he dejado",
+   "has dejado",
+   "ha dejado",
+   "hemos dejado",
+   "han dejado"
+  ],
+  "imperativo": [
+   "deja",
+   "deje",
+   "dejemos",
+   "dejen"
+  ]
+ },
+ {
+  "v": "quedar",
+  "regular": true,
+  "ja": "残る・待ち合わせる",
+  "presente": [
+   "quedo",
+   "quedas",
+   "queda",
+   "quedamos",
+   "quedan"
+  ],
+  "indefinido": [
+   "quedé",
+   "quedaste",
+   "quedó",
+   "quedamos",
+   "quedaron"
+  ],
+  "imperfecto": [
+   "quedaba",
+   "quedabas",
+   "quedaba",
+   "quedábamos",
+   "quedaban"
+  ],
+  "futuro": [
+   "quedaré",
+   "quedarás",
+   "quedará",
+   "quedaremos",
+   "quedarán"
+  ],
+  "condicional": [
+   "quedaría",
+   "quedarías",
+   "quedaría",
+   "quedaríamos",
+   "quedarían"
+  ],
+  "subjuntivo": [
+   "quede",
+   "quedes",
+   "quede",
+   "quedemos",
+   "queden"
+  ],
+  "perfecto": [
+   "he quedado",
+   "has quedado",
+   "ha quedado",
+   "hemos quedado",
+   "han quedado"
+  ],
+  "imperativo": [
+   "queda",
+   "quede",
+   "quedemos",
+   "queden"
+  ]
+ },
+ {
+  "v": "empezar",
+  "regular": false,
+  "ja": "始める",
+  "presente": [
+   "empiezo",
+   "empiezas",
+   "empieza",
+   "empezamos",
+   "empiezan"
+  ],
+  "indefinido": [
+   "empecé",
+   "empezaste",
+   "empezó",
+   "empezamos",
+   "empezaron"
+  ],
+  "imperfecto": [
+   "empezaba",
+   "empezabas",
+   "empezaba",
+   "empezábamos",
+   "empezaban"
+  ],
+  "futuro": [
+   "empezaré",
+   "empezarás",
+   "empezará",
+   "empezaremos",
+   "empezarán"
+  ],
+  "condicional": [
+   "empezaría",
+   "empezarías",
+   "empezaría",
+   "empezaríamos",
+   "empezarían"
+  ],
+  "subjuntivo": [
+   "empiece",
+   "empieces",
+   "empiece",
+   "empecemos",
+   "empiecen"
+  ],
+  "perfecto": [
+   "he empezado",
+   "has empezado",
+   "ha empezado",
+   "hemos empezado",
+   "han empezado"
+  ],
+  "imperativo": [
+   "empieza",
+   "empiece",
+   "empecemos",
+   "empiecen"
+  ]
+ },
+ {
+  "v": "gustar",
+  "regular": true,
+  "ja": "気に入る",
+  "presente": [
+   "gusto",
+   "gustas",
+   "gusta",
+   "gustamos",
+   "gustan"
+  ],
+  "indefinido": [
+   "gusté",
+   "gustaste",
+   "gustó",
+   "gustamos",
+   "gustaron"
+  ],
+  "imperfecto": [
+   "gustaba",
+   "gustabas",
+   "gustaba",
+   "gustábamos",
+   "gustaban"
+  ],
+  "futuro": [
+   "gustaré",
+   "gustarás",
+   "gustará",
+   "gustaremos",
+   "gustarán"
+  ],
+  "condicional": [
+   "gustaría",
+   "gustarías",
+   "gustaría",
+   "gustaríamos",
+   "gustarían"
+  ],
+  "subjuntivo": [
+   "guste",
+   "gustes",
+   "guste",
+   "gustemos",
+   "gusten"
+  ],
+  "perfecto": [
+   "he gustado",
+   "has gustado",
+   "ha gustado",
+   "hemos gustado",
+   "han gustado"
+  ],
+  "imperativo": [
+   "gusta",
+   "guste",
+   "gustemos",
+   "gusten"
+  ]
+ },
+ {
+  "v": "encantar",
+  "regular": true,
+  "ja": "大好きにさせる",
+  "presente": [
+   "encanto",
+   "encantas",
+   "encanta",
+   "encantamos",
+   "encantan"
+  ],
+  "indefinido": [
+   "encanté",
+   "encantaste",
+   "encantó",
+   "encantamos",
+   "encantaron"
+  ],
+  "imperfecto": [
+   "encantaba",
+   "encantabas",
+   "encantaba",
+   "encantábamos",
+   "encantaban"
+  ],
+  "futuro": [
+   "encantaré",
+   "encantarás",
+   "encantará",
+   "encantaremos",
+   "encantarán"
+  ],
+  "condicional": [
+   "encantaría",
+   "encantarías",
+   "encantaría",
+   "encantaríamos",
+   "encantarían"
+  ],
+  "subjuntivo": [
+   "encante",
+   "encantes",
+   "encante",
+   "encantemos",
+   "encanten"
+  ],
+  "perfecto": [
+   "he encantado",
+   "has encantado",
+   "ha encantado",
+   "hemos encantado",
+   "han encantado"
+  ],
+  "imperativo": [
+   "encanta",
+   "encante",
+   "encantemos",
+   "encanten"
+  ]
+ },
+ {
+  "v": "doler",
+  "regular": false,
+  "ja": "痛む",
+  "presente": [
+   "duelo",
+   "dueles",
+   "duele",
+   "dolemos",
+   "duelen"
+  ],
+  "indefinido": [
+   "dolí",
+   "doliste",
+   "dolió",
+   "dolimos",
+   "dolieron"
+  ],
+  "imperfecto": [
+   "dolía",
+   "dolías",
+   "dolía",
+   "dolíamos",
+   "dolían"
+  ],
+  "futuro": [
+   "doleré",
+   "dolerás",
+   "dolerá",
+   "doleremos",
+   "dolerán"
+  ],
+  "condicional": [
+   "dolería",
+   "dolerías",
+   "dolería",
+   "doleríamos",
+   "dolerían"
+  ],
+  "subjuntivo": [
+   "duela",
+   "duelas",
+   "duela",
+   "dolamos",
+   "duelan"
+  ],
+  "perfecto": [
+   "he dolido",
+   "has dolido",
+   "ha dolido",
+   "hemos dolido",
+   "han dolido"
+  ],
+  "imperativo": [
+   "duele",
+   "duela",
+   "dolamos",
+   "duelan"
+  ]
+ },
+ {
+  "v": "tocar",
+  "regular": true,
+  "ja": "触る・（楽器を）弾く",
+  "presente": [
+   "toco",
+   "tocas",
+   "toca",
+   "tocamos",
+   "tocan"
+  ],
+  "indefinido": [
+   "toqué",
+   "tocaste",
+   "tocó",
+   "tocamos",
+   "tocaron"
+  ],
+  "imperfecto": [
+   "tocaba",
+   "tocabas",
+   "tocaba",
+   "tocábamos",
+   "tocaban"
+  ],
+  "futuro": [
+   "tocaré",
+   "tocarás",
+   "tocará",
+   "tocaremos",
+   "tocarán"
+  ],
+  "condicional": [
+   "tocaría",
+   "tocarías",
+   "tocaría",
+   "tocaríamos",
+   "tocarían"
+  ],
+  "subjuntivo": [
+   "toque",
+   "toques",
+   "toque",
+   "toquemos",
+   "toquen"
+  ],
+  "perfecto": [
+   "he tocado",
+   "has tocado",
+   "ha tocado",
+   "hemos tocado",
+   "han tocado"
+  ],
+  "imperativo": [
+   "toca",
+   "toque",
+   "toquemos",
+   "toquen"
+  ]
+ },
+ {
+  "v": "llamar",
+  "regular": true,
+  "ja": "呼ぶ・電話する",
+  "presente": [
+   "llamo",
+   "llamas",
+   "llama",
+   "llamamos",
+   "llaman"
+  ],
+  "indefinido": [
+   "llamé",
+   "llamaste",
+   "llamó",
+   "llamamos",
+   "llamaron"
+  ],
+  "imperfecto": [
+   "llamaba",
+   "llamabas",
+   "llamaba",
+   "llamábamos",
+   "llamaban"
+  ],
+  "futuro": [
+   "llamaré",
+   "llamarás",
+   "llamará",
+   "llamaremos",
+   "llamarán"
+  ],
+  "condicional": [
+   "llamaría",
+   "llamarías",
+   "llamaría",
+   "llamaríamos",
+   "llamarían"
+  ],
+  "subjuntivo": [
+   "llame",
+   "llames",
+   "llame",
+   "llamemos",
+   "llamen"
+  ],
+  "perfecto": [
+   "he llamado",
+   "has llamado",
+   "ha llamado",
+   "hemos llamado",
+   "han llamado"
+  ],
+  "imperativo": [
+   "llama",
+   "llame",
+   "llamemos",
+   "llamen"
+  ]
  }
 ];
 
@@ -7773,6 +8373,86 @@ const EXAMPLES = [
   "label": "よくある書き間違い",
   "topic": "reglas_menores",
   "note": "痛みや驚きを表す感嘆詞ayはhもアクセントもつかない。"
+ },
+ {
+  "before": "Ayer yo ",
+  "verb": "llegar",
+  "tense": "indefinido",
+  "p": 0,
+  "after": " tarde a la oficina.",
+  "ja": "昨日、私は会社に遅れて到着した。"
+ },
+ {
+  "before": "Siempre ",
+  "verb": "llevar",
+  "tense": "presente",
+  "p": 0,
+  "after": " mi paraguas cuando llueve.",
+  "ja": "雨の時はいつも傘を持って行きます。"
+ },
+ {
+  "before": "Nunca ",
+  "verb": "dejar",
+  "tense": "presente",
+  "p": 0,
+  "after": " la puerta abierta.",
+  "ja": "私は決してドアを開けたままにしません。"
+ },
+ {
+  "before": "¿A qué hora ",
+  "verb": "quedar",
+  "tense": "presente",
+  "p": 3,
+  "after": " mañana?",
+  "ja": "明日何時に待ち合わせようか？"
+ },
+ {
+  "before": "La película ",
+  "verb": "empezar",
+  "tense": "presente",
+  "p": 2,
+  "after": " a las ocho.",
+  "ja": "映画は8時に始まります。"
+ },
+ {
+  "before": "Me ",
+  "verb": "gustar",
+  "tense": "presente",
+  "p": 2,
+  "after": " mucho la música en español.",
+  "ja": "スペイン語の音楽がとても好きです。"
+ },
+ {
+  "before": "Le ",
+  "verb": "encantar",
+  "tense": "presente",
+  "p": 2,
+  "after": " viajar por el mundo.",
+  "ja": "彼は世界中を旅するのが大好きだ。"
+ },
+ {
+  "before": "Me ",
+  "verb": "doler",
+  "tense": "presente",
+  "p": 2,
+  "after": " la cabeza.",
+  "ja": "頭が痛いです。"
+ },
+ {
+  "before": "Ayer ",
+  "verb": "tocar",
+  "tense": "indefinido",
+  "p": 0,
+  "after": " la guitarra por dos horas.",
+  "ja": "昨日、2時間ギターを弾いた。"
+ },
+ {
+  "before": "Te ",
+  "verb": "llamar",
+  "tense": "futuro",
+  "p": 0,
+  "after": " en cuanto llegue.",
+  "ja": "着いたらすぐに電話するね。"
  }
 ];
 
