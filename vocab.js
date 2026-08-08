@@ -17966,5 +17966,117 @@ const VOCAB_DATA = [
   "cat": "Coloquial",
   "pos": "副詞句",
   "nivel": "intermedio"
+ },
+ {
+  "es": "Zócalo",
+  "en": "Main square (especially Mexico City's central plaza)",
+  "ja": "中央広場（特にメキシコシティの中心広場）",
+  "cat": "Sociedad",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Tequila",
+  "en": "Tequila (agave-based spirit)",
+  "ja": "テキーラ",
+  "cat": "Comida",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Mariachi",
+  "en": "Mariachi (traditional Mexican musical ensemble)",
+  "ja": "マリアッチ（伝統的なメキシコの楽団）",
+  "cat": "Sociedad",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Día de Muertos",
+  "en": "Day of the Dead",
+  "ja": "死者の日",
+  "cat": "Sociedad",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Piñata",
+  "en": "Piñata",
+  "ja": "ピニャータ（お菓子入りのくす玉）",
+  "cat": "Sociedad",
+  "pos": "名詞（女性）",
+  "nivel": "básico"
+ },
+ {
+  "es": "Posada",
+  "en": "Posada (pre-Christmas celebration)",
+  "ja": "ポサーダ（クリスマス前の伝統行事）",
+  "cat": "Sociedad",
+  "pos": "名詞（女性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Ofrenda",
+  "en": "Ofrenda (altar for the Day of the Dead)",
+  "ja": "オフレンダ（死者の日の祭壇）",
+  "cat": "Sociedad",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Papel picado",
+  "en": "Papel picado (perforated paper decoration)",
+  "ja": "パペル・ピカド（切り絵の紙飾り）",
+  "cat": "Sociedad",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Lucha libre",
+  "en": "Lucha libre (Mexican professional wrestling)",
+  "ja": "ルチャリブレ（メキシコのプロレス）",
+  "cat": "Sociedad",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Charro",
+  "en": "Charro (traditional Mexican horseman)",
+  "ja": "チャロ（伝統的なメキシコの騎手）",
+  "cat": "Sociedad",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Pulque",
+  "en": "Pulque (traditional fermented agave drink)",
+  "ja": "プルケ（伝統的な発酵アガベ酒）",
+  "cat": "Comida",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Maquiladora",
+  "en": "Maquiladora (export assembly factory)",
+  "ja": "マキラドーラ（輸出加工工場）",
+  "cat": "Sociedad",
+  "pos": "名詞（女性）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Remesas",
+  "en": "Remittances",
+  "ja": "海外送金、仕送り",
+  "cat": "Finanzas",
+  "pos": "名詞（女性・複数）",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Cempasúchil",
+  "en": "Marigold (Mexican flower used for the Day of the Dead)",
+  "ja": "センパスチル（死者の日に使われるマリーゴールド）",
+  "cat": "Naturaleza",
+  "pos": "名詞（男性）",
+  "nivel": "avanzado"
  }
 ];

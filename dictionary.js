@@ -10024,7 +10024,7 @@ const DICTIONARY_DATA = {
   }
  },
  "semáforo": {
-  "nuance": "semá（信号）+ foro（運ぶもの、光を運ぶ）の組み合わせ。",
+  "nuance": "赤・黄・青の3色で交通整理をする、道案内フレーズでも頻出する基本語。故障中はsemáforo descompuesto（信号機故障）と表現する",
   "etymology": "ギリシャ語sema（信号）+ phoros（運ぶもの）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -29702,6 +29702,150 @@ const DICTIONARY_DATA = {
   "dialogue": {
    "es": "— Por desgracia, se canceló el vuelo.\n— Qué mala suerte, justo hoy.",
    "ja": "「残念ながら、フライトがキャンセルになったんだ」「なんてついてないんだ、よりによって今日」"
+  }
+ },
+ "zócalo": {
+  "nuance": "本来は『台座』を意味する語だが、メキシコシティの中央広場を指す固有名詞として定着した。実は、19世紀に独立記念柱を建てる予定だった台座（zócalo）だけが完成し、柱自体は建たなかったため、その『台座』の名前がそのまま広場の呼び名になったという面白い経緯がある",
+  "etymology": "ラテン語socculus（小さな靴、台座）に由来",
+  "synonyms": [
+   "plaza principal（中央広場、より一般的な言い方）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Vamos a ver el Zócalo esta tarde.\n— Buena idea, dicen que es una de las plazas más grandes del mundo.",
+   "ja": "「今日の午後ソカロを見に行こう」「いい考えだね、世界最大級の広場の一つらしいよ」"
+  }
+ },
+ "tequila": {
+  "nuance": "ハリスコ州の町Tequila（テキーラ）の名前がそのままお酒の名前になった、原産地呼称で保護されているメキシコの代表的な蒸留酒。ブルーアガベという竜舌蘭の一種からのみ作られる",
+  "etymology": "ハリスコ州の地名Tequilaに由来",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El tequila de aquí es de muy buena calidad.\n— Sí, esta región es famosa por eso.",
+   "ja": "「ここのテキーラすごく質がいいね」「うん、この地域はそれで有名なんだ」"
+  }
+ },
+ "mariachi": {
+  "nuance": "トランペット、バイオリン、ギターなどで構成される伝統音楽の楽団、またその音楽ジャンル自体を指す。2011年にユネスコ無形文化遺産に登録された。誕生日や記念日に楽団を呼んで祝う習慣がある",
+  "etymology": "語源には諸説あり、フランス語mariage（結婚式）由来説もあるが定かではない",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Contratamos un mariachi para su cumpleaños.\n— ¡Qué sorpresa tan bonita le van a dar!",
+   "ja": "「彼女の誕生日にマリアッチを呼んだんだ」「なんて素敵なサプライズをあげるんだろう！」"
+  }
+ },
+ "día de muertos": {
+  "nuance": "11月1日・2日に故人を偲ぶメキシコ最大級の伝統行事。悲しむ日ではなく、故人が一時的に帰ってくると信じられていて、色鮮やかに祝う点が特徴。2008年にユネスコ無形文化遺産に登録された",
+  "etymology": "día（日）+ de（〜の）+ muertos（死者たち）の組み合わせ",
+  "synonyms": [],
+  "derived": [
+   "ofrenda（祭壇、この行事で作る）"
+  ],
+  "dialogue": {
+   "es": "— ¿Vas a poner una ofrenda para el Día de Muertos?\n— Sí, todos los años lo hago para mi abuela.",
+   "ja": "「死者の日のためにオフレンダ（祭壇）を作るの？」「うん、毎年おばあちゃんのために作ってるんだ」"
+  }
+ },
+ "piñata": {
+  "nuance": "紙で作られたくす玉の中にお菓子やおもちゃを入れ、目隠しをして棒で叩いて割る、誕生日会やお祝いの定番の遊び。星型の伝統的なピニャータは7つの角があり、それぞれが七つの大罪を象徴するという宗教的な起源を持つ",
+  "etymology": "イタリア語pignatta（土鍋）に由来",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Quién va a romper la piñata primero?\n— Que empiecen los niños más pequeños.",
+   "ja": "「誰が最初にピニャータを割る？」「一番小さい子どもたちから始めよう」"
+  }
+ },
+ "posada": {
+  "nuance": "12月16日から24日まで9日間続く、マリアとホセの宿探しの旅を再現する伝統行事。近所を練り歩き、家々を訪ねて『宿をください』と歌でやり取りし、最後にピニャータを割って祝う",
+  "etymology": "posar（宿泊する）から派生。posada自体は『宿』の意味",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Vamos a una posada esta noche.\n— ¡Qué divertido! ¿Habrá piñata?",
+   "ja": "「今夜ポサーダに行くんだ」「楽しそうだね！ピニャータはあるの？」"
+  }
+ },
+ "ofrenda": {
+  "nuance": "死者の日に故人の写真、好物、花（マリーゴールド）、ろうそくなどを飾る祭壇。魂が香りと光を頼りに家路を見つけられるようにという意味が込められている",
+  "etymology": "ofrecer（捧げる）から派生",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Esta ofrenda tiene fotos de tres generaciones.\n— Qué hermoso homenaje a tu familia.",
+   "ja": "「このオフレンダには3世代分の写真があるんだ」「家族への美しい追悼だね」"
+  }
+ },
+ "papel picado": {
+  "nuance": "薄い色紙に細かい模様を切り抜いた伝統工芸の飾り。お祝い事や死者の日の祭壇の上によく吊るされる。風にひらひら揺れる様子が、儚い命や霊魂の存在を象徴するとも言われる",
+  "etymology": "papel（紙）+ picado（穴を開けられた）の組み合わせ",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El papel picado le da mucho color a la fiesta.\n— Sí, lo hicieron a mano, ¿verdad?",
+   "ja": "「パペル・ピカドがパーティーにすごく彩りを添えてるね」「うん、手作りだよね？」"
+  }
+ },
+ "lucha libre": {
+  "nuance": "覆面（máscara）をかぶったレスラーが空中殺法を繰り出すメキシコ独自のプロレス文化。試合に負けると覆面を脱がされる『覆面剥奪マッチ』は特に注目される。選手の正体は素顔を見せるまで公にされないことが多い",
+  "etymology": "lucha（戦い）+ libre（自由な）の組み合わせ",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Alguna vez has ido a ver lucha libre?\n— No, pero siempre he querido ir.",
+   "ja": "「ルチャリブレを見に行ったことある？」「ないけど、ずっと行きたいと思ってたんだ」"
+  }
+ },
+ "charro": {
+  "nuance": "刺繍入りの装飾豊かな衣装を着た伝統的な馬術家・牧童。charrería（メキシコ流ロデオ）の担い手であり、マリアッチの衣装のモデルにもなっている、メキシコの国民的アイデンティティの象徴的存在",
+  "etymology": "語源は諸説あるが、バスク語起源説がある",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El traje de charro es impresionante.\n— Sí, tiene muchísimos detalles bordados.",
+   "ja": "「チャロの衣装ってすごいね」「うん、刺繍の細部がすごく多いんだ」"
+  }
+ },
+ "pulque": {
+  "nuance": "竜舌蘭（アガベ）の樹液を発酵させて作る、アステカ時代から飲まれてきた伝統酒。テキーラやメスカルよりも歴史が古く、乳白色でとろみのある独特の口当たりが特徴。近年若者の間で再評価されている",
+  "etymology": "起源は先スペイン期の言語に遡るとされる",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Ya probaste el pulque?\n— Sí, es una bebida muy antigua, ¿no?",
+   "ja": "「プルケもう飲んでみた？」「うん、すごく歴史の古い飲み物だよね？」"
+  }
+ },
+ "maquiladora": {
+  "nuance": "主に米国との国境地帯に集中する、部品を輸入して製品を組み立て輸出する工場。メキシコ北部の経済を支える重要な産業だが、労働条件をめぐる議論もある",
+  "etymology": "maquilar（賃加工する）から派生",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Muchas maquiladoras están cerca de la frontera.\n— Sí, generan muchos empleos en la región.",
+   "ja": "「多くのマキラドーラが国境近くにあるんだ」「うん、その地域にたくさんの雇用を生んでるよね」"
+  }
+ },
+ "remesas": {
+  "nuance": "海外で働くメキシコ人が家族に送るお金のこと。メキシコ経済にとって石油収入に匹敵するほど重要な外貨収入源になっている",
+  "etymology": "remesar（送金する）から派生",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— Las remesas son muy importantes para la economía.\n— Sí, muchas familias dependen de ellas.",
+   "ja": "「海外送金は経済にとってすごく重要なんだ」「うん、多くの家族がそれに頼ってるよね」"
+  }
+ },
+ "cempasúchil": {
+  "nuance": "死者の日の祭壇や墓を彩る鮮やかなオレンジ色の花。強い香りと色が、死者の魂をこの世に導く道しるべになると信じられている。アステカ時代から使われてきた花",
+  "etymology": "ナワトル語cempasúchitl（20の花）に由来",
+  "synonyms": [],
+  "derived": [],
+  "dialogue": {
+   "es": "— El cempasúchil llena de color el cementerio.\n— Es una tradición muy bonita.",
+   "ja": "「センパスチルが墓地を彩りで満たすんだ」「すごく美しい伝統だね」"
   }
  }
 };

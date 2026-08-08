@@ -402,6 +402,8 @@ function loadProgress(){
   data.history = data.history || [];
   data.flagged = data.flagged || {};
   data.flaggedGrammar = data.flaggedGrammar || {};
+  data.flaggedPhrases = data.flaggedPhrases || {};
+  data.hiddenPhrases = data.hiddenPhrases || {};
   data.settings = data.settings || {};
   data.usageMinutes = data.usageMinutes || {};
   if(typeof data.settings.autoplay !== "boolean") data.settings.autoplay = true;
@@ -510,7 +512,7 @@ function isActivelyStudying(){
   if(state.tab==="dict" && !!state.dictDetailWord) return true;
   if(state.tab==="grammar" && typeof grammarDetailIdx!=="undefined" && grammarDetailIdx!==null) return true;
   if(state.tab==="faq" && typeof faqDetailIdx!=="undefined" && faqDetailIdx!==null) return true;
-  if(state.tab==="phrases" && state.phraseSceneIdx!==null && state.phraseSceneIdx!==undefined) return true;
+  if(state.tab==="phrases" && (state.phraseSceneIdx!==null && state.phraseSceneIdx!==undefined || state.phraseListMode==="all")) return true;
   if(state.tab==="column" || state.tab==="news") return true;
   return false;
 }
@@ -553,13 +555,6 @@ function markResult(id, correct){
   const cur = progress.counts[id]||0;
   progress.counts[id] = correct ? Math.min(cur+1,KNOWN_THRESHOLD) : Math.max(cur-1,0);
   if(!correct){ progress.wrong = progress.wrong||{}; progress.wrong[id] = (progress.wrong[id]||0)+1; }
-  if(progress.recoverableStreak && progress.recoveryDate === todayStr()){
-    progress.recoveryProgress = (progress.recoveryProgress||0) + 1;
-    if(progress.recoveryProgress >= 5){
-      progress.streak = progress.recoverableStreak + 1;
-      progress.recoverableStreak = null; progress.recoveryDate = null; progress.recoveryProgress = 0;
-    }
-  }
   saveProgress(progress);
 }
 function vocabPool(){
@@ -722,7 +717,7 @@ function labelFor(ex, topic){
 function noteFor(ex){ return ex.verb ? TENSE_NOTES[ex.tense] : ex.note; }
 
 /* ---------- App state ---------- */
-let state = { tab:"home", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:[], dictColloquialOnly:false, dictTagFilter:null, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, phraseDetailIdx:null, phraseCardMode:"list", phraseCardLangFirst:"es", grammarRoadmapOpen:false, columnMode:"cards", faqMode:"list" };
+let state = { tab:"home", mode:"home", activeLevel:"Todos", conjTense:"Todos", conjVerbType:"all", conjSubTab:null, exTopic:"conjugacion", calendarOpen:false, dictSearch:"", dictDetailWord:null, dictFilterMode:"all", dictLevelFilter:[], dictColloquialOnly:false, dictTagFilter:null, dictShuffled:false, dictListLimit:60, dictAutoPlaying:false, grammarFlaggedOnly:false, phraseSceneIdx:null, phraseDetailIdx:null, phraseCardMode:"list", phraseCardLangFirst:"es", phraseListMode:"scenes", phraseFilterMode:"all", phraseSearch:"", phraseListLimit:60, phraseAutoPlaying:false, phraseDetailFrom:"scene", grammarRoadmapOpen:false, columnMode:"cards", faqMode:"list" };
 const app = document.getElementById("app");
 function el(tag,className,html){ const e=document.createElement(tag); if(className) e.className=className; if(html!==undefined) e.innerHTML=html; return e; }
 
@@ -768,7 +763,7 @@ function render(){
     || (state.tab==="dict" && !!state.dictDetailWord)
     || (state.tab==="grammar" && grammarDetailIdx!==null)
     || (state.tab==="faq" && faqDetailIdx!==null)
-    || (state.tab==="phrases" && state.phraseSceneIdx!==null && state.phraseSceneIdx!==undefined);
+    || (state.tab==="phrases" && (state.phraseSceneIdx!==null && state.phraseSceneIdx!==undefined || state.phraseListMode==="all"));
   if(!hideNav) app.appendChild(navBar());
   if(!hideNav && (state.tab==="vocab" || state.tab==="dict")){
     app.appendChild(renderPairToggle([["vocab","クイズ"],["dict","辞書"]]));
@@ -811,7 +806,7 @@ function render(){
     renderFaq();
   }
 }
-function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; state.phraseDetailIdx=null; phraseFlashStates=[]; phraseFlashStateIdx=-1; phraseFlashSceneIdx=null; stopDictAutoPlay(); columnDeck=[]; faqDetailIdx=null; faqFlashStates=[]; faqFlashStateIdx=-1; }
+function resetSessions(){ flashDeck=[]; quizQuestion=null; conjQuestion=null; conjMissed=[]; conjLog=[]; exDeck=[]; exMissed=[]; exLog=[]; numQuestion=null; numLog=[]; listenDeck=[]; listenQuestion=null; state.conjSubTab=null; grammarDetailIdx=null; state.calendarOpen=false; state.dictDetailWord=null; lastSpokenDictKey=null; state.detailReturnTo=null; state.phraseSceneIdx=null; state.phraseDetailIdx=null; state.phraseListMode="scenes"; phraseFlashStates=[]; phraseFlashStateIdx=-1; phraseFlashSceneIdx=null; stopDictAutoPlay(); stopPhraseAutoPlay(); columnDeck=[]; faqDetailIdx=null; faqFlashStates=[]; faqFlashStateIdx=-1; }
 const NAV_ICONS = {
   home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/><path d="M10 19v-5h4v5"/></svg>',
   vocab: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5c-.8 0-1.5-.7-1.5-1.5V5.5z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5c.8 0 1.5-.7 1.5-1.5V5.5z"/></svg>',
@@ -1042,7 +1037,7 @@ function renderHomeTab(){
     const left = Math.max(0, 5 - (progress.recoveryProgress||0));
     const recoveryHint = el("div"); recoveryHint.style.textAlign="center"; recoveryHint.style.marginTop="8px";
     recoveryHint.style.fontSize="11.5px"; recoveryHint.style.color="#FFD23F"; recoveryHint.style.fontWeight="700"; recoveryHint.style.cursor="pointer";
-    recoveryHint.textContent = `連続記録が途切れたかも？あと${left}問クイズに答えると${progress.recoverableStreak+1}日目から復活`;
+    recoveryHint.textContent = `連続記録が途切れたかも？あと${left}セット（10問）クイズをこなすと${progress.recoverableStreak+1}日目から復活`;
     recoveryHint.onclick = ()=>{ playTap(); state.tab="vocab"; state.mode="quiz"; render(); };
     app.appendChild(recoveryHint);
   }
@@ -1426,6 +1421,16 @@ function toggleHidden(id){
   if(progress.hidden[id]) delete progress.hidden[id]; else progress.hidden[id] = true;
   saveProgress(progress);
 }
+function togglePhraseFlag(key){
+  progress.flaggedPhrases = progress.flaggedPhrases || {};
+  if(progress.flaggedPhrases[key]) delete progress.flaggedPhrases[key]; else progress.flaggedPhrases[key] = true;
+  saveProgress(progress);
+}
+function togglePhraseHidden(key){
+  progress.hiddenPhrases = progress.hiddenPhrases || {};
+  if(progress.hiddenPhrases[key]) delete progress.hiddenPhrases[key]; else progress.hiddenPhrases[key] = true;
+  saveProgress(progress);
+}
 function renderDictList(){
   const wrap = document.getElementById("dict-list-wrap");
   if(!wrap) return;
@@ -1660,7 +1665,17 @@ function renderQuiz(){
   if(pool.length<4){ const w=el("div","done-wrap","<div class='done-title'>このカテゴリは単語が足りません</div>"); const b=el("button","primary-btn","戻る"); b.onclick=()=>{state.mode="home";render();}; w.appendChild(b); app.appendChild(w); return; }
   if(!quizQuestion || quizFilterKey!==filterKey){ quizFilterKey=filterKey; quizTotal=Math.min(10,pool.length); quizIdx=0; quizQuestion=buildQuestion(pool); quizPicked=null; quizScore=0; quizMissed=[]; quizLog=[]; lastSpokenQuizId=null; quizFanfarePlayed=false; }
   if(quizIdx>=quizTotal){
-    if(!quizFanfarePlayed){ quizFanfarePlayed=true; playFanfare(); }
+    if(!quizFanfarePlayed){
+      quizFanfarePlayed=true; playFanfare();
+      if(progress.recoverableStreak && progress.recoveryDate === todayStr()){
+        progress.recoveryProgress = (progress.recoveryProgress||0) + 1;
+        if(progress.recoveryProgress >= 5){
+          progress.streak = progress.recoverableStreak + 1;
+          progress.recoverableStreak = null; progress.recoveryDate = null; progress.recoveryProgress = 0;
+        }
+        saveProgress(progress);
+      }
+    }
     doneScreen("quiz", quizScore, quizTotal);
     const rl = el("div","review-list");
     rl.appendChild(el("div","section-label","まとめ（全問）"));
@@ -1786,6 +1801,74 @@ function renderConjTab(){
 let conjQuestion=null, conjIdx=0, conjTotal=10, conjScore=0, conjMissed=[], conjLog=[], lastSpokenConjKey=null, conjFanfarePlayed=false, conjFlashFlipped=false;
 let conjFlashStates=[], conjFlashStateIdx=-1;
 let phraseFlashStates=[], phraseFlashStateIdx=-1, phraseFlashSceneIdx=null, lastSpokenPhraseKey=null;
+let phraseAutoList=[], phraseAutoIdx=0, phraseAutoGen=0;
+function getPhraseFlatList(keepKey){
+  let list = [];
+  SCENARIOS.forEach((sc, si)=>{
+    sc.items.forEach((it, ii)=>{
+      list.push(Object.assign({sceneIdx:si, itemIdx:ii, sceneTitle:sc.title, sceneIcon:sc.icon}, it));
+    });
+  });
+  const keyOf = (o)=> o.sceneIdx+"|"+o.itemIdx;
+  progress.flaggedPhrases = progress.flaggedPhrases || {};
+  progress.hiddenPhrases = progress.hiddenPhrases || {};
+  if(state.phraseFilterMode==="flagged") list = list.filter(o => progress.flaggedPhrases[keyOf(o)] || keyOf(o)===keepKey);
+  else if(state.phraseFilterMode==="hidden") list = list.filter(o => progress.hiddenPhrases[keyOf(o)] || keyOf(o)===keepKey);
+  else list = list.filter(o => !progress.hiddenPhrases[keyOf(o)] || keyOf(o)===keepKey);
+  const q = normDictKey(state.phraseSearch||"");
+  if(q){
+    list = list.filter(o => normDictKey(o.es).includes(q) || normDictKey(o.ja).includes(q) || (o.en && normDictKey(o.en).includes(q)) || keyOf(o)===keepKey);
+  }
+  return list;
+}
+function startPhraseAutoPlay(){
+  const list = getPhraseFlatList();
+  if(list.length===0) return;
+  phraseAutoList = list;
+  phraseAutoIdx = 0;
+  state.phraseAutoPlaying = true;
+  requestWakeLock();
+  goToPhraseAutoItem();
+}
+function resumePhraseAutoPlay(){
+  if(phraseAutoList.length===0) return;
+  state.phraseAutoPlaying = true;
+  requestWakeLock();
+  const o = phraseAutoList[phraseAutoIdx];
+  state.phraseSceneIdx = o.sceneIdx; state.phraseDetailIdx = o.itemIdx; state.phraseDetailFrom = "all";
+  render();
+  playPhraseAutoSequence(o);
+}
+function goToPhraseAutoItem(){
+  if(phraseAutoIdx >= phraseAutoList.length) phraseAutoIdx = 0;
+  const o = phraseAutoList[phraseAutoIdx];
+  state.phraseSceneIdx = o.sceneIdx; state.phraseDetailIdx = o.itemIdx; state.phraseDetailFrom = "all";
+  render();
+  playPhraseAutoSequence(o);
+}
+function playPhraseAutoSequence(o){
+  const myGen = ++phraseAutoGen;
+  speakSeq(o.es, "es", ()=>{
+    if(myGen!==phraseAutoGen || !state.phraseAutoPlaying) return;
+    setTimeout(()=>{
+      if(myGen!==phraseAutoGen || !state.phraseAutoPlaying) return;
+      speakSeq(o.ja, "ja", ()=>{
+        if(myGen!==phraseAutoGen || !state.phraseAutoPlaying) return;
+        setTimeout(()=>{
+          if(myGen!==phraseAutoGen || !state.phraseAutoPlaying) return;
+          phraseAutoIdx++;
+          goToPhraseAutoItem();
+        }, 900);
+      });
+    }, 350);
+  });
+}
+function stopPhraseAutoPlay(){
+  phraseAutoGen++;
+  state.phraseAutoPlaying = false;
+  try{ window.speechSynthesis && window.speechSynthesis.cancel(); }catch(e){}
+  releaseWakeLock();
+}
 function buildConjQuestion(tenseFilter){
   if(tenseFilter==="imperativo_mix") tenseFilter = Math.random()<0.5 ? "imperativo" : "imperativo_neg";
   const tense = tenseFilter==="Todos" ? TENSE_KEYS[Math.floor(Math.random()*TENSE_KEYS.length)] : tenseFilter;
@@ -2452,12 +2535,17 @@ function renderPhrases(){
     app.appendChild(el("div","done-wrap","<div class='done-title'>フレーズのデータが読み込めていません</div><div class='done-sub'>phrases.js が正しくアップロードされているか確認してください</div>"));
     return;
   }
+  if(state.phraseListMode==="all"){ renderPhraseAllList(); return; }
   if(state.phraseSceneIdx===null || state.phraseSceneIdx===undefined){
     const header = el("div");
     header.appendChild(el("div","eyebrow","FRASES ÚTILES"));
     header.appendChild(el("h1","title","場面別フレーズ"));
     app.appendChild(header);
-    const spacer = el("div"); spacer.style.height="16px"; app.appendChild(spacer);
+    const allBtn = el("button","primary-btn","📋 全フレーズを一覧で見る");
+    allBtn.style.display="block"; allBtn.style.width="100%"; allBtn.style.margin="12px 0 4px";
+    allBtn.onclick = ()=>{ playTap(); state.phraseListMode="all"; render(); };
+    app.appendChild(allBtn);
+    const spacer = el("div"); spacer.style.height="12px"; app.appendChild(spacer);
     const grid = el("div","mode-grid");
     SCENARIOS.forEach((sc,i)=>{
       const card = el("button","mode-card");
@@ -2500,12 +2588,12 @@ function renderPhrases(){
     const jaLine = el("div"); jaLine.style.fontSize="13px"; jaLine.style.color="#C9BBE8"; jaLine.style.marginTop="4px"; jaLine.textContent = item.ja;
     textWrap.appendChild(jaLine);
     textWrap.style.flex="1";
-    textWrap.onclick = ()=>{ playTap(); state.phraseDetailIdx=i; render(); window.scrollTo(0,0); };
+    textWrap.onclick = ()=>{ playTap(); state.phraseDetailIdx=i; state.phraseDetailFrom="scene"; render(); window.scrollTo(0,0); };
     const speakBtn = el("button","speak-btn","🔊"); speakBtn.style.flexShrink="0";
     speakBtn.onclick = (e)=>{ e.stopPropagation(); speak(item.es); };
     row.appendChild(textWrap); row.appendChild(speakBtn);
     box.appendChild(row);
-    box.onclick = (e)=>{ if(e.target===speakBtn) return; playTap(); state.phraseDetailIdx=i; render(); window.scrollTo(0,0); };
+    box.onclick = (e)=>{ if(e.target===speakBtn) return; playTap(); state.phraseDetailIdx=i; state.phraseDetailFrom="scene"; render(); window.scrollTo(0,0); };
     app.appendChild(box);
   });
   const sceneIdx = state.phraseSceneIdx;
@@ -2516,7 +2604,24 @@ function renderPhrases(){
 function renderPhraseDetail(scene){
   const idx = state.phraseDetailIdx;
   const item = scene.items[idx];
-  app.appendChild(topBar(scene.title, "", ()=>{ state.phraseDetailIdx=null; render(); }));
+  const backFn = ()=>{
+    stopPhraseAutoPlay();
+    if(state.phraseDetailFrom==="all"){ state.phraseDetailIdx=null; state.phraseSceneIdx=null; state.phraseListMode="all"; }
+    else { state.phraseDetailIdx=null; }
+    render();
+  };
+  app.appendChild(topBar(scene.title, "", backFn));
+  if(state.phraseAutoPlaying){
+    const autoRow = el("div"); autoRow.style.display="flex"; autoRow.style.alignItems="center"; autoRow.style.justifyContent="center";
+    autoRow.style.gap="10px"; autoRow.style.marginBottom="14px";
+    const autoLabel = el("div"); autoLabel.style.fontSize="12px"; autoLabel.style.color="#C9BBE8";
+    autoLabel.textContent = `🎧 連続再生中（${phraseAutoIdx+1} / ${phraseAutoList.length}）`;
+    const pauseBtn = el("button","dict-nav-side-toggle","⏸");
+    pauseBtn.style.width="26px"; pauseBtn.style.height="26px"; pauseBtn.style.fontSize="11px";
+    pauseBtn.onclick = ()=>{ playTap(); stopPhraseAutoPlay(); render(); };
+    autoRow.appendChild(autoLabel); autoRow.appendChild(pauseBtn);
+    app.appendChild(autoRow);
+  }
   const header = el("div","dict-detail-header");
   header.innerHTML = `<div class="dict-detail-es" style="font-size:22px;">${item.es}</div>
     <div class="dict-detail-en-ja">${item.en ? item.en+" ／ "+item.ja : item.ja}</div>`;
@@ -2524,13 +2629,23 @@ function renderPhraseDetail(scene){
   const phraseKey = state.phraseSceneIdx+"|"+idx;
   if(lastSpokenPhraseDetailKey !== phraseKey){
     lastSpokenPhraseDetailKey = phraseKey;
-    if(progress.settings && progress.settings.autoplay) setTimeout(()=>speak(item.es), 150);
+    if(!state.phraseAutoPlaying && progress.settings && progress.settings.autoplay) setTimeout(()=>speak(item.es), 150);
   }
-  const speakRow = el("div"); speakRow.style.textAlign="center"; speakRow.style.margin="10px 0 4px";
+  const speakRow = el("div"); speakRow.style.textAlign="center"; speakRow.style.margin="10px 0 4px"; speakRow.style.display="flex"; speakRow.style.justifyContent="center"; speakRow.style.gap="10px";
   const speakBtn = el("button","speak-btn","🔊");
   speakBtn.onclick = ()=> speak(item.es);
-  speakRow.appendChild(speakBtn);
+  const isPhraseFlagged = !!(progress.flaggedPhrases && progress.flaggedPhrases[phraseKey]);
+  const flagBtn = el("button","speak-btn", isPhraseFlagged ? "⭐" : "☆");
+  flagBtn.onclick = ()=>{ playTap(); togglePhraseFlag(phraseKey); render(); };
+  const isPhraseHidden = !!(progress.hiddenPhrases && progress.hiddenPhrases[phraseKey]);
+  const hideBtn = el("button","speak-btn", isPhraseHidden ? "🙈" : "🙉");
+  hideBtn.title = isPhraseHidden ? "非表示リストから戻す" : "簡単すぎるので非表示にする";
+  hideBtn.onclick = ()=>{ playTap(); togglePhraseHidden(phraseKey); render(); };
+  speakRow.appendChild(speakBtn); speakRow.appendChild(flagBtn); speakRow.appendChild(hideBtn);
   app.appendChild(speakRow);
+  if(isPhraseHidden){
+    app.appendChild(el("div","footer-hint","このフレーズは非表示リストに入っています（一覧には表示されません）"));
+  }
   const spacer = el("div"); spacer.style.height="10px"; app.appendChild(spacer);
   if(item.note){
     app.appendChild(el("div","dict-section-title","ひとことポイント"));
@@ -2558,6 +2673,74 @@ function renderPhraseDetail(scene){
   const onPrev = idx>0 ? ()=>{ playTap(); state.phraseDetailIdx=idx-1; render(); window.scrollTo(0,0); } : null;
   const onNext = idx<scene.items.length-1 ? ()=>{ playTap(); state.phraseDetailIdx=idx+1; render(); window.scrollTo(0,0); } : null;
   app.appendChild(buildFloatingNav("← 前のフレーズ", "次のフレーズ →", onPrev, onNext));
+}
+function renderPhraseAllList(){
+  if(state.phraseSceneIdx!==null && state.phraseSceneIdx!==undefined && state.phraseDetailIdx!==null && state.phraseDetailIdx!==undefined){
+    renderPhraseDetail(SCENARIOS[state.phraseSceneIdx]);
+    return;
+  }
+  app.appendChild(topBar("全フレーズ", "", ()=>{ playTap(); stopPhraseAutoPlay(); state.phraseListMode="scenes"; render(); }));
+  const search = el("input","dict-search");
+  search.setAttribute("type","text"); search.setAttribute("placeholder","フレーズを検索（スペイン語・日本語）…");
+  search.value = state.phraseSearch||"";
+  search.oninput = (e)=>{ state.phraseSearch = e.target.value; state.phraseListLimit=60; renderPhraseAllListInner(); };
+  app.appendChild(search);
+  const chipRow = el("div","chip-row");
+  [["all","すべて"],["flagged","⭐ フラグのみ"],["hidden","🙈 非表示リスト"]].forEach(([mode,label])=>{
+    const chip = el("button","chip"+(state.phraseFilterMode===mode?" active":""), label);
+    chip.onclick = ()=>{ playTap(); state.phraseFilterMode=mode; state.phraseListLimit=60; render(); };
+    chipRow.appendChild(chip);
+  });
+  app.appendChild(chipRow);
+  if(phraseAutoList.length>0 && !state.phraseAutoPlaying){
+    const resumeBtn = el("button","primary-btn",`▶️ 続きから聞き流す（${phraseAutoIdx+1}/${phraseAutoList.length}）`);
+    resumeBtn.style.display="block"; resumeBtn.style.width="100%"; resumeBtn.style.margin="4px 0 8px";
+    resumeBtn.onclick = ()=>{ playTap(); resumePhraseAutoPlay(); };
+    app.appendChild(resumeBtn);
+  }
+  const autoPlayBtn = el("button","primary-btn","🎧 連続聞き流し");
+  autoPlayBtn.style.display="block"; autoPlayBtn.style.width="100%"; autoPlayBtn.style.margin="4px 0 14px";
+  autoPlayBtn.onclick = ()=>{ playTap(); startPhraseAutoPlay(); };
+  app.appendChild(autoPlayBtn);
+  const listWrap = el("div"); listWrap.id="phrase-all-list-wrap";
+  app.appendChild(listWrap);
+  renderPhraseAllListInner();
+}
+function renderPhraseAllListInner(){
+  const wrap = document.getElementById("phrase-all-list-wrap");
+  if(!wrap) return;
+  wrap.innerHTML = "";
+  const full = getPhraseFlatList();
+  const list = full.slice(0, state.phraseListLimit||60);
+  if(list.length===0){
+    const emptyMsg = state.phraseFilterMode==="flagged" ? "まだフラグを立てたフレーズがありません" : (state.phraseFilterMode==="hidden" ? "非表示にしたフレーズはありません" : "一致するフレーズが見つかりませんでした");
+    wrap.appendChild(el("div","dict-pending", emptyMsg));
+    return;
+  }
+  list.forEach(o=>{
+    const key = o.sceneIdx+"|"+o.itemIdx;
+    const isFlagged = !!(progress.flaggedPhrases && progress.flaggedPhrases[key]);
+    const item = el("div","dict-item");
+    const textWrap = el("div");
+    textWrap.innerHTML = `<div class="dict-item-es">${o.es}</div><div class="dict-item-ja">${o.ja}</div><div style="font-size:10.5px;color:#8A7AAE;margin-top:2px;">${o.sceneIcon} ${o.sceneTitle}</div>`;
+    const rightWrap = el("div"); rightWrap.style.display="flex"; rightWrap.style.alignItems="center"; rightWrap.style.gap="8px";
+    const starBtn = el("button","speak-btn", isFlagged ? "⭐" : "☆");
+    starBtn.style.flexShrink="0";
+    starBtn.onclick = (e)=>{ e.stopPropagation(); playTap(); togglePhraseFlag(key); renderPhraseAllListInner(); };
+    rightWrap.appendChild(starBtn);
+    rightWrap.appendChild(el("div","grammar-chevron","›"));
+    item.appendChild(textWrap); item.appendChild(rightWrap);
+    item.onclick = ()=>{ playTap(); state.phraseSceneIdx=o.sceneIdx; state.phraseDetailIdx=o.itemIdx; state.phraseDetailFrom="all"; render(); window.scrollTo(0,0); };
+    wrap.appendChild(item);
+  });
+  if(full.length > list.length){
+    const moreBtn = el("button","ghost-btn", `もっと見る（残り${full.length-list.length}件）`);
+    moreBtn.style.display="block"; moreBtn.style.width="100%"; moreBtn.style.margin="10px auto 0";
+    moreBtn.onclick = ()=>{ playTap(); state.phraseListLimit=(state.phraseListLimit||60)+60; renderPhraseAllListInner(); };
+    wrap.appendChild(moreBtn);
+  } else if(!state.phraseSearch && state.phraseFilterMode==="all"){
+    wrap.appendChild(el("div","footer-hint", `全${full.length}フレーズを表示中。`));
+  }
 }
 function phraseFlashStep(scene){
   const cur = phraseFlashStates[phraseFlashStateIdx];
