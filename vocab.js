@@ -9369,80 +9369,80 @@ const VOCAB_DATA = [
  },
  {
   "es": "Chamba",
-  "en": "Job / work (colloquial)",
-  "ja": "仕事（口語）",
+  "en": "Job / work",
+  "ja": "仕事",
   "cat": "Coloquial",
   "nivel": "avanzado",
   "pos": "俗語"
  },
  {
   "es": "Güey",
-  "en": "Dude / mate (very casual, Mexican)",
-  "ja": "お前・やつ（親しい間柄限定、メキシコの口語）",
+  "en": "Dude / mate (very casual)",
+  "ja": "お前・やつ（親しい間柄限定）",
   "cat": "Coloquial",
   "nivel": "avanzado",
   "pos": "俗語"
  },
  {
   "es": "Neta",
-  "en": "Really / the truth (colloquial)",
-  "ja": "マジで・本当のこと（口語）",
+  "en": "Really / the truth",
+  "ja": "マジで・本当のこと",
   "cat": "Coloquial",
   "nivel": "avanzado",
   "pos": "俗語"
  },
  {
   "es": "Chido",
-  "en": "Cool / awesome (Mexican)",
-  "ja": "かっこいい・いいね（メキシコの口語）",
+  "en": "Cool / awesome",
+  "ja": "かっこいい・いいね",
   "cat": "Coloquial",
   "nivel": "avanzado",
   "pos": "俗語"
  },
  {
   "es": "No manches",
-  "en": "No way! (colloquial, Mexican)",
-  "ja": "うそでしょ・まさか（メキシコの口語）",
+  "en": "No way!",
+  "ja": "うそでしょ・まさか",
   "cat": "Coloquial",
   "nivel": "avanzado",
   "pos": "表現"
  },
  {
   "es": "¿Qué onda?",
-  "en": "What's up? (Mexican)",
-  "ja": "調子どう？（メキシコの口語）",
+  "en": "What's up?",
+  "ja": "調子どう？",
   "cat": "Coloquial",
   "nivel": "avanzado",
   "pos": "表現"
  },
  {
   "es": "Feria",
-  "en": "Money / change (Mexican colloquial)",
-  "ja": "お金・小銭（メキシコの口語）",
+  "en": "Money / change",
+  "ja": "お金・小銭",
   "cat": "Coloquial",
   "nivel": "avanzado",
   "pos": "俗語"
  },
  {
   "es": "Crudo",
-  "en": "Hungover (colloquial)",
-  "ja": "二日酔いの（口語）",
+  "en": "Hungover",
+  "ja": "二日酔いの",
   "cat": "Coloquial",
   "nivel": "avanzado",
   "pos": "俗語"
  },
  {
   "es": "Echar la hueva",
-  "en": "To laze around (Mexican colloquial)",
-  "ja": "だらだらする・サボる（メキシコの口語）",
+  "en": "To laze around",
+  "ja": "だらだらする・サボる",
   "cat": "Coloquial",
   "nivel": "avanzado",
   "pos": "表現"
  },
  {
   "es": "Órale",
-  "en": "Wow! / Come on! (Mexican)",
-  "ja": "おおっ！さあ！（メキシコの口語）",
+  "en": "Wow! / Come on!",
+  "ja": "おおっ！さあ！",
   "cat": "Coloquial",
   "nivel": "avanzado",
   "pos": "俗語"
@@ -10103,8 +10103,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "La colonia",
-  "en": "Neighborhood (Mexican term)",
-  "ja": "コロニア（メキシコでの「地区・町内」の呼び方）",
+  "en": "Neighborhood",
+  "ja": "地区・町内",
   "cat": "Lugares",
   "pos": "名詞（女性）"
  },
@@ -10117,22 +10117,22 @@ const VOCAB_DATA = [
  },
  {
   "es": "La banqueta",
-  "en": "Sidewalk (Mexican term)",
-  "ja": "バンケタ（メキシコでの「歩道」の呼び方）",
+  "en": "Sidewalk",
+  "ja": "歩道",
   "cat": "Lugares",
   "pos": "名詞（女性）"
  },
  {
   "es": "La alberca",
-  "en": "Swimming pool (Mexican term)",
-  "ja": "アルベルカ（メキシコでの「プール」の呼び方）",
+  "en": "Swimming pool",
+  "ja": "プール",
   "cat": "Casa",
   "pos": "名詞（女性）"
  },
  {
   "es": "El popote",
-  "en": "Drinking straw (Mexican term)",
-  "ja": "ポポテ（メキシコでの「ストロー」の呼び方）",
+  "en": "Drinking straw",
+  "ja": "ストロー",
   "cat": "Cocina",
   "pos": "名詞（男性）"
  },
@@ -10180,8 +10180,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "La chela",
-  "en": "Beer (colloquial)",
-  "ja": "ビール（口語）",
+  "en": "Beer",
+  "ja": "ビール",
   "cat": "Coloquial",
   "pos": "名詞（女性）"
  },
@@ -10208,14 +10208,14 @@ const VOCAB_DATA = [
  },
  {
   "es": "La cuota",
-  "en": "Toll fee (Mexican term)",
+  "en": "Toll fee",
   "ja": "通行料金",
   "cat": "Transporte",
   "pos": "名詞（女性）"
  },
  {
   "es": "La carretera libre",
-  "en": "Toll-free road (Mexican term)",
+  "en": "Toll-free road",
   "ja": "無料道路",
   "cat": "Transporte",
   "pos": "名詞（女性）"
@@ -10250,7 +10250,7 @@ const VOCAB_DATA = [
  },
  {
   "es": "La tenencia",
-  "en": "Vehicle tax (Mexican term)",
+  "en": "Vehicle tax",
   "ja": "自動車税",
   "cat": "Transporte",
   "pos": "名詞（女性）"
@@ -10271,7 +10271,7 @@ const VOCAB_DATA = [
  },
  {
   "es": "El tope",
-  "en": "Speed bump (Mexican term)",
+  "en": "Speed bump",
   "ja": "減速バンプ",
   "cat": "Transporte",
   "pos": "名詞（男性）"
@@ -10313,7 +10313,7 @@ const VOCAB_DATA = [
  },
  {
   "es": "La ponchadura",
-  "en": "Flat tire (Mexican term)",
+  "en": "Flat tire",
   "ja": "パンク",
   "cat": "Transporte",
   "pos": "名詞（女性）"
@@ -10327,113 +10327,113 @@ const VOCAB_DATA = [
  },
  {
   "es": "El segundo piso",
-  "en": "Elevated highway (Mexico City term)",
-  "ja": "高架高速道路（メキシコシティの二階建て道路）",
+  "en": "Elevated highway",
+  "ja": "高架高速道路",
   "cat": "Transporte",
   "pos": "名詞（男性）"
  },
  {
   "es": "Chafa",
-  "en": "Cheap / low quality (colloquial)",
-  "ja": "安っぽい・質の悪い（口語）",
+  "en": "Cheap / low quality",
+  "ja": "安っぽい・質の悪い",
   "cat": "Coloquial",
   "pos": "俗語"
  },
  {
   "es": "A huevo",
-  "en": "For sure / definitely (colloquial)",
-  "ja": "絶対に・当然（口語）",
+  "en": "For sure / definitely",
+  "ja": "絶対に・当然",
   "cat": "Coloquial",
   "pos": "表現"
  },
  {
   "es": "Simón",
-  "en": "Yes (colloquial)",
-  "ja": "うん（口語のはい）",
+  "en": "Yes",
+  "ja": "うん",
   "cat": "Coloquial",
   "pos": "俗語"
  },
  {
   "es": "Nel",
-  "en": "No (colloquial)",
-  "ja": "いや（口語のいいえ）",
+  "en": "No",
+  "ja": "いや",
   "cat": "Coloquial",
   "pos": "俗語"
  },
  {
   "es": "Sale",
-  "en": "Okay / deal (colloquial)",
-  "ja": "オーケー・決まり（口語）",
+  "en": "Okay / deal",
+  "ja": "オーケー・決まり",
   "cat": "Coloquial",
   "pos": "俗語"
  },
  {
   "es": "Híjole",
-  "en": "Wow / oh no (exclamation)",
-  "ja": "うわあ・げっ（口語の間投詞）",
+  "en": "Wow / oh no",
+  "ja": "うわあ・げっ",
   "cat": "Coloquial",
   "pos": "俗語"
  },
  {
   "es": "El chavo",
-  "en": "Kid / young guy (colloquial)",
-  "ja": "若者・少年（口語）",
+  "en": "Kid / young guy",
+  "ja": "若者・少年",
   "cat": "Coloquial",
   "pos": "名詞（男性）"
  },
  {
   "es": "La chava",
-  "en": "Kid / young girl (colloquial)",
-  "ja": "若者・少女（口語）",
+  "en": "Kid / young girl",
+  "ja": "若者・少女",
   "cat": "Coloquial",
   "pos": "名詞（女性）"
  },
  {
   "es": "El compa",
-  "en": "Buddy (colloquial, short for compadre)",
-  "ja": "相棒（口語、compadreの略）",
+  "en": "Buddy",
+  "ja": "相棒",
   "cat": "Coloquial",
   "pos": "名詞（男性）"
  },
  {
   "es": "Carnal",
-  "en": "Close friend / bro (colloquial)",
-  "ja": "親友・兄弟のような仲（口語）",
+  "en": "Close friend / bro",
+  "ja": "親友・兄弟のような仲",
   "cat": "Coloquial",
   "pos": "俗語"
  },
  {
   "es": "Al chile",
-  "en": "Seriously / honestly (colloquial)",
-  "ja": "マジで・正直言うと（口語）",
+  "en": "Seriously / honestly",
+  "ja": "マジで・正直言うと",
   "cat": "Coloquial",
   "pos": "表現"
  },
  {
   "es": "La troca",
-  "en": "Pickup truck (colloquial)",
-  "ja": "トラック（口語、英語truckから）",
+  "en": "Pickup truck",
+  "ja": "トラック",
   "cat": "Coloquial",
   "pos": "名詞（女性）"
  },
  {
   "es": "La banda",
-  "en": "The crew / friends (colloquial)",
-  "ja": "仲間たち（口語）",
+  "en": "The crew / friends",
+  "ja": "仲間たち",
   "cat": "Coloquial",
   "pos": "名詞（女性）"
  },
  {
   "es": "El rollo",
-  "en": "The situation / deal (colloquial)",
-  "ja": "事情・話（口語）",
+  "en": "The situation / deal",
+  "ja": "事情・話",
   "cat": "Coloquial",
   "pos": "名詞（男性）"
  },
  {
   "es": "El desmadre",
-  "en": "Mess / chaos (colloquial)",
-  "ja": "めちゃくちゃな状況（口語）",
+  "en": "Mess / chaos",
+  "ja": "めちゃくちゃな状況",
   "cat": "Coloquial",
   "pos": "名詞（男性）"
  },
@@ -10447,35 +10447,35 @@ const VOCAB_DATA = [
  {
   "es": "Sacar la vuelta",
   "en": "To dodge / avoid someone or something",
-  "ja": "避ける・逃げる（口語）",
+  "ja": "避ける・逃げる",
   "cat": "Coloquial",
   "pos": "表現"
  },
  {
   "es": "Ni modo",
   "en": "Oh well / nothing to be done",
-  "ja": "仕方ない（口語）",
+  "ja": "仕方ない",
   "cat": "Coloquial",
   "pos": "表現"
  },
  {
   "es": "A poco",
-  "en": "Really? / No way (colloquial)",
-  "ja": "まさか・本当に？（口語）",
+  "en": "Really? / No way",
+  "ja": "まさか・本当に？",
   "cat": "Coloquial",
   "pos": "表現"
  },
  {
   "es": "En chinga",
-  "en": "In a hurry / quickly (colloquial)",
-  "ja": "大急ぎで（口語）",
+  "en": "In a hurry / quickly",
+  "ja": "大急ぎで",
   "cat": "Coloquial",
   "pos": "表現"
  },
  {
   "es": "Fifí",
-  "en": "Posh / snobbish (colloquial)",
-  "ja": "お高くとまった（口語）",
+  "en": "Posh / snobbish",
+  "ja": "お高くとまった",
   "cat": "Coloquial",
   "pos": "俗語"
  },
@@ -12812,8 +12812,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Coger",
-  "en": "To grab, take (careful: vulgar in some countries)",
-  "ja": "つかむ・取る（地域によって卑語になるので注意）",
+  "en": "To grab, take (careful in some regions)",
+  "ja": "つかむ・取る（地域によっては要注意）",
   "cat": "Verbos",
   "pos": "動詞"
  },
@@ -12896,8 +12896,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Vale",
-  "en": "Okay (Spain)",
-  "ja": "オーケー（スペインの口語）",
+  "en": "Okay",
+  "ja": "オーケー",
   "cat": "Coloquial",
   "pos": "俗語"
  },
@@ -12952,8 +12952,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Ándale",
-  "en": "Come on / Hurry up (Mexican)",
-  "ja": "さあ行こう・急いで（メキシコの口語）",
+  "en": "Come on / Hurry up",
+  "ja": "さあ行こう・急いで",
   "cat": "Coloquial",
   "pos": "俗語"
  },
@@ -13463,8 +13463,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "La junta",
-  "en": "Meeting (Mexican term)",
-  "ja": "会議（メキシコの言い方）",
+  "en": "Meeting",
+  "ja": "会議",
   "cat": "Trabajo",
   "pos": "名詞（女性）"
  },
@@ -14793,16 +14793,16 @@ const VOCAB_DATA = [
  },
  {
   "es": "Ahorita",
-  "en": "Right now / in a bit (ambiguous timing, colloquial)",
-  "ja": "今すぐ／ちょっと後で（文脈次第、口語）",
+  "en": "Right now / in a bit",
+  "ja": "今すぐ／ちょっと後で",
   "cat": "Coloquial",
   "pos": "副詞",
   "nivel": "avanzado"
  },
  {
   "es": "Onda",
-  "en": "Vibe / thing (colloquial)",
-  "ja": "雰囲気・感じ・こと（口語）",
+  "en": "Vibe / thing",
+  "ja": "雰囲気・感じ・こと",
   "cat": "Coloquial",
   "pos": "名詞（女性）",
   "nivel": "avanzado"
@@ -14833,48 +14833,48 @@ const VOCAB_DATA = [
  },
  {
   "es": "Compadre",
-  "en": "Godfather-in-law relationship; close friend (colloquial)",
-  "ja": "代父同士の関係、または親しい友人（口語）",
+  "en": "Godfather-in-law relationship; close friend",
+  "ja": "代父同士の関係、または親しい友人",
   "cat": "Sociedad",
   "pos": "名詞（男性）",
   "nivel": "avanzado"
  },
  {
   "es": "Chilango",
-  "en": "Person from Mexico City (colloquial)",
-  "ja": "メキシコシティ出身の人（口語、時にからかい混じり）",
+  "en": "Person from Mexico City",
+  "ja": "メキシコシティ出身の人",
   "cat": "Sociedad",
   "pos": "名詞・形容詞",
   "nivel": "avanzado"
  },
  {
   "es": "Tantito",
-  "en": "A little bit (colloquial diminutive)",
-  "ja": "ちょっとだけ（口語的な指小形）",
+  "en": "A little bit",
+  "ja": "ちょっとだけ",
   "cat": "Coloquial",
   "pos": "副詞",
   "nivel": "avanzado"
  },
  {
   "es": "Cuate",
-  "en": "Buddy / friend (Mexican colloquial)",
-  "ja": "友達・相棒（メキシコの口語）",
+  "en": "Buddy / friend",
+  "ja": "友達・相棒",
   "cat": "Coloquial",
   "pos": "名詞（男性）",
   "nivel": "avanzado"
  },
  {
   "es": "Aguas",
-  "en": "Watch out! (Mexican colloquial warning)",
-  "ja": "危ない！気をつけて！（メキシコの口語）",
+  "en": "Watch out!",
+  "ja": "危ない！気をつけて！",
   "cat": "Coloquial",
   "pos": "感嘆詞",
   "nivel": "avanzado"
  },
  {
   "es": "Checar",
-  "en": "To check (colloquial)",
-  "ja": "確認する・チェックする（口語）",
+  "en": "To check",
+  "ja": "確認する・チェックする",
   "cat": "Coloquial",
   "pos": "動詞",
   "nivel": "intermedio"
@@ -14889,16 +14889,16 @@ const VOCAB_DATA = [
  },
  {
   "es": "Ratito",
-  "en": "A little while (colloquial diminutive)",
-  "ja": "ちょっとの間（口語的な指小形）",
+  "en": "A little while",
+  "ja": "ちょっとの間",
   "cat": "Coloquial",
   "pos": "名詞（男性）",
   "nivel": "intermedio"
  },
  {
   "es": "Chamaco",
-  "en": "Kid / child (Mexican colloquial)",
-  "ja": "子ども・ガキ（メキシコの口語）",
+  "en": "Kid / child",
+  "ja": "子ども・ガキ",
   "cat": "Coloquial",
   "pos": "名詞（男性）",
   "nivel": "avanzado"
@@ -14913,8 +14913,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Súper",
-  "en": "Super- (intensifier prefix, colloquial)",
-  "ja": "超〜（強調の接頭辞、口語）",
+  "en": "Super-",
+  "ja": "超〜",
   "cat": "Coloquial",
   "pos": "副詞",
   "nivel": "intermedio"
@@ -15257,8 +15257,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Vacilar",
-  "en": "To hesitate; to joke around (Mexican colloquial)",
-  "ja": "ためらう；からかう・冗談を言う（メキシコの口語）",
+  "en": "To hesitate; to joke around",
+  "ja": "ためらう；からかう・冗談を言う",
   "cat": "Verbos",
   "pos": "動詞",
   "nivel": "avanzado"
@@ -15401,8 +15401,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Actualmente",
-  "en": "Currently (false friend: NOT 'actually')",
-  "ja": "現在は、今のところ（英語のactuallyとは意味が違う要注意単語）",
+  "en": "Currently",
+  "ja": "現在は、今のところ",
   "cat": "Adverbios",
   "pos": "副詞",
   "nivel": "intermedio"
@@ -16129,8 +16129,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Cobija",
-  "en": "Blanket (Mexican Spanish)",
-  "ja": "毛布（メキシコでよく使う言い方）",
+  "en": "Blanket",
+  "ja": "毛布",
   "cat": "Casa",
   "pos": "名詞（女性）",
   "nivel": "intermedio"
@@ -16225,8 +16225,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Carro",
-  "en": "Car (Mexican/Latin American Spanish)",
-  "ja": "車（メキシコ・中南米での言い方）",
+  "en": "Car",
+  "ja": "車",
   "cat": "Transporte",
   "pos": "名詞（男性）",
   "nivel": "básico"
@@ -16657,8 +16657,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Flojo",
-  "en": "Lazy (Mexican colloquial)",
-  "ja": "怠け者の（メキシコの口語）",
+  "en": "Lazy",
+  "ja": "怠け者の",
   "cat": "Coloquial",
   "pos": "形容詞",
   "nivel": "avanzado"
@@ -16761,8 +16761,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Recámara",
-  "en": "Bedroom (Mexican Spanish)",
-  "ja": "寝室（メキシコでの言い方）",
+  "en": "Bedroom",
+  "ja": "寝室",
   "cat": "Casa",
   "pos": "名詞（女性）",
   "nivel": "básico"
@@ -16793,8 +16793,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Regadera",
-  "en": "Shower (Mexican Spanish)",
-  "ja": "シャワー（メキシコでの言い方）",
+  "en": "Shower",
+  "ja": "シャワー",
   "cat": "Casa",
   "pos": "名詞（女性）",
   "nivel": "básico"
@@ -17825,16 +17825,16 @@ const VOCAB_DATA = [
  },
  {
   "es": "Echarle ganas",
-  "en": "To put in effort (Mexican colloquial)",
-  "ja": "頑張る、気合を入れる（メキシコの口語）",
+  "en": "To put in effort",
+  "ja": "頑張る、気合を入れる",
   "cat": "Coloquial",
   "pos": "表現",
   "nivel": "avanzado"
  },
  {
   "es": "Dar lata",
-  "en": "To be a nuisance / bother (Mexican colloquial)",
-  "ja": "面倒をかける、うるさく困らせる（メキシコの口語）",
+  "en": "To be a nuisance / bother",
+  "ja": "面倒をかける、うるさく困らせる",
   "cat": "Coloquial",
   "pos": "表現",
   "nivel": "avanzado"
@@ -17857,8 +17857,8 @@ const VOCAB_DATA = [
  },
  {
   "es": "Dar pena",
-  "en": "To feel embarrassed / to feel pity (Mexican usage)",
-  "ja": "恥ずかしい、気の毒に思う（メキシコでの使い方）",
+  "en": "To feel embarrassed / to feel pity",
+  "ja": "恥ずかしい、気の毒に思う",
   "cat": "Coloquial",
   "pos": "表現",
   "nivel": "avanzado"
@@ -18078,5 +18078,45 @@ const VOCAB_DATA = [
   "cat": "Naturaleza",
   "pos": "名詞（男性）",
   "nivel": "avanzado"
+ },
+ {
+  "es": "Cacerola",
+  "en": "Saucepan",
+  "ja": "片手鍋・両手鍋",
+  "cat": "Cocina",
+  "pos": "名詞（女性）",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Adobar",
+  "en": "To marinate (Mexican style, typically with chile paste)",
+  "ja": "アドボ（チリペーストなど）で下味をつける",
+  "cat": "Cocina",
+  "pos": "動詞",
+  "nivel": "avanzado"
+ },
+ {
+  "es": "Seguro",
+  "en": "Insurance; also 'safe' or 'sure' as an adjective",
+  "ja": "保険；安全な・確実な（形容詞としても使う多義語）",
+  "cat": "Finanzas",
+  "pos": "名詞（男性）・形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Templado",
+  "en": "Mild / temperate (climate); also lukewarm (for liquids)",
+  "ja": "温暖な（気候）；ぬるい（液体、tibioとほぼ同義）",
+  "cat": "Naturaleza",
+  "pos": "形容詞",
+  "nivel": "intermedio"
+ },
+ {
+  "es": "Lino",
+  "en": "Linen",
+  "ja": "麻・リネン",
+  "cat": "Ropa",
+  "pos": "名詞（男性）",
+  "nivel": "intermedio"
  }
 ];

@@ -2766,7 +2766,7 @@ const DICTIONARY_DATA = {
   }
  },
  "amable": {
-  "nuance": "人柄を褒めるときによく使われる。",
+  "nuance": "人柄を褒めるときによく使われる形容詞。simpático（感じがいい、一緒にいて楽しい）とは違い、amableは『親切・思いやりがある』という行動面の優しさを指す点で区別される",
   "etymology": "ラテン語amabilis（愛すべき）に由来。",
   "synonyms": [
    "gentil（親切な、丁寧な）"
@@ -2959,9 +2959,11 @@ const DICTIONARY_DATA = {
   }
  },
  "pierna": {
-  "nuance": "動物の脚にも使うが、鶏肉などの「もも肉」の意味にもなる。",
+  "nuance": "人間の『脚』を指すpiernaに対し、動物や家具の『脚』はpataと呼ぶ、日本語にはない使い分けがある。鶏の脚肉（もも肉）を指すpierna de polloのような料理用語でも使われる",
   "etymology": "俗ラテン語perna（もも肉、脚）に由来。",
-  "synonyms": [],
+  "synonyms": [
+   "pata（動物・家具の脚、区別される）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— Me duelen las piernas después de correr.\n— Deberías estirar antes y después.",
@@ -3088,9 +3090,11 @@ const DICTIONARY_DATA = {
   }
  },
  "uña": {
-  "nuance": "comerse las uñas（爪を噛む）はよくある癖を表す表現。",
+  "nuance": "comerse las uñas（爪を噛む）はよくある癖を表す表現。人間の爪はuña、猛獣の『鉤爪』はgarra、動物の『足』全般はpataと呼び分ける",
   "etymology": "ラテン語ungula（爪、蹄）に由来。",
-  "synonyms": [],
+  "synonyms": [
+   "garra（猛獣の鉤爪、区別される）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— Tienes las uñas muy bien pintadas.\n— Gracias, fui al salón ayer.",
@@ -3162,9 +3166,11 @@ const DICTIONARY_DATA = {
   }
  },
  "sala": {
-  "nuance": "sala de espera（待合室）のような複合語にも使われる。",
+  "nuance": "sala de espera（待合室）のような複合語にも使われる。salón（より広く格式高いホール）とは規模とフォーマルさで区別され、家庭のリビングを指すときは基本的にsalaを使う。sala de cine（映画館の上映室）という使い方も頻出",
   "etymology": "ゲルマン語系の語sal（部屋、広間）に由来。",
-  "synonyms": [],
+  "synonyms": [
+   "salón（広間、より格式高い場所）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— Vamos a ver la película en la sala.\n— Perfecto, voy a hacer palomitas.",
@@ -3197,9 +3203,11 @@ const DICTIONARY_DATA = {
   }
  },
  "sofá": {
-  "nuance": "フランス語経由でアラビア語からヨーロッパの言語に広まった単語。",
+  "nuance": "フランス語経由でアラビア語からヨーロッパの言語に広まった単語。複数人がけの『ソファ』を指し、一人用の肘掛け椅子はsillón（アームチェア）と呼び分ける",
   "etymology": "アラビア語suffa（クッション付きの座席）に由来。",
-  "synonyms": [],
+  "synonyms": [
+   "sillón（一人用の肘掛け椅子、区別される）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— Este sofá es muy cómodo.\n— Sí, me quedo dormido en él muy fácil.",
@@ -4908,7 +4916,10 @@ const DICTIONARY_DATA = {
  "olla": {
   "nuance": "olla exprés（圧力鍋）のような複合語もよく使われる。",
   "etymology": "ラテン語olla（壺、鍋）に由来。",
-  "synonyms": [],
+  "synonyms": [
+   "cacerola（中型の片手鍋）",
+   "sartén（平たいフライパン）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— Pon la olla en la estufa.\n— Ya la puse, está calentando.",
@@ -4918,7 +4929,10 @@ const DICTIONARY_DATA = {
  "sartén": {
   "nuance": "地域によって女性名詞（la sartén）と男性名詞（el sartén）どちらも使われる珍しい単語。",
   "etymology": "ラテン語sartago（フライパン）に由来。",
-  "synonyms": [],
+  "synonyms": [
+   "olla（深い鍋）",
+   "cacerola（中型の鍋）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— Necesito una sartén más grande.\n— Te presto la mía.",
@@ -10485,7 +10499,7 @@ const DICTIONARY_DATA = {
   }
  },
  "claro que sí": {
-  "nuance": "「もちろん」の基本フレーズ。強い肯定・同意を表す。",
+  "nuance": "『もちろん』の強い肯定・同意を表すフレーズ。por supuesto（もちろん、ややフォーマル）とほぼ同義だが、claro que síの方が会話でカジュアルによく使われる",
   "etymology": "claro（明らかな）+ que sí（そうだと）の組み合わせ。",
   "synonyms": [
    "por supuesto（もちろん）"
@@ -10654,7 +10668,7 @@ const DICTIONARY_DATA = {
   }
  },
  "por si acaso": {
-  "nuance": "「念のため」の基本フレーズ。",
+  "nuance": "『念のため』の基本フレーズ。por si + 接続法（万一〜の場合に備えて）という構文に発展することもある。傘を持っていく理由を説明するときなど、日常的によく使う",
   "etymology": "por（〜のために）+ si acaso（もしかして）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -11081,7 +11095,9 @@ const DICTIONARY_DATA = {
  "tibio": {
   "nuance": "calienteとfríoの中間。",
   "etymology": "ラテン語tepidus（ぬるい）に由来。",
-  "synonyms": [],
+  "synonyms": [
+   "templado（気候にも使える、より広い『中庸』の語）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— El café ya está tibio.\n— Te lo caliento de nuevo.",
@@ -11672,7 +11688,7 @@ const DICTIONARY_DATA = {
   }
  },
  "especie": {
-  "nuance": "生物学的な種を指す。",
+  "nuance": "生物学的な『種』を指す学術語。especie en peligro de extinción（絶滅危惧種）はニュースで頻出。似た綴りのespecias（香辛料）とは全く別の単語なので混同注意",
   "etymology": "ラテン語species（見た目、種類）に由来。",
   "synonyms": [],
   "derived": [
@@ -11799,7 +11815,9 @@ const DICTIONARY_DATA = {
  "algodón": {
   "nuance": "100% algodón（綿100%）という表示でよく見る。",
   "etymology": "アラビア語al-qutn（綿）に由来。",
-  "synonyms": [],
+  "synonyms": [
+   "lino（麻、より高級で通気性の良い素材）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— Prefiero la ropa de algodón.\n— Es más cómoda para el calor.",
@@ -12461,7 +12479,7 @@ const DICTIONARY_DATA = {
   }
  },
  "cuanto antes": {
-  "nuance": "「できるだけ早く」の基本フレーズ。",
+  "nuance": "『できるだけ早く』を表すが、tan pronto como（〜するとすぐに）より緊急性・催促のニュアンスが強い。ビジネスメールでhazlo cuanto antes（できるだけ早くやって）のように使われる",
   "etymology": "cuanto（どれだけ）+ antes（前に）の組み合わせ。",
   "synonyms": [
    "lo antes posible（できるだけ早く）"
@@ -12495,7 +12513,7 @@ const DICTIONARY_DATA = {
   }
  },
  "¡ánimo!": {
-  "nuance": "「頑張れ！」の基本間投詞。励ましの言葉。",
+  "nuance": "努力している最中の人を励ます『頑張れ！』。buena suerte（幸運を祈る）が結果の分からない不確実な状況で使うのに対し、ánimoは相手がすでに頑張っている過程を応援するニュアンスが強い",
   "etymology": "ánimo（元気、勇気）から派生した語。",
   "synonyms": [],
   "derived": [
@@ -13351,7 +13369,7 @@ const DICTIONARY_DATA = {
   }
  },
  "por ejemplo": {
-  "nuance": "「例えば」の基本フレーズ。非常によく使う接続表現。",
+  "nuance": "『例えば』の基本フレーズ。書き言葉ではp. ej.と略されることが多い。文中でも文頭でも自然に使える柔軟な接続表現",
   "etymology": "por（〜として）+ ejemplo（例）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -13425,7 +13443,7 @@ const DICTIONARY_DATA = {
   }
  },
  "a fin de cuentas": {
-  "nuance": "「結局のところ」の基本フレーズ。",
+  "nuance": "『結局のところ』を表す表現。al fin y al cabo（結局は）とほぼ同義で言い換え可能。長い議論の末に本質的な結論を述べるときに使う",
   "etymology": "a fin de（〜の終わりに）+ cuentas（計算）の組み合わせ。",
   "synonyms": [
    "al final（最終的に）"
@@ -13864,7 +13882,7 @@ const DICTIONARY_DATA = {
   }
  },
  "merienda": {
-  "nuance": "午後の軽食を指す。",
+  "nuance": "午後の軽食を指すが、スペインでは夕食前のしっかりした習慣として根付いている一方、メキシコではそれほど厳密な習慣ではなく、antojito（軽い間食）に近い感覚で使われることが多い",
   "etymology": "ラテン語merenda（正午の食事）に由来。",
   "synonyms": [],
   "derived": [
@@ -16002,7 +16020,7 @@ const DICTIONARY_DATA = {
   }
  },
  "eso ya lo sabía": {
-  "nuance": "「それはもう知ってたよ」の基本フレーズ。",
+  "nuance": "『それはもう知ってたよ』という決まり文句。sabíaは線過去（imperfecto）で、『（それを聞く前から）すでに知っている状態だった』という継続的な状態を表している",
   "etymology": "eso（それ）+ ya（もう）+ saber（知る）の組み合わせ。",
   "synonyms": [],
   "derived": [
@@ -16908,7 +16926,9 @@ const DICTIONARY_DATA = {
  "póliza": {
   "nuance": "póliza de seguro（保険証券）はよく使う組み合わせ。",
   "etymology": "イタリア語polizza（証書）に由来。",
-  "synonyms": [],
+  "synonyms": [
+   "seguro（保険という制度・契約そのもの）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— ¿Qué cubre tu póliza de seguro?\n— Cubre accidentes y robo.",
@@ -18191,9 +18211,11 @@ const DICTIONARY_DATA = {
   }
  },
  "dato": {
-  "nuance": "複数形datosがよく使われる（一つの情報でも複数扱いになりがち）。",
+  "nuance": "datosと複数形でよく使う、日本語の「データ」より個々の情報1件ずつを指す感覚が強い可算名詞。informaciónは英語のinformationと同じく基本的に不可算扱いで、この可算・不可算の違いに学習者はつまずきやすい",
   "etymology": "ラテン語datum（与えられたもの）に由来。",
-  "synonyms": [],
+  "synonyms": [
+   "información（情報、こちらは不可算的に使う）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— Necesitamos más datos para confirmar esto.\n— Estoy de acuerdo, es muy pronto para concluir.",
@@ -18580,10 +18602,12 @@ const DICTIONARY_DATA = {
   }
  },
  "fuera de": {
-  "nuance": "「〜の外に」の基本フレーズ。dentro de（〜の中に）の反対語。",
+  "nuance": "「〜の外に」の基本フレーズ。dentro de（〜の中に）の反対語。fuera de lugar（場違いな）、estar fuera de sí（我を忘れる）のような比喩的な慣用表現にも発展する",
   "etymology": "fuera（外に）から派生した表現。",
   "synonyms": [],
-  "derived": [],
+  "derived": [
+   "fuera de lugar（場違いな、比喩表現）"
+  ],
   "dialogue": {
    "es": "— El coche está estacionado fuera del edificio.\n— Voy a buscarlo.",
    "ja": "「車は建物の外に停めてあるよ」「取りに行くね」"
@@ -20683,7 +20707,7 @@ const DICTIONARY_DATA = {
   }
  },
  "catálogo": {
-  "nuance": "「カタログ」の基本語。商品やスタイルの一覧を見せてもらうときに使う。",
+  "nuance": "商品やスタイルの一覧を見せてもらうときに使う基本語。英語catalogとほぼ同じ綴り・意味で覚えやすい",
   "etymology": "ギリシャ語katalogos（一覧）に由来。",
   "synonyms": [],
   "derived": [],
@@ -21266,9 +21290,11 @@ const DICTIONARY_DATA = {
   }
  },
  "vegano": {
-  "nuance": "「ビーガンの」の基本語。動物性食品を一切摂らない食生活を指す。",
+  "nuance": "「ビーガンの」の基本語。動物性食品を一切摂らない食生活を指す。vegetariano（ベジタリアン）は卵や乳製品を摂ることもある点で区別され、この違いはメキシコでもよく話題になる",
   "etymology": "英語veganから派生した語。",
-  "synonyms": [],
+  "synonyms": [
+   "vegetariano（ベジタリアン、卵・乳製品はOKな場合が多い）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— Soy vegano desde hace dos años.\n— ¿Extrañas algún alimento en especial?",
@@ -21661,7 +21687,9 @@ const DICTIONARY_DATA = {
  "marinar": {
   "nuance": "「漬け込む」の基本語。肉や魚を調味液に漬けて味を染み込ませる調理法。",
   "etymology": "マリネ液（海水に由来する調味液）から派生した語。",
-  "synonyms": [],
+  "synonyms": [
+   "adobar（メキシコ流のチリベースの下味付け）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— Dejé el pollo marinando toda la noche.\n— Va a quedar muy sabroso.",
@@ -21821,7 +21849,7 @@ const DICTIONARY_DATA = {
   }
  },
  "vejiga": {
-  "nuance": "「膀胱」の基本語。",
+  "nuance": "『膀胱』を指す医療用語。infección de vejiga（膀胱炎）は病院でよく使われる表現。日常会話では婉曲的にtengo que ir al baño（トイレに行きたい）と言うことの方が多い",
   "etymology": "ラテン語vesica（袋、膀胱）に由来。",
   "synonyms": [],
   "derived": [],
@@ -22066,9 +22094,11 @@ const DICTIONARY_DATA = {
   }
  },
  "apagar": {
-  "nuance": "「消す、オフにする」の基本語。電気・機械・火など幅広い対象に使える。",
+  "nuance": "電気・機械・火など幅広い対象に使える『消す』の基本語。cerrar（閉める）はドアや店を『閉じる』ときに使い、apagarとは対象が異なる。desconectar（切断する）はコンセントを抜くような物理的な『切断』を強調する",
   "etymology": "a（〜へ）+ pagar（鎮める、古い意味）に由来するとされる。",
-  "synonyms": [],
+  "synonyms": [
+   "desconectar（電源を切断する、より物理的）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— Apaga el televisor, por favor.\n— Está bien, ya casi termina el programa.",
@@ -23337,7 +23367,7 @@ const DICTIONARY_DATA = {
   }
  },
  "extrovertido": {
-  "nuance": "「外向的な」の基本語。introvertido（内向的な）の反対語。",
+  "nuance": "「外向的な」の基本語。introvertido（内向的な）の反対語。どちらの性質も併せ持つ人はambivertido（両向型）と呼ばれることもある、比較的新しい用語",
   "etymology": "extra（外に）+ vertere（向く）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -23347,7 +23377,7 @@ const DICTIONARY_DATA = {
   }
  },
  "introvertido": {
-  "nuance": "「内向的な」の基本語。extrovertido（外向的な）の反対語。",
+  "nuance": "「内向的な」の基本語。extrovertido（外向的な）の反対語。ser introvertido（内向的な性格である）とestar introvertido（一時的に内にこもっている）でニュアンスが変わる点も興味深い",
   "etymology": "intro（内に）+ vertere（向く）の組み合わせ。",
   "synonyms": [],
   "derived": [],
@@ -26785,9 +26815,11 @@ const DICTIONARY_DATA = {
   }
  },
  "pobreza": {
-  "nuance": "riqueza（富）の反対語。社会問題の文脈で頻出する語",
+  "nuance": "riqueza（富）の反対語。社会問題の文脈で頻出する語。línea de pobreza（貧困線）は統計や政策の議論でよく使われる複合語。miseria（極貧）はpobrezaよりもさらに深刻な状態を指す強い語",
   "etymology": "pobre（貧しい）から派生した名詞",
-  "synonyms": [],
+  "synonyms": [
+   "miseria（極貧、より深刻な状態）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— El gobierno anunció un plan contra la pobreza.\n— Espero que sea efectivo.",
@@ -27447,9 +27479,11 @@ const DICTIONARY_DATA = {
   }
  },
  "mover": {
-  "nuance": "moverse（自分が動く）の他動詞版。物を『移動させる』ときに使う",
+  "nuance": "moverse（自分が動く）の他動詞版。物を『移動させる』ときに使う。mudarse（引っ越す）は『住居を移す』という特化した意味を持つ別の動詞",
   "etymology": "ラテン語movere（動かす）に由来",
-  "synonyms": [],
+  "synonyms": [
+   "cambiar de lugar（場所を変える、より説明的）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— ¿Me ayudas a mover esta mesa?\n— Claro, ¿a dónde la llevamos?",
@@ -27945,9 +27979,11 @@ const DICTIONARY_DATA = {
   }
  },
  "corto": {
-  "nuance": "largo（長い）の反対語。距離・時間・長さ全般に使う基本的な形容詞",
+  "nuance": "largo（長い）の反対語で距離・時間・長さ全般に使う。名詞化したel corto（短編映画）はcortometrajeの略として映画好きの間でよく使われる",
   "etymology": "ラテン語curtus（切り詰められた）に由来",
-  "synonyms": [],
+  "synonyms": [
+   "breve（短い、より書き言葉的でフォーマル）"
+  ],
   "derived": [],
   "dialogue": {
    "es": "— El viaje fue muy corto.\n— Sí, se pasó volando.",
@@ -29846,6 +29882,67 @@ const DICTIONARY_DATA = {
   "dialogue": {
    "es": "— El cempasúchil llena de color el cementerio.\n— Es una tradición muy bonita.",
    "ja": "「センパスチルが墓地を彩りで満たすんだ」「すごく美しい伝統だね」"
+  }
+ },
+ "cacerola": {
+  "nuance": "olla（深めの鍋、スープ・煮込み用）とsartén（平たいフライパン、炒め物用）の中間的な、持ち手付きの中型の鍋を指す。ソースを作ったり少量を煮たりするときに使う",
+  "etymology": "cazo（柄杓、小鍋）から派生",
+  "synonyms": [
+   "olla（より深い鍋）",
+   "sartén（平たいフライパン）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Usa la cacerola pequeña para la salsa.\n— Buena idea, así no se desperdicia.",
+   "ja": "「ソース用に小さい片手鍋を使ってね」「いい考えだね、そうすれば無駄にならないし」"
+  }
+ },
+ "adobar": {
+  "nuance": "marinar（一般的な『漬け込む』）よりも、チリペーストや酢を使ったメキシコ独特の下味付けを指すことが多い動詞。carne adobada（アドボ漬けの肉）はタコスの定番の具材",
+  "etymology": "アラビア語al-buhar（香辛料）に由来するとされる",
+  "synonyms": [
+   "marinar（漬け込む、より一般的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Voy a adobar la carne para mañana.\n— Va a quedar deliciosa con esas especias.",
+   "ja": "「明日のために肉にアドボの下味をつけるよ」「そのスパイスで美味しくなりそうだね」"
+  }
+ },
+ "seguro": {
+  "nuance": "『保険』という名詞と、『安全な・確かな』という形容詞、両方の意味を持つ非常によく使う多義語。póliza（保険証券という実際の書類）とseguro（保険という制度・契約そのもの）の違いも押さえておくと実用的",
+  "etymology": "ラテン語securus（安心した）に由来",
+  "synonyms": [
+   "póliza（保険証券という書類そのもの）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— ¿Tienes seguro de auto?\n— Sí, es obligatorio aquí.",
+   "ja": "「車の保険入ってる？」「うん、ここでは義務なんだ」"
+  }
+ },
+ "templado": {
+  "nuance": "clima templado（温暖な気候）のように気候を表すときによく使う。液体の温度についてはtibio（ぬるい）とほぼ同義で言い換え可能だが、templadoの方がやや広い『中庸』のニュアンスを持つ",
+  "etymology": "templar（和らげる、調律する）から派生",
+  "synonyms": [
+   "tibio（ぬるい、液体の温度に限定的）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Esta región tiene un clima templado.\n— Por eso hay tanta vegetación.",
+   "ja": "「この地域は温暖な気候なんだ」「だからこんなに植物が多いんだね」"
+  }
+ },
+ "lino": {
+  "nuance": "algodón（綿、より一般的で柔らかい）と比べて、linoは通気性が良くシワになりやすい高級素材というイメージが強い。夏服の生地としてよく使われる",
+  "etymology": "ラテン語linum（亜麻）に由来",
+  "synonyms": [
+   "algodón（綿、より一般的な天然素材）"
+  ],
+  "derived": [],
+  "dialogue": {
+   "es": "— Esta camisa de lino es perfecta para el calor.\n— Sí, pero se arruga mucho.",
+   "ja": "「このリネンのシャツは暑さにぴったりだね」「うん、でもすごくシワになるよね」"
   }
  }
 };
